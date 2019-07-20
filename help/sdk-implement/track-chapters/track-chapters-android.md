@@ -1,0 +1,81 @@
+---
+seo-title: Seguimiento de capítulos y segmentos en Android
+title: Seguimiento de capítulos y segmentos en Android
+uuid: 013815 d 7-4 d 9 e -48 f 4-a 2 b 9-3 b 70 cb 1149 d 3
+translation-type: tm+mt
+source-git-commit: b461da1823e45eef86302e14501eac0d4b055c7a
+
+---
+
+
+# Seguimiento de capítulos y segmentos en Android{#track-chapters-and-segments-on-android}
+
+>[!IMPORTANT]
+>
+>Las instrucciones siguientes proporcionan consejos para la implementación mediante SDK 2. x. Si va a implementar una versión 1.x del SDK, puede descargar la guía del desarrollador aquí: [Descargar SDK.](../../sdk-implement/download-sdks.md)
+
+## Implementación del seguimiento de capítulos
+
+1. Identifique cuándo se produce el evento de inicio de capítulo y cree la instancia de `ChapterObject` con la información del capítulo.
+
+   `ChapterObject` referencia de seguimiento de capítulo:
+
+   >[!NOTE]
+   >
+   >Estas variables solo se requieren si planea rastrear capítulos.
+
+   | Nombre de variable | Descripción | Requerido |
+   | --- | --- | :---: |
+   | `name` | Nombre del capítulo | Sí |
+   | `position` | Posición del capítulo | Sí |
+   | `length` | Duración del capítulo | Sí |
+   | `startTime` | Hora de inicio del capítulo | Sí |
+
+   Objeto de capítulo:
+
+   ```java
+   MediaObject chapterDataInfo =  
+     MediaHeartbeat.createChapterObject(<CHAPTER_NAME>,  
+                                        <POSITION>,  
+                                        <LENGTH>,  
+                                        <START_TIME>);
+   ```
+
+1. Si incluye metadatos personalizados para el capítulo, cree las variables de datos de contexto para los metadatos:
+
+   ```java
+   HashMap<String, String> chapterMetadata =  
+     new HashMap<String,String>(); 
+   chapterMetadata.put("segmentType", "Sample Segment Type"); 
+   chapterMetadata.put("segmentName", "Sample Segment Name"); 
+   chapterMetadata.put("segmentInfo", "Sample Segment Info");
+   ```
+
+1. Para empezar a rastrear la reproducción del capítulo, invoque el evento `ChapterStart` en la instancia de `MediaHeartbeat`
+
+   ```java
+   public void onChapterStart(Observable observable, Object data) {  
+       _heartbeat.trackEvent(MediaHeartbeat.Event.ChapterStart,  
+                             chapterDataInfo,  
+                             chapterMetadata); 
+   }
+   ```
+
+1. Cuando la reproducción llega al final del capítulo, como se define en el código personalizado, invoque el evento `ChapterComplete` en la instancia de `MediaHeartbeat`:
+
+   ```java
+   public void onChapterComplete(Observable observable, Object data) {  
+       _heartbeat.trackEvent(MediaHeartbeat.Event.ChapterComplete, null, null); 
+   }
+   ```
+
+1. Si no se ha completado la reproducción del capítulo porque el usuario ha elegido omitirlo (por ejemplo, si el usuario hace clic en la línea de tiempo para saltar el capítulo), invoque el evento `ChapterSkip` en la instancia de MediaHeartbeat:
+
+   ```java
+   public void onChapterSkip(Observable observable, Object data) {  
+       _heartbeat.trackEvent(MediaHeartbeat.Event.ChapterSkip, null, null); 
+   }
+   ```
+
+1. Si hay más capítulos, repita los pasos del 1 al 5.
+
