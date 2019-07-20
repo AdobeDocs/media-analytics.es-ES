@@ -1,0 +1,47 @@
+---
+seo-title: Seguimiento del almacenamiento en búfer en iOS
+title: Seguimiento del almacenamiento en búfer en iOS
+uuid: 4 f 4 db 23 a -489 b -4 b 41-bb 6 e -393 ec 64 d 52 a 2
+translation-type: tm+mt
+source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
+
+---
+
+
+# Seguimiento del almacenamiento en búfer en iOS{#track-buffering-on-ios}
+
+>[!IMPORTANT]
+>
+>En las siguientes instrucciones se indican los pasos para la implementación en todos los kits de desarrollo de software de 2.x. Si va a implementar una versión 1.x del SDK, puede descargar las guías del desarrollador de 1.x aquí: [Descargar SDK.](../../../sdk-implement/download-sdks.md)
+
+## Constantes de seguimiento de búfer
+
+
+| Nombre de la constante | Descripción     |
+|---|---|
+| `ADBMediaHeartbeatEventBufferStart` | Constante para el seguimiento del evento de inicio de almacenamiento en búfer |
+| `ADBMediaHeartbeatEventBufferComplete` | Constante para el seguimiento del evento de finalización de almacenamiento en búfer |
+
+## Implementar almacenamiento en búfer
+
+1. Escuche los eventos de almacenamiento en búfer de reproducción procedentes del reproductor de medios y, cuando reciba la notificación del evento Inicio de almacenamiento en búfer, rastree el almacenamiento en búfer mediante el evento `BufferStart`:
+
+   ```
+   - (void)onBufferStart:(NSNotification *)notification { 
+       [_mediaHeartbeat trackEvent:ADBMediaHeartbeatEventBufferStart  
+                        mediaObject:nil  
+                        data:nil]; 
+   }
+   ```
+
+1. En la notificación de Finalización de almacenamiento en búfer procedente del reproductor de medios, rastree el final del almacenamiento en búfer con el evento `BufferComplete`:
+
+   ```
+   - (void)onBufferComplete:(NSNotification *)notification { 
+       [_mediaHeartbeat trackEvent:ADBMediaHeartbeatEventBufferComplete  
+                        mediaObject:nil  
+                        data:nil]; 
+   }
+   ```
+
+Consulte la situación de seguimiento [Reproducción de VOD con almacenamiento en búfer](../../../sdk-implement/tracking-scenarios/vod-buffering.md) para obtener más información.
