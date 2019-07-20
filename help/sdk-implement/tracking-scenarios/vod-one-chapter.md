@@ -1,0 +1,468 @@
+---
+seo-title: Reproducción de VOD con un capítulo
+title: Reproducción de VOD con un capítulo
+uuid: 1566 a 6 f 5-cf 22-42 e 7-8 e 1 a -6976 c 6 c 4 e 649
+translation-type: tm+mt
+source-git-commit: b2d2f7078d655c6e50b3f2925002f93d5a0af533
+
+---
+
+
+# Reproducción de VOD con un capítulo{#vod-playback-with-one-chapter}
+
+## Situación {#section_E4B558253AD84ED59256EDB60CED02AE}
+
+En esta situación, una parte del contenido de VOD se marca como capítulo.
+
+Si no se indica lo contrario, las llamadas de red en este escenario son iguales a las llamadas que se hacen en el escenario de [Reproducción de VOD sin anuncios. ](../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md) La llamada de red se realiza al mismo tiempo, pero la carga útil es distinta.
+
+| Activador   | Método de Heartbeat   | Llamadas de red   | Notas   |
+|---|---|---|---|
+| User clicks **[!UICONTROL Play]** | `trackSessionStart` | Inicio del contenido de Analytics, inicio del contenido de Heartbeat | Todavía no le hemos indicado a la biblioteca de medición que hay un anuncio pre-roll, por lo que estas llamadas de red siguen siendo exactamente iguales que un solo VOD. |
+| Se inicia el capítulo. | `trackEvent:ChapterStart` | Inicio de capítulo de Heartbeat |  |
+| Se reproduce el primer fotograma del capítulo. | `trackPlay` | Reproducción del contenido de Heartbeat | Cuando el contenido del capítulo se reproduce antes del contenido principal, los latidos comienzan al inicio del capítulo. |
+| Se reproduce el capítulo. |  | Latidos de capítulo |  |
+| El capítulo finaliza. | `trackEvent:trackChapterComplete` | Finalización del capítulo de Heartbeat | Es el momento en que se llega al final de un capítulo. |
+| Se reproduce el contenido. |  | Latidos de contenido | Esta llamada de red es exactamente la misma que la del escenario de [Reproducción de VOD sin anuncios](../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md). |
+| El contenido termina de reproducirse. | `trackComplete` | Finalización de contenido de Heartbeat | Esta llamada de red es exactamente la misma que la del escenario de [Reproducción de VOD sin anuncios](../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md). |
+| La sesión finaliza. | `trackSessionEnd` |  | `SessionEnd` significa que se ha llegado al final de una sesión de visualización. Se debe llamar a esta API aunque el usuario no vea los medios hasta la finalización. |
+
+## Parámetros {#section_869319D99A474FEA8EA840415EA97FBD}
+
+When chapter playback begins, a `Heartbeat Chapter Start` call is sent. If the beginning of the chapter does not coincide with the 10-second timer, the `Heartbeat Chapter Start` call is delayed by a few seconds, and the call goes to the next 10-second interval.
+
+When this happens, a `Content Heartbeat` call goes out in the same interval. Puede diferenciar una de otra fijándose en el tipo de evento y el tipo de recurso:
+
+### Inicio de capítulo de Heartbeat
+
+| Parámetro | Valor | Notas |
+|---|---|---|
+| `s:event:type` | `"chapter_start"` |  |
+| `s:asset:type` | `"main"` |  |
+| `s:stream:chapter_*` |  | Información de la emisión referida a los datos del capítulo. |
+| `s:meta:*` |  | Capítulo con datos contextuales específicos. |
+
+## Código de muestra: capítulo en medio {#section_icd_5bj_x2b}
+
+En esta situación, parte del contenido de VOD es un capítulo.
+
+![](assets/chapter-regular-playback.png)
+
+### Android
+
+Para ver este caso en Android, configure el siguiente código:
+
+```java
+// Set up mediaObject 
+MediaObject mediaInfo = MediaHeartbeat.createMediaObject( 
+  Configuration.MEDIA_NAME,  
+  Configuration.MEDIA_ID,  
+  Configuration.MEDIA_LENGTH,  
+  MediaHeartbeat.StreamType.VOD 
+); 
+
+HashMap<String, String> mediaMetadata = new HashMap<String, String>(); 
+mediaMetadata.put(CUSTOM_KEY_1, CUSTOM_VAL_1); 
+mediaMetadata.put(CUSTOM_KEY_2, CUSTOM_VAL_2); 
+
+// 1. Call trackSessionStart() when the user clicks Play or if autoplay is used,  
+//    i.e., there is an intent to start playback.  
+_mediaHeartbeat.trackSessionStart(mediaInfo, mediaMetadata); 
+
+...... 
+...... 
+
+// 2. Call trackPlay() when the playback actually starts, i.e., first frame of the  
+//    ad media is rendered on the screen. 
+_mediaHeartbeat.trackPlay(); 
+
+....... 
+....... 
+
+// Chapter 
+HashMap<String, String> chapterMetadata = new HashMap<String, String>(); 
+chapterMetadata.put(CUSTOM_KEY_1, CUSTOM_VAL_1); 
+MediaObject chapterDataInfo =  
+MediaHeartbeat.createChapterObject(CHAPTER_NAME,  
+                                   CHAPTER_POSITION,  
+                                   CHAPTER_LENGTH,  
+                                   CHAPTER_START_TIME); 
+
+// 3. Track the MediaHeartbeat.Event.ChapterStart event when the chapter starts to play.  
+_mediaHeartbeat.trackEvent(MediaHeartbeat.Event.ChapterStart, chapterDataInfo, chapterMetadata); 
+
+....... 
+....... 
+
+// 4. Track the MediaHeartbeat.Event.ChapterComplete event when the chapter finishes playing. 
+_mediaHeartbeat.trackEvent(MediaHeartbeat.Event.ChapterComplete, null, null); 
+
+....... 
+....... 
+
+// 5. Call trackComplete() when the playback reaches the end, i.e., completes and finishes playing. 
+_mediaHeartbeat.trackComplete(); 
+
+........ 
+........ 
+
+// 6. Call trackSessionEnd() when the playback session is over. This method must be called even  
+//    if the user does not watch the media to completion.  
+_mediaHeartbeat.trackSessionEnd(); 
+
+........ 
+........ 
+```
+
+### iOS
+
+Para ver este caso en iOS, configure el siguiente código:
+
+```
+when the user clicks Play 
+ADBMediaObject *mediaObject =  
+[ADBMediaHeartbeat createMediaObjectWithName:MEDIA_NAME  
+                   length:MEDIA_LENGTH  
+                   streamType:ADBMediaHeartbeatStreamTypeVOD]; 
+  
+NSMutableDictionary *mediaContextData = [[NSMutableDictionary alloc] init]; 
+[mediaContextData setObject:CUSTOM_VAL_1 forKey:CUSTOM_KEY_1]; 
+[mediaContextData setObject:CUSTOM_VAL_2 forKey:CUSTOM_KEY_2]; 
+ 
+// 1. Call trackSessionStart when the user clicks Play or if autoplay is used,  
+//    i.e., when there is an intent to start playback. 
+[_mediaHeartbeat trackSessionStart:mediaObject data:mediaContextData]; 
+....... 
+....... 
+
+// 2. Call trackPlay when the playback actually starts, i.e., when the  
+//    first frame of the main content is rendered on the screen. 
+[_mediaHeartbeat trackPlay]; 
+....... 
+....... 
+
+// Chapter 
+NSMutableDictionary *chapterContextData = [[NSMutableDictionary alloc] init]; 
+[chapterContextData setObject:CONTEXT_DATA_VALUE forKey:CONTEXT_DATA_KEY]; 
+
+id chapterInfo =  
+[ADBMediaHeartbeat createChapterObjectWithName:CHAPTER_NAME  
+                   position:CHAPTER_POSITION  
+                   length:CHAPTER_LENGTH  
+                   startTime:CHAPTER_START_TIME]; 
+    
+// 3. Track the ADBMediaHeartbeatEventChapterStart event when the chapter  
+//    starts to play. 
+[_mediaHeartbeat trackEvent:ADBMediaHeartbeatEventChapterStart  
+               mediaObject:chapterInfo  
+               data:chapterContextData]; 
+....... 
+....... 
+
+// 4. Track the ADBMediaHeartbeatEventChapterComplete event when the chapter  
+//    finishes playing. 
+[_mediaHeartbeat trackEvent:ADBMediaHeartbeatEventChapterComplete  
+               mediaObject:nil  
+               data:nil];  
+....... 
+....... 
+// 5. Call trackComplete when the playback reaches the end, i.e., when the  
+//    media completes and finishes playing. 
+[_mediaHeartbeat trackComplete]; 
+....... 
+....... 
+// 6. Call trackSessionEnd when the playback session is over. This method must  
+//    be called even if the user does not watch the media to completion. 
+[_mediaHeartbeat trackSessionEnd]; 
+....... 
+....... 
+```
+
+### JavaScript
+
+Para ver esta situación en JavaScript, escriba el siguiente texto:
+
+```js
+// Set up mediaObject 
+var mediaInfo = MediaHeartbeat.createMediaObject( 
+ Configuration.MEDIA_NAME,  
+ Configuration.MEDIA_ID,  
+ Configuration.MEDIA_LENGTH,  
+ MediaHeartbeat.StreamType.VOD 
+
+); 
+
+var mediaMetadata = { 
+  CUSTOM_KEY_1 : CUSTOM_VAL_1,  
+  CUSTOM_KEY_2 : CUSTOM_VAL_2,  
+  CUSTOM_KEY_3 : CUSTOM_VAL_3 
+}; 
+
+// 1. Call trackSessionStart when Play is clicked or if autoplay is used,  
+//    i.e., when there's an intent to start playback. 
+this._mediaHeartbeat.trackSessionStart(mediaInfo, mediaMetadata); 
+
+...... 
+...... 
+
+// Chapter 
+var chapterMetadata = { 
+  CUSTOM_KEY_1 : CUSTOM_VAL_1 
+}; 
+
+var chapterDataInfo =  
+MediaHeartbeat.createChapterObject(CHAPTER_NAME,  
+                                   CHAPTER_POSITION,  
+                                   CHAPTER_LENGTH,  
+                                   CHAPTER_START_TIME); 
+
+// 2. Track the MediaHeartbeat.Event.ChapterStart event when the chapter  
+//    starts to play. 
+this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.ChapterStart,  
+                              chapterDataInfo,  
+                              chapterMetadata); 
+
+....... 
+....... 
+
+// 3. Call trackPlay() when the playback actually starts, i.e., when the first  
+//    frame of the main content is rendered on the screen. 
+this._mediaHeartbeat.trackPlay(); 
+
+....... 
+....... 
+
+// 4. Track the MediaHeartbeat.Event.ChapterComplete event when the chapter  
+//    finishes playing. 
+this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.ChapterComplete); 
+
+....... 
+....... 
+
+// 5. Call trackComplete() when the playback reaches the end, i.e., when playback   
+//    completes and finishes playing. 
+this._mediaHeartbeat.trackComplete(); 
+
+........ 
+........ 
+
+// 6. Call trackSessionEnd() when the playback session is over. This method must be  
+//    called even if the user does not watch the media to completion. 
+this._mediaHeartbeat.trackSessionEnd(); 
+
+........ 
+........ 
+```
+
+## Código de muestra: capítulo al principio {#section_flj_5bj_x2b}
+
+En esta situación, el contenido de VOD se reproduce con un capítulo al principio de la reproducción.
+
+![](assets/pre-chapter-regular.png)
+
+### Android
+
+Para ver este caso en Android, configure el siguiente código:
+
+```java
+// Set up mediaObject 
+MediaObject mediaInfo = MediaHeartbeat.createMediaObject( 
+  Configuration.MEDIA_NAME,  
+  Configuration.MEDIA_ID,  
+  Configuration.MEDIA_LENGTH,  
+  MediaHeartbeat.StreamType.VOD 
+); 
+
+HashMap<String, String> mediaMetadata = new HashMap<String, String>(); 
+mediaMetadata.put(CUSTOM_KEY_1, CUSTOM_VAL_1); 
+mediaMetadata.put(CUSTOM_KEY_2, CUSTOM_VAL_2); 
+
+// 1. Call trackSessionStart() when the user clicks Play or if autoplay is used,  
+//    i.e., there is an intent to start playback.  
+_mediaHeartbeat.trackSessionStart(mediaInfo, mediaMetadata); 
+
+...... 
+...... 
+
+// 2. Call trackPlay() when the playback actually starts, i.e., first frame of the  
+//    main content is rendered on the screen. 
+_mediaHeartbeat.trackPlay(); 
+
+....... 
+....... 
+
+// Chapter 
+HashMap<String, String> chapterMetadata = new HashMap<String, String>(); 
+chapterMetadata.put(CUSTOM_KEY_1, CUSTOM_VAL_1); 
+MediaObject chapterDataInfo =  
+MediaHeartbeat.createChapterObject(CHAPTER_NAME,  
+                                   CHAPTER_POSITION,  
+                                   CHAPTER_LENGTH,  
+                                   CHAPTER_START_TIME); 
+
+// 3. Track the MediaHeartbeat.Event.ChapterStart event when the chapter starts to play.  
+_mediaHeartbeat.trackEvent(MediaHeartbeat.Event.ChapterStart, chapterDataInfo, chapterMetadata); 
+
+....... 
+....... 
+
+// 4. Track the MediaHeartbeat.Event.ChapterComplete event when the chapter finishes playing. 
+_mediaHeartbeat.trackEvent(MediaHeartbeat.Event.ChapterComplete, null, null); 
+
+....... 
+....... 
+
+// 5. Call trackComplete() when the playback reaches the end, i.e., when the media completes  
+//    and finishes playing. 
+_mediaHeartbeat.trackComplete(); 
+
+........ 
+........ 
+
+// 6. Call trackSessionEnd() when the playback session is over. This method must be called even  
+//    if the user does not watch the media to completion.  
+_mediaHeartbeat.trackSessionEnd(); 
+
+........ 
+........ 
+```
+
+### iOS
+
+Para ver este caso en iOS, configure el siguiente código:
+
+```
+when the user clicks Play 
+ADBMediaObject *mediaObject =  
+[ADBMediaHeartbeat createMediaObjectWithName:MEDIA_NAME  
+                   length:MEDIA_LENGTH  
+                   streamType:ADBMediaHeartbeatStreamTypeVOD]; 
+ 
+NSMutableDictionary *mediaContextData = [[NSMutableDictionary alloc] init]; 
+[mediaContextData setObject:CUSTOM_VAL_1 forKey:CUSTOM_KEY_1]; 
+[mediaContextData setObject:CUSTOM_VAL_2 forKey:CUSTOM_KEY_2]; 
+
+// 1. Call trackSessionStart when the user clicks Play or if autoplay is used,  
+//    i.e., there is an intent to start playback. 
+[_mediaHeartbeat trackSessionStart:mediaObject data:mediaContextData]; 
+....... 
+....... 
+
+// Chapter 
+NSMutableDictionary *chapterContextData = [[NSMutableDictionary alloc] init]; 
+[chapterContextData setObject:CONTEXT_DATA_VALUE forKey:CONTEXT_DATA_KEY]; 
+
+id chapterInfo =  
+[ADBMediaHeartbeat createChapterObjectWithName:CHAPTER_NAME  
+                   position:CHAPTER_POSITION  
+                   length:CHAPTER_LENGTH  
+                   startTime:CHAPTER_START_TIME]; 
+    
+// 2. Call ADBMediaHeartbeatEventChapterStart when the chapter starts. 
+[_mediaHeartbeat trackEvent:ADBMediaHeartbeatEventChapterStart  
+               mediaObject:chapterInfo  
+               data:chapterContextData]; 
+....... 
+....... 
+
+// 3. Call trackPlay when the playback actually starts, i.e., when the 
+//    first frame of the main content is rendered on the screen. 
+[_mediaHeartbeat trackPlay];  
+....... 
+....... 
+
+// 4. Call ADBMediaHeartbeatEventChapterComplete when the chapter starts. 
+[_mediaHeartbeat trackEvent:ADBMediaHeartbeatEventChapterComplete  
+               mediaObject:nil  
+               data:nil];  
+....... 
+....... 
+
+// 5. Call trackComplete when the playback reaches the end, i.e., when the 
+//    media completes and finishes playing. 
+[_mediaHeartbeat trackComplete]; 
+....... 
+....... 
+
+// 6. Call trackSessionEnd when the playback session is over. This method  
+//    must be called even if the user does not watch the media to completion. 
+[_mediaHeartbeat trackSessionEnd]; 
+....... 
+....... 
+```
+
+### JavaScript
+
+Para ver esta situación en JavaScript, escriba el siguiente texto:
+
+```js
+// Set up mediaObject 
+var mediaInfo = MediaHeartbeat.createMediaObject( 
+ Configuration.MEDIA_NAME,  
+ Configuration.MEDIA_ID,  
+ Configuration.MEDIA_LENGTH,  
+ MediaHeartbeat.StreamType.VOD 
+
+); 
+
+var mediaMetadata = { 
+  CUSTOM_KEY_1 : CUSTOM_VAL_1,  
+  CUSTOM_KEY_2 : CUSTOM_VAL_2,  
+  CUSTOM_KEY_3 : CUSTOM_VAL_3 
+}; 
+
+// 1. Call trackSessionStart() when Play is clicked or if autoplay is used,  
+//    i.e., when there's an intent to start playback. 
+this._mediaHeartbeat.trackSessionStart(mediaInfo, mediaMetadata); 
+
+...... 
+...... 
+
+// Chapter 
+var chapterMetadata = { 
+  CUSTOM_KEY_1 : CUSTOM_VAL_1 
+}; 
+
+var chapterDataInfo =  
+MediaHeartbeat.createChapterObject(CHAPTER_NAME,  
+                                   CHAPTER_POSITION,  
+                                   CHAPTER_LENGTH,  
+                                   CHAPTER_START_TIME); 
+
+// 2. Track the MediaHeartbeat.Event.ChapterStart event when the chapter starts to play. 
+this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.ChapterStart,  
+                              chapterDataInfo,  
+                              chapterMetadata); 
+
+....... 
+....... 
+
+// 3. Call trackPlay() when the playback actually starts, i.e., when the first  
+//    frame of the main content is rendered on the screen. 
+this._mediaHeartbeat.trackPlay(); 
+
+....... 
+....... 
+
+// 4. Track the MediaHeartbeat.Event.ChapterComplete event when the chapter  
+//    finishes playing. 
+this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.ChapterComplete); 
+
+....... 
+....... 
+
+// 5. Call trackComplete() when the playback reaches the end, i.e., when playback   
+//    completes and finishes playing. 
+this._mediaHeartbeat.trackComplete(); 
+
+........ 
+........ 
+
+// 6. Call trackSessionEnd() when the playback session is over. This method must be  
+//    called even if the user does not watch the media to completion. 
+this._mediaHeartbeat.trackSessionEnd(); 
+
+........ 
+........ 
+```
+
