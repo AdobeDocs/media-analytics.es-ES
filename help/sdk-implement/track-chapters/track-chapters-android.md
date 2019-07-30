@@ -3,7 +3,7 @@ seo-title: Seguimiento de capítulos y segmentos en Android
 title: Seguimiento de capítulos y segmentos en Android
 uuid: 013815 d 7-4 d 9 e -48 f 4-a 2 b 9-3 b 70 cb 1149 d 3
 translation-type: tm+mt
-source-git-commit: b461da1823e45eef86302e14501eac0d4b055c7a
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -12,7 +12,7 @@ source-git-commit: b461da1823e45eef86302e14501eac0d4b055c7a
 
 >[!IMPORTANT]
 >
->Las instrucciones siguientes proporcionan consejos para la implementación mediante SDK 2. x. Si va a implementar una versión 1.x del SDK, puede descargar la guía del desarrollador aquí: [Descargar SDK.](../../sdk-implement/download-sdks.md)
+>Las instrucciones siguientes proporcionan consejos para la implementación mediante SDK 2. x. Si va a implementar una versión 1.x del SDK, puede descargar la guía del desarrollador aquí: [Descargar SDK.](/help/sdk-implement/download-sdks.md)
 
 ## Implementación del seguimiento de capítulos
 
