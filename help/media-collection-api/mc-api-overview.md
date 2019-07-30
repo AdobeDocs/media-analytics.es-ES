@@ -3,7 +3,7 @@ seo-title: Información general
 title: Información general
 uuid: c 14 bdbef -5846-4 d 31-8 a 14-8 e 9 e 0 e 9 c 9861
 translation-type: tm+mt
-source-git-commit: a7ddd2b281252bee2686a0fa53ce8da59553df4b
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -16,7 +16,7 @@ La API de Media Collection es la alternativa de RESTful de Adobe al Media SDK en
 
    Esta función le permite rastrear medios mientras un usuario está sin conexión, a través de almacenamiento local de datos de eventos hasta que el dispositivo del usuario devuelve en línea. (Consulte [Seguimiento del contenido descargado](track-downloaded-content.md) para obtener más información).
 
-La API de Media Collection es, básicamente, un adaptador que actúa como versión del lado del servidor del Media SDK. Esto significa que algunos aspectos de la documentación del SDK de medios también son relevantes para la API de recopilación de medios. For example, both solutions use the same [Audio and Video Parameters](../metrics-and-metadata/audio-video-parameters.md), and the collected Audio and Video tracking data leads to the same [Reporting and Analysis.](../media-reports/media-reports-enable.md)
+La API de Media Collection es, básicamente, un adaptador que actúa como versión del lado del servidor del Media SDK. Esto significa que algunos aspectos de la documentación del SDK de medios también son relevantes para la API de recopilación de medios. For example, both solutions use the same [Audio and Video Parameters](/help/metrics-and-metadata/audio-video-parameters.md), and the collected Audio and Video tracking data leads to the same [Reporting and Analysis.](/help/media-reports/media-reports-enable.md)
 
 ## Flujos de datos del seguimiento de medios {#section_pwq_n34_qbb}
 
