@@ -3,7 +3,7 @@ seo-title: Reproducción de VOD con un capítulo omitido
 title: Reproducción de VOD con un capítulo omitido
 uuid: 19 fb 020 c-eb 7 a -4942-9212-94 f 4 d 47195 b 9
 translation-type: tm+mt
-source-git-commit: b2d2f7078d655c6e50b3f2925002f93d5a0af533
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -14,7 +14,7 @@ source-git-commit: b2d2f7078d655c6e50b3f2925002f93d5a0af533
 
 En esta situación, el usuario omite un capítulo del contenido principal.
 
-Este es el mismo escenario que el de [reproducción de VOD con un capítulo](../../sdk-implement/tracking-scenarios/vod-one-chapter.md) salvo por el hecho de que, en este caso, el usuario busca el capítulo omitiéndolo para que pase al contenido principal.
+Este es el mismo escenario que el de [reproducción de VOD con un capítulo](/help/sdk-implement/tracking-scenarios/vod-one-chapter.md) salvo por el hecho de que, en este caso, el usuario busca el capítulo omitiéndolo para que pase al contenido principal.
 
 | Activador | Método de Heartbeat | Llamadas de red   | Notas |
 |---|---|---|---|
@@ -31,7 +31,7 @@ Este es el mismo escenario que el de [reproducción de VOD con un capítulo](../
 
 ## Parámetros {#section_1874F6B7880B43C5856BD11FF85B382E}
 
-The parameters used during chapter playback are identical to the parameters in the [VOD playback with one chapter](../../sdk-implement/tracking-scenarios/vod-one-chapter.md) scenario, except that there is no chapter complete network call.
+The parameters used during chapter playback are identical to the parameters in the [VOD playback with one chapter](/help/sdk-implement/tracking-scenarios/vod-one-chapter.md) scenario, except that there is no chapter complete network call.
 
 ## Código de muestra {#section_fyl_ncj_x2b}
 
