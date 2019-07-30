@@ -3,7 +3,7 @@ seo-title: Seguimiento de anuncios en Roku
 title: Seguimiento de anuncios en Roku
 uuid: b 1567265-7043-4 efa-a 313-aaaa 91 c 4 bb 01
 translation-type: tm+mt
-source-git-commit: ed200520b9bed990460a444dabdcf956980362ca
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -12,7 +12,7 @@ source-git-commit: ed200520b9bed990460a444dabdcf956980362ca
 
 >[!IMPORTANT]
 >
->Las instrucciones siguientes proporcionan indicaciones para la implementación con los SDK 2. x. Si va a implementar una versión 1.x del SDK, puede descargar las guías del desarrollador de 1.x aquí: [Descargar SDK.](../../sdk-implement/download-sdks.md)
+>Las instrucciones siguientes proporcionan indicaciones para la implementación con los SDK 2. x. Si va a implementar una versión 1.x del SDK, puede descargar las guías del desarrollador de 1.x aquí: [Descargar SDK.](/help/sdk-implement/download-sdks.md)
 
 ## Constantes de seguimiento de anuncio
 
@@ -63,7 +63,7 @@ source-git-commit: ed200520b9bed990460a444dabdcf956980362ca
 
 1. De forma opcional, adjunte metadatos estándar o de anuncio a la sesión de seguimiento de medios a través de variables de datos de contexto.
 
-   * [Implementación de metadatos de publicidad estándar en Roku](../../sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-roku.md)
+   * [Implementación de metadatos de publicidad estándar en Roku](/help/sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-roku.md)
    * **Metadatos de anuncio personalizados**: para los metadatos personalizados, cree un objeto de variable para las variables de datos personalizadas y rellénelas con los datos del recurso publicitario actual:
 
       ```
@@ -101,4 +101,4 @@ source-git-commit: ed200520b9bed990460a444dabdcf956980362ca
    ADBMobile().mediaTrackEvent(MEDIA_AD_BREAK_COMPLETE, adBreakInfo, contextData)
    ```
 
-Consulte la situación de seguimiento [Reproducción de VOD con anuncios previos a la emisión](../../sdk-implement/tracking-scenarios/vod-preroll-ads.md) para obtener más información.
+Consulte la situación de seguimiento [Reproducción de VOD con anuncios previos a la emisión](/help/sdk-implement/tracking-scenarios/vod-preroll-ads.md) para obtener más información.
