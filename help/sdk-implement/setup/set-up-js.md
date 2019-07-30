@@ -3,7 +3,7 @@ seo-title: Configuración de JavaScript
 title: Configuración de JavaScript
 uuid: 0269 d 8 ad -0 af 8-4 bf 1-9 d 15-e 06 c 2952 a 005
 translation-type: tm+mt
-source-git-commit: 63fb6332694675cd03843995f8f86ae45973d399
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -22,7 +22,7 @@ de medios** Para obtener más información sobre la documentación del SDK de Ad
    * *Una API para suscribirse a eventos del reproductor*: el Media SDK requiere que se invoquen varias API sencillas cuando se producen eventos en el reproductor.
    * *Una API que proporcione información del reproductor*: esta información incluye detalles como el nombre del contenido y la posición del cabezal de reproducción.
 
-1. Añada la biblioteca [descargada](../../sdk-implement/download-sdks.md#section_551A10AD7880426BB29AE52482BB4211) al proyecto. Cree referencias locales a las clases para mayor comodidad.
+1. Añada la biblioteca [descargada](/help/sdk-implement/download-sdks.md#section_551A10AD7880426BB29AE52482BB4211) al proyecto. Cree referencias locales a las clases para mayor comodidad.
 
    1. Expand the `MediaSDK-js-v2.*.zip` file that you downloaded.
    1. Verify that the `MediaSDK.min.js` file exists in the `libs` directory:
@@ -117,4 +117,4 @@ de medios** Para obtener más información sobre la documentación del SDK de Ad
 
 En la versión 2.x, todos los métodos públicos se incluyen en la clase `ADB.va.MediaHeartbeat` para facilitar el trabajo de los desarrolladores. Asimismo, todas las configuraciones están consolidadas en la clase `ADB.va.MediaHeartbeatConfig`. 
 
-Para obtener información detallada sobre la migración de 1.x a 2.x, consulte [Migración de VHL 1.x a 2.x.](../../sdk-implement/va-1x-to-2x/mig-1x-2x-overview.md)
+Para obtener información detallada sobre la migración de 1.x a 2.x, consulte [Migración de VHL 1.x a 2.x.](/help/sdk-implement/va-1x-to-2x/mig-1x-2x-overview.md)
