@@ -3,7 +3,7 @@ seo-title: Interrupción del vídeo 2 de prueba
 title: Interrupción del vídeo 2 de prueba
 uuid: eeccd 534-63 fd -4 dd 3-b 096-0431 bc 9 a 11 ff
 translation-type: tm+mt
-source-git-commit: ee6eebac803410c1c4da1ccb80083025a9c817df
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -23,7 +23,7 @@ Debe completar y registrar estas tareas en el siguiente orden:
    1. Inicio de análisis de medios
    1. Inicio de Heartbeat
    1. Inicio del análisis de Heartbeat
-   Las dos primeras llamadas de arriba contienen metadatos y variables adicionales. For call parameters and metadata, see [Test call details.](../../sdk-implement/validation/test-call-details.md)
+   Las dos primeras llamadas de arriba contienen metadatos y variables adicionales. For call parameters and metadata, see [Test call details.](/help/sdk-implement/validation/test-call-details.md)
 
 1. **Reproducir el vídeo durante 5 minutos sin pausarlo**
 
@@ -31,9 +31,9 @@ Debe completar y registrar estas tareas en el siguiente orden:
 
    Durante la reproducción de contenido principal normal, las llamadas de Heartbeat se envían al servidor cada diez segundos.
 
-   For call parameters and metadata, see [Test call details.](../../sdk-implement/validation/test-call-details.md)
+   For call parameters and metadata, see [Test call details.](/help/sdk-implement/validation/test-call-details.md)
 
-   Also see your platform's [Track Ads](../../sdk-implement/track-ads/track-ads-overview.md) instructions for additonal information about these Ad calls.
+   Also see your platform's [Track Ads](/help/sdk-implement/track-ads/track-ads-overview.md) instructions for additonal information about these Ad calls.
 
 1. **Mover la aplicación o el navegador al fondo**
 
@@ -45,7 +45,7 @@ Debe completar y registrar estas tareas en el siguiente orden:
 
 1. **Reproducir el vídeo durante 5 minutos sin pausarlo**
 
-   For call parameters and metadata, see [Test Call Details.](../../sdk-implement/validation/test-call-details.md)
+   For call parameters and metadata, see [Test Call Details.](/help/sdk-implement/validation/test-call-details.md)
 
 1. **Cerrar el reproductor de vídeo**
 
