@@ -3,7 +3,7 @@ seo-title: Configuración de Chromecast
 title: Configuración de Chromecast
 uuid: d 664 e 394-02 a 2-4985-bbad-be 1 bcc 44 fb 2 b
 translation-type: tm+mt
-source-git-commit: bb3a303edba724c8f444d612b3be9d7250eea363
+source-git-commit: ab400b673e97f9b47c6088e09b7e7d9e7b1c9ee6
 
 ---
 
@@ -32,7 +32,7 @@ El SDK 2.x de Chromecast para las soluciones de Experience Cloud le permite medi
 
 ## Implementación del SDK
 
-1. Añada la biblioteca de Chromecast [descargada](../../sdk-implement/download-sdks.md#section_551A10AD7880426BB29AE52482BB4211) al proyecto.
+1. Añada la biblioteca de Chromecast [descargada](/help/sdk-implement/download-sdks.md#section_551A10AD7880426BB29AE52482BB4211) al proyecto.
 
    1. El archivo `AdobeMobileLibrary-Chromecast-[version]` zip consta de los siguientes componentes de software:
 
