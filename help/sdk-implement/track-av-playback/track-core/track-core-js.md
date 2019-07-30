@@ -3,7 +3,7 @@ seo-title: Seguimiento de reproducción principal en JavaScript
 title: Seguimiento de reproducción principal en JavaScript
 uuid: 3 d 6 e 0 ab 1-899 a -43 c 3-b 632-8276 e 84345 ab
 translation-type: tm+mt
-source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -11,7 +11,7 @@ source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
 # Seguimiento de reproducción principal en JavaScript{#track-core-playback-on-javascript}
 
 >[!IMPORTANT]
->Esta documentación abarca el seguimiento en la versión 2. x del SDK. Si va a implementar una versión 1.x del SDK, puede descargar las guías del desarrollador de 1.x aquí: [Descargar SDK](../../../sdk-implement/download-sdks.md).
+>Esta documentación abarca el seguimiento en la versión 2. x del SDK. Si va a implementar una versión 1.x del SDK, puede descargar las guías del desarrollador de 1.x aquí: [Descargar SDK](/help/sdk-implement/download-sdks.md).
 
 1. **Configuración inicial del seguimiento**
 
@@ -60,7 +60,7 @@ source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
 
    * **Metadatos estándar**
 
-      [Implementación de metadatos estándar en JavaScript](../../../sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-js.md)
+      [Implementación de metadatos estándar en JavaScript](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-js.md)
 
       >[!NOTE]
       >
@@ -68,7 +68,7 @@ source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
 
       * Referencia de API de claves de metadatos de medios: [Claves de metadatos estándar de JavaScript](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript)
 
-         See the comprehensive set of available metadata here: [Audio and video parameters](../../../metrics-and-metadata/audio-video-parameters.md)
+         See the comprehensive set of available metadata here: [Audio and video parameters](/help/metrics-and-metadata/audio-video-parameters.md)
    * **Metadatos personalizados**
 
       Cree un objeto variable para las variables personalizadas y rellene los datos de este medio. Por ejemplo:
@@ -158,6 +158,6 @@ source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
    >
    >Puede ser el mismo origen de evento que se utilizó en el paso 4. Ensure that each `trackPause()` API call is paired with a following `trackPlay()` API call when the playback resumes.
 
-* Situaciones de seguimiento: [Reproducción de VOD sin anuncios](../../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md)
+* Situaciones de seguimiento: [Reproducción de VOD sin anuncios](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)
 * Reproductor de muestra incluido con el SDK para JavaScript para ver un ejemplo de seguimiento completo.
 
