@@ -3,7 +3,7 @@ seo-title: Reproducción de VOD con almacenamiento en búfer
 title: Reproducción de VOD con almacenamiento en búfer
 uuid: 958 f 7692-7193-40 fb-a 8 e 7-2 ff 4 fa 805330
 translation-type: tm+mt
-source-git-commit: b2d2f7078d655c6e50b3f2925002f93d5a0af533
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -14,7 +14,7 @@ source-git-commit: b2d2f7078d655c6e50b3f2925002f93d5a0af533
 
 En esta situación, se almacena en búfer cuando el contenido de VOD se reproduce.
 
-Si no se indica lo contrario, las llamadas de red en este escenario son iguales a las llamadas que se hacen en el escenario de [Reproducción de VOD sin anuncios.](../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md)
+Si no se indica lo contrario, las llamadas de red en este escenario son iguales a las llamadas que se hacen en el escenario de [Reproducción de VOD sin anuncios.](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)
 
 | Activador   | Método de Heartbeat   | Llamadas de red   | Notas   |
 |---|---|---|---|
