@@ -3,7 +3,7 @@ seo-title: Seguimiento del almacenamiento en búfer en Android
 title: Seguimiento del almacenamiento en búfer en Android
 uuid: f 16 ce 76 d -1 db 3-4 b 51-8 c 98-54 cb 781 f 71 d 7
 translation-type: tm+mt
-source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -11,7 +11,7 @@ source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
 # Seguimiento del almacenamiento en búfer en Android{#track-buffering-on-android}
 
 >[!IMPORTANT]
->En las siguientes instrucciones se indican los pasos para la implementación en todos los kits de desarrollo de software de 2.x. If you are implementing a 1.x version of the SDK, you can download the 1.x Developers Guides here: [Download SDks.](../../../sdk-implement/download-sdks.md)
+>En las siguientes instrucciones se indican los pasos para la implementación en todos los kits de desarrollo de software de 2.x. If you are implementing a 1.x version of the SDK, you can download the 1.x Developers Guides here: [Download SDks.](/help/sdk-implement/download-sdks.md)
 
 ## Constantes de seguimiento de búfer
 
@@ -38,4 +38,4 @@ source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
    }
    ```
 
-Consulte la situación de seguimiento [Reproducción de VOD con almacenamiento en búfer](../../../sdk-implement/tracking-scenarios/vod-buffering.md) para obtener más información.
+Consulte la situación de seguimiento [Reproducción de VOD con almacenamiento en búfer](/help/sdk-implement/tracking-scenarios/vod-buffering.md) para obtener más información.
