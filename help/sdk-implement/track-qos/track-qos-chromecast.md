@@ -3,7 +3,7 @@ seo-title: Seguimiento de la calidad de la experiencia en Chromecast
 title: Seguimiento de la calidad de la experiencia en Chromecast
 uuid: d 0 cdc 8 cd -4 db 0-45 ef -9470-1 cba 3996305 b
 translation-type: tm+mt
-source-git-commit: ed200520b9bed990460a444dabdcf956980362ca
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -12,7 +12,7 @@ source-git-commit: ed200520b9bed990460a444dabdcf956980362ca
 
 >[!IMPORTANT]
 >
->En las siguientes instrucciones se indican los pasos para la implementación en todos los kits de desarrollo de software de 2.x. Si va a implementar una versión 1.x del SDK, puede descargar las guías del desarrollador de 1.x aquí: [Descargar SDK.](../../sdk-implement/download-sdks.md)
+>En las siguientes instrucciones se indican los pasos para la implementación en todos los kits de desarrollo de software de 2.x. Si va a implementar una versión 1.x del SDK, puede descargar las guías del desarrollador de 1.x aquí: [Descargar SDK.](/help/sdk-implement/download-sdks.md)
 
 ## Información general {#section_DDB8DFA47C5744AB9A04392AD5959BF7}
 
@@ -63,7 +63,7 @@ La llamada `trackError(“media error id”);`
    >Actualice el objeto qos y llame al suceso change de velocidad de bits en cada cambio de velocidad de bits. Esto proporciona los datos de QoS más precisos.
 
 1. Asegúrese de que el método `getQoSObject()` devuelve la información de QoS más actual.
-1. When the media player encounters an error, and the error event is available to the player API, use `trackError()` to capture the error information. (Consulte [Información general](../../sdk-implement/track-errors/track-errors-overview.md).)
+1. When the media player encounters an error, and the error event is available to the player API, use `trackError()` to capture the error information. (Consulte [Información general](/help/sdk-implement/track-errors/track-errors-overview.md).)
 
    >[!TIP]
    >
