@@ -3,7 +3,7 @@ seo-title: Lado del cliente
 title: Lado del cliente
 uuid: ba 0496 e 2-585 a -4176-b 583-c 705726 fecc 6
 translation-type: tm+mt
-source-git-commit: 5ff3566fae2c1df559341057fafdd289774e4b2f
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -14,7 +14,7 @@ Media Analytics (Heartbeats) es la solución de seguimiento de medios estandariz
 
 Las integraciones del lado del cliente se implementan solo con Media Analytics. Se puede implementar el Media SDK o la API de Media Collection (o ambos). La ruta del lado del cliente es apta para cualquier reproductor, incluidos los reproductores del cliente u OVP como Brightcove, Ooyala y thePlatform, entre otros.
 
-If Media Analytics is your intended path, see [Media SDK Implementation](../../sdk-implement/setup/setup-overview.md) and [Media Collection API.](../../media-collection-api/mc-api-overview.md)
+If Media Analytics is your intended path, see [Media SDK Implementation](/help/sdk-implement/setup/setup-overview.md) and [Media Collection API.](/help/media-collection-api/mc-api-overview.md)
 
 >[!IMPORTANT]
 >
