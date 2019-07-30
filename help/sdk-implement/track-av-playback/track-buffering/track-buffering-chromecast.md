@@ -3,7 +3,7 @@ seo-title: Seguimiento del almacenamiento en búfer en Chromecast
 title: Seguimiento del almacenamiento en búfer en Chromecast
 uuid: f 6 fa 3 a 1 a-d 7 de -4293-bd 11-ebe 9 e 130 badd
 translation-type: tm+mt
-source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -12,7 +12,7 @@ source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
 
 >[!IMPORTANT]
 >
->En las siguientes instrucciones se indican los pasos para la implementación en todos los kits de desarrollo de software de 2.x. Si va a implementar una versión 1.x del SDK, puede descargar las guías del desarrollador de 1.x aquí: [Descargar SDK.](../../../sdk-implement/download-sdks.md)
+>En las siguientes instrucciones se indican los pasos para la implementación en todos los kits de desarrollo de software de 2.x. Si va a implementar una versión 1.x del SDK, puede descargar las guías del desarrollador de 1.x aquí: [Descargar SDK.](/help/sdk-implement/download-sdks.md)
 
 ## Constantes de seguimiento de búfer
 
@@ -36,4 +36,4 @@ source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
    ADBMobile.media.trackEvent(ADBMobile.media.Event.BufferComplete);
    ```
 
-Consulte la situación de seguimiento [Reproducción de VOD con almacenamiento en búfer](../../../sdk-implement/tracking-scenarios/vod-buffering.md) para obtener más información.
+Consulte la situación de seguimiento [Reproducción de VOD con almacenamiento en búfer](/help/sdk-implement/tracking-scenarios/vod-buffering.md) para obtener más información.
