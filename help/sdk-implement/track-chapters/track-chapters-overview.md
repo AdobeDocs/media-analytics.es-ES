@@ -3,7 +3,7 @@ seo-title: Información general
 title: Información general
 uuid: 3 fe 32425-5 e 2 a -4886-8 fea-d 91 d 15671 bb 0
 translation-type: tm+mt
-source-git-commit: b461da1823e45eef86302e14501eac0d4b055c7a
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -12,7 +12,7 @@ source-git-commit: b461da1823e45eef86302e14501eac0d4b055c7a
 
 >[!IMPORTANT]
 >
->Las instrucciones siguientes proporcionan consejos para la implementación mediante SDK 2. x. Si va a implementar una versión 1.x del SDK, puede descargar la guía del desarrollador aquí: [Descargar SDK.](../../sdk-implement/download-sdks.md)
+>Las instrucciones siguientes proporcionan consejos para la implementación mediante SDK 2. x. Si va a implementar una versión 1.x del SDK, puede descargar la guía del desarrollador aquí: [Descargar SDK.](/help/sdk-implement/download-sdks.md)
 
 El seguimiento de capítulo y segmento está disponible para capítulos o capítulos de medios personalizados. Algunos usos comunes del seguimiento de capítulos son definir segmentos personalizados basados en contenido multimedia (como entradas de béisbol) o definir segmentos de contenido entre pausas publicitarias. **No** es necesario rastrear capítulo para implementaciones de seguimiento de medios principales.
 
