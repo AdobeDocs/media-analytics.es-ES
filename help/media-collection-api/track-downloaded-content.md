@@ -3,7 +3,7 @@ seo-title: Seguimiento del contenido descargado
 title: Seguimiento del contenido descargado
 uuid: 0718689 d -9602-4 e 3 f -833 c -8297 aae 1 d 909
 translation-type: tm+mt
-source-git-commit: 501bbfe8b44a2a8e9b2ac2caab49b2317f9ea0f3
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -30,7 +30,7 @@ Cada enfoque tiene sus ventajas e inconvenientes: la API de Media Collection rea
 
 ### Esquemas de eventos
 
-La API de contenido descargado se basa en la API de Media Collection, por lo que los datos de eventos que los lotes y envíos del reproductor requieren que los mismos esquemas de eventos se utilicen como en la API de Media Collection. For information on these schemas, see: [Overview;](../media-collection-api/mc-api-overview.md) and [Validating event requests.](../media-collection-api/mc-api-impl/mc-api-validate-reqs.md)
+La API de contenido descargado se basa en la API de Media Collection, por lo que los datos de eventos que los lotes y envíos del reproductor requieren que los mismos esquemas de eventos se utilicen como en la API de Media Collection. For information on these schemas, see: [Overview;](/help/media-collection-api/mc-api-overview.md) and [Validating event requests.](/help/media-collection-api/mc-api-impl/mc-api-validate-reqs.md)
 
 ### Orden de los eventos
 
