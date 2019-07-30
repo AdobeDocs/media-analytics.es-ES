@@ -3,7 +3,7 @@ seo-title: Seguimiento de anuncios en JavaScript
 title: Seguimiento de anuncios en JavaScript
 uuid: 4 d 81 d 29 c-c 55 d -4 d 48-b 505-3260922712 ff
 translation-type: tm+mt
-source-git-commit: ed200520b9bed990460a444dabdcf956980362ca
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -12,7 +12,7 @@ source-git-commit: ed200520b9bed990460a444dabdcf956980362ca
 
 >[!IMPORTANT]
 >
->Las instrucciones siguientes proporcionan indicaciones para la implementación con los SDK 2. x. Si va a implementar una versión 1.x del SDK, puede descargar las guías del desarrollador de 1.x aquí: [Descargar SDK.](../../sdk-implement/download-sdks.md)
+>Las instrucciones siguientes proporcionan indicaciones para la implementación con los SDK 2. x. Si va a implementar una versión 1.x del SDK, puede descargar las guías del desarrollador de 1.x aquí: [Descargar SDK.](/help/sdk-implement/download-sdks.md)
 
 ## Constantes de seguimiento de anuncio
 
@@ -74,7 +74,7 @@ source-git-commit: ed200520b9bed990460a444dabdcf956980362ca
 
 1. De forma opcional, adjunte metadatos estándar o de anuncio a la sesión de seguimiento de medios a través de variables de datos de contexto.
 
-   * [Implementación de metadatos de publicidad estándar en JavaScript](../../sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-js.md)
+   * [Implementación de metadatos de publicidad estándar en JavaScript](/help/sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-js.md)
    * **Metadatos de anuncio personalizados**: para los metadatos personalizados, cree un objeto de variable para las variables de datos personalizadas y rellénelas con los datos del anuncio actual:
 
       ```js
@@ -123,4 +123,4 @@ source-git-commit: ed200520b9bed990460a444dabdcf956980362ca
    };
    ```
 
-Consulte la situación de seguimiento [Reproducción de VOD con anuncios previos a la emisión](../../sdk-implement/tracking-scenarios/vod-preroll-ads.md) para obtener más información.
+Consulte la situación de seguimiento [Reproducción de VOD con anuncios previos a la emisión](/help/sdk-implement/tracking-scenarios/vod-preroll-ads.md) para obtener más información.
