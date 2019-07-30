@@ -3,7 +3,7 @@ seo-title: Reproducción de VOD con llamada a otro punto del contenido principal
 title: Reproducción de VOD con llamada a otro punto del contenido principal
 uuid: 5 c 2392 f 6-9 b 9 c -42 f 5-833 f -77423 d 1 e 6222
 translation-type: tm+mt
-source-git-commit: b2d2f7078d655c6e50b3f2925002f93d5a0af533
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -14,16 +14,16 @@ source-git-commit: b2d2f7078d655c6e50b3f2925002f93d5a0af533
 
 En esta situación, se hace una llamada a otro punto del contenido principal durante la reproducción.
 
-Este es el mismo escenario que el de [Reproducción de VOD sin anuncios](../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md), pero una parte del contenido se analiza y se realiza una llamada desde un punto del contenido principal hasta otro punto.
+Este es el mismo escenario que el de [Reproducción de VOD sin anuncios](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md), pero una parte del contenido se analiza y se realiza una llamada desde un punto del contenido principal hasta otro punto.
 
 | Activador   | Método de Heartbeat   | Llamadas de red   | Notas   |
 | --- | --- | --- | --- |
-| El usuario hace clic en [!UICONTROL Reproducir]. | `trackSessionStart` | Inicio del contenido de Analytics, inicio del contenido de Heartbeat | La biblioteca de medición no sabe que hay un anuncio previo, por lo que estas llamadas de red son idénticas al escenario de [Reproducción de VOD sin anuncios](../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md). |
+| El usuario hace clic en [!UICONTROL Reproducir]. | `trackSessionStart` | Inicio del contenido de Analytics, inicio del contenido de Heartbeat | La biblioteca de medición no sabe que hay un anuncio previo, por lo que estas llamadas de red son idénticas al escenario de [Reproducción de VOD sin anuncios](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md). |
 | Se reproduce el primer fotograma del contenido. | `trackPlay` | Reproducción del contenido de Heartbeat | Cuando el contenido del capítulo se reproduce antes del contenido principal, los latidos comienzan al inicio del capítulo. |
-| Se reproduce el contenido. |  | Latidos de contenido | Esta llamada de red es exactamente la misma que la del escenario de [Reproducción de VOD sin anuncios](../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md). |
+| Se reproduce el contenido. |  | Latidos de contenido | Esta llamada de red es exactamente la misma que la del escenario de [Reproducción de VOD sin anuncios](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md). |
 | El usuario inicia una operación de búsqueda en el contenido. | `trackSeekStart` |  | No heartbeats go out till seek is complete, for example, `trackSeekComplete` |
 | La llamada a otro punto del contenido finaliza. | `trackSeekComplete` |  | Los latidos comienzan a emitirse cuando termina la llamada a otro punto del contenido.  Recuerde: El valor del cabezal de reproducción debe representar la nueva posición del cabezal de reproducción tras la llamada a otro punto del contenido principal. |
-| El contenido termina de reproducirse. | `trackComplete` | Finalización de contenido de Heartbeat | Esta llamada de red es exactamente la misma que la del escenario de [Reproducción de VOD sin anuncios](../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md). |
+| El contenido termina de reproducirse. | `trackComplete` | Finalización de contenido de Heartbeat | Esta llamada de red es exactamente la misma que la del escenario de [Reproducción de VOD sin anuncios](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md). |
 | Fin de la sesión. | `trackSessionEnd` |  | `SessionEnd` |
 
 ## Código de muestra {#section_q2d_wcj_x2b}
