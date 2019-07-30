@@ -3,7 +3,7 @@ seo-title: Solicitud de eventos
 title: Solicitud de eventos
 uuid: b 237 f 0 a 0-dc 29-418 b -89 ee -04 c 596 a 27 f 39
 translation-type: tm+mt
-source-git-commit: 6468ace2e30db1a427a3d7f1b080ab42c578351a
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -17,7 +17,7 @@ https://{uri}/api/v1/sessions/{sid}/events
 
 ## Parámetro de URI
 
-`sid`: El ID de sesión devuelto desde una [solicitud de Sesiones.](../../media-collection-api/mc-api-ref/mc-api-sessions-req.md)
+`sid`: El ID de sesión devuelto desde una [solicitud de Sesiones.](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md)
 
 ## Cuerpo de la solicitud
 
@@ -44,7 +44,7 @@ El cuerpo de la solicitud debe ser JSON y debe tener la misma estructura que est
 * `customMetadata` (Opcional; enviar solo con `adStart` tipos `chapterStart` de eventos)
 * `qoeData` (Opcional)
 
-Para obtener una lista de tipos de eventos válidos para esta versión, consulte [Tipos de eventos y descripciones.](../../media-collection-api/mc-api-ref/mc-api-event-types.md)
+Para obtener una lista de tipos de eventos válidos para esta versión, consulte [Tipos de eventos y descripciones.](/help/media-collection-api/mc-api-ref/mc-api-event-types.md)
 
 >[!IMPORTANT]
 >
@@ -70,8 +70,8 @@ Access-Control-Expose-Headers Location
 | Código de respuesta HTTP | Descripción | Elementos de acción de cliente |
 |---|---|---|
 | **204** | **Sin contenido.** <br/><br/>La llamada de Heartbeat se ha realizado correctamente. | N/D |
-| **400** | **Solicitud incorrecta.** <br/><br/>El formato de la solicitud es incorrecto. | Compruebe los [esquemas de validación de JSON](../../media-collection-api/mc-api-ref/mc-api-json-validation.md) para el tipo de solicitud. |
-| **404** | **No encontrado.**<br/><br/>No se encontró el ID de sesión de la sesión de medios en el servicio back-end. | La aplicación cliente debe utilizar la API de [solicitud de sesiones](../../media-collection-api/mc-api-ref/mc-api-sessions-req.md) para crear otra sesión de medios e informar de su seguimiento. |
-| **410** | **No existe.**<br/><br/>La sesión de medios se encuentra en el servicio back-end pero el cliente ya no puede informar sobre ella. | La aplicación cliente debe utilizar la API de [solicitud de sesiones](../../media-collection-api/mc-api-ref/mc-api-sessions-req.md) para crear otra sesión de medios e informar de su seguimiento. |
+| **400** | **Solicitud incorrecta.** <br/><br/>El formato de la solicitud es incorrecto. | Compruebe los [esquemas de validación de JSON](/help/media-collection-api/mc-api-ref/mc-api-json-validation.md) para el tipo de solicitud. |
+| **404** | **No encontrado.**<br/><br/>No se encontró el ID de sesión de la sesión de medios en el servicio back-end. | La aplicación cliente debe utilizar la API de [solicitud de sesiones](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) para crear otra sesión de medios e informar de su seguimiento. |
+| **410** | **No existe.**<br/><br/>La sesión de medios se encuentra en el servicio back-end pero el cliente ya no puede informar sobre ella. | La aplicación cliente debe utilizar la API de [solicitud de sesiones](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) para crear otra sesión de medios e informar de su seguimiento. |
 | **500** | **Error del servidor** | N/D |
 
