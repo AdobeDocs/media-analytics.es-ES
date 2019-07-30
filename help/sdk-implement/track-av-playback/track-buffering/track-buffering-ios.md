@@ -3,7 +3,7 @@ seo-title: Seguimiento del almacenamiento en búfer en iOS
 title: Seguimiento del almacenamiento en búfer en iOS
 uuid: 4 f 4 db 23 a -489 b -4 b 41-bb 6 e -393 ec 64 d 52 a 2
 translation-type: tm+mt
-source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -12,7 +12,7 @@ source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
 
 >[!IMPORTANT]
 >
->En las siguientes instrucciones se indican los pasos para la implementación en todos los kits de desarrollo de software de 2.x. Si va a implementar una versión 1.x del SDK, puede descargar las guías del desarrollador de 1.x aquí: [Descargar SDK.](../../../sdk-implement/download-sdks.md)
+>En las siguientes instrucciones se indican los pasos para la implementación en todos los kits de desarrollo de software de 2.x. Si va a implementar una versión 1.x del SDK, puede descargar las guías del desarrollador de 1.x aquí: [Descargar SDK.](/help/sdk-implement/download-sdks.md)
 
 ## Constantes de seguimiento de búfer
 
@@ -44,4 +44,4 @@ source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
    }
    ```
 
-Consulte la situación de seguimiento [Reproducción de VOD con almacenamiento en búfer](../../../sdk-implement/tracking-scenarios/vod-buffering.md) para obtener más información.
+Consulte la situación de seguimiento [Reproducción de VOD con almacenamiento en búfer](/help/sdk-implement/tracking-scenarios/vod-buffering.md) para obtener más información.
