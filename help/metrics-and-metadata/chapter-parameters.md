@@ -3,7 +3,7 @@ seo-title: Parámetros de capítulo
 title: Parámetros de capítulo
 uuid: 2 a 6 b 9247-a 694-46 e 9-98 e 1-424 c 08 c 27 ec 2
 translation-type: tm+mt
-source-git-commit: f7ffb9a88f1cf3ffefba0ae5508a857fa3de8432
+source-git-commit: af8da9da6cbe36e56f13cd7819f3682522e169bf
 
 ---
 
@@ -73,13 +73,13 @@ Descripción de los datos de la tabla:
 
 |   Implementación   | Parámetros de red | Creación de informes |
 | --- | --- | --- |
-| <ul> <li> **Clave de SDK:**<br/>establecida automáticamente  </li> <li> **Clave de API:**<br/>N/D </li> <li> **Requerido:**<br/> sí </li> <li> **Tipo:**<br/> cadena </li> <li> **Enviado con:**<br/>Inicio del capítulo </li> <li> **Versión del SDK mínima:** 1.3 </li> <li> **Valor de muestra:**<br/> TRUE </li><li> **Descripción:**<br/>Número de inicios de capítulo. Importante: Si se establece este evento, el único valor posible es TRUE. Si no se establece este evento, no se enviará ningún valor.   </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> (a. media. chapter.<br/>view) </li> <li> **Heartbeat:**<br/> (s: event:<br/>type = chapter_ start) </li> </ul> | <ul> <li> **Disponible:**<br/> sí </li> <li> **Variable reservada:**<br/>evento </li> <li> **Nombre del informe:**<br/> Capítulo inicia g </li> <li> **Datos de contexto:**<br/> (a. media. chapter.<br/>view) </li> <li> **Fuente de datos:**<br/>videochapterstart </li> <li> **Audience Manager:**<br/> (c_ contextdata.<br/>a. media. chapter.<br/>view) </li> </ul> |
+| <ul> <li> **Clave de SDK:**<br/>establecida automáticamente  </li> <li> **Clave de API:**<br/>N/D </li> <li> **Requerido:**<br/> sí </li> <li> **Tipo:**<br/> cadena </li> <li> **Enviado con:**<br/>Inicio del capítulo </li> <li> **Versión del SDK mínima:** 1.3 </li> <li> **Valor de muestra:**<br/> TRUE </li><li> **Descripción:**<br/>Número de inicios de capítulo. **Importante:** Si se establece este evento, el único valor posible es TRUE. Si no se establece este evento, no se enviará ningún valor.   </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> (a. media. chapter.<br/>view) </li> <li> **Heartbeat:**<br/> (s: event:<br/>type = chapter_ start) </li> </ul> | <ul> <li> **Disponible:**<br/> sí </li> <li> **Variable reservada:**<br/>evento </li> <li> **Nombre del informe:**<br/> Capítulo inicia g </li> <li> **Datos de contexto:**<br/> (a. media. chapter.<br/>view) </li> <li> **Fuente de datos:**<br/>videochapterstart </li> <li> **Audience Manager:**<br/> (c_ contextdata.<br/>a. media. chapter.<br/>view) </li> </ul> |
 
 ### Capítulo completado
 
 |   Implementación   | Parámetros de red | Creación de informes |
 | --- | --- | --- |
-| <ul> <li> **Clave de SDK:**<br/>establecida automáticamente  </li> <li> **Clave de API:**<br/>N/D </li> <li> **Requerido:**<br/> sí </li> <li> **Tipo:**<br/> cadena </li> <li> **Enviado con:**<br/> Cerrar capítulo </li> <li> **Versión del SDK mínima:** 1.3</li> <li> **Valor de muestra:**<br/> TRUE </li><li> **Descripción:**<br/>Número de capítulos completados. Importante: Si se establece este evento, el único valor posible es TRUE. Si no se establece este evento, no se enviará ningún valor.   </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> (a. media. chapter.<br/>complete) </li> <li> **Heartbeat:**<br/> (s: event:<br/>type = chapter_ complete) </li> </ul> | <ul> <li> **Disponible:**<br/> sí </li> <li> **Variable reservada:**<br/>evento </li> <li> **Nombre del informe:**<br/> Capítulo completado g </li> <li> **Datos de contexto:**<br/> (a. media. chapter.<br/>complete) </li> <li> **Fuente de datos:**<br/>videochaptercomplete </li> <li> **Audience Manager:**<br/> (c_ contextdata.<br/>a. media. chapter.<br/>complete) </li> </ul> |
+| <ul> <li> **Clave de SDK:**<br/>establecida automáticamente  </li> <li> **Clave de API:**<br/>N/D </li> <li> **Requerido:**<br/> sí </li> <li> **Tipo:**<br/> cadena </li> <li> **Enviado con:**<br/> Cerrar capítulo </li> <li> **Versión del SDK mínima:** 1.3</li> <li> **Valor de muestra:**<br/> TRUE </li><li> **Descripción:**<br/>Número de capítulos completados. **Importante:** Si se establece este evento, el único valor posible es TRUE. Si no se establece este evento, no se enviará ningún valor.   </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> (a. media. chapter.<br/>complete) </li> <li> **Heartbeat:**<br/> (s: event:<br/>type = chapter_ complete) </li> </ul> | <ul> <li> **Disponible:**<br/> sí </li> <li> **Variable reservada:**<br/>evento </li> <li> **Nombre del informe:**<br/> Capítulo completado g </li> <li> **Datos de contexto:**<br/> (a. media. chapter.<br/>complete) </li> <li> **Fuente de datos:**<br/>videochaptercomplete </li> <li> **Audience Manager:**<br/> (c_ contextdata.<br/>a. media. chapter.<br/>complete) </li> </ul> |
 
 ### tiempo invertido en el capítulo
 
