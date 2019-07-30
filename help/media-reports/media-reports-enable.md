@@ -3,7 +3,7 @@ seo-title: Habilitación de informes de medios
 title: Habilitación de informes de medios
 uuid: d 306068 d-a 308-4 b 6 e -8 a 72-742 dda 0 de 428
 translation-type: tm+mt
-source-git-commit: ae51df03ef9e57508a50f6928fee140f3b136b58
+source-git-commit: ab400b673e97f9b47c6088e09b7e7d9e7b1c9ee6
 
 ---
 
@@ -65,4 +65,4 @@ Cada grupo de informes que recopile métricas de medios debe configurarse antes 
 
 >[!IMPORTANT]
 >
->Do not change the classification names for any variables listed in the Metrics and metadata tables (e.g., [Audio and video parameters](../metrics-and-metadata/audio-video-parameters.md)) that are described there under Reporting/Reserved Variable as "classification". Las clasificaciones de medios se definen cuando un grupo de informes está habilitado para el seguimiento de medios. Cada cierto tiempo, Adobe agrega nuevas propiedades y, cuando esto sucede, los clientes deben volver a habilitar sus grupos de informes para obtener acceso a las nuevas propiedades de medios. Durante el proceso de actualización, Adobe determina si las clasificaciones están habilitadas marcando los nombres de las variables. Si falta alguno, Adobe agrega los que faltan.
+>Do not change the classification names for any variables listed in the Metrics and metadata tables (e.g., [Audio and video parameters](/help/metrics-and-metadata/audio-video-parameters.md)) that are described there under Reporting/Reserved Variable as "classification". Las clasificaciones de medios se definen cuando un grupo de informes está habilitado para el seguimiento de medios. Cada cierto tiempo, Adobe agrega nuevas propiedades y, cuando esto sucede, los clientes deben volver a habilitar sus grupos de informes para obtener acceso a las nuevas propiedades de medios. Durante el proceso de actualización, Adobe determina si las clasificaciones están habilitadas marcando los nombres de las variables. Si falta alguno, Adobe agrega los que faltan.
