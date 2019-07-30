@@ -3,7 +3,7 @@ seo-title: Configuración de iOS
 title: Configuración de iOS
 uuid: a 1 c 6 be 79-a 6 dc -47 b 6-93 b 3-ac 7 b 42 f 1 f 3 eb
 translation-type: tm+mt
-source-git-commit: 63fb6332694675cd03843995f8f86ae45973d399
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -28,7 +28,7 @@ Para obtener más información sobre la documentación del SDK de Adobe Mobile, 
 
 ## Implementación del SDK
 
-1. Añada el Media SDK [descargado](../../sdk-implement/download-sdks.md#section_551A10AD7880426BB29AE52482BB4211) al proyecto.
+1. Añada el Media SDK [descargado](/help/sdk-implement/download-sdks.md#section_551A10AD7880426BB29AE52482BB4211) al proyecto.
 
    1. Compruebe que los siguientes componentes de software existan en el directorio `libs`:
 
@@ -138,7 +138,7 @@ Para obtener más información sobre la documentación del SDK de Adobe Mobile, 
 
 En la versión 2.x, todos los métodos públicos se incluyen en la clase `ADBMediaHeartbeat` para facilitar el trabajo de los desarrolladores. Todas las configuraciones se incluyen en la clase `ADBMediaHeartbeatConfig`.
 
-Para obtener información detallada sobre la migración de 1.x a 2.x, consulte [Migración de VHL 1.x a 2.x.](../../sdk-implement/va-1x-to-2x/mig-1x-2x-overview.md)
+Para obtener información detallada sobre la migración de 1.x a 2.x, consulte [Migración de VHL 1.x a 2.x.](/help/sdk-implement/va-1x-to-2x/mig-1x-2x-overview.md)
 
 ## Configurar una aplicación nativa para tvOS
 
