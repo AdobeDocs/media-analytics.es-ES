@@ -3,7 +3,7 @@ seo-title: Reanudación de sesiones inactivas
 title: Reanudación de sesiones inactivas
 uuid: 3 ff 1205 d -7 bbe -4016-9 bd 7-6 e 34 b 7862 c 4 c
 translation-type: tm+mt
-source-git-commit: 8c20af925a1043c90b84d7d13021848725e05500
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -19,7 +19,7 @@ El SDK de medios rastrea automáticamente el tiempo que la reproducción de medi
 * Atascado
 * Almacenamiento en búfer
 
-Si una sesión de seguimiento de medios permanece en estado inactivo durante más de 30 minutos, la sesión se cerrará automáticamente. Si el usuario reanuda una sesión de seguimiento de vídeos previamente inactiva (`trackPlay`), Media Heartbeat crea automáticamente una nueva sesión de vídeo utilizando la información de vídeo y los metadatos utilizados anteriormente, y envía un evento de reanudación de latidos. Para obtener más información, consulte: [Parámetros de audio y vídeo.](../../metrics-and-metadata/audio-video-parameters.md)
+Si una sesión de seguimiento de medios permanece en estado inactivo durante más de 30 minutos, la sesión se cerrará automáticamente. Si el usuario reanuda una sesión de seguimiento de vídeos previamente inactiva (`trackPlay`), Media Heartbeat crea automáticamente una nueva sesión de vídeo utilizando la información de vídeo y los metadatos utilizados anteriormente, y envía un evento de reanudación de latidos. Para obtener más información, consulte: [Parámetros de audio y vídeo.](/help/metrics-and-metadata/audio-video-parameters.md)
 
 ## Reanudar manualmente sesión cerrada anteriormente
 
