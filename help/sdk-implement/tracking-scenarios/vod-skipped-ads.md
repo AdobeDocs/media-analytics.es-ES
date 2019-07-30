@@ -3,7 +3,7 @@ seo-title: Reproducción de VOD con anuncios omitidos
 title: Reproducción de VOD con anuncios omitidos
 uuid: f 3 ab 3524-abcb -4051-b 64 e-a 1 aad 6 e 3 dd 3 f
 translation-type: tm+mt
-source-git-commit: b2d2f7078d655c6e50b3f2925002f93d5a0af533
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -16,22 +16,22 @@ En esta situación, se reproduce contenido de VOD y se omite un anuncio.
 
 ### Un VOD con un anuncio pre-roll omitido
 
-This is the same scenario as [VOD playback with pre-roll ads](../../sdk-implement/tracking-scenarios/vod-preroll-ads.md), except the application has a provision to let the user skip the ad, on the click of a skip button perhaps.
+This is the same scenario as [VOD playback with pre-roll ads](/help/sdk-implement/tracking-scenarios/vod-preroll-ads.md), except the application has a provision to let the user skip the ad, on the click of a skip button perhaps.
 
 | Activador   | Método de Heartbeat  | Llamadas de red   | Notas   |
 | --- | --- | --- | --- |
-| El usuario hace clic en [!UICONTROL Reproducir]. | `trackSessionStart()` | Inicio del contenido de Analytics, inicio del contenido de Heartbeat | La biblioteca de medición no sabe que hay un anuncio pre-roll. Estas llamadas de red son exactamente iguales que la [Reproducción de VOD sin anuncios](../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md). |
+| El usuario hace clic en [!UICONTROL Reproducir]. | `trackSessionStart()` | Inicio del contenido de Analytics, inicio del contenido de Heartbeat | La biblioteca de medición no sabe que hay un anuncio pre-roll. Estas llamadas de red son exactamente iguales que la [Reproducción de VOD sin anuncios](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md). |
 | El anuncio empieza. | <ul> <li> `trackEvent:AdBreakStart` </li> <li> `trackEvent:AdStart` </li> </ul> | Inicio de publicidad de Analytics, inicio de publicidad de Heartbeat |  |
 | Se reproduce el primer fotograma del anuncio. | `trackPlay()` | Reproducción de anuncio de Heartbeat | Cuando se reproduce el contenido del anuncio antes del contenido principal, los latidos empiezan cuando comienza a reproducirse el anuncio. |
 | Se reproduce el anuncio. |  | Latidos de anuncio |  |
 | Se omite el anuncio. | `trackEvent:trackAdSkip` |  | No hay una llamada de red de finalización de publicidad. |
-| Se reproduce el contenido. |  | Latidos de contenido | These network calls are exactly the same as the [VOD playback with no ads](../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md) scenario. |
-| El contenido termina de reproducirse. | `trackComplete()` | Finalización de contenido de Heartbeat | Esta llamada de red es exactamente la misma que la del escenario de [Reproducción de VOD sin anuncios](../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md). |
+| Se reproduce el contenido. |  | Latidos de contenido | These network calls are exactly the same as the [VOD playback with no ads](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) scenario. |
+| El contenido termina de reproducirse. | `trackComplete()` | Finalización de contenido de Heartbeat | Esta llamada de red es exactamente la misma que la del escenario de [Reproducción de VOD sin anuncios](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md). |
 | La sesión finaliza. | `trackSessionEnd()` |  | `SessionEnd` |
 
 ## Parámetros {#section_4A0F92BF3DDD4623A1EE61C76582A4A6}
 
-Los parámetros son idénticos a los de la situación [Reproducción de VOD con anuncios previos a la emisión](../../sdk-implement/tracking-scenarios/vod-preroll-ads.md), pero no hay llamada de finalización de anuncio ni de finalización de pausa publicitaria.
+Los parámetros son idénticos a los de la situación [Reproducción de VOD con anuncios previos a la emisión](/help/sdk-implement/tracking-scenarios/vod-preroll-ads.md), pero no hay llamada de finalización de anuncio ni de finalización de pausa publicitaria.
 
 ## Código de muestra {#section_lxt_qz3_x2b}
 
