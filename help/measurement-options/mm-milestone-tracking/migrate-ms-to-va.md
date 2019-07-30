@@ -3,7 +3,7 @@ seo-title: Migración de Milestone a Media Analytics
 title: Migración de Milestone a Media Analytics
 uuid: fdc 96146-af 63-48 ce-b 938-c 0 ca 70729277
 translation-type: tm+mt
-source-git-commit: 27740fc1753e8ac9cf5a4b240a56b1c2dd567010
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -12,7 +12,7 @@ source-git-commit: 27740fc1753e8ac9cf5a4b240a56b1c2dd567010
 
 ## Información general {#section_ihl_nbz_cfb}
 
-Los conceptos básicos de la medición de vídeo son los mismos para Milestone y Media Analytics, ya que recopilan los eventos del reproductor de vídeo y los asignan a los métodos de análisis, a la vez que recogen los metadatos y valores del reproductor para asignarlos a las variables de análisis. La solución Media Analytics se desarrolló a partir de Milestone, por lo que muchos de los métodos y métricas son comunes. Sin embargo, el enfoque de la configuración y el código han cambiado considerablemente. Debería ser posible actualizar el código de evento del reproductor para que apunte a los nuevos métodos de Media Analytics. See [SDK Overview](../../sdk-implement/setup/setup-overview.md) and [Tracking Overview](../../sdk-implement/track-av-playback/track-core-overview.md) for more details on implementing Media Analytics.
+Los conceptos básicos de la medición de vídeo son los mismos para Milestone y Media Analytics, ya que recopilan los eventos del reproductor de vídeo y los asignan a los métodos de análisis, a la vez que recogen los metadatos y valores del reproductor para asignarlos a las variables de análisis. La solución Media Analytics se desarrolló a partir de Milestone, por lo que muchos de los métodos y métricas son comunes. Sin embargo, el enfoque de la configuración y el código han cambiado considerablemente. Debería ser posible actualizar el código de evento del reproductor para que apunte a los nuevos métodos de Media Analytics. See [SDK Overview](/help/sdk-implement/setup/setup-overview.md) and [Tracking Overview](/help/sdk-implement/track-av-playback/track-core-overview.md) for more details on implementing Media Analytics.
 
 En las tablas siguientes se proporcionan las correspondencias entre la solución Milestone y la solución Media Analytics.
 
