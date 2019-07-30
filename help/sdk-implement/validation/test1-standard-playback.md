@@ -3,7 +3,7 @@ seo-title: Prueba 1 Reproducción estándar
 title: Prueba 1 Reproducción estándar
 uuid: c 4 b 3 fead -1 b 27-484 b-ab 6 a -39 f 1 ae 0 f 03 f 2
 translation-type: tm+mt
-source-git-commit: ee6eebac803410c1c4da1ccb80083025a9c817df
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -83,7 +83,7 @@ Debe completar y registrar las acciones en este orden:
    1. Inicio de análisis de vídeo
    1. Inicio de Heartbeat
    1. Inicio del análisis de Heartbeat
-   Las dos primeras llamadas de arriba contienen metadatos y variables adicionales. For call parameters and metadata, see [Test call details.](../../sdk-implement/validation/test-call-details.md)
+   Las dos primeras llamadas de arriba contienen metadatos y variables adicionales. For call parameters and metadata, see [Test call details.](/help/sdk-implement/validation/test-call-details.md)
 
 1. **Ver el salto de publicidad si está disponible**
 
@@ -93,7 +93,7 @@ Debe completar y registrar las acciones en este orden:
    1. Inicio de análisis de publicidad de vídeo
    1. Inicio de publicidad de Heartbeat
    1. Inicio del análisis de publicidad de Heartbeat
-   Las dos primeras llamadas contienen metadatos y variables adicionales. For call parameters and metadata, see [Test call details.](../../sdk-implement/validation/test-call-details.md#section_wz3_yff_f2b)
+   Las dos primeras llamadas contienen metadatos y variables adicionales. For call parameters and metadata, see [Test call details.](/help/sdk-implement/validation/test-call-details.md#section_wz3_yff_f2b)
 
    * **Reproducción de publicidad**
 
@@ -122,7 +122,7 @@ Debe completar y registrar las acciones en este orden:
    * La posición del cabezal de reproducción debe aumentarse en 10 unidades con cada llamada de reproducción.
    * El valor `l:event:duration` representa el número de milisegundos desde la última llamada de seguimiento y debe ser aproximadamente el mismo valor en cada llamada de 10 segundos.
 
-      For call parameters and metadata, see [Test call details](../../sdk-implement/validation/test-call-details.md#section_u1l_1gf_f2b) in *Test Call Details*
+      For call parameters and metadata, see [Test call details](/help/sdk-implement/validation/test-call-details.md#section_u1l_1gf_f2b) in *Test Call Details*
 
 1. **Pausar la reproducción durante 30 segundos como mínimo.** Con el reproductor en pausa, las llamadas de evento de pausa se enviarán cada 10 segundos. Después de la pausa, los eventos de reproducción deben reanudarse.
 
