@@ -3,7 +3,7 @@ seo-title: Seguimiento de reproducción principal en iOS
 title: Seguimiento de reproducción principal en iOS
 uuid: bdc 0 e 05 c -4 fe 5-430 e-aee 2-f 331 bc 59 ac 6 b
 translation-type: tm+mt
-source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -11,7 +11,7 @@ source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
 # Seguimiento de reproducción principal en iOS{#track-core-playback-on-ios}
 
 >[!IMPORTANT]
->Esta documentación abarca el seguimiento en la versión 2. x del SDK. Si va a implementar una versión 1.x del SDK, puede descargar las guías del desarrollador de 1.x aquí: [Descargar SDK](../../../sdk-implement/download-sdks.md).
+>Esta documentación abarca el seguimiento en la versión 2. x del SDK. Si va a implementar una versión 1.x del SDK, puede descargar las guías del desarrollador de 1.x aquí: [Descargar SDK](/help/sdk-implement/download-sdks.md).
 
 1. **Configuración inicial del seguimiento**
 
@@ -62,11 +62,11 @@ source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
 
    * **Metadatos de vídeo estándar**
 
-      * [Implementación de metadatos estándar en iOS](../../../sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-ios.md)
+      * [Implementación de metadatos estándar en iOS](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-ios.md)
       * **Claves de metadatos de vídeo**
-         [Claves de metadatos de iOS](../../../sdk-implement/track-av-playback/impl-std-metadata/ios-metadata-keys.md)
+         [Claves de metadatos de iOS](/help/sdk-implement/track-av-playback/impl-std-metadata/ios-metadata-keys.md)
 
-      * Consulte la lista completa de metadatos de vídeo aquí: [Parámetros de audio y vídeo](../../../metrics-and-metadata/audio-video-parameters.md).
+      * Consulte la lista completa de metadatos de vídeo aquí: [Parámetros de audio y vídeo](/help/metrics-and-metadata/audio-video-parameters.md).
       >[!NOTE]
       >
       >Incluir el objeto de metadatos de vídeo estándar en el objeto multimedia es opcional.
@@ -172,6 +172,6 @@ source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
 
 Consulte lo siguiente para obtener más información sobre el seguimiento de la reproducción principal:
 
-* Situaciones de seguimiento: [Reproducción de VOD sin anuncios](../../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md)
+* Situaciones de seguimiento: [Reproducción de VOD sin anuncios](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)
 * Reproductor de muestra incluido con el SDK para iOS para ver un ejemplo de seguimiento completo.
 
