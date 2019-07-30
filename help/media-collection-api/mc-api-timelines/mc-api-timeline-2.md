@@ -3,7 +3,7 @@ seo-title: 'Línea de tiempo 2: El usuario abandona la sesión'
 title: 'Línea de tiempo 2: El usuario abandona la sesión'
 uuid: 74 b 89 e 8 f-ef 56-4 e 0 c-b 9 a 8-40739 e 15 b 4 cf
 translation-type: tm+mt
-source-git-commit: 69057b2abf7140d52b1897af3dc9d9fd01ca87ad
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -31,7 +31,7 @@ Los siguientes diagramas ilustran la línea de tiempo del cursor de reproducció
 
 **Detalles de implementación**
 
-Esta llamada indica _la intención del usuario de reproducir_ un vídeo. It returns a Session ID ( `{sid}` ) to the client that is used to identify all subsequent tracking calls within the session. El estado del reproductor no es "reproduciendo", sino "comenzando".  [Los parámetros de sesión obligatorios](../../media-collection-api/mc-api-ref/mc-api-sessions-req.md) deben incluirse en el mapa de `params` en la solicitud.  En el servidor, esta llamada genera una llamada de inicio a Adobe Analytics.
+Esta llamada indica _la intención del usuario de reproducir_ un vídeo. It returns a Session ID ( `{sid}` ) to the client that is used to identify all subsequent tracking calls within the session. El estado del reproductor no es "reproduciendo", sino "comenzando".  [Los parámetros de sesión obligatorios](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) deben incluirse en el mapa de `params` en la solicitud.  En el servidor, esta llamada genera una llamada de inicio a Adobe Analytics.
 
 **Cuerpo de la solicitud de muestra**
 
