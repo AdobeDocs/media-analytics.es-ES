@@ -3,7 +3,7 @@ seo-title: Un rastreador de VOD para varias sesiones
 title: Un rastreador de VOD para varias sesiones
 uuid: 355 c 83 f 4-52 bd -4 bdd -92 dc-ab 506 e 412 d 0 a
 translation-type: tm+mt
-source-git-commit: b2d2f7078d655c6e50b3f2925002f93d5a0af533
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -14,7 +14,7 @@ source-git-commit: b2d2f7078d655c6e50b3f2925002f93d5a0af533
 
 En esta situación, se usa la instancia de `MediaHeartbeat` para crear dos sesiones independientes en una secuencia.
 
-Este escenario es exactamente igual al escenario de [Reproducción de VOD sin anuncios](../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md).
+Este escenario es exactamente igual al escenario de [Reproducción de VOD sin anuncios](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md).
 
 ## Parámetros {#section_D52B325B99DA42108EF560873907E02C}
 
