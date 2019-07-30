@@ -5,18 +5,18 @@ description: En esta situación, se han insertado anuncios previos a la emisión
 seo-description: En este escenario en Adobe Media Analytics, los anuncios previos se han insertado antes del contenido principal.
 uuid: 5 d 1022 a 8-88 cb -40 aa -919 c -60 dd 592 a 639 e
 translation-type: tm+mt
-source-git-commit: 66173d82714970c60f4e3088aa5ec0946efd7887
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
 
 # Reproducción de VOD con anuncios previos a la emisión{#vod-playback-with-pre-roll-ads}
 
-En esta situación, se han insertado anuncios previos a la emisión antes del contenido principal. Si no se indica lo contrario, las llamadas de red son iguales a las llamadas que se hacen en el escenario de [Reproducción de VOD sin anuncios](../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md). Las llamadas de red se realizan al mismo tiempo, pero la carga útil es distinta.
+En esta situación, se han insertado anuncios previos a la emisión antes del contenido principal. Si no se indica lo contrario, las llamadas de red son iguales a las llamadas que se hacen en el escenario de [Reproducción de VOD sin anuncios](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md). Las llamadas de red se realizan al mismo tiempo, pero la carga útil es distinta.
 
 | Activador | Método de Heartbeat | Llamadas de red   | Notas   |
 | --- | --- | --- | --- |
-| El usuario hace clic en [!UICONTROL Reproducir]. | `trackSessionStart` | Inicio del contenido de Analytics, inicio del contenido de Heartbeat | The measurement library does not know that there is a pre-roll ad, so these network calls are still identical to the [VOD playback with no ads](../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md) scenario. |
+| El usuario hace clic en [!UICONTROL Reproducir]. | `trackSessionStart` | Inicio del contenido de Analytics, inicio del contenido de Heartbeat | The measurement library does not know that there is a pre-roll ad, so these network calls are still identical to the [VOD playback with no ads](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) scenario. |
 | El anuncio empieza. | <ul> <li> `trackEvent:AdBreakStart` </li> <li> `trackEvent:AdStart` </li> </ul> | Inicio de publicidad de Analytics, inicio de publicidad de Heartbeat |  |
 | Se reproduce el fotograma del primer anuncio. | `trackPlay` | Reproducción de anuncio de Heartbeat | El contenido del anuncio se reproduce antes del contenido principal y los latidos empiezan cuando comienza el anuncio. |
 | Se reproduce el anuncio. |  | Latidos de anuncio |  |
@@ -24,8 +24,8 @@ En esta situación, se han insertado anuncios previos a la emisión antes del co
 | Se reproduce el primer fotograma del segundo anuncio. | `trackEvent:AdStart` | Inicio de publicidad de Analytics, inicio de publicidad de Heartbeat |  |
 | Se reproduce el anuncio. |  | Latidos de anuncio |  |
 | Se termina de reproducir el segundo anuncio. | <ul> <li> `trackEvent:trackAdComplete` </li> <li> `trackEvent:AdBreakComplete` </li> </ul> | Finalización de publicidad de Heartbeat  | Se llega al final del anuncio y de la secuencia. |
-| Se reproduce el contenido. |  | Latidos de contenido | This network call is identical to the [VOD playback with no ads](../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md) scenario. |
-| El contenido termina de reproducirse. | `trackComplete` | Finalización de contenido de Heartbeat | This network call is identical to the [VOD playback with no ads](../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md) scenario. |
+| Se reproduce el contenido. |  | Latidos de contenido | This network call is identical to the [VOD playback with no ads](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) scenario. |
+| El contenido termina de reproducirse. | `trackComplete` | Finalización de contenido de Heartbeat | This network call is identical to the [VOD playback with no ads](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) scenario. |
 | La sesión finaliza. | `trackSessionEnd` |  | `SessionEnd` |
 
 ## Parámetros {#section_33CDFB6CB230437480B67A3D149EC44E}
