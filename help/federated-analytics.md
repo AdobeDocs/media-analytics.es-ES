@@ -3,7 +3,7 @@ seo-title: Federated Analytics
 title: Federated Analytics
 uuid: a 82 ace 81-c 2 f 6-4799-9 a 62-4 c 6 a 737 a 7 dab
 translation-type: tm+mt
-source-git-commit: 5ff3566fae2c1df559341057fafdd289774e4b2f
+source-git-commit: a9e1c8ba7c8a95120e4c66460ff6d742c0855652
 
 ---
 
@@ -41,7 +41,7 @@ El servicio de Federated Analytics ofrece un sistema para compartir datos de Ado
 
 1. El remitente y el receptor colaboran para completar el formulario del acuerdo de reglas de federación.
 
-   **Descargue la versión actual del formulario aquí:** [https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/federated_analytics_form.pdf.](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/federated_analytics_form.pdf)
+   **Descargue aquí la versión actual del formulario:**[Acuerdo de reglas de federación](./federated_analytics_form.pdf)
 
    >[!NOTE]
    >
