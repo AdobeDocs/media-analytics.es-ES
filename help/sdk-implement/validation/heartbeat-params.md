@@ -3,21 +3,21 @@ seo-title: Descripciones de parámetros de Heartbeat
 title: Descripciones de parámetros de Heartbeat
 uuid: e 9 ddda 32-0952-43 d 0-a 702-49 f 5 b 1 bfd 8 cf
 translation-type: tm+mt
-source-git-commit: 6e13e9a6250949a3a7f059445da772b4db1fdb71
+source-git-commit: 1b785378750349c4f316748d228754cb64f70bca
 
 ---
 
 
-# Descripciones de parámetros de latido{#heartbeat-parameter-descriptions}
+# Descripciones de parámetros de Media Analytics (Heartbeat){#heartbeat-parameter-descriptions}
 
-Lista de parámetros de latido que Adobe recopila y procesa en el servidor latidos:
+Lista de parámetros de Media Analytics que Adobe recopila y procesa en el servidor de latidos:
 
 ## Todos los eventos
 
 | Nombre | Requerido/opcional | Fuente de datos | Descripción   |
 | ---  | :---: | --- | --- |
 | `s:event:type` | R | Media SDK | Tipo de evento que se rastrea. Tipos de eventos: <ul> <li> `s:event:type=start` </li> <li> `s:event:type=complete` </li> <li> `s:event:type=chapter_start` </li> <li> `s:event:type=chapter_complete` </li> <li> `s:event:type=buffer` </li> <li> `s:event:type=pause` </li> <li> `s:event:type=resume` </li> <li> `s:event:type=bitrate_change` </li> <li> `s:event:type=aa_start` </li> <li> `s:event:type=stall` </li> <li> `s:event:type=end` </li> </ul> |
-| `l:event:prev_ts` | R | Media SDK | Marca de fecha del último evento del mismo tipo en esta sesión. The value is `-1` |
+| `l:event:prev_ts` | R | Media SDK | Marca de fecha del último evento del mismo tipo en esta sesión. El valor es `-1` |
 | `l:event:ts` | R | Media SDK | Marca de tiempo del evento. |
 | `l:event:duration` | R | Media SDK | Este valor se establece internamente (en milisegundos) por la biblioteca VHL, no por el reproductor. Se utiliza para calcular las métricas de tiempo invertido en el servidor. For example `a.media.totalTimePlayed` `type=play` Note:  For some of the HB that are sent This parameter is set to 0 for certain events because they are "state change events" (e.g., `type=complete` `type=chapter_complete` `type=bitrate_change` |
 | `l:event:playhead` | R | `VideoInfo` | El objeto playhead estaba dentro del recurso activo (principal o anuncio), cuando se registró el evento. |
@@ -33,8 +33,8 @@ Lista de parámetros de latido que Adobe recopila y procesa en el servidor latid
 | `s:cuser:customer_user_ids_x` | O | `MediaHeartbeatConfig` | Todos los ID de usuario de cliente definidos en Audience Manager. |
 | `l:aam:loc_hint` | R | `MediaHeartbeatConfig` | AAM data sent on each payload after `aa_start` |
 | `s:aam:blob` | R | `MediaHeartbeatConfig` | AAM data sent on each payload after `aa_start` |
-| `s:sc:rsid` | R | ID (o identificadores) del grupo de informes | RSID de SiteCatalyst adonde se deben enviar los informes. |
-| `s:sc:tracking_server` | R | `MediaHeartbeatConfig` | Servidor de seguimiento de SiteCatalyst. |
+| `s:sc:rsid` | R | ID (o identificadores) del grupo de informes | RSID de Adobe Analytics donde se deben enviar los informes. |
+| `s:sc:tracking_server` | R | `MediaHeartbeatConfig` | Servidor de seguimiento de Adobe Analytics. |
 | `h:sc:ssl` | R | `MediaHeartbeatConfig` | Indica si el tráfico se envía por HTTPS (si se configura en 1) o por HTTP (si se configura en 0). |
 | `s:sp:ovp` | O | `MediaHeartbeatConfig` | Establézcalo en "primetime" para reproductores de Primetime o en el OVP real para otros reproductores. |
 | `s:sp:sdk` | R | `MediaHeartbeatConfig` | La cadena de versión de OVP. |
