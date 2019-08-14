@@ -3,19 +3,19 @@ seo-title: Información general de configuración
 title: Información general de configuración
 uuid: 06 fefedb-b 0 c 8-4 f 7 d -90 c 8-e 374 cdde 1695
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 1b785378750349c4f316748d228754cb64f70bca
 
 ---
 
 
-# Setup Overview{#setup-overview}
+# Información general de configuración{#setup-overview}
 
 >[!IMPORTANT]
 >
 >Las siguientes instrucciones se aplican a los SDK de medios 2. x. Si va a implementar la versión 1.x del Media SDK, consulte la [documentación del Media SDK 1.x.](/help/sdk-implement/download-sdks.md) Para los integradores Primetime, consulte _la Documentación de Primetime Media SDK_ siguiente.
 
 
-## Minimum Platform Version Support {#minimum-platform-version}
+## Compatibilidad mínima con la versión de plataforma {#minimum-platform-version}
 
 En la tabla siguiente se describen las versiones mínimas de plataforma compatibles con cada SDK, a partir del 19 de febrero de 2019.
 
@@ -49,7 +49,7 @@ Complete los pasos de implementación siguientes:
    | `ssl` | Indica si las llamadas se deberían hacer mediante HTTPS. | No | false |
    | `debugLogging` | Indica si el registro de depuración está habilitado. | No | false |
 
-1. Implement the `MediaHeartbeatDelegate`.
+1. Implemente la `MediaHeartbeatDelegate`.
 
    |  Nombre del método  |  Descripción  | Requerido |
    | --- | --- | :---: |
@@ -91,7 +91,7 @@ Complete los pasos de implementación siguientes:
    
    //Media Heartbeat Config 
    var mediaConfig = new MediaHeartbeatConfig(); 
-   mediaConfig.trackingServer = "namespace.hb.omtrdc.net"; 
+   mediaConfig.trackingServer = "[your_namespace].hb.omtrdc.net"; 
    mediaConfig.playerName = "HTML5 Basic"; 
    mediaConfig.channel = "Video Channel"; 
    mediaConfig.debugLogging = true; 
@@ -137,10 +137,10 @@ Para obtener más información sobre las opciones de servidor, consulte [Rellena
 
    The analytics tracking server should end in "`.sc.omtrdc.net`" or be a CNAME.
 
-* **Latidos (Análisis de medios)**
-Siempre tiene el formato "`[namespace].hb.omtrdc.net`, donde"`[namespace]`define su empresa de inicio de sesión y lo proporciona Adobe.
+* ** Media Analytics (Latidos)**
+Siempre tiene el formato "`[your_namespace].hb.omtrdc.net`. El valor de "`[your_namespace]`especifica su empresa y lo proporciona Adobe.
 
-## SDK 1.x Documentation {#section_acj_tkk_t2b}
+## Documentación de SDK 1. x {#section_acj_tkk_t2b}
 
 | SDK de Video Analytics 1. x  | Guías para desarrolladores (solo PDF) |
 | --- | --- |
