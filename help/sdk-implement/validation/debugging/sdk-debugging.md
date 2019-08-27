@@ -3,14 +3,14 @@ seo-title: Depuración de SDK
 title: Depuración de SDK
 uuid: a 5972 d 87-c 593-4 b 4 f-a 56 f-dca 6 e 25268 e 1
 translation-type: tm+mt
-source-git-commit: 6b6caa59ac9ea14a42337e2f133ecb31f30491c7
+source-git-commit: f2b08663a928e27625a9ff63f783c510f41e7a8c
 
 ---
 
 
 # Depuración de SDK{#sdk-debugging}
 
-Puede habilitar y deshabilitar el registro. El SDK de medios proporciona un exhaustivo mecanismo de rastreo/registro que se implementa en toda la pila de seguimiento de vídeo. You can enable or disable this logging by setting the `debugLogging` flag on the Config object.
+Puede habilitar y deshabilitar el registro. El SDK de medios proporciona un exhaustivo mecanismo de registro/registro a través de la pila de seguimiento de medios. You can enable or disable logging by setting the `debugLogging` flag on the Config object.
 
 ## Código de muestra para el registro de depuración
 
@@ -62,7 +62,7 @@ ADBMobile().setDebugLogging(true)
 ADBMobile.config.setDebugLogging(true)
 ```
 
-**Uso de Adobe Bloodhound para probar aplicaciones Chromecast -**
+## Uso de Adobe Bloodhound para probar aplicaciones Chromecast
 
 Durante el desarrollo de la aplicación, Bloodhound permite ver llamadas de servidor localmente y permite la opción reenviar los datos a los servidores de recopilación de Adobe. Para obtener más información acerca de Bloodhound, consulte las siguientes guías:
 
@@ -73,7 +73,7 @@ Durante el desarrollo de la aplicación, Bloodhound permite ver llamadas de serv
 >
 >A partir del 30 de abril de 2017, Adobe Bloodhound se ha bloqueado. Desde el 1 de mayo de 2017 no se proporcionarán nuevas mejoras ni se ofrecerá más soporte técnico de ingeniería o Adobe Expert Care.
 
-### Mensajes de registro
+## Mensajes de registro
 
 Los mensajes de registro siguen este formato:
 
@@ -91,7 +91,7 @@ Example: [16:10:29 GMT­0700 (PDT).245] [DEBUG] [plugin::player] Resolving qos.s
 * **tag:** el nombre del subcomponente que generó el mensaje de registro (suele ser el nombre de la clase)
 * **message:** el mensaje de rastreo
 
-Puede utilizar la salida de los registros de la biblioteca Video Heartbeat Library para comprobar la implementación. Una buena estrategia es buscar en los registros la cadena `#track`. This will highlight all the `track*()` calls made by your application.
+Puede utilizar la salida de registros de la biblioteca del SDK de medios para verificar la implementación. Una buena estrategia es buscar en los registros la cadena `#track`. This will highlight all the `track*()` calls made by your application.
 
 For instance, this is what the logs filtered for `#track` could look like:
 
