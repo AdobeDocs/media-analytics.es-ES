@@ -3,7 +3,7 @@ seo-title: Información general de configuración
 title: Información general de configuración
 uuid: 06 fefedb-b 0 c 8-4 f 7 d -90 c 8-e 374 cdde 1695
 translation-type: tm+mt
-source-git-commit: 1b785378750349c4f316748d228754cb64f70bca
+source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
 ---
 
@@ -121,15 +121,13 @@ Complete los pasos de implementación siguientes:
 
 ## Validación {#section_D4D46F537A4E442B8AB0BB979DDAA4CC}
 
-Las implementaciones de medios constan de dos tipos de llamadas de seguimiento:
+Las implementaciones de seguimiento de Media Analytics generan dos tipos de llamadas de seguimiento:
 
-* Las llamadas de inicio de medios y publicidad se envían directamente al servidor de AppMeasurement.
-* Las llamadas de Heartbeat se envían al servidor de seguimiento de Heartbeat al inicio, cada diez segundos para el contenido y cada segundo para la publicidad.
+* Las llamadas de inicio de los medios y las publicidades se envían directamente al servidor de Adobe Analytics (appmeasurement).
+* Las llamadas de Heartbeat se envían al servidor de seguimiento de Media Analytics (latidos), se procesan allí y se pasan al servidor de Adobe Analytics.
 
-El seguimiento de medios funciona del mismo modo en todas las plataformas, equipos de escritorio y dispositivos móviles. Actualmente, el seguimiento de audio funciona en plataformas móviles. En todas las llamadas de seguimiento hay algunas variables universales clave que se deben validar:
-
-* **Appmeasurement (Analytics)**
-Para obtener más información sobre las opciones de servidor, consulte [Rellenar correctamente la variable trackingserver y trackingserversecure.](https://marketing.adobe.com/resources/help/kb/en_US/analytics/kb/determining-data-center.html)
+* **Servidor
+de Adobe Analytics (appmeasurement)** Para obtener más información sobre las opciones de servidor, consulte [Rellenar correctamente las variables trackingserver y trackingserversecure.](https://helpx.adobe.com/analytics/kb/determining-data-center.html)
 
    >[!IMPORTANT]
    >
@@ -137,8 +135,9 @@ Para obtener más información sobre las opciones de servidor, consulte [Rellena
 
    The analytics tracking server should end in "`.sc.omtrdc.net`" or be a CNAME.
 
-* ** Media Analytics (Latidos)**
-Siempre tiene el formato "`[your_namespace].hb.omtrdc.net`. El valor de "`[your_namespace]`especifica su empresa y lo proporciona Adobe.
+* ** Servidor de Media Analytics (Latidos) Este siempre tiene el formato "`[your_namespace].hb.omtrdc.net`. El valor de "`[your_namespace]`especifica su empresa y lo proporciona Adobe.
+
+El seguimiento de medios funciona del mismo modo en todas las plataformas, equipos de escritorio y dispositivos móviles. El seguimiento de audio funciona actualmente en plataformas móviles. En todas las llamadas de seguimiento hay algunas variables universales clave que se deben validar:
 
 ## Documentación de SDK 1. x {#section_acj_tkk_t2b}
 
