@@ -3,7 +3,7 @@ seo-title: Información general
 title: Información general
 uuid: 3 fe 32425-5 e 2 a -4886-8 fea-d 91 d 15671 bb 0
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
 ---
 
@@ -34,7 +34,7 @@ El seguimiento de capítulos incluye el inicio del capítulo, su finalización y
 
 * La llamada `trackEvent(MediaHeartbeat.Event.ChapterSkip);`
 
-## Implement chapter tracking {#section_52221B3A9BFD46B3A22DA6BCE97CCD75}
+## Implementación del seguimiento de capítulos {#section_52221B3A9BFD46B3A22DA6BCE97CCD75}
 
 1. Identifique cuándo se produce el evento de inicio de capítulo y cree la instancia de `ChapterObject` con la información del capítulo.
 
@@ -85,18 +85,3 @@ if (e.type == "chapter skip") {
 }; 
 ```
 
-## Validación {#section_07EC2811BE3249249494596BFE9BF869}
-
-### Inicio del capítulo.
-
-Al iniciar una reproducción de capítulo individual, se envía una llamada clave:
-
-* Inicio del capítulo de Heartbeat (Esta llamada contiene variables adicionales de metadatos de capítulo).
-
-### Capítulo completado
-
-Al terminar un capítulo, se enviará una llamada de capítulo completado.
-
-### Omisión del capítulo
-
-Cuando se omita un capítulo, se enviará una llamada de omisión de capítulo.
