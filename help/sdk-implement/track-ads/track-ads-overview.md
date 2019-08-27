@@ -3,7 +3,7 @@ seo-title: Información general
 title: Información general
 uuid: 1607798 b-c 6 ef -4 d 60-8 e 40-e 958 c 345 b 09 c
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
 ---
 
@@ -14,9 +14,9 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 >
 >Las instrucciones siguientes proporcionan indicaciones para la implementación con los SDK 2. x. Si va a implementar una versión 1.x del SDK, puede descargar las guías del desarrollador de 1.x aquí: [Descargar SDK.](/help/sdk-implement/download-sdks.md)
 
-La reproducción de publicidad incluye el seguimiento de las pausas publicitarias y el inicio, finalización y omisión de un anuncio. Use la API del reproductor de medios para identificar eventos de reproductor clave y rellenar las variables de publicidad opcionales y requeridas. See the comprehensive list of metadata here: [Ad parameters.](/help/metrics-and-metadata/ad-parameters.md)
+La reproducción de publicidad incluye el seguimiento de las pausas publicitarias y el inicio, finalización y omisión de un anuncio. Use la API del reproductor de medios para identificar eventos de reproductor clave y rellenar las variables de publicidad opcionales y requeridas. Consulte la lista completa de metadatos aquí: [Parámetros de publicidad.](/help/metrics-and-metadata/ad-parameters.md)
 
-## Player events {#player-events}
+## Eventos del reproductor {#player-events}
 
 
 ### Al iniciar la pausa publicitaria
@@ -46,7 +46,7 @@ La reproducción de publicidad incluye el seguimiento de las pausas publicitaria
 
 * Invoque `trackEvent` para la finalización de la pausa publicitaria.
 
-## Implement ad tracking {#section_83E0F9406A7743E3B57405D4CDA66F68}
+## Implementación del seguimiento de anuncios {#section_83E0F9406A7743E3B57405D4CDA66F68}
 
 ### Constantes de seguimiento de anuncio
 
@@ -100,7 +100,7 @@ La reproducción de publicidad incluye el seguimiento de las pausas publicitaria
 
 >[!IMPORTANT]
 >
->Make sure you do NOT increment the content player playhead (`l:event:playhead`) during ad playback (`s:asset:type=ad`). Si lo hace, las métricas Tiempo empleado se verán afectadas negativamente.
+>Asegúrese de que NO incrementa el reproductor de contenido (`l:event:playhead`) durante la reproducción del anuncio (`s:asset:type=ad`). Si lo hace, las métricas Tiempo empleado se verán afectadas negativamente.
 
 El siguiente código de ejemplo utiliza el SDK 2. x de JavaScript para un reproductor de medios HTML 5.
 
@@ -139,32 +139,4 @@ if (e.type == "ad break complete") {
     this.mediaHeartbeat.trackEvent(MediaHeartbeat.Event.AdBreakComplete); 
 }; 
 ```
-
-## Validación {#section_5F1783F5FE2644F1B94B0101F73D57EB}
-
-### Inicio de publicidad
-
-Al comienzo de una reproducción de publicidad individual, se envían tres llamadas clave en el siguiente orden:
-
-1. Inicio de análisis de publicidad de vídeo
-1. Inicio de publicidad de Heartbeat
-1. Inicio del análisis de Heartbeat
-
-Las llamadas 1 y 2 contienen variables de metadatos adicionales para las funciones estándar y personalizadas.
-
-### Reproducción de publicidad
-
-Durante la reproducción de publicidad, las llamadas de reproducción de publicidad de Heartbeat se envían al servidor de Heartbeat cada segundo.
-
-### Publicidad completa
-
-Al 100 % de la reproducción de la publicidad, se enviará una llamada de finalización de anuncio de Heartbeat.
-
-### Omisión de publicidad
-
-Cuando se omite un anuncio no se envía ningún evento, por lo que las llamadas de seguimiento no incluirán la información de la publicidad.
-
->[!TIP]
->
->No se envían llamadas únicas al inicio de pausa publicitaria y a la finalización de la pausa publicitaria.
 
