@@ -3,7 +3,7 @@ seo-title: Información general
 title: Información general
 uuid: 4 d 73 c 47 f-d 0 a 4-4228-9040-d 6432311 c 9 eb
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
 ---
 
@@ -16,7 +16,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 Quality of experience tracking includes quality of service (QoS) and error tracking, both are optional elements and are **not** required for core media tracking implementations. Puede utilizar la API de reproductor de medios para identificar las variables relacionadas con qos y el seguimiento de errores. Estos son los elementos clave del seguimiento de la calidad de la experiencia:
 
-## Player events {#player-events}
+## Eventos del reproductor {#player-events}
 
 ### En cualquier cambio de métrica de QoS:
 
@@ -71,12 +71,3 @@ if (e.type == "bitrate_change") {
 };
 ```
 
-## Validación {#section_F3174831408947A893F7E8C15659E5AA}
-
-### Cambio de velocidad de bits
-
-Con cada cambio de la velocidad de bits, se enviará una llamada `bitrate_change` de Heartbeat.
-
-### Error
-
-Si se produce un error en el reproductor, se enviará una llamada de error de progreso que incluirá el valor del error.
