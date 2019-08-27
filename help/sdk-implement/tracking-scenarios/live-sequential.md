@@ -3,7 +3,7 @@ seo-title: Contenido principal activo con seguimiento secuencial
 title: Contenido principal activo con seguimiento secuencial
 uuid: b 03477 b 6-9 be 8-4 b 67-a 5 a 0-4 cef 3 cf 262 ab
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
 ---
 
@@ -53,7 +53,7 @@ Es igual que la llamada de inicio de contenido de Heartbeat salvo en el parámet
 
 ## Latidos de contenido {#section_7B387303851A43E5993F937AE2B146FE}
 
-Durante la reproducción de medios, hay un temporizador que enviará uno o más latidos cada 10 segundos. Estos latidos contienen datos sobre la reproducción, los anuncios y el almacenamiento en búfer, entre otros. El contenido exacto de cada latido no se detallará en este documento. Lo más importante es que los latidos se desencadenan constantemente mientras dura la reproducción.
+Durante la reproducción de medios, hay un temporizador que enviará uno o más latidos cada 10 segundos para el contenido principal y cada segundo para las publicidades. Estos latidos contienen datos sobre la reproducción, los anuncios y el almacenamiento en búfer, entre otros. El contenido exacto de cada latido no se detallará en este documento. Lo más importante es que los latidos se desencadenan constantemente mientras dura la reproducción.
 
 En los latidos de contenido debe fijarse en ciertos detalles:
 
