@@ -3,7 +3,7 @@ seo-title: Contenido principal en directo
 title: Contenido principal en directo
 uuid: e 92 e 99 f 4-c 395-48 aa -8 a 30-cbdd 2 f 5 fc 07 c
 translation-type: tm+mt
-source-git-commit: 9dbd621e10ba198b9331e5a7579fcbd3b6173ecd
+source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
 ---
 
@@ -40,7 +40,7 @@ Muchos de los valores que existen en las llamadas de inicio de contenido de Adob
 
 ## Latidos de contenido {#section_7B387303851A43E5993F937AE2B146FE}
 
-Durante la reproducción de medios, hay un temporizador que enviará uno o más latidos cada 10 segundos. Estos latidos contienen datos sobre la reproducción, los anuncios y el almacenamiento en búfer, entre otros. El contenido exacto de cada latido no se detallará en este documento. Lo más importante es que los latidos se desencadenan constantemente mientras dura la reproducción.
+Durante la reproducción de medios, hay un temporizador que enviará uno o más latidos (o pings) cada 10 segundos para el contenido principal y cada segundo para las publicidades. Estos latidos contienen datos sobre la reproducción, los anuncios y el almacenamiento en búfer, entre otros. El contenido exacto de cada latido no se detallará en este documento. Lo más importante es que los latidos se desencadenan constantemente mientras dura la reproducción.
 
 En los latidos de contenido debe fijarse en ciertos detalles:
 
@@ -59,13 +59,13 @@ Para los flujos en directo, es necesario definir el cursor de reproducción como
 
 ### Al inicio
 
-For LIVE media, when a user starts playing the stream, you need to set `l:event:playhead` to the current offset, in seconds. Esto se contrasta con VOD, donde debe configurar el cursor de reproducción en "0".
+Para los medios LIVE, cuando un usuario comienza a reproducir el flujo, debe establecer `l:event:playhead` en el desplazamiento actual, en segundos. Esto se contrasta con VOD, donde debe configurar el cursor de reproducción en "0".
 
-For example, say a LIVE streaming event starts at midnight and runs for 24 hours (`a.media.length=86400`; `l:asset:length=86400`). A continuación, supongamos que un usuario comienza a reproducir ese flujo en directo a las 12:00. In this scenario, you should set `l:event:playhead` to 43200 (12 hours into the stream).
+Por ejemplo, supongamos que un evento de flujo DIRECTO comienza a medianoche y se ejecuta durante 24 horas (`a.media.length=86400`; `l:asset:length=86400`). A continuación, supongamos que un usuario comienza a reproducir ese flujo en directo a las 12:00. En este escenario, debe establecerse `l:event:playhead` en 43200 (12 horas en el flujo).
 
 ### Al pausar
 
-La misma lógica «cursor de reproducción directo» aplicada al principio de la reproducción debe aplicarse cuando un usuario detiene la reproducción. When the user returns to playing the LIVE stream, you must set the `l:event:playhead` value to the new offset playhead position, _not_ to the point where the user paused the LIVE stream.
+La misma lógica «cursor de reproducción directo» aplicada al principio de la reproducción debe aplicarse cuando un usuario detiene la reproducción. Cuando el usuario vuelve a reproducir el flujo en directo, debe definir `l:event:playhead` el valor en la nueva posición de desplazamiento de la cabeza, _no_ en el punto en el que el usuario pause el flujo en directo.
 
 ## Código de muestra {#section_vct_j2j_x2b}
 
