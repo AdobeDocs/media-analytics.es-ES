@@ -3,12 +3,12 @@ seo-title: Información general de seguimiento
 title: Información general de seguimiento
 uuid: 7 b 8 e 2 f 76-bc 4 e -4721-8933-3 e 4453 b 01788
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
 ---
 
 
-# Tracking Overview{#tracking-overview}
+# Información general de seguimiento{#tracking-overview}
 
 >[!IMPORTANT]
 >
@@ -22,7 +22,7 @@ El seguimiento de la reproducción principal incluye el seguimiento de la carga,
 
 * Crear el objeto de medio.
 * Rellenar los metadatos.
-* Call `trackSessionStart`; For example: `trackSessionStart(mediaObject, contextData)`
+* Llamada `trackSessionStart`; Por ejemplo: `trackSessionStart(mediaObject, contextData)`
 
 ### Inicio del medio
 
@@ -59,7 +59,7 @@ El seguimiento de la reproducción principal incluye el seguimiento de la carga,
 
 >[!TIP]
 >
->La posición del cursor de reproducción se establece como parte del código de configuración y configuración. For more information about `getCurrentPlayheadTime`, see [Overview: General Implementation Guidelines.](/help/sdk-implement/setup/setup-overview.md#section_965A3B699A8248DDB9B2B3EA3CC20E41)
+>La posición del cursor de reproducción se establece como parte del código de configuración y configuración. Para obtener más información, `getCurrentPlayheadTime`consulte [Información general: Directrices generales de implementación.](/help/sdk-implement/setup/setup-overview.md#section_965A3B699A8248DDB9B2B3EA3CC20E41)
 
 ## Implementación {#section_BB217BE6585D4EDEB34C198559575004}
 
@@ -234,32 +234,5 @@ if (e.type == “buffered”) {
 
 ## Validación {#section_ABCFB92C587B4CAABDACF93452EFA78F}
 
-### Inicio del contenido
+Para obtener más información sobre la validación de la implementación, consulte [Validación.](/help/sdk-implement/validation/validation-overview.md)
 
-Al inicio de la reproducción de un medio, estas llamadas clave se envían en el siguiente orden:
-
-1. Inicio de análisis de medios
-1. Inicio de Heartbeat
-1. Inicio del análisis de Heartbeat
-
-Las llamadas 1 y 2 contienen variables de metadatos adicionales para las funciones estándar y personalizadas.
-
-### Reproducción de contenido
-
-Durante la reproducción de contenido principal normal, las llamadas de Heartbeat se envían al servidor cada diez segundos.
-
-### Contenido finalizado
-
-En el 100 % de la reproducción de contenido o en un límite de pantalla en una emisión lineal, se enviará una llamada completa de Heartbeat.
-
-### Pausa del contenido
-
-Cuando se detenga el reproductor, se enviarán las llamadas de evento de pausa de reproductor cada diez segundos. Después de la pausa, los eventos de reproducción deben reanudarse.
-
-### Arrastrar el cabezal de reproducción/Llamada a otro punto del vídeo
-
-Al arrastrar el cabezal de reproducción, no se envían llamadas de seguimiento especiales. Sin embargo, cuando se reanuda la reproducción tras el desplazamiento, el valor del cabezal debe reflejar la nueva posición en el contenido principal.
-
-### Búfer de contenido
-
-Cuando el reproductor de medios realiza el almacenamiento en búfer, se envían llamadas de evento de búfer del reproductor cada 10 segundos. Cuando termine el almacenamiento en búfer, los eventos de reproducción deben reanudarse.
