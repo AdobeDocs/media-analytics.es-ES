@@ -1,9 +1,9 @@
 ---
 seo-title: Contenido principal activo con seguimiento secuencial
 title: Contenido principal activo con seguimiento secuencial
-uuid: b 03477 b 6-9 be 8-4 b 67-a 5 a 0-4 cef 3 cf 262 ab
+uuid: b03477b6-9be8-4b67-a5a0-4cef3cf262ab
 translation-type: tm+mt
-source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
+source-git-commit: 3dd053c81090172ab53b8b7a367ca0cccad382c3
 
 ---
 
@@ -16,16 +16,16 @@ En esta situación, solo hay un recurso activo sin anuncios que se reproduce dur
 
 Este es el mismo escenario que el de [Reproducción de VOD sin anuncios](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md), pero una parte del contenido se analiza y se realiza una llamada desde un punto del contenido principal hasta otro punto.
 
-| Activador | Método de Heartbeat | Llamadas de red   | Notas   |
+| Activador | Método de Heartbeat |  Llamadas de red |  Notas   |
 | --- | --- | --- | --- |
-| El usuario hace clic en [!UICONTROL Reproducir]. | `trackSessionStart` | Inicio del contenido de Analytics, inicio del contenido de Heartbeat | La biblioteca de medición no sabe que hay un anuncio previo, por lo que estas llamadas de red son idénticas al escenario de [Reproducción de VOD sin anuncios](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md). |
-| Se reproduce el primer fotograma del contenido. | `trackPlay` | Reproducción del contenido de Heartbeat | Cuando el contenido del capítulo se reproduce antes del contenido principal, los latidos comienzan al inicio del capítulo. |
+| El usuario hace clic en [!UICONTROL Reproducir]. | trackSessionStart | Inicio del contenido de Analytics, Inicio del contenido de Heartbeat | La biblioteca de medición no sabe que hay un anuncio previo, por lo que estas llamadas de red son idénticas al escenario de [Reproducción de VOD sin anuncios](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md). |
+| Se reproduce el primer fotograma del contenido. | trackPlay | Reproducción del contenido de Heartbeat | Cuando el contenido del capítulo se reproduce antes del contenido principal, los latidos comienzan al inicio del capítulo. |
 | Se reproduce el contenido. |  | Latidos de contenido | Esta llamada de red es exactamente la misma que la del escenario de [Reproducción de VOD sin anuncios](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md). |
-| Fin de la sesión 1 (el episodio 1 ha finalizado). | `trackComplete` `trackSessionEnd` | Finalización de contenido de Heartbeat | La finalización significa que se llegó a la sesión 1 del primer episodio y que se vio entera. Antes de iniciar la sesión del siguiente episodio, hay que finalizar esta sesión. |
-| Episodio 2 iniciado (inicio de la sesión 2). | `trackSessionStart` | Inicio de contenido de Analytics Inicio de contenido de Heartbeat | Esto se debe a que el usuario vio el primer episodio y luego siguió viendo otro |
-| Primer fotograma de medios | `trackPlay` | Reproducción del contenido de Heartbeat | Este método desencadena el temporizador y a partir de este momento se envían latidos cada 10 segundos mientras dura la reproducción. |
+| Fin de la sesión 1 (el episodio 1 ha finalizado). | trackComplete / trackSessionEnd | Finalización de contenido de Heartbeat | La finalización significa que se llegó a la sesión 1 del primer episodio y que se vio entera. Antes de iniciar la sesión del siguiente episodio, hay que finalizar esta sesión. |
+| Episodio 2 iniciado (inicio de la sesión 2). | trackSessionStart | Inicio del contenido de Analytics Inicio del contenido de Heartbeat | Esto se debe a que el usuario vio el primer episodio y luego siguió viendo otro |
+| Primer fotograma de medios | trackPlay | Reproducción del contenido de Heartbeat | Este método desencadena el temporizador y a partir de este momento se envían latidos cada 10 segundos mientras dura la reproducción. |
 | Se reproduce el contenido. |  | Latidos de contenido |  |
-| Fin de la sesión (el episodio 2 ha finalizado). | `trackComplete` `trackSessionEnd` | Finalización de contenido de Heartbeat | La finalización significa que se llegó a la sesión 2 del segundo episodio y que se vio entera. Antes de iniciar la sesión del siguiente episodio, hay que finalizar esta sesión. |
+| Fin de la sesión (el episodio 2 ha finalizado). | trackComplete / trackSessionEnd | Finalización de contenido de Heartbeat | La finalización significa que se llegó a la sesión 2 del segundo episodio y que se vio entera. Antes de iniciar la sesión del siguiente episodio, hay que finalizar esta sesión. |
 
 ## Parámetros {#section_D52B325B99DA42108EF560873907E02C}
 
@@ -38,9 +38,9 @@ Este es el mismo escenario que el de [Reproducción de VOD sin anuncios](/help/s
 | `s:user:mid` | `s:user:mid` | Debe coincidir con el valor medio de la llamada de inicio de contenido de Adobe Analytics |
 | `s:event:type` | `"start"` |  |
 | `s:asset:type` | `"main"` |  |
-| `s:asset:media_id` | &lt; Nombre del medio &gt; |  |
+| `s:asset:media_id` | &lt;Nombre del medio&gt; |  |
 | `s:stream:type` | `live` |  |
-| `s:meta:*` | *opcional* | Metadatos personalizados establecidos en el medio |
+| `s:meta:*` | *opcional* | Metadatos personalizados definidos en el medio |
 
 ## Reproducción del contenido de Heartbeat {#section_B6AD9225747943F881DCA8E6A1D5710E}
 
@@ -53,7 +53,7 @@ Es igual que la llamada de inicio de contenido de Heartbeat salvo en el parámet
 
 ## Latidos de contenido {#section_7B387303851A43E5993F937AE2B146FE}
 
-Durante la reproducción de medios, hay un temporizador que enviará uno o más latidos cada 10 segundos para el contenido principal y cada segundo para las publicidades. Estos latidos contienen datos sobre la reproducción, los anuncios y el almacenamiento en búfer, entre otros. El contenido exacto de cada latido no se detallará en este documento. Lo más importante es que los latidos se desencadenan constantemente mientras dura la reproducción.
+Durante la reproducción de medios, hay un temporizador que enviará uno o más latidos cada 10 segundos para el contenido principal y cada segundo para los anuncios. Estos latidos contienen datos sobre la reproducción, los anuncios y el almacenamiento en búfer, entre otros. El contenido exacto de cada latido no se detallará en este documento. Lo más importante es que los latidos se desencadenan constantemente mientras dura la reproducción.
 
 En los latidos de contenido debe fijarse en ciertos detalles:
 
