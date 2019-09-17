@@ -1,29 +1,29 @@
 ---
 seo-title: Guía de implementación de vínculo personalizado
 title: Guía de implementación de vínculo personalizado
-uuid: 83315 e 73-20 ca -4 db 5-9 d 43-33 daade 45 a 13
+uuid: 83315e73-20ca-4db5-9d43-33daade45a13
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: fe245e766ab8ee48a8e8aaf247cfd552fed816e9
 
 ---
 
 
 # Guía de implementación de vínculo personalizado{#custom-link-implementation-guide}
 
-El seguimiento de vídeo personalizado utiliza el [seguimiento de vínculo manual mediante el código de vínculo personalizado](https://marketing.adobe.com/resources/help/en_US/sc/implement/link_manual.html) con `appMeasurement` de Analytics. Con frecuencia, el seguimiento de enlace de vídeo personalizado se utiliza en las plataformas y los dispositivos en los que es necesaria una medición mínima del vídeo.
+Custom Video Tracking utilizes [manual link tracking using custom link code](https://marketing.adobe.com/resources/help/en_US/sc/implement/link_manual.html) within Analytics `appMeasurement`. Con frecuencia, el seguimiento de enlace de vídeo personalizado se utiliza en las plataformas y los dispositivos en los que es necesaria una medición mínima del vídeo.
 
-* In JavaScript: `s.tl()` function
+* En JavaScript: la `s.tl()` función
 * En aplicaciones móviles: [trackAction() para Android](https://marketing.adobe.com/resources/help/en_US/mobile/android/actions.html), [trackAction() para iOS](https://marketing.adobe.com/resources/help/en_US/mobile/ios/actions.html) y [trackAction() para OTT](/help/sdk-implement/analytics-with-ott/track-app-actions.md)
 
 * In Data Insertion API: [linktype tag](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/data-insertion-api/reference/r_supported_tags.md)
 
-**Requisitos:**
+## Requisitos
 
 * Acceso a datos y eventos de API del reproductor de vídeo
 * Capacidad para añadir scripts con el uso de SDK de Analytics
 * Capacidad para añadir señalizaciones de seguimiento (scripts personalizados o codificación) con el uso de Data Insertion API
 
-**Metadatos:**
+## Metadatos
 
 * Los metadatos se pueden añadir a cualquier llamada de seguimiento como parte de los datos de vínculos.
 * Remember to update the `linkTrackVars` and `linkTrackEvents`
@@ -44,7 +44,7 @@ if (e.type == "ended") {
 };
 ```
 
-**Por qué utilizar el vínculo personalizado:**
+## Por qué usar el vínculo personalizado
 
 * Se necesitan unos requisitos mínimos.
 * Funciona en cualquier plataforma, incluso NoScript.
@@ -53,7 +53,7 @@ if (e.type == "ended") {
 * Proporciona un control total de todos los aspectos relacionados con los datos del vídeo.
 * Se elimina el vínculo al reproductor de muestra.
 
-**JavaScript de muestra para HTML5 Player**
+## JavaScript de muestra para HTML5 Player
 
 ```javascript
 <script type="text/javascript"> 
