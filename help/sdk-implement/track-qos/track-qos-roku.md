@@ -1,9 +1,9 @@
 ---
 seo-title: Seguimiento de la calidad de la experiencia en Roku
 title: Seguimiento de la calidad de la experiencia en Roku
-uuid: a 8 b 242 ab-da 3 c -4297-9 eef-f 0 b 9684 ef 56 a
+uuid: a8b242ab-da3c-4297-9eef-f0b9684ef56a
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: a8e8ac5a808ff785a348b456dd7d183540c1d594
 
 ---
 
@@ -14,15 +14,15 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 >
 >En las siguientes instrucciones se indican los pasos para la implementación en todos los kits de desarrollo de software de 2.x. Si va a implementar una versión 1.x del SDK, puede descargar las guías del desarrollador de 1.x aquí: [Descargar SDK.](/help/sdk-implement/download-sdks.md)
 
-## Implemement QOS
+## Implementación de QOS
 
-1. Identify when the bitrate changes during media playback, and use the `mediaUpdateQoS` API to update the QoS info on the Media SDK.
+1. Identifique cuándo cambia la velocidad de bits durante la reproducción de medios y utilice la `mediaUpdateQoS` API para actualizar la información de QoS en el SDK de medios.
 
    Variables QoSObject:
 
    >[!TIP]
    >
-   >Estas variables solo se requieren si realiza un seguimiento de qos.
+   >Estas variables solo son necesarias si realiza el seguimiento de QoS.
 
    | Variable | Descripción | Requerido |
    | --- | --- | :---: |
@@ -55,15 +55,15 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
     ```
     -->
 
-1. When playback switches bitrates, call `trackEvent(BitrateChange)` to notify the Media SDK that the Bitrate changed.
+1. Cuando la reproducción cambia la velocidad de bits, llame `trackEvent(BitrateChange)` para notificar al SDK de medios que la velocidad de bits ha cambiado.
 
    ```
-   ADBMobile().trackMediaEvent(ADBMobile().MEDIA_BITRATE_CHANGE)
+   ADBMobile().mediaTrackEvent(ADBMobile().MEDIA_BITRATE_CHANGE)
    ```
 
    >[!NOTE]
    >
-   >You need to call `updateQoSObject` with the updated bitrate value.
+   >Debe llamar `updateQoSObject` con el valor de velocidad de bits actualizado.
 
    <!--
     ```
