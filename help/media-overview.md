@@ -1,20 +1,20 @@
 ---
 seo-title: Medición de audio y vídeo en Adobe Analytics
 title: Medición de audio y vídeo en Adobe Analytics
-uuid: b 3 cbe 240-b 94 d -42 b 8-a 99 c -0280334 aaa 14
+uuid: b3cbe240-b94d-42b8-a99c-0280334aaa14
 translation-type: tm+mt
-source-git-commit: 1915261ec21679f510350663a472096abe7fdf63
+source-git-commit: 9b6e61e8d97ca44772f5dc2e31472a4f6c54e29c
 
 ---
 
 
 # Medición de audio y vídeo en Adobe Analytics{#measuring-audio-and-video-in-adobe-analytics}
 
-![Pancarta](./assets/media_analytics_banner.png)
+![Banner](./assets/media_analytics_banner.png)
 
 >[!IMPORTANT]
 >
->The documentation provided here is specific to clients utilizing version 1.5 or higher of Adobe's *Media SDK* for heartbeat measurement, or Adobe's newer *Media Collection API* for heartbeat measurement. No incluye instrucciones sobre la implementación de video Hito heredada. Recomendamos a nuestros clientes que empiecen a usar las dos últimas herramientas de seguimiento de medios de Adobe, o al menos una, para que puedan sacar así el máximo partido a las mejoras y las mediciones avanzadas. Puede ver las [ventajas de empezar a usar las nuevas herramientas](media-overview.md#section_cnj_5st_p1b) a continuación. Aunque seguiremos admitiendo el método Hito de seguimiento de vídeos, no habrá actualizaciones, correcciones ni mejoras de funciones planeadas. Si tiene más preguntas, póngase en contacto con el administrador de su cuenta de Adobe.
+>The documentation provided here is specific to clients utilizing version 1.5 or higher of Adobe's *Media SDK* for heartbeat measurement, or Adobe's newer *Media Collection API* for heartbeat measurement. No incluye instrucciones sobre la implementación de vídeo de hitos heredados. Recomendamos a nuestros clientes que empiecen a usar las dos últimas herramientas de seguimiento de medios de Adobe, o al menos una, para que puedan sacar así el máximo partido a las mejoras y las mediciones avanzadas. Puede ver las [ventajas de empezar a usar las nuevas herramientas](media-overview.md#section_cnj_5st_p1b) a continuación. While we will continue to support the Milestone method of tracking videos, there will not be any planned updates, fixes, or feature improvements. Si tiene más preguntas, póngase en contacto con el administrador de su cuenta de Adobe.
 
 ## Información general {#section_8BFE4F8DA64B4A5F826A4940B11AA466}
 
@@ -39,14 +39,14 @@ Algunas de las muchas ventajas que ofrecen las soluciones de medición de medios
 
 * **Análisis puntuales**: tome decisiones fundamentadas y en tiempo real gracias a los resultados de las métricas de rendimiento clave (por ejemplo, la duración) en varios canales. Los eventos de contenido principal se miden en **intervalos de 10 segundos** para monitorizar toda actividad a medida que pasa. Los eventos de seguimiento de anuncios ocurren en intervalos de **1 segundo**.
 * **Experiencia del usuario mejorada**: estas soluciones consiguen que los usuarios estén totalmente inmersos gracias a un menor número de eventos de almacenamiento en búfer y a que permiten al cliente comprender dónde y cuándo deben aparecer los anuncios dentro del contenido para que la experiencia sea lo más cómoda y menos intrusiva posible, lo que fomenta que vuelvan a visitarlo y se registren visitas repetidas.
-* **Imagen holística:** Combine varios puntos de datos en todos los distribuidores de contenido para obtener una vista completa de toda la actividad de medios, y mida la participación y vea/escuche todos los canales posibles a través de la [función Federated Analytics](federated-analytics.md) .
+* **Holistic picture -** Combine multiple data points across all of your content distributors to get a full view of all your media activity, and measure engagement and views/listens across all possible channels through the [Federated Analytics](data-sharing/federated-analytics.md) feature.
 * **Aumento del nivel de granularidad**: evalúe los patrones de visualización al nivel más granular, incluido el tiempo individual de visitante por día, espectadores/oyentes simultáneos por minuto y la duración media del contenido consumido.
 * **Medición exacta**: medición en varios dispositivos utilizados para el consumo de medios, incluidos OTT, smartphones, tabletas, equipos de escritorio y mucho más, para controlar los patrones de participación del usuario.
 * **Segmentación**: estas soluciones clasifican los reproductores, dispositivos, géneros y capítulos, y muestran la forma en que cada uno repercute en las vistas/escuchas generales y la participación de los usuarios con el contenido, el audio, la publicidad y las combinaciones.
 
 ## Ventajas de Heartbeat frente a Milestone {#section_cnj_5st_p1b}
 
-Adobe Analytics para medios puede medirse a través de dos medios: el método de hito heredado (solo vídeo) y el método de latidos actual (audio y vídeo, destacado tanto en el SDK de medios como en la API de recopilación de medios). El método de medición de latidos, Heartbeats, es preferible y recomendamos a nuestros clientes que empiecen a usar esta versión (si todavía no lo hacen) para que puedan aprovechar las ventajas que se describen a continuación.
+Adobe Analytics para medios se puede medir mediante dos métodos: el método Milestone heredado (solo vídeo) y el método Heartbeat actual (audio y vídeo, que se incluyen tanto en el SDK de medios como en la API de Media Collection). El método de medición de latidos, Heartbeats, es preferible y recomendamos a nuestros clientes que empiecen a usar esta versión (si todavía no lo hacen) para que puedan aprovechar las ventajas que se describen a continuación.
 
 El método Milestone se basa en llamadas individuales al servidor de Analytics para inicios de vídeo, cuartiles, duración y finalizaciones. El método Heartbeats constituye una solución de seguimiento de medios más rigurosa que mide el contenido principal en intervalos de 10 segundos para ofrecer métricas estandarizadas y mejoradas. Además, Adobe ha aprendido del método Milestone y ahora ofrece un proceso de implementación más sencillo y rápido mediante el Media SDK o la API de Media Collection que Heartbeats utiliza.
 
@@ -102,12 +102,12 @@ En la tabla que aparece a continuación puede comprobar los dispositivos compati
 | **PS3/PS4 de Sony** |  | ![](assets/icon-blue-check.png) |
 | **(Otros/nuevos dispositivos conectados)** |  | ![](assets/icon-blue-check.png) |
 
-For Media SDK, also see [Minimum Platform Version Support](./sdk-implement/setup/setup-overview.md#minimum-platform-version)
+Para el SDK de medios, consulte Compatibilidad con versiones de plataforma [mínima](./sdk-implement/setup/setup-overview.md#minimum-platform-version)
 
-## Transport Layer Security {#transport-layer-security}
+## Seguridad de la capa de transporte {#transport-layer-security}
 
-**Aviso de TLS —** Adobe tiene estándares de cumplimiento de seguridad que requieren el final de los protocolos de seguridad antiguos. Para seguir cumpliendo con las normas de protocolo de seguridad cambiantes, Adobe está moviendo hacia el uso de TLS 1.2 para poder utilizar la versión más actualizada y segura. A partir del 20 de febrero de 2019, Adobe solo admitirá TLS 1.1 o posterior. Con este cambio, Adobe dejará de recopilar datos de usuarios finales con dispositivos antiguos o exploradores Web que implementen TLS 1.0. Migrar a TLS 1.2 proporciona una seguridad mejorada. Es importante que revise los detalles específicos y que planifique los cambios para garantizar una transición sin contratiempos.
+**Aviso TLS:** Adobe cuenta con estándares de seguridad que requieren la finalización de la vida útil de protocolos de seguridad más antiguos. Para seguir cumpliendo con los estándares de protocolo de seguridad en evolución, Adobe está avanzando hacia el uso de TLS 1.2, con el fin de tener la versión más actualizada y segura en uso. A partir del 20 de febrero de 2019, Adobe solo admitirá TLS 1.1 o posterior. Con este cambio, Adobe ya no recopilará datos de usuarios finales con dispositivos o navegadores web más antiguos que implementen TLS 1.0. La migración a TLS 1.2 ofrece una seguridad mejorada. Es importante que revise los detalles específicos y que planifique los cambios para garantizar una transición sin contratiempos.
 
 >[!NOTE]
 >
->TLS es el protocolo de seguridad implementado más ampliamente en los exploradores Web y otras aplicaciones que requieren que los datos se intercambien de forma segura a través de una red.
+>TLS es actualmente el protocolo de seguridad más utilizado en exploradores web y otras aplicaciones que requieren que los datos se intercambien de forma segura a través de una red.
