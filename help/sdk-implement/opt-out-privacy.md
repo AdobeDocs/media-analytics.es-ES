@@ -1,7 +1,7 @@
 ---
 seo-title: Configuración de privacidad y exclusión
 title: Configuración de privacidad y exclusión
-uuid: 7 e 60 c 7 bd -8 dba -4 c 7 a -9 c 3 c -0 c 634 b 815397
+uuid: 7e60c7bd-8dba-4c7a-9c3c-0c634b815397
 translation-type: tm+mt
 source-git-commit: 80208f1c4773857f7907be0b8566c55a03e6106c
 
@@ -16,17 +16,17 @@ Puede controlar si se permite el seguimiento de la actividad en un dispositivo d
 
 * **Aplicaciones móviles**: la biblioteca de VA respeta la configuración de privacidad y exclusión de la biblioteca `AdobeMobile`. Para desactivar el seguimiento, debe utilizar la biblioteca `AdobeMobile`. Para obtener más información sobre la configuración de exclusión y privacidad de la biblioteca `AdobeMobile`, consulte [Configuración de privacidad y exclusión](https://docs.adobe.com/content/help/en/mobile-services/android/gdpr-privacy-android/privacy.html).
 * **Aplicaciones JavaScript/de explorador**: la biblioteca de VA respeta la configuración de privacidad y exclusión de `VisitorAPI`. Para desactivar el seguimiento, debe desactivar el servicio API del visitante. For further information on opt­out and privacy, see [Adobe Experience Platform Identity Service.](https://marketing.adobe.com/resources/help/en_US/mcvid/).
-* **Aplicaciones OTT (Chromecast, Roku):** los SDK OTT proporcionan API para el Reglamento General de Protección de Datos (RGPD) que permiten establecer indicadores `opt` de estado para la recopilación y transmisión de datos y para recuperar identidades almacenadas localmente.
+* **Aplicaciones OTT (Chromecast, Roku): los SDK OTT (** por sus siglas en inglés) proporcionan API preparadas para el Reglamento General de Protección de Datos (RGPD) que le permiten establecer indicadores `opt` de estado para la recopilación y transmisión de datos y recuperar identidades almacenadas localmente.
 
    >[!NOTE]
    >
-   >Las llamadas de seguimiento de Media Heartbeat también están desactivadas si el estado de privacidad se establece en opt-out.
+   >Las llamadas de seguimiento de Media Heartbeat también se desactivan si el estado de privacidad está establecido en la opción de desactivación.
 
    Puede controlar si los datos de Analytics se envían en un dispositivo específico mediante la configuración siguiente:
 
-   * `privacyDefault` La configuración del archivo `ADBMobile.json` de configuración. Este ajuste controla la configuración inicial que persiste hasta que se cambia en el código.
+   * The `privacyDefault` setting in the `ADBMobile.json` config file. Este ajuste controla la configuración inicial que persiste hasta que se cambia en el código.
 
-   * The `ADBMobile().setPrivacyStatus()` method.
+   * El `ADBMobile().setPrivacyStatus()` método.
 
       * **Desactivar:**
 
@@ -43,7 +43,7 @@ Puede controlar si se permite el seguimiento de la actividad en un dispositivo d
             ```
          >[!IMPORTANT]
          >
-         >Cuando un usuario renuncia al seguimiento, todos los datos del dispositivo persistirán y los ID se purgarán hasta que el usuario vuelva a activarla.
+         >Cuando un usuario deja de realizar el seguimiento, todos los datos e ID del dispositivo persistentes se purgarán hasta que el usuario vuelva a participar.
 
       * **Reactivar:**
 
@@ -79,7 +79,7 @@ Esta información le ayuda a recuperar ID de usuario almacenados localmente desd
 
 >[!IMPORTANT]
 >
->El método para recuperar todos los identificadores obtiene todas las identidades de usuario conocidas y persistentes por el SDK. Debe invocar este método **antes** de que el usuario salga.
+>El método para recuperar todos los identificadores obtiene todas las identidades de usuario conocidas y conservadas por el SDK. Debe invocar este método **antes** de que el usuario salga.
 
 Los ID almacenados localmente se devuelven en una cadena JSON, que puede contener:
 
