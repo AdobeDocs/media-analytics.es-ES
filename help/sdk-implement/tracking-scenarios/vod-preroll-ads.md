@@ -2,8 +2,8 @@
 seo-title: Reproducción de VOD con anuncios previos a la emisión
 title: Reproducción de VOD con anuncios previos a la emisión
 description: En esta situación, se han insertado anuncios previos a la emisión antes del contenido principal.
-seo-description: En este escenario en Adobe Media Analytics, los anuncios previos se han insertado antes del contenido principal.
-uuid: 5 d 1022 a 8-88 cb -40 aa -919 c -60 dd 592 a 639 e
+seo-description: En este escenario de Adobe Media Analytics, se han insertado anuncios previos antes del contenido principal.
+uuid: 5d1022a8-88cb-40aa-919c-60dd592a639e
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -24,13 +24,13 @@ En esta situación, se han insertado anuncios previos a la emisión antes del co
 | Se reproduce el primer fotograma del segundo anuncio. | `trackEvent:AdStart` | Inicio de publicidad de Analytics, inicio de publicidad de Heartbeat |  |
 | Se reproduce el anuncio. |  | Latidos de anuncio |  |
 | Se termina de reproducir el segundo anuncio. | <ul> <li> `trackEvent:trackAdComplete` </li> <li> `trackEvent:AdBreakComplete` </li> </ul> | Finalización de publicidad de Heartbeat  | Se llega al final del anuncio y de la secuencia. |
-| Se reproduce el contenido. |  | Latidos de contenido | This network call is identical to the [VOD playback with no ads](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) scenario. |
-| El contenido termina de reproducirse. | `trackComplete` | Finalización de contenido de Heartbeat | This network call is identical to the [VOD playback with no ads](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) scenario. |
+| Se reproduce el contenido. |  | Latidos de contenido | Esta llamada de red es idéntica al escenario de reproducción de [VOD sin anuncios](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) . |
+| El contenido termina de reproducirse. | `trackComplete` | Finalización de contenido de Heartbeat | Esta llamada de red es idéntica al escenario de reproducción de [VOD sin anuncios](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) . |
 | La sesión finaliza. | `trackSessionEnd` |  | `SessionEnd` |
 
 ## Parámetros {#section_33CDFB6CB230437480B67A3D149EC44E}
 
-When ad playback begins, a `Heartbeat Ad Start` call is sent. If the beginning of the ad does not coincide with the 10-second timer, the `Heartbeat Ad Start` call is delayed by a few seconds, and the call goes to the next 10-second interval. When this happens, a `Content Heartbeat` goes out in the same interval, and you can differentiate between the two calls by looking at the event type and the asset type:
+Cuando comienza la reproducción del anuncio, se envía una `Heartbeat Ad Start` llamada. If the beginning of the ad does not coincide with the 10-second timer, the `Heartbeat Ad Start` call is delayed by a few seconds, and the call goes to the next 10-second interval. When this happens, a `Content Heartbeat` goes out in the same interval, and you can differentiate between the two calls by looking at the event type and the asset type:
 
 ### Inicio de anuncio de Heartbeat
 
@@ -178,7 +178,7 @@ En esta situación, el VOD está formado por un anuncio previo a la emisión, un
    ........ 
    ```
 
-* **iOS:** para ver este escenario en iOS, configure el siguiente código:
+* **iOS -** Para ver este escenario en iOS, configure el siguiente código:
 
    ```
    //  Set up mediaObject 
@@ -282,7 +282,7 @@ En esta situación, el VOD está formado por un anuncio previo a la emisión, un
    ....... 
    ```
 
-* **JavaScript** Para ver este escenario en JavaScript, introduzca el siguiente texto:
+* **JavaScript** Para ver este escenario en JavaScript, escriba el siguiente texto:
 
    ```js
    // Set up mediaObject 
@@ -748,7 +748,7 @@ En esta situación, en el contenido de VOD se reproduce un anuncio previo a la e
    ....... 
    ```
 
-* **JavaScript** Para ver este escenario en JavaScript, introduzca el siguiente texto:
+* **JavaScript** Para ver este escenario en JavaScript, escriba el siguiente texto:
 
    ```js
    // Set up mediaObject 
