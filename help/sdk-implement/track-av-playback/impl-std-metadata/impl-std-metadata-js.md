@@ -3,7 +3,7 @@ description: 'null'
 seo-description: 'null'
 seo-title: Implementación de metadatos estándar en JavaScript
 title: Implementación de metadatos estándar en JavaScript
-uuid: 523 d 29 e 3-0 a 62-40 d 7-ac 74-da 645024 cdcb
+uuid: 523d29e3-0a62-40d7-ac74-da645024cdcb
 translation-type: tm+mt
 source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
 
