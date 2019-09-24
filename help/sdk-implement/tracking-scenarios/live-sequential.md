@@ -38,7 +38,7 @@ Este es el mismo escenario que el de [Reproducción de VOD sin anuncios](/help/s
 | `s:user:mid` | `s:user:mid` | Debe coincidir con el valor medio de la llamada de inicio de contenido de Adobe Analytics |
 | `s:event:type` | `"start"` |  |
 | `s:asset:type` | `"main"` |  |
-| `s:asset:media_id` | &lt;Nombre del medio&gt; |  |
+| `s:asset:media_id` | &lt;Your Media Name&gt; |  |
 | `s:stream:type` | `live` |  |
 | `s:meta:*` | *opcional* | Metadatos personalizados definidos en el medio |
 
@@ -53,7 +53,7 @@ Es igual que la llamada de inicio de contenido de Heartbeat salvo en el parámet
 
 ## Latidos de contenido {#section_7B387303851A43E5993F937AE2B146FE}
 
-Durante la reproducción de medios, hay un temporizador que enviará uno o más latidos cada 10 segundos para el contenido principal y cada segundo para los anuncios. Estos latidos contienen datos sobre la reproducción, los anuncios y el almacenamiento en búfer, entre otros. El contenido exacto de cada latido no se detallará en este documento. Lo más importante es que los latidos se desencadenan constantemente mientras dura la reproducción.
+During media playback, there is a timer that will send one or more heartbeats every 10 seconds for main content, and every one second for ads. Estos latidos contienen datos sobre la reproducción, los anuncios y el almacenamiento en búfer, entre otros. El contenido exacto de cada latido no se detallará en este documento. Lo más importante es que los latidos se desencadenan constantemente mientras dura la reproducción.
 
 En los latidos de contenido debe fijarse en ciertos detalles:
 
