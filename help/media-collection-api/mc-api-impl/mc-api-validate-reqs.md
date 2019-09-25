@@ -1,7 +1,7 @@
 ---
 seo-title: Validación de solicitudes de eventos
 title: Validación de solicitudes de eventos
-uuid: 1 fc 92 f 21-b 510-4 c 96-8 ea 2-47 e 819 f 4 a 96 e
+uuid: 1fc92f21-b510-4c96-8ea2-47e819f4a96e
 translation-type: tm+mt
 source-git-commit: 6468ace2e30db1a427a3d7f1b080ab42c578351a
 
@@ -125,5 +125,5 @@ Connection: keep-alive
 
 >[!NOTE]
 >
->No es posible validar el nivel de sesión, ya que el contexto de la sesión no está disponible en la capa de recopilación.
+>La validación del nivel de sesión no es posible, ya que el contexto de sesión no está disponible en la capa de recopilación.
 
