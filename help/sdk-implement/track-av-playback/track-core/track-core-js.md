@@ -1,7 +1,7 @@
 ---
 seo-title: Seguimiento de reproducción principal en JavaScript
 title: Seguimiento de reproducción principal en JavaScript
-uuid: 3 d 6 e 0 ab 1-899 a -43 c 3-b 632-8276 e 84345 ab
+uuid: 3d6e0ab1-899a-43c3-b632-8276e84345ab
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -11,9 +11,9 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 # Seguimiento de reproducción principal en JavaScript{#track-core-playback-on-javascript}
 
 >[!IMPORTANT]
->Esta documentación abarca el seguimiento en la versión 2. x del SDK. Si va a implementar una versión 1.x del SDK, puede descargar las guías del desarrollador de 1.x aquí: [Descargar SDK](/help/sdk-implement/download-sdks.md).
+>Esta documentación cubre el seguimiento en la versión 2.x del SDK. Si va a implementar una versión 1.x del SDK, puede descargar las guías del desarrollador de 1.x aquí: [Descargar SDK](/help/sdk-implement/download-sdks.md).
 
-1. **Configuración inicial del seguimiento**
+1. **Configuración de seguimiento inicial**
 
    Identify when the user triggers the intention of playback (the user clicks play and/or autoplay is on) and create a `MediaObject` instance.
 
@@ -24,21 +24,21 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
    | `name` | Nombre del medio | Sí |
    | `mediaid` | Identificador único del medio | Sí |
    | `length` | Duración del medio | Sí |
-   | `streamType` | Stream type (see _StreamType constants_ below) | Sí |
-   | `mediaType` | Media type (see _MediaType constants_ below) | Sí |
+   | `streamType` | Tipo de flujo (consulte _Constantes_ StreamType a continuación) | Sí |
+   | `mediaType` | Tipo de medio (consulte _las constantes_ de MediaType más abajo) | Sí |
 
-   **`StreamType`constantes:**
+   **`StreamType`constants:**
 
    | Nombre de la constante | Descripción   |
    |---|---|
    | `VOD` | Tipo de emisión de vídeo bajo demanda. |
    | `LIVE` | Tipo de emisión de contenido en directo. |
    | `LINEAR` | Tipo de emisión del contenido lineal. |
-   | `AOD` | Tipo de flujo para audio on Demand. |
-   | `AUDIOBOOK` | Tipo de flujo del libro de audio. |
+   | `AOD` | Stream type for Audio on Demand. |
+   | `AUDIOBOOK` | Tipo de flujo para el libro de audio. |
    | `PODCAST` | Tipo de flujo para Podcast. |
 
-   **`MediaType`constantes:**
+   **`MediaType`constants:**
 
    | Nombre de la constante | Descripción |
    |---|---|
@@ -56,7 +56,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 1. **Adjuntar metadatos**
 
-   De forma opcional, adjunte objetos de metadatos estándar o personalizados a la sesión de seguimiento a través de variables de datos de contexto.
+   Optionally attach standard and/or custom metadata objects to the tracking session through context data variables.
 
    * **Metadatos estándar**
 
@@ -64,14 +64,14 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
       >[!NOTE]
       >
-      >Incluir el objeto de metadatos estándar en el objeto multimedia es opcional.
+      >La asociación del objeto de metadatos estándar al objeto multimedia es opcional.
 
       * Referencia de API de claves de metadatos de medios: [Claves de metadatos estándar de JavaScript](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript)
 
          See the comprehensive set of available metadata here: [Audio and video parameters](/help/metrics-and-metadata/audio-video-parameters.md)
    * **Metadatos personalizados**
 
-      Cree un objeto variable para las variables personalizadas y rellene los datos de este medio. Por ejemplo:
+      Cree un objeto variable para las variables personalizadas y rellene con los datos de este medio. Por ejemplo:
 
       ```js
       /* Set custom context data */ 
@@ -85,7 +85,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 1. **Rastrear la intención de iniciar la reproducción**
 
-   To begin tracking a media session, call `trackSessionStart` on the Media Heartbeat instance:
+   Para empezar a realizar el seguimiento de una sesión multimedia, llame `trackSessionStart` a la instancia de Media Heartbeat:
 
    ```js
    mediaHeartbeat.trackSessionStart(mediaObject, customVideoMetadata);
@@ -93,7 +93,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
    >[!TIP]
    >
-   >El segundo valor es el nombre de objeto de metadatos de medios personalizado que ha creado en el paso 2.
+   >El segundo valor es el nombre del objeto de metadatos multimedia personalizado que se creó en el paso 2.
 
    >[!IMPORTANT]
    >
@@ -129,17 +129,17 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
    >[!IMPORTANT]
    >
-   >`trackSessionEnd` marca el final de una sesión de seguimiento. Si la sesión se ha visto por completo correctamente, es decir, el usuario ha visto el contenido hasta el final, asegúrese de invocar `trackComplete` antes que `trackSessionEnd`. Any other `track*` API call is ignored after `trackSessionEnd`, except for `trackSessionStart` for a new tracking session.
+   >`trackSessionEnd` marks the end of a tracking session. Si la sesión se ha visto por completo correctamente, es decir, el usuario ha visto el contenido hasta el final, asegúrese de invocar `trackComplete` antes que `trackSessionEnd`. Any other `track*` API call is ignored after `trackSessionEnd`, except for `trackSessionStart` for a new tracking session.
 
-1. **Rastrear todos los escenarios de pausa posibles**
+1. **Rastrear todos los escenarios posibles de pausa**
 
-   Identify the event from the media player for pause and call `trackPause`:
+   Identifique el evento desde el reproductor de medios para pausar y llamar `trackPause`:
 
    ```js
    mediaHeartbeat.trackPause();
    ```
 
-   **Poner en pausa escenarios**
+   **Pausar escenarios**
 
    Identify any scenario in which the media player will pause and make sure that `trackPause` is properly called. Las siguientes situaciones requieren que la aplicación invoque `trackPause()`:
 
@@ -156,7 +156,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
    >[!TIP]
    >
-   >Puede ser el mismo origen de evento que se utilizó en el paso 4. Ensure that each `trackPause()` API call is paired with a following `trackPlay()` API call when the playback resumes.
+   >Puede ser la misma fuente de eventos que se utilizó en el paso 4. Ensure that each `trackPause()` API call is paired with a following `trackPlay()` API call when the playback resumes.
 
 * Situaciones de seguimiento: [Reproducción de VOD sin anuncios](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)
 * Reproductor de muestra incluido con el SDK para JavaScript para ver un ejemplo de seguimiento completo.
