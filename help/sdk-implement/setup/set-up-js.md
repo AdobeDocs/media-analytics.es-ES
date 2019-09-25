@@ -1,7 +1,7 @@
 ---
 seo-title: Configuración de JavaScript
 title: Configuración de JavaScript
-uuid: 0269 d 8 ad -0 af 8-4 bf 1-9 d 15-e 06 c 2952 a 005
+uuid: 0269d8ad-0af8-4bf1-9d15-e06c2952a005
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -12,10 +12,9 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ## Requisitos previos
 
-* **Obtención de parámetros
-de configuración válidos** Estos parámetros pueden obtenerse de un representante de Adobe después de configurar su cuenta de Analytics.
-* **Implementación`AppMeasurement`para JavaScript en su aplicación
-de medios** Para obtener más información sobre la documentación del SDK de Adobe Mobile, consulte [Implementación de Analytics con JavaScript.](https://marketing.adobe.com/resources/help/en_US/sc/implement/js_implementation.html)
+* **Obtener parámetros** de configuración válidos Estos parámetros se pueden obtener de un representante de Adobe después de configurar la cuenta de Analytics.
+* **Implement  for JavaScript in your media application
+For more information about the Adobe Mobile SDK documentation, see Implementing Analytics Using JavaScript.`AppMeasurement`**[](https://marketing.adobe.com/resources/help/en_US/sc/implement/js_implementation.html)
 
 * **Proporcione las siguientes capacidades en su reproductor de medios**:
 
@@ -24,7 +23,7 @@ de medios** Para obtener más información sobre la documentación del SDK de Ad
 
 1. Añada la biblioteca [descargada](/help/sdk-implement/download-sdks.md#section_551A10AD7880426BB29AE52482BB4211) al proyecto. Cree referencias locales a las clases para mayor comodidad.
 
-   1. Expand the `MediaSDK-js-v2.*.zip` file that you downloaded.
+   1. Expanda el `MediaSDK-js-v2.*.zip` archivo que descargó.
    1. Verify that the `MediaSDK.min.js` file exists in the `libs` directory:
 
    1. Host the `MediaSDK.min.js` file.
@@ -102,7 +101,7 @@ de medios** Para obtener más información sobre la documentación del SDK de Ad
 
    >[!TIP]
    >
-   >`MediaHeartbeat` requiere una instancia de `AppMeasurement` enviar llamadas a Adobe Analytics. Este es un ejemplo de una instancia de `AppMeasurement`:
+   >`MediaHeartbeat` requiere una instancia de `AppMeasurement` para enviar llamadas a Adobe Analytics. Este es un ejemplo de una instancia de `AppMeasurement`:
 
    ```js
    var appMeasurement = new AppMeasurement(); 
