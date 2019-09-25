@@ -1,7 +1,7 @@
 ---
 seo-title: Configuración de Android
 title: Configuración de Android
-uuid: 3 ffe 3276-a 104-4182-9220-038729 e 9 f 3 d 5
+uuid: 3ffe3276-a104-4182-9220-038729e9f3d5
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -12,10 +12,9 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ## Requisitos previos
 
-* **Obtenga parámetros de configuración válidos para el SDK**
-de medios Estos parámetros pueden obtenerse de un representante de Adobe después de configurar su cuenta de Analytics.
-* **Implementar adbmobile para Android en su aplicación**
-Para obtener más información sobre la documentación del SDK de Adobe Mobile, consulte [SDK 4. x de Android para Soluciones de Experience Cloud.](https://marketing.adobe.com/resources/help/en_US/mobile/android/)
+* **Obtain valid configuration parameters for the Media SDK
+These parameters can be obtained from an Adobe representative after you set up your analytics account.**
+* **Implementación de ADBMobile para Android en la aplicación** Para obtener más información sobre la documentación del SDK de Adobe Mobile, consulte SDK 4.x de [Android para soluciones de Experience Cloud.](https://marketing.adobe.com/resources/help/en_US/mobile/android/)
 * **Proporcione las siguientes capacidades en su reproductor de medios**:
    * *Una API para suscribirse a eventos del reproductor*: el Media SDK requiere que se invoquen varias API sencillas cuando se producen eventos en el reproductor.
    * *Una API que proporcione información del reproductor*: esta información incluye detalles como el nombre del contenido y la posición del cabezal de reproducción.
