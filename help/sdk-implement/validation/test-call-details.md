@@ -1,7 +1,7 @@
 ---
 seo-title: Detalles de la llamada de prueba
 title: Detalles de la llamada de prueba
-uuid: d 3 a 0 e 62 f -2 fc 3-413 d-ac 56-adbbc 9 b 3 e 983
+uuid: d3a0e62f-2fc3-413d-ac56-adbbc9b3e983
 translation-type: tm+mt
 source-git-commit: d694ced982140c1f8020c0be304492aee0495cdc
 
@@ -10,9 +10,9 @@ source-git-commit: d694ced982140c1f8020c0be304492aee0495cdc
 
 # Detalles de la llamada de prueba{#test-call-details}
 
-## Iniciar el reproductor de medios {#start-the-media-player}
+## Start the media player {#start-the-media-player}
 
-### Llamada de inicio de Adobe Analytics (appmeasurement) {#aa-start-call}
+### Adobe Analytics (AppMeasurement) Start call {#aa-start-call}
 
 | Parámetro |  Valor (ejemplo)  |
 |---|---|
@@ -31,7 +31,7 @@ source-git-commit: d694ced982140c1f8020c0be304492aee0495cdc
 * Las variables de datos de contexto adicionales deben estar presentes y contener metadatos. Consulte los detalles de metadatos a continuación.
 * La duración de las emisiones lineales debe establecerse con la mejor estimación para el programa actual.
 
-### Metadatos estándar en la llamada de inicio de Adobe Analytics (appmeasurement) {#std-metadata-aa}
+### Standard metadata in Adobe Analytics (AppMeasurement) Start call {#std-metadata-aa}
 
 | Parámetro |  Valor (ejemplo)  |
 |---|---|
@@ -50,7 +50,7 @@ source-git-commit: d694ced982140c1f8020c0be304492aee0495cdc
 | `a.media.feed` | no feed |
 | `a.media.stream_format` | 0 |
 
-### Metadatos personalizados en la llamada de inicio de Adobe Analytics (appmeasurement) {#custom-metadata-aa}
+### Metadatos personalizados en la llamada de inicio de Adobe Analytics (AppMeasurement) {#custom-metadata-aa}
 
 | Parámetro |  Valor (ejemplo)  |
 |---|---|
@@ -77,7 +77,7 @@ source-git-commit: d694ced982140c1f8020c0be304492aee0495cdc
 * Las variables de datos de contexto adicionales deben estar presentes y contener metadatos. Consulte los detalles de metadatos a continuación.
 * La posición del cabezal de reproducción para las emisiones lineales al inicio del vídeo debe establecerse en los segundos transcurridos desde el inicio del programa actual, en lugar de 0.
 
-### Metadatos estándar en la llamada de inicio de Media Analytics (latidos) {#std-metadata-ma}
+### Standard metadata in Media Analytics (heartbeats) Start call {#std-metadata-ma}
 
 | Parámetro |  Valor (ejemplo)  |
 |---|---|
@@ -103,7 +103,7 @@ source-git-commit: d694ced982140c1f8020c0be304492aee0495cdc
 | `s:meta:custom.metadata` | value |
 | `s:meta:custom.metadata` | value |
 
-### Llamada de inicio de Media Analytics (latidos) de Adobe Analytics {#ma-aa-start}
+### Llamada de inicio de Adobe Analytics (latidos) de Media Analytics {#ma-aa-start}
 
 | Parámetro |  Valor (ejemplo)  |
 |---|---|
@@ -118,12 +118,12 @@ source-git-commit: d694ced982140c1f8020c0be304492aee0495cdc
 
 **Notas:**
 
-* Esta llamada indica que el SDK de Media ha solicitado que se envíe una `pev2=ms_s` llamada de Adobe Analytics al servidor de Adobe Analytics (appmeasurement).
+* Esta llamada indica que el SDK de medios ha solicitado que se envíe una llamada de Adobe Analytics `pev2=ms_s` al servidor de Adobe Analytics (AppMeasurement).
 * La llamada no puede contener metadatos personalizados.
 
 ## Visualización de la reproducción de anuncio {#view-ad-playback}
 
-### Llamada de inicio de anuncio de Adobe Analytics (appmeasurement) {#aa-ad-start-call}
+### Llamada de inicio de publicidad de Adobe Analytics (AppMeasurement) {#aa-ad-start-call}
 
 | Parámetro |  Valor (ejemplo)  |
 |---|---|
@@ -165,14 +165,14 @@ source-git-commit: d694ced982140c1f8020c0be304492aee0495cdc
 | `a.media.feed` | no feed |
 | `a.media.stream_format` | 0 |
 
-### Metadatos personalizados en la llamada de inicio de anuncio de Adobe Analytics (appmeasurement) {#custom-metadata-aa-ad-start}
+### Metadatos personalizados en la llamada de inicio de anuncio de Adobe Analytics (AppMeasurement) {#custom-metadata-aa-ad-start}
 
 | Parámetro |  Valor (ejemplo)  |
 |---|---|
 | `custom.metadata` | value |
 | `custom.metadata` | value |
 
-### Llamada de inicio de publicidad de Media Analytics (latidos) {#ma-ad-start-call}
+### Llamada de inicio de anuncio de Media Analytics (latidos) {#ma-ad-start-call}
 
 | Parámetro |  Valor (ejemplo)  |
 |---|---|
@@ -217,7 +217,7 @@ source-git-commit: d694ced982140c1f8020c0be304492aee0495cdc
 | `s:meta:custom.metadata` | value |
 | `s:meta:custom.metadata` | value |
 
-### Llamada de inicio de anuncio de Media Analytics (latidos) de Adobe Analytics {#ma-aa-ad-start-call}
+### Llamada de inicio de anuncio de Adobe Analytics (latidos) de Media Analytics {#ma-aa-ad-start-call}
 
 | Parámetro |  Valor (ejemplo)  |
 |---|---|
@@ -229,11 +229,11 @@ source-git-commit: d694ced982140c1f8020c0be304492aee0495cdc
 | `s:stream:type` | vod |
 | `s:asset:type` | ad |
 
-### Llamada de reproducción de publicidad de Media Analytics (latidos) {#ma-ad-play-call}
+### Llamada de reproducción de anuncio de Media Analytics (latidos) {#ma-ad-play-call}
 
 | Parámetro |  Valor (ejemplo)  |
 |---|---|
-| _**`s:event:type`**_ | _**reproducir**_ |
+| _**`s:event:type`**_ | _**play**_ |
 | `l:event:playhead` | 15 |
 | `l:event:duration` | 0 |
 | `s:asset:ad_id` | 9378 |
@@ -241,7 +241,7 @@ source-git-commit: d694ced982140c1f8020c0be304492aee0495cdc
 | `s:stream:type` | vod |
 | _**`s:asset:type`**_ | _**ad**_ |
 
-### Llamada de pausa de medios (latidos) Llamada de pausa publicitaria {#ma-ad-pause-call}
+### Llamada de pausa publicitaria de Media Analytics (latidos) {#ma-ad-pause-call}
 
 | Parámetro |  Valor (ejemplo)  |
 |---|---|
@@ -253,7 +253,7 @@ source-git-commit: d694ced982140c1f8020c0be304492aee0495cdc
 | `s:stream:type` | vod |
 | _**`s:asset:type`**_ | _**ad**_ |
 
-### Llamada de finalización de publicidad de Media Analytics (latidos) de Adobe Analytics {#ma-aa-ad-complete-call}
+### Llamada de finalización de publicidad de Adobe Analytics (latidos) de Media Analytics {#ma-aa-ad-complete-call}
 
 | Parámetro |  Valor (ejemplo)  |
 |---|---|
@@ -285,7 +285,7 @@ source-git-commit: d694ced982140c1f8020c0be304492aee0495cdc
 * La posición del cursor de reproducción debe incrementarse en 10 segundos con cada llamada de reproducción.
 * El valor `l:event:duration` representa el número de milisegundos desde la última llamada de seguimiento y debe ser aproximadamente el mismo valor en cada llamada de 10 segundos.
 
-## Poner en pausa el contenido principal {#pause-main-content}
+## Pausar contenido principal {#pause-main-content}
 
 ### Llamada de pausa de Media Analytics (latidos) {#ma-pause-call}
 
