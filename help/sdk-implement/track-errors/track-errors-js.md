@@ -1,7 +1,7 @@
 ---
 seo-title: Seguimiento de errores en JavaScript
 title: Seguimiento de errores en JavaScript
-uuid: 5 a 4 fc 5 df -2677-4189-92 af -5 cd 074847 b 39
+uuid: 5a4fc5df-2677-4189-92af-5cd074847b39
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -16,7 +16,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ## Implementación del seguimiento de errores
 
-1. Rastree los errores del reproductor de medios:
+1. Seguimiento de errores del reproductor de medios:
 
    ```js
    onPlayerError = function() { 
