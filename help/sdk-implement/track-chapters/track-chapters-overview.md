@@ -1,7 +1,7 @@
 ---
 seo-title: Información general
 title: Información general
-uuid: 3 fe 32425-5 e 2 a -4886-8 fea-d 91 d 15671 bb 0
+uuid: 3fe32425-5e2a-4886-8fea-d91d15671bb0
 translation-type: tm+mt
 source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
@@ -12,11 +12,11 @@ source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
 >[!IMPORTANT]
 >
->Las instrucciones siguientes proporcionan consejos para la implementación mediante SDK 2. x. Si va a implementar una versión 1.x del SDK, puede descargar la guía del desarrollador aquí: [Descargar SDK.](/help/sdk-implement/download-sdks.md)
+>Las siguientes instrucciones proporcionan instrucciones para la implementación mediante SDK 2.x. Si va a implementar una versión 1.x del SDK, puede descargar la guía del desarrollador aquí: [Descargar SDK.](/help/sdk-implement/download-sdks.md)
 
-El seguimiento de capítulo y segmento está disponible para capítulos o capítulos de medios personalizados. Algunos usos comunes del seguimiento de capítulos son definir segmentos personalizados basados en contenido multimedia (como entradas de béisbol) o definir segmentos de contenido entre pausas publicitarias. **No** es necesario rastrear capítulo para implementaciones de seguimiento de medios principales.
+El seguimiento de capítulos y segmentos está disponible para capítulos o segmentos de medios definidos de forma personalizada. Algunos usos comunes para el seguimiento de capítulos son definir segmentos personalizados en función del contenido de los medios (como entradas de béisbol) o definir segmentos de contenido entre pausas publicitarias. Chapter tracking is **not** required for core media tracking implementations.
 
-El seguimiento de capítulos incluye el inicio del capítulo, su finalización y omisión. Puede utilizar la API de reproductor de medios con lógica de segmentación personalizada para identificar eventos de capítulo y rellenar las variables de capítulo opcionales y requeridas.
+El seguimiento de capítulos incluye el inicio del capítulo, su finalización y omisión. You can use the media player API with customized segmentation logic to identify chapter events and to populate the required and optional chapter variables.
 
 ## Eventos del reproductor
 
@@ -42,7 +42,7 @@ El seguimiento de capítulos incluye el inicio del capítulo, su finalización y
 
    >[!NOTE]
    >
-   >Estas variables solo se requieren si planea rastrear capítulos.
+   >Estas variables solo son necesarias si planea realizar un seguimiento de los capítulos.
 
    | Nombre de variable | Descripción | Requerido |
    | --- | --- | :---: |
@@ -57,7 +57,7 @@ El seguimiento de capítulos incluye el inicio del capítulo, su finalización y
 1. Si no se ha completado la reproducción del capítulo porque el usuario ha elegido omitirlo (por ejemplo, si el usuario hace clic en la línea de tiempo para saltar el capítulo), invoque el evento `ChapterSkip` en la instancia de MediaHeartbeat.
 1. Si hay más capítulos, repita los pasos del 1 al 5.
 
-El siguiente código de ejemplo utiliza el SDK 2. x de JavaScript para un reproductor de medios HTML 5. Debe utilizar este código con el código de reproducción multimedia principal.
+The following sample code uses the JavaScript 2.x SDK for an HTML5 media player. Debe utilizar este código con el código de reproducción de medios principal.
 
 ```js
 /* Call on chapter start */ 
