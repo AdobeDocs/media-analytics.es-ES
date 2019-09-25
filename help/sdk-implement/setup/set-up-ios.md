@@ -1,7 +1,7 @@
 ---
 seo-title: Configuración de iOS
 title: Configuración de iOS
-uuid: a 1 c 6 be 79-a 6 dc -47 b 6-93 b 3-ac 7 b 42 f 1 f 3 eb
+uuid: a1c6be79-a6dc-47b6-93b3-ac7b42f1f3eb
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -12,14 +12,13 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ## Requisitos previos
 
-* **Obtenga parámetros de configuración válidos para el SDK**
-de medios Estos parámetros pueden obtenerse de un representante de Adobe después de configurar su cuenta de Analytics.
-* **Implementación de adbmobile para iOS en su aplicación**
-Para obtener más información sobre la documentación del SDK de Adobe Mobile, consulte [SDK 4. x de iOS para soluciones de Experience Cloud.](https://marketing.adobe.com/resources/help/en_US/mobile/ios/)
+* **Obtain valid configuration parameters for the Media SDK
+These parameters can be obtained from an Adobe representative after you set up your analytics account.**
+* **Implementación de ADBMobile para iOS en la aplicación** Para obtener más información sobre la documentación del SDK de Adobe Mobile, consulte SDK 4.x de [iOS para soluciones de Experience Cloud.](https://marketing.adobe.com/resources/help/en_US/mobile/ios/)
 
    >[!IMPORTANT]
    >
-   >A partir de iOS 9, Apple introdujo una función llamada App Transport Security (ATS). Esta función es útil para mejorar la seguridad de la red al garantizar que las aplicaciones solo utilizan protocolos y codificadores estándar del sector. Esta función está activada de forma predeterminada, pero tiene opciones de configuración que le permiten trabajar con ATS de diferentes formas. For details on ATS, see [App Transport Security.](https://marketing.adobe.com/resources/help/en_US/mobile/ios/app_transport_security.html)
+   >A partir de iOS 9, Apple introdujo una función denominada App Transport Security (ATS). Esta función es útil para mejorar la seguridad de la red al garantizar que las aplicaciones solo utilizan protocolos y codificadores estándar del sector. Esta función está activada de forma predeterminada, pero tiene opciones de configuración que le permiten trabajar con ATS de diferentes formas. For details on ATS, see App Transport Security.[](https://marketing.adobe.com/resources/help/en_US/mobile/ios/app_transport_security.html)
 
 * **Proporcione las siguientes capacidades en su reproductor de medios**:
 
