@@ -1,7 +1,7 @@
 ---
 seo-title: Información general de seguimiento
 title: Información general de seguimiento
-uuid: 7 b 8 e 2 f 76-bc 4 e -4721-8933-3 e 4453 b 01788
+uuid: 7b8e2f76-bc4e-4721-8933-3e4453b01788
 translation-type: tm+mt
 source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
@@ -12,7 +12,7 @@ source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
 >[!IMPORTANT]
 >
->Esta documentación abarca el seguimiento en la versión 2. x del SDK. Si va a implementar una versión 1.x del SDK, puede descargar las guías del desarrollador de 1.x aquí: [Descargar SDK.](/help/sdk-implement/download-sdks.md)
+>This documentation covers tracking in version 2.x of the SDK. Si va a implementar una versión 1.x del SDK, puede descargar las guías del desarrollador de 1.x aquí: [Descargar SDK.](/help/sdk-implement/download-sdks.md)
 
 ## Eventos del reproductor
 
@@ -22,7 +22,7 @@ El seguimiento de la reproducción principal incluye el seguimiento de la carga,
 
 * Crear el objeto de medio.
 * Rellenar los metadatos.
-* Llamada `trackSessionStart`; Por ejemplo: `trackSessionStart(mediaObject, contextData)`
+* Llamar `trackSessionStart`;Por ejemplo: `trackSessionStart(mediaObject, contextData)`
 
 ### Inicio del medio
 
@@ -49,17 +49,17 @@ El seguimiento de la reproducción principal incluye el seguimiento de la carga,
 
 * La llamada `trackEvent(SeekComplete)`
 
-### Cuando comienza el almacenamiento en búfer
+### Al iniciar el almacenamiento en búfer
 
 * La llamada `trackEvent(BufferStart);`
 
-### Cuando finaliza el almacenamiento en búfer
+### Al finalizar el almacenamiento en búfer
 
 * La llamada `trackEvent(BufferComplete);`
 
 >[!TIP]
 >
->La posición del cursor de reproducción se establece como parte del código de configuración y configuración. Para obtener más información, `getCurrentPlayheadTime`consulte [Información general: Directrices generales de implementación.](/help/sdk-implement/setup/setup-overview.md#section_965A3B699A8248DDB9B2B3EA3CC20E41)
+>The playhead position is set as part of the set-up and configuration code. Para obtener más información sobre `getCurrentPlayheadTime`, consulte [Información general: Directrices generales de implementación.](/help/sdk-implement/setup/setup-overview.md#section_965A3B699A8248DDB9B2B3EA3CC20E41)
 
 ## Implementación {#section_BB217BE6585D4EDEB34C198559575004}
 
@@ -101,7 +101,7 @@ El seguimiento de la reproducción principal incluye el seguimiento de la carga,
 
       >[!NOTE]
       >
-      >Incluir el objeto de metadatos estándar en el objeto multimedia es opcional.
+      >Attaching the standard metadata object to the media object is optional.
 
       Cree una instancia de un objeto de metadatos estándar, rellene las variables deseadas y establezca el objeto de metadatos en el objeto de Media Heartbeat.
 
@@ -127,7 +127,7 @@ El seguimiento de la reproducción principal incluye el seguimiento de la carga,
 
    >[!IMPORTANT]
    >
-   >`trackSessionEnd` marca el final de una sesión de seguimiento. Si la sesión se ha visto por completo correctamente, es decir, el usuario ha visto el contenido hasta el final, asegúrese de invocar `trackComplete` antes que `trackSessionEnd`. Any other `track*` API call is ignored after `trackSessionEnd`, except for `trackSessionStart` for a new tracking session.
+   >`trackSessionEnd` marks the end of a tracking session. Si la sesión se ha visto por completo correctamente, es decir, el usuario ha visto el contenido hasta el final, asegúrese de invocar `trackComplete` antes que `trackSessionEnd`. Any other `track*` API call is ignored after `trackSessionEnd`, except for `trackSessionStart` for a new tracking session.
 
 1. **Seguimiento de todas las situaciones de pausa posibles**: identifique el evento del reproductor de medios para la pausa e invoque `trackPause`.
 
@@ -142,7 +142,7 @@ El seguimiento de la reproducción principal incluye el seguimiento de la carga,
 
    >[!TIP]
    >
-   >Puede ser el mismo origen de evento que se utilizó en el paso 4. Ensure that each `trackPause()` API call is paired with a following `trackPlay()` API call when the playback resumes.
+   >Puede ser la misma fuente de eventos que se utilizó en el paso 4. Ensure that each `trackPause()` API call is paired with a following `trackPlay()` API call when the playback resumes.
 
 1. Escuche los eventos de llamada a otro punto de la reproducción del reproductor de medios. En la notificación del evento de inicio de la llamada a otro punto del contenido, utilice el evento `SeekStart` para realizar el seguimiento.
 1. En la notificación de finalización de llamada a otro punto del contenido del reproductor, realice un seguimiento del final de la llamada a otro punto del contenido utilizando el evento `SeekComplete`.
@@ -234,5 +234,5 @@ if (e.type == “buffered”) {
 
 ## Validación {#section_ABCFB92C587B4CAABDACF93452EFA78F}
 
-Para obtener más información sobre la validación de la implementación, consulte [Validación.](/help/sdk-implement/validation/validation-overview.md)
+Para obtener información sobre la validación de la implementación, consulte [Validación.](/help/sdk-implement/validation/validation-overview.md)
 
