@@ -1,7 +1,7 @@
 ---
 seo-title: Seguimiento de errores en Android
 title: Seguimiento de errores en Android
-uuid: 7 d 0 c 77 e 5-924 c -4619-8 e 29-3484748 ab 736
+uuid: 7d0c77e5-924c-4619-8e29-3484748ab736
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -14,7 +14,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 >
 >En las siguientes instrucciones se indican los pasos para la implementación en todos los kits de desarrollo de software de 2.x. Si va a implementar una versión 1.x del SDK, puede descargar las guías del desarrollador de 1.x aquí: [Descargar SDK.](/help/sdk-implement/download-sdks.md)
 
-1. Rastree los errores del reproductor de medios:
+1. Seguimiento de errores del reproductor de medios:
 
    ```java
    public void onPlayerError(Observable observable, Object data) {  
