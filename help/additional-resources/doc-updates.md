@@ -1,7 +1,7 @@
 ---
 seo-title: Actualizaciones de documentación
 title: Actualizaciones de documentación
-uuid: 1 f 3 e 48 df -83 b 6-418 c -8 cf 7-d 79466481 f 79
+uuid: 1f3e48df-83b6-418c-8cf7-d79466481f79
 index: y
 internal: n
 snippet: y
@@ -15,9 +15,8 @@ source-git-commit: 654aaef5d816e75429975d04c4e81ad4d4b6f706
 
 ## Última actualización: 7 de marzo de 2019 {#March-2019-update}
 
-* Esta actualización fue principalmente para la versión 2.2 de SDK de medios en las plataformas JavaScript y OTT.
-* La versión 2.2 de SDK de medios de JavaScript y plataformas OTT proporciona la misma compatibilidad que
-se describe a continuación para las plataformas iOS y Android (actualización del 1 de noviembre de 2018).
+* Esta actualización fue principalmente para la versión 2.2 del SDK de medios en las plataformas JavaScript y OTT.
+* La versión 2.2 del SDK de medios en plataformas JavaScript y OTT proporciona la misma compatibilidad que se describe a continuación para las plataformas iOS y Android (actualización del 1 de noviembre de 2018).
 
 ## Última actualización: 1 de noviembre de 2018 {#November-2018-update}
 
@@ -39,7 +38,7 @@ se describe a continuación para las plataformas iOS y Android (actualización d
 ## Actualización: 10 de octubre de 2018 {#October-2018-update}
 
 * La estructura de la documentación se ha “rediseñado” en el área de implementación de SDK, al combinar las guías de implementación de plataformas individuales (aunque prácticamente idénticas) en una sección de implementación de SDK, con ejemplos de seguimiento específicos de la plataforma presentados en subsecciones incluidas en los temas sobre seguimiento habituales.
-* Se ha cambiado el nombre de los archivos en previsión de una migración a un nuevo sistema de documentación. Se eliminaban todos los prefijos DITA (c_, r_, t_) que indican conceptos, referencias y tipos de tema de tarea respectivamente). Todos los caracteres de subrayado (“_”) se han reemplazado por guiones (“-”). Además, los nombres de archivo son más parecidos a los títulos de los temas.
+* Se ha cambiado el nombre de los archivos en previsión de una migración a un nuevo sistema de documentación. Se eliminaron todos los prefijos DITA ( c_, r_, t_ ) que indicaban los tipos de conceptos, referencias y temas de tareas respectivamente). Todos los caracteres de subrayado (“_”) se han reemplazado por guiones (“-”). Además, los nombres de archivo son más parecidos a los títulos de los temas.
 * Actualizaciones de los temas generales de validación y certificación.
 * Nuevo material introductorio, incluida una presentación de las opciones de medición, junto con actualizaciones de los requisitos, rutas de implementación y habilitación de Audience Manager.
 * Actualizaciones de las secciones de métricas y metadatos e informes y análisis para reflejar la adición de las capacidades de análisis de audio.
