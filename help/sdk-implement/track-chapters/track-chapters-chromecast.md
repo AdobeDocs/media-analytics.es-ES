@@ -1,7 +1,7 @@
 ---
 seo-title: Seguimiento de capítulos y segmentos en Chromecast
 title: Seguimiento de capítulos y segmentos en Chromecast
-uuid: 5 ea 562 b 9-0 e 07-4 fbb -9 a 3 b -213 d 746304 f 5
+uuid: 5ea562b9-0e07-4fbb-9a3b-213d746304f5
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -12,15 +12,15 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 >[!IMPORTANT]
 >
->Las instrucciones siguientes proporcionan consejos para la implementación mediante SDK 2. x. Si va a implementar una versión 1.x del SDK, puede descargar la guía del desarrollador aquí: [Descargar SDK.](/help/sdk-implement/download-sdks.md)
+>The following instructions provide guidance for implementation using 2.x SDKs. Si va a implementar una versión 1.x del SDK, puede descargar la guía del desarrollador aquí: [Descargar SDK.](/help/sdk-implement/download-sdks.md)
 
 1. Identifique cuándo se produce el evento de inicio de capítulo y cree la instancia de `ChapterObject` con la información del capítulo.
 
-   `ChapterObject` referencia de seguimiento de capítulo:
+   `ChapterObject` referencia de seguimiento de capítulos:
 
    >[!NOTE]
    >
-   >Estas variables solo se requieren si planea rastrear capítulos.
+   >Estas variables solo son necesarias si planea realizar un seguimiento de los capítulos.
 
    | Nombre de variable | Descripción | Requerido |
    | --- | --- | :---: |
