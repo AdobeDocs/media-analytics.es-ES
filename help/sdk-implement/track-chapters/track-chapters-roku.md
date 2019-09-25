@@ -1,7 +1,7 @@
 ---
 seo-title: Seguimiento de capítulos y segmentos en Roku
 title: Seguimiento de capítulos y segmentos en Roku
-uuid: 15 c 07131-77 d 7-4 a 97-92 c 6-0 a 190 c 6 b 08 d 3
+uuid: 15c07131-77d7-4a97-92c6-0a190c6b08d3
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -12,17 +12,17 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 >[!IMPORTANT]
 >
->Las instrucciones siguientes proporcionan consejos para la implementación mediante SDK 2. x. Si va a implementar una versión 1.x del SDK, puede descargar la guía del desarrollador aquí: [Descargar SDK.](/help/sdk-implement/download-sdks.md)
+>Las siguientes instrucciones proporcionan instrucciones para la implementación mediante SDK 2.x. Si va a implementar una versión 1.x del SDK, puede descargar la guía del desarrollador aquí: [Descargar SDK.](/help/sdk-implement/download-sdks.md)
 
-## Metadatos de anuncios estándar de implementación
+## Metadatos de anuncio estándar de implementación
 
 1. Identifique cuándo se produce el evento de inicio de capítulo y cree la instancia de `ChapterObject` con la información del capítulo.
 
-   `ChapterObject` referencia de seguimiento de capítulo:
+   `ChapterObject` referencia de seguimiento de capítulos:
 
    >[!NOTE]
    >
-   >Estas variables solo se requieren si planea rastrear capítulos.
+   >These variables are only required if you are planning to track chapters.
 
    | Nombre de variable | Descripción | Requerido |
    | --- | --- | :---: |
