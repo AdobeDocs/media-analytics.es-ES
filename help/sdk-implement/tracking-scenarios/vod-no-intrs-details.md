@@ -1,7 +1,7 @@
 ---
 seo-title: Reproducción de VOD sin anuncios
 title: Reproducción de VOD sin anuncios
-uuid: ee 2 a 1 b 79-2 c 2 f -42 e 1-8 e 81-b 62 bbdd 0 d 8 cb
+uuid: ee2a1b79-2c2f-42e1-8e81-b62bbdd0d8cb
 translation-type: tm+mt
 source-git-commit: b2d2f7078d655c6e50b3f2925002f93d5a0af533
 
@@ -17,13 +17,13 @@ Este caso trata de un recurso de VOD sin anuncios que se reproduce una vez de pr
 | Activador | Método de Heartbeat | Llamadas de red | Notas   |
 |---|---|---|---|
 | User clicks **[!UICONTROL Play]** | `trackSessionStart` | Inicio del contenido de Analytics, inicio del contenido de Heartbeat | Puede ser porque el usuario hace clic en Reproducir o por un evento de reproducción automática. |
-| Primer fotograma del medio | `trackPlay` | Reproducción del contenido de Heartbeat | Este método desencadena el temporizador y, a partir de este punto, se envían latidos cada 10 segundos mientras dura la reproducción. |
+| First frame of the media | `trackPlay` | Reproducción del contenido de Heartbeat | Este método desencadena el temporizador y, a partir de este punto, se envían latidos cada 10 segundos mientras dura la reproducción. |
 | Se reproduce el contenido. |  | Latidos de contenido |  |
 | El contenido termina de reproducirse. | `trackComplete` | Finalización de contenido de Heartbeat | *Complete* significa que el cabezal de reproducción ha llegado al final del contenido. |
 
 ## Parámetros {#section_45D7B10031524411B91E2C569F7818B0}
 
-Many of the same values that you see on Heartbeat Content Start Calls are also seen on Adobe Analytics `Content Start` Calls. Adobe utiliza muchos parámetros para rellenar los distintos informes de medios, pero en la tabla siguiente solo se enumeran los parámetros más importantes:
+Many of the same values that you see on Heartbeat Content Start Calls are also seen on Adobe Analytics `Content Start` Calls. Hay muchos parámetros que Adobe utiliza para rellenar los distintos informes de medios, pero en la tabla siguiente solo se muestran los más importantes:
 
 ### Inicio del contenido de Heartbeat
 
@@ -31,10 +31,10 @@ Many of the same values that you see on Heartbeat Content Start Calls are also s
 |---|---|---|
 | `s:sc:rsid` | &lt;El ID de su grupo de informes de Adobe&gt; |  |
 | `s:sc:tracking_server` | &lt;La URL de servidor de seguimiento de Analytics&gt; |  |
-| `s:user:mid` | se debe definir | Should match the mid value on the `Adobe Analytics Content Start` call. |
+| `s:user:mid` | se debe definir | Should match the mid value on the  call.`Adobe Analytics Content Start` |
 | `s:event:type` | `"start"` |  |
 | `s:asset:type` | `"main"` |  |
-| `s:asset:media_id` | &lt; Nombre del medio &gt; |  |
+| `s:asset:media_id` | &lt;Your Media Name&gt; |  |
 | `s:meta:*` | opcional | Metadatos personalizados que se establecen en el medio. |
 
 ## Reproducción del contenido de Heartbeat {#section_2ABBD51D3A6D45ABA92CC516E414417A}
