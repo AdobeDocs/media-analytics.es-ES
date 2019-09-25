@@ -1,7 +1,7 @@
 ---
 seo-title: Reproducción de VOD con un capítulo omitido
 title: Reproducción de VOD con un capítulo omitido
-uuid: 19 fb 020 c-eb 7 a -4942-9212-94 f 4 d 47195 b 9
+uuid: 19fb020c-eb7a-4942-9212-94f4d47195b9
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -18,7 +18,7 @@ Este es el mismo escenario que el de [reproducción de VOD con un capítulo](/he
 
 | Activador | Método de Heartbeat | Llamadas de red   | Notas |
 |---|---|---|---|
-| User clicks **[!UICONTROL Play]** | `trackSessionStart` | Inicio del contenido de Analytics, inicio del contenido de Heartbeat | La biblioteca de medición no sabe que hay un anuncio pre-roll. Estas llamadas de red son exactamente iguales que la [Reproducción sin interrupciones](vod-no-intrs-details.md) en el escenario de iOS. |
+| User clicks **[!UICONTROL Play]** | `trackSessionStart` | Inicio del contenido de Analytics, inicio del contenido de Heartbeat | La biblioteca de medición no sabe que hay un anuncio pre-roll. Estas llamadas de red son exactamente iguales que la [Playback with no interruptions in iOS](vod-no-intrs-details.md) scenario. |
 | Se inicia el capítulo. | `trackEvent:ChapterStart` | Inicio de capítulo de Heartbeat |  |
 | Se reproduce el primer fotograma del capítulo. | `trackPlay` | Reproducción de capítulo de Heartbeat | Cuando el contenido del capítulo se reproduce antes del contenido principal, los latidos deberían comenzar cuando se inicie el capítulo. |
 | Se reproduce el capítulo. |  | Latidos de capítulo |  |
@@ -31,7 +31,7 @@ Este es el mismo escenario que el de [reproducción de VOD con un capítulo](/he
 
 ## Parámetros {#section_1874F6B7880B43C5856BD11FF85B382E}
 
-The parameters used during chapter playback are identical to the parameters in the [VOD playback with one chapter](/help/sdk-implement/tracking-scenarios/vod-one-chapter.md) scenario, except that there is no chapter complete network call.
+Los parámetros utilizados durante la reproducción del capítulo son idénticos a los parámetros de la reproducción de [VOD con un escenario de capítulo](/help/sdk-implement/tracking-scenarios/vod-one-chapter.md) , excepto que no hay ninguna llamada de red de capítulo completado.
 
 ## Código de muestra {#section_fyl_ncj_x2b}
 
