@@ -1,7 +1,7 @@
 ---
 seo-title: Reproducción de VOD con un capítulo
 title: Reproducción de VOD con un capítulo
-uuid: 1566 a 6 f 5-cf 22-42 e 7-8 e 1 a -6976 c 6 c 4 e 649
+uuid: 1566a6f5-cf22-42e7-8e1a-6976c6c4e649
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -25,11 +25,11 @@ Si no se indica lo contrario, las llamadas de red en este escenario son iguales 
 | El capítulo finaliza. | `trackEvent:trackChapterComplete` | Finalización del capítulo de Heartbeat | Es el momento en que se llega al final de un capítulo. |
 | Se reproduce el contenido. |  | Latidos de contenido | Esta llamada de red es exactamente la misma que la del escenario de [Reproducción de VOD sin anuncios](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md). |
 | El contenido termina de reproducirse. | `trackComplete` | Finalización de contenido de Heartbeat | Esta llamada de red es exactamente la misma que la del escenario de [Reproducción de VOD sin anuncios](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md). |
-| La sesión finaliza. | `trackSessionEnd` |  | `SessionEnd` significa que se ha llegado al final de una sesión de visualización. Se debe llamar a esta API aunque el usuario no vea los medios hasta la finalización. |
+| La sesión finaliza. | `trackSessionEnd` |  | `SessionEnd` significa que se ha llegado al final de una sesión de visualización. This API must be called even if the user does not watch the media to completion. |
 
 ## Parámetros {#section_869319D99A474FEA8EA840415EA97FBD}
 
-When chapter playback begins, a `Heartbeat Chapter Start` call is sent. If the beginning of the chapter does not coincide with the 10-second timer, the `Heartbeat Chapter Start` call is delayed by a few seconds, and the call goes to the next 10-second interval.
+Cuando comienza la reproducción del capítulo, se envía una `Heartbeat Chapter Start` llamada. If the beginning of the chapter does not coincide with the 10-second timer, the `Heartbeat Chapter Start` call is delayed by a few seconds, and the call goes to the next 10-second interval.
 
 When this happens, a `Content Heartbeat` call goes out in the same interval. Puede diferenciar una de otra fijándose en el tipo de evento y el tipo de recurso:
 
