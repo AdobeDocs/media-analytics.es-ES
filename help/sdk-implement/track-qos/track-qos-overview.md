@@ -1,7 +1,7 @@
 ---
 seo-title: Información general
 title: Información general
-uuid: 4 d 73 c 47 f-d 0 a 4-4228-9040-d 6432311 c 9 eb
+uuid: 4d73c47f-d0a4-4228-9040-d6432311c9eb
 translation-type: tm+mt
 source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
@@ -14,13 +14,13 @@ source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 >
 >En las siguientes instrucciones se indican los pasos para la implementación en todos los kits de desarrollo de software de 2.x. Si va a implementar una versión 1.x del SDK, puede descargar las guías del desarrollador de 1.x aquí: [Descargar SDK.](/help/sdk-implement/download-sdks.md)
 
-Quality of experience tracking includes quality of service (QoS) and error tracking, both are optional elements and are **not** required for core media tracking implementations. Puede utilizar la API de reproductor de medios para identificar las variables relacionadas con qos y el seguimiento de errores. Estos son los elementos clave del seguimiento de la calidad de la experiencia:
+Quality of experience tracking includes quality of service (QoS) and error tracking, both are optional elements and are **not** required for core media tracking implementations. Puede utilizar la API del reproductor de medios para identificar las variables relacionadas con QoS y el seguimiento de errores. Estos son los elementos clave del seguimiento de la calidad de la experiencia:
 
 ## Eventos del reproductor {#player-events}
 
 ### En cualquier cambio de métrica de QoS:
 
-Cree o actualice la instancia del objeto QoS para la reproducción. [Referencia de la API de qos](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/MediaHeartbeat.html#.createQoSObject)
+Cree o actualice la instancia del objeto QoS para la reproducción. [Referencia de API de QoS](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/MediaHeartbeat.html#.createQoSObject)
 
 ### En todos los eventos de cambio de velocidad de bits
 
@@ -34,7 +34,7 @@ La llamada `trackEvent(Media.Heartbeat.Event.BitrateChange);`
 
    >[!TIP]
    >
-   >Estas variables solo se requieren si planea rastrear qos.
+   >These variables are only required if you are planning to track QoS.
 
    | Variable | Descripción | Requerido |
    | --- | --- | :---: |
@@ -48,9 +48,9 @@ La llamada `trackEvent(Media.Heartbeat.Event.BitrateChange);`
 
    >[!IMPORTANT]
    >
-   >Actualice el objeto qos y llame al suceso change de velocidad de bits en cada cambio de velocidad de bits. Esto proporciona los datos de QoS más precisos.
+   >Actualice el objeto QoS y llame al evento de cambio de velocidad de bits en cada cambio de velocidad de bits. Esto proporciona los datos de QoS más precisos.
 
-El siguiente código de ejemplo utiliza el SDK 2. x de JavaScript para un reproductor de medios HTML 5. Debe utilizar este código con el código de reproducción multimedia principal.
+El siguiente código de muestra utiliza el SDK de JavaScript 2.x para un reproductor de medios HTML5. Debe utilizar este código con el código de reproducción de medios principal.
 
 ```js
 var mediaDelegate = new MediaHeartbeatDelegate(); 
