@@ -1,7 +1,7 @@
 ---
 seo-title: Seguimiento del almacenamiento en búfer en JavaScript
 title: Seguimiento del almacenamiento en búfer en JavaScript
-uuid: c 380 cf 2 c -7729-4 d 4 a-a 4 da -581 bd 94 a 5896
+uuid: c380cf2c-7729-4d4a-a4da-581bd94a5896
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
