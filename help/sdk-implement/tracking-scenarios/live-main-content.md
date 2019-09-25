@@ -1,7 +1,7 @@
 ---
 seo-title: Contenido principal en directo
 title: Contenido principal en directo
-uuid: e 92 e 99 f 4-c 395-48 aa -8 a 30-cbdd 2 f 5 fc 07 c
+uuid: e92e99f4-c395-48aa-8a30-cbdd2f5fc07c
 translation-type: tm+mt
 source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
@@ -19,7 +19,7 @@ En esta situación, solo hay un recurso activo sin anuncios que se reproduce dur
 | User clicks **[!UICONTROL Play]** | `trackSessionStart` | Inicio del contenido de Analytics, inicio del contenido de Heartbeat | Puede ser porque el usuario hace clic en **[!UICONTROL Reproducir]o por un evento de reproducción automática.** |
 | Se reproduce el primer fotograma del medio. | `trackPlay` | Reproducción del contenido de Heartbeat | Este método desencadena el temporizador. Se envían latidos cada 10 segundos mientras dura la reproducción. |
 | Se reproduce el contenido. |  | Latidos de contenido |  |
-| La sesión finaliza. | `trackSessionEnd` |  | `SessionEnd` significa el final de una sesión de visualización. Se debe llamar a esta API aunque el usuario no consuma los medios hasta la finalización. |
+| La sesión finaliza. | `trackSessionEnd` |  | `SessionEnd` significa el final de una sesión de visualización. This API must be called even if the user does not consume the media to completion. |
 
 ## Parámetros {#section_D52B325B99DA42108EF560873907E02C}
 
@@ -34,13 +34,13 @@ Muchos de los valores que existen en las llamadas de inicio de contenido de Adob
 | `s:user:mid` | `s:user:mid` | Debe coincidir con el valor medio de la llamada de inicio de contenido de Adobe Analytics |
 | `s:event:type` | "start" |  |
 | `s:asset:type` | "main" |  |
-| `s:asset:mediao_id` | &lt; Nombre del medio &gt; |  |
+| `s:asset:mediao_id` | &lt;Nombre del medio&gt; |  |
 | `s:stream:type` | live |  |
-| `s:meta:*` | opcional | Metadatos personalizados establecidos en el medio |
+| `s:meta:*` | opcional | Metadatos personalizados definidos en el medio |
 
 ## Latidos de contenido {#section_7B387303851A43E5993F937AE2B146FE}
 
-Durante la reproducción de medios, hay un temporizador que enviará uno o más latidos (o pings) cada 10 segundos para el contenido principal y cada segundo para las publicidades. Estos latidos contienen datos sobre la reproducción, los anuncios y el almacenamiento en búfer, entre otros. El contenido exacto de cada latido no se detallará en este documento. Lo más importante es que los latidos se desencadenan constantemente mientras dura la reproducción.
+Durante la reproducción de medios, hay un temporizador que enviará uno o más latidos (o pings) cada 10 segundos para el contenido principal y cada segundo para los anuncios. Estos latidos contienen datos sobre la reproducción, los anuncios y el almacenamiento en búfer, entre otros. El contenido exacto de cada latido no se detallará en este documento. Lo más importante es que los latidos se desencadenan constantemente mientras dura la reproducción.
 
 En los latidos de contenido debe fijarse en ciertos detalles:
 
@@ -51,21 +51,21 @@ En los latidos de contenido debe fijarse en ciertos detalles:
 
 ## Finalización de contenido de Heartbeat {#section_2CA970213AF2457195901A93FC9D4D0D}
 
-No habrá una llamada completa en este escenario, ya que el flujo activo nunca se completó.
+No habrá una llamada completa en este escenario, porque la transmisión en vivo nunca se completó.
 
 ## Configuración del valor del cursor de reproducción
 
-Para los flujos en directo, es necesario definir el cursor de reproducción como un desplazamiento desde el momento en que comenzó la programación, de modo que en los informes, los analistas pueden determinar en qué punto se están participando los usuarios y dejando el flujo en directo en una vista de 24 horas.
+For LIVE streams, you need to set the playhead to an offset from when the programming began, so that in reporting, analysts can determine at what point users are joining and leaving the LIVE stream within a 24-hour view.
 
-### Al inicio
+### At Start
 
-Para los medios LIVE, cuando un usuario comienza a reproducir el flujo, debe establecer `l:event:playhead` en el desplazamiento actual, en segundos. Esto se contrasta con VOD, donde debe configurar el cursor de reproducción en "0".
+En el caso de los medios en directo, cuando un usuario comienza a reproducir el flujo, debe establecer `l:event:playhead` el desplazamiento actual en segundos. Esto es lo contrario a VOD, donde establecería el cursor de reproducción en "0".
 
-Por ejemplo, supongamos que un evento de flujo DIRECTO comienza a medianoche y se ejecuta durante 24 horas (`a.media.length=86400`; `l:asset:length=86400`). A continuación, supongamos que un usuario comienza a reproducir ese flujo en directo a las 12:00. En este escenario, debe establecerse `l:event:playhead` en 43200 (12 horas en el flujo).
+For example, say a LIVE streaming event starts at midnight and runs for 24 hours (; ). `a.media.length=86400``l:asset:length=86400` Then, say a user starts playing that LIVE stream at 12:00pm. In this scenario, you should set  to 43200 (12 hours into the stream).`l:event:playhead`
 
-### Al pausar
+### On Pause
 
-La misma lógica «cursor de reproducción directo» aplicada al principio de la reproducción debe aplicarse cuando un usuario detiene la reproducción. Cuando el usuario vuelve a reproducir el flujo en directo, debe definir `l:event:playhead` el valor en la nueva posición de desplazamiento de la cabeza, _no_ en el punto en el que el usuario pause el flujo en directo.
+The same "live playhead" logic applied at the start of playback must be applied when a user pauses the playback. When the user returns to playing the LIVE stream, you must set the  value to the new offset playhead position, not to the point where the user paused the LIVE stream.`l:event:playhead`__
 
 ## Código de muestra {#section_vct_j2j_x2b}
 
