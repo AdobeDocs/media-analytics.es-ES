@@ -1,7 +1,7 @@
 ---
 seo-title: Solicitud de sesiones
 title: Solicitud de sesiones
-uuid: 9609192 d -4 f 7 f -4 fb 5-844 f-ea 89 d 47 c 4 e 30
+uuid: 9609192d-4f7f-4fb5-844f-ea89d47c4e30
 translation-type: tm+mt
 source-git-commit: f1c9f5f4cbcd4c043e1c7b4a5037c134b2bdd380
 
@@ -21,7 +21,7 @@ Ninguna
 
 ## Cuerpo de la solicitud
 
-El cuerpo de la solicitud debe ser JSON y debe tener la misma estructura que este cuerpo de solicitud de muestra:
+The request body must be JSON, and must have the same structure as this sample request body:
 
 ```
 { 
@@ -84,7 +84,7 @@ Age: 0
 Via: 1.1 wsg.sanjose08
 ```
 
-`Location:` header: La `/api/v1/` parte proporciona la versión de la API. The part after `[…]sessions/` is the Session ID.
+`Location:` header - The `/api/v1/` part provides the API version. La parte posterior `[…]sessions/` es el ID de sesión.
 
 ## Códigos de respuesta
 
