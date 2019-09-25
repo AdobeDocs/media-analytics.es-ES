@@ -1,7 +1,7 @@
 ---
 seo-title: Obtención de datos del informe JSON de espectadores simultáneos
 title: Obtención de datos del informe JSON de espectadores simultáneos
-uuid: 9168 f 114-2459-4951-a 06 c -57 b 735 d 09 dc 0
+uuid: 9168f114-2459-4951-a06c-57b735d09dc0
 translation-type: tm+mt
 source-git-commit: 82317dfd0e6eaef20890d03c32fe088a7574ead2
 
@@ -10,19 +10,20 @@ source-git-commit: 82317dfd0e6eaef20890d03c32fe088a7574ead2
 
 # Obtención de datos del informe JSON de espectadores simultáneos{#get-concurrent-viewers-json-report-data}
 
-You can obtain concurrent viewers report data using the _* 1.4 version *_ of the Analytics APIs:
+Puede obtener datos de informes de visores simultáneos mediante la versión _**_ 1.4 de las API de Analytics:
 * [API de Analytics](https://github.com/AdobeDocs/analytics-1.4-apis)
 * [Swagger](https://adobedocs.github.io/analytics-1.4-apis/swagger-docs.html#/Report/Report.Get)
 
-1. Filtre los datos utilizando cualquier segmento que se base en la interfaz de usuario. Para filtrar por un ID de contenido específico, cree un nuevo segmento.
-1. Set the `elements` -&gt; `id` in the request body to `videoconcurrentviewers`.
-1. Solicite una cantidad de datos suficiente. Adobe recomienda 3200 puntos de datos para asegurarse de que no hay huecos en los datos.
+1. Filtre los datos con cualquier segmento creado en la interfaz de usuario. Para filtrar por un ID de contenido específico, cree un nuevo segmento.
+1. Establezca el `elements` -&gt; `id` en el cuerpo de la solicitud en `videoconcurrentviewers`.
+1. Solicite una cantidad suficiente de datos. Adobe recomienda 3200 puntos de datos para garantizar que no haya espacios en los datos.
 
-   * The data range you specify in the report gathers all concurrent viewer data _at the time the video session ended._ Por lo tanto, debe tener en cuenta las sesiones que comienzan un día y finalizan después de medianoche (es decir, el día siguiente).
+   * El intervalo de datos que especifique en el informe recopila todos los datos del visor simultáneo _al finalizar la sesión de vídeo._
+Por lo tanto, debe tener en cuenta las sesiones que comienzan un día y finalizan después de la medianoche (es decir, al día siguiente).
 
-   * Request more than one day of data, but in your analysis _* use only the first day of the data.*_
+   * Solicite más de un día de datos, pero en el análisis _* utilice sólo el primer día de los datos.*_
 
-Una carga útil de solicitud de ejemplo para este escenario tendría este aspecto:
+Una carga útil de solicitud de muestra para este escenario tendría este aspecto:
 
 ```
 {
