@@ -1,7 +1,7 @@
 ---
 seo-title: Seguimiento de anuncios en JavaScript
 title: Seguimiento de anuncios en JavaScript
-uuid: 4 d 81 d 29 c-c 55 d -4 d 48-b 505-3260922712 ff
+uuid: 4d81d29c-c55d-4d48-b505-3260922712ff
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -12,7 +12,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 >[!IMPORTANT]
 >
->Las instrucciones siguientes proporcionan indicaciones para la implementación con los SDK 2. x. Si va a implementar una versión 1.x del SDK, puede descargar las guías del desarrollador de 1.x aquí: [Descargar SDK.](/help/sdk-implement/download-sdks.md)
+>Las siguientes instrucciones proporcionan instrucciones para la implementación mediante los SDK 2.x. Si va a implementar una versión 1.x del SDK, puede descargar las guías del desarrollador de 1.x aquí: [Descargar SDK.](/help/sdk-implement/download-sdks.md)
 
 ## Constantes de seguimiento de anuncio
 
@@ -28,7 +28,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 1. Identifique cuándo comienza la zona de salto de anuncio, incluido el anuncio previo a la emisión, y cree un `AdBreakObject` utilizando la información de la pausa publicitaria.
 
-   `AdBreakObject` reference:
+   `AdBreakObject` referencia:
 
    | Nombre de variable | Descripción | Requerido |
    | --- | --- | :---: |
@@ -53,7 +53,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 1. Identifique cuándo se inicia el anuncio y cree una instancia de `AdObject` con la información de la publicidad.
 
-   `AdObject` reference:
+   `AdObject` referencia:
 
    | Nombre de variable | Descripción | Requerido |
    | --- | --- | :---: |
@@ -72,7 +72,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
                                    <LENGTH>);
    ```
 
-1. De forma opcional, adjunte metadatos estándar o de anuncio a la sesión de seguimiento de medios a través de variables de datos de contexto.
+1. Optionally attach standard and/or ad metadata to the media tracking session through context data variables.
 
    * [Implementación de metadatos de publicidad estándar en JavaScript](/help/sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-js.md)
    * **Metadatos de anuncio personalizados**: para los metadatos personalizados, cree un objeto de variable para las variables de datos personalizadas y rellénelas con los datos del anuncio actual:
