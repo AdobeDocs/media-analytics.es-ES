@@ -1,7 +1,7 @@
 ---
 seo-title: Espectadores simultáneos de medios
 title: Espectadores simultáneos de medios
-uuid: e 61 c 50 e 5-8196-4538-b 67 c-ebc 01 c 6 e 6 ba 7
+uuid: e61c50e5-8196-4538-b67c-ebc01c6e6ba7
 translation-type: tm+mt
 source-git-commit: 6e13e9a6250949a3a7f059445da772b4db1fdb71
 
