@@ -1,7 +1,7 @@
 ---
 seo-title: Seguimiento de llamada a otro punto del contenido en Chromecast
 title: Seguimiento de llamada a otro punto del contenido en Chromecast
-uuid: 8018 e 6 c 4-feed 9-4 de 7-9 eae-c 720 da 55 ad 8 c
+uuid: 8018e6c4-feed9-4de7-9eae-c720da55ad8c
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
