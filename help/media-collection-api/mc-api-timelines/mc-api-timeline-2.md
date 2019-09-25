@@ -1,7 +1,7 @@
 ---
 seo-title: 'Línea de tiempo 2: El usuario abandona la sesión'
 title: 'Línea de tiempo 2: El usuario abandona la sesión'
-uuid: 74 b 89 e 8 f-ef 56-4 e 0 c-b 9 a 8-40739 e 15 b 4 cf
+uuid: 74b89e8f-ef56-4e0c-b9a8-40739e15b4cf
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -12,7 +12,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ## VOD, anuncios pre-roll, anuncios mid-roll, el usuario deja el contenido antes de terminarlo
 
-Los siguientes diagramas ilustran la línea de tiempo del cursor de reproducción y la línea de tiempo correspondiente de las acciones de un usuario. A continuación se muestran los detalles de cada acción y sus solicitudes correspondientes.
+The following diagrams illustrate the playhead timeline and the corresponding timeline of a user's actions. The details for each action and its accompanying requests are presented below.
 
 
 ![](assets/va_api_content_2.png)
@@ -21,9 +21,9 @@ Los siguientes diagramas ilustran la línea de tiempo del cursor de reproducció
 ![](assets/va_api_actions_2.png)
 
 
-## Detalles de la acción
+## Action details
 
-### Action 1 - Start session {#Action-1}
+### Acción 1 - Iniciar sesión {#Action-1}
 
 | Acción | Línea de tiempo de acción (segundos) | Posición del cabezal de reproducción (en segundos) | Solicitud del cliente |
 | --- | :---: | :---: | --- |
@@ -58,7 +58,7 @@ Esta llamada indica _la intención del usuario de reproducir_ un vídeo. It retu
 }
 ```
 
-### Action 2 - Ping timer start {#Action-2}
+### Acción 2: inicio del temporizador de ping {#Action-2}
 
 | Acción | Línea de tiempo de acción (segundos) | Posición del cabezal de reproducción (en segundos) | Solicitud del cliente |
 | --- | :---: | :---: | --- |
@@ -66,9 +66,9 @@ Esta llamada indica _la intención del usuario de reproducir_ un vídeo. It retu
 
 **Detalles de implementación**
 
-Inicie el temporizador de ping de la aplicación. Después, el evento de ping debe activarse 1 segundo si hay anuncios previos, 10 segundos en caso contrario.
+Inicie el temporizador de ping de la aplicación. El primer evento de ping debe activarse 1 segundo en caso de que haya anuncios previos, 10 segundos en caso contrario.
 
-### Action 3 - Ad break start {#Action-3}
+### Acción 3 - Inicio de la pausa publicitaria {#Action-3}
 
 | Acción | Línea de tiempo de acción (segundos) | Posición del cabezal de reproducción (en segundos) | Solicitud del cliente |
 | --- | :---: | :---: | --- |
@@ -94,7 +94,7 @@ Se deben rastrear los anuncios pre-roll. Los anuncios solo se pueden rastrear du
 }
 ```
 
-### Action 4 - Ad start {#Action-4}
+### Acción 4 - Inicio del anuncio {#Action-4}
 
 | Acción | Línea de tiempo de acción (segundos) | Posición del cabezal de reproducción (en segundos) | Solicitud del cliente |
 | --- | :---: | :---: | --- |
@@ -129,7 +129,7 @@ Se inicia una publicidad de 12 segundos.
 }
 ```
 
-### Action 5 - Ad pings {#Action-5}
+### Acción 5 - Agrupaciones de anuncios {#Action-5}
 
 | Acción | Línea de tiempo de acción (segundos) | Posición del cabezal de reproducción (en segundos) | Solicitud del cliente |
 | --- | :---: | :---: | --- |
@@ -137,7 +137,7 @@ Se inicia una publicidad de 12 segundos.
 
 **Detalles de implementación**
 
-Haga ping cada 1 segundo. (Los siguientes pings de publicidad no se muestran en aras de la brevedad).
+Ping el servidor cada 1 segundo. (No se muestran los pings de anuncios posteriores, en interés de la brevedad).
 
 **Cuerpo de la solicitud de muestra**
 
@@ -151,7 +151,7 @@ Haga ping cada 1 segundo. (Los siguientes pings de publicidad no se muestran en 
 }
 ```
 
-### Action 6 - Ad complete {#Action-6}
+### Acción 6 - Finalización del anuncio {#Action-6}
 
 | Acción | Línea de tiempo de acción (segundos) | Posición del cabezal de reproducción (en segundos) | Solicitud del cliente |
 | --- | :---: | :---: | --- |
@@ -173,7 +173,7 @@ El primer anuncio pre-roll ha finalizado.
 }
 ```
 
-### Action 7 - Ad break complete {#Action-7}
+### Acción 7 - Se completó la pausa publicitaria {#Action-7}
 
 | Acción | Línea de tiempo de acción (segundos) | Posición del cabezal de reproducción (en segundos) | Solicitud del cliente |
 | --- | :---: | :---: | --- |
@@ -195,7 +195,7 @@ La pausa publicitaria ha finalizado. Durante la pausa publicitaria, el reproduct
 }
 ```
 
-### Action 8 - Play content {#Action-8}
+### Acción 8 - Reproducir contenido {#Action-8}
 
 | Acción | Línea de tiempo de acción (segundos) | Posición del cabezal de reproducción (en segundos) | Solicitud del cliente |
 | --- | :---: | :---: | --- |
@@ -218,7 +218,7 @@ Cambie el reproductor al estado "reproducir"; comience a rastrear el inicio de l
 }
 ```
 
-### Action 9 - Ping {#Action-9}
+### Acción 9 - Ping {#Action-9}
 
 | Acción | Línea de tiempo de acción (segundos) | Posición del cabezal de reproducción (en segundos) | Solicitud del cliente |
 | --- | :---: | :---: | --- |
@@ -240,7 +240,7 @@ Mandar un ping al servidor cada 10 segundos.
 }
 ```
 
-### Action 10 - Ping {#Action-10}
+### Acción 10 - Ping {#Action-10}
 
 | Acción | Línea de tiempo de acción (segundos) | Posición del cabezal de reproducción (en segundos) | Solicitud del cliente |
 | --- | :---: | :---: | --- |
@@ -262,7 +262,7 @@ Mandar un ping al servidor cada 10 segundos.
 }
 ```
 
-### Action 11 - Error {#Action-11}
+### Acción 11 - Error {#Action-11}
 
 | Acción | Línea de tiempo de acción (segundos) | Posición del cabezal de reproducción (en segundos) | Solicitud del cliente |
 | --- | :---: | :---: | --- |
@@ -283,7 +283,7 @@ Mandar un ping al servidor cada 10 segundos.
 }
 ```
 
-### Action 12 - Play content {#Action-12}
+### Acción 12 - Reproducir contenido {#Action-12}
 
 | Acción | Línea de tiempo de acción (segundos) | Posición del cabezal de reproducción (en segundos) | Solicitud del cliente |
 | --- | :---: | :---: | --- |
@@ -305,7 +305,7 @@ Mandar un ping al servidor cada 10 segundos.
 }
 ```
 
-### Action 13 - Ping {#Action-13}
+### Acción 13 - Ping {#Action-13}
 
 | Acción | Línea de tiempo de acción (segundos) | Posición del cabezal de reproducción (en segundos) | Solicitud del cliente |
 | --- | :---: | :---: | --- |
@@ -327,7 +327,7 @@ Mandar un ping al servidor cada 10 segundos.
 }
 ```
 
-### Action 14 - Ad break start {#Action-14}
+### Acción 14 - Inicio de la pausa publicitaria {#Action-14}
 
 | Acción | Línea de tiempo de acción (segundos) | Posición del cabezal de reproducción (en segundos) | Solicitud del cliente |
 | --- | :---: | :---: | --- |
@@ -353,7 +353,7 @@ Anuncio mid-roll de 8 segundos: enviar `adBreakStart` .
 }
 ```
 
-### Action 15 - Ad start {#Action-15}
+### Acción 15 - Inicio del anuncio {#Action-15}
 
 | Acción | Línea de tiempo de acción (segundos) | Posición del cabezal de reproducción (en segundos) | Solicitud del cliente |
 | --- | :---: | :---: | --- |
@@ -386,7 +386,7 @@ Seguimiento del anuncio mid-roll.
 }
 ```
 
-### Action 16 - Close app {#Action-16}
+### Acción 16 - Cerrar aplicación {#Action-16}
 
 | Acción | Línea de tiempo de acción (segundos) | Posición del cabezal de reproducción (en segundos) | Solicitud del cliente |
 | --- | :---: | :---: | --- |
