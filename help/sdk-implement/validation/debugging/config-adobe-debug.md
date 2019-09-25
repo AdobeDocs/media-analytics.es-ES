@@ -1,7 +1,7 @@
 ---
 seo-title: Configurar Adobe Debug
 title: Configurar Adobe Debug
-uuid: e 416458 d-f 23 c -41 ce -8 d 99-fa 5076 c 455 f 0
+uuid: e416458d-f23c-41ce-8d99-fa5076c455f0
 translation-type: tm+mt
 source-git-commit: 5ff3566fae2c1df559341057fafdd289774e4b2f
 
@@ -35,7 +35,7 @@ Los navegadores recomendados son las versiones más recientes de Chrome y Firefo
 
 ## Depurar proxy {#section_8D3493B8426B46DEB9CD7E2ABD785D66}
 
-Descargue y configure el Proxy de depuración:
+Descargue y configure el proxy de depuración:
 
 1. Descargue la aplicación proxy de depuración en [Descargas de aplicaciones.](https://debug.adobe.com/#/downloads)
 
@@ -72,14 +72,14 @@ Descargue e instale el certificado SSL:
 
     1. Para Firefox, complete el procedimiento en [Instalación del certificado raíz en Mozilla Firefox.](https://wiki.wmtransfer.com/projects/webmoney/wiki/Installing_root_certificate_in_Mozilla_Firefox)
     
-    You might need to quit and reopen Firefox to see the change.
+    Es posible que tenga que salir y volver a abrir Firefox para ver el cambio.
     
-    ** Dispositivos iOS**
-    1. Configure el dispositivo iOS para que use Adobe Debug como proxy HTTP haciendo clic en** [! UICONTROL Settings app]**** &gt;**** [! UICONTROL Wifi settings]**.
+    **Dispositivos iOS**
+    1. Configure el dispositivo iOS para que utilice Adobe Debug como su proxy HTTP haciendo clic en **[!Aplicación de configuración UICONTROL]*** **&gt;** **[!Configuración Wi-Fi de UICONTROL]**.
     
-    1. En Safari, vaya a [Depurar.](https://proxy.debug.adobe.com/ssl)
+    1. En Safari, vaya a [Depurar].](https://proxy.debug.adobe.com/ssl)
     
-    Safari will prompt you to install the SSL certificate.
+    Safari le pedirá que instale el certificado SSL.
 
 ## Instalación del certificado SSL para su dispositivo móvil {#section_F2A3336F482C43E2ABEA742AD5CCACCA}
 
