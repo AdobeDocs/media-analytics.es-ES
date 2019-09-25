@@ -1,7 +1,7 @@
 ---
 seo-title: 'Línea de tiempo 1: Ver el contenido hasta el final'
 title: 'Línea de tiempo 1: Ver el contenido hasta el final'
-uuid: 0 ff 591 d 3-fa 99-4123-9 e 09-c 4 e 71 ea 1060 b
+uuid: 0ff591d3-fa99-4123-9e09-c4e71ea1060b
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -12,7 +12,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ## VOD, anuncios pre-roll, pausar, almacenar en búfer, ver contenido hasta el final
 
-Los siguientes diagramas ilustran la línea de tiempo del cursor de reproducción y la línea de tiempo de corresonación de las acciones de un usuario. A continuación se muestran los detalles de cada acción y sus solicitudes correspondientes.
+Los siguientes diagramas ilustran la línea de tiempo del cursor de reproducción y la línea de tiempo correspondiente de las acciones de un usuario. A continuación se presentan los detalles de cada acción y sus solicitudes correspondientes.
 
 
 ![](assets/va_api_content.png)
@@ -23,15 +23,15 @@ Los siguientes diagramas ilustran la línea de tiempo del cursor de reproducció
 
 ## Detalles de la acción
 
-### Action 1 - Start session {#Action-1}
+### Acción 1 - Iniciar sesión {#Action-1}
 
 | Acción | Línea de tiempo de acción (segundos) | Posición del cabezal de reproducción (en segundos) | Solicitud del cliente |
 | --- | :---: | :---: | --- |
 | El botón Reproducción automática o Reproducir se ha presionado, el vídeo empieza a cargarse. | 0 | 0 | `/api/v1/sessions` |
 
-**Detalle de implementación**
+**Detalles de implementación**
 
-Esta llamada indica _la intención del usuario de reproducir_ un vídeo. <br/><br/>Devuelve un ID de sesión ( `{sid}`) al cliente que se utiliza para identificar todas las llamadas de seguimiento subsiguientes dentro de la sesión. El estado del reproductor no es "reproduciendo", sino "comenzando". <br/><br/>[Los parámetros de sesión obligatorios](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) deben incluirse en el mapa de `params` en la solicitud. <br/><br/>En el servidor, esta llamada genera una llamada de inicio a Adobe Analytics.
+Esta llamada indica _la intención del usuario de reproducir_ un vídeo. <br/><br/>It returns a Session ID ( ) to the client that is used to identify all subsequent tracking calls within the session. `{sid}` El estado del reproductor no es "reproduciendo", sino "comenzando". <br/><br/>[Los parámetros de sesión obligatorios](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) deben incluirse en el mapa de `params` en la solicitud. <br/><br/>En el servidor, esta llamada genera una llamada de inicio a Adobe Analytics.
 
 **Cuerpo de la solicitud de muestra**
 
@@ -57,7 +57,7 @@ Esta llamada indica _la intención del usuario de reproducir_ un vídeo. <br/><b
 }
 ```
 
-### Action 2 - Ping timer start {#Action-2}
+### Acción 2: inicio del temporizador de ping {#Action-2}
 
 | Acción | Línea de tiempo de acción (segundos) | Posición del cabezal de reproducción (en segundos) | Solicitud del cliente |
 | --- | :---: | :---: | --- |
@@ -65,15 +65,15 @@ Esta llamada indica _la intención del usuario de reproducir_ un vídeo. <br/><b
 
 **Detalles de implementación**
 
-Inicie el temporizador de ping de la aplicación. Después, el evento de ping debe activarse 1 segundo si hay anuncios previos, 10 segundos en caso contrario.
+Inicie el temporizador de ping de la aplicación. El primer evento de ping debe activarse 1 segundo en caso de que haya anuncios previos, 10 segundos en caso contrario.
 
-### Action 3 - Ad break start {#Action-3}
+### Acción 3 - Inicio de la pausa publicitaria {#Action-3}
 
 | Acción | Línea de tiempo de acción (segundos) | Posición del cabezal de reproducción (en segundos) | Solicitud del cliente |
 | --- | :---: | :---: | --- |
 | Seguimiento del comienzo de la pausa publicitaria pre-roll | 0 | 0 | `/api/v1/sessions/{sid}/events` |
 
-**Detalle de implementación**
+**Detalles de implementación**
 
 Los anuncios solo se pueden rastrear durante una pausa publicitaria.
 
@@ -93,13 +93,13 @@ Los anuncios solo se pueden rastrear durante una pausa publicitaria.
 }
 ```
 
-### Action 4 - Ad start {#Action-4}
+### Acción 4 - Inicio del anuncio {#Action-4}
 
 | Acción | Línea de tiempo de acción (segundos) | Posición del cabezal de reproducción (en segundos) | Solicitud del cliente |
 | --- | :---: | :---: | --- |
 | Seguimiento del comienzo del primer anuncio pre-roll | 0 | 0 | `/api/v1/sessions/{sid}/events` |
 
-**Detalle de implementación**
+**Detalles de implementación**
 
 Comience a rastrear el primer anuncio pre-roll, que dura 15 segundos. Incluir metadatos personalizados con `adStart` .
 
@@ -133,7 +133,7 @@ Comience a rastrear el primer anuncio pre-roll, que dura 15 segundos. Incluir me
 }
 ```
 
-### Action 5 - Ad pings {#Action-5}
+### Acción 5 - Agrupaciones de anuncios {#Action-5}
 
 #### Action 5.1 - Ad ping 1 {#Action-5-1}
 
@@ -141,9 +141,9 @@ Comience a rastrear el primer anuncio pre-roll, que dura 15 segundos. Incluir me
 | --- | :---: | :---: | --- |
 | La aplicación envía eventos de ping | 1 | 0 | `/api/v1/sessions/{sid}/events` |
 
-**Detalle de implementación**
+**Implementation Detail**
 
-Haga ping cada 1 segundo mientras dentro de una publicidad.
+Ping the backend every 1 second while inside an ad.
 
 **Cuerpo de la solicitud de muestra**
 
@@ -157,15 +157,15 @@ Haga ping cada 1 segundo mientras dentro de una publicidad.
 }
 ```
 
-#### Action 5.2 - Ad ping 2 {#Action-5-2}
+#### Acción 5.2 - Anuncio ping 2 {#Action-5-2}
 
 | Acción | Línea de tiempo de acción (segundos) | Posición del cabezal de reproducción (en segundos) | Solicitud del cliente |
 | --- | :---: | :---: | --- |
 | La aplicación envía eventos de ping | 2 | 0 | `/api/v1/sessions/{sid}/events` |
 
-**Detalle de implementación**
+**Implementation Detail**
 
-Haga ping cada 1 segundo mientras dentro de una publicidad.
+Ping the backend every 1 second while inside an ad.
 
 **Cuerpo de la solicitud de muestra**
 
@@ -179,21 +179,21 @@ Haga ping cada 1 segundo mientras dentro de una publicidad.
 }
 ```
 
-#### Action 5.3 - Ad ping 3 {#Action-5-3}
+#### Acción 5.3 - Anuncio ping 3 {#Action-5-3}
 
 
 | Acción | Línea de tiempo de acción (segundos) | Posición del cabezal de reproducción (en segundos) | Solicitud del cliente |
 | --- | :---: | :---: | --- |
 | La aplicación envía eventos de ping | 3 | 0 | `/api/v1/sessions/{sid}/events` |
 
-**Detalle de implementación**
+**Detalles de implementación**
 
-Haga ping cada 1 segundo mientras dentro de una publicidad.
+Haga ping al servidor cada 1 segundo mientras se encuentra dentro de un anuncio.
 
 >[!NOTE]
 >
->Las publicidades subsiguientes de la línea de tiempo omitirán la serie de un segundo.
->por razones de brevedad…
+>Las publicidades posteriores de la línea de tiempo omitirán la visualización de la serie de pings de un segundo
+>in the interest of brevity...
 
 **Cuerpo de la solicitud de muestra**
 
@@ -207,13 +207,13 @@ Haga ping cada 1 segundo mientras dentro de una publicidad.
 }
 ```
 
-### Action 6 - Ad complete {#Action-6}
+### Acción 6 - Finalización del anuncio {#Action-6}
 
 | Acción | Línea de tiempo de acción (segundos) | Posición del cabezal de reproducción (en segundos) | Solicitud del cliente |
 | --- | :---: | :---: | --- |
 | Se ha completado el seguimiento del primer anuncio pre-roll | 15 | 0 | `/api/v1/sessions/{sid}/events` |
 
-**Detalle de implementación**
+**Detalles de implementación**
 
 Rastrear el final del primer anuncio pre-roll.
 
@@ -229,13 +229,13 @@ Rastrear el final del primer anuncio pre-roll.
 }
 ```
 
-### Action 7 - Ad start {#Action-7}
+### Acción 7 - Inicio del anuncio {#Action-7}
 
 | Acción | Línea de tiempo de acción (segundos) | Posición del cabezal de reproducción (en segundos) | Solicitud del cliente |
 | --- | :---: | :---: | --- |
 | Seguimiento del comienzo del segundo anuncio pre-roll | 15 | 0 | `/api/v1/sessions/{sid}/events` |
 
-**Detalle de implementación**
+**Detalles de implementación**
 
 Realice un seguimiento del inicio del segundo anuncio pre-roll, que dura 7 segundos.
 
@@ -270,9 +270,9 @@ Realice un seguimiento del inicio del segundo anuncio pre-roll, que dura 7 segun
 | --- | :---: | :---: | --- |
 | La aplicación envía eventos de ping | 20 | 0 | `/api/v1/sessions/{sid}/events` |
 
-**Detalle de implementación**
+**Detalles de implementación**
 
-Haga ping cada 1 segundo.
+Ping the backend every 1 second.
 
 **Cuerpo de la solicitud de muestra**
 
@@ -286,13 +286,13 @@ Haga ping cada 1 segundo.
 }
 ```
 
-### Action 9 - Ad complete {#Action-9}
+### Acción 9 - Finalización del anuncio {#Action-9}
 
 | Acción | Línea de tiempo de acción (segundos) | Posición del cabezal de reproducción (en segundos) | Solicitud del cliente |
 | --- | :---: | :---: | --- |
 | Se ha completado el seguimiento del segundo anuncio pre-roll | 22 | 0 | `/api/v1/sessions/{sid}/events` |
 
-**Detalle de implementación**
+**Detalles de implementación**
 
 Rastrear el final del segundo anuncio pre-roll.
 
@@ -314,7 +314,7 @@ Rastrear el final del segundo anuncio pre-roll.
 | --- | :---: | :---: | --- |
 | Rastrear la pausa publicitaria pre-roll | 22 | 0 | `/api/v1/sessions/{sid}/events` |
 
-**Detalle de implementación**
+**Detalles de implementación**
 
 La pausa publicitaria ha finalizado. Durante la pausa publicitaria, el estado de reproducción será “reproduciendo”.
 
@@ -336,7 +336,7 @@ La pausa publicitaria ha finalizado. Durante la pausa publicitaria, el estado de
 | --- | :---: | :---: | --- |
 | Rastrear el evento de Reproducción | 22 | 0 | `/api/v1/sessions/{sid}/events` |
 
-**Detalle de implementación**
+**Implementation Detail**
 
 Tras el evento `adBreakComplete`, ponga el reproductor en el estado "reproduciendo" utilizando el evento `play`.
 
@@ -358,7 +358,7 @@ Tras el evento `adBreakComplete`, ponga el reproductor en el estado "reproducien
 | --- | :---: | :---: | --- |
 | La aplicación envía eventos de ping | 30 | 8 | `/api/v1/sessions/{sid}/events` |
 
-**Detalle de implementación**
+**Implementation Detail**
 
 Mandar un ping al servidor cada 10 segundos.
 
@@ -380,7 +380,7 @@ Mandar un ping al servidor cada 10 segundos.
 | --- | :---: | :---: | --- |
 | Se produce el evento de Inicio del almacenamiento en búfer. | 33 | 11 | `/api/v1/sessions/{sid}/events` |
 
-**Detalle de implementación**
+**Implementation Detail**
 
 Rastree el movimiento del reproductor al estado "almacenamiento en búfer".
 
@@ -401,9 +401,9 @@ Rastree el movimiento del reproductor al estado "almacenamiento en búfer".
 | --- | :---: | :---: | --- |
 | El almacenamiento en búfer finalizó, la aplicación hace un seguimiento de la reanudación del contenido. | 36 | 11 | `/api/v1/sessions/{sid}/events` |
 
-**Detalle de implementación**
+**Detalles de implementación**
 
-El almacenamiento en búfer finaliza después de 3 segundos, por lo que el reproductor vuelve al estado "reproduciendo". Debe enviar otro evento de seguimiento de reproducción cuando termine el almacenamiento en búfer.  **La`play`llamada después de una`bufferStart`deducción deduce una llamada "bufferend" al final,** por lo que no es necesario `bufferEnd` un evento.
+El almacenamiento en búfer finaliza después de 3 segundos, por lo que el reproductor vuelve al estado "reproduciendo". Debe enviar otro evento de seguimiento de reproducción cuando termine el almacenamiento en búfer.  **La`play`llamada después de un`bufferStart`deduce una llamada "bufferEnd" al servidor,** por lo que no es necesario un `bufferEnd` evento.
 
 **Cuerpo de la solicitud de muestra**
 
@@ -417,13 +417,13 @@ El almacenamiento en búfer finaliza después de 3 segundos, por lo que el repro
 }
 ```
 
-### Action 15 - Ping {#Action-15}
+### Acción 15 - Ping {#Action-15}
 
 | Acción | Línea de tiempo de acción (segundos) | Posición del cabezal de reproducción (en segundos) | Solicitud del cliente |
 | --- | :---: | :---: | --- |
 | La aplicación envía eventos de ping | 40 | 15 | `/api/v1/sessions/{sid}/events` |
 
-**Detalle de implementación**
+**Detalles de implementación**
 
 Mandar un ping al servidor cada 10 segundos.
 
@@ -438,13 +438,13 @@ Mandar un ping al servidor cada 10 segundos.
 }
 ```
 
-### Action 16 - Ad break start {#Action-16}
+### Acción 16 - Inicio de la pausa publicitaria {#Action-16}
 
 | Acción | Línea de tiempo de acción (segundos) | Posición del cabezal de reproducción (en segundos) | Solicitud del cliente |
 | --- | :---: | :---: | --- |
 | Seguimiento del comienzo del anuncio mid-roll | 46 | 21 | `/api/v1/sessions/{sid}/events` |
 
-**Detalle de implementación**
+**Detalles de implementación**
 
 Anuncio mid-roll de 8 segundos: enviar `adBreakStart` .
 
@@ -465,13 +465,13 @@ Anuncio mid-roll de 8 segundos: enviar `adBreakStart` .
 }
 ```
 
-### Action 17 - Ad start {#Action-17}
+### Acción 17 - Inicio del anuncio {#Action-17}
 
 | Acción | Línea de tiempo de acción (segundos) | Posición del cabezal de reproducción (en segundos) | Solicitud del cliente |
 | --- | :---: | :---: | --- |
 | Seguimiento del tercer anuncio mid-roll | 46 | 21 | `/api/v1/sessions/{sid}/events` |
 
-**Detalle de implementación**
+**Detalles de implementación**
 
 Seguimiento del anuncio mid-roll.
 
@@ -500,13 +500,13 @@ Seguimiento del anuncio mid-roll.
 }
 ```
 
-### Action 18 - Ad ping {#Action-18}
+### Acción 18 - ping de publicidad {#Action-18}
 
 | Acción | Línea de tiempo de acción (segundos) | Posición del cabezal de reproducción (en segundos) | Solicitud del cliente |
 | --- | :---: | :---: | --- |
 | La aplicación envía eventos de ping | 50 | 21 | `/api/v1/sessions/{sid}/events` |
 
-**Detalle de implementación**
+**Detalles de implementación**
 
 Mandar un ping al servidor cada 10 segundos.
 
@@ -521,13 +521,13 @@ Mandar un ping al servidor cada 10 segundos.
 }
 ```
 
-### Action 19 - Ad complete {#Action-19}
+### Acción 19 - Finalización del anuncio {#Action-19}
 
 | Acción | Línea de tiempo de acción (segundos) | Posición del cabezal de reproducción (en segundos) | Solicitud del cliente |
 | --- | :---: | :---: | --- |
 | Se ha completado el seguimiento del primer anuncio mid-roll | 54 | 21 | `/api/v1/sessions/{sid}/events` |
 
-**Detalle de implementación**
+**Detalles de implementación**
 
 El anuncio mid-roll ha finalizado.
 
@@ -543,13 +543,13 @@ El anuncio mid-roll ha finalizado.
 }
 ```
 
-### Action 20 - Ad break complete {#Action-20}
+### Acción 20 - Se completó la pausa publicitaria {#Action-20}
 
 | Acción | Línea de tiempo de acción (segundos) | Posición del cabezal de reproducción (en segundos) | Solicitud del cliente |
 | --- | :---: | :---: | --- |
 | Seguimiento de la pausa publicitaria mid-roll completado | 54 | 21 | `/api/v1/sessions/{sid}/events` |
 
-**Detalle de implementación**
+**Detalles de implementación**
 
 Se ha completado la pausa publicitaria.
 
@@ -565,13 +565,13 @@ Se ha completado la pausa publicitaria.
 }
 ```
 
-### Action 21 - Ping {#Action-21}
+### Acción 21 - Ping {#Action-21}
 
 | Acción | Línea de tiempo de acción (segundos) | Posición del cabezal de reproducción (en segundos) | Solicitud del cliente |
 | --- | :---: | :---: | --- |
 | La aplicación envía eventos de ping | 60 | 27 | `/api/v1/sessions/{sid}/events` |
 
-**Detalle de implementación**
+**Detalles de implementación**
 
 Mandar un ping al servidor cada 10 segundos.
 
@@ -587,13 +587,13 @@ Mandar un ping al servidor cada 10 segundos.
 }
 ```
 
-### Action 22 - Pause {#Action-22}
+### Acción 22 - Pausa {#Action-22}
 
 | Acción | Línea de tiempo de acción (segundos) | Posición del cabezal de reproducción (en segundos) | Solicitud del cliente |
 | --- | :---: | :---: | --- |
 | El usuario ha hecho clic en Pausa | 64 | 31 | `/api/v1/sessions/{sid}/events` |
 
-**Detalle de implementación**
+**Implementation Detail**
 
 La acción del usuario cambia el estado de reproducción a "en pausa".
 
@@ -609,13 +609,13 @@ La acción del usuario cambia el estado de reproducción a "en pausa".
 }
 ```
 
-### Action 23 - Ping {#Action-23}
+### Acción 23 - Ping {#Action-23}
 
 | Acción | Línea de tiempo de acción (segundos) | Posición del cabezal de reproducción (en segundos) | Solicitud del cliente |
 | --- | :---: | :---: | --- |
 | La aplicación envía eventos de ping | 70 | 31 | `/api/v1/sessions/{sid}/events` |
 
-**Detalle de implementación**
+**Implementation Detail**
 
 Mandar un ping al servidor cada 10 segundos. El reproductor sigue en estado "almacenamiento en búfer"; el usuario se queda en los 20 primeros segundos de contenido. Trabajando...
 
@@ -636,9 +636,9 @@ Mandar un ping al servidor cada 10 segundos. El reproductor sigue en estado "alm
 | --- | :---: | :---: | --- |
 | El usuario ha presionado Reproducir para reanudar el contenido principal | 74 | 31 | `/api/v1/sessions/{sid}/events` |
 
-**Detalle de implementación**
+**Implementation Detail**
 
-Cambie el estado de reproducción a "reproduciendo".  **La`play`llamada después de una`pauseStart`deducción de una llamada "resume" al final,** por lo que no es necesario `resume` un evento.
+Cambie el estado de reproducción a "reproduciendo".  **La`play`llamada después de una llamada`pauseStart`deduce una llamada de "reanudación" al servidor,** por lo que no es necesario un `resume` evento.
 
 **Cuerpo de la solicitud de muestra**
 
@@ -657,7 +657,7 @@ Cambie el estado de reproducción a "reproduciendo".  **La`play`llamada después
 | --- | :---: | :---: | --- |
 | La aplicación envía eventos de ping | 80 | 37 | `/api/v1/sessions/{sid}/events` |
 
-**Detalle de implementación**
+**Detalles de implementación**
 
 Mandar un ping al servidor cada 10 segundos.
 
@@ -678,7 +678,7 @@ Mandar un ping al servidor cada 10 segundos.
 | --- | :---: | :---: | --- |
 | El usuario termina de ver el contenido hasta el final. | 88 | 45 | `/api/v1/sessions/{sid}/events` |
 
-**Detalle de implementación**
+**Detalles de implementación**
 
 Envíe `sessionComplete` al servidor para indicar que el usuario ha terminado de ver todo el contenido.
 
