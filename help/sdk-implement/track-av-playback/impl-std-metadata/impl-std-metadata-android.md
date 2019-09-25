@@ -3,7 +3,7 @@ description: 'null'
 seo-description: 'null'
 seo-title: Implementación de metadatos estándar en Android
 title: Implementación de metadatos estándar en Android
-uuid: c 48 b 4190-b 062-4 c 4 e -9 c 40-8 dde 4598 a 50 e
+uuid: c48b4190-b062-4c4e-9c40-8dde4598a50e
 translation-type: tm+mt
 source-git-commit: 46797deb402fed1c4d4781507c279407f8c13f2e
 
@@ -20,8 +20,8 @@ source-git-commit: 46797deb402fed1c4d4781507c279407f8c13f2e
 
 ## Referencia de la API de claves de metadatos
 
-* Create a `HashMap` of standard metadata key value pairs.
-   * [Claves de metadatos de vídeo](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/com/adobe/primetime/va/simple/MediaHeartbeat.VideoMetadataKeys.html)
+* Cree un conjunto `HashMap` de pares de clave valor de metadatos estándar.
+   * [Teclas de metadatos de vídeo](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/com/adobe/primetime/va/simple/MediaHeartbeat.VideoMetadataKeys.html)
    * [Claves de metadatos de audio](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/com/adobe/primetime/va/simple/MediaHeartbeat.AudioMetadataKeys.html)
 * Establezca el `HashMap` de metadatos estándar en `MediaInfo` mediante el uso de la constante de metadatos estándar para los metadatos.
 * Provide this `MediaInfo` object while invoking the `trackSessionStart()` API.
