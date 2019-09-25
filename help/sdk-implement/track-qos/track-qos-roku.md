@@ -16,13 +16,13 @@ source-git-commit: a8e8ac5a808ff785a348b456dd7d183540c1d594
 
 ## Implementación de QOS
 
-1. Identifique cuándo cambia la velocidad de bits durante la reproducción de medios y utilice la `mediaUpdateQoS` API para actualizar la información de QoS en el SDK de medios.
+1. Identify when the bitrate changes during media playback, and use the  API to update the QoS info on the Media SDK.`mediaUpdateQoS`
 
    Variables QoSObject:
 
    >[!TIP]
    >
-   >Estas variables solo son necesarias si realiza el seguimiento de QoS.
+   >These variables are only required if you are tracking QoS.
 
    | Variable | Descripción | Requerido |
    | --- | --- | :---: |
