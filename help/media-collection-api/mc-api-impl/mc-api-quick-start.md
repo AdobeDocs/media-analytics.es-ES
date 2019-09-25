@@ -1,7 +1,7 @@
 ---
 seo-title: Inicio rápido
 title: Inicio rápido
-uuid: ca 20 bad 4-2 c 8 f -406 b -833 e-b 4883 a 9 aa 534
+uuid: ca20bad4-2c8f-406b-833e-b4883a9aa534
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -12,12 +12,12 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 >[!TIP]
 >
->Gather the request data necessary for completing a successful [Session request](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) to the Media Analytics (MA) Collection API back-end server. Puede verificar rápidamente los datos de solicitud enviando solicitudes manualmente (con `curl` o Postman, etc.). Esto le indicará de inmediato si en su solicitud hay problemas con tipos de datos incorrectos o información incorrecta. Utilice los [esquemas de validación de JSON](/help/media-collection-api/mc-api-ref/mc-api-json-validation.md) para verificar que está suministrando los datos de solicitud adecuados.
+>Recopile los datos de solicitud necesarios para completar una solicitud [de](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) sesión correcta en el servidor back-end de la API de recopilación de Media Analytics (MA). Puede verificar rápidamente los datos de solicitud enviando solicitudes manualmente (con `curl` o Postman, etc.). Esto le indicará de inmediato si en su solicitud hay problemas con tipos de datos incorrectos o información incorrecta. Utilice los [esquemas de validación de JSON](/help/media-collection-api/mc-api-ref/mc-api-json-validation.md) para verificar que está suministrando los datos de solicitud adecuados.
 
 1. Recopile los datos estándar de Adobe Analytics y del visitante que debe proporcionar para ejecutar cualquiera de las aplicaciones de Experience Cloud:
 
    * ID de organización para visitantes en Experience Cloud
-   * ID de usuario de Experience Cloud
+   * Visitor Experience Cloud User ID
    * ID de informes de Analytics
    * URL del servidor de seguimiento de análisis
 
@@ -49,9 +49,9 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
    >[!NOTE]
    >
-   >Debe utilizar los tipos de datos correctos en el cuerpo de solicitud JSON. E.g., `analytics.enableSSL` requires a boolean, `media.length` is numeric, etc. Puede comprobar los tipos de parámetros y los requisitos obligatorios frente a los requisitos opcionales comprobando los [esquemas de validación de JSON.](/help/media-collection-api/mc-api-impl/mc-api-validate-reqs.md)
+   >Debe utilizar los tipos de datos correctos en el cuerpo de la solicitud JSON. E.g., `analytics.enableSSL` requires a boolean, `media.length` is numeric, etc. Puede comprobar los tipos de parámetros y los requisitos obligatorios frente a los requisitos opcionales comprobando los [esquemas de validación de JSON.](/help/media-collection-api/mc-api-impl/mc-api-validate-reqs.md)
 
-1. Envíe solicitudes de sesiones al extremo de API de recopilación de MA Collection. Si la carga de la solicitud no es válida, identifique el problema y vuelva a intentarlo hasta que obtenga una respuesta de `201 Created`. In this `curl` example, the JSON request body is in a file named `sample_data_session`:
+1. Envíe solicitudes de sesiones al extremo de la API de recopilación de MA. Si la carga de la solicitud no es válida, identifique el problema y vuelva a intentarlo hasta que obtenga una respuesta de `201 Created`. In this `curl` example, the JSON request body is in a file named `sample_data_session`:
 
    ```
    $ curl -i -d \ 
