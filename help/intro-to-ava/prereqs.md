@@ -1,7 +1,7 @@
 ---
 seo-title: Requisitos previos
 title: Requisitos previos
-uuid: 4 c 0 b 37 f 3-8615-4 cc 0-b 9 c 9-eeb 029067064
+uuid: 4c0b37f3-8615-4cc0-b9c9-eeb029067064
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -10,7 +10,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 # Requisitos previos{#prerequisites}
 
-## Decisions {#decision}
+## Decisiones {#decision}
 
 Antes de empezar la implementación del seguimiento, deberá tomar algunas decisiones importantes sobre qué implementación se adapta más a su situación:
 
@@ -20,13 +20,13 @@ Antes de empezar la implementación del seguimiento, deberá tomar algunas decis
 
 ## Tareas {#prereq-tasks}
 
-For a *Media Analytics* implementation, here are the tasks you must complete before you begin:
+Para una implementación de *Media Analytics* , estas son las tareas que debe completar antes de comenzar:
 
 1. **Habilitar Experience Cloud**.
 
    Debe implementar el servicio de identidad de Adobe Experience Platform.
 
-   El servicio de identidad habilita el marco de identificación común para los servicios principales, las soluciones y los atributos del cliente y las audiencias del cliente en el servicio principal Personas. Funciona asignando ID únicos y persistentes a los visitantes del sitio. Cuando la organización implementa el servicio de ID, este ID le permite identificar al mismo visitante del sitio y sus datos en diferentes soluciones de Experience Cloud.
+   The Identity Service enables the common identification framework for the Experience Cloud Core Services, solutions, and customer attributes and audiences in the People core service. Funciona asignando ID únicos y persistentes a los visitantes del sitio. Cuando la organización implementa el servicio de ID, este ID le permite identificar al mismo visitante del sitio y sus datos en diferentes soluciones de Experience Cloud.
 
    ![](assets/mc_id_service_graphic.png)
 
@@ -36,7 +36,7 @@ For a *Media Analytics* implementation, here are the tasks you must complete bef
 
    >[!IMPORTANT]
    >
-   >Para participar en Adobe Experience Cloud Device Co-op, es necesario el servicio Experience Cloud ID.
+   >To participate in the Adobe Experience Cloud Device Co-op, the Experience Cloud ID service is required.
 
    Si no ha implementado el servicio de ID, ahora es el momento de empezar a pensar en una estrategia de migración. For more information about the importance and role of the ID service, see [Why the Identity Service Should be on Your Radar.](https://blogs.adobe.com/digitalmarketing/analytics/why-new-adobe-marketing-cloud-id-service-should-be-on-your-radar/)
 
