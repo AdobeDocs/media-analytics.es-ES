@@ -1,7 +1,7 @@
 ---
 seo-title: Seguimiento de capítulos y segmentos en iOS
 title: Seguimiento de capítulos y segmentos en iOS
-uuid: ffc 5 ce 9 f -04 ba -4059-92 d 4-4 cb 4180 ac 9 ed
+uuid: ffc5ce9f-04ba-4059-92d4-4cb4180ac9ed
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -12,15 +12,15 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 >[!IMPORTANT]
 >
->Las instrucciones siguientes proporcionan consejos para la implementación mediante SDK 2. x. Si va a implementar una versión 1.x del SDK, puede descargar la guía del desarrollador aquí: [Descargar SDK.](/help/sdk-implement/download-sdks.md)
+>Las siguientes instrucciones proporcionan instrucciones para la implementación mediante SDK 2.x. Si va a implementar una versión 1.x del SDK, puede descargar la guía del desarrollador aquí: [Descargar SDK.](/help/sdk-implement/download-sdks.md)
 
 1. Identifique cuándo se produce el evento de inicio de capítulo y cree la instancia de `ChapterObject` con la información del capítulo.
 
-   `ChapterObject` referencia de seguimiento de capítulo:
+   `ChapterObject` referencia de seguimiento de capítulos:
 
    >[!NOTE]
    >
-   >Estas variables solo se requieren si planea rastrear capítulos.
+   >Estas variables solo son necesarias si planea realizar un seguimiento de los capítulos.
 
    | Nombre de variable | Descripción | Requerido |
    | --- | --- | :---: |
