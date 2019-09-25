@@ -1,7 +1,7 @@
 ---
 seo-title: Seguimiento de errores en Roku
 title: Seguimiento de errores en Roku
-uuid: 4 e 0165 f 9-9169-47 ed -9 f 11-ea 8 a 8778 f 663
+uuid: 4e0165f9-9169-47ed-9f11-ea8a8778f663
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -16,7 +16,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ## Implementación del seguimiento de errores
 
-1. Rastree los errores del reproductor de medios:
+1. Seguimiento de errores del reproductor de medios:
 
    ```
    ADBMobile().mediaTrackError(msg.GetMessage(), 
