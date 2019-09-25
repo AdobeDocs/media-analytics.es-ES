@@ -1,7 +1,7 @@
 ---
 seo-title: Seguimiento de la calidad de la experiencia en JavaScript
 title: Seguimiento de la calidad de la experiencia en JavaScript
-uuid: 3 bc 762 a 2-9706-4 b 62-aa 91-747 f 461 dd 13 d
+uuid: 3bc762a2-9706-4b62-aa91-747f461dd13d
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -14,7 +14,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 >
 >En las siguientes instrucciones se indican los pasos para la implementación en todos los kits de desarrollo de software de 2.x. Si va a implementar una versión 1.x del SDK, puede descargar las guías del desarrollador de 1.x aquí: [Descargar SDK.](/help/sdk-implement/download-sdks.md)
 
-## Implemement QOS
+## Implementación de QOS
 
 1. Identify when the bitrate changes during media playback and create the `MediaObject` instance using the QoS information.
 
@@ -22,7 +22,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
    >[!TIP]
    >
-   >Estas variables solo se requieren si planea rastrear qos.
+   >These variables are only required if you are planning to track QoS.
 
    | Variable | Descripción | Requerido |
    | --- | --- | :---: |
@@ -52,7 +52,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
    >[!IMPORTANT]
    >
-   >Actualice el objeto qos y llame al suceso change de velocidad de bits en cada cambio de velocidad de bits. Esto proporciona los datos de QoS más precisos.
+   >Actualice el objeto QoS y llame al evento de cambio de velocidad de bits en cada cambio de velocidad de bits. Esto proporciona los datos de QoS más precisos.
 
 1. Asegúrese de que el método `getQoSObject()` devuelve la información de QoS más actual.
 1. When the media player encounters an error, and the error event is available to the player API, use `trackError()` to capture the error information. (Consulte [Información general](/help/sdk-implement/track-errors/track-errors-overview.md).)
