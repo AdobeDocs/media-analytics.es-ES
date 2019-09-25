@@ -1,7 +1,7 @@
 ---
 seo-title: Información general
 title: Información general
-uuid: d 71429 e 6-ef 8 b -4 ea 2-8491-ff 3 cdbf 4357 f
+uuid: d71429e6-ef8b-4ea2-8491-ff3cdbf4357f
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
