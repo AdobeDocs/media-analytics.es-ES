@@ -1,7 +1,7 @@
 ---
-seo-title: Resolución de la reproducción principal entre publicidades
-title: Resolución de la reproducción principal entre publicidades
-uuid: 228 b 4812-c 23 e -40 c 8-ae 2 b-e 15 ca 69 b 0 bc 2
+seo-title: Resolving main play appearing between ads
+title: Resolución de la reproducción principal que aparece entre publicidades
+uuid: 228b4812-c23e-40c8-ae2b-e15ca69b0bc2
 translation-type: tm+mt
 source-git-commit: 8c20af925a1043c90b84d7d13021848725e05500
 
@@ -29,7 +29,7 @@ Mientras utiliza Adobe Debug o un husmeador de paquetes de red como Charles, si 
 * Inicio de publicidad: `s:event:type=start` &amp; `s:asset:type=ad`
 * Reproducción de publicidad: `s:event:type=play` &amp; `s:asset:type=ad`
 * Finalización de publicidad: `s:event:type=complete` &amp; `s:asset:type=ad`
-* Main Content Play: `s:event:type=play` &amp; `s:asset:type=main` **(expected)**
+* Main Content Play:  &amp;  (expected)`s:event:type=play``s:asset:type=main`****
 
 ## RESOLUCIÓN
 
@@ -49,7 +49,7 @@ Administre el espacio desde dentro del reproductor invocando `trackEvent:AdCompl
 
    >[!NOTE]
    >
-   >Llame a este solo si no se completó la publicidad anterior. Utilice un valor booleano para mantener el estado "`isinAd`" para el anuncio anterior.
+   >Llame a esto solo si la publicidad anterior no se completó. Utilice un valor booleano para mantener el estado "`isinAd`" para el anuncio anterior.
 
 * Cree la instancia del objeto de anuncio para el recurso de publicidad: por ejemplo, `adObject`.
 * Populate the ad metadata, `adCustomMetadata`.
@@ -58,7 +58,7 @@ Administre el espacio desde dentro del reproductor invocando `trackEvent:AdCompl
 
 **En cada recurso de anuncio finalizado:**
 
-* **No realice una llamada**
+* **Do not make a call**
 
    >[!NOTE]
    >
