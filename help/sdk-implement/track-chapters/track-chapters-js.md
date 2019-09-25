@@ -1,7 +1,7 @@
 ---
 seo-title: Seguimiento de capítulos y segmentos en JavaScript
 title: Seguimiento de capítulos y segmentos en JavaScript
-uuid: ef 99 edf 7-7 a 77-46 c 4-8429-bc 9 a 856 b 98 d 6
+uuid: ef99edf7-7a77-46c4-8429-bc9a856b98d6
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -12,15 +12,15 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 >[!IMPORTANT]
 >
->Las instrucciones siguientes proporcionan consejos para la implementación mediante SDK 2. x. Si va a implementar una versión 1.x del SDK, puede descargar la guía del desarrollador aquí: [Descargar SDK.](/help/sdk-implement/download-sdks.md)
+>Las siguientes instrucciones proporcionan instrucciones para la implementación mediante SDK 2.x. Si va a implementar una versión 1.x del SDK, puede descargar la guía del desarrollador aquí: [Descargar SDK.](/help/sdk-implement/download-sdks.md)
 
 1. Identifique cuándo se produce el evento de inicio de capítulo y cree la instancia de `ChapterObject` con la información del capítulo.
 
-   `ChapterObject` referencia de seguimiento de capítulo:
+   `ChapterObject` chapter tracking reference:
 
    >[!NOTE]
    >
-   >Estas variables solo se requieren si planea rastrear capítulos.
+   >These variables are only required if you are planning to track chapters.
 
    | Nombre de variable | Descripción | Requerido |
    | --- | --- | :---: |
