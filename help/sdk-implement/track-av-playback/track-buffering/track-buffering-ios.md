@@ -1,7 +1,7 @@
 ---
 seo-title: Seguimiento del almacenamiento en búfer en iOS
 title: Seguimiento del almacenamiento en búfer en iOS
-uuid: 4 f 4 db 23 a -489 b -4 b 41-bb 6 e -393 ec 64 d 52 a 2
+uuid: 4f4db23a-489b-4b41-bb6e-393ec64d52a2
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
