@@ -12,7 +12,7 @@ source-git-commit: d325f3184932b179bbd6cde0d3e82cb2e278dd2a
 
 Custom Video Tracking utilizes [manual link tracking using custom link code](https://marketing.adobe.com/resources/help/en_US/sc/implement/link_manual.html) within Analytics `appMeasurement`. Con frecuencia, el seguimiento de enlace de vídeo personalizado se utiliza en las plataformas y los dispositivos en los que es necesaria una medición mínima del vídeo.
 
-* En JavaScript: la `s.tl()` función
+* In JavaScript: the  function`s.tl()`
 * En aplicaciones móviles: [trackAction() para Android](https://marketing.adobe.com/resources/help/en_US/mobile/android/actions.html), [trackAction() para iOS](https://marketing.adobe.com/resources/help/en_US/mobile/ios/actions.html) y [trackAction() para OTT](/help/sdk-implement/analytics-with-ott/track-app-actions.md)
 * In Data Insertion API: [linktype tag](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/data-insertion-api/reference/r_supported_tags.md)
 
