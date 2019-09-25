@@ -1,7 +1,7 @@
 ---
 seo-title: Seguimiento de anuncios en Android
 title: Seguimiento de anuncios en Android
-uuid: 4 a 4249 fb-dc 39-4947-a 14 d-a 51 d 972 f 32 d 4
+uuid: 4a4249fb-dc39-4947-a14d-a51d972f32d4
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -12,11 +12,11 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 >[!IMPORTANT]
 >
->Las instrucciones siguientes proporcionan indicaciones para la implementación con los SDK 2. x. Si va a implementar una versión 1.x del SDK, puede descargar las guías del desarrollador de 1.x aquí: [Descargar SDK.](/help/sdk-implement/download-sdks.md)
+>The following instructions provide guidance for implementation using the 2.x SDKs. Si va a implementar una versión 1.x del SDK, puede descargar las guías del desarrollador de 1.x aquí: [Descargar SDK.](/help/sdk-implement/download-sdks.md)
 
 ## Constantes de seguimiento de anuncio
 
-| Nombre de la constante | Descripción |
+| Nombre de la constante | Descripción |
 | --- | --- |
 | `MediaHeartbeat.Event.AdBreakStart` | Constante para rastrear el evento de inicio de AdBreak |
 | `MediaHeartbeat.Event.AdBreakComplete` | Constante para rastrear el evento de finalización de AdBreak |
@@ -28,7 +28,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 1. Identifique cuándo comienza la zona de salto de anuncio, incluido el anuncio previo a la emisión, y cree un `AdBreakObject` utilizando la información de la pausa publicitaria.
 
-   `AdBreakObject` reference:
+   `AdBreakObject` referencia:
 
    | Nombre de variable | Descripción | Requerido |
    | --- | --- | :---: |
@@ -57,7 +57,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 1. Identifique cuándo se inicia el anuncio y cree una instancia de `AdObject` con la información de la publicidad.
 
-   `AdObject` reference:
+   `AdObject` referencia:
 
    | Nombre de variable | Descripción | Requerido |
    | --- | --- | :---: |
@@ -76,7 +76,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
                                    <LENGTH>);
    ```
 
-1. De forma opcional, adjunte metadatos estándar o de anuncio a la sesión de seguimiento de medios a través de variables de datos de contexto.
+1. Optionally attach standard and/or ad metadata to the media tracking session through context data variables.
 
    * [Implementación de metadatos de publicidad estándar en Android](/help/sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-android.md)
    * **Metadatos de anuncio personalizados**: para los metadatos personalizados, cree un objeto de variable para las variables de datos personalizadas y rellénelas con los datos del anuncio actual:
