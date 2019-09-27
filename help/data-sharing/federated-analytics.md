@@ -3,7 +3,7 @@ seo-title: Federated Analytics
 title: Federated Analytics
 uuid: a82ace81-c2f6-4799-9a62-4c6a737a7dab
 translation-type: tm+mt
-source-git-commit: 3ca6743e34d40e5826dbe50edcbec6aa77ef66f4
+source-git-commit: ca44520b532aee7a0647f0c5be69af58ead61444
 
 ---
 
@@ -37,13 +37,13 @@ El servicio de Federated Analytics ofrece un sistema para compartir datos de Ado
 
 * **Contrato de consultoría de Adobe:** para la configuración inicial de reglas federadas entre el receptor y el remitente, es importante trabajar con los servicios de consultoría para revisar los datos y crear el acuerdo de uso compartido de datos.
 
-## Download the Federated Analytics Form
+## Descargar el formulario Federated Analytics
 
-**`===>`Descargue la versión actual del formulario aquí: Formulario**[ de acuerdo de reglas de](/assets/federated_analytics_form.pdf)federación. **`<===`**
+**Download the current version here:`===>`**  [Federation Rules Agreement Form.](/assets/federated_analytics_form.pdf) **`<===`**
 
 ## Proceso {#section_byb_kb3_vbb}
 
-1. El remitente y el receptor colaboran para completar el formulario del acuerdo de reglas de federación. The Federated Rules Agreement form contains special fields for our engineering team and should ONLY be edited using Adobe Acrobat. [Descargue Acrobat de forma gratuita.](https://get.adobe.com/reader/)
+1. El remitente y el receptor colaboran para completar el formulario del acuerdo de reglas de federación. El formulario del Acuerdo de reglas federadas contiene campos especiales para nuestro equipo de ingeniería y SOLAMENTE se deben editar con Adobe Acrobat. [Descargue Acrobat de forma gratuita.](https://get.adobe.com/reader/)
 1. Los servicios de consultoría proporcionan un archivo de datos de muestra al receptor con datos reales de reproductores del remitente para confirmar que se definen las reglas adecuadas de uso compartido de datos, siempre que haya archivos de datos disponibles.
 1. El remitente y el receptor garantizan que el acuerdo de uso compartido de datos cumplirá todos los requisitos contractuales entre las dos partes.
 1. Los servicios de consultoría enviarán el formulario completado a Adobe Engineering para definir las reglas de uso compartido de datos.
