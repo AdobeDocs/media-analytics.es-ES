@@ -3,14 +3,14 @@ seo-title: Federated Analytics
 title: Federated Analytics
 uuid: a82ace81-c2f6-4799-9a62-4c6a737a7dab
 translation-type: tm+mt
-source-git-commit: 8727044729eb98634eaab129cbfdc88f90892a51
+source-git-commit: 445a5037b1875db3f1f13a3733aa431c3b3031a0
 
 ---
 
 
 # Federated Analytics{#federated-analytics}
 
-El servicio Federated Analytics proporciona un sistema para compartir datos (audio y vídeo) de Adobe Media Analytics entre dos socios.
+The Federated Analytics service provides a system for sharing Adobe Media Analytics data (audio and video) between two partners.
 Los datos estandarizados de medición creados por Media Analytics son la seña de identidad de Federated Analytics, y permiten que los datos aparezcan en un único informe de múltiples fuentes.
 A través de las reglas y lógica que rigen Federated Analytics, los datos se controlan y se personalizan para satisfacer las necesidades de cada sociedad.
 Federated Analytics hace que la medición de audio y vídeo sea más eficaz, ágil y procesable.
@@ -40,13 +40,13 @@ Federated Analytics hace que la medición de audio y vídeo sea más eficaz, ág
 
 * **Contrato de consultoría de Adobe:** para la configuración inicial de reglas federadas entre el receptor y el remitente, es importante trabajar con los servicios de consultoría para revisar los datos y crear el acuerdo de uso compartido de datos.
 
-## Download the Federated Analytics Form
+## Descargar el formulario Federated Analytics
 
-**Download the current version here:`===>`**  [Federation Rules Agreement Form.](/assets/federated_analytics_form.pdf) **`<===`**
+**Download the current version of the form here:`===>`**  [Federation Rules Agreement Form.](/assets/federated_analytics_form.pdf) **`<===`**
 
 ## Proceso {#section_byb_kb3_vbb}
 
-1. El remitente y el receptor colaboran para completar el formulario del acuerdo de reglas de federación. The Federated Rules Agreement form contains special fields for our engineering team and should ONLY be edited using Adobe Acrobat. [Descargue Acrobat de forma gratuita.](https://get.adobe.com/reader/)
+1. El remitente y el receptor colaboran para completar el formulario del acuerdo de reglas de federación. El formulario del Acuerdo de reglas federadas contiene campos especiales para nuestro equipo de ingeniería y SOLAMENTE se deben editar con Adobe Acrobat. [Descargue Acrobat de forma gratuita.](https://get.adobe.com/reader/)
 1. Los servicios de consultoría proporcionan un archivo de datos de muestra al receptor con datos reales de reproductores del remitente para confirmar que se definen las reglas adecuadas de uso compartido de datos, siempre que haya archivos de datos disponibles.
 1. El remitente y el receptor garantizan que el acuerdo de uso compartido de datos cumplirá todos los requisitos contractuales entre las dos partes.
 1. Los servicios de consultoría enviarán el formulario completado a Adobe Engineering para definir las reglas de uso compartido de datos.
