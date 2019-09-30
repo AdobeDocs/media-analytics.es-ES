@@ -3,14 +3,15 @@ seo-title: Guía de implementación de vínculo personalizado
 title: Guía de implementación de vínculo personalizado
 uuid: 83315e73-20ca-4db5-9d43-33daade45a13
 translation-type: tm+mt
-source-git-commit: 8727044729eb98634eaab129cbfdc88f90892a51
+source-git-commit: 445a5037b1875db3f1f13a3733aa431c3b3031a0
 
 ---
 
 
 # Custom Link Implementation Guide{#custom-link-implementation-guide}
 
-Custom Video Tracking uses [manual link tracking using custom link code](https://marketing.adobe.com/resources/help/en_US/sc/implement/link_manual.html) within Analytics `appMeasurement`. Con frecuencia, el seguimiento de enlace de vídeo personalizado se utiliza en las plataformas y los dispositivos en los que es necesaria una medición mínima del vídeo.
+Custom Video Tracking uses [manual link tracking using custom link code](https://marketing.adobe.com/resources/help/en_US/sc/implement/link_manual.html) within Analytics `appMeasurement`.
+Con frecuencia, el seguimiento de enlace de vídeo personalizado se utiliza en las plataformas y los dispositivos en los que es necesaria una medición mínima del vídeo.
 
 * En JavaScript: la `s.tl()` función
 * En aplicaciones móviles: [trackAction() para Android](https://marketing.adobe.com/resources/help/en_US/mobile/android/actions.html), [trackAction() para iOS](https://marketing.adobe.com/resources/help/en_US/mobile/ios/actions.html) y [trackAction() para OTT](/help/sdk-implement/analytics-with-ott/track-app-actions.md)
@@ -43,14 +44,13 @@ if (e.type == "ended") {
 };
 ```
 
-## Por qué usar el vínculo personalizado
+## Why use Custom Link
 
 * Se necesitan unos requisitos mínimos.
 * Funciona en cualquier plataforma, incluso NoScript.
 * Todos los cálculos, como el tiempo invertido o los cuartiles, se deben realizar con un script personalizado.
 * Es muy sencillo, sin bibliotecas ni scripts ocultos.
 * Proporciona un control total de todos los aspectos relacionados con los datos del vídeo.
-* Se elimina el vínculo al reproductor de muestra.
 
 ## JavaScript de muestra para HTML5 Player
 
@@ -126,4 +126,3 @@ if (e.type == "ended") {
   }; 
 </script>
 ```
-
