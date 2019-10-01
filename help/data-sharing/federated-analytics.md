@@ -3,7 +3,7 @@ seo-title: Federated Analytics
 title: Federated Analytics
 uuid: a82ace81-c2f6-4799-9a62-4c6a737a7dab
 translation-type: tm+mt
-source-git-commit: 445a5037b1875db3f1f13a3733aa431c3b3031a0
+source-git-commit: 99a8908499ab0e43964fd3d7e6e419b5a78ce66b
 
 ---
 
@@ -42,7 +42,7 @@ Federated Analytics hace que la medición de audio y vídeo sea más eficaz, ág
 
 ## Descargar el formulario Federated Analytics
 
-**Download the current version of the form here:`===>`**  [Federation Rules Agreement Form.](/assets/federated_analytics_form.pdf) **`<===`**
+Download the current version of the form here: [Federation Rules Agreement Form](/assets/federated_analytics_form.pdf)
 
 ## Proceso {#section_byb_kb3_vbb}
 
