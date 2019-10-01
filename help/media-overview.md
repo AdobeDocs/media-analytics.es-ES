@@ -3,7 +3,7 @@ seo-title: Medición de audio y vídeo en Adobe Analytics
 title: Medición de audio y vídeo en Adobe Analytics
 uuid: b3cbe240-b94d-42b8-a99c-0280334aaa14
 translation-type: tm+mt
-source-git-commit: 9b6e61e8d97ca44772f5dc2e31472a4f6c54e29c
+source-git-commit: 4a14e2faae6401a3f885eb5e341c1344d7f1e94d
 
 ---
 
@@ -14,7 +14,7 @@ source-git-commit: 9b6e61e8d97ca44772f5dc2e31472a4f6c54e29c
 
 >[!IMPORTANT]
 >
->The documentation provided here is specific to clients utilizing version 1.5 or higher of Adobe's *Media SDK* for heartbeat measurement, or Adobe's newer *Media Collection API* for heartbeat measurement. No incluye instrucciones sobre la implementación de vídeo de hitos heredados. Recomendamos a nuestros clientes que empiecen a usar las dos últimas herramientas de seguimiento de medios de Adobe, o al menos una, para que puedan sacar así el máximo partido a las mejoras y las mediciones avanzadas. Puede ver las [ventajas de empezar a usar las nuevas herramientas](media-overview.md#section_cnj_5st_p1b) a continuación. While we will continue to support the Milestone method of tracking videos, there will not be any planned updates, fixes, or feature improvements. Si tiene más preguntas, póngase en contacto con el administrador de su cuenta de Adobe.
+>The documentation provided here is specific to clients utilizing version 1.5 or higher of Adobe's *Media SDK* for heartbeat measurement, or Adobe's newer *Media Collection API* for heartbeat measurement. No incluye instrucciones sobre la implementación de vídeo de hitos heredados. Recomendamos a nuestros clientes que empiecen a usar las dos últimas herramientas de seguimiento de medios de Adobe, o al menos una, para que puedan sacar así el máximo partido a las mejoras y las mediciones avanzadas. Puede ver las [ventajas de empezar a usar las nuevas herramientas](media-overview.md#section_cnj_5st_p1b) a continuación. Aunque seguiremos admitiendo el método Milestone de seguimiento de videos, no habrá actualizaciones, correcciones ni mejoras de funciones planificadas. Si tiene más preguntas, póngase en contacto con el administrador de su cuenta de Adobe.
 
 ## Información general {#section_8BFE4F8DA64B4A5F826A4940B11AA466}
 
@@ -24,10 +24,6 @@ El seguimiento de medios se habilita mediante cualquiera de las siguientes opcio
 
 * **Media SDK**: se integra con los reproductores de medios más habituales.
 * **API de Media Collection**: (API RESTful) se integra con reproductores para los que no existe compatibilidad con el SDK (o con reproductores con los que no se desea integrar el SDK).
-
-   Asimismo, la API de Media Collection proporciona una capacidad adicional que todavía no está disponible en el SDK:
-
-   * **Seguimiento del contenido descargado**: proporciona asistencia para el seguimiento de contenido multimedia (vídeo y audio) descargado y reproducido desde un dispositivo, independientemente de la conectividad. Esta función se basa en la API de Media Collection y sigue la misma especificación de seguimiento del reproductor. (En este momento no se ofrece compatibilidad con SDK).
 
 Adobe Analytics para medios permite a los clientes realizar un seguimiento de los movimientos de los usuarios en su web, incluido el consumo de medios. Estas medidas se integran fácilmente en los informes de Analytics y en otros productos de Experience Cloud. La medición de medios permite cortar y fragmentar los datos en diversas dimensiones y segmentos, capturar todos los metadatos necesarios para realizar un análisis detallado completo y atribuir criterios de éxito a medios consumidos por completo, el tiempo medio invertido y los anuncios finalizados.
 
@@ -57,6 +53,7 @@ Algunas de las numerosas ventajas del método Heartbeats son:
 * **Datos compartidos a través de Federated Analytics**: rentabilice las opciones de compartir medios más novedosas y realice una evaluación integral de los datos de todos sus socios de distribución de medios: operadores, programadores y distribuidores.
 * **Colaboraciones con socios certificados de clasificación**: Adobe colabora con Nielsen (clasificaciones de audiencia) para ofrecer un censo de medición neutral de terceros que permita elaborar clasificaciones certificadas y de confianza.
 * **Una solución estandarizada para todas las plataformas**: habilite variables coherentes y estandarizadas para todos los medios y plataformas que permitan una comparación de dispositivos y proveedores más eficaz y para todas las campañas.
+* **Seguimiento de contenido descargado:** Rastree el contenido multimedia (vídeo y audio) que se descarga y reproduce en un dispositivo independientemente de su conectividad.
 
 ### Tabla comparativa
 
@@ -102,11 +99,11 @@ En la tabla que aparece a continuación puede comprobar los dispositivos compati
 | **PS3/PS4 de Sony** |  | ![](assets/icon-blue-check.png) |
 | **(Otros/nuevos dispositivos conectados)** |  | ![](assets/icon-blue-check.png) |
 
-Para el SDK de medios, consulte Compatibilidad con versiones de plataforma [mínima](./sdk-implement/setup/setup-overview.md#minimum-platform-version)
+For Media SDK, also see Minimum Platform Version Support[](./sdk-implement/setup/setup-overview.md#minimum-platform-version)
 
-## Seguridad de la capa de transporte {#transport-layer-security}
+## Transport Layer Security {#transport-layer-security}
 
-**Aviso TLS:** Adobe cuenta con estándares de seguridad que requieren la finalización de la vida útil de protocolos de seguridad más antiguos. Para seguir cumpliendo con los estándares de protocolo de seguridad en evolución, Adobe está avanzando hacia el uso de TLS 1.2, con el fin de tener la versión más actualizada y segura en uso. A partir del 20 de febrero de 2019, Adobe solo admitirá TLS 1.1 o posterior. Con este cambio, Adobe ya no recopilará datos de usuarios finales con dispositivos o navegadores web más antiguos que implementen TLS 1.0. La migración a TLS 1.2 ofrece una seguridad mejorada. Es importante que revise los detalles específicos y que planifique los cambios para garantizar una transición sin contratiempos.
+**TLS Notice --** Adobe has security compliance standards that require the end-of-life of older security protocols. To continue to meet the evolving security protocol standards, Adobe is moving toward the use of TLS 1.2, in order to have the most up-to-date and secure version in use. From February 20th, 2019, Adobe will support only TLS 1.1 or later. With this change, Adobe will no longer collect data from end users with older devices or web browsers deploying TLS 1.0. Migrating to TLS 1.2 provides improved security. Es importante que revise los detalles específicos y que planifique los cambios para garantizar una transición sin contratiempos.
 
 >[!NOTE]
 >
