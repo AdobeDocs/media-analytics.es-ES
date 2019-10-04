@@ -3,7 +3,7 @@ product: Media Analytics
 audience: usuario final
 user-guide-title: Adobe Analytics para audio y vídeo
 translation-type: tm+mt
-source-git-commit: 9fd58ced068b4dc077f45f54d5df88d67b047cf1
+source-git-commit: f49f816de12f227ae30da4f3e1ac57c783a58f7b
 
 ---
 
@@ -26,7 +26,7 @@ source-git-commit: 9fd58ced068b4dc077f45f54d5df88d67b047cf1
       + [Adobe Experience Platform Launch](intro-to-ava/implementation-paths/launch-path.md)
       + [Primetime](intro-to-ava/implementation-paths/primetime-path.md)
    + [Habilitación de Audience Manager](intro-to-ava/am-enablement.md)
-+ SDK de Media Analytics {#sdk-implement}
++ Media Analytics SDK {#sdk-implement}
    + [Descarga de SDK](sdk-implement/download-sdks.md)
    + Creación y configuración {#setup}
       + [Información general](sdk-implement/setup/setup-overview.md)
@@ -48,10 +48,10 @@ source-git-commit: 9fd58ced068b4dc077f45f54d5df88d67b047cf1
          + [Track Buffering on iOS](sdk-implement/track-av-playback/track-buffering/track-buffering-ios.md)
          + [Track Buffering on JavaScript](sdk-implement/track-av-playback/track-buffering/track-buffering-js.md)
          + [Track Buffering on Chromecast](sdk-implement/track-av-playback/track-buffering/track-buffering-chromecast.md)
-         + [Seguimiento de almacenamiento en búfer en Roku](sdk-implement/track-av-playback/track-buffering/track-buffering-roku.md)
+         + [Track Buffering on Roku](sdk-implement/track-av-playback/track-buffering/track-buffering-roku.md)
       + Track Seeking {#track-seeking}
          + [Track Seeking on Android](sdk-implement/track-av-playback/track-seeking/track-seeking-android.md)
-         + [Búsqueda de seguimiento en iOS](sdk-implement/track-av-playback/track-seeking/track-seeking-ios.md)
+         + [Track Seeking on iOS](sdk-implement/track-av-playback/track-seeking/track-seeking-ios.md)
          + [Seguimiento de búsqueda en JavaScript](sdk-implement/track-av-playback/track-seeking/track-seeking-js.md)
          + [Seguimiento de búsqueda en Chromecast](sdk-implement/track-av-playback/track-seeking/track-seeking-chromecast.md)
          + [Búsqueda de pistas en Roku](sdk-implement/track-av-playback/track-seeking/track-seeking-roku.md)
@@ -85,11 +85,11 @@ source-git-commit: 9fd58ced068b4dc077f45f54d5df88d67b047cf1
       + [Track Chapters and Segments on Roku](sdk-implement/track-chapters/track-chapters-roku.md)
    + Seguimiento de la calidad de la experiencia {#track-qos}
       + [Información general](sdk-implement/track-qos/track-qos-overview.md)
-      + [Track Quality of Experience on Android](sdk-implement/track-qos/track-qos-android.md)
-      + [Track Quality of Experience on iOS](sdk-implement/track-qos/track-qos-ios.md)
-      + [Track Quality of Experience on JavaScript](sdk-implement/track-qos/track-qos-js.md)
-      + [Track Quality of Experience on Chromecast](sdk-implement/track-qos/track-qos-chromecast.md)
-      + [Track Quality of Experience on Roku](sdk-implement/track-qos/track-qos-roku.md)
+      + [Seguimiento de la calidad de la experiencia en Android](sdk-implement/track-qos/track-qos-android.md)
+      + [Seguimiento de la calidad de la experiencia en iOS](sdk-implement/track-qos/track-qos-ios.md)
+      + [Seguimiento de la calidad de la experiencia en JavaScript](sdk-implement/track-qos/track-qos-js.md)
+      + [Seguimiento de la calidad de la experiencia en Chromecast](sdk-implement/track-qos/track-qos-chromecast.md)
+      + [Seguimiento de la calidad de la experiencia en Roku](sdk-implement/track-qos/track-qos-roku.md)
    + Track Errors {#track-errors}
       + [Información general](sdk-implement/track-errors/track-errors-overview.md)
       + [Seguimiento de errores en Android](sdk-implement/track-errors/track-errors-android.md)
@@ -124,13 +124,13 @@ source-git-commit: 9fd58ced068b4dc077f45f54d5df88d67b047cf1
    + Analytics in OTT Apps {#analytics-with-ott}
       + [Seguimiento de estados de aplicaciones](sdk-implement/analytics-with-ott/track-app-states.md)
       + [Seguimiento de acciones de aplicaciones](sdk-implement/analytics-with-ott/track-app-actions.md)
-      + [Definir ID de usuario](sdk-implement/analytics-with-ott/set-user-ids.md)
+      + [Set User IDs](sdk-implement/analytics-with-ott/set-user-ids.md)
       + [OTT y Audience Manager](sdk-implement/analytics-with-ott/ott-am.md)
       + [OTT y Experience Cloud](sdk-implement/analytics-with-ott/ott-experience-cloud.md)
    + Guía paso a paso {#cookbook}
       + [Administración de interrupciones de la aplicación durante la reproducción](sdk-implement/cookbook/app-interrupts.md)
       + [Solución cuando aparece main:play entre anuncios](sdk-implement/cookbook/fix-ad-play-ad.md)
-      + [Reanudación de sesiones inactivas](sdk-implement/cookbook/resuming-inactive.md)
+      + [Resuming Inactive Sessions](sdk-implement/cookbook/resuming-inactive.md)
       + [Seguimiento en SceneGraph (Roku)](sdk-implement/cookbook/sdk-track-scenegraph.md)
       + [Diferencias de inicio y SDK](sdk-implement/cookbook/sdk-vs-launch-qoe.md)
    + Media Analytics 1.x to 2.x Migration {#va-1x-to-2x}
@@ -161,9 +161,9 @@ source-git-commit: 9fd58ced068b4dc077f45f54d5df88d67b047cf1
       + [Línea de tiempo 1: Ver el contenido hasta el final](media-collection-api/mc-api-timelines/mc-api-timeline-1.md)
       + [Línea de tiempo 2: El usuario abandona la sesión](media-collection-api/mc-api-timelines/mc-api-timeline-2.md)
       + [Línea de tiempo 3: Capítulos](media-collection-api/mc-api-timelines/mc-api-timeline-3.md)
-   + [Track Downloaded Content](media-collection-api/track-downloaded-content.md)
+   + [Seguimiento de contenido descargado](media-collection-api/track-downloaded-content.md)
 + Métricas y metadatos {#metrics-and-metadata}
-   + [Audio and Video Parameters](metrics-and-metadata/audio-video-parameters.md)
+   + [Parámetros de audio y vídeo](metrics-and-metadata/audio-video-parameters.md)
    + [Parámetros de anuncio](metrics-and-metadata/ad-parameters.md)
    + [Parámetros de capítulo](metrics-and-metadata/chapter-parameters.md)
    + [Parámetros de calidad](metrics-and-metadata/quality-parameters.md)
@@ -172,7 +172,7 @@ source-git-commit: 9fd58ced068b4dc077f45f54d5df88d67b047cf1
 + Reporting and Analysis {#media-reports}
    + [Habilitación de informes de medios](media-reports/media-reports-enable.md)
    + Media Default Reports {#media-default-reports}
-      + [Default Reports Overview](media-reports/media-default-reports/default-reports-overview.md)
+      + [Información general de informes predeterminados](media-reports/media-default-reports/default-reports-overview.md)
       + [Información general de medios](media-reports/media-default-reports/media-reports-overview.md)
       + [Detalles de medios](media-reports/media-default-reports/media-reports-detail.md)
       + [Horario de medios](media-reports/media-default-reports/media-reports-daypart.md)
@@ -182,3 +182,4 @@ source-git-commit: 9fd58ced068b4dc077f45f54d5df88d67b047cf1
 + [Federated Analytics](data-sharing/federated-analytics.md)
 + Recursos adicionales {#additional-resources}
    + [Actualizaciones de documentación](additional-resources/doc-updates.md)
+
