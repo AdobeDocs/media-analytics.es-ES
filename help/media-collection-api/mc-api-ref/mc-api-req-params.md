@@ -3,7 +3,7 @@ seo-title: Parámetros de solicitud
 title: Parámetros de solicitud
 uuid: f83e9ef1-803d-4152-a6c7-acaa325036b9
 translation-type: tm+mt
-source-git-commit: 5fc38098bcd497f3305f76ae2b23757b5f81ac69
+source-git-commit: 8eb9ccc9229a0b430f3628054b960441660a8683
 
 ---
 
@@ -103,6 +103,13 @@ source-git-commit: 5fc38098bcd497f3305f76ae2b23757b5f81ac69
 | `media.qoe.droppedFrames` | N | Cualquiera | El número de fotogramas perdidos en la emisión |
 | `media.qoe.framesPerSecond` | N | Cualquiera | Número de fotogramas por segundo |
 | `media.qoe.timeToStart` | N | Cualquiera | La cantidad de tiempo (en milisegundos) entre el momento en que el usuario inicia la reproducción y la carga y comienzo del contenido |
+
+## Parámetros de California Consumer Privacy Act (CCPA) {#ccpa-params}
+
+| Clave de solicitud | Requerido | Definir en... |  Descripción  |
+| --- | :---: | :---: | --- |
+| `analytics.optOutServerSideForwarding` | N | `sessionStart` | Se establece en true cuando el usuario final ha optado por no compartir sus datos entre Adobe Analytics y otras soluciones de Experience Cloud (por ejemplo, Audience Manager) |
+| `analytics.optOutShare` | N | `sessionStart` | Se establece en true cuando el usuario final ha optado por no publicar sus datos (por ejemplo, para otros clientes de Adobe Analytics). |
 
 ## Detalles adicionales {#section_ryt_ccy_lcb}
 
