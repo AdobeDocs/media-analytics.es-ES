@@ -3,7 +3,7 @@ seo-title: Medición de audio y vídeo en Adobe Analytics
 title: Medición de audio y vídeo en Adobe Analytics
 uuid: b3cbe240-b94d-42b8-a99c-0280334aaa14
 translation-type: tm+mt
-source-git-commit: 4a14e2faae6401a3f885eb5e341c1344d7f1e94d
+source-git-commit: 5fc38098bcd497f3305f76ae2b23757b5f81ac69
 
 ---
 
@@ -35,7 +35,7 @@ Algunas de las muchas ventajas que ofrecen las soluciones de medición de medios
 
 * **Análisis puntuales**: tome decisiones fundamentadas y en tiempo real gracias a los resultados de las métricas de rendimiento clave (por ejemplo, la duración) en varios canales. Los eventos de contenido principal se miden en **intervalos de 10 segundos** para monitorizar toda actividad a medida que pasa. Los eventos de seguimiento de anuncios ocurren en intervalos de **1 segundo**.
 * **Experiencia del usuario mejorada**: estas soluciones consiguen que los usuarios estén totalmente inmersos gracias a un menor número de eventos de almacenamiento en búfer y a que permiten al cliente comprender dónde y cuándo deben aparecer los anuncios dentro del contenido para que la experiencia sea lo más cómoda y menos intrusiva posible, lo que fomenta que vuelvan a visitarlo y se registren visitas repetidas.
-* **Holistic picture - Combine multiple data points across all of your content distributors to get a full view of all your media activity, and measure engagement and views/listens across all possible channels through the Federated Analytics feature.**[](data-sharing/federated-analytics.md)
+* **Imagen holística:** combine varios puntos de datos en todos sus distribuidores de contenido para obtener una vista completa de toda su actividad multimedia y mida la participación y las vistas y escuchas en todos los canales posibles mediante la función [Federated Analytics](/help/federated-analytics.md) .
 * **Aumento del nivel de granularidad**: evalúe los patrones de visualización al nivel más granular, incluido el tiempo individual de visitante por día, espectadores/oyentes simultáneos por minuto y la duración media del contenido consumido.
 * **Medición exacta**: medición en varios dispositivos utilizados para el consumo de medios, incluidos OTT, smartphones, tabletas, equipos de escritorio y mucho más, para controlar los patrones de participación del usuario.
 * **Segmentación**: estas soluciones clasifican los reproductores, dispositivos, géneros y capítulos, y muestran la forma en que cada uno repercute en las vistas/escuchas generales y la participación de los usuarios con el contenido, el audio, la publicidad y las combinaciones.
@@ -99,11 +99,11 @@ En la tabla que aparece a continuación puede comprobar los dispositivos compati
 | **PS3/PS4 de Sony** |  | ![](assets/icon-blue-check.png) |
 | **(Otros/nuevos dispositivos conectados)** |  | ![](assets/icon-blue-check.png) |
 
-For Media SDK, also see Minimum Platform Version Support[](./sdk-implement/setup/setup-overview.md#minimum-platform-version)
+Para el SDK de medios, consulte Compatibilidad con versiones de plataforma [mínima](./sdk-implement/setup/setup-overview.md#minimum-platform-version)
 
-## Transport Layer Security {#transport-layer-security}
+## Seguridad de la capa de transporte {#transport-layer-security}
 
-**TLS Notice --** Adobe has security compliance standards that require the end-of-life of older security protocols. To continue to meet the evolving security protocol standards, Adobe is moving toward the use of TLS 1.2, in order to have the most up-to-date and secure version in use. From February 20th, 2019, Adobe will support only TLS 1.1 or later. With this change, Adobe will no longer collect data from end users with older devices or web browsers deploying TLS 1.0. Migrating to TLS 1.2 provides improved security. Es importante que revise los detalles específicos y que planifique los cambios para garantizar una transición sin contratiempos.
+**Aviso TLS:** Adobe cuenta con estándares de seguridad que requieren la finalización de la vida útil de protocolos de seguridad más antiguos. Para seguir cumpliendo con los estándares de protocolo de seguridad en evolución, Adobe está avanzando hacia el uso de TLS 1.2, con el fin de tener la versión más actualizada y segura en uso. A partir del 20 de febrero de 2019, Adobe solo admitirá TLS 1.1 o posterior. Con este cambio, Adobe ya no recopilará datos de usuarios finales con dispositivos o navegadores web más antiguos que implementen TLS 1.0. La migración a TLS 1.2 ofrece una seguridad mejorada. Es importante que revise los detalles específicos y que planifique los cambios para garantizar una transición sin contratiempos.
 
 >[!NOTE]
 >
