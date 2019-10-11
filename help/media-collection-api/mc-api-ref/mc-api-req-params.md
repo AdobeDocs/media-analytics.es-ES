@@ -3,7 +3,7 @@ seo-title: Parámetros de solicitud
 title: Parámetros de solicitud
 uuid: f83e9ef1-803d-4152-a6c7-acaa325036b9
 translation-type: tm+mt
-source-git-commit: 9b6e61e8d97ca44772f5dc2e31472a4f6c54e29c
+source-git-commit: 5fc38098bcd497f3305f76ae2b23757b5f81ac69
 
 ---
 
@@ -43,7 +43,7 @@ source-git-commit: 9b6e61e8d97ca44772f5dc2e31472a4f6c54e29c
 
 ## Metadatos de contenido estándar
 
-| Request Key  | Requerido | Definir en... |  Descripción  |
+| Clave de solicitud | Requerido | Definir en... |  Descripción  |
 | --- | :---: | :---: | --- |
 | `media.show` | N | `sessionStart` | El nombre del programa o serie |
 | `media.season` | N | `sessionStart` | La temporada a la que pertenece el programa o la serie |
@@ -131,7 +131,7 @@ Pass the Experience Cloud User ID (also known as the `MID` or `MCID`) on the `se
 
 ### visitor.marketingCloudOrgId
 
-In addition to being necessary for MCID generation when that is not provided, this parameter is also used as the value for the publisher ID (based on which Media Analytics performs [federation rule matching.](/help/data-sharing/federated-analytics.md))
+In addition to being necessary for MCID generation when that is not provided, this parameter is also used as the value for the publisher ID (based on which Media Analytics performs [federation rule matching.](/help/federated-analytics.md))
 
 ### ID de usuario heredado de Analytics (ayuda) e ID de usuario declarado (customerIDs)
 
@@ -153,7 +153,7 @@ Tenga en cuenta que el valor de `visitor.customerIDs` puede tener cualquier núm
 
 ### visitor.aamLocationHint
 
-This parameter indicates which Adobe Audience Manager (AAM) Edge would be hit when Adobe Analytics sends the customer data to Audience Manager. Si no transmite este parámetro, Adobe le asigna el valor 1 en el código. Esto es especialmente importante cuando los usuarios finales tienden a utilizar sus dispositivos en ubicaciones distantes geográficamente (por ejemplo, las costas de EE. UU., Europa, Asia). De lo contrario, los datos del usuario se esparcirán en varios límites de AAM.
+Este parámetro indica qué Adobe Audience Manager (AAM) Edge se visitaría cuando Adobe Analytics envía los datos del cliente a Audience Manager. Si no transmite este parámetro, Adobe le asigna el valor 1 en el código. Esto es especialmente importante cuando los usuarios finales tienden a utilizar sus dispositivos en ubicaciones distantes geográficamente (por ejemplo, las costas de EE. UU., Europa, Asia). De lo contrario, los datos del usuario se esparcirán en varios límites de AAM.
 
 ### media.resume
 
