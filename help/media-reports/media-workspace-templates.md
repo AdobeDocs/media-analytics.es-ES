@@ -3,7 +3,7 @@ seo-title: Plantillas de espacio de trabajo de medios
 title: Plantillas de espacio de trabajo de medios
 uuid: 0024b06a-eaf5-4d2e-be45-aeda9d0554c1
 translation-type: tm+mt
-source-git-commit: 6e13e9a6250949a3a7f059445da772b4db1fdb71
+source-git-commit: c8aa81660fe55dba673d3d53f780f3533a50cc93
 
 ---
 
@@ -18,7 +18,7 @@ Puede trabajar con las plantillas de la pestaña de espacio de trabajo de Adobe 
 
    ![](assets/all-templates-audio.png)
 
-   Por ejemplo, si elige la plantilla Consumo de audio, aparece el siguiente tablero orientado al audio:
+   For example, if you choose the **[!UICONTROL Audio Consumption]** template, a project with the following audio-oriented dashboard is presented:
 
    ![](assets/aa-workspace.png)
 
