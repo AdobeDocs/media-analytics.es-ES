@@ -3,7 +3,7 @@ seo-title: Configuración de iOS
 title: Configuración de iOS
 uuid: a1c6be79-a6dc-47b6-93b3-ac7b42f1f3eb
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: f745d64c9cf843ef7237ee3c3c96c63d7edbc1c2
 
 ---
 
@@ -12,13 +12,12 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ## Requisitos previos
 
-* **Obtain valid configuration parameters for the Media SDK
-These parameters can be obtained from an Adobe representative after you set up your analytics account.**
+* **Obtenga parámetros de configuración válidos para el SDK** de mediosEstos parámetros se pueden obtener de un representante de Adobe después de configurar la cuenta de análisis.
 * **Implementación de ADBMobile para iOS en la aplicación** Para obtener más información sobre la documentación del SDK de Adobe Mobile, consulte SDK 4.x de [iOS para soluciones de Experience Cloud.](https://marketing.adobe.com/resources/help/en_US/mobile/ios/)
 
    >[!IMPORTANT]
    >
-   >A partir de iOS 9, Apple introdujo una función denominada App Transport Security (ATS). Esta función es útil para mejorar la seguridad de la red al garantizar que las aplicaciones solo utilizan protocolos y codificadores estándar del sector. Esta función está activada de forma predeterminada, pero tiene opciones de configuración que le permiten trabajar con ATS de diferentes formas. For details on ATS, see App Transport Security.[](https://marketing.adobe.com/resources/help/en_US/mobile/ios/app_transport_security.html)
+   >A partir de iOS 9, Apple introdujo una función denominada App Transport Security (ATS). Esta función es útil para mejorar la seguridad de la red al garantizar que las aplicaciones solo utilizan protocolos y codificadores estándar del sector. Esta función está activada de forma predeterminada, pero tiene opciones de configuración que le permiten trabajar con ATS de diferentes formas. Para obtener más información sobre ATS, consulte Seguridad del transporte de [aplicaciones.](https://marketing.adobe.com/resources/help/en_US/mobile/ios/app_transport_security.html)
 
 * **Proporcione las siguientes capacidades en su reproductor de medios**:
 
@@ -141,7 +140,7 @@ Para obtener información detallada sobre la migración de 1.x a 2.x, consulte [
 
 ## Configurar una aplicación nativa para tvOS
 
-Ahora, gracias al lanzamiento del nuevo Apple TV, puede crear aplicaciones para utilizarlas en el entorno nativo de tvOS. Puede crear una aplicación original con varios marcos de trabajo disponibles en iOS o crear la aplicación utilizando plantillas XML y JavaScript. MediaSDK es compatible con tvOS a partir de la versión 2.0. Para obtener más información sobre tvOS, consulte el [Sitio para desarrolladores de tvOS.](https://developer.apple.com/tvos/documentation/)
+Ahora, gracias al lanzamiento del nuevo Apple TV, puede crear aplicaciones para utilizarlas en el entorno nativo de tvOS. Puede crear una aplicación original con varios marcos de trabajo disponibles en iOS o crear la aplicación utilizando plantillas XML y JavaScript. MediaSDK es compatible con tvOS a partir de la versión 2.0. Para obtener más información sobre tvOS, consulte el [Sitio para desarrolladores de tvOS.](https://developer.apple.com/tvos/)
 
 Complete los siguientes pasos en su proyecto Xcode. En esta guía se presupone que el proyecto está dirigido a una aplicación de Apple TV para tvOS:
 
