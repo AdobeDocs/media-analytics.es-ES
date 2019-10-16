@@ -3,7 +3,7 @@ seo-title: Descarga de SDK
 title: Descarga de SDK
 uuid: a619fbb8-693e-4583-8dad-0ff875e715f8
 translation-type: tm+mt
-source-git-commit: 8b4ed0c9ac2140a25c64602b615d982410b2faea
+source-git-commit: 498546566d1dcb8c4ad84482332d46142eecd1ca
 
 ---
 
@@ -20,16 +20,6 @@ source-git-commit: 8b4ed0c9ac2140a25c64602b615d982410b2faea
 | Roku | [Media SDK para Roku v2.2.1](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/roku-v2.2.1) |  | [Configurar Roku](/help/sdk-implement/setup/set-up-roku.md) |
 | Chromecast | [Media SDK para Chromecast v2.2.0](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/chromecast-v2.2.0) | [Referencia de la API de Chromecast](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/) | [Configuración de Chromecast](/help/sdk-implement/setup/set-up-chromecast.md) |
 
-<!--
-## Download the Adobe Nielsen 2.x SDKs {#section_ih5_vpz_p1b}
-
-|  &nbsp;Adobe Nielsen 2.x SDKs&nbsp; | Latest&nbsp;Media&nbsp;SDK&nbsp;Downloads&nbsp; | Nielsen&nbsp;Implementation&nbsp;Guides&nbsp; |
-|---|---|---|
-| **Android** | [VHL for Android v.2.0.1N](https://adobecertifiedmetrics.zendesk.com/hc/en-us/articles/115002514727-VHL-version-2-0-x-N-GA-Release) | [Android 2.1](/help/nielsen-partnership/dcr-impl/dcr-android-impl-2.1.md) |
-| **iOS** | [VHL for iOS v.2.0.1N](https://adobecertifiedmetrics.zendesk.com/hc/en-us/articles/115002514727-VHL-version-2-0-x-N-GA-Release) | [iOS 2.1](/help/nielsen-partnership/dcr-impl/dcr-ios-impl-2.1.md) |
-| **JavaScript** | [VHL for JavaScript v.2.0.1N](https://adobecertifiedmetrics.zendesk.com/hc/en-us/articles/115002514727-VHL-version-2-0-x-N-GA-Release) | [JavaScript 2.1](/help/nielsen-partnership/dcr-impl/dcr-js-impl-2.1.md) |
--->
-
 ## Extensión de Media Analytics Launch {#section_o54_gsd_12b}
 
 | Componente de MA Launch   | Descargas | Documentación |
@@ -38,7 +28,7 @@ source-git-commit: 8b4ed0c9ac2140a25c64602b615d982410b2faea
 
 ## Descarga de Media SDK 1.x {#section_B91B3A02E68B4B42917E392AAE666522}
 
-| SDK 1.x |  Descargas de SDK de medios |  Getting Started Guides  |
+| SDK 1.x |  Descargas de SDK de medios |  Guías de introducción |
 | --- | --- | --- |
 | Android | [SDK para Android v1.5.8](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/releases/tag/android-v1.5.8) | [Primeros pasos: Media 1.x para Android](setup/vhl-dev-guide-v15_android.pdf) |
 | iOS | [SDK para iOS v1.5.9](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/releases/tag/ios-v1.5.9) | [Primeros pasos: Media 1.x para iOS](setup/vhl-dev-guide-v15_ios.pdf) |
