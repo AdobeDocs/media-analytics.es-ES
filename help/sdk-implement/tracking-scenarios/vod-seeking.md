@@ -3,14 +3,14 @@ seo-title: Reproducción de VOD con llamada a otro punto del contenido principal
 title: Reproducción de VOD con llamada a otro punto del contenido principal
 uuid: 5c2392f6-9b9c-42f5-833f-77423d1e6222
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 ---
 
 
 # Reproducción de VOD con llamada a otro punto del contenido principal{#vod-playback-with-seeking-in-the-main-content}
 
-## Situación {#section_E4B558253AD84ED59256EDB60CED02AE}
+## Situación {#scenario}
 
 En esta situación, se hace una llamada a otro punto del contenido principal durante la reproducción.
 
@@ -26,7 +26,7 @@ Este es el mismo escenario que el de [Reproducción de VOD sin anuncios](/help/s
 | El contenido termina de reproducirse. | `trackComplete` | Finalización de contenido de Heartbeat | Esta llamada de red es exactamente la misma que la del escenario de [Reproducción de VOD sin anuncios](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md). |
 | Fin de la sesión. | `trackSessionEnd` |  | `SessionEnd` |
 
-## Código de muestra {#section_q2d_wcj_x2b}
+## Código de muestra {#sample-code}
 
 En esta situación, el usuario hace una llamada a otro punto del contenido principal cuando se está reproduciendo.
 
