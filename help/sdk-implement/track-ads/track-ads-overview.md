@@ -3,7 +3,7 @@ seo-title: Información general
 title: Información general
 uuid: 1607798b-c6ef-4d60-8e40-e958c345b09c
 translation-type: tm+mt
-source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
+source-git-commit: 8938e324d570b7e3e2c3c3e971c00ade7e6be8b6
 
 ---
 
@@ -14,9 +14,9 @@ source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 >
 >Las siguientes instrucciones proporcionan instrucciones para la implementación mediante los SDK 2.x. Si va a implementar una versión 1.x del SDK, puede descargar las guías del desarrollador de 1.x aquí: [Descargar SDK.](/help/sdk-implement/download-sdks.md)
 
-La reproducción de publicidad incluye el seguimiento de las pausas publicitarias y el inicio, finalización y omisión de un anuncio. Utilice la API del reproductor de medios para identificar eventos de reproductor clave y rellenar las variables de publicidad opcionales y requeridas. See the comprehensive list of metadata here: Ad parameters.[](/help/metrics-and-metadata/ad-parameters.md)
+La reproducción de publicidad incluye el seguimiento de las pausas publicitarias y el inicio, finalización y omisión de un anuncio. Utilice la API del reproductor de medios para identificar eventos de reproductor clave y rellenar las variables de publicidad opcionales y requeridas. Consulte la lista completa de metadatos aquí: Parámetros [de publicidad.](/help/metrics-and-metadata/ad-parameters.md)
 
-## Player events {#player-events}
+## Eventos del reproductor {#player-events}
 
 
 ### Al iniciar la pausa publicitaria
@@ -46,7 +46,7 @@ La reproducción de publicidad incluye el seguimiento de las pausas publicitaria
 
 * Invoque `trackEvent` para la finalización de la pausa publicitaria.
 
-## Implementación del seguimiento de anuncios {#section_83E0F9406A7743E3B57405D4CDA66F68}
+## Implementación del seguimiento de anuncios {#implement-ad-tracking}
 
 ### Constantes de seguimiento de anuncio
 
@@ -62,7 +62,7 @@ La reproducción de publicidad incluye el seguimiento de las pausas publicitaria
 
 1. Identifique cuándo comienza la zona de salto de anuncio, incluido el anuncio previo a la emisión, y cree un `AdBreakObject` utilizando la información de la pausa publicitaria.
 
-   `AdBreakObject` reference:
+   `AdBreakObject` referencia:
 
    | Nombre de variable | Descripción | Requerido |
    | --- | --- | :---: |
