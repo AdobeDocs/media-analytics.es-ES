@@ -3,14 +3,14 @@ seo-title: Reproducción de VOD con un capítulo
 title: Reproducción de VOD con un capítulo
 uuid: 1566a6f5-cf22-42e7-8e1a-6976c6c4e649
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 ---
 
 
 # Reproducción de VOD con un capítulo{#vod-playback-with-one-chapter}
 
-## Situación {#section_E4B558253AD84ED59256EDB60CED02AE}
+## Situación {#scenario}
 
 En esta situación, una parte del contenido de VOD se marca como capítulo.
 
@@ -25,9 +25,9 @@ Si no se indica lo contrario, las llamadas de red en este escenario son iguales 
 | El capítulo finaliza. | `trackEvent:trackChapterComplete` | Finalización del capítulo de Heartbeat | Es el momento en que se llega al final de un capítulo. |
 | Se reproduce el contenido. |  | Latidos de contenido | Esta llamada de red es exactamente la misma que la del escenario de [Reproducción de VOD sin anuncios](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md). |
 | El contenido termina de reproducirse. | `trackComplete` | Finalización de contenido de Heartbeat | Esta llamada de red es exactamente la misma que la del escenario de [Reproducción de VOD sin anuncios](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md). |
-| La sesión finaliza. | `trackSessionEnd` |  | `SessionEnd` significa que se ha llegado al final de una sesión de visualización. This API must be called even if the user does not watch the media to completion. |
+| La sesión finaliza. | `trackSessionEnd` |  | `SessionEnd` significa que se ha llegado al final de una sesión de visualización. Se debe llamar a esta API aunque el usuario no vea los medios hasta la finalización. |
 
-## Parámetros {#section_869319D99A474FEA8EA840415EA97FBD}
+## Parámetros {#parameters}
 
 Cuando comienza la reproducción del capítulo, se envía una `Heartbeat Chapter Start` llamada. If the beginning of the chapter does not coincide with the 10-second timer, the `Heartbeat Chapter Start` call is delayed by a few seconds, and the call goes to the next 10-second interval.
 
@@ -42,7 +42,7 @@ When this happens, a `Content Heartbeat` call goes out in the same interval. Pue
 | `s:stream:chapter_*` |  | Información de la emisión referida a los datos del capítulo. |
 | `s:meta:*` |  | Capítulo con datos contextuales específicos. |
 
-## Código de muestra: capítulo en medio {#section_icd_5bj_x2b}
+## Código de muestra: capítulo en medio {#sample-code-chapter-in-the-middle}
 
 En esta situación, parte del contenido de VOD es un capítulo.
 
@@ -254,7 +254,7 @@ this._mediaHeartbeat.trackSessionEnd();
 ........ 
 ```
 
-## Código de muestra: capítulo al principio {#section_flj_5bj_x2b}
+## Código de muestra: capítulo al principio {#sample-code-chapter-at-the-beginning}
 
 En esta situación, el contenido de VOD se reproduce con un capítulo al principio de la reproducción.
 
