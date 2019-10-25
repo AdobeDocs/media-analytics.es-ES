@@ -3,26 +3,26 @@ seo-title: Migración de Milestone a Media Analytics
 title: Migración de Milestone a Media Analytics
 uuid: fdc96146-af63-48ce-b938-c0ca70729277
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 ---
 
 
 # Migración de Milestone a Media Analytics {#migrating-from-milestone-to-media-analytics}
 
-## Información general {#section_ihl_nbz_cfb}
+## Información general {#overview}
 
-Los conceptos básicos de la medición de vídeo son los mismos para Milestone y Media Analytics, ya que recopilan los eventos del reproductor de vídeo y los asignan a los métodos de análisis, a la vez que recogen los metadatos y valores del reproductor para asignarlos a las variables de análisis. La solución Media Analytics se desarrolló a partir de Milestone, por lo que muchos de los métodos y métricas son comunes. Sin embargo, el enfoque de la configuración y el código han cambiado considerablemente. Debería ser posible actualizar el código de evento del reproductor para que apunte a los nuevos métodos de Media Analytics. See SDK Overview and Tracking Overview for more details on implementing Media Analytics.[](/help/sdk-implement/setup/setup-overview.md)[](/help/sdk-implement/track-av-playback/track-core-overview.md)
+Los conceptos básicos de la medición de vídeo son los mismos para Milestone y Media Analytics, ya que recopilan los eventos del reproductor de vídeo y los asignan a los métodos de análisis, a la vez que recogen los metadatos y valores del reproductor para asignarlos a las variables de análisis. La solución Media Analytics se desarrolló a partir de Milestone, por lo que muchos de los métodos y métricas son comunes. Sin embargo, el enfoque de la configuración y el código han cambiado considerablemente. Debería ser posible actualizar el código de evento del reproductor para que apunte a los nuevos métodos de Media Analytics. Consulte Información general [y descripción general](/help/sdk-implement/setup/setup-overview.md) del [seguimiento de](/help/sdk-implement/track-av-playback/track-core-overview.md) SDK para obtener más información sobre la implementación de Media Analytics.
 
 En las tablas siguientes se proporcionan las correspondencias entre la solución Milestone y la solución Media Analytics.
 
-## Guía de migración {#section_iyb_pbz_cfb}
+## Guía de migración {#migration-guide}
 
-### Variable reference
+### Referencia de variable
 
 | Métrica de Milestone | Tipo de variable | Métrica de Media Analytics |
 | --- | --- | --- |
-| Contenido | eVarDefault expiration: Visit<br/><br/> | Contenido |
+| Contenido | Caducidad<br/><br/>predeterminada de eVar: Visita | Contenido |
 | Tipo de contenido | eVar<br/><br/> Default expiration: Page view | Tipo de contenido |
 | tiempo invertido en contenido | Event<br/><br/> Type: Counter | tiempo invertido en contenido |
 | Inicios de vídeo | Event<br/><br/> Type: Counter | Inicios de vídeo |
@@ -64,20 +64,7 @@ Media.contextDataMapping
 </td>
 <td>
 <pre>
-s.Media.contextDataMapping = {
-  "a.media.name":"eVar2,prop2",
-  "a.media.segment":"eVar3",
-  "a.contentType":"eVar1",
-  "a.media.timePlayed":"event3",
-  "a.media.view":"event1",
-  "a.media.segmentView":"event2",
-  "a.media.complete":"event7",
-  "a.media.milestones": {
-    25:"event4",
-    50:"event5",
-    75:"event6"
-  }
-};
+s.Media.contextDataMapping = { "a.media.name":"eVar2,prop2", "a.media.segment":"eVar3", "a.contentType":"eVar1", "a.media.timePlayed":"event3", "a.media.view":"event1", "a.media.segmentView":"event2", "a.media.complete":"event7", "a.media.milestones": { 25:"event4", 50:"event5", 75:"event6" }};
 </pre>
 </td>
 <td>N/D
@@ -91,12 +78,7 @@ Media.trackVars
 </td>
 <td>
 <pre>
-s.Media.trackVars = 
-  "events,
-  prop2,
-  eVar1,
-  eVar2,
-  eVar3";
+s.Media.trackVars = "events, prop2, eVar1, eVar2, eVar3";
 </pre>
 </td>
 <td>N/D
@@ -206,8 +188,7 @@ s.Media.playerName = "Nombre de reproductor personalizado"
 </pre>
 </td>
 <td>
-Clave de SDK: playerName; 
-Clave de API: media.playerName
+Clave de SDK: playerName;Clave de API: media.playerName
 </td>
 <td>
 <pre>
@@ -347,8 +328,7 @@ Media.adTrackOffsetMilestones
 <td>
 <pre>
 s.Media.
-  adTrackOffsetMilestones
-  = "20,40,60";
+  adTrackOffsetMilestones = "20,40,60";
 </pre>
 </td>
 <td>N/D
@@ -441,18 +421,13 @@ name
 </td>
 <td>
 <pre>
-createMediaObject(
-  name, 
-  mediaId, 
-  length, 
-  streamType)
+createMediaObject( nombre, mediaId, longitud, streamType)
 </pre>
 </td>
 </tr>
 <tr>
 <td>
-mediaLength - (Required) The length of the video
-in seconds.
+mediaLength: (requerido) duración del vídeo en segundos.
 </td>
 <td>
 <pre>
@@ -509,7 +484,8 @@ trackEvent
 <pre>
 mediaHeartbeat.trackEvent( MediaHeartbeat.
     Evento.
-    AdBreakStart, adBreakObject);...trackEvent( MediaHeartbeat.
+    AdBreakStart, adBreakObject);...
+trackEvent( MediaHeartbeat.
     Evento.
     AdStart, adObject, adCustomMetadata);
 </pre>
@@ -578,7 +554,7 @@ MediaHeartbeatConfig.
 </tr>
 <tr>
 <td>
-parentName - The name or ID of the primary content where the ad is embedded.
+parentName: nombre o ID del contenido principal en el que se incrusta la publicidad.
 </td>
 <td>
 <pre>
@@ -606,10 +582,7 @@ position
 </td>
 <td>
 <pre>
-createAdBreakObject(
-  name, 
-  position, 
-  startTime)
+createAdBreakObject( nombre, posición, startTime)
 </pre>
 </td>
 </tr>
@@ -748,11 +721,13 @@ trackPause()
 </pre> 
 o
 <pre>
+
 trackEvent( MediaHeartbeat.
   Evento.
   SeekStart)
 </pre> o
 <pre>
+
 trackEvent( MediaHeartbeat.
   Evento.
   BufferStart);
