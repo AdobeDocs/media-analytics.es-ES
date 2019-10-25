@@ -3,14 +3,14 @@ seo-title: Rutas de implementación
 title: Rutas de implementación
 uuid: 8400c938-e77e-4c88-b23b-5f5977a5316c
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: d339ae295af89a1c2ba2e8c938e1650d82507e2b
 
 ---
 
 
 # Rutas de implementación {#implementation-paths}
 
-Media Analytics (Heartbeats) is Adobe’s standardized video solution. Ha reemplazado el modelo anterior de Milestone de Adobe.
+Media Analytics (latidos) es la solución de vídeo estandarizada de Adobe. Ha reemplazado el modelo anterior de Milestone de Adobe.
 
 Para cada una de estas rutas de implementación, los clientes deben ponerse en contacto con su representante de ventas/administrador de cuentas para firmar un nuevo pedido de venta, ya que Media Analytics tiene un SKU único y cambia de un modelo de precios basado en llamadas al servidor a un modelo basado en flujos de vídeo:
 
@@ -24,7 +24,7 @@ Para cada una de estas rutas de implementación, los clientes deben ponerse en c
 
 * **Lanzamiento de la plataforma Adobe Experience** Platform: Adobe Experience Platform Launch, el producto complementario de la administración dinámica de etiquetas, incluye una extensión de inicio de Media Analytics que facilita la implementación del seguimiento de vídeo en los reproductores.
 
-   Puede obtener más información sobre el lanzamiento de la plataforma de experiencia aquí: [Adobe Media Analytics para la extensión de audio y vídeo](https://docs.adobelaunch.com/extension-reference/web/adobe-media-analytics-for-audio-and-video-extension)
+   Puede obtener más información sobre el lanzamiento de la plataforma de experiencia aquí: [Adobe Media Analytics para la extensión de audio y vídeo](https://docs.adobe.com/content/help/en/launch/using/extensions-ref/adobe-extension/media-analytics-extension/overview.html)
 * **Adobe Primetime:** Adobe Primetime es una solución de Adobe Experience Cloud que ayuda a los programadores y distribuidores de contenido a monetizar los medios en todas las pantallas conectadas.
 
    Primetime elimina la complejidad de alcanzar, monetizar y activar las audiencias globales en diversos dispositivos, proporcionando una plataforma modular para publicación, publicidad, personalización y análisis de vídeo. Además, Primetime ofrece soluciones y valores para lo siguiente:
@@ -33,7 +33,10 @@ Para cada una de estas rutas de implementación, los clientes deben ponerse en c
    * Compatibilidad con la medición de cortes de publicidad con (o sin) inserción dinámica de publicidad.
    * El modelo de inserción de anuncios ininterrumpido de TVSDK permite un análisis que mide directamente la reproducción de la publicidad, lo que aumenta la precisión.
    * Un sólido conjunto de eventos y metadatos para garantizar la precisión entre el almacenamiento en búfer de la calidad del programa o los problemas de las interrupciones de conectividad móvil o con las interacciones con el usuario final, como la búsqueda, la pausa y la comprobación de antecedentes en dispositivos móviles.
-   * Compatibilidad integrada de Nielsen DTVR (lineal) con metadatos ID3 y de DCR con metadatos CMS.
-   TVSDK ya está integrado con el SDK de Media Analytics (latidos), lo que facilita y acelera la implementación en todas las plataformas admitidas. Primetime también admite la asociación en Nielsen. Para aprovechar las Primetime, siga las mismas pautas y requisitos previos que se encuentran en [Lado del cliente](/help/intro-to-ava/implementation-paths/client-side-path.md) junto con los siguientes documentos para su plataforma: Guía [del usuario de Primetime.](https://helpx.adobe.com/primetime/user-guide.html)
+<!--
+   * Integrated support for Nielsen DTVR (linear) with ID3 metadata and DCR with CMS metadata.
+-->
 
-   También debe ponerse en contacto con el representante de ventas/administrador de cuentas para analizar lo que necesita hacer para comprar TVSDK.
+TVSDK ya está integrado con el SDK de Media Analytics (latidos), lo que facilita y acelera la implementación en todas las plataformas admitidas. <!--Primetime also supports the partnership with Nielsen.--> Para aprovechar Primetime, siga las mismas directrices y requisitos previos que se encuentran en el [cliente](/help/intro-to-ava/implementation-paths/client-side-path.md) , junto con los siguientes documentos para las plataformas: Guía [del usuario de Primetime.](https://helpx.adobe.com/primetime/user-guide.html)
+
+También debe ponerse en contacto con el representante de ventas/administrador de cuentas para analizar lo que necesita hacer para comprar TVSDK.
