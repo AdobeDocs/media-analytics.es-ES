@@ -3,7 +3,7 @@ seo-title: Información general
 title: Información general
 uuid: c14bdbef-5846-4d31-8a14-8e9e0e9c9861
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 ---
 
@@ -18,15 +18,15 @@ La API de Media Collection es la alternativa de RESTful de Adobe al Media SDK en
 
 La API de Media Collection es, básicamente, un adaptador que actúa como versión del lado del servidor del Media SDK. Esto significa que algunos aspectos de la documentación del SDK de medios también son relevantes para la API de Media Collection. Por ejemplo, ambas soluciones utilizan los mismos parámetros [de](/help/metrics-and-metadata/audio-video-parameters.md)audio y vídeo, y los datos recopilados de seguimiento de audio y vídeo llevan a los mismos [informes y análisis.](/help/media-reports/media-reports-enable.md)
 
-## Flujos de datos del seguimiento de medios {#section_pwq_n34_qbb}
+## Flujos de datos del seguimiento de medios {#media-tracking-data-flows}
 
 Un reproductor multimedia que implementa la API de Media Collection realiza llamadas de seguimiento de la API RESTful directamente al servidor back-end de seguimiento de medios, mientras que un reproductor que implementa el SDK de medios realiza llamadas de seguimiento a las API del SDK dentro de la aplicación del reproductor. Realizar llamadas a través de la web hace que el reproductor que implementa la API de Media Collection necesite gestionar parte del procesamiento que el Media SDK controla automáticamente. (Detalles de la implementación de [Media Collection.](mc-api-impl/mc-api-quick-start.md))
 
-The tracking data captured with the Media Collection API is sent and initially processed differently than the tracking data captured in a Media SDK player, but the same processing engine on the back-end is used for both solutions.
+Los datos de seguimiento capturados con la API de recopilación de medios se envían e inicialmente se procesan de forma distinta a los datos de seguimiento capturados en un reproductor de SDK de medios, pero se utiliza el mismo motor de procesamiento en el back-end para ambas soluciones.
 
 ![](assets/col_api_overview_simple.png)
 
-## Información general de API {#section_y4n_mcl_kcb}
+## Información general de API {#api-overview}
 
 **URI:** solicite este dato a su representante de Adobe.
 
@@ -73,11 +73,11 @@ The tracking data captured with the Media Collection API is sent and initially p
 } 
 ```
 
-* `playerTime` - Mandatory for all requests.
+* `playerTime` - Obligatorio para todas las solicitudes.
 * `eventType` - Obligatorio para todas las solicitudes.
 * `params`: obligatorio para determinados `eventTypes`. Compruebe el [esquema de validación JSON](mc-api-ref/mc-api-json-validation.md) para determinar qué tipos de evento eventTypes son obligatorios y cuáles son opcionales.
 
-* `qoeData` - Optional for all requests.
+* `qoeData` - Opcional para todas las solicitudes.
 * `customMetadata` - Opcional para todas las solicitudes, pero solo se envía con tipos `sessionStart`, `adStart`y `chapterStart` eventos.
 
 Para cada `eventType`, hay [un esquema de validación JSON](mc-api-ref/mc-api-json-validation.md) disponible públicamente que debe utilizarse para verificar tipos de parámetros y si uno de estos es opcional o necesario para un evento determinado.
