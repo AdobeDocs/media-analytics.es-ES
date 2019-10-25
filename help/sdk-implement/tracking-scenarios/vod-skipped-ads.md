@@ -3,14 +3,14 @@ seo-title: Reproducción de VOD con anuncios omitidos
 title: Reproducción de VOD con anuncios omitidos
 uuid: f3ab3524-abcb-4051-b64e-a1aad6e3dd3f
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 ---
 
 
 # Reproducción de VOD con anuncios omitidos{#vod-playback-with-skipped-ads}
 
-## Situación {#section_DAC4BCE25F4A4C4991AD0AE495D15B00}
+## Situación {#scenario}
 
 En esta situación, se reproduce contenido de VOD y se omite un anuncio.
 
@@ -29,11 +29,11 @@ This is the same scenario as [VOD playback with pre-roll ads](/help/sdk-implemen
 | El contenido termina de reproducirse. | `trackComplete()` | Finalización de contenido de Heartbeat | Esta llamada de red es exactamente la misma que la del escenario de [Reproducción de VOD sin anuncios](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md). |
 | La sesión finaliza. | `trackSessionEnd()` |  | `SessionEnd` |
 
-## Parámetros {#section_4A0F92BF3DDD4623A1EE61C76582A4A6}
+## Parámetros {#parameters}
 
 Los parámetros son idénticos a los de la situación [Reproducción de VOD con anuncios previos a la emisión](/help/sdk-implement/tracking-scenarios/vod-preroll-ads.md), pero no hay llamada de finalización de anuncio ni de finalización de pausa publicitaria.
 
-## Código de muestra {#section_lxt_qz3_x2b}
+## Código de muestra {#sample-code}
 
 ![](assets/ad-skip.png)
 
