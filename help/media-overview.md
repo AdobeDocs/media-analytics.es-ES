@@ -3,7 +3,7 @@ seo-title: Medición de audio y vídeo en Adobe Analytics
 title: Medición de audio y vídeo en Adobe Analytics
 uuid: b3cbe240-b94d-42b8-a99c-0280334aaa14
 translation-type: tm+mt
-source-git-commit: 5fc38098bcd497f3305f76ae2b23757b5f81ac69
+source-git-commit: d339ae295af89a1c2ba2e8c938e1650d82507e2b
 
 ---
 
@@ -14,9 +14,9 @@ source-git-commit: 5fc38098bcd497f3305f76ae2b23757b5f81ac69
 
 >[!IMPORTANT]
 >
->The documentation provided here is specific to clients utilizing version 1.5 or higher of Adobe's *Media SDK* for heartbeat measurement, or Adobe's newer *Media Collection API* for heartbeat measurement. No incluye instrucciones sobre la implementación de vídeo de hitos heredados. Recomendamos a nuestros clientes que empiecen a usar las dos últimas herramientas de seguimiento de medios de Adobe, o al menos una, para que puedan sacar así el máximo partido a las mejoras y las mediciones avanzadas. Puede ver las [ventajas de empezar a usar las nuevas herramientas](media-overview.md#section_cnj_5st_p1b) a continuación. Aunque seguiremos admitiendo el método Milestone de seguimiento de videos, no habrá actualizaciones, correcciones ni mejoras de funciones planificadas. Si tiene más preguntas, póngase en contacto con el administrador de su cuenta de Adobe.
+>The documentation provided here is specific to clients utilizing version 1.5 or higher of Adobe's *Media SDK* for heartbeat measurement, or Adobe's newer *Media Collection API* for heartbeat measurement. No incluye instrucciones sobre la implementación de vídeo de hitos heredados. Recomendamos a nuestros clientes que empiecen a usar las dos últimas herramientas de seguimiento de medios de Adobe, o al menos una, para que puedan sacar así el máximo partido a las mejoras y las mediciones avanzadas. Puede ver las [ventajas de empezar a usar las nuevas herramientas](media-overview.md#heartbeat-versus-milestone-benefits) a continuación. Aunque seguiremos admitiendo el método Milestone de seguimiento de videos, no habrá actualizaciones, correcciones ni mejoras de funciones planificadas. Si tiene más preguntas, póngase en contacto con el administrador de su cuenta de Adobe.
 
-## Información general {#section_8BFE4F8DA64B4A5F826A4940B11AA466}
+## Información general {#overview}
 
 Adobe Analytics para medios (también denominado Media Analytics) es un complemento del producto base Analytics que ofrece a los clientes sólidas capacidades de medición de medios para el contenido, el audio y los anuncios. Media Analytics cuenta con numerosas ventajas, ya que ofrece a los clientes seguimiento en tiempo real, análisis detallados, información práctica y oportunidades de monetización.
 
@@ -29,7 +29,7 @@ Adobe Analytics para medios permite a los clientes realizar un seguimiento de lo
 
 Las soluciones de medios no solo miden las métricas de entrega esenciales relacionadas con la calidad del servicio, como los fotogramas perdidos, el tiempo de almacenamiento en búfer y la velocidad de bits media. Se pueden combinar con los datos de su sitio web o aplicación para visualizar el flujo del cliente y sus intereses, con el fin de poder mejorar las recomendaciones y personalizar la experiencia en Adobe Experience Cloud.
 
-## Ventajas {#section_7712BA90EAE64C118218D1C581EF68B7}
+## Ventajas {#benefits}
 
 Algunas de las muchas ventajas que ofrecen las soluciones de medición de medios de Adobe son:
 
@@ -40,7 +40,7 @@ Algunas de las muchas ventajas que ofrecen las soluciones de medición de medios
 * **Medición exacta**: medición en varios dispositivos utilizados para el consumo de medios, incluidos OTT, smartphones, tabletas, equipos de escritorio y mucho más, para controlar los patrones de participación del usuario.
 * **Segmentación**: estas soluciones clasifican los reproductores, dispositivos, géneros y capítulos, y muestran la forma en que cada uno repercute en las vistas/escuchas generales y la participación de los usuarios con el contenido, el audio, la publicidad y las combinaciones.
 
-## Ventajas de Heartbeat frente a Milestone {#section_cnj_5st_p1b}
+## Ventajas de Heartbeat frente a Milestone {#heartbeat-versus-milestone-benefits}
 
 Adobe Analytics para medios se puede medir mediante dos métodos: el método Milestone heredado (solo vídeo) y el método Heartbeat actual (audio y vídeo, que se incluyen tanto en el SDK de medios como en la API de Media Collection). El método de medición de latidos, Heartbeats, es preferible y recomendamos a nuestros clientes que empiecen a usar esta versión (si todavía no lo hacen) para que puedan aprovechar las ventajas que se describen a continuación.
 
@@ -51,7 +51,6 @@ Algunas de las numerosas ventajas del método Heartbeats son:
 * **Proceso de implementación agilizado**: asigne variables de forma más sencilla a través de la API del reproductor y valide las implementaciones a través de la herramienta Adobe Debug para asegurar que todas las variables necesarias se rastrean correctamente.
 * **Integración automática con Adobe Experience Cloud**: aproveche la integración automática con Adobe Experience Cloud mediante el Experience Cloud ID, segmente la audiencia de los medios, oriente el contenido para dichas audiencias y cree recomendaciones de medios basadas en las preferencias de los usuarios.
 * **Datos compartidos a través de Federated Analytics**: rentabilice las opciones de compartir medios más novedosas y realice una evaluación integral de los datos de todos sus socios de distribución de medios: operadores, programadores y distribuidores.
-* **Colaboraciones con socios certificados de clasificación**: Adobe colabora con Nielsen (clasificaciones de audiencia) para ofrecer un censo de medición neutral de terceros que permita elaborar clasificaciones certificadas y de confianza.
 * **Una solución estandarizada para todas las plataformas**: habilite variables coherentes y estandarizadas para todos los medios y plataformas que permitan una comparación de dispositivos y proveedores más eficaz y para todas las campañas.
 * **Seguimiento de contenido descargado:** Rastree el contenido multimedia (vídeo y audio) que se descarga y reproduce en un dispositivo independientemente de su conectividad.
 
@@ -67,7 +66,7 @@ Algunas de las numerosas ventajas del método Heartbeats son:
 | **Colaboraciones** | N/D | Federated Analytics y Certified Metrics |
 | **Seguimiento avanzado** | N/D | Seguimiento de recuperación de errores y espectadores simultáneos |
 
-## Dispositivos compatibles {#section_lkm_l5t_p1b}
+## Dispositivos compatibles {#devices-supported}
 
 Adobe Analytics para medios ha evolucionado a la par que el sector y ofrece potentes herramientas que garantizan que se recopilan los datos de cada emisión de medio y se elabora un informe para los dispositivos más habituales. Nuestro Media SDK se ha desarrollado para los dispositivos más utilizados, entre los que se incluyen:
 
