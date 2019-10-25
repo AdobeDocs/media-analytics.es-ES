@@ -3,7 +3,7 @@ seo-title: Espectadores simultáneos de medios
 title: Espectadores simultáneos de medios
 uuid: e61c50e5-8196-4538-b67c-ebc01c6e6ba7
 translation-type: tm+mt
-source-git-commit: 6e13e9a6250949a3a7f059445da772b4db1fdb71
+source-git-commit: 8938e324d570b7e3e2c3c3e971c00ade7e6be8b6
 
 ---
 
@@ -18,7 +18,7 @@ El tablero de espectadores simultáneos de medios muestra los espectadores simul
 
 ![](assets/video-concurrent-viewers.png)
 
-## Características del informe {#section_11F8BCB98042490DAD0EA0B7EDA80569}
+## Características del informe {#report-features}
 
 Estas son algunas de las características de este informe:
 
@@ -30,7 +30,7 @@ Estas son algunas de las características de este informe:
 * El informe solo abarca un día.
 * El cliente podrá consultar los informes de espectadores simultáneos históricos (con información de un día).
 
-## Limitaciones {#section_F159BC0213134FE4A997E52EECC7BB9D}
+## Limitaciones {#limitations}
 
 Estas son algunas de las limitaciones de este informe:
 
