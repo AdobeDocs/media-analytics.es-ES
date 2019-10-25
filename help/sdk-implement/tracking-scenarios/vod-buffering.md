@@ -3,14 +3,14 @@ seo-title: Reproducción de VOD con almacenamiento en búfer
 title: Reproducción de VOD con almacenamiento en búfer
 uuid: 958f7692-7193-40fb-a8e7-2ff4fa805330
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 ---
 
 
 # Reproducción de VOD con almacenamiento en búfer{#vod-playback-with-buffering}
 
-## Situación {#section_13BD203CBF7546D2A6AD0129B1EEB735}
+## Situación {#scenario}
 
 En esta situación, se almacena en búfer cuando el contenido de VOD se reproduce.
 
@@ -28,7 +28,7 @@ Si no se indica lo contrario, las llamadas de red en este escenario son iguales 
 | El contenido termina de reproducirse. | `trackComplete` | Finalización de contenido de Heartbeat | Se llega al final del cabezal de reproducción. |
 | La sesión finaliza. | `trackSessionEnd` |  | `SessionEnd` significa el final de una sesión de visualización. Hay que llamar a esta API aunque el usuario no vea el vídeo completo. |
 
-## Parámetros {#section_A52A57C9FB1C41CEA6C0E2D53E01048E}
+## Parámetros {#parameters}
 
 ### Búfer de Heartbeat
 
@@ -36,7 +36,7 @@ Si no se indica lo contrario, las llamadas de red en este escenario son iguales 
 |---|---|---|
 | `s:event:type` | `"buffer"` |  |
 
-## Código de muestra {#section_hxn_fdj_x2b}
+## Código de muestra {#sample-code}
 
 En esta situación, se almacena en búfer cuando el contenido de VOD se reproduce.
 
