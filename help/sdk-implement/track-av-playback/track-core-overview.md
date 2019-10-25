@@ -3,7 +3,7 @@ seo-title: Información general de seguimiento
 title: Información general de seguimiento
 uuid: 7b8e2f76-bc4e-4721-8933-3e4453b01788
 translation-type: tm+mt
-source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
+source-git-commit: 8938e324d570b7e3e2c3c3e971c00ade7e6be8b6
 
 ---
 
@@ -12,7 +12,7 @@ source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
 >[!IMPORTANT]
 >
->This documentation covers tracking in version 2.x of the SDK. Si va a implementar una versión 1.x del SDK, puede descargar las guías del desarrollador de 1.x aquí: [Descargar SDK.](/help/sdk-implement/download-sdks.md)
+>Esta documentación cubre el seguimiento en la versión 2.x del SDK. Si va a implementar una versión 1.x del SDK, puede descargar las guías del desarrollador de 1.x aquí: [Descargar SDK.](/help/sdk-implement/download-sdks.md)
 
 ## Eventos del reproductor
 
@@ -22,7 +22,7 @@ El seguimiento de la reproducción principal incluye el seguimiento de la carga,
 
 * Crear el objeto de medio.
 * Rellenar los metadatos.
-* Llamar `trackSessionStart`;Por ejemplo: `trackSessionStart(mediaObject, contextData)`
+* Llamar `trackSessionStart`; Por ejemplo: `trackSessionStart(mediaObject, contextData)`
 
 ### Inicio del medio
 
@@ -59,13 +59,13 @@ El seguimiento de la reproducción principal incluye el seguimiento de la carga,
 
 >[!TIP]
 >
->The playhead position is set as part of the set-up and configuration code. Para obtener más información sobre `getCurrentPlayheadTime`, consulte [Información general: Directrices generales de implementación.](/help/sdk-implement/setup/setup-overview.md#section_965A3B699A8248DDB9B2B3EA3CC20E41)
+>La posición del cursor de reproducción se establece como parte del código de configuración y configuración. Para obtener más información sobre `getCurrentPlayheadTime`, consulte [Información general: Directrices generales de implementación.](/help/sdk-implement/setup/setup-overview.md#general-implementation-guidelines)
 
-## Implementación {#section_BB217BE6585D4EDEB34C198559575004}
+## Implementación {#implement}
 
 1. **Configuración inicial del seguimiento**: identifique cuándo el usuario activa la reproducción (cuando hace clic en reproducción o reproducción automática) y cree una instancia de `MediaObject` con la información del medio: nombre, ID y duración del contenido, así como el tipo de emisión.
 
-   **`MediaObject`reference:**
+   **`MediaObject`referencia:**
 
    | Nombre de variable | Descripción | Requerido |
    |---|---|---|
@@ -101,7 +101,7 @@ El seguimiento de la reproducción principal incluye el seguimiento de la carga,
 
       >[!NOTE]
       >
-      >Attaching the standard metadata object to the media object is optional.
+      >La asociación del objeto de metadatos estándar al objeto multimedia es opcional.
 
       Cree una instancia de un objeto de metadatos estándar, rellene las variables deseadas y establezca el objeto de metadatos en el objeto de Media Heartbeat.
 
@@ -127,7 +127,7 @@ El seguimiento de la reproducción principal incluye el seguimiento de la carga,
 
    >[!IMPORTANT]
    >
-   >`trackSessionEnd` marks the end of a tracking session. Si la sesión se ha visto por completo correctamente, es decir, el usuario ha visto el contenido hasta el final, asegúrese de invocar `trackComplete` antes que `trackSessionEnd`. Any other `track*` API call is ignored after `trackSessionEnd`, except for `trackSessionStart` for a new tracking session.
+   >`trackSessionEnd` marca el final de una sesión de seguimiento. Si la sesión se ha visto por completo correctamente, es decir, el usuario ha visto el contenido hasta el final, asegúrese de invocar `trackComplete` antes que `trackSessionEnd`. Any other `track*` API call is ignored after `trackSessionEnd`, except for `trackSessionStart` for a new tracking session.
 
 1. **Seguimiento de todas las situaciones de pausa posibles**: identifique el evento del reproductor de medios para la pausa e invoque `trackPause`.
 
@@ -232,7 +232,7 @@ if (e.type == “buffered”) {
 };
 ```
 
-## Validación {#section_ABCFB92C587B4CAABDACF93452EFA78F}
+## Validación {#validate}
 
 Para obtener información sobre la validación de la implementación, consulte [Validación.](/help/sdk-implement/validation/validation-overview.md)
 
