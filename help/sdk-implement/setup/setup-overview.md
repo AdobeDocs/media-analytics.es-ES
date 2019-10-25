@@ -3,7 +3,7 @@ seo-title: Información general de configuración
 title: Información general de configuración
 uuid: 06fefedb-b0c8-4f7d-90c8-e374cdde1695
 translation-type: tm+mt
-source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
+source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 ---
 
@@ -12,7 +12,7 @@ source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
 >[!IMPORTANT]
 >
->Las siguientes instrucciones se aplican a los SDK de medios 2.x. Si va a implementar la versión 1.x del Media SDK, consulte la [documentación del Media SDK 1.x.](/help/sdk-implement/download-sdks.md) For Primetime integrators, see Primetime Media SDK Documentation below.__
+>Las siguientes instrucciones se aplican a los SDK de medios 2.x. Si va a implementar la versión 1.x del Media SDK, consulte la [documentación del Media SDK 1.x.](/help/sdk-implement/download-sdks.md) Para los integradores Primetime, consulte la documentación _del SDK de_ Primetime Media más abajo.
 
 
 ## Compatibilidad con versiones de plataforma mínima {#minimum-platform-version}
@@ -28,14 +28,14 @@ En la tabla siguiente se describen las versiones de plataforma mínimas admitida
 | Safari | v7+ |
 | IE | v11+ |
 
-## Directrices generales de implementación {#section_965A3B699A8248DDB9B2B3EA3CC20E41}
+## Directrices generales de implementación {#general-implementation-guidelines}
 
 En el seguimiento de medios, existen tres componentes de SDK principales:
 * Configuración de Media Heartbeat: la configuración contiene la configuración básica de los informes.
 * Delegado de Media Heartbeat: el delegado controla el tiempo de reproducción y el objeto QoS.
 * Media Heartbeat: biblioteca principal que contiene miembros y métodos.
 
-Complete the following implementation steps:
+Complete los siguientes pasos de implementación:
 
 1. Create a `MediaHeartbeatConfig` instance and set your config parameter values.
 
@@ -58,7 +58,7 @@ Complete the following implementation steps:
 
    >[!TIP]
    >
-   >The Quality of Service (QoS) object is optional. Si los datos de QoS están disponibles para su reproductor y desea realizar un seguimiento de dichos datos, es necesario el uso de las variables siguientes:
+   >El objeto Calidad de servicio (QoS) es opcional. Si los datos de QoS están disponibles para su reproductor y desea realizar un seguimiento de dichos datos, es necesario el uso de las variables siguientes:
 
    | Nombre de variable | Descripción   | Requerido |
    | --- | --- | :---: |
@@ -77,7 +77,7 @@ Complete the following implementation steps:
 
    >[!TIP]
    >
-   >`MediaHeartbeat` requires an instance of `AppMeasurement` to send calls to Adobe Analytics.
+   >`MediaHeartbeat` requiere una instancia de `AppMeasurement` para enviar llamadas a Adobe Analytics.
 
 1. Combine todos los fragmentos.
 
@@ -119,7 +119,7 @@ Complete the following implementation steps:
      new MediaHeartbeat(mediaDelegate, mediaConfig, appMeasurementInstance);  
    ```
 
-## Validación {#section_D4D46F537A4E442B8AB0BB979DDAA4CC}
+## Validación {#validate}
 
 Las implementaciones de seguimiento de Media Analytics generan dos tipos de llamadas de seguimiento:
 
@@ -134,14 +134,13 @@ Las implementaciones de seguimiento de Media Analytics generan dos tipos de llam
 
    The analytics tracking server should end in "`.sc.omtrdc.net`" or be a CNAME.
 
-* ** Media Analytics (Heartbeats) server**
-This always has the format "`[your_namespace].hb.omtrdc.net`". The value of "`[your_namespace]`" specifies your company, and is provided by Adobe.
+* ** Servidor de Media Analytics (latidos)**Siempre tiene el formato "`[your_namespace].hb.omtrdc.net`". El valor de "`[your_namespace]`" especifica su empresa y lo proporciona Adobe.
 
 El seguimiento de medios funciona del mismo modo en todas las plataformas, equipos de escritorio y dispositivos móviles. El seguimiento de audio funciona actualmente en plataformas móviles. En todas las llamadas de seguimiento hay algunas variables universales clave que se deben validar:
 
-## SDK 1.x Documentation {#section_acj_tkk_t2b}
+## Documentación de SDK 1.x {#sdk-1x-documentation}
 
-| SDK de Video Analytics 1.x |  Developer Guides (PDFs only) |
+| SDK de Video Analytics 1.x |  Guías para desarrolladores (solo PDF) |
 | --- | --- |
 | Android | [Configurar para Android ](vhl-dev-guide-v15_android.pdf) |
 | Apple TV | [Configurar para Apple TV ](vhl-dev-guide-v1x_appletv.pdf) |
@@ -153,4 +152,4 @@ El seguimiento de medios funciona del mismo modo en todas las plataformas, equip
 
 ## Documentación del Media SDK de Primetime {#primetime-docs}
 
-* [Primetime User Guides](https://helpx.adobe.com/primetime/user-guide.html)
+* [Guías del usuario de Primetime](https://helpx.adobe.com/primetime/user-guide.html)
