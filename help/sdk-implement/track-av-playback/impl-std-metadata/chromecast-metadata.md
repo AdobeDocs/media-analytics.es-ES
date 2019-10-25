@@ -3,7 +3,7 @@ seo-title: Claves de metadatos de Chromecast
 title: Claves de metadatos de Chromecast
 uuid: c446ad41-51b8-46d6-9bc1-abfae866023f
 translation-type: tm+mt
-source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
+source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 ---
 
@@ -12,7 +12,7 @@ source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
 
 Los metadatos de publicidad y vídeo estándar se pueden establecer en objetos de información de publicidad y contenido multimedia, respectivamente. El uso de las claves constantes para los metadatos de vídeo/publicidad establece el diccionario con metadatos estándar en el objeto info antes de invocar las API de seguimiento. Consulte las siguientes tablas para ver la lista completa de constantes de metadatos estándar, con ejemplos.
 
-## Constantes de metadatos {#section_D26B0478688D4DC5AEFD82E9AC0F0C0D}
+## Constantes de metadatos {#video-metadata-constants}
 
 | Nombre de metadatos | Clave de datos de contexto | Nombre de la constante |
 | --- | --- | --- |
@@ -34,7 +34,7 @@ Los metadatos de publicidad y vídeo estándar se pueden establecer en objetos d
 | Fuente | `a.media.feed` | `ADBMobile.media.VideoMetadataKeys.FEED` |
 | Formato de la emisión | `a.media.format` | `ADBMobile.media.VideoMetadataKeys.STREAM_FORMAT` |
 
-## Constantes de metadatos de publicidad {#section_5290E1BA54A24D30875F4F55C6CF9458}
+## Constantes de metadatos de publicidad {#ad-metadata-constants}
 
 | Nombre de metadatos | Clave de datos de contexto | Nombre de la constante |
 | --- | --- | --- |
@@ -45,7 +45,7 @@ Los metadatos de publicidad y vídeo estándar se pueden establecer en objetos d
 | ID del sitio | `a.media.ad.site` | `ADBMobile.media.AdMetadataKeys.SITE_ID` |
 | URL del anuncio | `a.media.ad.creativeURL` | `ADBMobile.media.AdMetadataKeys.CREATIVE_URL` |
 
-## Implementaciones de muestra para Chromecast {#section_wvy_bdn_w2b}
+## Implementaciones de muestra para Chromecast {#sample-implementations-for-chromecast}
 
 ### Vídeo
 
