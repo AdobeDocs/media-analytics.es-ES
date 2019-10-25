@@ -3,7 +3,7 @@ seo-title: Información general de medio
 title: Información general de medio
 uuid: bdbd998f-9b5e-40c9-a8ea-12dfa5acd35c
 translation-type: tm+mt
-source-git-commit: 6e13e9a6250949a3a7f059445da772b4db1fdb71
+source-git-commit: 8938e324d570b7e3e2c3c3e971c00ade7e6be8b6
 
 ---
 
@@ -14,17 +14,17 @@ Desde el tablero Información general de medio, puede supervisar los medios de s
 
 ![](assets/media_overview.png){width="672px"}
 
-## Filtros rápidos {#section_8DF3E4A6734145B082657C6BECFA0BBE}
+## Filtros rápidos {#quick-filters}
 
 Muestre rápidamente métricas de medio por dispositivo o por país:
 
 ![](assets/video-overview-report-filters.png){width="400px"}
 
-## Rendimiento de medios {#section_288FB476EDA44761BB8A86551F0A110C}
+## Rendimiento de medios {#media-performance}
 
 Haga clic y arrastre para aumentar y, a continuación, pase el ratón por encima para ver las métricas detalladas de cada medio. Haga clic  ![](assets/video-overview-report-revert.png)
 
-to reset the view after you zoom.
+para restablecer la vista después de aplicar el zoom.
 
 ![](assets/media_overview_zoom.png){width="400px"}
 
