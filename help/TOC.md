@@ -3,7 +3,7 @@ product: Media Analytics
 audience: usuario final
 user-guide-title: Adobe Analytics para audio y vídeo
 translation-type: tm+mt
-source-git-commit: d5673ea5bf96e7ea0a43d176c182423ccece6870
+source-git-commit: 1f9fe870b906246c3959eead2d23301f9a64f99c
 
 ---
 
@@ -128,6 +128,7 @@ source-git-commit: d5673ea5bf96e7ea0a43d176c182423ccece6870
       + [OTT y Audience Manager](sdk-implement/analytics-with-ott/ott-am.md)
       + [OTT y Experience Cloud](sdk-implement/analytics-with-ott/ott-experience-cloud.md)
    + Guía paso a paso {#cookbook}
+      + [Cookbook de SDK](sdk-implement/cookbook/sdk-cookbook-overview.md)
       + [Administración de interrupciones de la aplicación durante la reproducción](sdk-implement/cookbook/app-interrupts.md)
       + [Solución cuando aparece main:play entre anuncios](sdk-implement/cookbook/fix-ad-play-ad.md)
       + [Reanudación de sesiones inactivas](sdk-implement/cookbook/resuming-inactive.md)
@@ -162,6 +163,9 @@ source-git-commit: d5673ea5bf96e7ea0a43d176c182423ccece6870
       + [Línea de tiempo 2: El usuario abandona la sesión](media-collection-api/mc-api-timelines/mc-api-timeline-2.md)
       + [Línea de tiempo 3: Capítulos](media-collection-api/mc-api-timelines/mc-api-timeline-3.md)
    + [Seguimiento de contenido descargado](media-collection-api/track-downloaded-content.md)
++ Guía paso a paso {#media-analytics-cookbook}
+   + [Información general de Cookbook](media-analytics-cookbook/cookbook-overview.md)
+   + [Dimensiones de medios fuera del seguimiento de medios](media-analytics-cookbook/media-dimensions.md)
 + Métricas y metadatos {#metrics-and-metadata}
    + [Parámetros de audio y vídeo](metrics-and-metadata/audio-video-parameters.md)
    + [Parámetros de anuncio](metrics-and-metadata/ad-parameters.md)
@@ -181,4 +185,4 @@ source-git-commit: d5673ea5bf96e7ea0a43d176c182423ccece6870
    + [Plantillas de Media Workspace](media-reports/media-workspace-templates.md)
 + [Federated Analytics](federated-analytics.md)
 + Recursos adicionales {#additional-resources}
-   + [Actualizaciones de documentación](additional-resources/doc-updates.md)
+   + [Recursos](additional-resources/doc-updates.md)
