@@ -3,14 +3,14 @@ seo-title: Configuración de privacidad y exclusión
 title: Configuración de privacidad y exclusión
 uuid: 7e60c7bd-8dba-4c7a-9c3c-0c634b815397
 translation-type: tm+mt
-source-git-commit: 80208f1c4773857f7907be0b8566c55a03e6106c
+source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 ---
 
 
 # Configuración de privacidad y exclusión{#opt-out-and-privacy}
 
-## Inclusión/Exclusión {#section_zfb_syq_v2b}
+## Inclusión/Exclusión {#opt-out-opt-in}
 
 Puede controlar si se permite el seguimiento de la actividad en un dispositivo determinado:
 
@@ -26,7 +26,7 @@ Puede controlar si se permite el seguimiento de la actividad en un dispositivo d
 
    * The `privacyDefault` setting in the `ADBMobile.json` config file. Este ajuste controla la configuración inicial que persiste hasta que se cambia en el código.
 
-   * El `ADBMobile().setPrivacyStatus()` método.
+   * El método `ADBMobile().setPrivacyStatus()`.
 
       * **Desactivar:**
 
@@ -73,7 +73,7 @@ Puede controlar si se permite el seguimiento de la actividad en un dispositivo d
             ```
    Después de cambiar la configuración de privacidad mediante el uso de `setPrivacyStatus`, el cambio es permanente hasta que se vuelva a modificar con este método o bien se desinstale y se vuelva a instalar la aplicación completamente.
 
-## Recuperación de identificadores almacenados (aplicaciones OTT) {#section_mky_2yq_v2b}
+## Recuperación de identificadores almacenados (aplicaciones OTT) {#retrieving-stored-identifiers-ott-apps}
 
 Esta información le ayuda a recuperar ID de usuario almacenados localmente desde la aplicación Roku.
 
