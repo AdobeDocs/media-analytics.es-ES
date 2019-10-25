@@ -3,14 +3,14 @@ seo-title: Configurar Adobe Debug
 title: Configurar Adobe Debug
 uuid: e416458d-f23c-41ce-8d99-fa5076c455f0
 translation-type: tm+mt
-source-git-commit: 5ff3566fae2c1df559341057fafdd289774e4b2f
+source-git-commit: 8938e324d570b7e3e2c3c3e971c00ade7e6be8b6
 
 ---
 
 
 # Configuración de Adobe Debug{#configure-adobe-debug}
 
-## Acceso a Adobe Debug {#section_AF81E7AD331E41FFA371AB9DA924BFBB}
+## Acceso a Adobe Debug {#accessing-adobe-debug}
 
 Para acceder a Adobe Debug:
 
@@ -33,7 +33,7 @@ Para acceder a Adobe Debug:
 
 Los navegadores recomendados son las versiones más recientes de Chrome y Firefox.
 
-## Depurar proxy {#section_8D3493B8426B46DEB9CD7E2ABD785D66}
+## Depurar proxy {#debug-proxy}
 
 Descargue y configure el proxy de depuración:
 
@@ -48,7 +48,7 @@ Descargue y configure el proxy de depuración:
 
    Es posible que necesite ajustar la configuración del navegador en función del sistema operativo y del navegador.
 
-## Descargar e instalar el certificado SSL en el escritorio o las aplicaciones {#section_2F9547E301CB413299A67BD59AFBEE0D}
+## Descargar e instalar el certificado SSL en el escritorio o las aplicaciones {#download-and-install-sSL-desktop}
 
 La primera vez que ejecute Adobe Debug, se generará un certificado SSL único. Si su dispositivo de escritorio y/o aplicaciones funcionan con tráfico HTTPS, debe descargar e instalar el certificado SSL.
 
@@ -75,13 +75,13 @@ Descargue e instale el certificado SSL:
     Es posible que tenga que salir y volver a abrir Firefox para ver el cambio.
     
     **Dispositivos iOS**
-    1. Configure el dispositivo iOS para que utilice Adobe Debug como su proxy HTTP haciendo clic en **[!Aplicación de configuración UICONTROL]*** **&gt;** **[!Configuración Wi-Fi de UICONTROL]**.
+    1. Set your iOS device to use Adobe Debug as its HTTP proxy by clicking **[!UICONTROL Settings app]** **&gt;** **[!UICONTROL Wifi settings]**.
     
     1. En Safari, vaya a [Depurar].](https://proxy.debug.adobe.com/ssl)
     
     Safari le pedirá que instale el certificado SSL.
 
-## Instalación del certificado SSL para su dispositivo móvil {#section_F2A3336F482C43E2ABEA742AD5CCACCA}
+## Instalación del certificado SSL para su dispositivo móvil {#install-sSL-for-mobile-device}
 
 Si no tiene las llamadas HTTPS en Adobe Debug, debe instalar el certificado SSL para Adobe Debug en el dispositivo móvil.
 
