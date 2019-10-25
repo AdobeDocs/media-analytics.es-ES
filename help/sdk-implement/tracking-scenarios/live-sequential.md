@@ -3,14 +3,14 @@ seo-title: Contenido principal activo con seguimiento secuencial
 title: Contenido principal activo con seguimiento secuencial
 uuid: b03477b6-9be8-4b67-a5a0-4cef3cf262ab
 translation-type: tm+mt
-source-git-commit: 3dd053c81090172ab53b8b7a367ca0cccad382c3
+source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 ---
 
 
 # Contenido principal activo con seguimiento secuencial{#live-main-content-with-sequential-tracking}
 
-## Situación {#section_E4B558253AD84ED59256EDB60CED02AE}
+## Situación {#scenario}
 
 En esta situación, solo hay un recurso activo sin anuncios que se reproduce durante 40 segundos tras unirse a la emisión en directo.
 
@@ -27,7 +27,7 @@ Este es el mismo escenario que el de [Reproducción de VOD sin anuncios](/help/s
 | Se reproduce el contenido. |  | Latidos de contenido |  |
 | Fin de la sesión (el episodio 2 ha finalizado). | trackComplete / trackSessionEnd | Finalización de contenido de Heartbeat | La finalización significa que se llegó a la sesión 2 del segundo episodio y que se vio entera. Antes de iniciar la sesión del siguiente episodio, hay que finalizar esta sesión. |
 
-## Parámetros {#section_D52B325B99DA42108EF560873907E02C}
+## Parámetros {#parameters}
 
 ### Inicio del contenido de Heartbeat
 
@@ -38,11 +38,11 @@ Este es el mismo escenario que el de [Reproducción de VOD sin anuncios](/help/s
 | `s:user:mid` | `s:user:mid` | Debe coincidir con el valor medio de la llamada de inicio de contenido de Adobe Analytics |
 | `s:event:type` | `"start"` |  |
 | `s:asset:type` | `"main"` |  |
-| `s:asset:media_id` | &lt;Your Media Name&gt; |  |
+| `s:asset:media_id` | &lt;Nombre del medio&gt; |  |
 | `s:stream:type` | `live` |  |
 | `s:meta:*` | *opcional* | Metadatos personalizados definidos en el medio |
 
-## Reproducción del contenido de Heartbeat {#section_B6AD9225747943F881DCA8E6A1D5710E}
+## Reproducción del contenido de Heartbeat {#heartbeat-content-play}
 
 Es igual que la llamada de inicio de contenido de Heartbeat salvo en el parámetro “s:event:type”. Aquí todos los parámetros deben seguir definidos.
 
@@ -51,9 +51,9 @@ Es igual que la llamada de inicio de contenido de Heartbeat salvo en el parámet
 | `s:event:type` | `"play"` |  |
 | `s:asset:type` | `"main"` |  |
 
-## Latidos de contenido {#section_7B387303851A43E5993F937AE2B146FE}
+## Latidos de contenido {#content-heartbeats}
 
-During media playback, there is a timer that will send one or more heartbeats every 10 seconds for main content, and every one second for ads. Estos latidos contienen datos sobre la reproducción, los anuncios y el almacenamiento en búfer, entre otros. El contenido exacto de cada latido no se detallará en este documento. Lo más importante es que los latidos se desencadenan constantemente mientras dura la reproducción.
+Durante la reproducción de medios, hay un temporizador que enviará uno o más latidos cada 10 segundos para el contenido principal y cada segundo para los anuncios. Estos latidos contienen datos sobre la reproducción, los anuncios y el almacenamiento en búfer, entre otros. El contenido exacto de cada latido no se detallará en este documento. Lo más importante es que los latidos se desencadenan constantemente mientras dura la reproducción.
 
 En los latidos de contenido debe fijarse en ciertos detalles:
 
@@ -62,7 +62,7 @@ En los latidos de contenido debe fijarse en ciertos detalles:
 | `s:event:type` | `"play"` |  |
 | `l:event:playhead` | &lt;posición del cabezal de reproducción&gt; p.ej., 50, 60, 70 | Debe indicar la posición actual del cabezal de reproducción. |
 
-## Finalización de contenido de Heartbeat {#section_2CA970213AF2457195901A93FC9D4D0D}
+## Finalización de contenido de Heartbeat {#heartbeat-content-complete}
 
 Cuando la reproducción de un episodio determinado finaliza (el cabezal de reproducción sobrepasa el límite del episodio), se envía una llamada de finalización de contenido de Heartbeat. Se parece a otras llamadas de Heartbeat, pero contiene dos cosas específicas:
 
@@ -71,7 +71,7 @@ Cuando la reproducción de un episodio determinado finaliza (el cabezal de repro
 | `s:event:type` | `"complete"` |  |
 | `s:asset:type` | `"main"` |  |
 
-## Código de muestra {#section_mpx_q2j_x2b}
+## Código de muestra {#sample-code}
 
 ![](assets/ios-live-noads-multiplesessions.png)
 
