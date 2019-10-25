@@ -3,7 +3,7 @@ seo-title: Configuración de Android
 title: Configuración de Android
 uuid: 3ffe3276-a104-4182-9220-038729e9f3d5
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: a3a81609046ab5e3c84fe4bf99c92c3dabc58247
 
 ---
 
@@ -12,8 +12,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ## Requisitos previos
 
-* **Obtain valid configuration parameters for the Media SDK
-These parameters can be obtained from an Adobe representative after you set up your analytics account.**
+* **Obtenga parámetros de configuración válidos para el SDK** de mediosEstos parámetros se pueden obtener de un representante de Adobe después de configurar la cuenta de análisis.
 * **Implementación de ADBMobile para Android en la aplicación** Para obtener más información sobre la documentación del SDK de Adobe Mobile, consulte SDK 4.x de [Android para soluciones de Experience Cloud.](https://marketing.adobe.com/resources/help/en_US/mobile/android/)
 * **Proporcione las siguientes capacidades en su reproductor de medios**:
    * *Una API para suscribirse a eventos del reproductor*: el Media SDK requiere que se invoquen varias API sencillas cuando se producen eventos en el reproductor.
@@ -21,7 +20,7 @@ These parameters can be obtained from an Adobe representative after you set up y
 
 ## Implementación del SDK
 
-1. Añada el Media SDK [descargado](/help/sdk-implement/download-sdks.md#section_551A10AD7880426BB29AE52482BB4211) al proyecto.
+1. Añada el Media SDK [descargado](/help/sdk-implement/download-sdks.md#download-2x-sdks) al proyecto.
 
    1. Expand the Android zip file (e.g., `MediaSDK-android-v2.*.zip`).
    1. Verify that the `MediaSDK.jar` file exists in the `libs/` directory.
@@ -42,7 +41,7 @@ These parameters can be obtained from an Adobe representative after you set up y
       **Eclipse:**
 
       1. En Eclipse IDE, haga clic con el botón secundario en el nombre del proyecto.
-      1. Click  **[!UICONTROL Build Path]** &gt; **[!UICONTROL Add External Archives]** .
+      1. Haga clic en **[!UICONTROL Ruta de compilación]** &gt; **[!UICONTROL Agregar archivos externos]** .
       1. Select `MediaSDK.jar`.
       1. Haga clic en **[!UICONTROL Abrir]**.
       1. Right-click the project again, and click  **[!UICONTROL Build Path]** &gt; **[!UICONTROL Configure Build Path]** .
