@@ -3,14 +3,14 @@ seo-title: Reproducción de VOD con un capítulo omitido
 title: Reproducción de VOD con un capítulo omitido
 uuid: 19fb020c-eb7a-4942-9212-94f4d47195b9
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 ---
 
 
 # Reproducción de VOD con un capítulo omitido{#vod-playback-with-a-skipped-chapter}
 
-## Situación {#section_34DCAFE0E64949C4A6DF2D98F8A12B41}
+## Situación {#scenario}
 
 En esta situación, el usuario omite un capítulo del contenido principal.
 
@@ -29,11 +29,11 @@ Este es el mismo escenario que el de [reproducción de VOD con un capítulo](/he
 | El contenido termina de reproducirse. | `trackComplete` | Finalización de contenido de Heartbeat | This network call is exactly the same as the [Playback with no interruptions in iOS](vod-no-intrs-details.md) scenario. |
 | La sesión finaliza. | `trackSessionEnd` |  | `SessionEnd` significa el final de una sesión de visualización. Se debe llamar a esta API aunque el usuario no vea los medios hasta la finalización. |
 
-## Parámetros {#section_1874F6B7880B43C5856BD11FF85B382E}
+## Parámetros {#parameters}
 
 Los parámetros utilizados durante la reproducción del capítulo son idénticos a los parámetros de la reproducción de [VOD con un escenario de capítulo](/help/sdk-implement/tracking-scenarios/vod-one-chapter.md) , excepto que no hay ninguna llamada de red de capítulo completado.
 
-## Código de muestra {#section_fyl_ncj_x2b}
+## Código de muestra {#sample-code}
 
 ![](assets/chapter-skip.png)
 
