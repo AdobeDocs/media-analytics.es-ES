@@ -3,7 +3,7 @@ seo-title: Configuración de Chromecast
 title: Configuración de Chromecast
 uuid: d664e394-02a2-4985-bbad-be1bcc44fb2b
 translation-type: tm+mt
-source-git-commit: ab400b673e97f9b47c6088e09b7e7d9e7b1c9ee6
+source-git-commit: a3a81609046ab5e3c84fe4bf99c92c3dabc58247
 
 ---
 
@@ -20,8 +20,7 @@ La respuesta correcta es "Chromecast", por los siguientes motivos:
 
 ## Requisitos previos
 
-* **Obtain valid configuration parameters for Heartbeats
-These parameters can be obtained from an Adobe representative after you set up your media analytics account.**
+* **Obtenga parámetros de configuración válidos para latidos**. Estos parámetros se pueden obtener de un representante de Adobe después de configurar la cuenta de análisis de medios.
 * **Proporcione las siguientes capacidades en su reproductor de medios**:
    * *Una API para suscribirse a eventos del reproductor*: el Media SDK requiere que se invoquen varias API sencillas cuando se producen eventos en el reproductor.
    * *Una API que proporcione información del reproductor*: esta información incluye detalles como el nombre del contenido y la posición del cabezal de reproducción.
@@ -32,7 +31,7 @@ El SDK 2.x de Chromecast para las soluciones de Experience Cloud le permite medi
 
 ## Implementación del SDK
 
-1. Añada la biblioteca de Chromecast [descargada](/help/sdk-implement/download-sdks.md#section_551A10AD7880426BB29AE52482BB4211) al proyecto.
+1. Añada la biblioteca de Chromecast [descargada](/help/sdk-implement/download-sdks.md#download-2x-sdks) al proyecto.
 
    1. El archivo `AdobeMobileLibrary-Chromecast-[version]` zip consta de los siguientes componentes de software:
 
