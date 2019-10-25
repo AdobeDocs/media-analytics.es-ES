@@ -3,7 +3,7 @@ seo-title: Información general
 title: Información general
 uuid: 3fe32425-5e2a-4886-8fea-d91d15671bb0
 translation-type: tm+mt
-source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
+source-git-commit: 8938e324d570b7e3e2c3c3e971c00ade7e6be8b6
 
 ---
 
@@ -16,7 +16,7 @@ source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
 El seguimiento de capítulos y segmentos está disponible para capítulos o segmentos de medios definidos de forma personalizada. Algunos usos comunes para el seguimiento de capítulos son definir segmentos personalizados en función del contenido de los medios (como entradas de béisbol) o definir segmentos de contenido entre pausas publicitarias. Chapter tracking is **not** required for core media tracking implementations.
 
-El seguimiento de capítulos incluye el inicio del capítulo, su finalización y omisión. You can use the media player API with customized segmentation logic to identify chapter events and to populate the required and optional chapter variables.
+El seguimiento de capítulos incluye el inicio del capítulo, su finalización y omisión. Puede utilizar la API del reproductor de medios con una lógica de segmentación personalizada para identificar eventos de capítulo y rellenar las variables de capítulo opcionales y requeridas.
 
 ## Eventos del reproductor
 
@@ -34,7 +34,7 @@ El seguimiento de capítulos incluye el inicio del capítulo, su finalización y
 
 * La llamada `trackEvent(MediaHeartbeat.Event.ChapterSkip);`
 
-## Implementación del seguimiento de capítulos {#section_52221B3A9BFD46B3A22DA6BCE97CCD75}
+## Implementación del seguimiento de capítulos {#implement-chapter-tracking}
 
 1. Identifique cuándo se produce el evento de inicio de capítulo y cree la instancia de `ChapterObject` con la información del capítulo.
 
@@ -57,7 +57,7 @@ El seguimiento de capítulos incluye el inicio del capítulo, su finalización y
 1. Si no se ha completado la reproducción del capítulo porque el usuario ha elegido omitirlo (por ejemplo, si el usuario hace clic en la línea de tiempo para saltar el capítulo), invoque el evento `ChapterSkip` en la instancia de MediaHeartbeat.
 1. Si hay más capítulos, repita los pasos del 1 al 5.
 
-The following sample code uses the JavaScript 2.x SDK for an HTML5 media player. Debe utilizar este código con el código de reproducción de medios principal.
+El siguiente código de muestra utiliza el SDK de JavaScript 2.x para un reproductor de medios HTML5. Debe utilizar este código con el código de reproducción de medios principal.
 
 ```js
 /* Call on chapter start */ 
