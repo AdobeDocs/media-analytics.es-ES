@@ -3,14 +3,14 @@ seo-title: Seguimiento en SceneGraph (Roku)
 title: Seguimiento en SceneGraph (Roku)
 uuid: fa85e546-c79b-4df4-8c03-d6593fa296d5
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 ---
 
 
 # Seguimiento en SceneGraph (Roku){#tracking-in-scenegraph-roku}
 
-## Primeros pasos {#section_vfr_zcz_y2b}
+## Primeros pasos {#introduction}
 
 Roku ha presentado un nuevo marco de programación para el desarrollo de aplicaciones: SceneGraph XML. Este marco incluye dos conceptos clave:
 
@@ -19,7 +19,7 @@ Roku ha presentado un nuevo marco de programación para el desarrollo de aplicac
 
 Adobe Mobile SDK for Roku se escribe en BrightScript. El SDK utiliza componentes que no están disponibles para una aplicación que se ejecute con SceneGraph (por ejemplo, subprocesos). Por lo tanto, un desarrollador de aplicaciones Roku que intente utilizar la arquitectura SceneGraph no podrá invocar las API del SDK de Adobe Mobile (similares a las disponibles en aplicaciones heredadas de BrightScript).
 
-## Arquitectura {#section_dj5_1dz_y2b}
+## Arquitectura {#architecture}
 
 Para que SceneGraph sea compatible con el SDK de AdobeMobile, Adobe ha añadido una nueva API que crea un puente de conector entre el SDK AdobeMobile y `adbmobileTask`. Este es un nodo SceneGraph utilizado para ejecutar la API del SDK. (El uso de `adbmobileTask` se explica en detalle en el resto de este documento).
 
@@ -31,7 +31,7 @@ El puente conector está diseñado para lo siguiente:
 
 ![](assets/SceneGraph_arch.png)
 
-## Componentes {#section_jwl_wqx_1bb}
+## Componentes {#components}
 
 **Aplicación SceneGraph:**
 
@@ -49,7 +49,7 @@ Nodo **adbmobileTask:**
 * Nodo de tareas de SceneGraph que ejecuta la API `AdobeMobileLibrary` en un subproceso en segundo plano.
 * Sirve como delegado para devolver los datos a la aplicación.
 
-## API de SceneGraph públicas {#section_jyd_hdz_y2b}
+## API de SceneGraph públicas {#public-scenegraph-apis}
 
 ### ADBMobileConnector
 
@@ -109,7 +109,7 @@ Nodo **adbmobileTask:**
 |---|---|
 | `API_RESPONSE` | Used to retrieve the response object from `adbmobileTask` node's `adbmobileApiResponse` field |
 | `DEBUG_LOGGING` | Se usa como `apiName` para `getDebugLogging` |
-| `PRIVACY_STATUS` | Used as  for `apiName``getPrivacyStatus` |
+| `PRIVACY_STATUS` | Se usa como `apiName` para `getPrivacyStatus` |
 | `TRACKING_IDENTIFIER` | Se usa como `apiName` para `trackingIdentifier` |
 | `USER_IDENTIFIER` | Se usa como `apiName` para `userIdentifier` |
 | `VISITOR_MARKETING_CLOUD_ID` | Se usa como `apiName` para `visitorMarketingCloudID` |
@@ -136,7 +136,7 @@ Nodo **adbmobileTask:**
 <td> adbmobileApiResponse </td>
 <td> assocarray </td>
 <td> No válido </td>
-<td> Read-Only All of the APIs executed on AdobeMobileSDK will return responses on this field. Regístrelas para que la función de llamada de retorno detecte actualizaciones de este campo y reciba objetos Response. A continuación, se muestra el formato del objeto Response:  
+<td> Sólo lectura Todas las API ejecutadas en AdobeMobileSDK devolverán respuestas en este campo. Regístrelas para que la función de llamada de retorno detecte actualizaciones de este campo y reciba objetos Response. A continuación, se muestra el formato del objeto Response:  
 <codeblock>
 response = { "apiName" : &lt;SceneGraphConstances.
                API_NAME&gt; "returnValue : &lt;API_RESPONSE&gt; } 
@@ -195,9 +195,9 @@ Globally defined utility `MediaHeartbeat` APIs on the legacy AdobeMobileLibrary 
 | `adb_media_init_adbreakinfo` | Este método devuelve el objeto de información de AdBreak inicializado.  `Function adb_media_init_chapterinfo(name As String, position As Double, length As Double, startTime As Double) As Object` |
 | `adb_media_init_qosinfo` | Este método devuelve un objeto de información de QoS inicializado.  `Function adb_media_init_qosinfo(bitrate As Double, startupTime as Double, fps as Double, droppedFrames as Double) As Object` |
 
-## Implementación {#section_dbz_ydz_y2b}
+## Implementación {#implementation}
 
-1. **Download the Roku Library -** Download the [latest Roku library.](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/roku-v2.2.0)
+1. **Descargue la biblioteca Roku:** descargue la [última biblioteca Roku.](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/roku-v2.2.0)
 
 1. **Configurar el entorno de desarrollo**
 
@@ -295,7 +295,7 @@ Globally defined utility `MediaHeartbeat` APIs on the legacy AdobeMobileLibrary 
       end function 
       ```
 
-## Implementación de muestra {#section_mld_lfz_y2b}
+## Implementación de muestra {#sample-implementation}
 
 ### Llamadas de API de muestra en el SDK heredado
 
