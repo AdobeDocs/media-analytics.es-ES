@@ -3,7 +3,7 @@ seo-title: Seguimiento de la calidad de la experiencia en Chromecast
 title: Seguimiento de la calidad de la experiencia en Chromecast
 uuid: d0cdc8cd-4db0-45ef-9470-1cba3996305b
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 8938e324d570b7e3e2c3c3e971c00ade7e6be8b6
 
 ---
 
@@ -14,11 +14,11 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 >
 >En las siguientes instrucciones se indican los pasos para la implementación en todos los kits de desarrollo de software de 2.x. Si va a implementar una versión 1.x del SDK, puede descargar las guías del desarrollador de 1.x aquí: [Descargar SDK.](/help/sdk-implement/download-sdks.md)
 
-## Información general {#section_DDB8DFA47C5744AB9A04392AD5959BF7}
+## Información general {#overview}
 
 Quality of experience tracking includes quality of service (QoS) and error tracking, both are optional elements and are **not** required for core media tracking implementations. Puede utilizar la API del reproductor de medios para identificar las variables relacionadas con QoS y el seguimiento de errores.
 
-## Player events {#player-events}
+## Eventos del reproductor {#player-events}
 
 ### En todos los eventos de cambio de velocidad de bits
 
@@ -29,7 +29,7 @@ Quality of experience tracking includes quality of service (QoS) and error track
 
 La llamada `trackError(“media error id”);`
 
-## Implementación {#section_3B8EBEB167624D0481E8AF4761F83047}
+## Implementación {#implement}
 
 1. Identify when the bitrate changes during media playback and create the `MediaObject` instance using the QoS information.
 
@@ -67,5 +67,5 @@ La llamada `trackError(“media error id”);`
 
    >[!TIP]
    >
-   >Tracking media player errors will not stop the media tracking session. If the media player error prevents the playback from continuing, make sure that the media tracking session is closed by calling `trackSessionEnd()` after calling `trackError()`.
+   >El seguimiento de los errores del reproductor de medios no detendrá la sesión de seguimiento de medios. If the media player error prevents the playback from continuing, make sure that the media tracking session is closed by calling `trackSessionEnd()` after calling `trackError()`.
 
