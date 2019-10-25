@@ -3,14 +3,14 @@ seo-title: Seguimiento del contenido descargado
 title: Seguimiento del contenido descargado
 uuid: 0718689d-9602-4e3f-833c-8297aae1d909
 translation-type: tm+mt
-source-git-commit: b9298de98eeb85c0e2ea0a456c98eac479f43b51
+source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 ---
 
 
 # Seguimiento del contenido descargado{#track-downloaded-content}
 
-## Información general {#section_hcy_3pk_cfb}
+## Información general {#overview}
 
 La función Contenido descargado permite rastrear el consumo de medios mientras un usuario está sin conexión. Por ejemplo, un usuario descarga e instala una aplicación en un dispositivo móvil. A continuación, descarga contenido a través de la aplicación en el almacenamiento local del dispositivo. Para rastrear estos datos descargados, Adobe ha desarrollado la función de contenido descargado. Con esta función, cuando el usuario reproduce contenido desde el almacenamiento de un dispositivo, los datos de seguimiento se almacenan en el dispositivo, independientemente de la conectividad del dispositivo. Cuando el usuario finaliza la sesión de reproducción y el dispositivo vuelve a estar en línea, la información de seguimiento almacenada se envía al back-end de la API de Media Collection dentro de una única carga útil. A partir de ahí, el procesamiento y los informes se realizan de la forma normal en la API de Media Collection.
 
@@ -18,7 +18,7 @@ Contrastar los dos enfoques:
 
 * En línea
 
-   With this realtime approach, the media player sends tracking data upon each player event, and it sends network pings every ten seconds (every one second for ads), one by one to the back-end.
+   Con este enfoque en tiempo real, el reproductor de medios envía datos de seguimiento a cada evento de reproductor y envía ping de red cada diez segundos (cada segundo para anuncios), uno por uno al back-end.
 
 * Sin conexión (función de contenido descargado)
 
@@ -28,7 +28,7 @@ Cada enfoque tiene sus ventajas y desventajas:
 * El escenario en línea se rastrea en tiempo real; esto requiere una comprobación de conectividad antes de cada llamada de red.
 * El escenario sin conexión (función de contenido descargado) solo necesita una comprobación de conectividad de red, pero también requiere un espacio de memoria mayor en el dispositivo.
 
-## Implementación {#section_jhp_jpk_cfb}
+## Implementación {#implementation}
 
 ### Esquemas de eventos
 
@@ -47,11 +47,11 @@ La función de contenido descargado es simplemente la versión sin conexión de 
 * 201 - Creada: solicitud correcta, los datos son válidos, y la sesión se ha creado y se procesará.
 * 400 - Solicitud no válida: el esquema de validación ha fallado, se han descargado todos los datos y no se procesarán datos de sesión.
 
-## Integración con Adobe Analtyics {#section_cty_kpk_cfb}
+## Integración con Adobe Analtyics {#integration-with-adobe-analtyics}
 
 Al calcular las llamadas de inicio y cierre de Analytics para el escenario de contenido descargado, el back-end establece un campo adicional de Analytics llamado `ts.` Estas son marcas de hora para el primer y último evento recibido (inicio y finalización). Este mecanismo permite colocar una sesión de medios completa en el momento correcto (es decir, aunque el usuario no vuelva a conectarse durante varios días, se informa que la sesión de medios se produjo en el momento en que se vio el contenido). Debe habilitar este mecanismo en Adobe Analytics. Para ello, cree un _grupo de informes con marca de hora opcional._ Para habilitar un grupo de informes con marca de hora opcional, consulte [Marcas de hora opcionales.](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/timestamp-optional.html)
 
-## Comparación de sesión de muestra {#section_qnk_lpk_cfb}
+## Comparación de sesión de muestra {#sample-session-comparison}
 
 ```
 [url]/api/v1/sessions
