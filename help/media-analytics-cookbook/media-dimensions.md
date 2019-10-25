@@ -1,17 +1,19 @@
 ---
-title: Dimensiones de medios fuera del seguimiento de medios
-seo-title: Dimensiones de medios fuera del seguimiento de medios
+title: Atribución de flujo de recursos multimedia
+seo-title: Atribución de flujo de recursos multimedia
 translation-type: tm+mt
-source-git-commit: 5d20df537cd244a10f6c2e66cea622e98aa17a16
+source-git-commit: 44b12731c4a701f0f2536c1c83a9ad4a8b27b49b
 
 ---
 
 
-# Dimensiones de medios fuera del seguimiento de medios
+# Atribución de flujo de recursos multimedia
 
 Esta función le permite vincular acciones de aplicación a datos de seguimiento de medios sin necesidad de reglas de procesamiento y variables personalizadas adicionales.
 
-Ahora los clientes pueden agregar cualquiera de las dimensiones de medios a todas las demás llamadas de análisis, como vistas de página y vínculos personalizados. Durante la implementación, debe agregar los parámetros de datos de contexto de medios a las llamadas de seguimiento de Analytics. La lista completa de parámetros de datos de contexto utilizados para los medios está disponible aquí: Parámetros [de audio y vídeo.](/help/metrics-and-metadata/audio-video-parameters.md)
+## Dimensiones de medios fuera del seguimiento de medios
+
+Con Atribución de flujo de recursos multimedia, los clientes ahora pueden agregar cualquiera de las dimensiones de medios a todas las demás llamadas de análisis, como vistas de página y vínculos personalizados. Durante la implementación, debe agregar los parámetros de datos de contexto de medios a las llamadas de seguimiento de Analytics. La lista completa de parámetros de datos de contexto utilizados para los medios está disponible aquí: Parámetros [de audio y vídeo.](/help/metrics-and-metadata/audio-video-parameters.md)
 
 También deberá volver a habilitar la configuración del seguimiento de medios desde la consola de administración para cada informe para el que desee habilitar esta función.
 
