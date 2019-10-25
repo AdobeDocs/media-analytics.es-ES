@@ -5,7 +5,7 @@ description: En esta situación, se han insertado anuncios previos a la emisión
 seo-description: En este escenario de Adobe Media Analytics, se han insertado anuncios previos antes del contenido principal.
 uuid: 5d1022a8-88cb-40aa-919c-60dd592a639e
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 ---
 
@@ -28,7 +28,7 @@ En esta situación, se han insertado anuncios previos a la emisión antes del co
 | El contenido termina de reproducirse. | `trackComplete` | Finalización de contenido de Heartbeat | Esta llamada de red es idéntica al escenario de reproducción de [VOD sin anuncios](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) . |
 | La sesión finaliza. | `trackSessionEnd` |  | `SessionEnd` |
 
-## Parámetros {#section_33CDFB6CB230437480B67A3D149EC44E}
+## Parámetros {#parameters}
 
 Cuando comienza la reproducción del anuncio, se envía una `Heartbeat Ad Start` llamada. If the beginning of the ad does not coincide with the 10-second timer, the `Heartbeat Ad Start` call is delayed by a few seconds, and the call goes to the next 10-second interval. When this happens, a `Content Heartbeat` goes out in the same interval, and you can differentiate between the two calls by looking at the event type and the asset type:
 
@@ -68,7 +68,7 @@ Similar to `Heartbeat Content Complete` calls, when ad playback has completed, a
 | `s:event:type` | `complete` |  |
 | `s:asset:type` | `ad` |  |
 
-## Código de muestra de pausa publicitaria previa a la emisión {#section_nwf_xy3_x2b}
+## Código de muestra de pausa publicitaria previa a la emisión {#sample-code-for-a-pre-roll-ad-break}
 
 En esta situación, el VOD está formado por un anuncio previo a la emisión, un segundo anuncio previo a la emisión y, por último, el contenido.
 
@@ -378,7 +378,7 @@ En esta situación, el VOD está formado por un anuncio previo a la emisión, un
    .......
    ```
 
-## Código de muestra de varias pausas publicitarias {#section_ojy_zy3_x2b}
+## Código de muestra de varias pausas publicitarias {#sample-code-for-multiple-ad-breaks}
 
 En esta situación, en el contenido de VOD se reproduce un anuncio previo a la emisión, el contenido, un anuncio durante la emisión, el contenido y un anuncio posterior a la emisión.
 
