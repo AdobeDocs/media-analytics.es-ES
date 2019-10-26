@@ -4,14 +4,14 @@ seo-title: Información general del libro de cookies SDK
 description: 'Temas específicos del libro de cocina del SDK '
 seo-description: 'Temas específicos del libro de cocina del SDK '
 translation-type: tm+mt
-source-git-commit: cafe29452f5c0a14849b15aaf2af557dc4721d9f
+source-git-commit: 9736c939b40ecdf72d3faa6d25cc9f3ee6e14419
 
 ---
 
 
 # Información general del libro de cookies SDK
 
-Aquí puede encontrar temas generales del libro de cocina de Media Analytics que se aplican tanto al SDK de medios como a la API de Media Collection: Cookbook de [Media Analytics.](/help/media-analytics-cookbook/cookbook-overview.md)
+Aquí puede encontrar temas generales del libro de cocina de Media Analytics que se aplican tanto al SDK de medios como a la API de Media Collection: Cookbook de [Media Analytics.](/help/media-analytics-cookbook/media-analytics-cookbook.md)
 
 Los temas de los libros de cocina que se enumeran a continuación son específicos de la versión de Media SDK de Media Analytics:
 
