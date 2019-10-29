@@ -3,7 +3,7 @@ seo-title: Parámetros de audio y vídeo
 title: Parámetros de audio y vídeo
 uuid: fdacfb8b-db3e-46fb-b9ad-c3a749555b2a
 translation-type: tm+mt
-source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
+source-git-commit: 35224b77881802c742b15ecd6e9f6b0e12b316e3
 
 ---
 
@@ -138,7 +138,7 @@ public static MediaObject createMediaObject(java.lang.String name,
 
 |   Implementación   | Parámetros de red | Creación de informes |
 | --- | --- | --- |
-| <ul> <li> **Clave de SDK:**<br/>  [channel](./audio-video-parameters.md#config-media-object) </li> <li> **Clave de API:**<br/>media.channel </li> <li> **Requerido:**<br/> sí </li> <li> **Tipo:**<br/> cadena </li> <li> ****<br/> Enviado con: Inicio de medios, cierre de medios </li> <li> **Versión del SDK mínima:** cualquiera </li> <li> **Valor de muestra:**<br/>"Sports" </li> <li> ****<br/> Descripción: Estación de distribución/canales o donde se reproduce el contenido. Aquí se acepta cualquier valor de cadena.  </li></ul> | <ul> <li> ****<br/> Adobe Analytics: (a.media.channel) </li> <li> ****<br/> Latidos: (s:sp:channel) </li> </ul> | <ul> <li> **Disponible:**<br/> sí </li> <li> **Variable reservada:**<br/>eVar </li> <li> **Caducidad:**<br/>según HIT </li> <li> **Nombre del informe:**<br/>Canal de contenido </li> <li> ****<br/> Datos de contexto: (a.media.channel) </li> <li> **Fuente de datos:**<br/>videochannel </li> <li> ****<br/> Audience Manager: (c_contextdata.<br/>a.media.channel) </li> </ul> |
+| <ul> <li> **Clave de SDK:**<br/>  [canal](./audio-video-parameters.md#config-media-object) </li> <li> **Clave de API:**<br/>media.channel </li> <li> **Requerido:**<br/> sí </li> <li> **Tipo:**<br/> cadena </li> <li> ****<br/> Enviado con: Inicio de medios, cierre de medios </li> <li> **Versión del SDK mínima:** cualquiera </li> <li> **Valor de muestra:**<br/>"Sports" </li> <li> ****<br/> Descripción: Estación de distribución/canales o donde se reproduce el contenido. Aquí se acepta cualquier valor de cadena.  </li></ul> | <ul> <li> ****<br/> Adobe Analytics: (a.media.channel) </li> <li> ****<br/> Latidos: (s:sp:channel) </li> </ul> | <ul> <li> **Disponible:**<br/> sí </li> <li> **Variable reservada:**<br/>eVar </li> <li> **Caducidad:**<br/>según HIT </li> <li> **Nombre del informe:**<br/>Canal de contenido </li> <li> ****<br/> Datos de contexto: (a.media.channel) </li> <li> **Fuente de datos:**<br/>videochannel </li> <li> ****<br/> Audience Manager: (c_contextdata.<br/>a.media.channel) </li> </ul> |
 
 ### Segmento de contenido
 
@@ -434,17 +434,19 @@ public static MediaObject createMediaObject(java.lang.String name,
 | --- | --- | --- |
 | <ul> <li> **Clave de SDK:**<br/>establecida automáticamente </li> <li> **Clave de API:**<br/>N/D </li> <li> **Tipo:**<br/> cadena </li> <li> ****<br/> Enviado con: Cierre de medios </li> <li> **Versión del SDK mínima:** cualquiera </li> <li> **Valor de muestra:**<br/>TRUE </li> <li> ****<br/> Descripción: Número de vistas del contenido principal. Se cuenta una vista de segmento de contenido cuando se ha visto al menos un fotograma.  <br/> **Importante:** Esto solo ocurre si se configura. Si no se configura, no devuelve ningún valor. </li></ul> | <ul> <li> **Adobe Analytics:**<br/>N/D </li> <li> **Heartbeat:**<br/>N/D </li> </ul> | <ul> <li> **Disponible:**<br/> sí </li> <li> **Variable reservada:**<br/>evento </li> <li> **Nombre del informe:**<br/>Vistas del segmento de contenido </li> <li> ****<br/> Datos de contexto: (a.media.segmentView) </li> <li> **Fuente de datos:**<br/>N/D </li> <li> ****<br/> Audience Manager: (c_contextdata.<br/>a.media.segmentView) </li> </ul> |
 
-### Recuento de anuncios
+<!--
+### Ad Count 
 
-|   Implementación   | Parámetros de red | Creación de informes |
+| &nbsp;&nbsp;Implementation&nbsp;&nbsp; | Network&nbsp;Parameters | Reporting |
 | --- | --- | --- |
-| <ul> <li> ****<br/> Clave de SDK:N/D </li> <li> **Clave de API:**<br/>N/D </li> <li> **Tipo:**<br/>número </li> <li> ****<br/> Enviado con: Cierre de medios </li> <li> **Versión del SDK mínima:** cualquiera </li> <li> **Valor de muestra:**<br/> 2 </li> <li> ****<br/> Descripción: Número de anuncios iniciados durante la sesión de medios.   <br/> </li></ul> | <ul> <li> **Adobe Analytics:**<br/>N/D </li> <li> **Heartbeat:**<br/>N/D </li> </ul> | <ul> <li> **Disponible:**<br/>utilizar regla de procesamiento personalizada </li> <li> **Variable reservada:**<br/>N/D </li> <li> **Nombre del informe:**<br/>Personalizado </li> <li> ****<br/> Datos de contexto: (a.media.adCount) </li> <li> **Fuente de datos:**<br/>N/D </li> <li> ****<br/> Audience Manager: (c_contextdata.<br/>a.media.adCount) </li> </ul> |
+| <ul> <li> **SDK Key:**<br/> N/A </li> <li> **API Key:**<br/> N/A </li> <li> **Type:**<br/> number </li> <li> **Sent with:**<br/> Media Close </li> <li> **Min. SDK Version:** Any </li> <li> **Sample value:**<br/> 2 </li> <li> **Description:**<br/> The number of ads started during the media session.   <br/> </li></ul> | <ul> <li> **Adobe Analytics:**<br/> N/A </li> <li> **Heartbeats:**<br/> N/A </li> </ul> | <ul> <li> **Available:**<br/> Use custom processing rule </li> <li> **Reserved Variable:**<br/> N/A </li> <li> **Report Name:**<br/> Custom </li> <li> **Context Data:**<br/> (a.media.adCount) </li> <li> **Data Feed:**<br/> N/A </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.adCount) </li> </ul> |
 
-### Recuento de capítulos
+### Chapter Count 
 
-|   Implementación   | Parámetros de red | Creación de informes |
+| &nbsp;&nbsp;Implementation&nbsp;&nbsp; | Network&nbsp;Parameters | Reporting |
 | --- | --- | --- |
-| <ul> <li> ****<br/> Clave de SDK:N/D </li> <li> **Clave de API:**<br/>N/D </li> <li> **Tipo:**<br/>número </li> <li> ****<br/> Enviado con: Cierre de medios </li> <li> **Versión del SDK mínima:** cualquiera </li> <li> **Valor de muestra:**<br/> 2 </li> <li> ****<br/> Descripción: Número de capítulos que se iniciaron durante la sesión de medios.   <br/> </li></ul> | <ul> <li> **Adobe Analytics:**<br/>N/D </li> <li> **Heartbeat:**<br/>N/D </li> </ul> | <ul> <li> **Disponible:**<br/>utilizar regla de procesamiento personalizada </li> <li> **Variable reservada:**<br/>N/D </li> <li> **Nombre del informe:**<br/>Personalizado </li> <li> ****<br/> Datos de contexto: (a.media.chapterCount) </li> <li> **Fuente de datos:**<br/>N/D </li> <li> ****<br/> Audience Manager: (c_contextdata.<br/>a.media.chapterCount) </li> </ul> |
+| <ul> <li> **SDK Key:**<br/> N/A </li> <li> **API Key:**<br/> N/A </li> <li> **Type:**<br/> number </li> <li> **Sent with:**<br/> Media Close </li> <li> **Min. SDK Version:** Any </li> <li> **Sample value:**<br/> 2 </li> <li> **Description:**<br/> The number of chapters started during the media session.   <br/> </li></ul> | <ul> <li> **Adobe Analytics:**<br/> N/A </li> <li> **Heartbeats:**<br/> N/A </li> </ul> | <ul> <li> **Available:**<br/> Use custom processing rule </li> <li> **Reserved Variable:**<br/> N/A </li> <li> **Report Name:**<br/> Custom </li> <li> **Context Data:**<br/> (a.media.chapterCount) </li> <li> **Data Feed:**<br/> N/A </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.chapterCount) </li> </ul> |
+-->
 
 ## Parámetros de California Consumer Privacy Act (CCPA) {#ccpa-params}
 
