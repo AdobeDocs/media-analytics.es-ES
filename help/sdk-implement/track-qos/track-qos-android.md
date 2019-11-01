@@ -1,9 +1,9 @@
 ---
-seo-title: Seguimiento de la calidad de la experiencia en Android
 title: Seguimiento de la calidad de la experiencia en Android
-uuid: 81ff3939-48a6-45c1-8837-ddfa33490559
+description: En este tema se describe la implementación del seguimiento de calidad de experiencia (QoE, QoS) mediante el SDK de medios en Android.
+uuid: 81ff3939-48a6-45c1-8837-dfa33490559
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
@@ -14,7 +14,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 >
 >En las siguientes instrucciones se indican los pasos para la implementación en todos los kits de desarrollo de software de 2.x. Si va a implementar una versión 1.x del SDK, puede descargar las guías del desarrollador de 1.x aquí: [Descargar SDK.](/help/sdk-implement/download-sdks.md)
 
-## Implemement QoS
+## QoS de implementación
 
 1. Identify when the bitrate changes during media playback and create the `MediaObject` instance using the QoS information.
 
