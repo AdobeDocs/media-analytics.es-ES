@@ -1,9 +1,9 @@
 ---
-seo-title: Medición de audio y vídeo en Adobe Analytics
 title: Medición de audio y vídeo en Adobe Analytics
+description: 'Adobe Analytics para medios (también denominado Media Analytics) proporciona a los clientes una medición de medios sólida para el contenido, el audio y la publicidad. '
 uuid: b3cbe240-b94d-42b8-a99c-0280334aaa14
 translation-type: tm+mt
-source-git-commit: d339ae295af89a1c2ba2e8c938e1650d82507e2b
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
@@ -29,7 +29,7 @@ Adobe Analytics para medios permite a los clientes realizar un seguimiento de lo
 
 Las soluciones de medios no solo miden las métricas de entrega esenciales relacionadas con la calidad del servicio, como los fotogramas perdidos, el tiempo de almacenamiento en búfer y la velocidad de bits media. Se pueden combinar con los datos de su sitio web o aplicación para visualizar el flujo del cliente y sus intereses, con el fin de poder mejorar las recomendaciones y personalizar la experiencia en Adobe Experience Cloud.
 
-## Ventajas {#benefits}
+## Beneficios {#benefits}
 
 Algunas de las muchas ventajas que ofrecen las soluciones de medición de medios de Adobe son:
 
