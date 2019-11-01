@@ -1,9 +1,9 @@
 ---
-seo-title: Reproducción de VOD con llamada a otro punto del contenido principal
 title: Reproducción de VOD con llamada a otro punto del contenido principal
+description: Ejemplo de cómo rastrear contenido de VOD en el que se ha producido una búsqueda mediante el SDK de medios.
 uuid: 5c2392f6-9b9c-42f5-833f-77423d1e6222
 translation-type: tm+mt
-source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
