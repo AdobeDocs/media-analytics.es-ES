@@ -1,9 +1,9 @@
 ---
-seo-title: Seguimiento de la calidad de la experiencia en Roku
 title: Seguimiento de la calidad de la experiencia en Roku
+description: En este tema se describe la implementación del seguimiento de calidad de experiencia (QoE, QoS) mediante el SDK de medios en Roku.
 uuid: a8b242ab-da3c-4297-9eef-f0b9684ef56a
 translation-type: tm+mt
-source-git-commit: a8e8ac5a808ff785a348b456dd7d183540c1d594
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
@@ -16,13 +16,13 @@ source-git-commit: a8e8ac5a808ff785a348b456dd7d183540c1d594
 
 ## Implementación de QOS
 
-1. Identify when the bitrate changes during media playback, and use the  API to update the QoS info on the Media SDK.`mediaUpdateQoS`
+1. Identifique cuándo cambia la velocidad de bits durante la reproducción de medios y utilice la `mediaUpdateQoS` API para actualizar la información de QoS en el SDK de medios.
 
    Variables QoSObject:
 
    >[!TIP]
    >
-   >These variables are only required if you are tracking QoS.
+   >Estas variables solo son necesarias si realiza el seguimiento de QoS.
 
    | Variable | Descripción | Requerido |
    | --- | --- | :---: |
