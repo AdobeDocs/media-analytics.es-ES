@@ -1,9 +1,9 @@
 ---
-seo-title: Tipos de eventos y descripciones
 title: Tipos de eventos y descripciones
+description: null
 uuid: bc4f75a7-ea22-47eb-a50d-5f41274c6d41
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
 
@@ -27,11 +27,11 @@ Los eventos ping *no* deben incluir el mapa de `params` en el cuerpo de la solic
 
 ## bitrateChange
 
-Sent when the bitrage changes.
+Se envía cuando cambia la velocidad de bits.
 
 ## bufferStart
 
-Sent when buffering starts. No hay ningún tipo de evento `bufferResume`. A `bufferResume` is inferred when you send a `play` event after `bufferStart`.
+Se envía cuando se inicia el almacenamiento en búfer. No hay ningún tipo de evento `bufferResume`. A `bufferResume` is inferred when you send a `play` event after `bufferStart`.
 
 ## pauseStart
 
@@ -47,7 +47,7 @@ Indica el inicio de una publicidad
 
 ## adComplete
 
-Signals the completion of an ad break
+Indica la finalización de una pausa publicitaria
 
 ## adSkip
 
@@ -75,7 +75,7 @@ Indica que se ha producido un error.
 
 ## sessionEnd
 
-This is used to notify the Media Analytics backend to immediately close the session when the user has abandoned their viewing of the content and they are unlikely to return.
+Esto se utiliza para notificar al servidor de Media Analytics que cierre inmediatamente la sesión cuando el usuario haya abandonado la visualización del contenido y es poco probable que vuelva.
 
 If you don't send a `sessionEnd`, an abandoned session will time-out normally (after no events are received for 10 minutes, or when no playhead movement occurs for 30 minutes), and the session is deleted by the backend.
 
