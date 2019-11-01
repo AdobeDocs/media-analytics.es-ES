@@ -1,9 +1,9 @@
 ---
-seo-title: Migración de Milestone a Media Analytics
 title: Migración de Milestone a Media Analytics
+description: null
 uuid: fdc96146-af63-48ce-b938-c0ca70729277
 translation-type: tm+mt
-source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
+source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
 
@@ -710,7 +710,7 @@ s.Media.stop(mediaName,mediaOffset)
 <td>
 <pre>
 trackPause
-</pre> o 
+</pre> O bien 
 <pre>
 trackEvent
 </pre>
@@ -719,13 +719,13 @@ trackEvent
 <pre>
 trackPause()
 </pre> 
-o
+O bien
 <pre>
 
 trackEvent( MediaHeartbeat.
   Evento.
   SeekStart)
-</pre> o
+</pre> O bien
 <pre>
 
 trackEvent( MediaHeartbeat.
