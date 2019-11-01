@@ -1,9 +1,9 @@
 ---
-seo-title: Seguimiento del almacenamiento en búfer en Roku
 title: Seguimiento del almacenamiento en búfer en Roku
+description: Describe el seguimiento de eventos de almacenamiento en búfer en Roku.
 uuid: 6666b270-9aa3-42ff-95a8-f12502022d47
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
