@@ -1,9 +1,9 @@
 ---
-seo-title: 'Línea de tiempo 3: Capítulos'
 title: 'Línea de tiempo 3: Capítulos'
+description: null
 uuid: 41b52072-e1cd-4dda-9253-31f3408924f6
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
 
@@ -66,7 +66,7 @@ Esta llamada indica _la intención del usuario de reproducir_ un vídeo. It retu
 | --- | :---: | :---: | --- |
 | La aplicación inicia el temporizador del evento de ping | 0 | 0 |  |
 
-**Implementation details**
+**Detalles de implementación**
 
 Inicie el temporizador de ping. El primer evento de ping debe activarse 1 segundo en caso de que haya anuncios previos, 10 segundos en caso contrario.
 
@@ -184,7 +184,7 @@ Rastrear el final del primer anuncio pre-roll.
 | --- | :---: | :---: | --- |
 | Seguimiento del comienzo del segundo anuncio pre-roll | 15 | 0 | `/api/v1/sessions/{sid}/events` |
 
-**Implementation details**
+**Detalles de implementación**
 
 Realice un seguimiento del inicio del segundo anuncio pre-roll, que dura 7 segundos.
 
@@ -219,9 +219,9 @@ Realice un seguimiento del inicio del segundo anuncio pre-roll, que dura 7 segun
 | --- | :---: | :---: | --- |
 | La aplicación envía eventos de ping | 16 | 0 | `/api/v1/sessions/{sid}/events` |
 
-**Implementation details**
+**Detalles de implementación**
 
-Ping the backend every 1 second. (Subsequent ad pings not shown in the interest of brevity.)
+Ping el servidor cada 1 segundo. (Los pings de anuncios posteriores no se muestran en interés de la brevedad).
 
 **Cuerpo de la solicitud de muestra**
 
@@ -235,13 +235,13 @@ Ping the backend every 1 second. (Subsequent ad pings not shown in the interest 
 }
 ```
 
-### Action 9 - Ad complete {#Action-9}
+### Acción 9 - Finalización del anuncio {#Action-9}
 
 | Acción | Línea de tiempo de acción (segundos) | Posición del cabezal de reproducción (en segundos) | Solicitud del cliente |
 | --- | :---: | :---: | --- |
 | Se ha completado el seguimiento del segundo anuncio pre-roll | 22 | 0 | `/api/v1/sessions/{sid}/events` |
 
-**Implementation details**
+**Detalles de implementación**
 
 Rastrear el final del segundo anuncio pre-roll.
 
@@ -285,7 +285,7 @@ La pausa publicitaria ha finalizado. Durante la pausa publicitaria, el estado de
 | --- | :---: | :---: | --- |
 | Rastrear el evento de Reproducción | 22 | 0 | `/api/v1/sessions/{sid}/events` |
 
-**Implementation details**
+**Detalles de implementación**
 
 Tras el evento `adBreakComplete`, ponga el reproductor en el estado "reproduciendo" utilizando el evento `play`.
 
@@ -301,7 +301,7 @@ Tras el evento `adBreakComplete`, ponga el reproductor en el estado "reproducien
 }
 ```
 
-### Action 12 - Chapter start {#Action-12}
+### Acción 12 - Inicio del capítulo {#Action-12}
 
 | Acción | Línea de tiempo de acción (segundos) | Posición del cabezal de reproducción (en segundos) | Solicitud del cliente |
 | --- | :---: | :---: | --- |
@@ -370,7 +370,7 @@ Rastree el movimiento al estado "almacenamiento en búfer".
 }
 ```
 
-### Action 15 - Buffer end (play) {#Action-15}
+### Acción 15 - Fin del búfer (reproducción) {#Action-15}
 
 | Acción | Línea de tiempo de acción (segundos) | Posición del cabezal de reproducción (en segundos) | Solicitud del cliente |
 | --- | :---: | :---: | --- |
@@ -378,7 +378,7 @@ Rastree el movimiento al estado "almacenamiento en búfer".
 
 **Detalles de implementación**
 
-El almacenamiento en búfer finaliza después de 3 segundos, por lo que el reproductor vuelve al estado "reproduciendo". Debe enviar otro evento de seguimiento de reproducción cuando termine el almacenamiento en búfer.  **The`play`call after a`bufferStart`infers a "bufferEnd" call to the back end,** so there is no need for a `bufferEnd` event.
+El almacenamiento en búfer finaliza después de 3 segundos, por lo que el reproductor vuelve al estado "reproduciendo". Debe enviar otro evento de seguimiento de reproducción cuando termine el almacenamiento en búfer.  **La`play`llamada después de un`bufferStart`deduce una llamada "bufferEnd" al servidor,** por lo que no es necesario un `bufferEnd` evento.
 
 **Cuerpo de la solicitud de muestra**
 
@@ -414,13 +414,13 @@ Mandar un ping al servidor cada 10 segundos.
 }
 ```
 
-### Action 17 - Chapter end {#Action-17}
+### Acción 17 - Fin del capítulo {#Action-17}
 
 | Acción | Línea de tiempo de acción (segundos) | Posición del cabezal de reproducción (en segundos) | Solicitud del cliente |
 | --- | :---: | :---: | --- |
 | La aplicación rastrea el final del capítulo | 45 | 20 | `/api/v1/sessions/{sid}/events` |
 
-**Implementation details**
+**Detalles de implementación**
 
 El primer capítulo termina justo antes de la segunda pausa publicitaria.
 
@@ -436,13 +436,13 @@ El primer capítulo termina justo antes de la segunda pausa publicitaria.
 }
 ```
 
-### Action 18 - Ad break start {#Action-18}
+### Acción 18 - Inicio de la pausa publicitaria {#Action-18}
 
 | Acción | Línea de tiempo de acción (segundos) | Posición del cabezal de reproducción (en segundos) | Solicitud del cliente |
 | --- | :---: | :---: | --- |
 | Seguimiento del comienzo del anuncio mid-roll | 46 | 21 | `/api/v1/sessions/{sid}/events` |
 
-**Implementation details**
+**Detalles de implementación**
 
 Anuncio mid-roll de 8 segundos: enviar `adBreakStart` .
 
@@ -461,7 +461,7 @@ Anuncio mid-roll de 8 segundos: enviar `adBreakStart` .
 }
 ```
 
-### Action 19 - Ad start {#Action-19}
+### Acción 19 - Inicio del anuncio {#Action-19}
 
 | Acción | Línea de tiempo de acción (segundos) | Posición del cabezal de reproducción (en segundos) | Solicitud del cliente |
 | --- | :---: | :---: | --- |
@@ -496,7 +496,7 @@ Seguimiento del anuncio mid-roll.
 }
 ```
 
-### Action 20 - Ad Pings {#Action-20}
+### Acción 20 - Anuncios {#Action-20}
 
 | Acción | Línea de tiempo de acción (segundos) | Posición del cabezal de reproducción (en segundos) | Solicitud del cliente |
 | --- | :---: | :---: | --- |
@@ -504,7 +504,7 @@ Seguimiento del anuncio mid-roll.
 
 **Detalles de implementación**
 
-Ping el servidor cada 1 segundo. (Subsequent ad pings not shown in the interest of brevity.)
+Ping el servidor cada 1 segundo. (Los pings de anuncios posteriores no se muestran en interés de la brevedad).
 
 **Cuerpo de la solicitud de muestra**
 
@@ -518,7 +518,7 @@ Ping el servidor cada 1 segundo. (Subsequent ad pings not shown in the interest 
 }
 ```
 
-### Action 21 - Ad complete {#Action-21}
+### Acción 21 - Finalización del anuncio {#Action-21}
 
 | Acción | Línea de tiempo de acción (segundos) | Posición del cabezal de reproducción (en segundos) | Solicitud del cliente |
 | --- | :---: | :---: | --- |
@@ -540,7 +540,7 @@ El anuncio mid-roll ha finalizado.
 }
 ```
 
-### Action 22 - Ad break complete {#Action-22}
+### Acción 22 - Se completó la pausa publicitaria {#Action-22}
 
 | Acción | Línea de tiempo de acción (segundos) | Posición del cabezal de reproducción (en segundos) | Solicitud del cliente |
 | --- | :---: | :---: | --- |
@@ -562,7 +562,7 @@ Se ha completado la pausa publicitaria.
 }
 ```
 
-### Action 23 - Chapter start {#Action-23}
+### Acción 23 - Inicio del capítulo {#Action-23}
 
 | Acción | Línea de tiempo de acción (segundos) | Posición del cabezal de reproducción (en segundos) | Solicitud del cliente |
 | --- | :---: | :---: | --- |
@@ -587,7 +587,7 @@ Se ha completado la pausa publicitaria.
 }
 ```
 
-### Action 24 - Ping {#Action-24}
+### Acción 24 - Ping {#Action-24}
 
 | Acción | Línea de tiempo de acción (segundos) | Posición del cabezal de reproducción (en segundos) | Solicitud del cliente |
 | --- | :---: | :---: | --- |
@@ -609,7 +609,7 @@ Mandar un ping al servidor cada 10 segundos.
 }
 ```
 
-### Action 25 - Pause {#Action-25}
+### Acción 25 - Pausa {#Action-25}
 
 | Acción | Línea de tiempo de acción (segundos) | Posición del cabezal de reproducción (en segundos) | Solicitud del cliente |
 | --- | :---: | :---: | --- |
@@ -631,7 +631,7 @@ La acción del usuario mueve el estado de reproducción a "pausado".
 }
 ```
 
-### Action 26 - Ping {#Action-26}
+### Acción 26 - Ping {#Action-26}
 
 | Acción | Línea de tiempo de acción (segundos) | Posición del cabezal de reproducción (en segundos) | Solicitud del cliente |
 | --- | :---: | :---: | --- |
