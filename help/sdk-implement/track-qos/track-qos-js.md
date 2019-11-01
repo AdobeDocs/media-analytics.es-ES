@@ -1,9 +1,9 @@
 ---
-seo-title: Seguimiento de la calidad de la experiencia en JavaScript
 title: Seguimiento de la calidad de la experiencia en JavaScript
+description: En este tema se describe la implementación del seguimiento de calidad de experiencia (QoE, QoS) mediante el SDK de medios en aplicaciones de navegador (JS).
 uuid: 3bc762a2-9706-4b62-aa91-747f461dd13d
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
@@ -22,7 +22,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
    >[!TIP]
    >
-   >These variables are only required if you are planning to track QoS.
+   >Estas variables solo son necesarias si planea realizar un seguimiento de QoS.
 
    | Variable | Descripción | Requerido |
    | --- | --- | :---: |
