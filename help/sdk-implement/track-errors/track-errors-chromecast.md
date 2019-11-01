@@ -1,9 +1,9 @@
 ---
-seo-title: Seguimiento de errores en Chromecast
 title: Seguimiento de errores en Chromecast
+description: En este tema se describe la implementación del seguimiento de errores mediante el uso del SDK de medios en Chromecast.
 uuid: efa9de8d-c626-4cb6-b46d-108495dd013a
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
