@@ -1,11 +1,9 @@
 ---
-description: 'null'
-seo-description: 'null'
-seo-title: Implementación de metadatos de publicidad estándar en JavaScript
 title: Implementación de metadatos de publicidad estándar en JavaScript
+description: Cómo usar metadatos de anuncio estándar en el seguimiento de anuncios en aplicaciones de explorador (JS).
 uuid: 4ea10c5a-ae2b-45d0-aad3-9f10028ee7c3
 translation-type: tm+mt
-source-git-commit: ed200520b9bed990460a444dabdcf956980362ca
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
@@ -18,9 +16,9 @@ source-git-commit: ed200520b9bed990460a444dabdcf956980362ca
 |---|---|
 | `StandardAdMetadata` | Constante para adjuntar metadatos de publicidad estándar en un objeto de publicidad |
 
-## Implemement standard ad metadata
+## Metadatos de anuncio estándar de implementación
 
-For standard ad metadata, create a dictionary of standard ad metadata key value pairs using the keys for your platform:
+Para los metadatos de anuncio estándar, cree un diccionario de pares de clave valor para los metadatos de anuncio estándar con las claves de su plataforma:
 
 ```js
 var adObject =  
