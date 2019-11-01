@@ -1,9 +1,9 @@
 ---
-seo-title: Federated Analytics
 title: Federated Analytics
+description: 'El servicio Federated Analytics proporciona un sistema para compartir datos (audio y vídeo) de Adobe Media Analytics entre dos socios. '
 uuid: a82ace81-c2f6-4799-9a62-4c6a737a7dab
 translation-type: tm+mt
-source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
@@ -15,7 +15,7 @@ Los datos estandarizados de medición creados por Media Analytics son la seña d
 A través de las reglas y lógica que rigen Federated Analytics, los datos se controlan y se personalizan para satisfacer las necesidades de cada sociedad.
 Federated Analytics hace que la medición de audio y vídeo sea más eficaz, ágil y procesable.
 
-## Ventajas {#benefits}
+## Beneficios {#benefits}
 
 * **Transparencia:** elimine la caja negra de la creación de datos utilizando la misma lógica en diferentes empresas.
 * **Amplitud:** conozca el alcance completo y el impacto del consumo de audio y vídeo en distintas sociedades, plataformas y dispositivos.
