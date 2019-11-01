@@ -1,9 +1,9 @@
 ---
-seo-title: Seguimiento de la calidad de la experiencia en iOS
 title: Seguimiento de la calidad de la experiencia en iOS
+description: En este tema se describe la implementación del seguimiento de calidad de experiencia (QoE, QoS) mediante el SDK de medios en iOS.
 uuid: cae2c142-ed39-4234-a711-765dcabc5415
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
