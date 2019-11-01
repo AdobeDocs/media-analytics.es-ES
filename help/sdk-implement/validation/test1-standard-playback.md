@@ -1,16 +1,16 @@
 ---
-seo-title: Prueba 1 Reproducción estándar
-title: Test 1  Standard playback
+title: Prueba 1 Reproducción estándar
+description: En este tema se describe la prueba de reproducción estándar utilizada en la validación.
 uuid: c4b3fead-1b27-484b-ab6a-39f1ae0f03f2
 translation-type: tm+mt
-source-git-commit: f2b08663a928e27625a9ff63f783c510f41e7a8c
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
 # Prueba 1: Reproducción estándar{#test-standard-playback}
 
-Este caso de prueba valida la reproducción general y la secuencia. It is a required element of your certification request.
+Este caso de prueba valida la reproducción general y la secuencia. Es un elemento requerido de su solicitud de certificación.
 
 ## Formulario de solicitud de certificación
 
@@ -27,7 +27,7 @@ Las implementaciones de Media Analytics incluyen dos tipos de llamadas de seguim
 >[!NOTE]
 >El seguimiento de medios se comporta igual en todas las plataformas.
 
-## Test procedure
+## Procedimiento de ensayo
 
 Complete y registre las siguientes acciones (en orden):
 
@@ -35,14 +35,14 @@ Complete y registre las siguientes acciones (en orden):
 
    **Servidores de seguimiento** (para todos los sitios web y aplicaciones móviles):
 
-   * **Adobe Analytics (AppMeasurement) server - An RDC tracking server or CNAME that resolves to an RDC tracking server is required for the Experience Cloud Visitor ID service.** The Adobe Analytics tracking server should end in "`.sc.omtrdc.net`" or be a CNAME.
+   * **Servidor de Adobe Analytics (AppMeasurement):** se requiere un servidor de seguimiento RDC o un CNAME que se resuelva en un servidor de seguimiento RDC para el servicio de ID de visitante de Experience Cloud. The Adobe Analytics tracking server should end in "`.sc.omtrdc.net`" or be a CNAME.
 
-   * **Media Analytics (Heartbeats) server - This server always has the format "", where  specifies your company name.**`[namespace].hb.omtrdc.net``[namespace]` Este nombre lo proporciona Adobe.
+   * **Servidor de Media Analytics (latidos) -** Este servidor siempre tiene el formato "`[namespace].hb.omtrdc.net`", donde `[namespace]` especifica el nombre de la empresa. Este nombre lo proporciona Adobe.
    Debe validar ciertas variables clave que son universales en todas las llamadas de seguimiento:
 
    **`mid`ID de visitante de Adobe (**): La `mid` variable se utiliza para capturar el valor establecido en la cookie AMCV. The `mid` variable is the primary identification value for both websites and mobile apps, and also indicates that the Experience Cloud Visitor ID service is set up properly. Se encuentra en llamadas de Adobe Analytics (AppMeasurement) y de Media Analytics (latidos).
 
-   * **Adobe Analytics Start call**
+   * **Llamada de inicio de Adobe Analytics**
 
       | Parámetro | Valor (ejemplo) |
       |---|---|
@@ -70,7 +70,7 @@ Complete y registre las siguientes acciones (en orden):
 
       >[!NOTE]
       >
-      >En las llamadas de inicio de Media Analytics (`s:event:type=start`) es posible que no estén presentes los `mid` valores. Esto es correcto. They may not appear until the Media Analytics Play calls ( ).`s:event:type=play`
+      >En las llamadas de inicio de Media Analytics (`s:event:type=start`) es posible que no estén presentes los `mid` valores. Esto es correcto. Es posible que no aparezcan hasta que las llamadas de reproducción de Media Analytics ( `s:event:type=play`).
 
    * **Llamada de reproducción de Media Analytics**
 
@@ -82,14 +82,14 @@ Complete y registre las siguientes acciones (en orden):
 
 1. **Iniciar el reproductor de medios**
 
-   When the media player starts, the Media SDK sends the key calls to the two servers in the following order:
+   Cuando se inicia el reproductor de medios, el SDK de medios envía las llamadas clave a los dos servidores en el siguiente orden:
 
-   1. Adobe Analytics server - Start call
-   1. Media Analytics server - Start call
-   1. Media Analytics server - "Adobe Analytics Start call requested"
-   The first two calls above contain additional metadata and variables. For call parameters and metadata, see Test call details.[](/help/sdk-implement/validation/test-call-details.md#start-the-media-player)
+   1. Servidor de Adobe Analytics: Iniciar llamada
+   1. Servidor de Media Analytics: Iniciar llamada
+   1. Servidor de Media Analytics: "Se solicitó la llamada de inicio de Adobe Analytics"
+   Las dos primeras llamadas anteriores contienen metadatos y variables adicionales. Para ver los parámetros y metadatos de la llamada, consulte Detalles [de la llamada de prueba.](/help/sdk-implement/validation/test-call-details.md#start-the-media-player)
 
-   The third call above tells the Media Analytics server that the Media SDK requested that the Adobe Analytics Start call () be sent to the Adobe Analytics server.`pev2=ms_s`
+   La tercera llamada anterior indica al servidor de Media Analytics que el SDK de medios solicitó que la llamada de inicio (`pev2=ms_s`) de Adobe Analytics se enviara al servidor de Adobe Analytics.
 
 1. **Ver el salto de publicidad si está disponible**
 
@@ -119,7 +119,7 @@ Complete y registre las siguientes acciones (en orden):
 
    >[!NOTE]
    >
-   >The playhead value should remain constant during the pause.
+   >El valor del cursor de reproducción debe permanecer constante durante la pausa.
 
    Para ver los parámetros y metadatos de la llamada, consulte Detalles [de la llamada de prueba.](/help/sdk-implement/validation/test-call-details.md#ma-ad-pause-call)
 
@@ -140,9 +140,9 @@ Complete y registre las siguientes acciones (en orden):
 
 1. **Buscar/eliminar medios.** Al eliminar el cursor de reproducción de medios, no se envían llamadas de seguimiento especiales; sin embargo, cuando se reanuda la reproducción de medios tras el desplazamiento, el valor del cursor de reproducción debe reflejar la nueva posición dentro del contenido principal.
 
-1. **Reproducir medios (solo VOD).** When media is replayed, a new set of Media Start calls should be sent (as if it were a fresh start).
+1. **Reproducir medios (solo VOD).** Cuando se reproduce el contenido multimedia, se debe enviar un nuevo conjunto de llamadas de inicio de medios (como si fuera un nuevo comienzo).
 
 1. **Ver los siguientes medios en la lista de reproducción.** En el inicio de medios del siguiente medio de una lista de reproducción, se debe enviar un nuevo conjunto de llamadas de inicio de medios.
 
-1. **Cambiar medios o flujo.** When switching live streams, a Media Analytics complete call for the first stream should not be sent. Las llamadas de inicio de medios y las llamadas de reproducción deben comenzar con el nuevo nombre del programa y del flujo, y con los valores de cabeza lectora y duración correctos para el nuevo programa.
+1. **Cambiar medios o flujo.** Al cambiar flujos en directo, no se debe enviar una llamada completa de Media Analytics para el primer flujo. Las llamadas de inicio de medios y las llamadas de reproducción deben comenzar con el nuevo nombre del programa y del flujo, y con los valores de cabeza lectora y duración correctos para el nuevo programa.
 
