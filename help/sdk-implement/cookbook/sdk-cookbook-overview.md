@@ -2,7 +2,7 @@
 title: Información general del libro de cookies SDK
 description: 'Temas específicos del libro de cocina del SDK '
 translation-type: tm+mt
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+source-git-commit: b807835875594a2acfc79ec9cbffce4aadbaac84
 
 ---
 
@@ -17,4 +17,3 @@ Los temas de los libros de cocina que se enumeran a continuación son específic
 * [Solución cuando aparece main:play entre anuncios](/help/sdk-implement/cookbook/fix-ad-play-ad.md)
 * [Reanudación de sesiones inactivas](/help/sdk-implement/cookbook/resuming-inactive.md)
 * [Seguimiento en SceneGraph (Roku)](/help/sdk-implement/cookbook/sdk-track-scenegraph.md)
-* [Diferencias de inicio y SDK](/help/sdk-implement/cookbook/sdk-vs-launch-qoe.md)
