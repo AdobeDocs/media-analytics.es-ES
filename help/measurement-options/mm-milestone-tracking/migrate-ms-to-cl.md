@@ -1,9 +1,9 @@
 ---
-seo-title: Migración de Milestone a vínculo personalizado
 title: Migración de Milestone a vínculo personalizado
+description: null
 uuid: 1c8edde5-0ef1-4bc0-a62d-1747f4907f09
 translation-type: tm+mt
-source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
+source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
 
@@ -83,7 +83,7 @@ En las tablas siguientes se proporcionan las correspondencias entre la solución
 </th>
 <th>Vínculo personalizado
 </th>
-<th>Sintaxis de vínculo personalizado
+<th>Sintaxis de Sintaxis
 </th>
 </tr>
 </thead>
@@ -180,7 +180,7 @@ s.linkTrackEvents = 'event2';
 </th>
 <th>Vínculo personalizado
 </th>
-<th>Sintaxis de vínculo personalizado
+<th>Sintaxis de Sintaxis
 </th>
 </tr>
 </thead>
@@ -271,7 +271,7 @@ s.linkTrackEvents = 'event2';
 </th>
 <th>Vínculo personalizado
 </th>
-<th>Sintaxis de vínculo personalizado
+<th>Sintaxis de Sintaxis
 </th>
 </tr>
 </thead>
@@ -436,7 +436,7 @@ s.Media.
 </th>
 <th>Vínculo personalizado
 </th>
-<th>Sintaxis de vínculo personalizado
+<th>Sintaxis de Sintaxis
 </th>
 </tr>
 </thead>
@@ -528,7 +528,7 @@ s.Media.
 </th>
 <th>Vínculo personalizado
 </th>
-<th>Sintaxis de vínculo personalizado
+<th>Sintaxis de Sintaxis
 </th>
 </tr>
 </thead>
