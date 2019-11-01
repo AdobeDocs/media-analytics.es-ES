@@ -1,10 +1,8 @@
 ---
 title: Información general del libro de cookies SDK
-seo-title: Información general del libro de cookies SDK
 description: 'Temas específicos del libro de cocina del SDK '
-seo-description: 'Temas específicos del libro de cocina del SDK '
 translation-type: tm+mt
-source-git-commit: 9736c939b40ecdf72d3faa6d25cc9f3ee6e14419
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
