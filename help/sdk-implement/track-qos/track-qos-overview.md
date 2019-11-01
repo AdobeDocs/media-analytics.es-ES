@@ -1,9 +1,9 @@
 ---
-seo-title: Información general
 title: Información general
+description: Información general sobre la calidad de seguimiento de la experiencia (QoE, QoS) mediante el SDK de medios.
 uuid: 4d73c47f-d0a4-4228-9040-d6432311c9eb
 translation-type: tm+mt
-source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
@@ -26,7 +26,7 @@ Cree o actualice la instancia del objeto QoS para la reproducción. [Referencia 
 
 La llamada `trackEvent(Media.Heartbeat.Event.BitrateChange);`
 
-## Implemement QOS
+## Implementación de QOS
 
 1. Identify when any of QOS metrics change during media playback, create the `MediaObject` using the QoS information, and update the new QoS information.
 
@@ -34,7 +34,7 @@ La llamada `trackEvent(Media.Heartbeat.Event.BitrateChange);`
 
    >[!TIP]
    >
-   >These variables are only required if you are planning to track QoS.
+   >Estas variables solo son necesarias si planea realizar un seguimiento de QoS.
 
    | Variable | Descripción | Requerido |
    | --- | --- | :---: |
