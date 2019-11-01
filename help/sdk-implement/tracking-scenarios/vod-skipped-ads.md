@@ -1,9 +1,9 @@
 ---
-seo-title: Reproducción de VOD con anuncios omitidos
 title: Reproducción de VOD con anuncios omitidos
+description: Ejemplo de cómo rastrear contenido de VOD en el que el usuario omitió las publicidades mediante el SDK de medios.
 uuid: f3ab3524-abcb-4051-b64e-a1aad6e3dd3f
 translation-type: tm+mt
-source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
