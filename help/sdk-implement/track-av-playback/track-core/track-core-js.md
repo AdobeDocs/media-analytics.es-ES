@@ -1,9 +1,9 @@
 ---
-seo-title: Seguimiento de reproducción principal en JavaScript
 title: Seguimiento de reproducción principal en JavaScript
+description: En este tema se describe cómo implementar el seguimiento principal mediante el SDK de medios en aplicaciones de navegador (JS).
 uuid: 3d6e0ab1-899a-43c3-b632-8276e84345ab
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
@@ -27,18 +27,18 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
    | `streamType` | Tipo de flujo (consulte _Constantes_ StreamType a continuación) | Sí |
    | `mediaType` | Tipo de medio (consulte _las constantes_ de MediaType más abajo) | Sí |
 
-   **`StreamType`constants:**
+   **`StreamType`constantes:**
 
    | Nombre de la constante | Descripción   |
    |---|---|
    | `VOD` | Tipo de emisión de vídeo bajo demanda. |
    | `LIVE` | Tipo de emisión de contenido en directo. |
    | `LINEAR` | Tipo de emisión del contenido lineal. |
-   | `AOD` | Stream type for Audio on Demand. |
+   | `AOD` | Tipo de flujo para audio bajo demanda. |
    | `AUDIOBOOK` | Tipo de flujo para el libro de audio. |
    | `PODCAST` | Tipo de flujo para Podcast. |
 
-   **`MediaType`constants:**
+   **`MediaType`constantes:**
 
    | Nombre de la constante | Descripción |
    |---|---|
@@ -56,7 +56,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 1. **Adjuntar metadatos**
 
-   Optionally attach standard and/or custom metadata objects to the tracking session through context data variables.
+   Si lo desea, adjunte objetos de metadatos estándar o personalizados a la sesión de seguimiento mediante variables de datos de contexto.
 
    * **Metadatos estándar**
 
@@ -129,7 +129,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
    >[!IMPORTANT]
    >
-   >`trackSessionEnd` marks the end of a tracking session. Si la sesión se ha visto por completo correctamente, es decir, el usuario ha visto el contenido hasta el final, asegúrese de invocar `trackComplete` antes que `trackSessionEnd`. Any other `track*` API call is ignored after `trackSessionEnd`, except for `trackSessionStart` for a new tracking session.
+   >`trackSessionEnd` marca el final de una sesión de seguimiento. Si la sesión se ha visto por completo correctamente, es decir, el usuario ha visto el contenido hasta el final, asegúrese de invocar `trackComplete` antes que `trackSessionEnd`. Any other `track*` API call is ignored after `trackSessionEnd`, except for `trackSessionStart` for a new tracking session.
 
 1. **Rastrear todos los escenarios posibles de pausa**
 
