@@ -1,9 +1,9 @@
 ---
-seo-title: Seguimiento de capítulos y segmentos en Android
 title: Seguimiento de capítulos y segmentos en Android
+description: En este tema se describe la implementación del seguimiento de capítulos y segmentos mediante el SDK de medios en Android.
 uuid: 013815d7-4d9e-48f4-a2b9-3b70cb1149d3
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
