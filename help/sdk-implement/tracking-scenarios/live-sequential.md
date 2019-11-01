@@ -1,9 +1,9 @@
 ---
-seo-title: Contenido principal activo con seguimiento secuencial
 title: Contenido principal activo con seguimiento secuencial
+description: Ejemplo de cómo rastrear contenido en directo con seguimiento secuencial mediante el SDK de medios.
 uuid: b03477b6-9be8-4b67-a5a0-4cef3cf262ab
 translation-type: tm+mt
-source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
