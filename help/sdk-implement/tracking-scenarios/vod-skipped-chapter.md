@@ -1,9 +1,9 @@
 ---
-seo-title: Reproducción de VOD con un capítulo omitido
 title: Reproducción de VOD con un capítulo omitido
+description: Ejemplo de cómo rastrear contenido de VOD en el que el usuario omitió un capítulo mediante el SDK de medios.
 uuid: 19fb020c-eb7a-4942-9212-94f4d47195b9
 translation-type: tm+mt
-source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
