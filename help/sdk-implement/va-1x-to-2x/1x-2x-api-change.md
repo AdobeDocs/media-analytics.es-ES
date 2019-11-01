@@ -1,9 +1,9 @@
 ---
-seo-title: Conversión de API 1.x a 2.x
 title: Conversión de API 1.x a 2.x
+description: Este tema incluye vínculos a referencias de API y listas de API de seguimiento opcionales y necesarias para las versiones 1.x y 2.x del SDK de medios.
 uuid: 6e619288-c082-4cb4-8685-e90823dadf4a
 translation-type: tm+mt
-source-git-commit: ee6eebac803410c1c4da1ccb80083025a9c817df
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
