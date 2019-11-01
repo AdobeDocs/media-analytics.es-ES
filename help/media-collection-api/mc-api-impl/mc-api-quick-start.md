@@ -1,9 +1,9 @@
 ---
-seo-title: Inicio rápido
 title: Inicio rápido
+description: null
 uuid: ca20bad4-2c8f-406b-833e-b4883a9aa534
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
 
@@ -17,7 +17,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 1. Recopile los datos estándar de Adobe Analytics y del visitante que debe proporcionar para ejecutar cualquiera de las aplicaciones de Experience Cloud:
 
    * ID de organización para visitantes en Experience Cloud
-   * Visitor Experience Cloud User ID
+   * ID de usuario de Experience Cloud de visitante
    * ID de informes de Analytics
    * URL del servidor de seguimiento de análisis
 
