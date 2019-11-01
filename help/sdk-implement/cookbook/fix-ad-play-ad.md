@@ -1,9 +1,9 @@
 ---
-seo-title: Resolving main play appearing between ads
 title: Resolución de la reproducción principal que aparece entre publicidades
+description: Cómo gestionar llamadas principales:play inesperadas entre anuncios.
 uuid: 228b4812-c23e-40c8-ae2b-e15ca69b0bc2
 translation-type: tm+mt
-source-git-commit: 8c20af925a1043c90b84d7d13021848725e05500
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
@@ -24,12 +24,12 @@ Mientras utiliza Adobe Debug o un husmeador de paquetes de red como Charles, si 
 * Inicio de publicidad: `s:event:type=start` &amp; `s:asset:type=ad`
 * Reproducción de publicidad: `s:event:type=play` &amp; `s:asset:type=ad`
 * Finalización de publicidad: `s:event:type=complete` &amp; `s:asset:type=ad`
-* Main Content Play: `s:event:type=play` &amp; `s:asset:type=main` **(unexpected)**
+* Reproducción de contenido principal: `s:event:type=play` &amp; `s:asset:type=main`(inesperado)**(inesperado)**
 
 * Inicio de publicidad: `s:event:type=start` &amp; `s:asset:type=ad`
 * Reproducción de publicidad: `s:event:type=play` &amp; `s:asset:type=ad`
 * Finalización de publicidad: `s:event:type=complete` &amp; `s:asset:type=ad`
-* Main Content Play:  &amp;  (expected)`s:event:type=play``s:asset:type=main`****
+* Reproducción de contenido principal: `s:event:type=play` &amp; `s:asset:type=main`(se esperaba)**(se esperaba)**
 
 ## RESOLUCIÓN
 
@@ -58,7 +58,7 @@ Administre el espacio desde dentro del reproductor invocando `trackEvent:AdCompl
 
 **En cada recurso de anuncio finalizado:**
 
-* **Do not make a call**
+* **No realice una llamada**
 
    >[!NOTE]
    >
