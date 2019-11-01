@@ -1,18 +1,18 @@
 ---
-seo-title: Detalles de la llamada de prueba
 title: Detalles de la llamada de prueba
+description: En este tema se detallan las llamadas que debe realizar para validar la implementación.
 uuid: d3a0e62f-2fc3-413d-ac56-adbbc9b3e983
 translation-type: tm+mt
-source-git-commit: d694ced982140c1f8020c0be304492aee0495cdc
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
 # Detalles de la llamada de prueba{#test-call-details}
 
-## Start the media player {#start-the-media-player}
+## Iniciar el reproductor de medios {#start-the-media-player}
 
-### Adobe Analytics (AppMeasurement) Start call {#aa-start-call}
+### Llamada de inicio de Adobe Analytics (AppMeasurement) {#aa-start-call}
 
 | Parámetro |  Valor (ejemplo)  |
 |---|---|
@@ -31,7 +31,7 @@ source-git-commit: d694ced982140c1f8020c0be304492aee0495cdc
 * Las variables de datos de contexto adicionales deben estar presentes y contener metadatos. Consulte los detalles de metadatos a continuación.
 * La duración de las emisiones lineales debe establecerse con la mejor estimación para el programa actual.
 
-### Standard metadata in Adobe Analytics (AppMeasurement) Start call {#std-metadata-aa}
+### Metadatos estándar en la llamada de inicio de Adobe Analytics (AppMeasurement) {#std-metadata-aa}
 
 | Parámetro |  Valor (ejemplo)  |
 |---|---|
@@ -54,8 +54,8 @@ source-git-commit: d694ced982140c1f8020c0be304492aee0495cdc
 
 | Parámetro |  Valor (ejemplo)  |
 |---|---|
-| `custom.metadataA` | value |
-| `custom.metadataB` | value |
+| `custom.metadataA` | valor |
+| `custom.metadataB` | valor |
 
 ### Llamada de inicio de Media Analytics (latidos) {#ma-start-call}
 
@@ -77,7 +77,7 @@ source-git-commit: d694ced982140c1f8020c0be304492aee0495cdc
 * Las variables de datos de contexto adicionales deben estar presentes y contener metadatos. Consulte los detalles de metadatos a continuación.
 * La posición del cabezal de reproducción para las emisiones lineales al inicio del vídeo debe establecerse en los segundos transcurridos desde el inicio del programa actual, en lugar de 0.
 
-### Standard metadata in Media Analytics (heartbeats) Start call {#std-metadata-ma}
+### Metadatos estándar en la llamada de inicio de Media Analytics (latidos) {#std-metadata-ma}
 
 | Parámetro |  Valor (ejemplo)  |
 |---|---|
@@ -100,8 +100,8 @@ source-git-commit: d694ced982140c1f8020c0be304492aee0495cdc
 
 | Parámetro |  Valor (ejemplo)  |
 |---|---|
-| `s:meta:custom.metadata` | value |
-| `s:meta:custom.metadata` | value |
+| `s:meta:custom.metadata` | valor |
+| `s:meta:custom.metadata` | valor |
 
 ### Llamada de inicio de Adobe Analytics (latidos) de Media Analytics {#ma-aa-start}
 
@@ -169,8 +169,8 @@ source-git-commit: d694ced982140c1f8020c0be304492aee0495cdc
 
 | Parámetro |  Valor (ejemplo)  |
 |---|---|
-| `custom.metadata` | value |
-| `custom.metadata` | value |
+| `custom.metadata` | valor |
+| `custom.metadata` | valor |
 
 ### Llamada de inicio de anuncio de Media Analytics (latidos) {#ma-ad-start-call}
 
@@ -214,8 +214,8 @@ source-git-commit: d694ced982140c1f8020c0be304492aee0495cdc
 
 | Parámetro |  Valor (ejemplo)  |
 |---|---|
-| `s:meta:custom.metadata` | value |
-| `s:meta:custom.metadata` | value |
+| `s:meta:custom.metadata` | valor |
+| `s:meta:custom.metadata` | valor |
 
 ### Llamada de inicio de anuncio de Adobe Analytics (latidos) de Media Analytics {#ma-aa-ad-start-call}
 
