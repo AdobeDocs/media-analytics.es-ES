@@ -1,9 +1,9 @@
 ---
-seo-title: Seguimiento de anuncios en JavaScript
 title: Seguimiento de anuncios en JavaScript
+description: Implementar el seguimiento de anuncios en aplicaciones de navegador (JS) mediante el SDK de medios.
 uuid: 4d81d29c-c55d-4d48-b505-3260922712ff
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
@@ -72,7 +72,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
                                    <LENGTH>);
    ```
 
-1. Optionally attach standard and/or ad metadata to the media tracking session through context data variables.
+1. Si lo desea, adjunte metadatos estándar o de anuncio a la sesión de seguimiento de medios mediante variables de datos de contexto.
 
    * [Implementación de metadatos de publicidad estándar en JavaScript](/help/sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-js.md)
    * **Metadatos de anuncio personalizados**: para los metadatos personalizados, cree un objeto de variable para las variables de datos personalizadas y rellénelas con los datos del anuncio actual:
