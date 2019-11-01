@@ -1,9 +1,9 @@
 ---
-seo-title: Obtención de datos del informe JSON de espectadores simultáneos
 title: Obtención de datos del informe JSON de espectadores simultáneos
+description: null
 uuid: 9168f114-2459-4951-a06c-57b735d09dc0
 translation-type: tm+mt
-source-git-commit: 82317dfd0e6eaef20890d03c32fe088a7574ead2
+source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
 
@@ -11,7 +11,7 @@ source-git-commit: 82317dfd0e6eaef20890d03c32fe088a7574ead2
 # Obtención de datos del informe JSON de espectadores simultáneos{#get-concurrent-viewers-json-report-data}
 
 Puede obtener datos de informes de visores simultáneos mediante la versión _**_ 1.4 de las API de Analytics:
-* [API de Analytics](https://github.com/AdobeDocs/analytics-1.4-apis)
+* [API de Analytics ](https://github.com/AdobeDocs/analytics-1.4-apis)
 * [Swagger](https://adobedocs.github.io/analytics-1.4-apis/swagger-docs.html#/Report/Report.Get)
 
 1. Filtre los datos con cualquier segmento creado en la interfaz de usuario. Para filtrar por un ID de contenido específico, cree un nuevo segmento.
