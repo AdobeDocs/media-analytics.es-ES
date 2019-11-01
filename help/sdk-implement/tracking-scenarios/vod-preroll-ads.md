@@ -1,11 +1,9 @@
 ---
-seo-title: Reproducción de VOD con anuncios previos a la emisión
 title: Reproducción de VOD con anuncios previos a la emisión
-description: En esta situación, se han insertado anuncios previos a la emisión antes del contenido principal.
-seo-description: En este escenario de Adobe Media Analytics, se han insertado anuncios previos antes del contenido principal.
+description: Ejemplo de cómo rastrear contenido de VOD que contiene anuncios preliminares mediante el SDK de medios.
 uuid: 5d1022a8-88cb-40aa-919c-60dd592a639e
 translation-type: tm+mt
-source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
