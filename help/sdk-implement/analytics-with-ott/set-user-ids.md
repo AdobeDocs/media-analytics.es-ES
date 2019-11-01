@@ -1,9 +1,9 @@
 ---
-seo-title: Establecimiento de ID de usuario
 title: Establecimiento de ID de usuario
+description: API para configurar los ID de usuario, qué servidor como identificador de cliente único.
 uuid: fdd54flash-79cd-4bf8-b17e-4d61d84f6310
 translation-type: tm+mt
-source-git-commit: ee6eebac803410c1c4da1ccb80083025a9c817df
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
@@ -14,7 +14,7 @@ El ID de usuario es un identificador de visitante personalizado y único que la 
 
 Configure y obtenga el ID de usuario único en el SDK de ADBMobile de la siguiente manera:
 
-* **Configure:**
+* **Establezca:**
 
    * **Roku:**
 
