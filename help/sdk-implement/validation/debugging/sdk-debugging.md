@@ -1,16 +1,16 @@
 ---
-seo-title: Depuración de SDK
 title: Depuración de SDK
+description: En este tema se describe el seguimiento/registro disponible en el SDK de medios.
 uuid: a5972d87-c593-4b4f-a56f-dca6e25268e1
 translation-type: tm+mt
-source-git-commit: f2b08663a928e27625a9ff63f783c510f41e7a8c
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
 # Depuración de SDK{#sdk-debugging}
 
-You can enable and disable logging. El SDK de medios proporciona un amplio mecanismo de seguimiento/registro en toda la pila de seguimiento de medios. You can enable or disable logging by setting the `debugLogging` flag on the Config object.
+Puede habilitar y deshabilitar el registro. El SDK de medios proporciona un amplio mecanismo de seguimiento/registro en toda la pila de seguimiento de medios. You can enable or disable logging by setting the `debugLogging` flag on the Config object.
 
 ## Código de muestra para el registro de depuración
 
@@ -71,7 +71,7 @@ Durante el desarrollo de la aplicación, Bloodhound permite ver llamadas de serv
 
 >[!IMPORTANT]
 >
->A partir del 30 de abril de 2017, Adobe Bloodhound se ha puesto al sol. Desde el 1 de mayo de 2017 no se proporcionarán nuevas mejoras ni se ofrecerá más soporte técnico de ingeniería o Adobe Expert Care.
+>Adobe Bloodhound expiró el 30 de abril de 2017. Desde el 1 de mayo de 2017 no se proporcionarán nuevas mejoras ni se ofrecerá más soporte técnico de ingeniería o Adobe Expert Care.
 
 ## Mensajes de registro
 
