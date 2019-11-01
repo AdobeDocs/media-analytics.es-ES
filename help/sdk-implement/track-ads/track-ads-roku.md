@@ -1,9 +1,9 @@
 ---
-seo-title: Seguimiento de anuncios en Roku
 title: Seguimiento de anuncios en Roku
+description: Implementar el seguimiento de anuncios en aplicaciones Roku usando el SDK de medios.
 uuid: b1567265-7043-4efa-a313-aaa91c4bb01
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
@@ -12,7 +12,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 >[!IMPORTANT]
 >
->The following instructions provide guidance for implementation using the 2.x SDKs. Si va a implementar una versión 1.x del SDK, puede descargar las guías del desarrollador de 1.x aquí: [Descargar SDK.](/help/sdk-implement/download-sdks.md)
+>Las siguientes instrucciones proporcionan instrucciones para la implementación mediante los SDK 2.x. Si va a implementar una versión 1.x del SDK, puede descargar las guías del desarrollador de 1.x aquí: [Descargar SDK.](/help/sdk-implement/download-sdks.md)
 
 ## Constantes de seguimiento de anuncio
 
@@ -24,7 +24,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 | `AdComplete` | Constante para rastrear el evento de Finalización de Ad |
 | `AdSkip` | Constante para rastrear el evento Omitir Ad |
 
-## Implementation steps
+## Pasos de implementación
 
 1. Identifique cuándo comienza la zona de salto de anuncio, incluido el anuncio previo a la emisión, y cree un `AdBreakObject` utilizando la información de la pausa publicitaria.
 
