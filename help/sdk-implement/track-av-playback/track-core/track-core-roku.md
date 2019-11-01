@@ -1,9 +1,9 @@
 ---
-seo-title: Seguimiento de reproducción principal en Roku
 title: Seguimiento de reproducción principal en Roku
+description: En este tema se describe cómo implementar el seguimiento principal mediante el SDK de medios en Roku.
 uuid: a8aa7b3c-2d39-44d7-8ebc-b101d130101f
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
@@ -57,7 +57,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
    )
    ```
 
-   o
+   O bien
 
    ```
    mediaInfo = adb_media_init_mediainfo()
@@ -80,7 +80,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
    )
    ```
 
-   o
+   O bien
 
    ```
    mediaInfo = adb_media_init_mediainfo()
