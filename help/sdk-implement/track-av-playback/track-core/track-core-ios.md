@@ -1,9 +1,9 @@
 ---
-seo-title: Seguimiento de reproducción principal en iOS
 title: Seguimiento de reproducción principal en iOS
+description: En este tema se describe cómo implementar el seguimiento principal mediante el SDK de medios en iOS.
 uuid: bdc0e05c-4fe5-430e-aee2-f331bc59ac6b
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
@@ -58,7 +58,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 1. **Adjuntar metadatos de vídeo**
 
-   Optionally attach standard and/or custom video metadata objects to the video tracking session through context data variables.
+   Si lo desea, adjunte objetos de metadatos de vídeo estándar o personalizados a la sesión de seguimiento de vídeo mediante variables de datos de contexto.
 
    * **Metadatos de vídeo estándar**
 
@@ -73,7 +73,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
    * **Metadatos personalizados**
 
-      Create a variable object for the custom variables and populate with the data for this video. Por ejemplo:
+      Cree un objeto variable para las variables personalizadas y rellene con los datos de este vídeo. Por ejemplo:
 
       ```
       NSMutableDictionary *videoMetadata = [[NSMutableDictionary alloc] init]; 
@@ -168,7 +168,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
    >[!TIP]
    >
-   >This may be the same event source that was used in Step 4. Asegúrese de que cada llamada de API a `trackPause()` esté vinculada a continuación con una llamada de API a `trackPlay()` cuando se reanude la reproducción de vídeo.
+   >Puede ser la misma fuente de eventos que se utilizó en el paso 4. Asegúrese de que cada llamada de API a `trackPause()` esté vinculada a continuación con una llamada de API a `trackPlay()` cuando se reanude la reproducción de vídeo.
 
 Consulte lo siguiente para obtener más información sobre el seguimiento de la reproducción principal:
 
