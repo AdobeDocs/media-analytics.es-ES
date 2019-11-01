@@ -1,9 +1,9 @@
 ---
-seo-title: Seguimiento de anuncios en iOS
 title: Seguimiento de anuncios en iOS
+description: Implemente el seguimiento de anuncios en aplicaciones de iOS mediante el SDK de medios.
 uuid: e979e679-cde5-4c30-8f34-867feceac13a
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
@@ -56,7 +56,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 1. Identifique cuándo se inicia el anuncio y cree una instancia de `AdObject` con la información de la publicidad.
 
-   `AdObject` reference:
+   `AdObject` referencia:
 
    | Nombre de variable | Descripción | Requerido |
    | --- | --- | :---: |
