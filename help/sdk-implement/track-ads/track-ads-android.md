@@ -1,9 +1,9 @@
 ---
-seo-title: Seguimiento de anuncios en Android
 title: Seguimiento de anuncios en Android
+description: Implementar el seguimiento de anuncios en aplicaciones de Android mediante el SDK de medios.
 uuid: 4a4249fb-dc39-4947-a14d-a51d972f32d4
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
@@ -12,7 +12,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 >[!IMPORTANT]
 >
->The following instructions provide guidance for implementation using the 2.x SDKs. Si va a implementar una versión 1.x del SDK, puede descargar las guías del desarrollador de 1.x aquí: [Descargar SDK.](/help/sdk-implement/download-sdks.md)
+>Las siguientes instrucciones proporcionan instrucciones para la implementación mediante los SDK 2.x. Si va a implementar una versión 1.x del SDK, puede descargar las guías del desarrollador de 1.x aquí: [Descargar SDK.](/help/sdk-implement/download-sdks.md)
 
 ## Constantes de seguimiento de anuncio
 
@@ -76,7 +76,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
                                    <LENGTH>);
    ```
 
-1. Optionally attach standard and/or ad metadata to the media tracking session through context data variables.
+1. Si lo desea, adjunte metadatos estándar o de anuncio a la sesión de seguimiento de medios mediante variables de datos de contexto.
 
    * [Implementación de metadatos de publicidad estándar en Android](/help/sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-android.md)
    * **Metadatos de anuncio personalizados**: para los metadatos personalizados, cree un objeto de variable para las variables de datos personalizadas y rellénelas con los datos del anuncio actual:
