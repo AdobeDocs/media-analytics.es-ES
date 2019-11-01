@@ -1,9 +1,9 @@
 ---
-seo-title: 'Línea de tiempo 2: El usuario abandona la sesión'
 title: 'Línea de tiempo 2: El usuario abandona la sesión'
+description: null
 uuid: 74b89e8f-ef56-4e0c-b9a8-40739e15b4cf
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
 
@@ -12,7 +12,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ## VOD, anuncios pre-roll, anuncios mid-roll, el usuario deja el contenido antes de terminarlo
 
-The following diagrams illustrate the playhead timeline and the corresponding timeline of a user's actions. The details for each action and its accompanying requests are presented below.
+Los siguientes diagramas ilustran la línea de tiempo del cursor de reproducción y la línea de tiempo correspondiente de las acciones de un usuario. A continuación se presentan los detalles de cada acción y sus solicitudes correspondientes.
 
 
 ![](assets/va_api_content_2.png)
@@ -21,7 +21,7 @@ The following diagrams illustrate the playhead timeline and the corresponding ti
 ![](assets/va_api_actions_2.png)
 
 
-## Action details
+## Detalles de la acción
 
 ### Acción 1 - Iniciar sesión {#Action-1}
 
