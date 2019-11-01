@@ -1,9 +1,9 @@
 ---
-seo-title: Comparación de códigos 1.x a 2.x
 title: Comparación de códigos 1.x a 2.x
+description: En este tema se compara el código de las versiones 1.x y 2.x del SDK de medios.
 uuid: 9f0a1660-2100-446d-ab75-afdf966478b3
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
