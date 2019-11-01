@@ -1,9 +1,9 @@
 ---
-seo-title: Requisitos previos
 title: Requisitos previos
+description: null
 uuid: 4c0b37f3-8615-4cc0-b9c9-eeb029067064
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
 
@@ -26,7 +26,7 @@ Para una implementación de *Media Analytics* , estas son las tareas que debe co
 
    Debe implementar el servicio de identidad de Adobe Experience Platform.
 
-   The Identity Service enables the common identification framework for the Experience Cloud Core Services, solutions, and customer attributes and audiences in the People core service. Funciona asignando ID únicos y persistentes a los visitantes del sitio. Cuando la organización implementa el servicio de ID, este ID le permite identificar al mismo visitante del sitio y sus datos en diferentes soluciones de Experience Cloud.
+   El servicio de identidad habilita el marco de identificación común para los servicios principales de Experience Cloud, las soluciones y los atributos y audiencias del cliente en el servicio principal Personas. Funciona asignando ID únicos y persistentes a los visitantes del sitio. Cuando la organización implementa el servicio de ID, este ID le permite identificar al mismo visitante del sitio y sus datos en diferentes soluciones de Experience Cloud.
 
    ![](assets/mc_id_service_graphic.png)
 
@@ -36,7 +36,7 @@ Para una implementación de *Media Analytics* , estas son las tareas que debe co
 
    >[!IMPORTANT]
    >
-   >To participate in the Adobe Experience Cloud Device Co-op, the Experience Cloud ID service is required.
+   >Para participar en Adobe Experience Cloud Device Co-op, se requiere el servicio Experience Cloud ID.
 
    Si no ha implementado el servicio de ID, ahora es el momento de empezar a pensar en una estrategia de migración. For more information about the importance and role of the ID service, see [Why the Identity Service Should be on Your Radar.](https://blogs.adobe.com/digitalmarketing/analytics/why-new-adobe-marketing-cloud-id-service-should-be-on-your-radar/)
 
