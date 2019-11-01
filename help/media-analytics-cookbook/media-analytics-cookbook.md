@@ -1,10 +1,8 @@
 ---
 title: Cookbook de Media Analytics
-seo-title: Cookbook de Media Analytics
 description: Página de Cookbook de nivel superior, con vínculos generales de MA y vínculos específicos de SDK.
-seo-description: Página de Cookbook de nivel superior, con vínculos generales de MA y vínculos específicos de SDK.
 translation-type: tm+mt
-source-git-commit: fa72eba07a06adbd7c278282bd69d0b336529ac8
+source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
 
