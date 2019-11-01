@@ -1,16 +1,16 @@
 ---
-seo-title: Reanudación de sesiones inactivas
 title: Reanudación de sesiones inactivas
+description: Cómo controlar la reanudación de una sesión inactiva.
 uuid: 3ff1205d-7bbe-4016-9bd7-6e34b7862c4c
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
 # Reanudar sesiones inactivas{#resuming-inactive-sessions}
 
-## Long Pauses
+## Pausas largas
 
 El SDK de medios rastrea automáticamente la duración de la reproducción de medios en uno de los siguientes estados inactivos:
 
