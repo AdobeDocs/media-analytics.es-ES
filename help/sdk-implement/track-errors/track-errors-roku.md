@@ -1,9 +1,9 @@
 ---
-seo-title: Seguimiento de errores en Roku
 title: Seguimiento de errores en Roku
+description: En este tema se describe la implementación del seguimiento de errores mediante el uso del SDK de medios en Roku.
 uuid: 4e0165f9-9169-47ed-9f11-ea8a8778f663
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
