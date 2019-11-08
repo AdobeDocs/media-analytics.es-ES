@@ -1,10 +1,8 @@
 ---
-seo-title: Migración del SDK de medios independiente a Adobe Launch - Web (JS)
 title: Migración del SDK de medios independiente a Adobe Launch - Web (JS)
-seo-description: Instrucciones y ejemplos de código para ayudarle a migrar del SDK de medios a Launch.
 description: Instrucciones y ejemplos de código para ayudarle a migrar del SDK de medios a Launch.
 translation-type: tm+mt
-source-git-commit: b479f6623566b6a6989f625b757a97bba5f6aafd
+source-git-commit: bc896cc403923e2f31be7313ab2ca22c05893c45
 
 ---
 
@@ -18,15 +16,6 @@ source-git-commit: b479f6623566b6a6989f625b757a97bba5f6aafd
 
 ## Configuración
 
-### Iniciar extensión
-
-1. En Inicio de plataforma de experiencia, haga clic en la ficha [!UICONTROL Extensiones] de la propiedad web.
-1. En la ficha [!UICONTROL Catálogo] , ubique la extensión Adobe Media Analytics para audio y vídeo y haga clic en [!UICONTROL Instalar].
-1. En la página de configuración de la extensión, configure los parámetros de seguimiento.
-La extensión Media utilizará los parámetros configurados para el seguimiento.
-
-[Guía del usuario de Launch: Instalar y configurar la extensión de medios](https://docs.adobe.com/content/help/en/launch/using/extensions-ref/adobe-extension/media-analytics-extension/overview.html#install-and-configure-the-ma-extension)
-
 ### SDK de medios independiente
 
 En el SDK de medios independiente, puede configurar la configuración de seguimiento en la aplicación y pasarla al SDK cuando cree el rastreador.
@@ -36,7 +25,7 @@ En el SDK de medios independiente, puede configurar la configuración de seguimi
 var mediaConfig = new MediaHeartbeatConfig();
 mediaConfig.trackingServer = "namespace.hb.omtrdc.net";
 mediaConfig.playerName = "html5-player";
-mediaConfig.channel = "sample-channe";
+mediaConfig.channel = "sample-channel";
 mediaConfig.ovp = "video-provider";
 mediaConfig.appVersion = "v2.0.0"
 mediaConfig.ssl = true;
@@ -45,7 +34,46 @@ mediaConfig.debugLogging = true;
 
 Además de la `MediaHeartbeat` configuración, la página debe configurar y pasar la `AppMeasurement` instancia y la `VisitorAPI` instancia para el seguimiento de medios a fin de que funcionen correctamente.
 
+### Iniciar extensión
+
+1. En Inicio de plataforma de experiencia, haga clic en la ficha [!UICONTROL Extensiones] de la propiedad web.
+1. En la ficha [!UICONTROL Catálogo] , ubique la extensión Adobe Media Analytics para audio y vídeo y haga clic en [!UICONTROL Instalar].
+1. En la página de configuración de la extensión, configure los parámetros de seguimiento.
+La extensión Media utilizará los parámetros configurados para el seguimiento.
+
+   ![](assets/launch_config_js.png)
+
+[Guía del usuario de Launch: Instalar y configurar la extensión de medios](https://docs.adobe.com/content/help/en/launch/using/extensions-ref/adobe-extension/media-analytics-extension/overview.html#install-and-configure-the-ma-extension)
+
 ## Diferencias en la creación del rastreador
+
+### Media SDK
+
+1. Agregue la biblioteca de Media Analytics al proyecto de desarrollo.
+1. Cree un objeto config (`MediaHeartbeatConfig`).
+1. Implementar el protocolo delegado, exponiendo las `getQoSObject()` funciones y `getCurrentPlaybackTime()` .
+1. Crear una instancia de Media Heartbeat (`MediaHeartbeat`).
+
+```
+// Media Heartbeat initialization
+var mediaConfig = new MediaHeartbeatConfig();
+...
+// Configuration settings
+mediaConfig.trackingServer = Configuration.HEARTBEAT.TRACKING_SERVER;
+...
+// Implement Media Delegate (Quality of Service and Playhead)
+var mediaDelegate = new MediaHeartbeatDelegate();
+...
+mediaDelegate.getQoSObject = function() {
+    return MediaHeartbeat.createQoSObject(<bitrate>, <startuptime>, <fps>, <droppedFrames>);
+    ...
+}
+...
+// Create your tracker
+this.mediaHeartbeat = new MediaHeartbeat(mediaDelegate, mediaConfig, appMeasurement);
+```
+
+[SDK de medios - Creación de rastreadores](https://docs.adobe.com/content/help/en/media-analytics/using/sdk-implement/cookbook/sdk-vs-launch-qoe.html)
 
 ### Launch
 
@@ -77,43 +105,14 @@ Pase un objeto delegado a `get-instance` que exponga `getQoSObject()` y `getCurr
 
    Acceda a `MediaHeartbeat` constantes mediante el módulo `media-heartbeat` compartido.
 
-### Media SDK
-
-1. Agregue la biblioteca de Media Analytics al proyecto de desarrollo.
-1. Cree un objeto config (`MediaHeartbeatConfig`).
-1. Implementar el protocolo delegado, exponiendo las `getQoSObject()` funciones y `getCurrentPlaybackTime()` .
-1. Crear una instancia de Media Heartbeat (`MediaHeartbeat`).
-
-```
-// Media Heartbeat initialization
-var mediaConfig = new MediaHeartbeatConfig();
-...
-// Configuration settings
-mediaConfig.trackingServer = Configuration.HEARTBEAT.TRACKING_SERVER;
-...
-// Implement Media Delegate (Quality of Service and Playhead)
-var mediaDelegate = new MediaHeartbeatDelegate();
-...
-mediaDelegate.getQoSObject = function() {
-    return MediaHeartbeat.createQoSObject(<bitrate>, <startuptime>, <fps>, <droppedFrames>);
-    ...
-}
-...
-// Create your tracker
-this.mediaHeartbeat = new MediaHeartbeat(mediaDelegate, mediaConfig, appMeasurement);
-```
-
-[SDK de medios - Creación de rastreadores](https://docs.adobe.com/content/help/en/media-analytics/using/sdk-implement/cookbook/sdk-vs-launch-qoe.html)
-
 ## Documentación relacionada
-
-### Launch
-
-* [Información general sobre el lanzamiento](https://docs.adobe.com/content/help/en/launch/using/overview.html)
-* [Media Analytics Extension](https://docs.adobe.com/content/help/en/launch/using/extensions-ref/adobe-extension/media-analytics-extension/overview.html)
 
 ### Media SDK
 
 * [Configurar JS](/help/sdk-implement/setup/set-up-js.md)
 * [API de JS de Media SDK](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/MediaHeartbeat.html)
 
+### Launch
+
+* [Información general sobre el lanzamiento](https://docs.adobe.com/content/help/en/launch/using/overview.html)
+* [Media Analytics Extension](https://docs.adobe.com/content/help/en/launch/using/extensions-ref/adobe-extension/media-analytics-extension/overview.html)
