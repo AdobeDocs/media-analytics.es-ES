@@ -1,9 +1,10 @@
 ---
-product: Media Analytics
-audience: usuario final
-user-guide-title: Adobe Analytics para audio y vídeo
+audience: end-user
+user-guide-title: Adobe Analytics for Audio and Video
+product: adobe analytics
+sub-product: media analytics
 translation-type: tm+mt
-source-git-commit: 8eb90f83aa81f15caf509fe1e44f6396df7701aa
+source-git-commit: ec98c87e31ce0265698d6da37a50c6d25d7155d3
 
 ---
 
@@ -167,7 +168,7 @@ source-git-commit: 8eb90f83aa81f15caf509fe1e44f6396df7701aa
       + [Línea de tiempo 1: Ver el contenido hasta el final](media-collection-api/mc-api-timelines/mc-api-timeline-1.md)
       + [Línea de tiempo 2: El usuario abandona la sesión](media-collection-api/mc-api-timelines/mc-api-timeline-2.md)
       + [Línea de tiempo 3: Capítulos](media-collection-api/mc-api-timelines/mc-api-timeline-3.md)
-   + [Seguimiento de contenido descargado](media-collection-api/track-downloaded-content.md)
+   + [Rastrear contenido descargado](media-collection-api/track-downloaded-content.md)
 + Guía paso a paso {#media-analytics-cookbook}
    + [Guía paso a paso](media-analytics-cookbook/media-analytics-cookbook.md)
    + [Atribución de flujo de recursos multimedia](media-analytics-cookbook/media-dimensions.md)
