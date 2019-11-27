@@ -2,36 +2,36 @@
 title: Reproducción de VOD con un capítulo
 description: Ejemplo de seguimiento de la reproducción de VOD que contiene un capítulo.
 uuid: 1566a6f5-cf22-42e7-8e1a-6976c6c4e649
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# Reproducción de VOD con un capítulo{#vod-playback-with-one-chapter}
+# Reproducción de VOD con un capítulo {#vod-playback-with-one-chapter}
 
 ## Situación {#scenario}
 
 En esta situación, una parte del contenido de VOD se marca como capítulo.
 
-Si no se indica lo contrario, las llamadas de red en este escenario son iguales a las llamadas que se hacen en el escenario de [Reproducción de VOD sin anuncios. ](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) La llamada de red se realiza al mismo tiempo, pero la carga útil es distinta.
+Si no se indica lo contrario, las llamadas de red en este escenario son iguales a las llamadas que se hacen en el escenario de [Reproducción de VOD sin anuncios](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md). La llamada de red se realiza al mismo tiempo, pero la carga útil es distinta.
 
 | Activador   | Método de Heartbeat   | Llamadas de red   | Notas   |
 |---|---|---|---|
-| User clicks **[!UICONTROL Play]** | `trackSessionStart` | Inicio del contenido de Analytics, inicio del contenido de Heartbeat | Todavía no le hemos indicado a la biblioteca de medición que hay un anuncio pre-roll, por lo que estas llamadas de red siguen siendo exactamente iguales que un solo VOD. |
+| El usuario hace clic en **[!UICONTROL Reproducir]**. | `trackSessionStart` | Inicio del contenido de Analytics, inicio del contenido de Heartbeat | Todavía no le hemos indicado a la biblioteca de medición que hay un anuncio pre-roll, por lo que estas llamadas de red siguen siendo exactamente iguales que un solo VOD. |
 | Se inicia el capítulo. | `trackEvent:ChapterStart` | Inicio de capítulo de Heartbeat |  |
 | Se reproduce el primer fotograma del capítulo. | `trackPlay` | Reproducción del contenido de Heartbeat | Cuando el contenido del capítulo se reproduce antes del contenido principal, los latidos comienzan al inicio del capítulo. |
 | Se reproduce el capítulo. |  | Latidos de capítulo |  |
 | El capítulo finaliza. | `trackEvent:trackChapterComplete` | Finalización del capítulo de Heartbeat | Es el momento en que se llega al final de un capítulo. |
 | Se reproduce el contenido. |  | Latidos de contenido | Esta llamada de red es exactamente la misma que la del escenario de [Reproducción de VOD sin anuncios](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md). |
 | El contenido termina de reproducirse. | `trackComplete` | Finalización de contenido de Heartbeat | Esta llamada de red es exactamente la misma que la del escenario de [Reproducción de VOD sin anuncios](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md). |
-| La sesión finaliza. | `trackSessionEnd` |  | `SessionEnd` significa que se ha llegado al final de una sesión de visualización. Se debe llamar a esta API aunque el usuario no vea los medios hasta la finalización. |
+| La sesión finaliza. | `trackSessionEnd` |  | `SessionEnd` significa que se ha llegado al final de una sesión de visualización. Hay que invocar a esta API aunque el usuario no vea el contenido completo. |
 
 ## Parámetros {#parameters}
 
-Cuando comienza la reproducción del capítulo, se envía una `Heartbeat Chapter Start` llamada. If the beginning of the chapter does not coincide with the 10-second timer, the `Heartbeat Chapter Start` call is delayed by a few seconds, and the call goes to the next 10-second interval.
+Cuando comienza la reproducción del capítulo, se envía una llamada de `Heartbeat Chapter Start`. Si el principio del capítulo no coincide con el temporizador de 10 segundos, la llamada de `Heartbeat Chapter Start` se retrasa unos segundos y pasa al siguiente intervalo de 10 segundos.
 
-When this happens, a `Content Heartbeat` call goes out in the same interval. Puede diferenciar una de otra fijándose en el tipo de evento y el tipo de recurso:
+Cuando esto sucede, se produce una llamada de `Content Heartbeat` en el mismo intervalo. Puede diferenciar una de otra fijándose en el tipo de evento y el tipo de recurso:
 
 ### Inicio de capítulo de Heartbeat
 
