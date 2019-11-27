@@ -1,14 +1,14 @@
 ---
 title: Información general
-description: Seguimiento de errores mediante el SDK de medios.
+description: Seguimiento de errores mediante Media SDK.
 uuid: d71429e6-ef8b-4ea2-8491-ff3cdbf4357f
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# Información general{#overview}
+# Información general {#overview}
 
 >[!IMPORTANT]
 >
@@ -16,11 +16,11 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ## Implementación del seguimiento de errores
 
-1. Rastree los errores del reproductor de medios.
+1. Seguimiento de errores del reproductor de contenidos:
 
    En los eventos de error, invoque `trackError` con la información del error.
 
 >[!NOTE]
 >
->El seguimiento de los errores del reproductor de medios no detendrá la sesión de seguimiento de medios. If the media player error prevents the playback from continuing, make sure that the media tracking session is closed by calling `trackSessionEnd` after calling `trackError`.
+>El seguimiento de los errores del reproductor de contenidos no detendrá la sesión de seguimiento de contenidos. Si el reproductor de contenidos impide que continúe la reproducción, asegúrese de que la sesión de seguimiento de contenidos se cierre llamando a `trackSessionEnd` después de invocar a `trackError`.
 
