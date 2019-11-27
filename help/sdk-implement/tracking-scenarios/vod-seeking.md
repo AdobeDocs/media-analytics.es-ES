@@ -1,14 +1,14 @@
 ---
 title: Reproducción de VOD con llamada a otro punto del contenido principal
-description: Ejemplo de cómo rastrear contenido de VOD en el que se ha producido una búsqueda mediante el SDK de medios.
+description: Ejemplo de cómo rastrear contenido de VOD en el que se ha producido una búsqueda mediante Media SDK.
 uuid: 5c2392f6-9b9c-42f5-833f-77423d1e6222
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# Reproducción de VOD con llamada a otro punto del contenido principal{#vod-playback-with-seeking-in-the-main-content}
+# Reproducción de VOD con llamada a otro punto del contenido principal {#vod-playback-with-seeking-in-the-main-content}
 
 ## Situación {#scenario}
 
@@ -21,7 +21,7 @@ Este es el mismo escenario que el de [Reproducción de VOD sin anuncios](/help/s
 | El usuario hace clic en [!UICONTROL Reproducir]. | `trackSessionStart` | Inicio del contenido de Analytics, inicio del contenido de Heartbeat | La biblioteca de medición no sabe que hay un anuncio previo, por lo que estas llamadas de red son idénticas al escenario de [Reproducción de VOD sin anuncios](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md). |
 | Se reproduce el primer fotograma del contenido. | `trackPlay` | Reproducción del contenido de Heartbeat | Cuando el contenido del capítulo se reproduce antes del contenido principal, los latidos comienzan al inicio del capítulo. |
 | Se reproduce el contenido. |  | Latidos de contenido | Esta llamada de red es exactamente la misma que la del escenario de [Reproducción de VOD sin anuncios](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md). |
-| El usuario inicia una operación de búsqueda en el contenido. | `trackSeekStart` |  | No heartbeats go out till seek is complete, for example, `trackSeekComplete` |
+| El usuario inicia una operación de búsqueda en el contenido. | `trackSeekStart` |  | No se emiten latidos hasta que finaliza la búsqueda, por ejemplo, `trackSeekComplete` |
 | La llamada a otro punto del contenido finaliza. | `trackSeekComplete` |  | Los latidos comienzan a emitirse cuando termina la llamada a otro punto del contenido.  Recuerde: El valor del cabezal de reproducción debe representar la nueva posición del cabezal de reproducción tras la llamada a otro punto del contenido principal. |
 | El contenido termina de reproducirse. | `trackComplete` | Finalización de contenido de Heartbeat | Esta llamada de red es exactamente la misma que la del escenario de [Reproducción de VOD sin anuncios](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md). |
 | Fin de la sesión. | `trackSessionEnd` |  | `SessionEnd` |
