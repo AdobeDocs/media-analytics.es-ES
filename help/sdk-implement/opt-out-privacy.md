@@ -2,29 +2,29 @@
 title: Configuración de privacidad y exclusión
 description: Cómo gestionar la inclusión, la exclusión y la privacidad.
 uuid: 7e60c7bd-8dba-4c7a-9c3c-0c634b815397
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# Configuración de privacidad y exclusión{#opt-out-and-privacy}
+# Configuración de privacidad y exclusión {#opt-out-and-privacy}
 
 ## Inclusión/Exclusión {#opt-out-opt-in}
 
 Puede controlar si se permite el seguimiento de la actividad en un dispositivo determinado:
 
-* **Aplicaciones móviles**: la biblioteca de VA respeta la configuración de privacidad y exclusión de la biblioteca `AdobeMobile`. Para desactivar el seguimiento, debe utilizar la biblioteca `AdobeMobile`. Para obtener más información sobre la configuración de exclusión y privacidad de la biblioteca `AdobeMobile`, consulte [Configuración de privacidad y exclusión](https://docs.adobe.com/content/help/en/mobile-services/android/gdpr-privacy-android/privacy.html).
-* **Aplicaciones JavaScript/de explorador**: la biblioteca de VA respeta la configuración de privacidad y exclusión de `VisitorAPI`. Para desactivar el seguimiento, debe desactivar el servicio API del visitante. For further information on opt­out and privacy, see [Adobe Experience Platform Identity Service.](https://marketing.adobe.com/resources/help/en_US/mcvid/).
-* **Aplicaciones OTT (Chromecast, Roku): los SDK OTT (** por sus siglas en inglés) proporcionan API preparadas para el Reglamento General de Protección de Datos (RGPD) que le permiten establecer indicadores `opt` de estado para la recopilación y transmisión de datos y recuperar identidades almacenadas localmente.
+* **Aplicaciones móviles**: la biblioteca de VA respeta la configuración de privacidad y exclusión de la biblioteca `AdobeMobile`. Para desactivar el seguimiento, debe utilizar la biblioteca `AdobeMobile`. Para obtener más información sobre la configuración de exclusión y privacidad de la biblioteca `AdobeMobile`, consulte [Configuración de privacidad y exclusión](https://docs.adobe.com/content/help/es-ES/mobile-services/android/gdpr-privacy-android/privacy.html).
+* **Aplicaciones JavaScript/de explorador**: la biblioteca de VA respeta la configuración de privacidad y exclusión de `VisitorAPI`. Para desactivar el seguimiento, debe desactivar el servicio API del visitante. Para obtener más información sobre la exclusión y privacidad, consulte [Servicio de identidad de Adobe Experience Platform.](https://marketing.adobe.com/resources/help/es_ES/mcvid/).
+* **Aplicaciones OTT (Chromecast, Roku):** Los SDK de OTT proporcionan API preparadas para el Reglamento general de protección de datos (RGPD) que le permiten establecer indicadores de estado `opt` para la recopilación y la transmisión de datos y sacar identidades almacenadas localmente.
 
    >[!NOTE]
    >
-   >Las llamadas de seguimiento de Media Heartbeat también se desactivan si el estado de privacidad está establecido en la opción de desactivación.
+   >Las llamadas de seguimiento de Heartbeat de contenido también se desactivan si se establece la exclusión como estado de privacidad.
 
    Puede controlar si los datos de Analytics se envían en un dispositivo específico mediante la configuración siguiente:
 
-   * The `privacyDefault` setting in the `ADBMobile.json` config file. Este ajuste controla la configuración inicial que persiste hasta que se cambia en el código.
+   * La configuración `privacyDefault` del archivo de configuración `ADBMobile.json` Este ajuste controla la configuración inicial que persiste hasta que se cambia en el código.
 
    * El método `ADBMobile().setPrivacyStatus()`.
 
@@ -43,7 +43,7 @@ Puede controlar si se permite el seguimiento de la actividad en un dispositivo d
             ```
          >[!IMPORTANT]
          >
-         >Cuando un usuario deja de realizar el seguimiento, todos los datos e ID del dispositivo persistentes se purgarán hasta que el usuario vuelva a participar.
+         >Cuando un usuario se excluye del seguimiento, todos los datos e ID del dispositivo persistente se purgarán hasta que el usuario decida volver a entrar.
 
       * **Reactivar:**
 
@@ -79,7 +79,7 @@ Esta información le ayuda a recuperar ID de usuario almacenados localmente desd
 
 >[!IMPORTANT]
 >
->El método para recuperar todos los identificadores obtiene todas las identidades de usuario conocidas y conservadas por el SDK. Debe invocar este método **antes** de que el usuario salga.
+>Este método de recuperación de todos los ID obtiene todas las identidades de usuarios conocidas y conservadas por el SDK. Debe invocar este método **antes** de que el usuario salga.
 
 Los ID almacenados localmente se devuelven en una cadena JSON, que puede contener:
 
