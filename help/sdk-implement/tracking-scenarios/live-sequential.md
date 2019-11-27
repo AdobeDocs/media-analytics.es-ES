@@ -1,14 +1,14 @@
 ---
 title: Contenido principal activo con seguimiento secuencial
-description: Ejemplo de cómo rastrear contenido en directo con seguimiento secuencial mediante el SDK de medios.
+description: Ejemplo de cómo rastrear contenido en directo con seguimiento secuencial mediante Media SDK.
 uuid: b03477b6-9be8-4b67-a5a0-4cef3cf262ab
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# Contenido principal activo con seguimiento secuencial{#live-main-content-with-sequential-tracking}
+# Contenido principal activo con seguimiento secuencial {#live-main-content-with-sequential-tracking}
 
 ## Situación {#scenario}
 
@@ -16,14 +16,14 @@ En esta situación, solo hay un recurso activo sin anuncios que se reproduce dur
 
 Este es el mismo escenario que el de [Reproducción de VOD sin anuncios](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md), pero una parte del contenido se analiza y se realiza una llamada desde un punto del contenido principal hasta otro punto.
 
-| Activador | Método de Heartbeat |  Llamadas de red |  Notas   |
+| Activador | Método de Heartbeat |  Llamadas de red  |  Notas   |
 | --- | --- | --- | --- |
 | El usuario hace clic en [!UICONTROL Reproducir]. | trackSessionStart | Inicio del contenido de Analytics, Inicio del contenido de Heartbeat | La biblioteca de medición no sabe que hay un anuncio previo, por lo que estas llamadas de red son idénticas al escenario de [Reproducción de VOD sin anuncios](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md). |
 | Se reproduce el primer fotograma del contenido. | trackPlay | Reproducción del contenido de Heartbeat | Cuando el contenido del capítulo se reproduce antes del contenido principal, los latidos comienzan al inicio del capítulo. |
 | Se reproduce el contenido. |  | Latidos de contenido | Esta llamada de red es exactamente la misma que la del escenario de [Reproducción de VOD sin anuncios](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md). |
 | Fin de la sesión 1 (el episodio 1 ha finalizado). | trackComplete / trackSessionEnd | Finalización de contenido de Heartbeat | La finalización significa que se llegó a la sesión 1 del primer episodio y que se vio entera. Antes de iniciar la sesión del siguiente episodio, hay que finalizar esta sesión. |
 | Episodio 2 iniciado (inicio de la sesión 2). | trackSessionStart | Inicio del contenido de Analytics Inicio del contenido de Heartbeat | Esto se debe a que el usuario vio el primer episodio y luego siguió viendo otro |
-| Primer fotograma de medios | trackPlay | Reproducción del contenido de Heartbeat | Este método desencadena el temporizador y a partir de este momento se envían latidos cada 10 segundos mientras dura la reproducción. |
+| 1º fotograma de contenido | trackPlay | Reproducción del contenido de Heartbeat | Este método desencadena el temporizador y a partir de este momento se envían latidos cada 10 segundos mientras dura la reproducción. |
 | Se reproduce el contenido. |  | Latidos de contenido |  |
 | Fin de la sesión (el episodio 2 ha finalizado). | trackComplete / trackSessionEnd | Finalización de contenido de Heartbeat | La finalización significa que se llegó a la sesión 2 del segundo episodio y que se vio entera. Antes de iniciar la sesión del siguiente episodio, hay que finalizar esta sesión. |
 
@@ -38,9 +38,9 @@ Este es el mismo escenario que el de [Reproducción de VOD sin anuncios](/help/s
 | `s:user:mid` | `s:user:mid` | Debe coincidir con el valor medio de la llamada de inicio de contenido de Adobe Analytics |
 | `s:event:type` | `"start"` |  |
 | `s:asset:type` | `"main"` |  |
-| `s:asset:media_id` | &lt;Nombre del medio&gt; |  |
+| `s:asset:media_id` | &lt;Nombre de su contenido&gt; |  |
 | `s:stream:type` | `live` |  |
-| `s:meta:*` | *opcional* | Metadatos personalizados definidos en el medio |
+| `s:meta:*` | *opcional* | Metadatos personalizados definidos en el contenido |
 
 ## Reproducción del contenido de Heartbeat {#heartbeat-content-play}
 
@@ -53,7 +53,7 @@ Es igual que la llamada de inicio de contenido de Heartbeat salvo en el parámet
 
 ## Latidos de contenido {#content-heartbeats}
 
-Durante la reproducción de medios, hay un temporizador que enviará uno o más latidos cada 10 segundos para el contenido principal y cada segundo para los anuncios. Estos latidos contienen datos sobre la reproducción, los anuncios y el almacenamiento en búfer, entre otros. El contenido exacto de cada latido no se detallará en este documento. Lo más importante es que los latidos se desencadenan constantemente mientras dura la reproducción.
+Durante la reproducción de contenidos, hay un temporizador que enviará uno o más latidos cada 10 segundos para el contenido principal y cada segundo para los anuncios. Estos latidos contienen datos sobre la reproducción, los anuncios y el almacenamiento en búfer, entre otros. El contenido exacto de cada latido no se detallará en este documento. Lo más importante es que los latidos se desencadenan constantemente mientras dura la reproducción.
 
 En los latidos de contenido debe fijarse en ciertos detalles:
 
