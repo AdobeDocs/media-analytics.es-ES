@@ -2,19 +2,19 @@
 title: Claves de metadatos de iOS
 description: En este tema se describen las claves de metadatos de iOS disponibles.
 uuid: 8eb90111-c9dd-4ca7-9766-91530a8ae6cf
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# Claves de metadatos de iOS{#ios-metadata-keys}
+# Claves de metadatos de iOS {#ios-metadata-keys}
 
 [Referencia de la API de iOS](https://adobe-marketing-cloud.github.io/media-sdks/reference/ios/)
 
 De `ADBStandardMetadataKeys.h`:
 
-## Teclas de metadatos de vídeo
+## Claves de metadatos de vídeo
 
 | Nombre de la constante | Descripción | Tipo |
 |---|---|---|
