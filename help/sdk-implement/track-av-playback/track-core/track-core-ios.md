@@ -1,21 +1,21 @@
 ---
 title: Seguimiento de reproducción principal en iOS
-description: En este tema se describe cómo implementar el seguimiento principal mediante el SDK de medios en iOS.
+description: En este tema se describe cómo implementar el seguimiento principal mediante Media SDK en iOS.
 uuid: bdc0e05c-4fe5-430e-aee2-f331bc59ac6b
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# Seguimiento de reproducción principal en iOS{#track-core-playback-on-ios}
+# Seguimiento de reproducción principal en iOS {#track-core-playback-on-ios}
 
 >[!IMPORTANT]
->Esta documentación cubre el seguimiento en la versión 2.x del SDK. Si va a implementar una versión 1.x del SDK, puede descargar las guías del desarrollador de 1.x aquí: [Descargar SDK](/help/sdk-implement/download-sdks.md).
+>Esta documentación abarca el seguimiento en la versión 2.x del SDK. Si va a implementar una versión 1.x del SDK, puede descargar las guías del desarrollador de 1.x aquí: [Descargar SDK](/help/sdk-implement/download-sdks.md).
 
 1. **Configuración de seguimiento inicial**
 
-   Identify when the user triggers the intention of playback (the user clicks play and/or autoplay is on) and create a `MediaObject` instance.
+   Identifique el momento en que el usuario desencadena la intención de reproducir (cuando hace clic en reproducir o la reproducción automática está activada) y cree una instancia de `MediaObject`.
 
    [API de createMediaObjectWithName](https://adobe-marketing-cloud.github.io/media-sdks/reference/ios/Classes/ADBMediaHeartbeat.html#//api/name/createMediaObjectWithName:mediaId:length:streamType:mediaType:)
 
@@ -24,10 +24,10 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    | `name` | Nombre del vídeo | Sí |
    | `mediaid` | Identificador único de vídeo | Sí |
    | `length` | Duración del vídeo | Sí |
-   | `streamType` | Tipo de flujo (consulte _Constantes_ StreamType a continuación) | Sí |
-   | `mediaType` | Tipo de medio (consulte _las constantes_ de MediaType más abajo) | Sí |
+   | `streamType` | Tipo de flujo (consulte _Constantes de StreamType_ a continuación) | Sí |
+   | `mediaType` | Tipo de contenido (consulte _Constantes de MediaType_ a continuación) | Sí |
 
-   **`StreamType`constantes:**
+   **Constantes de`StreamType`:**
 
    | Nombre de la constante | Descripción |
    |---|---|
@@ -38,12 +38,12 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    | `ADBMediaHeartbeatStreamTypeAUDIOBOOK` | Tipo de emisión de audiolibro. |
    | `ADBMediaHeartbeatStreamTypePODCAST` | Tipo de emisión de podcast. |
 
-   **`MediaType`constantes:**
+   **Constantes de`MediaType`:**
 
    | Nombre de la constante | Descripción |
    |---|---|
-   | `ADBMediaTypeAudio` | Tipo de medio para emisiones de audio. |
-   | `ADBMediaTypeVideo` | Tipo de medio para emisiones de vídeo. |
+   | `ADBMediaTypeAudio` | Tipo de contenido para emisiones de audio. |
+   | `ADBMediaTypeVideo` | Tipo de contenido para emisiones de vídeo. |
 
    Formato general para crear el objeto `MediaObject`:
 
@@ -58,22 +58,22 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 1. **Adjuntar metadatos de vídeo**
 
-   Si lo desea, adjunte objetos de metadatos de vídeo estándar o personalizados a la sesión de seguimiento de vídeo mediante variables de datos de contexto.
+   Opcionalmente, se pueden adjuntar objetos de metadatos de vídeo estándar o personalizados a la sesión de seguimiento de vídeo mediante el uso de variables de datos de contexto.
 
    * **Metadatos de vídeo estándar**
 
       * [Implementación de metadatos estándar en iOS](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-ios.md)
-      * **Teclas de metadatos de vídeo**
+      * **Claves de metadatos de vídeo**
          [Claves de metadatos de iOS](/help/sdk-implement/track-av-playback/impl-std-metadata/ios-metadata-keys.md)
 
       * Consulte la lista completa de metadatos de vídeo aquí: [Parámetros de audio y vídeo](/help/metrics-and-metadata/audio-video-parameters.md).
       >[!NOTE]
       >
-      >La asociación del objeto de metadatos de vídeo estándar al objeto multimedia es opcional.
+      >No es obligatorio adjuntar el objeto de metadatos de vídeo estándar al objeto de contenidos.
 
    * **Metadatos personalizados**
 
-      Cree un objeto variable para las variables personalizadas y rellene con los datos de este vídeo. Por ejemplo:
+      Cree un objeto de variable para las variables personalizadas y rellénelo con los datos de este vídeo. Por ejemplo:
 
       ```
       NSMutableDictionary *videoMetadata = [[NSMutableDictionary alloc] init]; 
@@ -82,13 +82,13 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
       ```
 
 
-1. **Rastrear la intención de iniciar la reproducción**
+1. **Realice un seguimiento de la intención de iniciar la reproducción**
 
-   Para empezar a realizar el seguimiento de una sesión multimedia, llame `trackSessionStart` a la instancia de Media Heartbeat.
+   Para empezar a realizar el seguimiento de una sesión multimedia, invoque `trackSessionStart` en la instancia de Media Heartbeat.
 
    >[!TIP]
    >
-   >El segundo valor es el nombre del objeto de metadatos de vídeo personalizado que creó en el paso 2.
+   >El segundo valor es el nombre de objeto de metadatos de video personalizado que ha creado en el paso 2.
 
    ```
    - (void)onMainVideoLoaded:(NSNotification *)notification { 
@@ -103,9 +103,9 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
    >[!NOTE]
    >
-   >If you are not using custom video metadata, simply send an empty object for the `data` argument in `trackSessionStart`, as shown in the commented out line in the iOS example above.
+   >Si no utiliza metadatos de vídeo personalizados, envíe un objeto vacío para el argumento `data` en `trackSessionStart`, tal y como se muestra en la línea comentada del ejemplo para iOS anterior.
 
-1. **Rastrear el inicio real de la reproducción**
+1. **Realizar un seguimiento del inicio real de la reproducción**
 
    Identifique el evento del reproductor de vídeo para el principio de la reproducción, cuando se renderice el primer fotograma del vídeo en la pantalla e invoque `trackPlay`:
 
@@ -115,7 +115,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    }
    ```
 
-1. **Rastrear la finalización de la reproducción**
+1. **Realizar un seguimiento de la finalización de la reproducción**
 
    Identifique el evento del reproductor de vídeo para la finalización de la reproducción, cuando el usuario ha visto el contenido hasta el final e invoque `trackComplete`:
 
@@ -125,7 +125,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    }
    ```
 
-1. **Rastrear el final de la sesión**
+1. **Realizar un seguimiento del final de la sesión**
 
    Identifique el evento del reproductor de vídeo para la descarga o cierre de la reproducción, cuando el usuario cierra o completa la descarga e invoque `trackSessionEnd`:
 
@@ -137,9 +137,9 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
    >[!IMPORTANT]
    >
-   >`trackSessionEnd` marca el final de una sesión de seguimiento de video. Si la sesión se ha visto por completo correctamente, es decir, el usuario ha visto el contenido hasta el final, asegúrese de invocar `trackComplete` antes que `trackSessionEnd`. Any other `track*` API call is ignored after `trackSessionEnd`, except for `trackSessionStart` for a new video tracking session.
+   >`trackSessionEnd` marca el final de una sesión de seguimiento de vídeo. Si la sesión se ha visto por completo correctamente, es decir, el usuario ha visto el contenido hasta el final, asegúrese de invocar `trackComplete` antes que `trackSessionEnd`. Las demás llamadas de la API `track*` se pasan por alto después de `trackSessionEnd` (salvo `trackSessionStart` en una nueva sesión de seguimiento de vídeo).
 
-1. **Rastrear todos los escenarios posibles de pausa**
+1. **Rastrear todos los escenarios de pausa posibles**
 
    Identifique el evento del reproductor en el que se pause el vídeo e invoque `trackPause`:
 
@@ -151,7 +151,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
    **Pausar escenarios**
 
-   Identify any scenario in which the Video Player will pause and make sure that `trackPause` is properly called. Las siguientes situaciones requieren que la aplicación invoque `trackPause()`:
+   Identifique cualquier situación en la que se pausará el reproductor y compruebe que se ha invocado `trackPause` correctamente. Las siguientes situaciones requieren que la aplicación invoque `trackPause()`:
 
    * Cuando el usuario pausa explícitamente en la aplicación.
    * Cuando el reproductor se sitúa en el estado En pausa.
@@ -168,7 +168,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
    >[!TIP]
    >
-   >Puede ser la misma fuente de eventos que se utilizó en el paso 4. Asegúrese de que cada llamada de API a `trackPause()` esté vinculada a continuación con una llamada de API a `trackPlay()` cuando se reanude la reproducción de vídeo.
+   >Puede ser el mismo origen de evento empleado en el paso 4. Asegúrese de que cada llamada de API a `trackPause()` esté vinculada a continuación con una llamada de API a `trackPlay()` cuando se reanude la reproducción de vídeo.
 
 Consulte lo siguiente para obtener más información sobre el seguimiento de la reproducción principal:
 
