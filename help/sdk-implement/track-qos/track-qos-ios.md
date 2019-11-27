@@ -1,14 +1,14 @@
 ---
 title: Seguimiento de la calidad de la experiencia en iOS
-description: En este tema se describe la implementación del seguimiento de calidad de experiencia (QoE, QoS) mediante el SDK de medios en iOS.
+description: En este tema se describe la implementación del seguimiento de calidad de experiencia (QoE, QoS) mediante Media SDK en iOS.
 uuid: cae2c142-ed39-4234-a711-765dcabc5415
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# Seguimiento de la calidad de la experiencia en iOS{#track-quality-of-experience-on-ios}
+# Seguimiento de la calidad de la experiencia en iOS {#track-quality-of-experience-on-ios}
 
 >[!IMPORTANT]
 >
@@ -16,7 +16,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ## Implementación de QOS
 
-1. Identify when the bitrate changes during media playback and create the `MediaObject` instance using the QoS information.
+1. Identifique cuándo cambia la velocidad de bits durante la reproducción de contenido y cree la instancia de `MediaObject` con la información de QoS.
 
    Variables QoSObject:
 
@@ -29,7 +29,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
    >[!TIP]
    >
-   >Estas variables solo son necesarias si planea realizar un seguimiento de QoS.
+   >Estas variables solo son necesarias si planea realizar seguimientos de QoS.
 
    Creación del objeto de QoS:
 
@@ -53,5 +53,5 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
    >[!IMPORTANT]
    >
-   >Actualice el objeto QoS y llame al evento de cambio de velocidad de bits en cada cambio de velocidad de bits. Esto proporciona los datos de QoS más precisos.
+   >Actualice el objeto QoS e invoque el evento de cambio de velocidad de bits en cada cambio. Esto proporciona los datos de QoS más precisos.
 
