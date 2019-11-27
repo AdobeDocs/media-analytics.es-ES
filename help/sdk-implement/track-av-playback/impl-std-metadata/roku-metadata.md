@@ -2,15 +2,15 @@
 title: Claves de metadatos de Roku
 description: En este tema se describen las claves de metadatos Roku disponibles.
 uuid: 2ca6bb1d-c545-43d3-9c3e-63b890aa268d
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# Claves de metadatos de Roku{#roku-metadata-keys}
+# Claves de metadatos de Roku {#roku-metadata-keys}
 
-Los metadatos de vídeo, audio y anuncio estándar se pueden definir en objetos de medios e información de publicidad respectivamente. El uso de las claves constantes para los metadatos de vídeo/publicidad establece el diccionario con metadatos estándar en el objeto info antes de invocar las API de seguimiento. Consulte las siguientes tablas para ver la lista completa de constantes de metadatos estándar, con ejemplos.
+Los metadatos de publicidad, audio y vídeo estándar se pueden establecer en objetos de información de publicidad y contenido multimedia, respectivamente. El uso de las claves constantes para los metadatos de vídeo/publicidad establece el diccionario con metadatos estándar en el objeto info antes de invocar las API de seguimiento. Consulte las siguientes tablas para ver la lista completa de constantes de metadatos estándar, con ejemplos.
 
 ## Constantes de metadatos de vídeo {#video-metadata-constants}
 
@@ -70,9 +70,9 @@ Puede utilizar las siguientes constantes para hacer un seguimiento de eventos de
 
 | Constante | Descripción   |
 | --- | --- |
-| `MEDIA_STANDARD_MEDIA_METADATA` | Constante para definir metadatos en el `MediaInfo``trackLoad` |
-| `MEDIA_STANDARD_AD_METADATA` | Constante para establecer los metadatos de la publicidad en la variable `EventData``trackEvent` |
-| `MEDIA_RESUMED` | Constante para enviar un latido de reanudación de vídeo. To resume video tracking of previously stopped content, you need to set the `MEDIA_RESUMED` property on the `mediaInfo` object when you call `mediaTrackLoad`. (`MEDIA_RESUMED` is not an event that you can track using the `mediaTrackEvent` API.) `MEDIA_RESUMED` se debe establecer como true cuando una aplicación desee seguir controlando contenido que un usuario haya pausado pero que ahora desea reanudar la visualización. <br/><br/>Por ejemplo, supongamos que un usuario ve el 30% del contenido y luego cierra la aplicación. Esto hará que finalice la sesión. Later, if the same user returns to the same content, and the application allows that user to resume from the same point where they left off, then the application should set `MEDIA_RESUMED` to "true" while calling the `mediaTrackLoad` API. El resultado es que estas dos sesiones de medios diferentes para el mismo contenido de vídeo se pueden vincular. A continuación se muestra un ejemplo de implementación: <br/><br/> `mediaInfo =` <br/>   `adb_media_init_mediainfo(` <br/>     `"test_media_name",` <br/>     `"test_media_id",`<br/>      `10,` <br/>     `"vod"` <br/> `)` <br/> `mediaInfo[ADBMobile().MEDIA_RESUMED] = true` <br/> `mediaContextData = {}` <br/>  `ADBMobile().mediaTrackLoad(mediaInfo, mediaContextData)` <br/><br/>Esto creará una nueva sesión para el vídeo, pero también hace que el SDK envíe una solicitud de latido con el tipo de evento “resume”, que se puede utilizar en los informes para vincular dos sesiones de medios diferentes. |
+| `MEDIA_STANDARD_MEDIA_METADATA` | Constante para definir metadatos en `MediaInfo` `trackLoad` |
+| `MEDIA_STANDARD_AD_METADATA` | Constante para establecer los metadatos de la publicidad en `EventData``trackEvent` |
+| `MEDIA_RESUMED` | Constante para enviar un latido de reanudación de vídeo. Para reanudar el seguimiento de vídeos de contenido pausado, es necesario establecer la propiedad `MEDIA_RESUMED` en el objeto `mediaInfo` cuando se invoca `mediaTrackLoad`. (`MEDIA_RESUMED` no es un evento que se pueda rastrear con la API `mediaTrackEvent`). `MEDIA_RESUMED` se debe establecer como true cuando una aplicación desee seguir controlando contenido que un usuario haya pausado pero que ahora desea reanudar la visualización. <br/><br/>Por ejemplo, supongamos que un usuario ve el 30% del contenido y luego cierra la aplicación. Esto hará que finalice la sesión. Posteriormente, si el mismo usuario vuelve al contenido y la aplicación permite que lo reanude desde el mismo punto en el que lo dejó, la aplicación debería establecer `MEDIA_RESUMED` como “true” mientras invoca la API de `mediaTrackLoad`. El resultado es que estas dos sesiones de contenidos diferentes para el mismo contenido de vídeo se pueden vincular. A continuación se muestra un ejemplo de implementación: <br/><br/> `mediaInfo =` <br/>   `adb_media_init_mediainfo(` <br/>     `"test_media_name",` <br/>     `"test_media_id",`<br/>      `10,` <br/>     `"vod"` <br/> `)` <br/> `mediaInfo[ADBMobile().MEDIA_RESUMED] = true` <br/> `mediaContextData = {}` <br/>  `ADBMobile().mediaTrackLoad(mediaInfo, mediaContextData)` <br/><br/>Esto creará una nueva sesión para el vídeo, pero también hace que el SDK envíe una solicitud de latido con el tipo de evento “continuar”, que se puede utilizar en los informes para vincular dos sesiones de contenidos diferentes. |
 
 ### Constantes de tipo de contenido
 
