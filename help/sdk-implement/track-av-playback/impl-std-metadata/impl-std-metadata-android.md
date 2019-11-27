@@ -2,13 +2,13 @@
 title: Implementación de metadatos estándar en Android
 description: Describe la configuración de metadatos de anuncios y vídeos estándar para enviarlos con llamadas de seguimiento en Android.
 uuid: c48b4190-b062-4c4e-9c40-8dde4598a50e
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# Implementación de metadatos estándar en Android{#implement-standard-metadata-on-android}
+# Implementación de metadatos estándar en Android {#implement-standard-metadata-on-android}
 
 ## Constantes de metadatos estándar
 
@@ -18,11 +18,11 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ## Referencia de la API de claves de metadatos
 
-* Cree un conjunto `HashMap` de pares de clave valor de metadatos estándar.
-   * [Teclas de metadatos de vídeo](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/com/adobe/primetime/va/simple/MediaHeartbeat.VideoMetadataKeys.html)
+* Cree un `HashMap` de pares de clave valor de metadatos estándar.
+   * [Claves de metadatos de vídeo](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/com/adobe/primetime/va/simple/MediaHeartbeat.VideoMetadataKeys.html)
    * [Claves de metadatos de audio](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/com/adobe/primetime/va/simple/MediaHeartbeat.AudioMetadataKeys.html)
 * Establezca el `HashMap` de metadatos estándar en `MediaInfo` mediante el uso de la constante de metadatos estándar para los metadatos.
-* Provide this `MediaInfo` object while invoking the `trackSessionStart()` API.
+* Proporcione este objeto de `MediaInfo` e invoque la API `trackSessionStart()`.
 
 ## Implementaciones de muestra
 
