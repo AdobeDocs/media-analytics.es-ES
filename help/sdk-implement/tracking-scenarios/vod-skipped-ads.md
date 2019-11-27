@@ -1,14 +1,14 @@
 ---
 title: Reproducción de VOD con anuncios omitidos
-description: Ejemplo de cómo rastrear contenido de VOD en el que el usuario omitió las publicidades mediante el SDK de medios.
+description: Ejemplo de cómo rastrear contenido de VOD en el que el usuario omitió las publicidades mediante Media SDK.
 uuid: f3ab3524-abcb-4051-b64e-a1aad6e3dd3f
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# Reproducción de VOD con anuncios omitidos{#vod-playback-with-skipped-ads}
+# Reproducción de VOD con anuncios omitidos {#vod-playback-with-skipped-ads}
 
 ## Situación {#scenario}
 
@@ -16,7 +16,7 @@ En esta situación, se reproduce contenido de VOD y se omite un anuncio.
 
 ### Un VOD con un anuncio pre-roll omitido
 
-This is the same scenario as [VOD playback with pre-roll ads](/help/sdk-implement/tracking-scenarios/vod-preroll-ads.md), except the application has a provision to let the user skip the ad, on the click of a skip button perhaps.
+Esta situación es igual la de [Reproducción de VOD con anuncio previo a la emisión](/help/sdk-implement/tracking-scenarios/vod-preroll-ads.md) salvo por el hecho de que la aplicación permite al usuario omitir el anuncio (por ejemplo, haciendo clic en un botón de omitir).
 
 | Activador   | Método de Heartbeat  | Llamadas de red   | Notas   |
 | --- | --- | --- | --- |
@@ -25,7 +25,7 @@ This is the same scenario as [VOD playback with pre-roll ads](/help/sdk-implemen
 | Se reproduce el primer fotograma del anuncio. | `trackPlay()` | Reproducción de anuncio de Heartbeat | Cuando se reproduce el contenido del anuncio antes del contenido principal, los latidos empiezan cuando comienza a reproducirse el anuncio. |
 | Se reproduce el anuncio. |  | Latidos de anuncio |  |
 | Se omite el anuncio. | `trackEvent:trackAdSkip` |  | No hay una llamada de red de finalización de publicidad. |
-| Se reproduce el contenido. |  | Latidos de contenido | These network calls are exactly the same as the [VOD playback with no ads](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) scenario. |
+| Se reproduce el contenido. |  | Latidos de contenido | Estas llamadas de red son exactamente las mismas que la del caso de [Reproducción de VOD sin anuncios](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md). |
 | El contenido termina de reproducirse. | `trackComplete()` | Finalización de contenido de Heartbeat | Esta llamada de red es exactamente la misma que la del escenario de [Reproducción de VOD sin anuncios](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md). |
 | La sesión finaliza. | `trackSessionEnd()` |  | `SessionEnd` |
 
