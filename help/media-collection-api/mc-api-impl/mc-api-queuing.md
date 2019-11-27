@@ -2,17 +2,17 @@
 title: Poner eventos en cola cuando la respuesta de las sesiones es lenta
 description: null
 uuid: 39ea59d9-89d3-4087-a806-48a43ecf0c98
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
 
 
-# Poner eventos en cola cuando la respuesta de las sesiones es lenta{#queueing-events-when-sessions-response-is-slow}
+# Poner eventos en cola cuando la respuesta de las sesiones es lenta {#queueing-events-when-sessions-response-is-slow}
 
-La API de Media Collection es RESTful: es decir, el usuario realiza una solicitud HTTP y espera la respuesta. This is an important point only for when you make a [Sessions request](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) to obtain a Session ID at the beginning of video playback. Esto es importante porque el ID de sesión es necesario para todas las llamadas de seguimiento subsiguientes.
+La API de Media Collection es RESTful: es decir, el usuario realiza una solicitud HTTP y espera la respuesta. Esto solo es importante para cuando se realiza una [Solicitud de sesiones](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) para obtener un ID de sesión al principio de la reproducción de vídeo. Esto es importante porque el ID de sesión es necesario para todas las llamadas de seguimiento subsiguientes.
 
-It is possible that your player may fire events _before the Sessions response returns_ (with the Session ID parameter) from the backend. If this occurs, your app must queue any tracking events that arrive between the [Sessions request](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) and its response. When the Sessions response arrives, you should first process any queued [events](/help/media-collection-api/mc-api-ref/mc-api-events-req.md), then you can start processing _live_ events with the [Events](/help/media-collection-api/mc-api-ref/mc-api-events-req.md) calls.
+El reproductor puede desencadenar eventos _antes de recibir la respuesta de sesión_ (con el parámetro ID de sesión) del backend. En este caso, la aplicación debe poner en cola los eventos de seguimiento que lleguen entre la [Solicitud de sesiones](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) y su respuesta. Cuando llega la respuesta de sesiones, primero debe procesar los [eventos](/help/media-collection-api/mc-api-ref/mc-api-events-req.md) en cola y, a continuación, iniciar el procesamiento de eventos _en directo_ con las llamadas de [eventos](/help/media-collection-api/mc-api-ref/mc-api-events-req.md).
 
 >[!NOTE]
 >
