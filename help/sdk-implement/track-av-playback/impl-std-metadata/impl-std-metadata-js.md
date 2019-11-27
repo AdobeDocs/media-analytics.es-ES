@@ -2,13 +2,13 @@
 title: Implementación de metadatos estándar en JavaScript
 description: Describe la configuración de metadatos de anuncios y vídeos estándar para enviarlos con llamadas de seguimiento en aplicaciones de navegador (JS).
 uuid: 523d29e3-0a62-40d7-ac74-da645024cdcb
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# Implementación de metadatos estándar en JavaScript{#implement-standard-metadata-on-javascript}
+# Implementación de metadatos estándar en JavaScript {#implement-standard-metadata-on-javascript}
 
 ## Constante de metadatos
 
