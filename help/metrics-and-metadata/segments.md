@@ -2,17 +2,17 @@
 title: Segmentos
 description: null
 uuid: 61906b8c-3362-4463-82be-fe0e741a5eb3
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
 
 
-# Segmentos{#segments}
+# Segmentos {#segments}
 
 >[!NOTE]
 >
->These reporting segments associated with Media Stream Type were introduced on 9/13/18 along with the `streamType` parameter.
+>Los siguientes segmentos de informes asociados al tipo de emisión de contenido se introdujeron el 13 de septiembre de 2018 junto con el parámetro `streamType`.
 
 | Segmento | Descripción | Regla |
 |---|---|---|
