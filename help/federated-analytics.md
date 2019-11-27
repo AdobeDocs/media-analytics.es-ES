@@ -1,17 +1,16 @@
 ---
 title: Federated Analytics
-description: 'El servicio Federated Analytics proporciona un sistema para compartir datos (audio y vídeo) de Adobe Media Analytics entre dos socios. '
+description: 'El servicio de Federated Analytics ofrece un sistema para compartir datos de Adobe Media Analytics (audio y vídeo) entre dos socios. '
 uuid: a82ace81-c2f6-4799-9a62-4c6a737a7dab
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# Federated Analytics{#federated-analytics}
+# Federated Analytics {#federated-analytics}
 
-El servicio Federated Analytics proporciona un sistema para compartir datos (audio y vídeo) de Adobe Media Analytics entre dos socios.
-Los datos estandarizados de medición creados por Media Analytics son la seña de identidad de Federated Analytics, y permiten que los datos aparezcan en un único informe de múltiples fuentes.
+El servicio de Federated Analytics ofrece un sistema para compartir datos de Adobe Media Analytics (audio y vídeo) entre dos socios. Los datos estandarizados de medición creados por Media Analytics son la seña de identidad de Federated Analytics, y permiten que los datos aparezcan en un único informe de múltiples fuentes.
 A través de las reglas y lógica que rigen Federated Analytics, los datos se controlan y se personalizan para satisfacer las necesidades de cada sociedad.
 Federated Analytics hace que la medición de audio y vídeo sea más eficaz, ágil y procesable.
 
@@ -34,19 +33,19 @@ Federated Analytics hace que la medición de audio y vídeo sea más eficaz, ág
 
 ## Requisitos {#requirements}
 
-* **Contrato de emisiones de medios:** el receptor y el remitente deben tener contratado Adobe Analytics para emisiones de medios para tener acceso a los datos de audio y vídeo en Adobe Analytics. Póngase en contacto con su equipo de cuentas para obtener más detalles.
+* **Contrato de emisiones de contenidos:** el receptor y el remitente deben tener contratado Adobe Analytics para emisiones de contenidos para tener acceso a los datos de audio y vídeo en Adobe Analytics. Póngase en contacto con su equipo de cuentas para obtener más detalles.
 * **Apéndice federado:** cada remitente y receptor deben tener un apéndice firmado con Adobe antes de enviar o recibir datos. Es necesario un apéndice por cliente, no por sociedad. Póngase en contacto con su equipo de cuentas para obtener más detalles.
-* **Implementación de Media Analytics:** el remitente debe tener Media Analytics en todos los reproductores que formarán parte del conjunto de datos federados. Solo se pueden federar los datos de Media Analytics. See documentation: [Measuring audio and video in Adobe Analytics](/help/media-overview.md)
+* **Implementación de Media Analytics:** el remitente debe tener Media Analytics en todos los reproductores que formarán parte del conjunto de datos federados. Solo se pueden federar los datos de Media Analytics. Ver documentación: [Medición de audio y vídeo en Adobe Analytics](/help/media-overview.md)
 
 * **Contrato de consultoría de Adobe:** para la configuración inicial de reglas federadas entre el receptor y el remitente, es importante trabajar con los servicios de consultoría para revisar los datos y crear el acuerdo de uso compartido de datos.
 
-## Descargar el formulario Federated Analytics
+## Descargue el formulario de Federated Analytics
 
-Descargue la versión actual de este formulario aquí: Acuerdo de reglas [de federación](https://github.com/AdobeDocs/media-analytics.en/blob/master/help/federated-analytics-form.pdf)
+Descargue la versión actual de este formulario aquí: [Acuerdo de reglas de federación](https://github.com/AdobeDocs/media-analytics.en/blob/master/help/federated-analytics-form.pdf)
 
 ## Proceso {#process}
 
-1. El remitente y el receptor colaboran para completar el formulario del acuerdo de reglas de federación. El formulario del Acuerdo de reglas federadas contiene campos especiales para nuestro equipo de ingeniería y SOLAMENTE se deben editar con Adobe Acrobat. [Descargue Acrobat de forma gratuita.](https://get.adobe.com/reader/)
+1. El remitente y el receptor colaboran para completar el formulario del acuerdo de reglas de federación. El formulario de acuerdo de reglas de federación contiene campos especiales para el equipo de ingeniería y SOLO debe editarse mediante el uso de Adobe Acrobat. [Descargue Acrobat de forma gratuita.](https://get.adobe.com/es/reader/)
 1. Los servicios de consultoría proporcionan un archivo de datos de muestra al receptor con datos reales de reproductores del remitente para confirmar que se definen las reglas adecuadas de uso compartido de datos, siempre que haya archivos de datos disponibles.
 1. El remitente y el receptor garantizan que el acuerdo de uso compartido de datos cumplirá todos los requisitos contractuales entre las dos partes.
 1. Los servicios de consultoría enviarán el formulario completado a Adobe Engineering para definir las reglas de uso compartido de datos.
