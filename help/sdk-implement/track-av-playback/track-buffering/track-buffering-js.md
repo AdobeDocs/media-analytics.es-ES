@@ -2,13 +2,13 @@
 title: Seguimiento del almacenamiento en búfer en JavaScript
 description: Describe el seguimiento de eventos de almacenamiento en búfer en aplicaciones de navegador (JS).
 uuid: c380cf2c-7729-4d4a-a4da-581bd94a5896
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# Seguimiento del almacenamiento en búfer en JavaScript{#track-buffering-on-javascript}
+# Seguimiento del almacenamiento en búfer en JavaScript {#track-buffering-on-javascript}
 
 >[!IMPORTANT]
 >
