@@ -1,14 +1,14 @@
 ---
 title: Seguimiento de la calidad de la experiencia en Roku
-description: En este tema se describe la implementación del seguimiento de calidad de experiencia (QoE, QoS) mediante el SDK de medios en Roku.
+description: En este tema se describe la implementación del seguimiento de calidad de experiencia (QoE, QoS) mediante Media SDK en Roku.
 uuid: a8b242ab-da3c-4297-9eef-f0b9684ef56a
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# Seguimiento de la calidad de la experiencia en Roku{#track-quality-of-experience-on-roku}
+# Seguimiento de la calidad de la experiencia en Roku {#track-quality-of-experience-on-roku}
 
 >[!IMPORTANT]
 >
@@ -16,7 +16,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ## Implementación de QOS
 
-1. Identifique cuándo cambia la velocidad de bits durante la reproducción de medios y utilice la `mediaUpdateQoS` API para actualizar la información de QoS en el SDK de medios.
+1. Identifique cuándo cambia la velocidad de bits durante la reproducción de contenido y utilice la API de `mediaUpdateQoS` para actualizar la información de QoS en Media SDK.
 
    Variables QoSObject:
 
@@ -55,7 +55,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
     ```
     -->
 
-1. Cuando la reproducción cambia la velocidad de bits, llame `trackEvent(BitrateChange)` para notificar al SDK de medios que la velocidad de bits ha cambiado.
+1. Cuando la reproducción cambia la velocidad de bits, llame a `trackEvent(BitrateChange)` para notificar a Media SDK de que la velocidad de bits ha cambiado.
 
    ```
    ADBMobile().mediaTrackEvent(ADBMobile().MEDIA_BITRATE_CHANGE)
@@ -76,9 +76,9 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
     >Update the QoS object and call the bitrate change event on every bitrate change. This provides the most accurate QoS data.
     -->
 
-1. When the media player encounters an error, and the error event is available to the player API, use `trackError()` to capture the error information. (Consulte [Información general](/help/sdk-implement/track-errors/track-errors-overview.md).)
+1. Cuando el reproductor de contenido encuentre un error, y el evento de error esté disponible con la API del reproductor, utilice el evento `trackError()` para capturar la información de error. (Consulte [Información general](/help/sdk-implement/track-errors/track-errors-overview.md).)
 
    >[!TIP]
    >
-   >El seguimiento de los errores del reproductor de medios no detendrá la sesión de seguimiento de medios. If the media player error prevents the playback from continuing, make sure that the media tracking session is closed by calling `trackSessionEnd()` after calling `trackError()`.
+   >El seguimiento de los errores del reproductor de contenidos no detendrá la sesión de seguimiento de contenidos. Si el reproductor de contenidos impide que continúe la reproducción, asegúrese de que la sesión de seguimiento de contenidos se cierre llamando a `trackSessionEnd()` después de invocar a `trackError()`.
 
