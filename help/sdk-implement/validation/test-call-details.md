@@ -2,15 +2,15 @@
 title: Detalles de la llamada de prueba
 description: En este tema se detallan las llamadas que debe realizar para validar la implementación.
 uuid: d3a0e62f-2fc3-413d-ac56-adbbc9b3e983
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# Detalles de la llamada de prueba{#test-call-details}
+# Detalles de la llamada de prueba {#test-call-details}
 
-## Iniciar el reproductor de medios {#start-the-media-player}
+## Iniciar el reproductor de contenidos {#start-the-media-player}
 
 ### Llamada de inicio de Adobe Analytics (AppMeasurement) {#aa-start-call}
 
@@ -118,12 +118,12 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 **Notas:**
 
-* Esta llamada indica que el SDK de medios ha solicitado que se envíe una llamada de Adobe Analytics `pev2=ms_s` al servidor de Adobe Analytics (AppMeasurement).
+* Esta llamada indica que Media SDK ha solicitado que se envíe una llamada `pev2=ms_s` de Adobe Analytics al servidor de Adobe Analytics (AppMeasurement).
 * La llamada no puede contener metadatos personalizados.
 
 ## Visualización de la reproducción de anuncio {#view-ad-playback}
 
-### Llamada de inicio de publicidad de Adobe Analytics (AppMeasurement) {#aa-ad-start-call}
+### Llamada de inicio de anucio de Adobe Analytics (AppMeasurement) {#aa-ad-start-call}
 
 | Parámetro |  Valor (ejemplo)  |
 |---|---|
@@ -146,7 +146,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 * Las variables de datos de contexto adicionales deben estar presentes y contener metadatos. Consulte los detalles de metadatos a continuación.
 * La duración del anuncio debe establecerse en -1 si no está disponible al inicio del anuncio.
 
-### Standard metadata in Adobe Analytics (AppMeasurement) Ad Start call {#std-metadata-aa-ad-start}
+### Metadatos estándar en la llamada de inicio de anuncio de Adobe Analytics (AppMeasurement) {#std-metadata-aa-ad-start}
 
 | Parámetro |  Valor (ejemplo)  |
 |---|---|
@@ -191,7 +191,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 * Las variables de datos de contexto adicionales deben estar presentes y contener metadatos. Consulte los detalles de metadatos a continuación.
 * La duración del anuncio debe establecerse en -1 si no está disponible al inicio del anuncio.
 
-### Standard metadata in Media Analytics (heartbeats) Ad Start call {#std-metadata-ma-ad-start}
+### Metadatos estándar en la llamada de inicio de anuncio de Media Analytics (latidos) {#std-metadata-ma-ad-start}
 
 | Parámetro |  Valor (ejemplo)  |
 |---|---|
@@ -241,7 +241,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 | `s:stream:type` | vod |
 | _**`s:asset:type`**_ | _**ad**_ |
 
-### Llamada de pausa publicitaria de Media Analytics (latidos) {#ma-ad-pause-call}
+### Llamada de pausa de anuncio de Media Analytics (latidos) {#ma-ad-pause-call}
 
 | Parámetro |  Valor (ejemplo)  |
 |---|---|
@@ -253,7 +253,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 | `s:stream:type` | vod |
 | _**`s:asset:type`**_ | _**ad**_ |
 
-### Llamada de finalización de publicidad de Adobe Analytics (latidos) de Media Analytics {#ma-aa-ad-complete-call}
+### Llamada de finalización de anuncio de Adobe Analytics (latidos) de Media Analytics {#ma-aa-ad-complete-call}
 
 | Parámetro |  Valor (ejemplo)  |
 |---|---|
@@ -282,7 +282,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 **Notas:**
 
-* La posición del cursor de reproducción debe incrementarse en 10 segundos con cada llamada de reproducción.
+* La posición del cabezal de reproducción debe aumentarse en 10 segundos con cada llamada de reproducción.
 * El valor `l:event:duration` representa el número de milisegundos desde la última llamada de seguimiento y debe ser aproximadamente el mismo valor en cada llamada de 10 segundos.
 
 ## Pausar contenido principal {#pause-main-content}
