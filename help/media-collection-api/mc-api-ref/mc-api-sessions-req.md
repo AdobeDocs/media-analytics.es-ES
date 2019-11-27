@@ -2,13 +2,13 @@
 title: Solicitud de sesiones
 description: null
 uuid: 9609192d-4f7f-4fb5-844f-ea89d47c4e30
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
 
 
-# Solicitud de sesiones{#sessions-request}
+# Solicitud de sesiones {#sessions-request}
 
 ```
 POST 
@@ -62,7 +62,7 @@ El cuerpo de la solicitud debe ser JSON y tener la misma estructura que este cue
    * `ts`: marca de tiempo; debe estar en milisegundos.
 * `eventType` (Obligatorio)
 
-   **Valor válido:**`sessionStart`
+   **Valor válido:** `sessionStart`
 * `params` (Obligatorio)
 * `customMetadata` (Opcional)
 * `qoeData` (Opcional)
@@ -84,7 +84,7 @@ Age: 0
 Via: 1.1 wsg.sanjose08
 ```
 
-`Location:` header: La parte `/api/v1/` proporciona la versión de API. La parte posterior `[…]sessions/` es el ID de sesión.
+Encabezado `Location:`: La parte `/api/v1/` proporciona la versión de API. La parte posterior a `[…]sessions/` es el ID de sesión.
 
 ## Códigos de respuesta
 
