@@ -1,43 +1,43 @@
 ---
 title: Información general de seguimiento
-description: 'En este tema se describe el seguimiento de la reproducción principal, incluido el seguimiento de la carga de medios, el inicio de medios, la pausa de medios y la finalización de medios. '
+description: 'Este tema describe el seguimiento de la reproducción principal, incluido el seguimiento de la carga, el inicio, la pausa y la finalización de los contenidos. '
 uuid: 7b8e2f76-bc4e-4721-8933-3e4453b01788
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# Información general de seguimiento{#tracking-overview}
+# Información general de seguimiento {#tracking-overview}
 
 >[!IMPORTANT]
 >
->Esta documentación cubre el seguimiento en la versión 2.x del SDK. Si va a implementar una versión 1.x del SDK, puede descargar las guías del desarrollador de 1.x aquí: [Descargar SDK.](/help/sdk-implement/download-sdks.md)
+>Esta documentación abarca el seguimiento en la versión 2.x del SDK. Si va a implementar una versión 1.x del SDK, puede descargar las guías del desarrollador de 1.x aquí: [Descargar SDK.](/help/sdk-implement/download-sdks.md)
 
 ## Eventos del reproductor
 
-El seguimiento de la reproducción principal incluye el seguimiento de la carga, el inicio, la pausa y la finalización de los medios. Aunque no es obligatorio, el seguimiento del almacenamiento en búfer y de la llamada a otro punto del contenido también son componentes básicos utilizados para el seguimiento de la reproducción de contenido. En la API del reproductor de medios, identifique los eventos del reproductor correspondientes a las llamadas de seguimiento del Media SDK, y codifique los controladores de eventos para invocar las API de seguimiento y rellenar las variables necesarias y opcionales.
+El seguimiento de la reproducción principal incluye el seguimiento de la carga, el inicio, la pausa y la finalización de los contenidos. Aunque no es obligatorio, el seguimiento del almacenamiento en búfer y de la llamada a otro punto del contenido también son componentes básicos utilizados para el seguimiento de la reproducción de contenido. En la API del reproductor de contenidos, identifique los eventos del reproductor correspondientes a las llamadas de seguimiento del Media SDK, y codifique los controladores de eventos para invocar las API de seguimiento y rellenar las variables necesarias y opcionales.
 
-### Carga del medio
+### Carga del contenido
 
-* Crear el objeto de medio.
+* Crear el objeto de contenido.
 * Rellenar los metadatos.
-* Llamar `trackSessionStart`; Por ejemplo: `trackSessionStart(mediaObject, contextData)`
+* Invocar `trackSessionStart`; Por ejemplo: `trackSessionStart(mediaObject, contextData)`
 
-### Inicio del medio
+### Inicio del contenido
 
 * La llamada `trackPlay`
 
 ### Pausa/Reanudación
 
 * La llamada `trackPause`
-* Call `trackPlay`   _when playback resumes_
+* Invocar `trackPlay`   _cuando se reanude la reproducción_
 
-### Finalización del medio
+### Finalización del contenido
 
 * La llamada `trackComplete`
 
-### Cancelación del medio
+### Cancelación del contenido
 
 * La llamada `trackSessionEnd`
 
@@ -49,23 +49,23 @@ El seguimiento de la reproducción principal incluye el seguimiento de la carga,
 
 * La llamada `trackEvent(SeekComplete)`
 
-### Al iniciar el almacenamiento en búfer
+### Inicio del almacenamiento en búfer
 
 * La llamada `trackEvent(BufferStart);`
 
-### Al finalizar el almacenamiento en búfer
+### Finalización del almacenamiento en búfer
 
 * La llamada `trackEvent(BufferComplete);`
 
 >[!TIP]
 >
->La posición del cursor de reproducción se establece como parte del código de configuración y configuración. Para obtener más información sobre `getCurrentPlayheadTime`, consulte [Información general: Directrices generales de implementación.](/help/sdk-implement/setup/setup-overview.md#general-implementation-guidelines)
+>La posición de cabezal de reproducción se establece como parte del código de creación y configuración. Para obtener más información sobre `getCurrentPlayheadTime`, consulte [Información general: Directrices generales de implementación.](/help/sdk-implement/setup/setup-overview.md#general-implementation-guidelines)
 
 ## Implementación {#implement}
 
-1. **Configuración inicial del seguimiento**: identifique cuándo el usuario activa la reproducción (cuando hace clic en reproducción o reproducción automática) y cree una instancia de `MediaObject` con la información del medio: nombre, ID y duración del contenido, así como el tipo de emisión.
+1. **Configuración inicial del seguimiento**: identifique cuándo el usuario activa la reproducción (cuando hace clic en reproducción o reproducción automática) y cree una instancia de `MediaObject` con la información del contenido: nombre, ID y duración del contenido, así como el tipo de emisión.
 
-   **`MediaObject`referencia:**
+   **Referencia de`MediaObject`:**
 
    | Nombre de variable | Descripción | Requerido |
    |---|---|---|
@@ -73,9 +73,9 @@ El seguimiento de la reproducción principal incluye el seguimiento de la carga,
    | `mediaid` | Identificador único del contenido | Sí |
    | `length` | Duración del contenido | Sí |
    | `streamType` | Tipo de emisión | Sí |
-   | `mediaType` | Tipo de medio (contenido de audio o vídeo) | Sí |
+   | `mediaType` | Tipo de contenido (contenido de audio o vídeo) | Sí |
 
-   **`StreamType`constantes:**
+   **Constantes de`StreamType`:**
 
    | Nombre de la constante | Descripción |
    |---|---|
@@ -86,14 +86,14 @@ El seguimiento de la reproducción principal incluye el seguimiento de la carga,
    | `AUDIOBOOK` | Tipo de emisión de audiolibro. |
    | `PODCAST` | Tipo de emisión de podcast. |
 
-   **`MediaType`constantes:**
+   **Constantes de`MediaType`:**
 
    | Nombre de la constante | Descripción |
    |---|---|
-   | `Audio` | Tipo de medio para emisiones de audio. |
-   | `Video` | Tipo de medio para emisiones de vídeo. |
+   | `Audio` | Tipo de contenido para emisiones de audio. |
+   | `Video` | Tipo de contenido para emisiones de vídeo. |
 
-   The general format for creating the `MediaObject` is `MediaHeartbeat.createMediaObject(<MEDIA_NAME>, <MEDIA_ID>, <MEDIA_LENGTH>, <STREAM_TYPE>, <MEDIA_TYPE>);`
+   El formato general para crear `MediaObject` es `MediaHeartbeat.createMediaObject(<MEDIA_NAME>, <MEDIA_ID>, <MEDIA_LENGTH>, <STREAM_TYPE>, <MEDIA_TYPE>);`
 
 1. **Adjuntar metadatos**: opcionalmente, se pueden adjuntar objetos de metadatos estándar o personalizados a la sesión de seguimiento mediante el uso de variables de datos de contexto.
 
@@ -101,11 +101,11 @@ El seguimiento de la reproducción principal incluye el seguimiento de la carga,
 
       >[!NOTE]
       >
-      >La asociación del objeto de metadatos estándar al objeto multimedia es opcional.
+      >No es obligatorio adjuntar el objeto de metadatos estándar al objeto de contenidos.
 
       Cree una instancia de un objeto de metadatos estándar, rellene las variables deseadas y establezca el objeto de metadatos en el objeto de Media Heartbeat.
 
-      See the comprehensive list of metadata here: [Audio and video parameters.](/help/metrics-and-metadata/audio-video-parameters.md)
+      Consulte la lista completa de metadatos aquí: [Parámetros de audio y vídeo.](/help/metrics-and-metadata/audio-video-parameters.md)
 
    * **Metadatos personalizados**: cree un objeto de variable para las variables personalizadas y rellénelo con los datos de este contenido.
 
@@ -117,19 +117,19 @@ El seguimiento de la reproducción principal incluye el seguimiento de la carga,
 
    >[!NOTE]
    >
-   >If you are not using custom metadata, simply send an empty object for the `data` argument in `trackSessionStart`.
+   >Si no utiliza metadatos personalizados, envíe un objeto vacío para el argumento `data` en `trackSessionStart`.
 
-1. **Seguimiento del inicio real de la reproducción**: identifique el evento del reproductor de medios para el comienzo de la reproducción (cuando el primer fotograma del contenido aparece en pantalla) e invoque `trackPlay`.
+1. **Seguimiento del inicio real de la reproducción**: identifique el evento del reproductor de contenidos para el comienzo de la reproducción (cuando el primer fotograma del contenido aparece en pantalla) e invoque `trackPlay`.
 
-1. **Seguimiento de la finalización de la reproducción**: identifique el evento del reproductor de medios para la finalización de la reproducción (cuando el usuario ha visto el contenido hasta el final) e invoque `trackComplete`.
+1. **Seguimiento de la finalización de la reproducción**: identifique el evento del reproductor de contenidos para la finalización de la reproducción (cuando el usuario ha visto el contenido hasta el final) e invoque `trackComplete`.
 
-1. **Seguimiento del final de la sesión**: identifique el evento del reproductor de medios para la descarga/cierre de la reproducción (el usuario cierra el contenido, o este finalizó y se descargó) e invoque `trackSessionEnd`.
+1. **Seguimiento del final de la sesión**: identifique el evento del reproductor de contenidos para la descarga/cierre de la reproducción (el usuario cierra el contenido, o este finalizó y se descargó) e invoque `trackSessionEnd`.
 
    >[!IMPORTANT]
    >
-   >`trackSessionEnd` marca el final de una sesión de seguimiento. Si la sesión se ha visto por completo correctamente, es decir, el usuario ha visto el contenido hasta el final, asegúrese de invocar `trackComplete` antes que `trackSessionEnd`. Any other `track*` API call is ignored after `trackSessionEnd`, except for `trackSessionStart` for a new tracking session.
+   >`trackSessionEnd` marca el final de una sesión de seguimiento. Si la sesión se ha visto por completo correctamente, es decir, el usuario ha visto el contenido hasta el final, asegúrese de invocar `trackComplete` antes que `trackSessionEnd`. Las demás llamadas de la API `track*` se pasan por alto después de `trackSessionEnd` (salvo `trackSessionStart` en una nueva sesión de seguimiento).
 
-1. **Seguimiento de todas las situaciones de pausa posibles**: identifique el evento del reproductor de medios para la pausa e invoque `trackPause`.
+1. **Seguimiento de todas las situaciones de pausa posibles**: identifique el evento del reproductor de contenidos para la pausa e invoque `trackPause`.
 
    **Situaciones de pausa**: identifique todas las situaciones en las que puede pausarse el reproductor y compruebe que se ha invocado `trackPause` correctamente. Las siguientes situaciones requieren que la aplicación invoque `trackPause()`:
 
@@ -142,12 +142,12 @@ El seguimiento de la reproducción principal incluye el seguimiento de la carga,
 
    >[!TIP]
    >
-   >Puede ser la misma fuente de eventos que se utilizó en el paso 4. Ensure that each `trackPause()` API call is paired with a following `trackPlay()` API call when the playback resumes.
+   >Puede ser el mismo origen de evento empleado en el paso 4. Asegúrese de que cada llamada de API `trackPause()` esté emparejada con una llamada posterior a la API `trackPlay()` cuando se reanude la reproducción.
 
-1. Escuche los eventos de llamada a otro punto de la reproducción del reproductor de medios. En la notificación del evento de inicio de la llamada a otro punto del contenido, utilice el evento `SeekStart` para realizar el seguimiento.
+1. Escuche los eventos de llamada a otro punto de la reproducción del reproductor de contenidos. En la notificación del evento de inicio de la llamada a otro punto del contenido, utilice el evento `SeekStart` para realizar el seguimiento.
 1. En la notificación de finalización de llamada a otro punto del contenido del reproductor, realice un seguimiento del final de la llamada a otro punto del contenido utilizando el evento `SeekComplete`.
-1. Escuche los eventos de almacenamiento en búfer de reproducción procedentes del reproductor de medios y, cuando reciba la notificación del evento Inicio de almacenamiento en búfer, rastree el almacenamiento en búfer mediante el evento `BufferStart`.
-1. En la notificación de Finalización de almacenamiento en búfer procedente del reproductor de medios, rastree el final del almacenamiento en búfer con el evento `BufferComplete`.
+1. Escuche los eventos de almacenamiento en búfer de reproducción procedentes del reproductor de contenidos y, cuando reciba la notificación del evento Inicio de almacenamiento en búfer, rastree el almacenamiento en búfer mediante el evento `BufferStart`.
+1. En la notificación de Finalización de almacenamiento en búfer procedente del reproductor de contenidos, rastree el final del almacenamiento en búfer con el evento `BufferComplete`.
 
 Consulte ejemplos de cada paso en los siguientes temas específicos para cada plataforma, y examine los reproductores de muestra incluidos con los SDK.
 
