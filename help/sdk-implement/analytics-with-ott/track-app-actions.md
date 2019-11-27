@@ -1,22 +1,22 @@
 ---
 title: Seguimiento de acciones de aplicaciones
-description: Las acciones de aplicación son los eventos que se producen en la aplicación y que desea medir.
+description: Las acciones de la aplicación son los eventos que tienen lugar en su aplicación y que desea medir.
 uuid: 9cdc048a-419a-4725-bd61-6ca6d909cf10
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# Seguimiento de acciones de aplicaciones{#track-app-actions}
+# Seguimiento de acciones de aplicaciones {#track-app-actions}
 
 Las acciones son los eventos que tienen lugar en su aplicación y que desea medir.
 
-Cada acción tiene una o más métricas correspondientes que se incrementan cada vez que tiene lugar el evento. For example, you might send a `trackAction` call for each new subscription, or each time content is rated, or each time a level is completed.
+Cada acción tiene una o más métricas correspondientes que se incrementan cada vez que tiene lugar el evento. Por ejemplo, podría enviar una llamada `trackAction` por cada nueva suscripción, cada vez que se clasifique contenido o cada vez que se complete un nivel.
 
 Las acciones no se rastrean automáticamente, por lo que debe invocar `trackAction` cuando se produce un evento que desee rastrear y asignar la acción a un evento personalizado.
 
-1. When an event that you want to track occurs, call `trackAction`.
+1. Cuando se produce un evento para el que desea realizar un seguimiento, invoque a `trackAction`.
 
    * **Roku:**
 
