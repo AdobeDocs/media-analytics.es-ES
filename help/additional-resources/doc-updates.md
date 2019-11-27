@@ -5,30 +5,30 @@ uuid: 1f3e48df-83b6-418c-8cf7-d79466481f79
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
 
 
-# Recursos{#resources}
+# Recursos {#resources}
 
-## Notas de la versión{#release-notes}
+## Notas de la versión {#release-notes}
 
-* [Notas de la versión](https://docs.adobe.com/content/help/en/release-notes/experience-cloud/current.html)
+* [Notas de la versión](https://docs.adobe.com/content/help/es-ES/release-notes/experience-cloud/current.html)
 
-## Actualizaciones de documentación{#documentation-updates}
+## Actualizaciones de documentación {#documentation-updates}
 
-### Last updated: October, 2019 {#October-2019-update}
+### Última actualización: octubre de 2019 {#October-2019-update}
 
 Numerosas correcciones de edición y formato.
-Los temas de los libros de cocina se expandieron más allá del SDK de medios, incluido un nuevo tema general de los libros de cocina sobre "Dimensiones de medios fuera del seguimiento de medios".
+Los temas de los manuales se han expandido más allá de Media SDK, incluido un nuevo tema general de los manuales sobre “Dimensiones de contenido fuera del seguimiento de contenido”.
 
 
 ### Última actualización: 7 de marzo de 2019 {#March-2019-update}
 
-* Esta actualización fue principalmente para la versión 2.2 del SDK de medios en las plataformas JavaScript y OTT.
-* La versión 2.2 del SDK de medios en plataformas JavaScript y OTT proporciona la misma compatibilidad que se describe a continuación para las plataformas iOS y Android (actualización del 1 de noviembre de 2018).
+* Esta actualización está dirigida principalmente a Media SDK versión 2.2 en plataformas JavaScript e OTT.
+* La versión 2.2 de Media SDK en plataformas JavaScript y OTT proporciona la misma compatibilidad que se describe a continuación para las plataformas iOS y Android (actualización del 1 de noviembre de 2018).
 
 ### Última actualización: 1 de noviembre de 2018 {#November-2018-update}
 
@@ -50,7 +50,7 @@ Los temas de los libros de cocina se expandieron más allá del SDK de medios, i
 ### Actualización: 10 de octubre de 2018 {#October-2018-update}
 
 * La estructura de la documentación se ha “rediseñado” en el área de implementación de SDK, al combinar las guías de implementación de plataformas individuales (aunque prácticamente idénticas) en una sección de implementación de SDK, con ejemplos de seguimiento específicos de la plataforma presentados en subsecciones incluidas en los temas sobre seguimiento habituales.
-* Se ha cambiado el nombre de los archivos en previsión de una migración a un nuevo sistema de documentación. Se eliminaron todos los prefijos DITA ( c_, r_, t_ ) que indicaban los tipos de conceptos, referencias y temas de tareas respectivamente). Todos los caracteres de subrayado (“_”) se han reemplazado por guiones (“-”). Además, los nombres de archivo son más parecidos a los títulos de los temas.
+* Se ha cambiado el nombre de los archivos en previsión de una migración a un nuevo sistema de documentación. Todos los prefijos DITA (c_, r_, t_) que indican tipos de tema de concepto, referencia y tarea, respectivamente; se han eliminado. Todos los caracteres de subrayado (“_”) se han reemplazado por guiones (“-”). Además, los nombres de archivo son más parecidos a los títulos de los temas.
 * Actualizaciones de los temas generales de validación y certificación.
 * Nuevo material introductorio, incluida una presentación de las opciones de medición, junto con actualizaciones de los requisitos, rutas de implementación y habilitación de Audience Manager.
 * Actualizaciones de las secciones de métricas y metadatos e informes y análisis para reflejar la adición de las capacidades de análisis de audio.
