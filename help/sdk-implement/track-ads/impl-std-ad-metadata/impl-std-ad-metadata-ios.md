@@ -2,23 +2,23 @@
 title: Implementación de metadatos de publicidad estándar en iOS
 description: Cómo utilizar metadatos de anuncio estándar en el seguimiento de anuncios en iOS.
 uuid: f15fb727-5a5b-46c5-bf12-93b376c10fd1
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# Implementación de metadatos de publicidad estándar en iOS{#implement-standard-ad-metadata-on-ios}
+# Implementación de metadatos de publicidad estándar en iOS {#implement-standard-ad-metadata-on-ios}
 
 ## Constantes de publicidad
 
 | Nombre de la constante | Descripción   |
 |---|---|
-| `ADBMediaObjectKeyStandardAdMetadata` | Constant for attaching standard ad metadata on `AdInfo ADBMediaObject` |
+| `ADBMediaObjectKeyStandardAdMetadata` | Constante para adjuntar metadatos de publicidad estándar en `AdInfo ADBMediaObject` |
 
-## Metadatos de anuncio estándar de implementación
+## Implemente los metadatos de publicidad estándar
 
-Para los metadatos de anuncio estándar, cree un diccionario de pares de clave valor para los metadatos de anuncio estándar con las claves de su plataforma:
+Para los metadatos de publicidad estándar, cree un diccionario de conexiones de clave/valor de metadatos de publicidad estándar con el uso de las claves correspondientes a su plataforma:
 
 ```
 // Sample implementation for using standard metadata keys for Ad 
