@@ -2,13 +2,13 @@
 title: Seguimiento del almacenamiento en búfer en Chromecast
 description: Describe el seguimiento de eventos de almacenamiento en búfer en Chromecast.
 uuid: f6fa3a1a-d7de-4293-bd11-ebe9e130badd
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# Seguimiento del almacenamiento en búfer en Chromecast{#track-buffering-on-chromecast}
+# Seguimiento del almacenamiento en búfer en Chromecast {#track-buffering-on-chromecast}
 
 >[!IMPORTANT]
 >
