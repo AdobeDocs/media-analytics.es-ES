@@ -2,13 +2,13 @@
 title: Solicitud de eventos
 description: null
 uuid: b237f0a0-dc29-418b-89ee-04c596a27f39
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
 
 
-# Solicitud de eventos{#events-request}
+# Solicitud de eventos {#events-request}
 
 ```
 POST 
@@ -17,7 +17,7 @@ https://{uri}/api/v1/sessions/{sid}/events
 
 ## Parámetro URI
 
-`sid`:: ID de sesión devuelto desde una solicitud de [sesiones.](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md)
+`sid`: ID de sesión devuelto desde una [Solicitud de sesiones.](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md)
 
 ## Cuerpo de la solicitud
 
@@ -41,14 +41,14 @@ El cuerpo de la solicitud debe ser JSON y tener la misma estructura que este cue
    * `ts`: marca de tiempo; debe estar en milisegundos.
 * `eventType` (Obligatorio)
 * `params` (Opcional)
-* `customMetadata` (Opcional; enviar solo con `adStart` y `chapterStart` tipos de eventos)
+* `customMetadata` (Opcional; enviar solo con tipos de eventos `adStart` y `chapterStart`)
 * `qoeData` (Opcional)
 
 Para obtener una lista de tipos de eventos válidos para esta versión, consulte [Tipos de eventos y descripciones.](/help/media-collection-api/mc-api-ref/mc-api-event-types.md)
 
 >[!IMPORTANT]
 >
->***Seguimiento de publicidad:**solo puede rastrear publicidades dentro de un`adBreak`*.
+>***Seguimiento de publicidad:**Solo puede rastrear las publicidades dentro de un`adBreak`*.
 >
 >En ausencia de los "bookends" `adBreakStart` y `adBreakComplete` alrededor de los anuncios, los eventos `adStart` y `adComplete` se omitirán simplemente, y la duración de la publicidad correspondiente se rastreará como la duración del contenido principal. Esto podría tener un impacto considerable en los datos agregados que estarán disponibles en Adobe Analytics.
 
@@ -71,7 +71,7 @@ Access-Control-Expose-Headers Location
 |---|---|---|
 | **204** | **Sin contenido.** <br/><br/>La llamada de Heartbeat se ha realizado correctamente. | N/D |
 | **400** | **Solicitud incorrecta.** <br/><br/>El formato de la solicitud es incorrecto. | Compruebe los [esquemas de validación de JSON](/help/media-collection-api/mc-api-ref/mc-api-json-validation.md) para el tipo de solicitud. |
-| **404** | **No encontrado.** No se encontró <br/><br/>el ID de sesión de la sesión de medios en el servicio back-end. | La aplicación cliente debe utilizar la API de [solicitud de sesiones](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) para crear otra sesión de medios e informar de su seguimiento. |
-| **410** | **No existe.** <br/><br/>La sesión de medios se encontró en el servicio back-end pero el cliente ya no puede informar de la actividad en él. | La aplicación cliente debe utilizar la API de [solicitud de sesiones](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) para crear otra sesión de medios e informar de su seguimiento. |
+| **404** | **No encontrado.** <br/><br/>No se ha encontrado el ID de la sesión de contenido en el servicio back-end. | La aplicación cliente debe utilizar la API de [solicitud de sesiones](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) para crear otra sesión de medios e informar de su seguimiento. |
+| **410** | **No existe.** <br/><br/>Se ha encontrado la sesión de contenido en el servicio back-end, pero el cliente ya no puede informar de la actividad en ella. | La aplicación cliente debe utilizar la API de [solicitud de sesiones](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) para crear otra sesión de medios e informar de su seguimiento. |
 | **500** | **Error del servidor** | N/D |
 
