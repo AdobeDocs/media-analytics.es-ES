@@ -2,15 +2,15 @@
 title: Obtención de datos del informe JSON de espectadores simultáneos
 description: null
 uuid: 9168f114-2459-4951-a06c-57b735d09dc0
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
 
 
-# Obtención de datos del informe JSON de espectadores simultáneos{#get-concurrent-viewers-json-report-data}
+# Obtención de datos del informe JSON de espectadores simultáneos {#get-concurrent-viewers-json-report-data}
 
-Puede obtener datos de informes de visores simultáneos mediante la versión _**_ 1.4 de las API de Analytics:
+Puede obtener datos de informes de visores simultáneos mediante la _* versión 1.4 *_ de las API de Analytics:
 * [API de Analytics ](https://github.com/AdobeDocs/analytics-1.4-apis)
 * [Swagger](https://adobedocs.github.io/analytics-1.4-apis/swagger-docs.html#/Report/Report.Get)
 
@@ -21,7 +21,7 @@ Puede obtener datos de informes de visores simultáneos mediante la versión _**
    * El intervalo de datos que especifique en el informe recopila todos los datos del visor simultáneo _al finalizar la sesión de vídeo._
 Por lo tanto, debe tener en cuenta las sesiones que comienzan un día y finalizan después de la medianoche (es decir, al día siguiente).
 
-   * Solicite más de un día de datos, pero en el análisis _* utilice sólo el primer día de los datos.*_
+   * Solicite más de un día de datos, pero en el análisis _* utilice solo el primer día de los datos.*_
 
 Una carga útil de solicitud de muestra para este escenario tendría este aspecto:
 
