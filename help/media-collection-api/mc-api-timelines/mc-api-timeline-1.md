@@ -2,13 +2,13 @@
 title: 'Línea de tiempo 1: Ver el contenido hasta el final'
 description: null
 uuid: 0ff591d3-fa99-4123-9e09-c4e71ea1060b
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
 
 
-# Línea de tiempo 1: Ver el contenido hasta el final{#timeline-view-to-end-of-content}
+# Línea de tiempo 1: Ver el contenido hasta el final {#timeline-view-to-end-of-content}
 
 ## VOD, anuncios pre-roll, pausar, almacenar en búfer, ver contenido hasta el final
 
@@ -31,7 +31,7 @@ Los siguientes diagramas ilustran la línea de tiempo del cursor de reproducció
 
 **Detalles de implementación**
 
-Esta llamada indica _la intención del usuario de reproducir_ un vídeo. <br/><br/>Devuelve un ID de sesión ( `{sid}`) al cliente que se utiliza para identificar todas las llamadas de seguimiento subsiguientes dentro de la sesión. El estado del reproductor no es "reproduciendo", sino "comenzando". <br/><br/>[Los parámetros de sesión obligatorios](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) deben incluirse en el mapa de `params` en la solicitud. <br/><br/>En el servidor, esta llamada genera una llamada de inicio a Adobe Analytics.
+Esta llamada indica _la intención del usuario de reproducir_ un vídeo. <br/><br/>Devuelve un ID de sesión (`{sid}`) al cliente que se utiliza para identificar todas las llamadas de seguimiento subsiguientes dentro de la sesión. El estado del reproductor no es "reproduciendo", sino "comenzando". <br/><br/>[Los parámetros de sesión obligatorios](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) deben incluirse en el mapa de `params` en la solicitud. <br/><br/>En el servidor, esta llamada genera una llamada de inicio a Adobe Analytics.
 
 **Cuerpo de la solicitud de muestra**
 
@@ -57,7 +57,7 @@ Esta llamada indica _la intención del usuario de reproducir_ un vídeo. <br/><b
 }
 ```
 
-### Acción 2: inicio del temporizador de ping {#Action-2}
+### Acción 2 - Inicio del temporizador de ping {#Action-2}
 
 | Acción | Línea de tiempo de acción (segundos) | Posición del cabezal de reproducción (en segundos) | Solicitud del cliente |
 | --- | :---: | :---: | --- |
@@ -65,7 +65,7 @@ Esta llamada indica _la intención del usuario de reproducir_ un vídeo. <br/><b
 
 **Detalles de implementación**
 
-Inicie el temporizador de ping de la aplicación. El primer evento de ping debe activarse 1 segundo en caso de que haya anuncios previos, 10 segundos en caso contrario.
+Inicie el temporizador de ping de su aplicación. El primer evento de ping debe activarse en el primer segundo si hay anuncios previos a la emisión y en los 10 primeros segundos en caso contrario.
 
 ### Acción 3 - Inicio de la pausa publicitaria {#Action-3}
 
@@ -143,7 +143,7 @@ Comience a rastrear el primer anuncio pre-roll, que dura 15 segundos. Incluir me
 
 **Detalles de implementación**
 
-Haga ping al servidor cada 1 segundo mientras se encuentra dentro de un anuncio.
+Mande un ping al servidor cada segundo mientras se encuentra dentro de un anuncio.
 
 **Cuerpo de la solicitud de muestra**
 
@@ -165,7 +165,7 @@ Haga ping al servidor cada 1 segundo mientras se encuentra dentro de un anuncio.
 
 **Detalles de implementación**
 
-Haga ping al servidor cada 1 segundo mientras se encuentra dentro de un anuncio.
+Mande un ping al servidor cada segundo mientras se encuentra dentro de un anuncio.
 
 **Cuerpo de la solicitud de muestra**
 
@@ -188,12 +188,12 @@ Haga ping al servidor cada 1 segundo mientras se encuentra dentro de un anuncio.
 
 **Detalles de implementación**
 
-Haga ping al servidor cada 1 segundo mientras se encuentra dentro de un anuncio.
+Mande un ping al servidor cada segundo mientras se encuentra dentro de un anuncio.
 
 >[!NOTE]
 >
->Las publicidades posteriores de la línea de tiempo omitirán la visualización de la serie de pings de un segundo
->en aras de la brevedad...
+>Los anuncios posteriores de la cronología omitirán la visualización de la serie de pings de un segundo
+>para que sean más breves...
 
 **Cuerpo de la solicitud de muestra**
 
@@ -272,7 +272,7 @@ Realice un seguimiento del inicio del segundo anuncio pre-roll, que dura 7 segun
 
 **Detalles de implementación**
 
-Ping el servidor cada 1 segundo.
+Mandar un ping al servidor cada segundo.
 
 **Cuerpo de la solicitud de muestra**
 
@@ -403,7 +403,7 @@ Rastree el movimiento del reproductor al estado "almacenamiento en búfer".
 
 **Detalles de implementación**
 
-El almacenamiento en búfer finaliza después de 3 segundos, por lo que el reproductor vuelve al estado "reproduciendo". Debe enviar otro evento de seguimiento de reproducción cuando termine el almacenamiento en búfer.  **La`play`llamada después de un`bufferStart`deduce una llamada "bufferEnd" al servidor,** por lo que no es necesario un `bufferEnd` evento.
+El almacenamiento en búfer finaliza después de 3 segundos, por lo que el reproductor vuelve al estado "reproduciendo". Debe enviar otro evento de seguimiento de reproducción cuando termine el almacenamiento en búfer.  **La llamada`play`después de`bufferStart`infiere una llamada “bufferEnd” al back end**, por lo que no es necesario un evento `bufferEnd`.
 
 **Cuerpo de la solicitud de muestra**
 
@@ -500,7 +500,7 @@ Seguimiento del anuncio mid-roll.
 }
 ```
 
-### Acción 18 - ping de publicidad {#Action-18}
+### Acción 18 - Ping de publicidad {#Action-18}
 
 | Acción | Línea de tiempo de acción (segundos) | Posición del cabezal de reproducción (en segundos) | Solicitud del cliente |
 | --- | :---: | :---: | --- |
@@ -638,7 +638,7 @@ Mandar un ping al servidor cada 10 segundos. El reproductor sigue en estado "alm
 
 **Detalles de implementación**
 
-Cambie el estado de reproducción a "reproduciendo".  **La`play`llamada después de una llamada`pauseStart`deduce una llamada de "reanudación" al servidor,** por lo que no es necesario un `resume` evento.
+Cambie el estado de reproducción a "reproduciendo".  **La llamada`play`después de`pauseStart`ya infiere una llamada “continuar” al final**, por lo que no hay necesidad de un evento `resume`.
 
 **Cuerpo de la solicitud de muestra**
 
