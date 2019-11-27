@@ -2,7 +2,7 @@
 title: 'Línea de tiempo 2: El usuario abandona la sesión'
 description: null
 uuid: 74b89e8f-ef56-4e0c-b9a8-40739e15b4cf
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
@@ -12,7 +12,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ## VOD, anuncios pre-roll, anuncios mid-roll, el usuario deja el contenido antes de terminarlo
 
-Los siguientes diagramas ilustran la línea de tiempo del cursor de reproducción y la línea de tiempo correspondiente de las acciones de un usuario. A continuación se presentan los detalles de cada acción y sus solicitudes correspondientes.
+Los siguientes diagramas ilustran la cronología del cabezal de reproducción y la cronología correspondiente de las acciones de un usuario. A continuación se presentan los detalles de cada acción y sus solicitudes correspondientes.
 
 
 ![](assets/va_api_content_2.png)
@@ -31,7 +31,7 @@ Los siguientes diagramas ilustran la línea de tiempo del cursor de reproducció
 
 **Detalles de implementación**
 
-Esta llamada indica _la intención del usuario de reproducir_ un vídeo. It returns a Session ID ( `{sid}` ) to the client that is used to identify all subsequent tracking calls within the session. El estado del reproductor no es "reproduciendo", sino "comenzando".  [Los parámetros de sesión obligatorios](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) deben incluirse en el mapa de `params` en la solicitud.  En el servidor, esta llamada genera una llamada de inicio a Adobe Analytics.
+Esta llamada indica _la intención del usuario de reproducir_ un vídeo. Devuelve un ID de sesión (`{sid}`) al cliente que se utiliza para identificar todas las llamadas de seguimiento subsiguientes dentro de la sesión. El estado del reproductor no es "reproduciendo", sino "comenzando".  [Los parámetros de sesión obligatorios](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) deben incluirse en el mapa de `params` en la solicitud.  En el servidor, esta llamada genera una llamada de inicio a Adobe Analytics.
 
 **Cuerpo de la solicitud de muestra**
 
@@ -58,7 +58,7 @@ Esta llamada indica _la intención del usuario de reproducir_ un vídeo. It retu
 }
 ```
 
-### Acción 2: inicio del temporizador de ping {#Action-2}
+### Acción 2 - Inicio del temporizador de ping {#Action-2}
 
 | Acción | Línea de tiempo de acción (segundos) | Posición del cabezal de reproducción (en segundos) | Solicitud del cliente |
 | --- | :---: | :---: | --- |
@@ -66,7 +66,7 @@ Esta llamada indica _la intención del usuario de reproducir_ un vídeo. It retu
 
 **Detalles de implementación**
 
-Inicie el temporizador de ping de la aplicación. El primer evento de ping debe activarse 1 segundo en caso de que haya anuncios previos, 10 segundos en caso contrario.
+Inicie el temporizador de ping de su aplicación. El primer evento de ping debe activarse en el primer segundo si hay anuncios previos a la emisión y en los 10 primeros segundos en caso contrario.
 
 ### Acción 3 - Inicio de la pausa publicitaria {#Action-3}
 
@@ -137,7 +137,7 @@ Se inicia una publicidad de 12 segundos.
 
 **Detalles de implementación**
 
-Ping el servidor cada 1 segundo. (No se muestran los pings de anuncios posteriores, en interés de la brevedad).
+Mandar un ping al servidor cada segundo. (No se muestran los pings de anuncios posteriores en interés de la brevedad).
 
 **Cuerpo de la solicitud de muestra**
 
