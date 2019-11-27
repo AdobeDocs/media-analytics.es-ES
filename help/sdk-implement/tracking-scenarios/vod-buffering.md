@@ -1,14 +1,14 @@
 ---
 title: Reproducción de VOD con almacenamiento en búfer
-description: Ejemplo de cómo rastrear contenido de VOD mediante el SDK de medios.
+description: Ejemplo de cómo rastrear contenido de VOD mediante Media SDK.
 uuid: 958f7692-7193-40fb-a8e7-2ff4fa805330
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# Reproducción de VOD con almacenamiento en búfer{#vod-playback-with-buffering}
+# Reproducción de VOD con almacenamiento en búfer {#vod-playback-with-buffering}
 
 ## Situación {#scenario}
 
@@ -18,7 +18,7 @@ Si no se indica lo contrario, las llamadas de red en este escenario son iguales 
 
 | Activador   | Método de Heartbeat   | Llamadas de red   | Notas   |
 |---|---|---|---|
-| User clicks **[!UICONTROL Play]** | `trackSessionStart` | Inicio del contenido de Analytics, inicio del contenido de Heartbeat | Puede ser porque el usuario hace clic en **[!UICONTROL Reproducir]o por un evento de reproducción automática.** |
+| El usuario hace clic en **[!UICONTROL Reproducir]**. | `trackSessionStart` | Inicio del contenido de Analytics, inicio del contenido de Heartbeat | Puede ser porque el usuario hace clic en **[!UICONTROL Reproducir]** o por un evento de reproducción automática. |
 | Se reproduce el primer fotograma del vídeo. | `trackPlay` | Reproducción del contenido de Heartbeat | Este método desencadena el temporizador. Se envían latidos cada 10 segundos mientras dura la reproducción. |
 | Se reproduce el contenido. |  | Latidos de contenido |  |
 | Se inicia el almacenamiento en búfer. | `trackEvent:BufferStart` | Búfer de Heartbeat |  |
