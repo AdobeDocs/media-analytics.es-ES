@@ -1,14 +1,14 @@
 ---
 title: Seguimiento de llamada a otro punto del contenido en Chromecast
-description: En este tema se describe la implementación del seguimiento de búsqueda mediante el SDK de medios en Chromecast.
-uuid: 8018e6c4-feed9-4de7-9eae-c720da55ad8c
-translation-type: tm+mt
+description: En este tema se describe la implementación del seguimiento de búsqueda mediante Media SDK en Chromecast.
+uuid: 8018e6c4-fed9-4de7-9eae-c720da55ad8c
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# Seguimiento de llamada a otro punto del contenido en Chromecast{#track-seeking-on-chromecast}
+# Seguimiento de llamada a otro punto del contenido en Chromecast {#track-seeking-on-chromecast}
 
 >[!IMPORTANT]
 >
