@@ -1,31 +1,31 @@
 ---
 title: Configuración de Chromecast
-description: Configuración de la aplicación del SDK de medios para la implementación en Chromecast.
+description: Configuración de la aplicación de Media SDK para la implementación en Chromecast.
 uuid: d664e394-02a2-4985-bbad-be1bcc44fb2b
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# Configuración de Chromecast{#set-up-chromecast}
+# Configuración de Chromecast {#set-up-chromecast}
 
 ## Preguntas más frecuentes
 
 _¿Debería utilizar el SDK de JavaScript de Chromecast o puedo usar el SDK de JavaScript estándar?_
 
-La respuesta correcta es "Chromecast", por los siguientes motivos:
+La respuesta correcta es “Chromecast”, por los siguientes motivos:
 * Las bibliotecas AppMeasurement y VisitorAPI del SDK de JS estándar no están certificadas para funcionar con plataformas OTT. En el SDK de JS de Chromecast, la biblioteca Video Heartbeats Library (VHL), Analytics y VisitorAPI están incorporadas en el único SDK unificado y certificado para Chromecast.
 * El SDK de Chromecast es mucho más ligero que el SDK de JS estándar. Esto es esencial para el hardware de nivel inferior utilizado por las plataformas OTT.
 
 ## Requisitos previos
 
-* **Obtenga parámetros de configuración válidos para latidos**. Estos parámetros se pueden obtener de un representante de Adobe después de configurar la cuenta de análisis de medios.
-* **Proporcione las siguientes capacidades en su reproductor de medios**:
+* **Obtenga parámetros de configuración válidos para Heartbeat**: Estos parámetros se pueden obtener de un representante de Adobe una vez creada la cuenta de Media Analytics.
+* **Proporcione las siguientes capacidades en su reproductor de contenidos**:
    * *Una API para suscribirse a eventos del reproductor*: el Media SDK requiere que se invoquen varias API sencillas cuando se producen eventos en el reproductor.
    * *Una API que proporcione información del reproductor*: esta información incluye detalles como el nombre del contenido y la posición del cabezal de reproducción.
 
-Adobe Mobile Services proporciona una nueva interfaz de usuario que aúna las capacidades de marketing móvil para aplicaciones móviles desde Adobe Experience Cloud. Inicialmente, el servicio Mobile ofrece una integración perfecta de las prestaciones de orientación y análisis de aplicaciones de las soluciones Adobe Analytics y Adobe Target. Para obtener más información, consulte la documentación de [Adobe Mobile Services.](https://marketing.adobe.com/resources/help/en_US/mobile/)
+Adobe Mobile Services proporciona una nueva interfaz de usuario que aúna las capacidades de marketing móvil para aplicaciones móviles desde Adobe Experience Cloud. Inicialmente, el servicio Mobile ofrece una integración perfecta de las prestaciones de orientación y análisis de aplicaciones de las soluciones Adobe Analytics y Adobe Target. Para obtener más información, consulte la [documentación de Adobe Mobile Services.](https://marketing.adobe.com/resources/help/es_ES/mobile/)
 
 El SDK 2.x de Chromecast para las soluciones de Experience Cloud le permite medir aplicaciones Chromecast escritas en JavaScript, aprovechar y recopilar datos de audiencia mediante la gestión de público, y medir la intervención de vídeo a través de los latidos de vídeo.
 
@@ -39,7 +39,7 @@ El SDK 2.x de Chromecast para las soluciones de Experience Cloud le permite medi
 
          Este archivo de biblioteca se incluirá en la carpeta de origen de la aplicación Chromecast.
 
-      * `ADBMobileConfig` config
+      * Configuración `ADBMobileConfig`
 
          Este archivo de configuración del SDK se personaliza en función de la aplicación. Con el SDK se proporciona una implementación de muestra de `ADBMobileConfig` (en `samples/`). Consulte con un representante de Adobe la configuración adecuada.
    1. Añada el archivo de biblioteca al archivo `index.html` y cree la variable global `ADBMobileConfig` como se indica a continuación (la variable global utilizada para configurar Adobe Mobile for Heartbeats tiene una clave exclusiva denominada `mediaHeartbeat`):
@@ -87,7 +87,7 @@ El SDK 2.x de Chromecast para las soluciones de Experience Cloud le permite medi
 
       >[!IMPORTANT]
       >
-      >If `mediaHeartbeat` is incorrectly configured, the media module (VHL) enters an error state and will stop sending tracking calls.
+      >Si `mediaHeartbeat` se configura incorrectamente, el módulo multimedia (VHL) entrará en un estado de error y dejará de enviar llamadas de seguimiento.
 
       Parámetros de configuración de ADBMobile para la clave de mediaHeartbeat:
    | Parámetro de configuración | Descripción     |
@@ -105,7 +105,7 @@ El SDK 2.x de Chromecast para las soluciones de Experience Cloud le permite medi
 
    El servicio de identificación de visitantes de Experience Cloud proporciona un ID de visitante universal en las soluciones de Experience Cloud. El servicio de medición de vídeos y otras integraciones de Experience Cloud requieren el servicio de ID del visitante.
 
-   Verify that your `ADBMobileConfig` config contains your `marketingCloud` organization ID.
+   Verifique que su configuración de `ADBMobileConfig` contenga su ID de empresa de `marketingCloud`.
 
    ```js
    "marketingCloud": { 
@@ -113,11 +113,11 @@ El SDK 2.x de Chromecast para las soluciones de Experience Cloud le permite medi
    }
    ```
 
-   Experience Cloud organization IDs uniquely identify each client company in the Adobe Marketing Cloud and appear similar to the following value: `016D5C175213CCA80A490D05@AdobeOrg`.
+   Los ID de empresa de Experience Cloud identifican exclusivamente cada empresa de los clientes en Adobe Experience Cloud y aparecen similares al siguiente valor: `016D5C175213CCA80A490D05@AdobeOrg`.
 
    >[!IMPORTANT]
    >
-   >Ensure that you include `@AdobeOrg`.
+   >Asegúrese de incluir `@AdobeOrg`.
 
    Una vez completada la configuración, se genera un ID de visitante de Experience Cloud que se incluye en todas las visitas. Otros ID de visitante, como `custom` y `automatically-generated`, se siguen enviando con cada visita.
 
@@ -125,12 +125,12 @@ El SDK 2.x de Chromecast para las soluciones de Experience Cloud le permite medi
 
    >[!TIP]
    >
-   >Experience Cloud Visitor ID methods are prefixed with `visitor`.
+   >Los métodos de ID de los visitantes de Experience Cloud cuentan con el prefijo `visitor`.
 
    | Método | Descripción |
    | --- | --- |
    | `getMarketingCloudID()` | Recupera el ID del visitante de Experience Cloud del servicio de ID del visitante.  <br/><br/>`ADBMobile.visitor.getMarketingCloudID();` |
-   | `syncIdentifiers()` | Con el ID de visitantes de Experience Cloud puede configurar ID adicionales de clientes que se pueden asociar a cada visitante. La API de visitante acepta múltiples ID de cliente para el mismo visitante y un identificador de tipo de cliente para separar el ámbito de los distintos ID de cliente. Este método corresponde a `setCustomerIDs()` en la biblioteca de JavaScript.  For example: <br/><br/>`var identifiers = {};` <br/><br/>`identifiers["idType"] = "idValue";` <br/><br/>`ADBMobile.visitor.syncIdentifiers(identifiers);` |
+   | `syncIdentifiers()` | Con el ID de visitantes de Experience Cloud puede configurar ID adicionales de clientes que se pueden asociar a cada visitante. La API de visitante acepta múltiples ID de cliente para el mismo visitante y un identificador de tipo de cliente para separar el ámbito de los distintos ID de cliente. Este método corresponde a `setCustomerIDs()` en la biblioteca de JavaScript.  Por ejemplo: <br/><br/>`var identifiers = {};` <br/><br/>`identifiers["idType"] = "idValue";` <br/><br/>`ADBMobile.visitor.syncIdentifiers(identifiers);` |
 
 
 <!--   **Postbacks -** For more information about configuring postbacks, see [Configure Postbacks.](https://marketing.adobe.com/resources/help/en_US/mobile/signals_.html) -->
