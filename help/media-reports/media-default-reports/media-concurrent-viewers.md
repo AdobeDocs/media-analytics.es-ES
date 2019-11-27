@@ -2,13 +2,13 @@
 title: Espectadores simultáneos de medios
 description: null
 uuid: e61c50e5-8196-4538-b67c-ebc01c6e6ba7
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
 
 
-# Espectadores simultáneos de medios{#media-concurrent-viewers}
+# Espectadores simultáneos de medios {#media-concurrent-viewers}
 
 El tablero de espectadores simultáneos de medios muestra los espectadores simultáneos durante un día. Dichos datos pueden filtrarse por contenido, tipo de dispositivo o país.
 
