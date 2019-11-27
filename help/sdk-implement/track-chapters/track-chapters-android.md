@@ -1,28 +1,28 @@
 ---
 title: Seguimiento de capítulos y segmentos en Android
-description: En este tema se describe la implementación del seguimiento de capítulos y segmentos mediante el SDK de medios en Android.
+description: En este tema se describe la implementación del seguimiento de capítulos y segmentos mediante Media SDK en Android.
 uuid: 013815d7-4d9e-48f4-a2b9-3b70cb1149d3
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# Seguimiento de capítulos y segmentos en Android{#track-chapters-and-segments-on-android}
+# Seguimiento de capítulos y segmentos en Android {#track-chapters-and-segments-on-android}
 
 >[!IMPORTANT]
 >
->Las siguientes instrucciones proporcionan instrucciones para la implementación mediante SDK 2.x. Si va a implementar una versión 1.x del SDK, puede descargar la guía del desarrollador aquí: [Descargar SDK.](/help/sdk-implement/download-sdks.md)
+>Las siguientes instrucciones proporcionan directrices para la implementación mediante SDK de 2.x. Si va a implementar una versión 1.x del SDK, puede descargar la guía del desarrollador aquí: [Descargar SDK.](/help/sdk-implement/download-sdks.md)
 
 ## Implementación del seguimiento de capítulos
 
 1. Identifique cuándo se produce el evento de inicio de capítulo y cree la instancia de `ChapterObject` con la información del capítulo.
 
-   `ChapterObject` referencia de seguimiento de capítulos:
+   Referencia de seguimiento de capítulos `ChapterObject`:
 
    >[!NOTE]
    >
-   >Estas variables solo son necesarias si planea realizar un seguimiento de los capítulos.
+   >Estas variables solo son necesarias si planea rastrear capítulos.
 
    | Nombre de variable | Descripción | Requerido |
    | --- | --- | :---: |
