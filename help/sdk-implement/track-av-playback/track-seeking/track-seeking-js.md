@@ -1,14 +1,14 @@
 ---
 title: Seguimiento de llamada a otro punto del contenido en JavaScript
-description: En este tema se describe la implementación del seguimiento de búsqueda mediante el SDK de medios en aplicaciones de navegador (JS).
+description: En este tema se describe la implementación del seguimiento de búsqueda mediante Media SDK en aplicaciones de navegador (JS).
 uuid: 089947fb-8bae-4ae8-b215-53793620efd7
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# Seguimiento de llamada a otro punto del contenido en JavaScript{#track-seeking-on-javascript}
+# Seguimiento de llamada a otro punto del contenido en JavaScript {#track-seeking-on-javascript}
 
 >[!IMPORTANT]
 >
