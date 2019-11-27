@@ -1,20 +1,20 @@
 ---
 title: Configuración de Android
-description: Configuración de la aplicación del SDK de medios para la implementación en Android.
+description: Configuración de la aplicación de Media SDK para la implementación en Android.
 uuid: 3ffe3276-a104-4182-9220-038729e9f3d5
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# Configuración de Android{#set-up-android}
+# Configuración de Android {#set-up-android}
 
 ## Requisitos previos
 
-* **Obtenga parámetros de configuración válidos para el SDK** de mediosEstos parámetros se pueden obtener de un representante de Adobe después de configurar la cuenta de análisis.
-* **Implementación de ADBMobile para Android en la aplicación** Para obtener más información sobre la documentación del SDK de Adobe Mobile, consulte SDK 4.x de [Android para soluciones de Experience Cloud.](https://marketing.adobe.com/resources/help/en_US/mobile/android/)
-* **Proporcione las siguientes capacidades en su reproductor de medios**:
+* **Obtenga parámetros de configuración válidos para Media SDK**: Estos parámetros se pueden obtener de un representante de Adobe una vez creada la cuenta de Analytics.
+* **Implemente ADBMobile para Android en su aplicación**: Para obtener más información sobre la documentación del SDK de Adobe Mobile, consulte [SDK de Android 4.x para las soluciones de Experience Cloud.](https://marketing.adobe.com/resources/help/es_ES/mobile/android/)
+* **Proporcione las siguientes capacidades en su reproductor de contenidos**:
    * *Una API para suscribirse a eventos del reproductor*: el Media SDK requiere que se invoquen varias API sencillas cuando se producen eventos en el reproductor.
    * *Una API que proporcione información del reproductor*: esta información incluye detalles como el nombre del contenido y la posición del cabezal de reproducción.
 
@@ -22,8 +22,8 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 1. Añada el Media SDK [descargado](/help/sdk-implement/download-sdks.md#download-2x-sdks) al proyecto.
 
-   1. Expand the Android zip file (e.g., `MediaSDK-android-v2.*.zip`).
-   1. Verify that the `MediaSDK.jar` file exists in the `libs/` directory.
+   1. Descomprima el archivo zip de Android (por ejemplo, `MediaSDK-android-v2.*.zip`).
+   1. Compruebe si el archivo `MediaSDK.jar` existe en el directorio `libs/`.
 
    1. Añada la biblioteca al proyecto.
 
@@ -33,7 +33,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
       1. Seleccione **[!UICONTROL Abrir configuración del módulo]**.
       1. En **[!UICONTROL Configuración del proyecto]**, seleccione **[!UICONTROL Bibliotecas]**.
 
-      1. Click **[!UICONTROL +]** to add a new library.
+      1. Haga clic en **[!UICONTROL +]** para agregar una biblioteca nueva.
       1. Seleccione **[!UICONTROL Java]** y busque el archivo `MediaSDK.jar`.
 
       1. Seleccione los módulos en los que va a utilizar la biblioteca móvil.
@@ -44,7 +44,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
       1. Haga clic en **[!UICONTROL Ruta de compilación]** &gt; **[!UICONTROL Agregar archivos externos]** .
       1. Select `MediaSDK.jar`.
       1. Haga clic en **[!UICONTROL Abrir]**.
-      1. Right-click the project again, and click  **[!UICONTROL Build Path]** &gt; **[!UICONTROL Configure Build Path]** .
+      1. Vuelva a hacer clic con el botón derecho en el proyecto y, a continuación, seleccione **[!UICONTROL Ruta de compilación]** &gt; **[!UICONTROL Configurar ruta de compilación]**.
       1. Haga clic en las pestañas **[!UICONTROL Ordenar]** y **[!UICONTROL Exportar]**.
 
       1. Asegúrese de que el archivo `MediaSDK.jar` está seleccionado.
@@ -59,7 +59,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    import com.adobe.primetime.va.simple.MediaObject; 
    ```
 
-1. Create the `MediaHeartbeatConfig` instance.
+1. Cree la instancia de `MediaHeartbeatConfig`.
 
    Este es un ejemplo de una inicialización de `MediaHeartbeatConfig`:
 
@@ -74,7 +74,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    config.debugLogging = <true/false>; 
    ```
 
-1. Implement the `MediaHeartbeatDelegate` interface.
+1. Implemente la interfaz de `MediaHeartbeatDelegate`.
 
    ```java
    public class VideoAnalyticsProvider implements Observer, MediaHeartbeatDelegate{}
@@ -98,9 +98,9 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    }
    ```
 
-1. Create the `MediaHeartbeat` instance.
+1. Cree la instancia de `MediaHeartbeat`.
 
-   Use the `MediaHeartbeatConfig` instance and the `MediaHertbeatDelegate` instance to create the `MediaHeartbeat` instance.
+   Utilice la instancia de `MediaHeartbeatConfig` y la instancia de `MediaHertbeatDelegate` para crear la instancia de `MediaHeartbeat`.
 
    ```java
    // Replace <MediaHertbeatDelegate> with your delegate instance 
@@ -110,7 +110,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
    >[!IMPORTANT]
    >
-   >Make sure that your `MediaHeartbeat` instance is accessible and *does not get deallocated until the end of the session*. Esta instancia se utilizará para todos los eventos de seguimiento posteriores.
+   >Asegúrese de que la instancia de `MediaHeartbeat` es accesible y *no se desasigna hasta el final de la sesión*. Esta instancia se utilizará para todos los eventos de seguimiento posteriores.
 
 **Adición de permisos de aplicación**
 
@@ -126,6 +126,6 @@ Para agregar estos permisos, agregue las siguientes líneas al archivo `AndroidM
 
 **Migración de la versión 1.x a 2.x en Android**
 
-En las versiones 2.x, todos los métodos públicos se incluyen en la clase `com.adobe.primetime.va.simple.MediaHeartbeat` para facilitar el trabajo de los desarrolladores. Asimismo, todas las configuraciones están consolidadas en la clase `com.adobe.primetime.va.simple.MediaHeartbeatConfig`. 
+En las versiones 2.x, todos los métodos públicos se incluyen en la clase `com.adobe.primetime.va.simple.MediaHeartbeat` para facilitar el trabajo de los desarrolladores. Asimismo, todas las configuraciones están consolidadas en la clase `com.adobe.primetime.va.simple.MediaHeartbeatConfig`.
 
-For detailed information about migrating from 1.x to 2.x, see [mig-1x-2x-overview.md.](/help/sdk-implement/va-1x-to-2x/mig-1x-2x-overview.md)
+Para obtener información detallada sobre la migración de 1.x a 2.x, consulte [mig-1x-2x-overview.md.](/help/sdk-implement/va-1x-to-2x/mig-1x-2x-overview.md)
