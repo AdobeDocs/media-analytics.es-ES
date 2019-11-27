@@ -1,18 +1,18 @@
 ---
 title: Seguimiento de anuncios en Roku
-description: Implementar el seguimiento de anuncios en aplicaciones Roku usando el SDK de medios.
-uuid: b1567265-7043-4efa-a313-aaa91c4bb01
-translation-type: tm+mt
+description: Implementar el seguimiento de anuncios en aplicaciones Roku usando Media SDK.
+uuid: b1567265-7043-4efa-a313-aaaa91c4bb01
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# Seguimiento de anuncios en Roku{#track-ads-on-roku}
+# Seguimiento de anuncios en Roku {#track-ads-on-roku}
 
 >[!IMPORTANT]
 >
->Las siguientes instrucciones proporcionan instrucciones para la implementación mediante los SDK 2.x. Si va a implementar una versión 1.x del SDK, puede descargar las guías del desarrollador de 1.x aquí: [Descargar SDK.](/help/sdk-implement/download-sdks.md)
+>Las siguientes instrucciones proporcionan directrices para la implementación mediante SDK de 2.x. Si va a implementar una versión 1.x del SDK, puede descargar las guías del desarrollador de 1.x aquí: [Descargar SDK.](/help/sdk-implement/download-sdks.md)
 
 ## Constantes de seguimiento de anuncio
 
@@ -28,7 +28,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 1. Identifique cuándo comienza la zona de salto de anuncio, incluido el anuncio previo a la emisión, y cree un `AdBreakObject` utilizando la información de la pausa publicitaria.
 
-   `AdBreakObject` referencia:
+   Referencia de `AdBreakObject`:
 
    | Nombre de variable | Descripción | Requerido |
    | --- | --- | :---: |
@@ -44,7 +44,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    adBreakInfo.position = <POSITION>
    ```
 
-1. Call `trackEvent()` with `AdBreakStart` in the `MediaHeartbeat` instance to begin tracking the ad break:
+1. Invoque `trackEvent()` con `AdBreakStart` en la instancia de `MediaHeartbeat` para iniciar el seguimiento de la pausa publicitaria:
 
    ```
    contextData = {} 
@@ -61,7 +61,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
                            ad.duration) 
    ```
 
-1. Si lo desea, adjunte metadatos estándar o de anuncio a la sesión de seguimiento de medios mediante variables de datos de contexto.
+1. Opcionalmente, se pueden adjuntar metadatos estándar o de anuncio a la sesión de seguimiento de contenido mediante el uso de variables de datos de contexto.
 
    * [Implementación de metadatos de publicidad estándar en Roku](/help/sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-roku.md)
    * **Metadatos de anuncio personalizados**: para los metadatos personalizados, cree un objeto de variable para las variables de datos personalizadas y rellénelas con los datos del recurso publicitario actual:
@@ -72,13 +72,13 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
       contextData["adinfo2"] = "adinfo2"
       ```
 
-1. Call `trackEvent()` with the `AdStart` event in the `MediaHeartbeat` instance to begin tracking the ad playback:
+1. Invoque `trackEvent()` con el evento `AdStart` de la instancia de `MediaHeartbeat` para iniciar el seguimiento de la reproducción de publicidad:
 
    ```
    ADBMobile().mediaTrackEvent(ADBMobile().MEDIA_AD_START, adInfo, contextData)
    ```
 
-1. When the ad asset playback reaches the end of the ad, call `trackEvent()` with the `AdComplete` event.
+1. Cuando la reproducción del recurso publicitario llega al final de la publicidad, invoque `trackEvent()` con el evento `AdComplete`.
 
    ```
    standardAdMetadata = {} 
