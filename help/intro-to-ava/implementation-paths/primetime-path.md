@@ -2,13 +2,13 @@
 title: Primetime
 description: null
 uuid: 3d5a5ebd-b897-40f6-ba75-bba1bae3a081
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
 
 
-# Primetime{#primetime}
+# Primetime {#primetime}
 
 Media Analytics (Heartbeats) es la solución de seguimiento de medios estandarizada de Adobe. Ha reemplazado el modelo anterior de Milestone de Adobe.
 
@@ -24,8 +24,8 @@ Primetime elimina la complejidad de alcanzar, monetizar y activar las audiencias
 * Integrated support for Nielsen DTVR (linear) with ID3 metadata and DCR with CMS metadata.
 -->
 
-TVSDK ya está integrado con el Media SDK, lo que facilita la implementación y mayor rapidez en todas las plataformas admitidas. <!--Primetime also supports the partnership with Nielsen.--> Para aprovechar Primetime, siga las mismas directrices y requisitos previos que se encuentran en el [cliente](/help/intro-to-ava/implementation-paths/client-side-path.md) , junto con los siguientes documentos para las plataformas: Guía [del usuario de Primetime.](https://helpx.adobe.com/primetime/user-guide.html)
+TVSDK ya está integrado con el Media SDK, lo que facilita la implementación y mayor rapidez en todas las plataformas admitidas. <!--Primetime also supports the partnership with Nielsen.--> Para aprovechar Primetime, siga las mismas directrices y requisitos previos que se encuentran en el [lado del cliente](/help/intro-to-ava/implementation-paths/client-side-path.md), junto con los siguientes documentos para las plataformas: [Guía del usuario de Primetime.](https://helpx.adobe.com/es/support/primetime.html)
 
 >[!NOTE]
 >
->Para esta ruta de implementación, los clientes deben ponerse en contacto con su representante de ventas/administrador de cuentas para firmar un nuevo pedido de venta, ya que Media Analytics tiene un SKU único y cambia de un modelo de precios basado en llamadas al servidor a un modelo basado en flujos de medios. Además, debería ponerse en contacto con su representante de ventas o administrador de cuentas para estudiar la compra de TVSDK.
+>Para esta ruta de implementación, los clientes deberán ponerse en contacto con su representante de ventas/administrador de cuentas para firmar un nuevo pedido de ventas, ya que Media Analytics tiene un SKU único y cambia de un modelo de precios basado en las llamadas del servidor a un modelo basado en las transmisiones de contenido. Además, debería ponerse en contacto con su representante de ventas o administrador de cuentas para estudiar la compra de TVSDK.
