@@ -2,16 +2,16 @@
 title: Seguimiento del almacenamiento en búfer en Android
 description: Describe el seguimiento de eventos de almacenamiento en búfer en Android.
 uuid: f16ce76d-1db3-4b51-8c98-54cb781f71d7
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# Seguimiento del almacenamiento en búfer en Android{#track-buffering-on-android}
+# Seguimiento del almacenamiento en búfer en Android {#track-buffering-on-android}
 
 >[!IMPORTANT]
->En las siguientes instrucciones se indican los pasos para la implementación en todos los kits de desarrollo de software de 2.x. If you are implementing a 1.x version of the SDK, you can download the 1.x Developers Guides here: [Download SDks.](/help/sdk-implement/download-sdks.md)
+>En las siguientes instrucciones se indican los pasos para la implementación en todos los kits de desarrollo de software de 2.x. Si va a implementar una versión 1.x del SDK, puede descargar las guías del desarrollador de 1.x aquí: [Descargar SDK.](/help/sdk-implement/download-sdks.md)
 
 ## Constantes de seguimiento de búfer
 
