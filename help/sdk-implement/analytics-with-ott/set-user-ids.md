@@ -1,14 +1,14 @@
 ---
 title: Establecimiento de ID de usuario
-description: API para configurar los ID de usuario, qué servidor como identificador de cliente único.
-uuid: fdd54flash-79cd-4bf8-b17e-4d61d84f6310
-translation-type: tm+mt
+description: API para configurar los ID de usuario y qué servidor usar como identificador de cliente único.
+uuid: fdd54fec-79cd-4bf8-b17e-4d61d84f6310
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# Establecimiento de ID de usuario{#set-user-ids}
+# Establecimiento de ID de usuario {#set-user-ids}
 
 El ID de usuario es un identificador de visitante personalizado y único que la aplicación define.
 
