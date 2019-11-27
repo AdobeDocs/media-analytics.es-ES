@@ -1,41 +1,41 @@
 ---
-title: Habilitación de informes de medios
+title: Habilitación de informes de contenidos
 description: null
 uuid: d306068d-a308-4b6e-8a72-742dda0de428
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
 
 
-# Habilitación de informes de medios{#media-reports-enablement}
+# Habilitación de informes de contenidos {#media-reports-enablement}
 
-Cada grupo de informes que recopila métricas de medios debe configurarse antes de enviar los datos de medios.
+Para enviar datos sobre los contenidos, es necesario configurar todos los grupos de informes que recopilan métricas de contenidos.
 
 >[!TIP]
 >
->Para aprovechar las nuevas funciones, los clientes existentes de Media Analytics deben volver a habilitar el seguimiento de medios para sus RSID.
+>Para aprovechar las nuevas capacidades, los clientes de Media Analytics deben volver a habilitar el seguimiento de contenidos para sus RSID.
 
-1. In [Reports &amp; Analytics](https://my.omniture.com/login/) click **[!UICONTROL Admin &gt; Report Suites].**
-1. Select the report suite(s) where you are collecting media data and click **[!UICONTROL Edit Settings &gt; Media Management &gt; Media Reporting].**
+1. En [Reports &amp; Analytics](https://my.omniture.com/login/) haga clic en **[!UICONTROL Administración &gt; Grupos de informes].**
+1. Seleccione los grupos de informes donde desee recopilar los datos de contenidos y haga clic en **[!UICONTROL Editar configuración &gt; Gestión de contenidos &gt; Informes de contenidos].**
 
    ![](assets/media-reporting.png){width="400px"}
 
-1. On the **[!UICONTROL Media Reporting]** page, enable **[!UICONTROL Media Core],** and optionally enable **[!UICONTROL Media Ads],** **[!UICONTROL Media Chapters],** and **[!UICONTROL Media Quality].**
+1. En la página **[!UICONTROL Informes de contenidos]**, habilite **[!UICONTROL Componentes básicos de contenidos],** y, opcionalmente, también **[!UICONTROL Anuncios de contenidos],** **[!UICONTROL Capítulos de contenidos]** y **[!UICONTROL Calidad de contenidos].**
 
-   La medición de medios incluye los siguientes módulos:
+   La medición de contenidos incluye los siguientes módulos:
 
-   * **Componentes básicos de medios**
+   * **Componentes básicos de contenidos**
 
-      La medición de medios principales se utiliza para el contenido multimedia. Esta usa eVars de solución (o personalizadas) para realizar un seguimiento del contenido, el tipo de contenido, el nombre del reproductor y el canal de contenido. Los eventos de solución (o personalizados) se utilizarán para los inicios de medios, los inicios de contenido, las finalizaciones de contenido y el tiempo invertido en el contenido.
+      La medición de componentes básicos de contenidos se utiliza para el contenido multimedia. Esta usa eVars de solución (o personalizadas) para realizar un seguimiento del Contenido, el Tipo de contenido, el Nombre del reproductor de contenido y el Canal de contenido. Los eventos de solución (o personalizados) se utilizarán para contenidos iniciados, Contenido iniciado, Contenido finalizado y Tiempo invertido en contenido.
 
    * **Anuncios multimedia**
 
-      La medición de anuncios multimedia se utiliza para medir anuncios dentro del contenido multimedia. Se utilizará el conmutador de soluciones eVars para medir la publicidad, el nombre del reproductor de publicidad, el pod de anuncios y la publicidad en la posición del pod. Se utilizarán eventos de solución para inicios de anuncios, finalización de anuncios, tiempo invertido en publicidad y tiempo de vídeo transcurrido.
+      La medición de anuncios de contenidos se usa para medir anuncios dentro del contenido de contenidos. Se utilizará el conmutador de soluciones eVars para medir la publicidad, el nombre del reproductor de publicidad, el pod de anuncios y la publicidad en la posición del pod. Se utilizarán eventos de solución para inicios de anuncios, finalización de anuncios, tiempo invertido en publicidad y tiempo de vídeo transcurrido.
 
    * **Capítulos multimedia**
 
-      La medición de capítulos de vídeo se utiliza para medir capítulos. Un capítulo es una subdivisión de contenido dentro de un solo medio. Se utilizará una eVar de solución para almacenar el ID del capítulo. Se utilizarán eventos de solución para el inicio de capítulos, la finalización de capítulos y el tiempo del capítulo consumido. Los metadatos adicionales del nombre del capítulo y de posición se proporcionarán como clasificaciones del ID del capítulo.
+      La medición de capítulos del vídeo se usa para medir capítulos. Un capítulo es una subdivisión de contenido dentro de los contenidos. Se utilizará una eVar de solución para almacenar el ID del capítulo. Se utilizarán eventos de solución para el inicio de capítulos, la finalización de capítulos y el tiempo del capítulo consumido. Los metadatos adicionales del nombre del capítulo y de posición se proporcionarán como clasificaciones del ID del capítulo.
 
    * **Calidad multimedia**
 
@@ -43,26 +43,26 @@ Cada grupo de informes que recopila métricas de medios debe configurarse antes 
 
    * **Metadatos de vídeo y anuncios de vídeo**
 
-      Los metadatos se pueden adjuntar a un medio o a una publicidad para describir y categorizar mejor ese medio o anuncio. Los metadatos de anuncios y medios estandarizados se recopilarán mediante variables y clasificaciones de soluciones. Los valores incluyen: Programa, Temporada, Episodio, ID de recurso, Género, Fecha de primera publicación, Fecha del primer uso digital, Valoración del contenido, Creador, Red, Tipo de programa, Cargas publicitarias, MVPD, Con autorización, Partición de días, ID de sesión de medio, Anunciante, ID de campaña e ID creativo.
+      Se pueden adjuntar metadatos a un contenido o a un anuncio para describir y categorizar más ese contenido o anuncio. Los metadatos estandarizados de contenidos o de publicidad se recopilarán mediante variables y clasificaciones de soluciones. Los valores incluyen: Programa, Temporada, Episodio, ID de recurso, Género, Fecha de primera publicación, Fecha del primer uso digital, Valoración del contenido, Creador, Red, Tipo de programa, Cargas publicitarias, MVPD, Con autorización, Partición de días, ID de sesión de contenido, Anunciante, ID de campaña e ID creativo.
 
    * **Metadatos de anuncios de audio y audio**
 
-      Los metadatos se pueden adjuntar al audio o anuncio para describirlo o categorizarlo con más precisión. Los metadatos estandarizados de los anuncios y el audio se recopilan a través de las variables y las clasificaciones de la solución. Los valores disponibles son los siguientes: artista, álbum, discográfica, autor, editor, canal, programa, temporada, episodio, ID de activo, género, fecha de la primera emisión, fecha del primer uso digital, valoración del contenido, creador, tipo de programa, cargas del anuncio, plantilla de programación, ID de sesión de medio, anunciante, ID de campaña e ID de creativo.
+      Los metadatos se pueden adjuntar al audio o anuncio para describirlo o categorizarlo con más precisión. Los metadatos estandarizados de los anuncios y el audio se recopilan a través de las variables y las clasificaciones de la solución. Los valores disponibles son los siguientes: artista, álbum, discográfica, autor, editor, canal, programa, temporada, episodio, ID de activo, género, fecha de la primera emisión, fecha del primer uso digital, valoración del contenido, creador, tipo de programa, cargas del anuncio, plantilla de programación, ID de sesión de contenido, anunciante, ID de campaña e ID de creativo.
    Al habilitar cada módulo, se reserva un conjunto de variables y se crea un nuevo conjunto de informes. A excepción de Calidad, no habrá datos en los informes a menos que se haya completado la implementación correspondiente. Al implementar el módulo Core, también se implementa el módulo Calidad si lo habilita.
 
    Si todavía no rastrea anuncios, capítulos o la calidad de la reproducción, puede habilitar opciones adicionales en cualquier momento.
 
 1. Haga clic en **[!UICONTROL Guardar].**
 
-   If this report suite is already configured to collect media data, after you click **[!UICONTROL Save]**, an additional configuration page is displayed. Si ve la página **[!UICONTROL Medición de Media Core], continúe con el siguiente paso.**
+   Si este grupo de informes ya está configurado para recopilar datos de contenidos, después de hacer clic en **[!UICONTROL Guardar]**, aparecerá una página de configuración adicional. Si ve la página **[!UICONTROL Medición de Componentes básicos de contenidos]**, continúe con el siguiente paso.
 
-1. (Conditional) On the **[!UICONTROL Media Core measurement]** page, choose to continue using custom variables or choose to use solution variables.
+1. (Condicional) En la página **[!UICONTROL medición del Componentes básicos de contenidos]**, seleccione continuar usando las variables personalizadas o usar variables de solución.
 
    | Opción | Notas |
    | --- | --- |
-   | Continuar usando variables personalizadas | Ventajas y ventajas:<ul> <li> **Profesionales:** las tendencias de medios siguen funcionando después de la migración. </li> <li> **** Contras: Requiere que mantenga dos eVars personalizadas y tres eventos personalizados asignados a los medios. Recupera el uso de una eVar personalizada y un evento personalizado. </li> </ul> Para continuar usando variables personalizadas: <ol> <li>Select **[!UICONTROL Use Custom Variables,]** then click **[!UICONTROL Save.]** </li> <li>When prompted, map your current custom eVars and events and then click **[!UICONTROL Save:]** </li> </ol> |
-   | Migrar a variables de solución | Ventajas y ventajas:<ul> <li> **Profesionales:** se puede utilizar tres eVars personalizadas y cuatro eventos personalizados. </li> <li> **Desventajas:** pierde **todas** las tendencias y comparativas históricas para los informes de medios. Esto significa que no puede ver la tendencia de las visualizaciones de contenido ni el tiempo de contenido reproducido en cualquier fecha antes de realizar la migración a Heartbeat. </li> </ul> **Restricción:** no migre a las variables de solución a menos que esté seguro de que no desea conservar esta tendencia. Todos los clientes deben utilizar variables de solución y reglas de procesamiento para incluir datos de medios en las props y eVars existentes, solo si necesitan conservar la continuidad histórica. Para migrar a variables de solución: Seleccione **[!UICONTROL Usar variables]** de solución y haga clic en **[!UICONTROL Guardar].** <br><br> IMPORTANTE: La migración a variables de solución hace que pierda **todas** las comparaciones y tendencias históricas para los informes de medios. |
+   | Continuar usando variables personalizadas | Ventajas e inconvenientes:<ul> <li> **Profesionales:** las tendencias de contenidos siguen funcionando después de la migración. </li> <li> **Inconvenientes:** Requiere que mantenga dos eVars personalizadas y tres eventos personalizados asignados a contenidos. Recupera el uso de una eVar personalizada y un evento personalizado. </li> </ul> Para continuar usando variables personalizadas: <ol> <li>Seleccione **[!UICONTROL Usar variables personalizadas]** y luego haga clic en **[!UICONTROL Guardar]**. </li> <li>Cuando se le solicite, asigne sus eVars y eventos personalizados actuales y luego haga clic en **[!UICONTROL Guardar:]** </li> </ol> |
+   | Migrar a variables de solución | Ventajas e inconvenientes:<ul> <li> **Profesionales:** se puede utilizar tres eVars personalizadas y cuatro eventos personalizados. </li> <li> **Desventajas:** pierde **todas** las tendencias y comparativas históricas para los informes de contenidos. Esto significa que no puede ver la tendencia de las visualizaciones de contenido ni el tiempo de contenido reproducido en cualquier fecha antes de realizar la migración a Heartbeat. </li> </ul> **Restricción:** no migre a las variables de solución a menos que esté seguro de que no desea conservar esta tendencia. Todos los clientes deben utilizar variables de solución y reglas de procesamiento para incluir datos de contenidos en las props y eVars existentes, solo si necesitan conservar la continuidad histórica. Para migrar a variables de solución: Seleccione **[!UICONTROL Usar variables de solución]** y haga clic en **[!UICONTROL Guardar].** <br><br> IMPORTANTE: La migración a las variables de solución hace que se pierdan **todas** las tendencias y comparativas históricas para los informes de contenidos. |
 
 >[!IMPORTANT]
 >
->No cambie los nombres de clasificación de ninguna variable enumerada en las tablas de métricas y metadatos (por ejemplo, parámetros [de](/help/metrics-and-metadata/audio-video-parameters.md)audio y vídeo) que se describen en Informes/Variable reservada como "clasificación". Las clasificaciones de medios se definen cuando se habilita un grupo de informes para el seguimiento de medios. De vez en cuando, Adobe agrega nuevas propiedades y, cuando esto sucede, los clientes deben volver a habilitar sus grupos de informes para obtener acceso a las propiedades de los nuevos medios. Durante el proceso de actualización, Adobe determina si las clasificaciones están habilitadas mediante la comprobación de los nombres de las variables. Si falta alguno de ellos, Adobe agrega los que faltan de nuevo.
+>No cambie los nombres de clasificación de ninguna variable enumerada en las tablas de métricas y metadatos (por ejemplo, [Parámetros de audio y vídeo](/help/metrics-and-metadata/audio-video-parameters.md)) que se describen en Informes/Variables reservadas como “clasificación”. Las clasificaciones de contenidos se definen cuando se habilita un grupo de informes para el seguimiento de contenidos. De vez en cuando, Adobe agrega nuevas propiedades y, cuando esto sucede, los clientes deben volver a habilitar sus grupos de informes para obtener acceso a las propiedades de los nuevos contenidos. Durante el proceso de actualización, Adobe determina si las clasificaciones están habilitadas mediante la comprobación de los nombres de las variables. Si falta alguno de ellos, Adobe agrega los que faltan de nuevo.
