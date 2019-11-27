@@ -1,59 +1,59 @@
 ---
-title: Interrupción de medios de prueba 2
-description: En este tema se describe la prueba de interrupción de medios utilizada en la validación.
+title: Prueba 2  Interrupción de contenido
+description: En este tema se describe la prueba de interrupción de contenido utilizada en la validación.
 uuid: eeccd534-63fd-4dd3-b096-0431bc9a11ff
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# Prueba 2: Interrupción de los medios{#test-media-interruption}
+# Prueba 2: Interrupción de contenido {#test-media-interruption}
 
 Este caso de prueba valida el comportamiento de la interrupción móvil. Es un elemento requerido de su solicitud de certificación.
 
 ## Formulario de solicitud de certificación
 
-**Descargue el formulario de solicitud de certificación aquí: ==&gt;Formulario** de solicitud de [certificación.](cert_req_form.docx)
+**Descargue el formulario de solicitud de certificación aquí: ==&gt;**  [Formulario de solicitud de certificación.](cert_req_form.docx)
 
-## Procedimiento de ensayo
+## Procedimiento de prueba
 
 Debe completar y registrar estas tareas en el siguiente orden:
 
-1. **Iniciar el reproductor de medios**
+1. **Iniciar el reproductor de contenidos**
 
-   Cuando se inicia el reproductor de medios, las siguientes llamadas se envían en el siguiente orden:
+   Cuando se inicia el reproductor de contenido, estas llamadas se envían en el siguiente orden:
 
    1. Inicio de Adobe Analytics (AppMeasurement)
    1. Inicio de Media Analytics (latidos)
    1. Llamada de inicio de Adobe Analytics (latidos) de Media Analytics solicitada
-   Las dos primeras llamadas anteriores contienen metadatos y variables adicionales. Para ver los parámetros y metadatos de la llamada, consulte Detalles [de la llamada de prueba.](/help/sdk-implement/validation/test-call-details.md#start-the-media-player)
+   Las dos primeras llamadas descritas contienen metadatos y variables adicionales. Para ver los parámetros y metadatos de la llamada, consulte [Detalles de la llamada de prueba.](/help/sdk-implement/validation/test-call-details.md#start-the-media-player)
 
-   La tercera llamada anterior indica al servidor de Media Analytics que el SDK de medios solicitó que la llamada de inicio (`pev2=ms_s`) de Adobe Analytics se enviara al servidor de Adobe Analytics.
+   La tercera llamada descrita indica al servidor de Media Analytics que Media SDK solicitó que la llamada de inicio (`pev2=ms_s`) de Adobe Analytics se enviara al servidor de Adobe Analytics.
 
-1. **Reproducción del contenido principal durante al menos 5 minutos sin interrupción**
+1. **Reproducir el contenido principal durante 5 minutos sin pausarlo**
 
    **Reproducción de contenido**
 
-   Durante la reproducción de contenido, el SDK de medios envía llamadas de reproducción (latidos) al servidor de Media Analytics cada diez segundos.
+   Durante la reproducción de contenido, Media SDK envía llamadas de reproducción (latidos) al servidor de Media Analytics cada diez segundos.
 
-   Para ver los parámetros y metadatos de la llamada, consulte Detalles [de la llamada de prueba.](/help/sdk-implement/validation/test-call-details.md#play-main-content)
+   Para ver los parámetros y metadatos de la llamada, consulte [Detalles de la llamada de prueba.](/help/sdk-implement/validation/test-call-details.md#play-main-content)
 
-   Also see your platform's [Track Ads](/help/sdk-implement/track-ads/track-ads-overview.md) instructions for additonal information about these Ad calls.
+   Además, consulte las instrucciones de [Seguimiento de anuncios](/help/sdk-implement/track-ads/track-ads-overview.md) de su plataforma para obtener más información sobre las llamadas de anuncio.
 
 1. **Mover la aplicación o el navegador al fondo**
 
-   While the app runs in the background, only `main:pause` calls should be sent to the Media Analytics server, starting with VHL version 1.6.6 and later.
+   Mientras la aplicación se ejecuta en segundo plano, solo las llamadas de `main:pause` se enviarán al servidor de Media Analytics, a partir de la versión VHL 1.6.6.
 
-1. **Volver a poner la aplicación o el navegador en primer plano**
+1. **Traer la aplicación o el explorador al primer plano**
 
    Cuando la aplicación vuelva al primer plano, el contenido se reanudará.
 
-1. **Reproducción de medios de contenido principal durante al menos 5 minutos sin interrupción**
+1. **Reproducir el contenido principal durante 5 minutos sin pausarlo**
 
-   Para ver los parámetros y metadatos de la llamada, consulte Detalles [de la llamada de prueba.](/help/sdk-implement/validation/test-call-details.md#play-main-content)
+   Para ver los parámetros y metadatos de la llamada, consulte [Detalles de la llamada de prueba.](/help/sdk-implement/validation/test-call-details.md#play-main-content)
 
 1. **Cerrar reproductor multimedia**
 
-   Ninguna llamada de seguimiento adicional debe activarse después de cerrar el reproductor multimedia.
+   No se activarán llamadas de seguimiento adicionales tras cerrar el reproductor de contenido.
 
