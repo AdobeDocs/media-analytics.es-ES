@@ -1,18 +1,18 @@
 ---
-title: Cookbook de Media Analytics
-description: Página de Cookbook de nivel superior, con vínculos generales de MA y vínculos específicos de SDK.
-translation-type: tm+mt
+title: Guía de Media Analytics
+description: Página principal de la Guía, con vínculos generales de MA y vínculos específicos de SDK.
+translation-type: ht
 source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
 
 
-# Cookbook de Media Analytics
+# Guía de Media Analytics
 
-## Temas generales del libro de cocina de Media Analytics
+## Temas generales de la guía de Media Analytics
 
-[Atribución de flujo de recursos multimedia](/help/media-analytics-cookbook/media-dimensions.md)
+[Atribución de flujo de transmisión de contenido](/help/media-analytics-cookbook/media-dimensions.md)
 
-## Temas del libro de cocina de Media SDK
+## Temas de la guía de Media SDK
 
-[Cookbook de Media SDK](/help/sdk-implement/cookbook/sdk-cookbook-overview.md)
+[Guía de Media SDK](/help/sdk-implement/cookbook/sdk-cookbook-overview.md)
