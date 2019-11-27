@@ -2,19 +2,19 @@
 title: Varios rastreadores de VOD en paralelo
 description: Ejemplo de cómo rastrear VOD usando varios rastreadores en paralelo.
 uuid: 6e25dd92-522f-455c-8e71-99d71d352e06
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# Varios rastreadores de VOD en paralelo{#vod-multiple-trackers-in-parallel}
+# Varios rastreadores de VOD en paralelo {#vod-multiple-trackers-in-parallel}
 
 ## Situación {#scenario}
 
-In this scenario, there are two sessions running in parallel for two separate medias and using two separate instances of `MediaHeartbeat`.
+En esta situación hay dos sesiones que se ejecutan en paralelo para dos contenidos distintos y que utilizan dos instancias diferentes de `MediaHeartbeat`.
 
-This scenario is identical to the [VOD playback with no ads](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) scenario, except there are two sessions that are running in parallel for two separate medias. Cada sesión usa una instancia diferente de `MediaHeartbeat`.
+Este escenario es igual al escenario de [Reproducción de VOD sin anuncios](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) salvo por el hecho de que hay dos sesiones que se ejecutan en paralelo para dos contenidos distintos. Cada sesión usa una instancia diferente de `MediaHeartbeat`.
 
 Si no se indica lo contrario, las llamadas de red son iguales al escenario de [Reproducción de VOD sin anuncios](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md).
 
