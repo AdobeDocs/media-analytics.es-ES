@@ -1,14 +1,14 @@
 ---
 title: Reproducción de VOD sin anuncios
-description: Ejemplo de seguimiento de la reproducción de VOD que no contiene anuncios.
+description: Ejemplo de seguimiento de la reproducción de VOD que no contenga anuncios.
 uuid: ee2a1b79-2c2f-42e1-8e81-b62bbdd0d8cb
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# Reproducción de VOD sin anuncios{#vod-playback-with-no-ads}
+# Reproducción de VOD sin anuncios {#vod-playback-with-no-ads}
 
 ## Situación {#scenario}
 
@@ -16,14 +16,14 @@ Este caso trata de un recurso de VOD sin anuncios que se reproduce una vez de pr
 
 | Activador | Método de Heartbeat | Llamadas de red | Notas   |
 |---|---|---|---|
-| User clicks **[!UICONTROL Play]** | `trackSessionStart` | Inicio del contenido de Analytics, inicio del contenido de Heartbeat | Puede ser porque el usuario hace clic en Reproducir o por un evento de reproducción automática. |
-| Primer fotograma del medio | `trackPlay` | Reproducción del contenido de Heartbeat | Este método desencadena el temporizador y, a partir de este punto, se envían latidos cada 10 segundos mientras dura la reproducción. |
+| El usuario hace clic en **[!UICONTROL Reproducir]**. | `trackSessionStart` | Inicio del contenido de Analytics, inicio del contenido de Heartbeat | Puede ser porque el usuario hace clic en Reproducir o por un evento de reproducción automática. |
+| Primer fotograma del contenido | `trackPlay` | Reproducción del contenido de Heartbeat | Este método desencadena el temporizador y, a partir de este punto, se envían latidos cada 10 segundos mientras dura la reproducción. |
 | Se reproduce el contenido. |  | Latidos de contenido |  |
 | El contenido termina de reproducirse. | `trackComplete` | Finalización de contenido de Heartbeat | *Complete* significa que el cabezal de reproducción ha llegado al final del contenido. |
 
 ## Parámetros {#parameters}
 
-Many of the same values that you see on Heartbeat Content Start Calls are also seen on Adobe Analytics `Content Start` Calls. Hay muchos parámetros que Adobe utiliza para rellenar los distintos informes de medios, pero en la tabla siguiente solo se muestran los más importantes:
+Muchos de los valores que existen en las llamadas de inicio de contenido de Heartbeat están presentes en las llamadas de `Content Start` de Adobe Analytics. Adobe usa muchos parámetros para rellenar los distintos informes de contenido, pero en la siguiente tabla solo se recogen los más importantes:
 
 ### Inicio del contenido de Heartbeat
 
@@ -31,15 +31,15 @@ Many of the same values that you see on Heartbeat Content Start Calls are also s
 |---|---|---|
 | `s:sc:rsid` | &lt;El ID de su grupo de informes de Adobe&gt; |  |
 | `s:sc:tracking_server` | &lt;La URL de servidor de seguimiento de Analytics&gt; |  |
-| `s:user:mid` | se debe definir | Debe coincidir con el valor medio de la `Adobe Analytics Content Start` llamada. |
+| `s:user:mid` | se debe definir | Debe coincidir con el valor medio de la llamada `Adobe Analytics Content Start`. |
 | `s:event:type` | `"start"` |  |
 | `s:asset:type` | `"main"` |  |
-| `s:asset:media_id` | &lt;Nombre del medio&gt; |  |
-| `s:meta:*` | opcional | Metadatos personalizados que se establecen en el medio. |
+| `s:asset:media_id` | &lt;Nombre de su contenido&gt; |  |
+| `s:meta:*` | opcional | Metadatos personalizados que se definen en el contenido. |
 
 ## Reproducción del contenido de Heartbeat {#heartbeat-content-play}
 
-These parameters should look nearly identical to the `Heartbeat Content Start` call, but the key difference is the `s:event:type` parameter. Todos los demás parámetros deben seguir estando.
+Estos parámetros deberían ser casi idénticos a la llamada de `Heartbeat Content Start`, pero la diferencia clave es el parámetro `s:event:type`. Todos los demás parámetros deben seguir estando.
 
 | Parámetro | Valor | Notas   |
 |---|---|---|
@@ -48,7 +48,7 @@ These parameters should look nearly identical to the `Heartbeat Content Start` c
 
 ## Latidos de contenido {#content-heartbeats}
 
-Durante la reproducción de medios, un temporizador envía al menos un latido cada 10 segundos. Estos latidos contienen información sobre la reproducción, los anuncios y el almacenamiento en búfer, entre otras cosas. El contenido exacto de cada latido no se detallará en este documento, pero lo más importante que hay que saber es que los latidos se desencadenan constantemente mientras dura la reproducción.
+Durante la reproducción de contenido, un temporizador envía al menos un latido cada 10 segundos. Estos latidos contienen información sobre la reproducción, los anuncios y el almacenamiento en búfer, entre otras cosas. El contenido exacto de cada latido no se detallará en este documento, pero lo más importante que hay que saber es que los latidos se desencadenan constantemente mientras dura la reproducción.
 
 En el contenido de los latidos, busque los parámetros siguientes:
 
@@ -59,7 +59,7 @@ En el contenido de los latidos, busque los parámetros siguientes:
 
 ## Finalización de contenido de Heartbeat {#heartbeat-content-complete}
 
-When playback has completed, which means that the end of the playhead is reached, a `Heartbeat Content Complete` call is sent. Esta llamada es como las otras llamadas de Heartbeat, pero contiene algunos parámetros específicos:
+Cuando termina la reproducción de contenido, lo que significa que se ha llegado al final del cabezal de reproducción, se envía una llamada de `Heartbeat Content Complete`. Esta llamada es como las otras llamadas de Heartbeat, pero contiene algunos parámetros específicos:
 
 | Parámetros | Valor | Notas   |
 |---|---|---|
