@@ -1,14 +1,14 @@
 ---
 title: Contenido principal en directo
-description: Ejemplo de cómo rastrear contenido en directo mediante el SDK de medios.
+description: Ejemplo de cómo rastrear contenido en directo mediante Media SDK.
 uuid: e92e99f4-c395-48aa-8a30-cbdd2f5fc07c
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# Contenido principal activo{#live-main-content}
+# Contenido principal activo {#live-main-content}
 
 ## Situación {#scenario}
 
@@ -16,14 +16,14 @@ En esta situación, solo hay un recurso activo sin anuncios que se reproduce dur
 
 | Activador | Método de Heartbeat | Llamadas de red | Notas   |
 |---|---|---|---|
-| User clicks **[!UICONTROL Play]** | `trackSessionStart` | Inicio del contenido de Analytics, inicio del contenido de Heartbeat | Puede ser porque el usuario hace clic en **[!UICONTROL Reproducir]o por un evento de reproducción automática.** |
-| Se reproduce el primer fotograma del medio. | `trackPlay` | Reproducción del contenido de Heartbeat | Este método desencadena el temporizador. Se envían latidos cada 10 segundos mientras dura la reproducción. |
+| El usuario hace clic en **[!UICONTROL Reproducir]**. | `trackSessionStart` | Inicio del contenido de Analytics, inicio del contenido de Heartbeat | Puede ser porque el usuario hace clic en **[!UICONTROL Reproducir]** o por un evento de reproducción automática. |
+| Se reproduce el primer fotograma del contenido. | `trackPlay` | Reproducción del contenido de Heartbeat | Este método desencadena el temporizador. Se envían latidos cada 10 segundos mientras dura la reproducción. |
 | Se reproduce el contenido. |  | Latidos de contenido |  |
-| La sesión finaliza. | `trackSessionEnd` |  | `SessionEnd` significa el final de una sesión de visualización. Se debe llamar a esta API aunque el usuario no consuma los medios hasta la finalización. |
+| La sesión finaliza. | `trackSessionEnd` |  | `SessionEnd` significa el final de una sesión de visualización. Hay que invocar a esta API aunque el usuario no vea el contenido completo. |
 
 ## Parámetros {#parameters}
 
-Muchos de los valores que existen en las llamadas de inicio de contenido de Adobe Analytics están presentes en las llamadas de inicio de contenido de Heartbeat. También verá muchos otros parámetros que Adobe utiliza para rellenar los distintos informes de medios en Adobe Analytics. Aquí no vamos a detallar todos, solo los más importantes.
+Muchos de los valores que existen en las llamadas de inicio de contenido de Adobe Analytics están presentes en las llamadas de inicio de contenido de Heartbeat. También verá muchos otros parámetros que Adobe utiliza para rellenar los distintos informes de contenido en Adobe Analytics. Aquí no vamos a detallar todos, solo los más importantes.
 
 ### Inicio del contenido de Heartbeat
 
@@ -34,13 +34,13 @@ Muchos de los valores que existen en las llamadas de inicio de contenido de Adob
 | `s:user:mid` | `s:user:mid` | Debe coincidir con el valor medio de la llamada de inicio de contenido de Adobe Analytics |
 | `s:event:type` | "start" |  |
 | `s:asset:type` | "main" |  |
-| `s:asset:mediao_id` | &lt;Nombre del medio&gt; |  |
+| `s:asset:mediao_id` | &lt;Nombre de su contenido&gt; |  |
 | `s:stream:type` | live |  |
-| `s:meta:*` | opcional | Metadatos personalizados definidos en el medio |
+| `s:meta:*` | opcional | Metadatos personalizados definidos en el contenido |
 
 ## Latidos de contenido {#content-heartbeats}
 
-Durante la reproducción de medios, hay un temporizador que enviará uno o más latidos (o pings) cada 10 segundos para el contenido principal y cada segundo para los anuncios. Estos latidos contienen datos sobre la reproducción, los anuncios y el almacenamiento en búfer, entre otros. El contenido exacto de cada latido no se detallará en este documento. Lo más importante es que los latidos se desencadenan constantemente mientras dura la reproducción.
+Durante la reproducción del contenido, hay un temporizador que enviará uno o más latidos (o pings) cada 10 segundos para el contenido principal y cada segundo para los anuncios. Estos latidos contienen datos sobre la reproducción, los anuncios y el almacenamiento en búfer, entre otros. El contenido exacto de cada latido no se detallará en este documento. Lo más importante es que los latidos se desencadenan constantemente mientras dura la reproducción.
 
 En los latidos de contenido debe fijarse en ciertos detalles:
 
@@ -51,21 +51,21 @@ En los latidos de contenido debe fijarse en ciertos detalles:
 
 ## Finalización de contenido de Heartbeat {#heartbeat-content-complete}
 
-No habrá una llamada completa en este escenario, porque la transmisión en vivo nunca se completó.
+No habrá una llamada de finalización en este caso, ya que la emisión en directo nunca llegó a completarse.
 
-## Configuración del valor del cursor de reproducción
+## Configuración del valor del cabezal de reproducción
 
-En el caso de los flujos en directo, debe establecer el cursor de reproducción en un desplazamiento con respecto al inicio de la programación, de modo que en los informes los analistas puedan determinar en qué momento se unen los usuarios y abandonan el flujo en vivo en una vista de 24 horas.
+En el caso de los flujos en directo, debe establecer el cabezal de reproducción en un desplazamiento con respecto al inicio de la programación, de modo que en los informes los analistas puedan determinar en qué momento se unen los usuarios y abandonan el flujo en vivo en una vista de 24 horas.
 
 ### Al comienzo
 
-En el caso de los medios en directo, cuando un usuario comienza a reproducir el flujo, debe establecer `l:event:playhead` el desplazamiento actual en segundos. Esto es lo contrario a VOD, donde establecería el cursor de reproducción en "0".
+En el caso de los contenidos en directo, cuando un usuario comienza a reproducir el flujo, debe establecer `l:event:playhead` para el desplazamiento actual en segundos. Esto es lo contrario a VOD, donde establecería el cursor de reproducción en “0”.
 
-Por ejemplo, supongamos que un evento de transmisión en vivo comienza a medianoche y se ejecuta durante 24 horas (`a.media.length=86400`; `l:asset:length=86400`). Luego, digamos que un usuario empieza a reproducir ese flujo en vivo a las 12:00 pm. En este escenario, debe establecerse `l:event:playhead` en 43200 (12 horas en el flujo).
+Por ejemplo, supongamos que un evento de transmisión en vivo comienza a medianoche y se ejecuta durante 24 horas (`a.media.length=86400`; `l:asset:length=86400`). Entonces, digamos que un usuario empieza a reproducir ese flujo en vivo a las 12:00 pm. En este escenario, debe establecerse `l:event:playhead` en 43200 (12 horas en el flujo).
 
 ### Al pausar
 
-La misma lógica de "cabeza lectora en directo" aplicada al inicio de la reproducción debe aplicarse cuando un usuario pone en pausa la reproducción. Cuando el usuario vuelve a reproducir el flujo en directo, debe establecer el valor en la nueva posición del cursor de reproducción de desplazamiento, `l:event:playhead` no __ en el punto en el que el usuario detuvo el flujo en directo.
+La misma lógica de “cabezal de lectura en directo” aplicada al inicio de la reproducción debe aplicarse cuando un usuario pone en pausa la reproducción. Cuando el usuario vuelve a reproducir el flujo en directo, debe establecer el valor `l:event:playhead` en la nueva posición del cursor de reproducción de desplazamiento, _no_ en el punto en el que el usuario detuvo el flujo en directo.
 
 ## Código de muestra {#sample-code}
 
