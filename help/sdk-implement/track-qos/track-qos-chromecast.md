@@ -1,14 +1,14 @@
 ---
 title: Seguimiento de la calidad de la experiencia en Chromecast
-description: En este tema se describe la implementación del seguimiento de calidad de experiencia (QoE, QoS) mediante el SDK de medios en Chromecast.
+description: En este tema se describe la implementación del seguimiento de la calidad de experiencia (QoE, QoS) mediante Media SDK en Chromecast.
 uuid: d0cdc8cd-4db0-45ef-9470-1cba3996305b
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# Seguimiento de la calidad de la experiencia en Chromecast{#track-quality-of-experience-on-chromecast}
+# Seguimiento de la calidad de la experiencia en Chromecast {#track-quality-of-experience-on-chromecast}
 
 >[!IMPORTANT]
 >
@@ -16,7 +16,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ## Información general {#overview}
 
-Quality of experience tracking includes quality of service (QoS) and error tracking, both are optional elements and are **not** required for core media tracking implementations. Puede utilizar la API del reproductor de medios para identificar las variables relacionadas con QoS y el seguimiento de errores.
+El seguimiento de la calidad de la experiencia incluye la calidad del servicio (QoS) y el seguimiento de errores. Ambos son elementos opcionales y **no** son necesarios para las implementaciones principales de contenido. Puede utilizar la API del reproductor de contenido para identificar las variables relacionadas con la calidad de servicio y el seguimiento de errores.
 
 ## Eventos del reproductor {#player-events}
 
@@ -31,13 +31,13 @@ La llamada `trackError(“media error id”);`
 
 ## Implementación {#implement}
 
-1. Identify when the bitrate changes during media playback and create the `MediaObject` instance using the QoS information.
+1. Identifique cuándo cambia la velocidad de bits durante la reproducción de contenido y cree la instancia de `MediaObject` con la información de QoS.
 
    **Variables QoSObject:**
 
    >[!TIP]
    >
-   >Estas variables solo son necesarias si planea realizar un seguimiento de QoS.
+   >Estas variables solo son necesarias si planea realizar seguimientos de QoS.
 
    | Variable | Descripción | Requerido |
    | --- | --- | :---: |
@@ -60,12 +60,12 @@ La llamada `trackError(“media error id”);`
 
    >[!IMPORTANT]
    >
-   >Actualice el objeto QoS y llame al evento de cambio de velocidad de bits en cada cambio de velocidad de bits. Esto proporciona los datos de QoS más precisos.
+   >Actualice el objeto QoS e invoque el evento de cambio de velocidad de bits en cada cambio. Esto proporciona los datos de QoS más precisos.
 
 1. Asegúrese de que el método `getQoSObject()` devuelve la información de QoS más actual.
-1. When the media player encounters an error, and the error event is available to the player API, use `trackError()` to capture the error information. (Consulte [Información general](/help/sdk-implement/track-errors/track-errors-overview.md).)
+1. Cuando el reproductor de contenido encuentre un error, y el evento de error esté disponible con la API del reproductor, utilice el evento `trackError()` para capturar la información de error. (Consulte [Información general](/help/sdk-implement/track-errors/track-errors-overview.md).)
 
    >[!TIP]
    >
-   >El seguimiento de los errores del reproductor de medios no detendrá la sesión de seguimiento de medios. If the media player error prevents the playback from continuing, make sure that the media tracking session is closed by calling `trackSessionEnd()` after calling `trackError()`.
+   >El seguimiento de los errores del reproductor de contenidos no detendrá la sesión de seguimiento de contenidos. Si el reproductor de contenidos impide que continúe la reproducción, asegúrese de que la sesión de seguimiento de contenidos se cierre llamando a `trackSessionEnd()` después de invocar a `trackError()`.
 
