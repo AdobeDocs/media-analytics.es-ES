@@ -1,14 +1,14 @@
 ---
 title: Seguimiento de llamada a otro punto del contenido en Android
-description: En este tema se describe la implementación del seguimiento de búsqueda mediante el SDK de medios en Android.
+description: En este tema se describe la implementación del seguimiento de búsqueda mediante Media SDK en Android.
 uuid: 65addd99-eebf-4a80-8b4a-d5fbdff8ab06
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# Seguimiento de llamada a otro punto del contenido en Android{#track-seeking-on-android}
+# Seguimiento de llamada a otro punto del contenido en Android {#track-seeking-on-android}
 
 >[!IMPORTANT]
 >
