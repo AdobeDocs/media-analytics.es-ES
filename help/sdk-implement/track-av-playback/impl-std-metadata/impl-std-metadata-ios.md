@@ -2,13 +2,13 @@
 title: Implementación de metadatos estándar en iOS
 description: Describe la configuración de metadatos de anuncios y vídeos estándar para enviarlos con llamadas de seguimiento en iOS.
 uuid: 75a80f08-4a95-49d4-a27a-8ce531d64d31
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# Implementación de metadatos estándar en iOS{#implement-standard-metadata-on-ios}
+# Implementación de metadatos estándar en iOS {#implement-standard-metadata-on-ios}
 
 ## Constantes de metadatos
 
@@ -18,12 +18,12 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ## Implementación
 
-1. Create a dictionary of standard metadata key value pairs using the `ADBStandardMetadataKeys`
-   [Teclas de metadatos de IOS](/help/sdk-implement/track-av-playback/impl-std-metadata/ios-metadata-keys.md)
+1. Cree un diccionario de pares de clave-valor para los metadatos estándar usando `ADBStandardMetadataKeys`.
+   [Claves de metadatos de IOS](/help/sdk-implement/track-av-playback/impl-std-metadata/ios-metadata-keys.md)
 
-1. Establezca el diccionario de metadatos estándar en la instancia `MediaInfo``ADBMediaObject`   mediante el uso de la constante de metadatos estándar para los metadatos.
+1. Establezca el diccionario de metadatos estándar en la instancia `MediaInfo``ADBMediaObject` mediante el uso de la constante de metadatos estándar para los metadatos.
 
-1. Provide this `MediaInfo` object while invoking the `trackSessionStart` API.
+1. Proporcione este objeto de `MediaInfo` e invoque la API `trackSessionStart`.
 
 ### Implementación de muestra
 
