@@ -1,18 +1,18 @@
 ---
 title: Seguimiento de anuncios en Chromecast
-description: Implementar el seguimiento de anuncios en aplicaciones de Chromecast usando el SDK de medios.
+description: Implementar el seguimiento de anuncios en aplicaciones de Chromecast usando Media SDK.
 uuid: 7b1f584a-3472-416c-944c-5f5ea0ee5529
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# Seguimiento de anuncios en Chromecast{#track-ads-on-chromecast}
+# Seguimiento de anuncios en Chromecast {#track-ads-on-chromecast}
 
 >[!IMPORTANT]
 >
->Las siguientes instrucciones proporcionan instrucciones para la implementación mediante los SDK 2.x. Si va a implementar una versión 1.x del SDK, puede descargar las guías del desarrollador de 1.x aquí: [Descargar SDK.](/help/sdk-implement/download-sdks.md)
+>Las siguientes instrucciones proporcionan directrices para la implementación mediante SDK de 2.x. Si va a implementar una versión 1.x del SDK, puede descargar las guías del desarrollador de 1.x aquí: [Descargar SDK.](/help/sdk-implement/download-sdks.md)
 
 ## Constantes de seguimiento de anuncio
 
@@ -28,13 +28,13 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 1. Identifique cuándo comienza la zona de salto de anuncio, incluido el anuncio previo a la emisión, y cree un `AdBreakObject` utilizando la información de la pausa publicitaria.
 
-   Creación de objeto de pausa publicitaria[: createAdBreakObject](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.createAdBreakObject)
+   Creación de objeto de pausa publicitaria: [createAdBreakObject](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.createAdBreakObject)
 
    ```
    adBreakInfo = ADBMobile.media.createAdBreakObject("First Ad-Break", 1, AD_BREAK_START_TIME, playerName); 
    ```
 
-1. Call `trackEvent()` with `AdBreakStart` in the `MediaHeartbeat` instance to begin tracking the ad break: [trackEvent](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.trackEvent)
+1. Invoque `trackEvent()` con `AdBreakStart` en la instancia de `MediaHeartbeat` para iniciar el seguimiento de la publicidad: [trackEvent](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.trackEvent).
 
    ```
    ADBMobile.media.trackEvent(ADBMobile.media.Event.AdBreakStart, getAdBreakInfo());
@@ -48,12 +48,12 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    adInfo = ADBMobile.media.createAdObject("Sample ad", "001", 1, AD_LENGTH); 
    ```
 
-1. Si lo desea, adjunte metadatos estándar o de anuncio a la sesión de seguimiento de medios mediante variables de datos de contexto.
+1. Opcionalmente, se pueden adjuntar metadatos estándar o de anuncio a la sesión de seguimiento de contenido mediante el uso de variables de datos de contexto.
 
    * **Metadatos de publicidad estándar**: para los metadatos de publicidad estándar, cree un diccionario de conexiones de clave/valor de metadatos de publicidad estándar con el uso de las claves correspondientes a su plataforma:
    * **Metadatos de anuncio personalizados**: para los metadatos personalizados, cree un objeto de variable para las variables de datos personalizadas y rellénelas con los datos del recurso publicitario actual:
 
-1. Call `trackEvent()` with the `AdStart` event to begin tracking the ad playback.
+1. Invoque `trackEvent()` con el evento `AdStart` para iniciar el seguimiento de la reproducción de publicidad.
 
    Incluya una referencia a la variable de metadatos personalizada (o un objeto vacío) como tercer parámetro de la llamada de evento: [trackEvent](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.trackEvent).
 
@@ -61,7 +61,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    ADBMobile.media.trackEvent(ADBMobile.media.Event.AdStart, getAdInfo(), adContextData);
    ```
 
-1. When the ad asset playback reaches the end of the ad, call `trackEvent()` with the `AdComplete` event: [trackEvent](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.trackEvent)
+1. Cuando la reproducción del recurso publicitario llega al final de la publicidad, invoque `trackEvent()` con el evento `AdComplete`: [trackEvent](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.trackEvent).
 
    ```
    ADBMobile.media.trackEvent(ADBMobile.media.Event.AdComplete); 
