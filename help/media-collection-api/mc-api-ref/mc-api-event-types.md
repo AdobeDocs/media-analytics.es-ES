@@ -2,21 +2,21 @@
 title: Tipos de eventos y descripciones
 description: null
 uuid: bc4f75a7-ea22-47eb-a50d-5f41274c6d41
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
 
 
-# Tipos de eventos y descripciones{#event-types-and-descriptions}
+# Tipos de eventos y descripciones {#event-types-and-descriptions}
 
 ## sessionStart
 
-Enviado con la `sessions` llamada. Cuando reciba la respuesta, extraiga el ID de sesión del encabezado Ubicación y utilícelo para las llamadas de evento subsiguientes al servidor de recopilación.
+Enviado con la llamada `sessions`. Cuando reciba la respuesta, extraiga el ID de sesión del encabezado Ubicación y utilícelo para las llamadas de evento subsiguientes al servidor de recopilación.
 
 ## play
 
-Sent when the player changes state to "playing" from another state (i.e., the `on('Playing')` callback is triggered by the player). Otros estados desde los que el reproductor se desplaza a "reproduciendo" incluyen "almacenamiento en búfer", seguir desde "en pausa", recuperación de un error, reproducción automática, etc.
+Se envía cuando el reproductor cambia de estado a “reproduciendo” (es decir, la función de llamada de retorno `on('Playing')` se activa en el reproductor). Otros estados desde los que el reproductor se desplaza a "reproduciendo" incluyen "almacenamiento en búfer", seguir desde "en pausa", recuperación de un error, reproducción automática, etc.
 
 ## ping
 
@@ -31,43 +31,43 @@ Se envía cuando cambia la velocidad de bits.
 
 ## bufferStart
 
-Se envía cuando se inicia el almacenamiento en búfer. No hay ningún tipo de evento `bufferResume`. A `bufferResume` is inferred when you send a `play` event after `bufferStart`.
+Se envía cuando se inicia el almacenamiento en búfer. No hay ningún tipo de evento `bufferResume`. Se infiere `bufferResume` al enviar un evento `play` después de `bufferStart`.
 
 ## pauseStart
 
-Se envía cuando el usuario pulsa Pausa. No hay ningún tipo de evento `resume`. A `resume` is inferred when you send a `play` event after a `pauseStart`.
+Se envía cuando el usuario pulsa Pausa. No hay ningún tipo de evento `resume`. Se infiere `resume` al enviar un evento `play` después de `pauseStart`.
 
 ## adBreakStart
 
-Indica el inicio de una pausa publicitaria
+Indica el comienzo de una pausa publicitaria.
 
 ## adStart
 
-Indica el inicio de una publicidad
+Indica el comienzo de publicidad.
 
 ## adComplete
 
-Indica la finalización de una pausa publicitaria
+Indica la finalización de una pausa publicitaria.
 
 ## adSkip
 
-Indica un salto de publicidad
+Indica una omisión de publicidad.
 
 ## adBreakComplete
 
-Indica la finalización de una pausa publicitaria
+Indica la finalización de una pausa publicitaria.
 
 ## chapterStart
 
-Indica el inicio de un segmento de capítulo
+Indica el comienzo de un segmento de capítulo.
 
 ## chapterSkip
 
-Indica un salto de capítulo
+Indica una omisión de capítulo.
 
 ## chapterComplete
 
-Indica la finalización de un capítulo
+Indica la finalización de un capítulo.
 
 ## error
 
@@ -75,15 +75,15 @@ Indica que se ha producido un error.
 
 ## sessionEnd
 
-Esto se utiliza para notificar al servidor de Media Analytics que cierre inmediatamente la sesión cuando el usuario haya abandonado la visualización del contenido y es poco probable que vuelva.
+Se utiliza para informar al backend de Media Analytics de que cierre inmediatamente la sesión cuando el usuario ha abandonado el contenido y es poco probable que vuelva.
 
-If you don't send a `sessionEnd`, an abandoned session will time-out normally (after no events are received for 10 minutes, or when no playhead movement occurs for 30 minutes), and the session is deleted by the backend.
+Si no envía un `sessionEnd`, una sesión abandonada se pausará normalmente (después de que no se reciba ningún evento durante 10 minutos o cuando no se produzca ningún movimiento del cabezal de reproducción durante 30 minutos), y la sesión se eliminará en el servidor.
 
 ## sessionComplete
 
-Se envía cuando se llega al final del contenido principal
+Se envía cuando se llega al final del contenido principal.
 
 >[!IMPORTANT]
 >
->You should refer to the [JSON validation schemas](/help/media-collection-api/mc-api-ref/mc-api-json-validation.md) for each event type, to verify correct event parameter types and requirements.
+>Debe hacer referencia a los [esquemas de validación de JSON](/help/media-collection-api/mc-api-ref/mc-api-json-validation.md) para cada tipo de evento y comprobar los requisitos y tipos de parámetros de eventos correctos.
 
