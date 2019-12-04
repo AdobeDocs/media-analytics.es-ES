@@ -2,8 +2,8 @@
 title: Medición de audio y vídeo en Adobe Analytics
 description: 'Adobe Analytics para contenidos (también denominado Media Analytics) proporciona a los clientes una medición de contenidos sólida para el contenido, el audio y la publicidad. '
 uuid: b3cbe240-b94d-42b8-a99c-0280334aaa14
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+translation-type: tm+mt
+source-git-commit: 689b7d4ce632d3ddba6704bb8040eec52bfc326f
 
 ---
 
@@ -63,8 +63,8 @@ Algunas de las numerosas ventajas del método Heartbeats son:
 | **Integraciones con productos de Adobe** | Sesiones individuales con algunas asignaciones e integraciones | Experience Cloud ID unidos y vinculados a Adobe Experience Cloud por completo para hacer más sencillo el análisis cruzado. |
 | **Precio** | Rastreado y facturado con cada llamada al servidor | Seguimiento transparente por emisión de contenido (única) |
 | **Implementación y compatibilidad** | Integraciones más largas con compatibilidad limitada en versiones anteriores y sin actualizaciones | Configuración ágil con actualizaciones y mejoras continuas |
-| **Colaboraciones** | N/D | Federated Analytics y Certified Metrics |
-| **Seguimiento avanzado** | N/D | Seguimiento de recuperación de errores y espectadores simultáneos |
+| **Colaboraciones** | N/A | Federated Analytics y Certified Metrics |
+| **Seguimiento avanzado** | N/A | Seguimiento de recuperación de errores y espectadores simultáneos |
 
 ## Dispositivos compatibles {#devices-supported}
 
@@ -107,3 +107,4 @@ Para Media SDK, consulte [Compatibilidad con versiones de plataforma mínima](./
 >[!NOTE]
 >
 >TLS es el protocolo de seguridad más implementado que se usa para navegadores web y otras aplicaciones que requieren que los datos se intercambien de forma segura en una red.
+
