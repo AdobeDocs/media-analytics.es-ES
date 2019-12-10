@@ -18,7 +18,7 @@ Este es el mismo escenario que el de [Reproducción de VOD sin anuncios](/help/s
 
 | Activador | Método de Heartbeat |  Llamadas de red  |  Notas   |
 | --- | --- | --- | --- |
-| El usuario hace clic en [!UICONTROL Reproducir]. | trackSessionStart | Inicio del contenido de Analytics, Inicio del contenido de Heartbeat | La biblioteca de medición no sabe que hay un anuncio previo, por lo que estas llamadas de red son idénticas al escenario de [Reproducción de VOD sin anuncios](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md). |
+| El usuario hace clic en [!UICONTROL Reproducir]. | trackSessionStart | Inicio del contenido de Analytics, inicio del contenido de Heartbeat | La biblioteca de medición no sabe que hay un anuncio previo, por lo que estas llamadas de red son idénticas al escenario de [Reproducción de VOD sin anuncios](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md). |
 | Se reproduce el primer fotograma del contenido. | trackPlay | Reproducción del contenido de Heartbeat | Cuando el contenido del capítulo se reproduce antes del contenido principal, los latidos comienzan al inicio del capítulo. |
 | Se reproduce el contenido. |  | Latidos de contenido | Esta llamada de red es exactamente la misma que la del escenario de [Reproducción de VOD sin anuncios](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md). |
 | Fin de la sesión 1 (el episodio 1 ha finalizado). | trackComplete / trackSessionEnd | Finalización de contenido de Heartbeat | La finalización significa que se llegó a la sesión 1 del primer episodio y que se vio entera. Antes de iniciar la sesión del siguiente episodio, hay que finalizar esta sesión. |
