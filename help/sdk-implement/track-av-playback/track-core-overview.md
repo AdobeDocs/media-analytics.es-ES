@@ -65,7 +65,7 @@ El seguimiento de la reproducción principal incluye el seguimiento de la carga,
 
 1. **Configuración inicial del seguimiento**: identifique cuándo el usuario activa la reproducción (cuando hace clic en reproducción o reproducción automática) y cree una instancia de `MediaObject` con la información del contenido: nombre, ID y duración del contenido, así como el tipo de emisión.
 
-   **Referencia de`MediaObject`:**
+   **`MediaObject`Referencia de:**
 
    | Nombre de variable | Descripción | Requerido |
    |---|---|---|
@@ -97,7 +97,7 @@ El seguimiento de la reproducción principal incluye el seguimiento de la carga,
 
 1. **Adjuntar metadatos**: opcionalmente, se pueden adjuntar objetos de metadatos estándar o personalizados a la sesión de seguimiento mediante el uso de variables de datos de contexto.
 
-   * **Metadatos estándar**
+   * **Metadatos estándar -**
 
       >[!NOTE]
       >
