@@ -24,9 +24,9 @@ En las tablas siguientes se proporcionan las correspondencias entre la solución
 | --- | --- | --- |
 | Contenido | <br/><br/>Caducidad predeterminada de eVar: Visita | Contenido |
 | Tipo de contenido | <br/><br/>Caducidad predeterminada de la eVar: Vista de página | Tipo de contenido |
-| tiempo invertido en contenido | Tipo de evento<br/><br/>: Contador | tiempo invertido en contenido |
+| Tiempo invertido en contenido | Tipo de evento<br/><br/>: Contador | Tiempo invertido en contenido |
 | Inicios de vídeo | Tipo de evento<br/><br/>: Contador | Inicios de vídeo |
-| Vídeos completados | Evento<br/><br/> Tipo: contador | Contenido finalizado |
+| Vídeos completados | Tipo de evento<br/><br/>: Contador | Contenido finalizado |
 
 ### Variables de módulo multimedia
 
