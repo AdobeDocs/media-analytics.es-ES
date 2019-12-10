@@ -81,7 +81,7 @@ Descripción de los datos de la tabla:
 | --- | --- | --- |
 | <ul> <li> **Clave de SDK:**<br/>establecida automáticamente  </li> <li> **Clave de API:**<br/>N/D </li> <li> **Requerido:**<br/> sí </li> <li> **Tipo:**<br/> cadena </li> <li> **Enviado con:**<br/> Cierre de capítulos </li> <li> **Versión del SDK mínima:** 1.3</li> <li> **Valor de muestra:**<br/> “TRUE” </li><li> **Descripción:**<br/>El número de capítulos completados.  **Importante:** Si se establece este evento, el único valor posible es TRUE. Si no se establece este evento, no se enviará ningún valor.   </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.chapter.<br/>complete) </li> <li> **Heartbeat:**<br/> (s:event:<br/>type=chapter_complete) </li> </ul> | <ul> <li> **Disponible:**<br/> sí </li> <li> **Variable reservada:**<br/>evento </li> <li> **Nombre del informe:**<br/> Capítulos completados g </li> <li> **Datos de contexto:**<br/> (a.media.chapter.<br/>complete) </li> <li> **Fuente de datos:**<br/>N/D </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.chapter.<br/>complete) </li> </ul> |
 
-### tiempo invertido en el capítulo
+### Tiempo invertido en el capítulo
 
 |   Implementación   | Parámetros de red | Creación de informes |
 | --- | --- | --- |
