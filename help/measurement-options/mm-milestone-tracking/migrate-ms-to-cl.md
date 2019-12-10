@@ -46,7 +46,7 @@ En las tablas siguientes se proporcionan las correspondencias entre la solución
 <td>Defina su propia eVar.</td>
 </tr>
 <tr>
-<td>tiempo invertido en contenido</td>
+<td>Tiempo invertido en contenido</td>
 <td>
 <p>Evento</p>
 <p>Tipo: contador</p>
@@ -81,7 +81,7 @@ En las tablas siguientes se proporcionan las correspondencias entre la solución
 </th>
 <th>Sintaxis de Milestone
 </th>
-<th>Vínculo personalizado
+<th>Sintaxis de
 </th>
 <th>Sintaxis de Sintaxis
 </th>
@@ -216,7 +216,7 @@ s.linkTrackEvents
 </th>
 <th>Sintaxis de Milestone
 </th>
-<th>Vínculo personalizado
+<th>Sintaxis de
 </th>
 <th>Sintaxis de Sintaxis
 </th>
@@ -345,7 +345,7 @@ s.linkTrackEvents
 </th>
 <th>Sintaxis de Milestone
 </th>
-<th>Vínculo personalizado
+<th>Sintaxis de
 </th>
 <th>Sintaxis de Sintaxis
 </th>
@@ -514,7 +514,7 @@ s.Media.
 </th>
 <th>Sintaxis de Milestone
 </th>
-<th>Vínculo personalizado
+<th>Sintaxis de
 </th>
 <th>Sintaxis de Sintaxis
 </th>
@@ -609,7 +609,7 @@ s.Media.
 </th>
 <th>Sintaxis de Milestone
 </th>
-<th>Vínculo personalizado
+<th>Sintaxis de
 </th>
 <th>Sintaxis de Sintaxis
 </th>
