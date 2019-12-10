@@ -1,5 +1,5 @@
 ---
-title: Plantillas de espacio de trabajo de medios
+title: Plantillas de Workspace de medios
 description: null
 uuid: 0024b06a-eaf5-4d2e-be45-aeda9d0554c1
 translation-type: ht
@@ -8,7 +8,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 ---
 
 
-# Plantillas de espacio de trabajo de medios {#media-workspace-templates}
+# Plantillas de Workspace de medios{#media-workspace-templates}
 
 Adobe Analytics Workspace le ofrece la posibilidad de configurar tableros rápidamente para analizar los datos de seguimiento. Al crear un proyecto nuevo o al entrar en Workspace para administrar un proyecto existente, puede elegir entre plantillas estándar que abarcan situaciones generales de seguimiento, como adquisiciones o consumo de audio y vídeo, entre otras. Además, puede crear, modificar y guardar sus propias plantillas personalizadas.
 
