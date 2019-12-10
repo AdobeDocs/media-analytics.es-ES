@@ -17,14 +17,14 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
    Identifique el momento en que el usuario desencadena la intención de reproducir (cuando hace clic en reproducir o la reproducción automática está activada) y cree una instancia de `MediaObject`.
 
-   **Referencia de`MediaObject`:**
+   **`MediaObject`Referencia de:**
 
    | Nombre de variable | Descripción | Requerido |
    | --- | --- | :---: |
    | `name` | Nombre del vídeo | Sí |
    | `mediaid` | Identificador único de vídeo | Sí |
    | `length` | Duración del vídeo | Sí |
-   | `streamType` | Tipo de flujo (consulte Constantes de _StreamType_ a continuación) | Sí |
+   | `streamType` | Tipo de flujo (consulte _Constantes de StreamType_ a continuación) | Sí |
    | `mediaType` | Tipo de contenido (consulte _Constantes de MediaType_ a continuación) | Sí |
 
    **Constantes de`StreamType`:**
