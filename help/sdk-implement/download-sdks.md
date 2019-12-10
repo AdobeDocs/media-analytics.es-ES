@@ -18,13 +18,13 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 | iOS/Apple TV | [Media SDK para iOS v2.2.6](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/ios-v2.2.6) (póngase en contacto con el servicio de [atención al cliente ](https://helpx.adobe.com/es/marketing-cloud/contact-support.html) para obtener el SDK 2.0 heredado) | [Referencia de la API de iOS](https://adobe-marketing-cloud.github.io/media-sdks/reference/ios/) | [Configuración de iOS](/help/sdk-implement/setup/set-up-ios.md) |
 | JavaScript | [Media SDK para JS v2.2.1](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/js-v2.2.1) | [Referencia de la API de JS](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/) | [Configuración de JavaScript](/help/sdk-implement/setup/set-up-js.md) |
 | Roku | [Media SDK para Roku v2.2.2](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/roku-v2.2.2) |  | [Configuración de Roku](/help/sdk-implement/setup/set-up-roku.md) |
-| Chromecast | [Media SDK para Chromecast v2.2.0](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/chromecast-v2.2.0) | [Referencia de la API de Chromecast](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/) | [Configuración de Chromecast](/help/sdk-implement/setup/set-up-chromecast.md) |
+| Chromecast | [Media SDK para Chromecast v2.2.0](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/chromecast-v2.2.0) | [Referencia de la API de Chromecast](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/) | [Configuración de Chromecast ](/help/sdk-implement/setup/set-up-chromecast.md) |
 
 ## Extensión de Media Analytics Launch {#media-analytics-launch-extension}
 
 | Componente de MA Launch   | Descargas | Documentación |
 |---|---|---|
-| **Extensión de MA Launch** | [Muestra de HTML5 Player Extension](https://github.com/adobe/reactor-adobe-va-sample-player) | [Extensión de Adobe Media Analytics para audio y vídeo](https://docs.adobelaunch.com/extension-reference/web/adobe-media-analytics-for-audio-and-video-extension) |
+| **Extensión de MA Launch** | [Muestra de HTML5 Player Extension](https://github.com/adobe/reactor-adobe-va-sample-player) | [Extensión de Adobe Media Analytics para audio y vídeo](https://docs.adobe.com/content/help/en/launch/using/extensions-ref/adobe-extension/media-analytics-extension/overview.html) |
 
 ## Descarga de Media SDK 1.x {#download-the-1.x-media-sDKs}
 
