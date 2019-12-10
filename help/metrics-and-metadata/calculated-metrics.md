@@ -18,10 +18,10 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 |---|---|---|
 | Promedio de anuncios por emisión de medios | Inicios de publicidad por inicios de contenido | `Ad Starts / Media Starts` |
 | Promedio de capítulos por emisión de medios | Inicios de capítulo por inicios de contenido | `Chapter Start / Media Starts` |
-| Promedio de tiempo invertido en medio | Tiempo total empleado por inicios de contenido (HH:MM:SS) | `Media Time Spent / Media Starts` |
-| Promedio de tiempo invertido en contenido | Tiempo invertido en contenido por inicios de contenido (HH:MM:SS) | `Content Time Spent / Content Start` |
-| Promedio de tiempo invertido en publicidad | Tiempo invertido en publicidad por inicios de publicidad (HH:MM:SS) | `Ad Time Spent / Ad Start` |
-| Promedio de tiempo invertido en el capítulo | Tiempo invertido en el capítulo por inicios de capítulo (HH:MM:SS) | `Chapter Time Spent / Chapter Start` |
+| Promedio de Tiempo invertido en contenido | Tiempo total empleado por inicios de contenido (HH:MM:SS) | `Media Time Spent / Media Starts` |
+| Promedio de Tiempo invertido en contenido | Tiempo invertido en contenido por inicios de contenido (HH:MM:SS) | `Content Time Spent / Content Start` |
+| Promedio de Tiempo invertido en publicidad | Tiempo invertido en publicidad por inicios de publicidad (HH:MM:SS) | `Ad Time Spent / Ad Start` |
+| Promedio de https://docs.adobe.com/content/help/en/launch/using/extensions-ref/adobe-extension/media-analytics-extension/overview.html en el capítulo | Tiempo invertido en el capítulo por inicios de capítulo (HH:MM:SS) | `Chapter Time Spent / Chapter Start` |
 | Tasa de finalización de medio | Tasa de contenido finalizado frente a medios iniciados (%) | `Content Completes/ Media Starts` |
 | Tasa de finalización de contenido | Tasa de contenido finalizado frente a inicios de contenido (%) | `Content Completes / Content Starts` |
 | Tasa de finalización de publicidad | Tasa de finalización de publicidad frente a inicios de publicidad (%) | `Ad Completes / Ad Starts` |
