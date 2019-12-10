@@ -18,10 +18,10 @@ De `ADBStandardMetadataKeys.h`:
 
 | Nombre de la constante | Descripción | Tipo |
 |---|---|---|
-| `ADBVideoMetadataKeySHOW` | Programa | Vídeo |
+| `ADBVideoMetadataKeySHOW` | Show | Vídeo |
 | `ADBVideoMetadataKeySEASON` | Temporada | Vídeo |
 | `ADBVideoMetadataKeyEPISODE` | Episodio | Vídeo |
-| `ADBVideoMetadataKeyASSET_ID` | Recurso | Vídeo |
+| `ADBVideoMetadataKeyASSET_ID` | Activo | Vídeo |
 | `ADBVideoMetadataKeyGENRE` | Género | Vídeo |
 | `ADBVideoMetadataKeyFIRST_AIR_DATE` | Fecha de la primera emisión | Vídeo |
 | `ADBVideoMetadataKeyFIRST_DIGITAL_DAT` | Fecha de la primera emisión digital | Vídeo |
