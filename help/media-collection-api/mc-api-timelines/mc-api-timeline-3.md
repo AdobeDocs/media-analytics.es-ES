@@ -3,7 +3,7 @@ title: 'Línea de tiempo 3: Capítulos'
 description: null
 uuid: 41b52072-e1cd-4dda-9253-31f3408924f6
 translation-type: tm+mt
-source-git-commit: 22f7c21feb55f54c0c92db17eadc509966715cf3
+source-git-commit: 5107de22c2388e8ac5b15b8d28fa974e97363fdf
 
 ---
 
@@ -287,7 +287,7 @@ La pausa publicitaria ha finalizado. Durante la pausa publicitaria, el estado de
 
 **Detalles de implementación**
 
-Tras el evento `adBreakComplete`, ponga el reproductor en el estado "reproduciendo" utilizando el evento `play`.
+After the `adBreakComplete` event, put the player in the "playing" state using the `play` event.
 
 **Cuerpo de la solicitud de muestra**
 
