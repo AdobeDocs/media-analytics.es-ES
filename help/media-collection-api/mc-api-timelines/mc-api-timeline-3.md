@@ -2,7 +2,7 @@
 title: 'Línea de tiempo 3: Capítulos'
 description: null
 uuid: 41b52072-e1cd-4dda-9253-31f3408924f6
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 5107de22c2388e8ac5b15b8d28fa974e97363fdf
 
 ---
@@ -33,7 +33,7 @@ Los siguientes diagramas ilustran la cronología del cabezal de reproducción y 
 
 **Detalles de implementación**
 
-Esta llamada indica _la intención del usuario de reproducir_ un vídeo. Devuelve un ID de sesión (`{sid}`) al cliente que se utiliza para identificar todas las llamadas de seguimiento subsiguientes dentro de la sesión. El estado del reproductor no es "reproduciendo", sino "comenzando".  [Los parámetros de sesión obligatorios](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) deben incluirse en el mapa de `params` en la solicitud.  En el servidor, esta llamada genera una llamada de inicio a Adobe Analytics.
+Esta llamada indica _la intención del usuario de reproducir_ un vídeo. Devuelve un ID de sesión (`{sid}`) al cliente que se utiliza para identificar todas las llamadas de seguimiento subsiguientes dentro de la sesión. El estado del reproductor no es &quot;reproduciendo&quot;, sino &quot;comenzando&quot;.  [Los parámetros de sesión obligatorios](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) deben incluirse en el mapa de `params` en la solicitud.  En el servidor, esta llamada genera una llamada de inicio a Adobe Analytics.
 
 **Cuerpo de la solicitud de muestra**
 
@@ -287,7 +287,7 @@ La pausa publicitaria ha finalizado. Durante la pausa publicitaria, el estado de
 
 **Detalles de implementación**
 
-After the `adBreakComplete` event, put the player in the "playing" state using the `play` event.
+Tras el evento `adBreakComplete`, ponga el reproductor en el estado “reproduciendo” utilizando el evento `play`.
 
 **Cuerpo de la solicitud de muestra**
 
@@ -378,7 +378,7 @@ Rastree el movimiento al estado “almacenamiento en búfer”.
 
 **Detalles de implementación**
 
-El almacenamiento en búfer finaliza después de 3 segundos, por lo que el reproductor vuelve al estado "reproduciendo". Debe enviar otro evento de seguimiento de reproducción cuando termine el almacenamiento en búfer.  **La llamada`play`después de`bufferStart`infiere una llamada “bufferEnd” al back end**, por lo que no es necesario un evento `bufferEnd`.
+El almacenamiento en búfer finaliza después de 3 segundos, por lo que el reproductor vuelve al estado &quot;reproduciendo&quot;. Debe enviar otro evento de seguimiento de reproducción cuando termine el almacenamiento en búfer.  **La llamada`play`después de`bufferStart`infiere una llamada “bufferEnd” al back end**, por lo que no es necesario un evento `bufferEnd`.
 
 **Cuerpo de la solicitud de muestra**
 
@@ -639,7 +639,7 @@ La acción del usuario cambia el estado de reproducción a “en pausa”.
 
 **Detalles de implementación**
 
-Mandar un ping al servidor cada 10 segundos. El reproductor sigue en estado "almacenamiento en búfer"; el usuario se queda en los 20 primeros segundos de contenido. Trabajando...
+Mandar un ping al servidor cada 10 segundos. El reproductor sigue en estado &quot;almacenamiento en búfer&quot;; el usuario se queda en los 20 primeros segundos de contenido. Trabajando...
 
 **Cuerpo de la solicitud de muestra**
 
@@ -661,7 +661,7 @@ Mandar un ping al servidor cada 10 segundos. El reproductor sigue en estado "alm
 
 **Detalles de implementación**
 
-Cambie el estado de reproducción a "reproduciendo".  **La llamada`play`después de`pauseStart`ya infiere una llamada "continuar" al final**, por lo que no hay necesidad de un evento `resume`.
+Cambie el estado de reproducción a &quot;reproduciendo&quot;.  **La llamada`play`después de`pauseStart`ya infiere una llamada &quot;continuar&quot; al final**, por lo que no hay necesidad de un evento `resume`.
 
 **Cuerpo de la solicitud de muestra**
 
