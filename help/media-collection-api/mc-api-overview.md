@@ -1,20 +1,17 @@
 ---
+seo-title: Información general
 title: Información general
 description: null
 uuid: c14bdbef-5846-4d31-8a14-8e9e0e9c9861
-translation-type: ht
-source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
+translation-type: tm+mt
+source-git-commit: cebf5697e3746721d29bfaa5356d5a2748fea435
 
 ---
 
 
 # Información general {#overview}
 
-La API de Media Collection es la alternativa de RESTful de Adobe al Media SDK en el lado del cliente. Con la API de Media Collection, el reproductor puede realizar un seguimiento de eventos de vídeo mediante llamadas HTTP de RESTful. La API de recopilación de contenidos ofrece el mismo seguimiento en tiempo real de Media SDK, además de una función adicional:
-
-* **Seguimiento de contenido descargado**
-
-   Esta función ofrece la posibilidad de realizar un seguimiento del contenido cuando un usuario está sin conexión, gracias al almacenamiento local de los datos de eventos hasta que el dispositivo del usuario vuelve a estar en línea. (Consulte [Seguimiento del contenido descargado](track-downloaded-content.md) para obtener más información).
+La API de Media Collection es la alternativa de RESTful de Adobe al Media SDK en el lado del cliente. Con la API de Media Collection, el reproductor puede realizar un seguimiento de eventos de vídeo mediante llamadas HTTP de RESTful.
 
 La API de Media Collection es, básicamente, un adaptador que actúa como versión del lado del servidor del Media SDK. Eso significa que algunos aspectos de la documentación de Media SDK también son pertinentes para la API de recopilación de contenido. Por ejemplo, ambas soluciones utilizan los mismos [Parámetros de audio y vídeo](/help/metrics-and-metadata/audio-video-parameters.md), y los datos recopilados de seguimiento de audio y vídeo llevan a los mismos [Informes y análisis.](/help/media-reports/media-reports-enable.md)
 
@@ -34,13 +31,13 @@ Los datos de seguimiento capturados con la API de recopilación de contenido se 
 
 ### Llamadas de API {#mc-api-calls}
 
-* ****`sessions`: Establece una sesión con el servidor y devuelve un ID de sesión utilizado en las llamadas a `events` posteriores. La aplicación invocará una vez al principio de una sesión de seguimiento.
+* **`sessions`-**Establece una sesión con el servidor y devuelve un ID de sesión utilizado en`events`llamadas posteriores. La aplicación invocará una vez al principio de una sesión de seguimiento.
 
    ```
    {uri}/api/v1/sessions
    ```
 
-* **`events`-** Enviar datos de seguimiento de contenidos.
+* **`events`-**Enviar datos de seguimiento de contenidos.
 
    ```
    {uri}/api/v1/sessions/{session-id}/events
@@ -49,28 +46,28 @@ Los datos de seguimiento capturados con la API de recopilación de contenido se 
 ### Cuerpo de la solicitud {#mc-api-request-body}
 
 ```
-{ 
-    "playerTime": { 
-        "playhead": {playhead position in seconds}, 
-        "ts": {timestamp in milliseconds} 
-    }, 
-    "eventType": {event-type}, 
-    "params": { 
-        {parameter-name}: {parameter-value}, 
-        ... 
-        {parameter-name}: {parameter-value} 
-    }, 
-    "qoeData" : { 
-        {parameter-name}: {parameter-value}, 
-        ... 
-        {parameter-name}: {parameter-value} 
-    }, 
-    "customMetadata": { 
-        {parameter-name}: {parameter-value}, 
-        ... 
-        {parameter-name}: {parameter-value} 
-    } 
-} 
+{
+    "playerTime": {
+        "playhead": {playhead position in seconds},
+        "ts": {timestamp in milliseconds}
+    },
+    "eventType": {event-type},
+    "params": {
+        {parameter-name}: {parameter-value},
+        ...
+        {parameter-name}: {parameter-value}
+    },
+    "qoeData" : {
+        {parameter-name}: {parameter-value},
+        ...
+        {parameter-name}: {parameter-value}
+    },
+    "customMetadata": {
+        {parameter-name}: {parameter-value},
+        ...
+        {parameter-name}: {parameter-value}
+    }
+}
 ```
 
 * `playerTime`: obligatorio para todas las solicitudes.
@@ -99,4 +96,3 @@ Para cada `eventType`, hay [un esquema de validación JSON](mc-api-ref/mc-api-js
 * `chapterComplete`
 * `sessionEnd`
 * `sessionComplete`
-
