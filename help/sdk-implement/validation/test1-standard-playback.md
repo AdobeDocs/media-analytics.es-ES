@@ -2,21 +2,15 @@
 title: Prueba 1  Reproducción estándar
 description: En este tema se describe la prueba de reproducción estándar utilizada en la validación.
 uuid: c4b3fead-1b27-484b-ab6a-39f1ae0f03f2
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+translation-type: tm+mt
+source-git-commit: cebf5697e3746721d29bfaa5356d5a2748fea435
 
 ---
 
 
 # Prueba 1: Reproducción estándar {#test-standard-playback}
 
-Este caso de prueba valida la reproducción y la secuencia general. Es un elemento requerido de su solicitud de certificación.
-
-## Formulario de solicitud de certificación
-
-**Descargue el formulario de solicitud de certificación aquí: ==&gt;**  [Formulario de solicitud de certificación.](cert_req_form.docx)
-
-## Descripción general de la Prueba de certificación 1
+Este caso de prueba valida la reproducción y la secuencia general.
 
 Las implementaciones de Media Analytics incluyen dos tipos de llamadas de seguimiento:
 * Llamadas realizadas directamente al servidor de Adobe Analytics (AppMeasurement): Estas llamadas se producen en los eventos “Inicio de contenidos” e “Inicio de anuncios”.
@@ -145,4 +139,3 @@ Complete y registre las siguientes acciones (en orden):
 1. **Ver el contenido siguiente en la lista de reproducción.** Al inicio del siguiente contenido de una lista de reproducción, se debe enviar un nuevo conjunto de llamadas de inicio de contenido.
 
 1. **Cambiar contenido o flujo.** Al cambiar de emisión en directo, no se debe enviar una llamada de finalización de Media Analytics para la primera emisión. Las llamadas de inicio y reproducción de contenidos deben comenzar con el nombre de la nueva emisión y con los valores correctos para el cabezal de reproducción y duración de la emisión.
-
