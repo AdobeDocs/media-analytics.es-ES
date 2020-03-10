@@ -2,19 +2,15 @@
 title: Prueba 2  Interrupción de contenido
 description: En este tema se describe la prueba de interrupción de contenido utilizada en la validación.
 uuid: eeccd534-63fd-4dd3-b096-0431bc9a11ff
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+translation-type: tm+mt
+source-git-commit: cebf5697e3746721d29bfaa5356d5a2748fea435
 
 ---
 
 
 # Prueba 2: Interrupción de contenido {#test-media-interruption}
 
-Este caso de prueba valida el comportamiento de la interrupción móvil. Es un elemento requerido de su solicitud de certificación.
-
-## Formulario de solicitud de certificación
-
-**Descargue el formulario de solicitud de certificación aquí: ==&gt;**  [Formulario de solicitud de certificación.](cert_req_form.docx)
+Este caso de prueba valida el comportamiento de la interrupción móvil.
 
 ## Procedimiento de prueba
 
@@ -56,4 +52,3 @@ Debe completar y registrar estas tareas en el siguiente orden:
 1. **Cerrar reproductor multimedia**
 
    No se activarán llamadas de seguimiento adicionales tras cerrar el reproductor de contenido.
-
