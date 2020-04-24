@@ -3,7 +3,7 @@ seo-title: Información general
 title: Información general
 description: null
 uuid: c14bdbef-5846-4d31-8a14-8e9e0e9c9861
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: cebf5697e3746721d29bfaa5356d5a2748fea435
 
 ---
@@ -11,9 +11,9 @@ source-git-commit: cebf5697e3746721d29bfaa5356d5a2748fea435
 
 # Información general {#overview}
 
-La API de Media Collection es la alternativa de RESTful de Adobe al Media SDK en el lado del cliente. Con la API de Media Collection, el reproductor puede realizar un seguimiento de eventos de vídeo mediante llamadas HTTP de RESTful.
+La API de recopilación de medios es la alternativa RESTful de Adobe al SDK de medios del lado del cliente. Con la API de recopilación de medios, el reproductor puede realizar el seguimiento de eventos de audio y vídeo mediante llamadas HTTP RESTful.
 
-La API de Media Collection es, básicamente, un adaptador que actúa como versión del lado del servidor del Media SDK. Eso significa que algunos aspectos de la documentación de Media SDK también son pertinentes para la API de recopilación de contenido. Por ejemplo, ambas soluciones utilizan los mismos [Parámetros de audio y vídeo](/help/metrics-and-metadata/audio-video-parameters.md), y los datos recopilados de seguimiento de audio y vídeo llevan a los mismos [Informes y análisis.](/help/media-reports/media-reports-enable.md)
+La API de recopilación de medios es esencialmente un adaptador que actúa como una versión del SDK de medios en el lado del servidor. Eso significa que algunos aspectos de la documentación de Media SDK también son pertinentes para la API de recopilación de contenido. Por ejemplo, ambas soluciones utilizan los mismos [Parámetros de audio y vídeo](/help/metrics-and-metadata/audio-video-parameters.md), y los datos recopilados de seguimiento de audio y vídeo llevan a los mismos [Informes y análisis.](/help/media-reports/media-reports-enable.md)
 
 ## Flujos de datos del seguimiento de contenidos {#media-tracking-data-flows}
 
@@ -25,19 +25,19 @@ Los datos de seguimiento capturados con la API de recopilación de contenido se 
 
 ## Información general de API {#api-overview}
 
-**URI:** solicite este dato a su representante de Adobe.
+**URI:** Puede obtenerla de su representante de Adobe.
 
-**Método HTTP:** POST, con cuerpo de solicitud JSON.
+**Método HTTP:** POST, con el cuerpo de solicitud JSON.
 
 ### Llamadas de API {#mc-api-calls}
 
-* **`sessions`-**Establece una sesión con el servidor y devuelve un ID de sesión utilizado en`events`llamadas posteriores. La aplicación invocará una vez al principio de una sesión de seguimiento.
+* **`sessions`**- Establece una sesión con el servidor y devuelve un ID de sesión utilizado en las llamadas a`events`posteriores. La aplicación invocará una vez al principio de una sesión de seguimiento.
 
    ```
    {uri}/api/v1/sessions
    ```
 
-* **`events`-**Enviar datos de seguimiento de contenidos.
+* **`events`**-  Enviar datos de seguimiento de contenidos.
 
    ```
    {uri}/api/v1/sessions/{session-id}/events
@@ -70,12 +70,12 @@ Los datos de seguimiento capturados con la API de recopilación de contenido se 
 }
 ```
 
-* `playerTime`: obligatorio para todas las solicitudes.
-* `eventType`: obligatorio para todas las solicitudes.
-* `params`: obligatorio para determinados `eventTypes`. Compruebe el [esquema de validación JSON](mc-api-ref/mc-api-json-validation.md) para determinar qué tipos de evento eventTypes son obligatorios y cuáles son opcionales.
+* `playerTime` - obligatorio para todas las solicitudes.
+* `eventType` - obligatorio para todas las solicitudes.
+* `params` - obligatorio para determinados `eventTypes`. Compruebe el [esquema de validación JSON](mc-api-ref/mc-api-json-validation.md) para determinar qué tipos de evento eventTypes son obligatorios y cuáles son opcionales.
 
-* `qoeData`: opcional para todas las solicitudes.
-* `customMetadata`: Opcional para todas las peticiones, pero solo se envía con los tipos de evento `sessionStart`, `adStart` y `chapterStart`.
+* `qoeData` - opcional para todas las solicitudes.
+* `customMetadata` - Opcional para todas las peticiones, pero solo se envía con los tipos de evento `sessionStart`, `adStart` y `chapterStart`.
 
 Para cada `eventType`, hay [un esquema de validación JSON](mc-api-ref/mc-api-json-validation.md) disponible públicamente que debe utilizarse para verificar tipos de parámetros y si uno de estos es opcional o necesario para un evento determinado.
 
