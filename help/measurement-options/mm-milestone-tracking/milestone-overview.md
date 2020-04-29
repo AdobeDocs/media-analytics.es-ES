@@ -2,8 +2,8 @@
 title: Información general de Milestone
 description: null
 uuid: 2f9ec6bb-8860-4863-98bc-5cffb356ccc5
-translation-type: ht
-source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
+translation-type: tm+mt
+source-git-commit: 5a4f15616712ee91bc028258991fc4e7359698a5
 
 ---
 
@@ -28,23 +28,32 @@ También puede rastrear cualquier número de métricas adicionales para vídeo. 
 
 ### Configuración de informes de Milestone
 
-Para configurar los informes de vídeo para una implementación de Milestone, vaya a **[!UICONTROL Administración &gt; Administrador del grupo de informes].** Seleccione el grupo de informes y elija **[!UICONTROL Administración de vídeo &gt; Informes de vídeo]:**
+Para configurar el sistema de informes de vídeo para una implementación de hitos, vaya a **[!UICONTROL Admin > Report Suite Manager].**Seleccione el grupo de informes y, a continuación, elija**[!UICONTROL Video Management > Video Reporting]:**
 
-<!--![](assets/0clip_image002_1537416456.png){width="248"}-->
+<!--
+![](assets/0clip_image002_1537416456.png){width="248"}
+-->
+
 ![](assets/rs1.png)
 
-En la primera pantalla, solo funcionará Video Core con los datos de Milestone. Seleccione **[!UICONTROL Video Core]** y haga clic en **[!UICONTROL Guardar].**
+En la primera pantalla, solo funcionará Video Core con los datos de Milestone. Seleccione **[!UICONTROL Video Core]** y haga clic en **[!UICONTROL Save].**
 
 ![](assets/video-core-check.png)
 
-En la pantalla siguiente, seleccione **[!UICONTROL Usar variables personalizadas].**
+En la pantalla siguiente, seleccione **[!UICONTROL Use Custom Variables].**
 
-<!--![](assets/0clip_image006_-1561510960.png){width="470"}-->
+<!--
+![](assets/0clip_image006_-1561510960.png){width="470"}
+-->
+
 ![](assets/rs2.png)
 
 En la última pantalla, seleccione las dos eVars y los tres eventos que desea utilizar con la medición de vídeo:
 
-<!--![](assets/0clip_image008_-92166399.png)-->
+<!--
+![](assets/0clip_image008_-92166399.png)
+-->
+
 ![](assets/rs3.png)
 
 ## Referencia de variables de vídeo {#video-variable-reference}
