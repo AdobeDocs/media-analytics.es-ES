@@ -19,9 +19,9 @@ Con frecuencia, el seguimiento de enlace de vídeo personalizado se utiliza en l
 
 ## Requisitos
 
-* Acceso a datos y eventos de API del reproductor de vídeo
-* Capacidad para añadir scripts con el uso de SDK de Analytics
-* Capacidad para añadir señalizaciones de seguimiento (scripts personalizados o codificación) con el uso de Data Insertion API
+* Acceso a eventos y datos de API de reproductor de vídeo
+* Posibilidad de agregar secuencias de comandos si se utiliza el SDK de Analytics
+* Posibilidad de agregar señalizaciones de seguimiento (secuencia de comandos personalizada o código duro) si se utiliza la API de inserción de datos
 
 ## Metadatos
 
@@ -46,11 +46,11 @@ if (e.type == "ended") {
 
 ## Por qué utilizar Vínculo personalizado:
 
-* Se necesitan unos requisitos mínimos.
-* Funciona en cualquier plataforma, incluso NoScript.
-* Todos los cálculos, como el tiempo invertido o los cuartiles, se deben realizar con un script personalizado.
-* Es muy sencillo, sin bibliotecas ni scripts ocultos.
-* Proporciona un control total de todos los aspectos relacionados con los datos del vídeo.
+* Se necesitan requisitos previos mínimos
+* Funciona en cualquier plataforma, incluso sin script
+* Cualquier cálculo, como el tiempo empleado o los cuartiles, debe calcularse en una secuencia de comandos personalizada
+* Muy directo y sin bibliotecas ni secuencias de comandos ocultas
+* Control total de cada aspecto de los datos de vídeo
 
 ## JavaScript de muestra para HTML5 Player
 
