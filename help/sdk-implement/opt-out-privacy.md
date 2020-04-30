@@ -45,7 +45,7 @@ Puede controlar si se permite el seguimiento de la actividad en un dispositivo d
          >
          >Cuando un usuario se excluye del seguimiento, todos los datos e ID del dispositivo persistente se purgarán hasta que el usuario decida volver a entrar.
 
-      * **Reactivar:**
+      * **Volver a activar:**
 
          * **Chromecast:**
 
@@ -58,7 +58,7 @@ Puede controlar si se permite el seguimiento de la actividad en un dispositivo d
             ```
             ADBMobile().setPrivacyStatus(ADBMobile().PRIVACY_STATUS_OPT_IN)
             ```
-      * **Volver a la configuración actual:**
+      * **Devuelve la configuración actual:**
 
          * **Chromecast:**
 
@@ -79,14 +79,14 @@ Esta información le ayuda a recuperar ID de usuario almacenados localmente desd
 
 >[!IMPORTANT]
 >
->Este método de recuperación de todos los ID obtiene todas las identidades de usuarios conocidas y conservadas por el SDK. Debe invocar este método **antes** de que el usuario salga.
+>Este método de recuperación de todos los ID obtiene todas las identidades de usuarios conocidas y conservadas por el SDK. Debe llamar a este método **antes** de que un usuario se excluya.
 
-Los ID almacenados localmente se devuelven en una cadena JSON, que puede contener:
+Las identidades almacenadas localmente se devuelven en una cadena JSON, que puede contener:
 
-* Contexto sobre la empresa: ID de organización de IMS
-* ID de usuarios
+* Contexto de compañía: ID de organización de IMS
+* ID de usuario
 * Experience Cloud ID (MCID)
-* ID de orígenes de datos (DPID, DPUUID)
+* ID de fuentes de datos (DPID, DPUUID)
 * ID de Analytics (AVID, AID, VID y RSID asociados)
 * ID de Audience Manager (UUID)
 
