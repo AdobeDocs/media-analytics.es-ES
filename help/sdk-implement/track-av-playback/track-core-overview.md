@@ -16,12 +16,12 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ## Eventos del reproductor
 
-El seguimiento de la reproducción principal incluye el seguimiento de la carga, el inicio, la pausa y la finalización de los contenidos. Aunque no es obligatorio, el seguimiento del almacenamiento en búfer y de la llamada a otro punto del contenido también son componentes básicos utilizados para el seguimiento de la reproducción de contenido. En la API del reproductor de contenidos, identifique los eventos del reproductor correspondientes a las llamadas de seguimiento del Media SDK, y codifique los controladores de eventos para invocar las API de seguimiento y rellenar las variables necesarias y opcionales.
+El seguimiento de la reproducción principal incluye el seguimiento de la carga, el inicio, la pausa y la finalización de los contenidos. Aunque no es obligatorio, el seguimiento del almacenamiento en búfer y la búsqueda también son componentes principales utilizados para rastrear la reproducción del contenido. En la API del reproductor de contenidos, identifique los eventos del reproductor correspondientes a las llamadas de seguimiento del Media SDK, y codifique los controladores de eventos para invocar las API de seguimiento y rellenar las variables necesarias y opcionales.
 
 ### Carga del contenido
 
 * Crear el objeto de contenido.
-* Rellenar los metadatos.
+* Rellenar metadatos
 * Invocar `trackSessionStart`; Por ejemplo: `trackSessionStart(mediaObject, contextData)`
 
 ### Inicio del contenido
@@ -69,13 +69,13 @@ El seguimiento de la reproducción principal incluye el seguimiento de la carga,
 
    | Nombre de variable | Descripción | Requerido |
    |---|---|---|
-   | `name` | Nombre del contenido | Sí |
-   | `mediaid` | Identificador único del contenido | Sí |
-   | `length` | Duración del contenido | Sí |
+   | `name` | Nombre de contenido | Sí |
+   | `mediaid` | Identificador único de contenido | Sí |
+   | `length` | Longitud de contenido | Sí |
    | `streamType` | Tipo de emisión | Sí |
    | `mediaType` | Tipo de contenido (contenido de audio o vídeo) | Sí |
 
-   **Constantes de`StreamType`:**
+   **`StreamType`Constantes de:**
 
    | Nombre de la constante | Descripción |
    |---|---|
@@ -86,7 +86,7 @@ El seguimiento de la reproducción principal incluye el seguimiento de la carga,
    | `AUDIOBOOK` | Tipo de emisión de audiolibro. |
    | `PODCAST` | Tipo de emisión de podcast. |
 
-   **Constantes de`MediaType`:**
+   **`MediaType`Constantes de:**
 
    | Nombre de la constante | Descripción |
    |---|---|
@@ -95,7 +95,7 @@ El seguimiento de la reproducción principal incluye el seguimiento de la carga,
 
    El formato general para crear `MediaObject` es `MediaHeartbeat.createMediaObject(<MEDIA_NAME>, <MEDIA_ID>, <MEDIA_LENGTH>, <STREAM_TYPE>, <MEDIA_TYPE>);`
 
-1. **Adjuntar metadatos**: opcionalmente, se pueden adjuntar objetos de metadatos estándar o personalizados a la sesión de seguimiento mediante el uso de variables de datos de contexto.
+1. **Adjuntar metadatos**: Opcionalmente, se pueden adjuntar objetos de metadatos estándar o personalizados a la sesión de seguimiento mediante el uso de variables de datos de contexto.
 
    * **Metadatos estándar -**
 
@@ -133,10 +133,10 @@ El seguimiento de la reproducción principal incluye el seguimiento de la carga,
 
    **Situaciones de pausa**: identifique todas las situaciones en las que puede pausarse el reproductor y compruebe que se ha invocado `trackPause` correctamente. Las siguientes situaciones requieren que la aplicación invoque `trackPause()`:
 
-   * Cuando el usuario pausa explícitamente en la aplicación.
-   * Cuando el reproductor se sitúa en el estado En pausa.
-   * (*Aplicaciones móviles*): cuando el usuario coloca la aplicación en segundo plano, pero desea que la sesión continúe abierta.
-   * (*Aplicaciones móviles*): cuando se produce cualquier tipo de interrupción del sistema que provoca que una aplicación se quede en segundo plano. Por ejemplo, si el usuario recibe una llamada o aparece una ventana emergente de otra aplicación, pero desea que la aplicación mantenga la sesión activa para que el usuario pueda reanudar el contenido desde donde se produjo la interrupción.
+   * El usuario hace una pausa explícita en la aplicación.
+   * El reproductor se pone en estado de pausa.
+   * (*Aplicaciones móviles*): El usuario pone la aplicación en segundo plano, pero desea que la aplicación mantenga abierta la sesión.
+   * (*Aplicaciones móviles*): Se produce cualquier tipo de interrupción del sistema que provoca que una aplicación se ponga en segundo plano. Por ejemplo, si el usuario recibe una llamada o aparece una ventana emergente de otra aplicación, pero desea que la aplicación mantenga la sesión activa para que el usuario pueda reanudar el contenido desde donde se produjo la interrupción.
 
 1. Identifique el evento del reproductor para la reproducción o reanudación después de la pausa e invoque `trackPlay`.
 
@@ -149,9 +149,9 @@ El seguimiento de la reproducción principal incluye el seguimiento de la carga,
 1. Escuche los eventos de almacenamiento en búfer de reproducción procedentes del reproductor de contenidos y, cuando reciba la notificación del evento Inicio de almacenamiento en búfer, rastree el almacenamiento en búfer mediante el evento `BufferStart`.
 1. En la notificación de Finalización de almacenamiento en búfer procedente del reproductor de contenidos, rastree el final del almacenamiento en búfer con el evento `BufferComplete`.
 
-Consulte ejemplos de cada paso en los siguientes temas específicos para cada plataforma, y examine los reproductores de muestra incluidos con los SDK.
+Consulte ejemplos de cada paso en los siguientes temas específicos de la plataforma y observe los reproductores de muestra incluidos en los SDK.
 
-Para ver un sencillo ejemplo del seguimiento de la reproducción, consulte este uso del SDK de JavaScript 2.x en un HTML5 Player:
+Para ver un ejemplo sencillo de seguimiento de reproducción, consulte este uso del SDK de JavaScript 2.x en un reproductor HTML5:
 
 ```js
 /* Call on media start */ 
