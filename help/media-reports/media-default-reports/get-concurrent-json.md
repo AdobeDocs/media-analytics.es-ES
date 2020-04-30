@@ -2,26 +2,26 @@
 title: Obtención de datos del informe JSON de espectadores simultáneos
 description: null
 uuid: 9168f114-2459-4951-a06c-57b735d09dc0
-translation-type: ht
-source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
+translation-type: tm+mt
+source-git-commit: ccdc3e170d125a76d798be7ce1fa5c12eef1f76a
 
 ---
 
 
 # Obtención de datos del informe JSON de espectadores simultáneos {#get-concurrent-viewers-json-report-data}
 
-Puede obtener datos de informes de visores simultáneos mediante la _* versión 1.4 *_ de las API de Analytics:
+Puede obtener datos de informes de visores simultáneos mediante la _*versión 1.4*_ de las API de Analytics:
 * [API de Analytics ](https://github.com/AdobeDocs/analytics-1.4-apis)
 * [Swagger](https://adobedocs.github.io/analytics-1.4-apis/swagger-docs.html#/Report/Report.Get)
 
 1. Filtre los datos con cualquier segmento creado en la interfaz de usuario. Para filtrar por un ID de contenido específico, cree un nuevo segmento.
-1. Establezca el `elements` -&gt; `id` en el cuerpo de la solicitud en `videoconcurrentviewers`.
+1. Establezca el `elements` -> `id` en el cuerpo de la solicitud en `videoconcurrentviewers`.
 1. Solicite una cantidad suficiente de datos. Adobe recomienda 3200 puntos de datos para garantizar que no haya espacios en los datos.
 
    * El intervalo de datos que especifique en el informe recopila todos los datos del visor simultáneo _al finalizar la sesión de vídeo._
 Por lo tanto, debe tener en cuenta las sesiones que comienzan un día y finalizan después de la medianoche (es decir, al día siguiente).
 
-   * Solicite más de un día de datos, pero en el análisis _* utilice solo el primer día de los datos.*_
+   * Solicite más de un día de datos, pero en el análisis _*utilice solo el primer día de los datos.*_
 
 Una carga útil de solicitud de muestra para este escenario tendría este aspecto:
 
@@ -56,7 +56,7 @@ Una carga útil de solicitud de muestra para este escenario tendría este aspect
 <!--
 You can extract the concurrent viewers report data using the Experience Cloud API Explorer as follows. 
 
-1. Navigate to: [https://marketing.adobe.com/developer/api-explorer.](https://marketing.adobe.com/developer/api-explorer)
+1. Navigate to: [https://www.adobe.io.](https://www.adobe.io)
 1. Select and enter the following information in the API Explorer form:
 
     * **API -** Select "Report".
@@ -64,7 +64,7 @@ You can extract the concurrent viewers report data using the Experience Cloud AP
     * **Environment -** Select your data center.
     * Request JSON - Specify the following:
 
-        * `reportSuiteID` - For info on reports suites: [Report Suites](https://marketing.adobe.com/resources/help/en_US/sc/implement/ref-reports-report-suites.html)
+        * `reportSuiteID` - For info on reports suites: [Report Suites](https://docs.adobe.com/content/help/en/analytics/admin/manage-report-suites/report-suites-admin.html)
         
         * `dateTo` - End date of the report.         
         
