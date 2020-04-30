@@ -12,14 +12,14 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 Media Analytics (Heartbeats) es la solución de seguimiento de medios estandarizada de Adobe. Ha reemplazado el modelo anterior de Milestone de Adobe.
 
-: Se trata de una solución de Adobe Experience Cloud que ayuda a los programadores y distribuidores de contenido a monetizar el contenido en todos los dispositivos conectados.
+Se trata de una solución de Adobe Experience Cloud que ayuda a los programadores y distribuidores de contenido a monetizar el contenido en todos los dispositivos conectados.
 
-Primetime elimina la complejidad de alcanzar, monetizar y activar las audiencias globales en diversos dispositivos, proporcionando una plataforma modular para publicación, publicidad, personalización y análisis de medios. Además, Primetime ofrece soluciones y valores para lo siguiente:
+Primetime elimina la complejidad de alcanzar, monetizar y activar audiencias globales en varios dispositivos al proporcionar una plataforma modular para la publicación, publicidad, personalización y análisis de medios. Además, Primetime incluye soluciones y valores para lo siguiente:
 
-* Compatibilidad con la medición precisa de tipos de contenido en formato Linear y VOD.
-* Compatibilidad con la medición de cortes de publicidad con (o sin) inserción dinámica de publicidad.
-* El modelo de inserción de anuncios ininterrumpido de TVSDK permite un análisis que mide directamente la reproducción de la publicidad, lo que aumenta la precisión.
-* Un sólido conjunto de eventos y metadatos para garantizar la precisión entre el almacenamiento en búfer de la calidad del programa o los problemas de las interrupciones de conectividad móvil o con las interacciones con el usuario final, como la búsqueda, la pausa y la comprobación de antecedentes en dispositivos móviles.
+* Medir con precisión los tipos de contenido Lineal y VOD.
+* Compatibilidad para medir saltos de anuncios con (o sin) inserción de publicidad dinámica.
+* El modelo de inserción de anuncios optimizado de TVSDK permite realizar análisis que miden directamente la reproducción del anuncio, lo que aumenta la precisión.
+* Conjunto sólido de eventos y metadatos para garantizar la precisión en los problemas de interrupción de la conectividad móvil o de almacenamiento en búfer de QoS y en las interacciones del usuario final, como la búsqueda, la pausa y la puesta en segundo plano en dispositivos móviles.
 <!--
 * Integrated support for Nielsen DTVR (linear) with ID3 metadata and DCR with CMS metadata.
 -->
