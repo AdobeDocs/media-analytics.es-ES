@@ -12,13 +12,13 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ## Situación {#scenario}
 
-Este caso trata de un recurso de VOD sin anuncios que se reproduce una vez de principio a fin.
+Este escenario tiene un recurso de VOD, sin anuncios, que se reproduce una vez de principio a fin.
 
 | Activador | Método de Heartbeat | Llamadas de red | Notas   |
 |---|---|---|---|
 | El usuario hace clic en **[!UICONTROL Reproducir]**. | `trackSessionStart` | Inicio del contenido de Analytics, inicio del contenido de Heartbeat | Puede ser porque el usuario hace clic en Reproducir o por un evento de reproducción automática. |
-| Primer fotograma del contenido | `trackPlay` | Reproducción del contenido de Heartbeat | Este método desencadena el temporizador y, a partir de este punto, se envían latidos cada 10 segundos mientras dura la reproducción. |
-| Se reproduce el contenido. |  | Latidos de contenido |  |
+| Primer fotograma del contenido | `trackPlay` | Reproducción del contenido de Heartbeat | Este método desencadena el temporizador y, a partir de este momento, se envían latidos cada 10 segundos durante la reproducción. |
+| Se reproduce el contenido |  | Latidos de contenido |  |
 | El contenido termina de reproducirse. | `trackComplete` | Finalización de contenido de Heartbeat | *Complete* significa que el cabezal de reproducción ha llegado al final del contenido. |
 
 ## Parámetros {#parameters}
@@ -29,17 +29,17 @@ Muchos de los valores que existen en las llamadas de inicio de contenido de Hear
 
 | Parámetro | Valor | Notas   |
 |---|---|---|
-| `s:sc:rsid` | &lt;El ID de su grupo de informes de Adobe&gt; |  |
-| `s:sc:tracking_server` | &lt;La URL de servidor de seguimiento de Analytics&gt; |  |
+| `s:sc:rsid` | &lt;El ID de su grupo de informes de Adobe> |  |
+| `s:sc:tracking_server` | &lt;La URL de servidor de seguimiento de Analytics> |  |
 | `s:user:mid` | se debe definir | Debe coincidir con el valor medio de la llamada `Adobe Analytics Content Start`. |
 | `s:event:type` | `"start"` |  |
 | `s:asset:type` | `"main"` |  |
-| `s:asset:media_id` | &lt;Nombre de su contenido&gt; |  |
+| `s:asset:media_id` | &lt;Nombre de su contenido> |  |
 | `s:meta:*` | opcional | Metadatos personalizados que se definen en el contenido. |
 
 ## Reproducción del contenido de Heartbeat {#heartbeat-content-play}
 
-Estos parámetros deberían ser casi idénticos a la llamada de `Heartbeat Content Start`, pero la diferencia clave es el parámetro `s:event:type`. Todos los demás parámetros deben seguir estando.
+Estos parámetros deberían ser casi idénticos a la llamada de `Heartbeat Content Start`, pero la diferencia clave es el parámetro `s:event:type`. Todos los demás parámetros deben seguir existiendo.
 
 | Parámetro | Valor | Notas   |
 |---|---|---|
@@ -48,18 +48,18 @@ Estos parámetros deberían ser casi idénticos a la llamada de `Heartbeat Conte
 
 ## Latidos de contenido {#content-heartbeats}
 
-Durante la reproducción de contenido, un temporizador envía al menos un latido cada 10 segundos. Estos latidos contienen información sobre la reproducción, los anuncios y el almacenamiento en búfer, entre otras cosas. El contenido exacto de cada latido no se detallará en este documento, pero lo más importante que hay que saber es que los latidos se desencadenan constantemente mientras dura la reproducción.
+Durante la reproducción de contenido, un temporizador envía al menos un latido cada 10 segundos. Estos latidos contienen información sobre reproducción, anuncios, almacenamiento en búfer, etc. El contenido exacto de cada latido está fuera del ámbito de este documento, pero el componente fundamental es que los latidos se activen de forma consistente mientras dura la reproducción.
 
-En el contenido de los latidos, busque los parámetros siguientes:
+En los latidos de contenido, busque los parámetros siguientes:
 
 | Parámetros | Valor | Notas   |
 |---|---|---|
 | `s:event:type` | `"play"` |  |
-| `l:event:playhead` | &lt;posición del cabezal de reproducción&gt; p.ej., 50,60,70 | Este parámetro indica la posición actual del cabezal de reproducción. |
+| `l:event:playhead` | &lt;posición del cabezal de reproducción> p.ej., 50,60,70 | Este parámetro indica la posición actual del cabezal de reproducción. |
 
 ## Finalización de contenido de Heartbeat {#heartbeat-content-complete}
 
-Cuando termina la reproducción de contenido, lo que significa que se ha llegado al final del cabezal de reproducción, se envía una llamada de `Heartbeat Content Complete`. Esta llamada es como las otras llamadas de Heartbeat, pero contiene algunos parámetros específicos:
+Cuando termina la reproducción de contenido, lo que significa que se ha llegado al final del cabezal de reproducción, se envía una llamada de `Heartbeat Content Complete`. Esta llamada se parece a otras llamadas de Heartbeat, pero contiene algunos parámetros específicos:
 
 | Parámetros | Valor | Notas   |
 |---|---|---|
@@ -68,7 +68,7 @@ Cuando termina la reproducción de contenido, lo que significa que se ha llegado
 
 ## Código de muestra {#sample-code}
 
-En esta situación, el contenido tiene una duración de 40 segundos. Se reproduce hasta el final sin interrupciones.
+En este escenario, el contenido dura 40 segundos. Se reproduce hasta el final sin interrupciones.
 
 ![](assets/main-content-regular-playback.png)
 
