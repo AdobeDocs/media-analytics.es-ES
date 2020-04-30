@@ -27,7 +27,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    | `streamType` | Tipo de flujo (consulte _Constantes de StreamType_ a continuación) | Sí |
    | `mediaType` | Tipo de contenido (consulte _Constantes de MediaType_ a continuación) | Sí |
 
-   **Constantes de`StreamType`:**
+   **`StreamType`Constantes de:**
 
    | Nombre de la constante | Descripción   |
    |---|---|
@@ -38,7 +38,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    | `AUDIOBOOK` | Tipo de emisión de audiolibro. |
    | `PODCAST` | Tipo de emisión de podcast. |
 
-   **Constantes de`MediaType`:**
+   **`MediaType`Constantes de:**
 
    | Nombre de la constante | Descripción |
    |---|---|
@@ -143,10 +143,10 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
    Identifique cualquier situación en la que se pausará el reproductor de contenido y compruebe que se ha invocado `trackPause` correctamente. Las siguientes situaciones requieren que la aplicación invoque `trackPause()`:
 
-   * Cuando el usuario pausa explícitamente en la aplicación.
-   * Cuando el reproductor se sitúa en el estado En pausa.
-   * (*Aplicaciones móviles*): cuando el usuario coloca la aplicación en segundo plano, pero desea que la sesión continúe abierta.
-   * (*Aplicaciones móviles*): cuando se produce cualquier tipo de interrupción del sistema que provoca que una aplicación se quede en segundo plano. Por ejemplo, si el usuario recibe una llamada o aparece una ventana emergente de otra aplicación, pero desea que la aplicación mantenga la sesión activa para que el usuario pueda reanudar el contenido desde donde se produjo la interrupción.
+   * El usuario hace una pausa explícita en la aplicación.
+   * El reproductor se pone en estado de pausa.
+   * (*Aplicaciones móviles*): El usuario pone la aplicación en segundo plano, pero desea que la aplicación mantenga abierta la sesión.
+   * (*Aplicaciones móviles*): Se produce cualquier tipo de interrupción del sistema que provoca que una aplicación se ponga en segundo plano. Por ejemplo, si el usuario recibe una llamada o aparece una ventana emergente de otra aplicación, pero desea que la aplicación mantenga la sesión activa para que el usuario pueda reanudar el contenido desde donde se produjo la interrupción.
 
 1. Identifique el evento del reproductor para la reproducción o reanudación después de la pausa e invoque `trackPlay`:
 
@@ -159,5 +159,5 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    >Puede ser el mismo origen de evento empleado en el paso 4. Asegúrese de que cada llamada de API `trackPause()` esté emparejada con una llamada posterior a la API `trackPlay()` cuando se reanude la reproducción.
 
 * Situaciones de seguimiento: [Reproducción de VOD sin anuncios](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)
-* Reproductor de muestra incluido con el SDK para JavaScript para ver un ejemplo de seguimiento completo.
+* Reproductor de muestra incluido con el SDK de JavaScript para ver un ejemplo de seguimiento completo.
 
