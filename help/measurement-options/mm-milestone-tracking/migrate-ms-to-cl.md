@@ -2,8 +2,8 @@
 title: Migración de Milestone a vínculo personalizado
 description: null
 uuid: 1c8edde5-0ef1-4bc0-a62d-1747f4907f09
-translation-type: ht
-source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
+translation-type: tm+mt
+source-git-commit: ccdc3e170d125a76d798be7ce1fa5c12eef1f76a
 
 ---
 
@@ -12,7 +12,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ## Información general {#overview}
 
-Los conceptos básicos de la medición de vídeo son los mismos para el seguimiento de Milestone y el vínculo personalizado, ya que recopilan los eventos del reproductor de vídeo y los asignan a los métodos de análisis, a la vez que recogen los metadatos y valores del reproductor para asignarlos a las variables de análisis. El enfoque del vínculo personalizado debe entenderse como una reducción y simplificación de la implementación y los datos recopilados. Con la solución de vínculo personalizado, no existen variables ni métodos predefinidos para la medición de vídeo, sino que se requiere una configuración totalmente personalizada. Debería ser posible actualizar el código de evento del reproductor para que apunte a las llamadas de seguimiento del vínculo personalizado en el caso de los eventos básicos del reproductor, como el inicio y la finalización. Consulte [Guía de implementación de vínculo personalizado](/help/measurement-options/cl-in-aa/cl-impl-guide.md) y [Seguimiento de vínculo manual mediante el código de vínculo personalizado](https://marketing.adobe.com/resources/help/es_ES/sc/implement/link_manual.html) para obtener más información.
+Los conceptos básicos de la medición de vídeo son los mismos para el seguimiento de Milestone y el vínculo personalizado, ya que recopilan los eventos del reproductor de vídeo y los asignan a los métodos de análisis, a la vez que recogen los metadatos y valores del reproductor para asignarlos a las variables de análisis. El enfoque del vínculo personalizado debe entenderse como una reducción y simplificación de la implementación y los datos recopilados. Con la solución de vínculo personalizado, no existen variables ni métodos predefinidos para la medición de vídeo, sino que se requiere una configuración totalmente personalizada. Debería ser posible actualizar el código de evento del reproductor para que apunte a las llamadas de seguimiento del vínculo personalizado en el caso de los eventos básicos del reproductor, como el inicio y la finalización. Consulte [Guía de implementación de vínculo personalizado](/help/measurement-options/cl-in-aa/cl-impl-guide.md) y [Seguimiento de vínculo manual mediante el código de vínculo personalizado](https://docs.adobe.com/content/help/en/media-analytics/using/measurement-options/cl-in-aa/cl-impl-guide.html) para obtener más información.
 
 En las tablas siguientes se proporcionan las correspondencias entre la solución Milestone y la solución de vínculo personalizado.
 
@@ -25,7 +25,7 @@ En las tablas siguientes se proporcionan las correspondencias entre la solución
 <tr>
 <th><strong>Métrica de Milestone</strong></th>
 <th><strong>Tipo de variable</strong></th>
-<th><strong>Vínculo personalizado</strong></th>
+<th><strong>Sintaxis de</strong></th>
 </tr>
 </thead>
 <tbody>
@@ -358,7 +358,8 @@ Media.autoTrack
 </td>
 <td>
 <pre>
-s.Media.autoTrack = true;
+s.Media.autoTrack
+  = true;
 </pre>
 </td>
 <td>N/D
@@ -478,7 +479,8 @@ Media.segmentByMilestones
 </td>
 <td>
 <pre>
-s.Media.segmentByMilestones = true;
+s.Media.segmentByMilestones
+  = true;
 </pre>
 </td>
 <td>N/D
