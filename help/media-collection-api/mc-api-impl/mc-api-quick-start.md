@@ -12,14 +12,14 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 >[!TIP]
 >
->Recopile los datos de solicitud necesarios para completar una solicitud de [sesión correcta](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) en el servidor back-end de la API de recopilación de Media Analytics (MA). Puede verificar rápidamente los datos de solicitud enviando solicitudes manualmente (con `curl` o Postman, etc.). Esto le indicará de inmediato si en su solicitud hay problemas con tipos de datos incorrectos o información incorrecta. Utilice los [esquemas de validación de JSON](/help/media-collection-api/mc-api-ref/mc-api-json-validation.md) para verificar que está suministrando los datos de solicitud adecuados.
+>Recopile los datos de solicitud necesarios para completar una solicitud de [sesión correcta](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) en el servidor back-end de la API de recopilación de Media Analytics (MA). Puede verificar rápidamente los datos de solicitud enviando solicitudes manualmente (con `curl` o Postman, etc.). Esto le proporcionará información inmediata sobre si tiene problemas con tipos de datos incorrectos o con información incorrecta en la solicitud. Utilice los [esquemas de validación JSON](/help/media-collection-api/mc-api-ref/mc-api-json-validation.md) para comprobar que está suministrando los datos de solicitud adecuados.
 
-1. Recopile los datos estándar de Adobe Analytics y del visitante que debe proporcionar para ejecutar cualquiera de las aplicaciones de Experience Cloud:
+1. Reúna los datos estándar y requeridos de Adobe Analytics y Visitante que debe proporcionar para ejecutar cualquiera de las aplicaciones de Experience Cloud:
 
    * ID de organización para visitantes en Experience Cloud
    * ID de usuario para visitantes en Experience Cloud
-   * ID de informes de Analytics
-   * URL del servidor de seguimiento de análisis
+   * ID de grupo de informes de Analytics
+   * URL de servidor de seguimiento de Analytics
 
 1. Cree un objeto JSON para su solicitud de `sessions` que contenga los datos mínimos necesarios para una llamada correcta. Por ejemplo:
 
@@ -72,4 +72,4 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
    Access-Control-Expose-Headers: Location
    ```
 
-Si la [solicitud de sesiones](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) se realiza correctamente, recibirá una respuesta de `201 Created` similar a la anterior. La respuesta incluye un ID de sesión en el encabezado Ubicación. El ID de sesión es información fundamental en la respuesta, ya que es necesaria para todas las llamadas de seguimiento subsiguientes. Una vez que se haya devuelto correctamente una [solicitud de sesiones](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md), puede continuar con la implementación del seguimiento de vídeo con la API de MA en su reproductor de vídeo.
+Si la [solicitud de sesiones](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) se realiza correctamente, recibirá una respuesta de `201 Created` similar a la anterior. La respuesta incluye un ID de sesión en el encabezado Ubicación. El ID de sesión es la información crucial de la respuesta, ya que es necesaria para todas las llamadas de seguimiento subsiguientes. Una vez que se haya devuelto correctamente una [solicitud de sesiones](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md), puede continuar con la implementación del seguimiento de vídeo con la API de MA en su reproductor de vídeo.
