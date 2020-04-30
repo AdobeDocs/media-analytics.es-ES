@@ -30,10 +30,10 @@ En la tabla siguiente se describen las versiones de plataforma mínimas admitida
 
 ## Directrices generales de implementación {#general-implementation-guidelines}
 
-En el seguimiento de medios, existen tres componentes de SDK principales:
-* Configuración de Media Heartbeat: la configuración contiene la configuración básica de los informes.
-* Delegado de Media Heartbeat: el delegado controla el tiempo de reproducción y el objeto QoS.
-* Media Heartbeat: biblioteca principal que contiene miembros y métodos.
+Hay tres componentes principales del SDK involucrados en el seguimiento de medios:
+* Configuración de Media Heartbeat: La configuración contiene la configuración básica para la creación de informes.
+* Delegado de Media Heartbeat: El delegado controla el tiempo de reproducción y el objeto QoS.
+* Media Heartbeat: La biblioteca principal que contiene miembros y métodos.
 
 Complete los pasos siguientes de la implementación:
 
@@ -41,31 +41,31 @@ Complete los pasos siguientes de la implementación:
 
    |  Nombre de variable  | Descripción  | Requerido |  Valor predeterminado  |
    |---|---|:---:|---|
-   | `trackingServer` | Servidor de seguimiento para el análisis de medios. Es distinto del servidor de seguimiento de Analytics. | Sí | Cadena vacía |
+   | `trackingServer` | Servidor de seguimiento para análisis de medios. Esto es diferente al servidor de seguimiento de Analytics. | Sí | Cadena vacía |
    | `channel` | Nombre del canal | No | Cadena vacía |
-   | `ovp` | Nombre de la plataforma de medios en línea desde la que se distribuye el contenido. | No | Cadena vacía |
-   | `appVersion` | Versión del SDK/aplicación del reproductor de medios | No | Cadena vacía |
-   | `playerName` | Nombre del reproductor de medios en uso, por ejemplo, “AVPlayer”, “HTML5 Player”, “Mi reproductor personalizado”. | No | Cadena vacía |
-   | `ssl` | Indica si las llamadas se deberían hacer mediante HTTPS. | No | false |
-   | `debugLogging` | Indica si el registro de depuración está habilitado. | No | false |
+   | `ovp` | Nombre de la plataforma de medios en línea desde la que se distribuye el contenido | No | Cadena vacía |
+   | `appVersion` | La versión del SDK/aplicación del reproductor de medios | No | Cadena vacía |
+   | `playerName` | Nombre del reproductor de medios en uso como &quot;AVPlayer&quot;, &quot;HTML5 Player&quot;, &quot;Mi reproductor personalizado&quot; | No | Cadena vacía |
+   | `ssl` | Indica si las llamadas deben realizarse a través de HTTPS | No | false |
+   | `debugLogging` | Indica si el registro de depuración está habilitado | No | false |
 
 1. Implementación de `MediaHeartbeatDelegate`.
 
    |  Nombre del método  |  Descripción  | Requerido |
    | --- | --- | :---: |
    | `getQoSObject()` | Devuelve la instancia de `MediaObject` que contiene la información actual de QoS. Se llamará varias veces a este método durante una sesión de reproducción. La implementación del reproductor debe devolver siempre los datos de QoS más recientes que haya disponibles. | Sí |
-   | `getCurrentPlaybackTime()` | Devuelve la posición actual del cabezal de reproducción. Para el seguimiento de vídeos VOD, el valor se especifica segundos después del comienzo del contenido multimedia. Para el seguimiento LINEAR/LIVE, el valor se especifica segundos después del principio del programa. | Sí |
+   | `getCurrentPlaybackTime()` | Devuelve la posición actual del cabezal de reproducción. Para el seguimiento de vídeos VOD, el valor se especifica segundos después del comienzo del contenido multimedia. Para el seguimiento LINEAR/LIVE, el valor se especifica en segundos desde el comienzo del programa. | Sí |
 
    >[!TIP]
    >
-   >El objeto de calidad de servicio (QoS) es opcional. Si los datos de QoS están disponibles para su reproductor y desea realizar un seguimiento de dichos datos, es necesario el uso de las variables siguientes:
+   >El objeto de calidad de servicio (QoS) es opcional. Si los datos de QoS están disponibles para el reproductor y desea rastrearlos, se requieren las siguientes variables:
 
    | Nombre de variable | Descripción   | Requerido |
    | --- | --- | :---: |
-   | `bitrate` | La velocidad de bits del contenido multimedia en bits por segundo. | Sí |
-   | `startupTime` | Tiempo de inicio del contenido en milisegundos. | Sí |
-   | `fps` | Fotogramas mostrados por segundo. | Sí |
-   | `droppedFrames` | El número de fotogramas perdidos. | Sí |
+   | `bitrate` | Velocidad de bits del medio en bits por segundo. | Sí |
+   | `startupTime` | Tiempo de activación del inicio del medio en milisegundos. | Sí |
+   | `fps` | Los fotogramas mostrados por segundo. | Sí |
+   | `droppedFrames` | Número de fotogramas perdidos hasta ahora. | Sí |
 
 1. Cree la instancia de `MediaHeartbeat`.
 
@@ -79,9 +79,9 @@ Complete los pasos siguientes de la implementación:
    >
    >`MediaHeartbeat` requiere una instancia de `AppMeasurement` para enviar llamadas a Adobe Analytics.
 
-1. Combine todos los fragmentos.
+1. Combine todas las piezas.
 
-   El siguiente código de ejemplo utiliza nuestro SDK de JavaScript 2.x para un reproductor de vídeo HTML5:
+   El siguiente código de ejemplo utiliza nuestro SDK JavaScript 2.x para un reproductor de vídeo HTML5:
 
    ```javascript
    // Create local references to the heartbeat classes 
@@ -148,7 +148,7 @@ El seguimiento de medios funciona del mismo modo en todas las plataformas, equip
 | Chromecast | [Configurar para Chromecast ](chromecast_1.x_sdk.pdf) |
 | iOS | [Configurar para iOS ](vhl-dev-guide-v15_ios.pdf) |
 | JavaScript | [Configurar para JavaScript ](vhl-dev-guide-v15_js.pdf) |
-| Primetime | <ul> <li> Android:   [Configurar Media Analytics](https://help.adobe.com/en_US/primetime/psdk/android/1.4/index.html#PSDKs-task-Initialize_and_configure_video_analytics_) </li> <li> DHLS:   [Configurar Media Analytics](https://help.adobe.com/en_US/primetime/psdk/dhls/index.html#PSDKs-task-Initialize_and_configure_video_analytics_) </li> <li> iOS:   [Configurar Media Analytics](https://help.adobe.com/en_US/primetime/psdk/ios/1.4/index.html#PSDKs-task-Initialize_and_configure_video_analytics_) </li> </ul> |
+| Primetime | <ul> <li> Android: [Configurar Media Analytics](https://helpx.adobe.com/es/support/primetime.html#PSDKs-task-Initialize_and_configure_video_analytics_) </li> <li> DHLS: [Configurar Media Analytics](https://helpx.adobe.com/es/support/primetime.html#PSDKs-task-Initialize_and_configure_video_analytics_) </li> <li> iOS: [Configurar Media Analytics](https://helpx.adobe.com/es/support/primetime.html#PSDKs-task-Initialize_and_configure_video_analytics_) </li> </ul> |
 | TVML | [Configurar para TVML ](vhl_tvml.pdf) |
 
 ## Documentación del Media SDK de Primetime {#primetime-docs}
