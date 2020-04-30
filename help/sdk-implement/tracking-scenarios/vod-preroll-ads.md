@@ -1,6 +1,6 @@
 ---
 title: Reproducción de VOD con anuncios previos a la emisión
-description: Ejemplo de cómo realizar un seguimiento del contenido de VOD que contiene anuncios preliminares mediante Media SDK.
+description: Ejemplo de cómo realizar un seguimiento del contenido de VOD que contiene anuncios previos a la emisión mediante Media SDK.
 uuid: 5d1022a8-88cb-40aa-919c-60dd592a639e
 translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
@@ -10,18 +10,18 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 # Reproducción de VOD con anuncios previos a la emisión {#vod-playback-with-pre-roll-ads}
 
-En esta situación, se han insertado anuncios previos a la emisión antes del contenido principal. Si no se indica lo contrario, las llamadas de red son iguales a las llamadas que se hacen en el escenario de [Reproducción de VOD sin anuncios](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md). Las llamadas de red se realizan al mismo tiempo, pero la carga útil es distinta.
+En esta situación, se han insertado anuncios previos a la emisión antes del contenido principal. Si no se indica lo contrario, las llamadas de red son iguales a las llamadas que se hacen en la [Reproducción de VOD sin anuncios. ](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) Las llamadas de red se realizan al mismo tiempo, pero la carga útil es distinta.
 
 | Activador | Método de Heartbeat | Llamadas de red   | Notas   |
 | --- | --- | --- | --- |
 | El usuario hace clic en [!UICONTROL Reproducir]. | `trackSessionStart` | Inicio del contenido de Analytics, inicio del contenido de Heartbeat | La biblioteca de medición no sabe que hay un anuncio previo a la emisión, por lo que estas llamadas de red son idénticas al escenario de [Reproducción de VOD sin anuncios](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md). |
-| El anuncio empieza. | <ul> <li> `trackEvent:AdBreakStart` </li> <li> `trackEvent:AdStart` </li> </ul> | Inicio de publicidad de Analytics, inicio de publicidad de Heartbeat |  |
-| Se reproduce el fotograma del primer anuncio. | `trackPlay` | Reproducción de anuncio de Heartbeat | El contenido del anuncio se reproduce antes del contenido principal y los latidos empiezan cuando comienza el anuncio. |
+| El anuncio empieza. | <ul> <li> `trackEvent:AdBreakStart` </li> <li> `trackEvent:AdStart` </li> </ul> | Inicio de anuncios de Analytics, Inicio de anuncios de Heartbeat |  |
+| Se reproduce el fotograma del primer anuncio. | `trackPlay` | Reproducción de anuncio de Heartbeat | El contenido del anuncio se reproduce antes del contenido principal y el inicio de latidos cuando comienza el anuncio. |
 | Se reproduce el anuncio. |  | Latidos de anuncio |  |
 | Se termina de reproducir el segundo anuncio. | `trackEvent:trackAdComplete` | Finalización de publicidad de Heartbeat | Se llega al final del anuncio. |
-| Se reproduce el primer fotograma del segundo anuncio. | `trackEvent:AdStart` | Inicio de publicidad de Analytics, inicio de publicidad de Heartbeat |  |
+| Se reproduce el primer fotograma del segundo anuncio. | `trackEvent:AdStart` | Inicio de anuncios de Analytics, Inicio de anuncios de Heartbeat |  |
 | Se reproduce el anuncio. |  | Latidos de anuncio |  |
-| Se termina de reproducir el segundo anuncio. | <ul> <li> `trackEvent:trackAdComplete` </li> <li> `trackEvent:AdBreakComplete` </li> </ul> | Finalización de publicidad de Heartbeat | Se llega al final del anuncio y de la secuencia. |
+| Se termina de reproducir el segundo anuncio. | <ul> <li> `trackEvent:trackAdComplete` </li> <li> `trackEvent:AdBreakComplete` </li> </ul> | Finalización de publicidad de Heartbeat | Se llega al final del anuncio y del pod. |
 | Se reproduce el contenido. |  | Latidos de contenido | Esta llamada de red es idéntica al escenario de [Reproducción de VOD sin anuncios](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md). |
 | El contenido termina de reproducirse. | `trackComplete` | Finalización de contenido de Heartbeat | Esta llamada de red es idéntica al escenario de [Reproducción de VOD sin anuncios](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md). |
 | La sesión finaliza. | `trackSessionEnd` |  | `SessionEnd` |
@@ -54,8 +54,8 @@ Estos parámetros son similares a la llamada de `Content Heartbeats`, pero la ll
 |---|---|---|
 | `s:event:type` | `play` |  |
 | `s:asset:type` | `ad` |  |
-| `s:asset:ad_id` | &lt;ID del anuncio&gt; |  |
-| `s:asset:pod_id` | &lt;ID de pod de anuncios&gt; |  |
+| `s:asset:ad_id` | &lt;ID del anuncio> |  |
+| `s:asset:pod_id` | &lt;ID de pod de anuncios> |  |
 
 Al igual que las llamadas de `Heartbeat Content Complete`, cuando termina de reproducirse el anuncio y se llega al final del cabezal de reproducción, se envía una llamada de `Heartbeat Ad Complete`. Esta se parece a otras llamadas de `Heartbeat Ad`, pero contiene dos elementos específicos:
 
