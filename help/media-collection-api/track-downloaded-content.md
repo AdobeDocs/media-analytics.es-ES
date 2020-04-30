@@ -12,7 +12,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ## Información general {#overview}
 
-La función Contenido descargado proporciona la capacidad de realizar un seguimiento del consumo de contenido cuando un usuario está sin conexión. Por ejemplo, un usuario descarga e instala una aplicación en un dispositivo móvil. A continuación, descarga contenido a través de la aplicación en el almacenamiento local del dispositivo. Para realizar un seguimiento de los datos descargados, Adobe ha desarrollado la función Contenido descargado. Con esta función, cuando el usuario reproduce contenido desde el almacenamiento de un dispositivo, los datos de seguimiento se almacenan en el dispositivo, independientemente de la conectividad de este. Cuando el usuario termina la sesión de reproducción y el dispositivo vuelve a estar en línea, la información de seguimiento almacenada se envía al back-end de la API de recopilación de contenido en una única carga. A partir de ahí, el procesamiento y los informes se realizan de la forma normal en la API de recopilación de contenido.
+La función Contenido descargado proporciona la capacidad de realizar un seguimiento del consumo de contenido cuando un usuario está sin conexión. Por ejemplo, un usuario descarga e instala una aplicación en un dispositivo móvil. A continuación, el usuario descarga contenido mediante la aplicación en el almacenamiento local del dispositivo. Para realizar un seguimiento de los datos descargados, Adobe ha desarrollado la función Contenido descargado. Con esta función, cuando el usuario reproduce contenido desde el almacenamiento de un dispositivo, los datos de seguimiento se almacenan en el dispositivo, independientemente de la conectividad de este. Cuando el usuario termina la sesión de reproducción y el dispositivo vuelve a estar en línea, la información de seguimiento almacenada se envía al back-end de la API de recopilación de contenido en una única carga. A partir de ahí, el procesamiento y los informes se realizan de la forma normal en la API de recopilación de contenido.
 
 Contrastar los dos enfoques:
 
@@ -39,13 +39,13 @@ La función Contenido descargado es simplemente la versión sin conexión de la 
 ### Orden de los eventos
 
 * El primer evento de la carga útil por lotes debe ser `sessionStart`, como es habitual con la API de recopilación de contenido.
-* **Debe incluir`media.downloaded: true`** en los parámetros de metadatos estándar (clave `params`) del evento `sessionStart` para indicar al back-end que está enviando contenido descargado. Si este parámetro no está presente o se establece como falso, la API de Contenido descargado devolverá un código de respuesta 400 (solicitud no válida). Este parámetro distingue entre el contenido descargado y el contenido en directo en el back-end. (Tenga en cuenta que si `media.downloaded: true` se establece en una sesión activa, la API de emitirá igualmente una respuesta 400).
+* **Debe incluir`media.downloaded: true`** en los parámetros de metadatos estándar (clave`params`) del evento`sessionStart`para indicar al back-end que está enviando contenido descargado. Si este parámetro no está presente o se establece como falso, la API de Contenido descargado devolverá un código de respuesta 400 (solicitud no válida). Este parámetro distingue entre el contenido descargado y el contenido en directo en el back-end. (Tenga en cuenta que si`media.downloaded: true`se establece en una sesión activa, la API de emitirá igualmente una respuesta 400).
 * Es responsabilidad de la implementación almacenar correctamente los eventos del reproductor por orden de aparición.
 
 ### Códigos de respuesta
 
-* 201 - Creada: solicitud correcta, los datos son válidos, y la sesión se ha creado y se procesará.
-* 400 - Solicitud no válida: el esquema de validación ha fallado, se han descargado todos los datos y no se procesarán datos de sesión.
+* 201: Creado, la solicitud correcta; los datos son válidos y la sesión se creó y se procesará.
+* 400: Solicitud incorrecta, error en la validación del esquema, se descartan todos los datos y no se procesan los datos de las sesiones.
 
 ## Integración con Adobe Analtyics {#integration-with-adobe-analtyics}
 
