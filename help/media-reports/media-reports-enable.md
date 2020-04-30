@@ -16,12 +16,12 @@ Para enviar datos sobre los contenidos, es necesario configurar todos los grupos
 >
 >Para aprovechar las nuevas capacidades, los clientes de Media Analytics deben volver a habilitar el seguimiento de contenidos para sus RSID.
 
-1. En [Reports &amp; Analytics](https://my.omniture.com/login/) haga clic en **[!UICONTROL Administración &gt; Grupos de informes].**
-1. Seleccione los grupos de informes donde desee recopilar los datos de contenidos y haga clic en **[!UICONTROL Editar configuración &gt; Gestión de contenidos &gt; Informes de contenidos].**
+1. En [Reports &amp; Analytics](https://my.omniture.com/login/) haga clic en **[!UICONTROL Administración > Grupos de informes].**
+1. Seleccione los grupos de informes donde desee recopilar los datos de contenidos y haga clic en **[!UICONTROL Editar configuración > Gestión de contenidos > Informes de contenidos].**
 
-   ![](assets/media-reporting.png){width="400px"}
+   ![](assets/media-reporting.png){width=&quot;400px&quot;}
 
-1. En la página **[!UICONTROL Informes de contenidos]**, habilite **[!UICONTROL Componentes básicos de contenidos],** y, opcionalmente, también **[!UICONTROL Anuncios de contenidos],** **[!UICONTROL Capítulos de contenidos]** y **[!UICONTROL Calidad de contenidos].**
+1. En la página **[!UICONTROL Informes de contenidos]**, habilite **[!UICONTROL Componentes básicos de contenidos],**y, opcionalmente, también**[!UICONTROL Anuncios de contenidos],** **[!UICONTROL Capítulos de contenidos],**y**[!UICONTROL Calidad de contenidos].**
 
    La medición de contenidos incluye los siguientes módulos:
 
@@ -31,15 +31,15 @@ Para enviar datos sobre los contenidos, es necesario configurar todos los grupos
 
    * **Anuncios multimedia**
 
-      La medición de anuncios de contenidos se usa para medir anuncios dentro del contenido de contenidos. Se utilizará el conmutador de soluciones eVars para medir la publicidad, el nombre del reproductor de publicidad, el pod de anuncios y la publicidad en la posición del pod. Se utilizarán eventos de solución para inicios de anuncios, finalización de anuncios, tiempo invertido en publicidad y tiempo de vídeo transcurrido.
+      La medición de anuncios de contenidos se usa para medir anuncios dentro del contenido de contenidos. Se usan las eVars de solución para medir la publicidad, el nombre del reproductor de publicidad, el pod de anuncios y la posición del anuncio en el pod. Los eventos de solución se utilizarán para Inicios de publicidad, finalizaciones de publicidad, tiempo invertido en publicidad y tiempo invertido en vídeo.
 
    * **Capítulos multimedia**
 
-      La medición de capítulos del vídeo se usa para medir capítulos. Un capítulo es una subdivisión de contenido dentro de los contenidos. Se utilizará una eVar de solución para almacenar el ID del capítulo. Se utilizarán eventos de solución para el inicio de capítulos, la finalización de capítulos y el tiempo del capítulo consumido. Los metadatos adicionales del nombre del capítulo y de posición se proporcionarán como clasificaciones del ID del capítulo.
+      La medición de capítulos del vídeo se usa para medir capítulos. Un capítulo es una subdivisión de contenido dentro de los contenidos. Se utilizará una eVar de solución para almacenar el ID del capítulo. Los eventos de solución se utilizarán para los Inicios de capítulo, las finalizaciones de capítulo y el tiempo invertido en el capítulo. Se proporcionarán metadatos de capítulo adicionales del nombre y la posición del capítulo como clasificaciones del ID del capítulo.
 
    * **Calidad multimedia**
 
-      La medición de la calidad del vídeo se utiliza para medir la calidad de la reproducción del contenido. Se utilizarán eVars de solución para almacenar el tiempo de inicio, eventos de búfer, duración total del almacenamiento en búfer, cambios en la velocidad de bits, velocidad de bits media, errores y fotogramas perdidos. Los eventos de solución se utilizarán para el momento del inicio, fotogramas perdidos antes del inicio, emisiones afectadas por búfer, eventos de búfer, duración total del almacenamiento en búfer, emisiones afectadas por cambios de velocidad de bits, cambios en la velocidad de bits, velocidad de bits media, Emisiones afectadas por fotogramas perdidos y fotogramas perdidos.
+      La medición de la calidad del vídeo se utiliza para medir la calidad de la reproducción del contenido. Se utilizarán las eVars de solución para almacenar el tiempo de Inicio, los Eventos de búfer, la duración total del búfer, los conmutadores de velocidad de bits, la velocidad de bits media, los errores y los fotogramas perdidos. Se utilizarán eventos de solución para el tiempo para el inicio, rechazos antes del inicio, flujos incrustados en el búfer, eventos de búfer, duración total del búfer, flujos incrustados en el cambio de tasa de bits, cambios de tasa de bits, tasa de bits media, flujos incrustados en error, eventos de error, flujos incrustados en fotogramas rechazados y fotogramas rechazados.
 
    * **Metadatos de vídeo y anuncios de vídeo**
 
@@ -48,9 +48,9 @@ Para enviar datos sobre los contenidos, es necesario configurar todos los grupos
    * **Metadatos de anuncios de audio y audio**
 
       Los metadatos se pueden adjuntar al audio o anuncio para describirlo o categorizarlo con más precisión. Los metadatos estandarizados de los anuncios y el audio se recopilan a través de las variables y las clasificaciones de la solución. Los valores disponibles son los siguientes: artista, álbum, discográfica, autor, editor, canal, programa, temporada, episodio, ID de activo, género, fecha de la primera emisión, fecha del primer uso digital, valoración del contenido, creador, tipo de programa, cargas del anuncio, plantilla de programación, ID de sesión de contenido, anunciante, ID de campaña e ID de creativo.
-   Al habilitar cada módulo, se reserva un conjunto de variables y se crea un nuevo conjunto de informes. A excepción de Calidad, no habrá datos en los informes a menos que se haya completado la implementación correspondiente. Al implementar el módulo Core, también se implementa el módulo Calidad si lo habilita.
+   Al habilitar cada módulo, se reserva un conjunto de variables y se crea un nuevo conjunto de informes. A excepción de Calidad, no habrá datos en los informes a menos que se haya completado la implementación correspondiente. La implementación del módulo Principal también implementa el módulo Calidad si lo habilita.
 
-   Si todavía no rastrea anuncios, capítulos o la calidad de la reproducción, puede habilitar opciones adicionales en cualquier momento.
+   Si todavía no está monitorizando anuncios, capítulos o la calidad de reproducción, puede activar opciones adicionales en cualquier momento.
 
 1. Haga clic en **[!UICONTROL Guardar].**
 
@@ -60,8 +60,8 @@ Para enviar datos sobre los contenidos, es necesario configurar todos los grupos
 
    | Opción | Notas |
    | --- | --- |
-   | Continuar usando variables personalizadas | Ventajas e inconvenientes:<ul> <li> **Profesionales:** las tendencias de contenidos siguen funcionando después de la migración. </li> <li> **Inconvenientes:** Requiere que mantenga dos eVars personalizadas y tres eventos personalizados asignados a contenidos. Recupera el uso de una eVar personalizada y un evento personalizado. </li> </ul> Para continuar usando variables personalizadas: <ol> <li>Seleccione **[!UICONTROL Usar variables personalizadas]** y luego haga clic en **[!UICONTROL Guardar]**. </li> <li>Cuando se le solicite, asigne sus eVars y eventos personalizados actuales y luego haga clic en **[!UICONTROL Guardar:]** </li> </ol> |
-   | Migrar a variables de solución | Ventajas e inconvenientes:<ul> <li> **Profesionales:** se puede utilizar tres eVars personalizadas y cuatro eventos personalizados. </li> <li> **Desventajas:** pierde **todas** las tendencias y comparativas históricas para los informes de contenidos. Esto significa que no puede ver la tendencia de las visualizaciones de contenido ni el tiempo de contenido reproducido en cualquier fecha antes de realizar la migración a Heartbeat. </li> </ul> **Restricción:** no migre a las variables de solución a menos que esté seguro de que no desea conservar esta tendencia. Todos los clientes deben utilizar variables de solución y reglas de procesamiento para incluir datos de contenidos en las props y eVars existentes, solo si necesitan conservar la continuidad histórica. Para migrar a variables de solución: Seleccione **[!UICONTROL Usar variables de solución]** y haga clic en **[!UICONTROL Guardar].** <br><br> IMPORTANTE: La migración a las variables de solución hace que se pierdan **todas** las tendencias y comparativas históricas para los informes de contenidos. |
+   | Continuar usando variables personalizadas | Ventajas e inconvenientes:<ul> <li> **Profesionales:** las tendencias de contenidos siguen funcionando después de la migración. </li> <li> **Inconvenientes:** Requiere que mantenga dos eVars personalizadas y tres eventos personalizados asignados a contenidos. Recuperará el uso de una eVar personalizada y un evento personalizado. </li> </ul> Para seguir usando variables personalizadas: <ol> <li>Seleccione **[!UICONTROL Usar variables personalizadas]** y luego haga clic en **[!UICONTROL Guardar]**. </li> <li>Cuando se le solicite, asigne sus eVars y eventos personalizados actuales y luego haga clic en **[!UICONTROL Guardar:]** </li> </ol> |
+   | Migrar a variables de solución | Ventajas e inconvenientes:<ul> <li> **Ventajas:** Recuperará el uso de tres eVars personalizadas y cuatro eventos personalizados. </li> <li> **Desventajas:** pierde **todas** las tendencias y comparativas históricas para los informes de contenidos. Esto significa que no puede aplicar tendencias a las vistas de contenido ni al tiempo de contenido reproducido para ninguna fecha antes de migrar a latidos. </li> </ul> **Restricción:** no migre a las variables de solución a menos que esté seguro de que no desea conservar esta tendencia. Todos los clientes deben utilizar variables de solución y reglas de procesamiento para incluir datos de contenidos en las props y eVars existentes, solo si necesitan conservar la continuidad histórica. Para migrar a variables de solución: Seleccione **[!UICONTROL Usar variables de solución]** y haga clic en **[!UICONTROL Guardar].**<br><br>IMPORTANTE: La migración a las variables de solución hace que se pierdan **todas ** las tendencias y comparativas históricas para los informes de contenidos. |
 
 >[!IMPORTANT]
 >
