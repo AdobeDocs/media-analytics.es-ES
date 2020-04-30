@@ -16,13 +16,13 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 | Segmento | Descripción | Regla |
 |---|---|---|
-| Tipo de emisión de medio: all | Segmenta todos los datos de emisión de *medios*. | “El contenido (ID) existe” |
-| Tipo de emisión de medio: audio | Segmenta todos los datos de emisión de *audio*. | “El contenido (ID) existe” AND “Tipo de emisión de medio = `audio`” |
-| Tipo de emisión de medio: video | Segmenta todos los datos de emisión de *vídeo*. | “El contenido (ID) existe” AND “Tipo de emisión de medio != `audio`" |
-| Tipo de contenido de medio: vod | Segmenta todo el contenido VoD. | "Tipo de contenido = `vod`" |
-| Tipo de contenido de medio: live | Segmenta todo el contenido en directo. | "Tipo de contenido = `live`" |
-| Tipo de contenido de medio: linear | Segmenta todo el contenido lineal. | "Tipo de contenido = `linear`" |
-| Tipo de contenido de medio: podcast | Segmenta todo el contenido de podcast. | "Tipo de contenido = `podcast`" |
-| Tipo de contenido de medio: audiobook | Segmenta todo el contenido de audiolibro. | "Tipo de contenido = `audiobook`" |
-| Tipo de contenido de medio: AoD | Segmenta todo el contenido AoD. | "Tipo de contenido = `aod`" |
+| Tipo de flujo de medios: todos | Segmentar todos los datos de flujo de *medios* | &quot;Content (ID) exists&quot; |
+| Tipo de flujo de medios: audio | Segmentar todos los datos del flujo de *audio* | “El contenido (ID) existe” AND “Tipo de emisión de medio = `audio`” |
+| Tipo de flujo de medios: vídeo | Segmentar todos los datos de flujo de *vídeo* | &quot;Content (ID) exists&quot; AND &quot;Media Stream Type != `audio`&quot; |
+| Tipo de contenido de medios: VoD | Segmentar todo el contenido de VoD | &quot;Tipo de contenido = `vod`&quot; |
+| Tipo de contenido de medios: activo | Segmentar todo el contenido activo | &quot;Tipo de contenido = `live`&quot; |
+| Tipo de contenido de medios: lineal | Segmentar todo el contenido lineal | &quot;Tipo de contenido = `linear`&quot; |
+| Tipo de contenido de medios: podcast | Segmentar todo el contenido del podcast | &quot;Tipo de contenido = `podcast`&quot; |
+| Tipo de contenido de medios: audiolibro | Segmentar todo el contenido de Audiobook | &quot;Tipo de contenido = `audiobook`&quot; |
+| Tipo de contenido de medios: AoD | Segmentar todo el contenido de AoD | &quot;Tipo de contenido = `aod`&quot; |
 
