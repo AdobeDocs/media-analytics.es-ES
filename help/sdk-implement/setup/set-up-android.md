@@ -15,8 +15,8 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 * **Obtenga parámetros de configuración válidos para Media SDK**: Estos parámetros se pueden obtener de un representante de Adobe una vez creada la cuenta de Analytics.
 * **Implemente ADBMobile para Android en su aplicación**: Para obtener más información sobre la documentación del SDK de Adobe Mobile, consulte [SDK de Android 4.x para las soluciones de Experience Cloud.](https://marketing.adobe.com/resources/help/es_ES/mobile/android/)
 * **Proporcione las siguientes capacidades en su reproductor de contenidos**:
-   * *Una API para suscribirse a eventos del reproductor*: el Media SDK requiere que se invoquen varias API sencillas cuando se producen eventos en el reproductor.
-   * *Una API que proporcione información del reproductor*: esta información incluye detalles como el nombre del contenido y la posición del cabezal de reproducción.
+   * *Una API para suscribirse a eventos del reproductor*: El SDK de medios requiere que llame a un conjunto de API simples cuando se produzcan eventos en el reproductor.
+   * *Una API que proporciona información del reproductor*: Esta información incluye detalles como el nombre del medio y la posición del cabezal de reproducción.
 
 ## Implementación del SDK
 
@@ -41,10 +41,10 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
       **Eclipse:**
 
       1. En Eclipse IDE, haga clic con el botón secundario en el nombre del proyecto.
-      1. Haga clic en **[!UICONTROL Ruta de compilación]** &gt; **[!UICONTROL Agregar archivos externos]** .
-      1. Select `MediaSDK.jar`.
+      1. Haga clic en **[!UICONTROL Ruta de compilación]** > **[!UICONTROL Agregar archivos externos]**.
+      1. Seleccione `MediaSDK.jar`.
       1. Haga clic en **[!UICONTROL Abrir]**.
-      1. Vuelva a hacer clic con el botón derecho en el proyecto y, a continuación, seleccione **[!UICONTROL Ruta de compilación]** &gt; **[!UICONTROL Configurar ruta de compilación]**.
+      1. Vuelva a hacer clic con el botón derecho en el proyecto y, a continuación, seleccione **[!UICONTROL Ruta de compilación]** > **[!UICONTROL Configurar ruta de compilación]**.
       1. Haga clic en las pestañas **[!UICONTROL Ordenar]** y **[!UICONTROL Exportar]**.
 
       1. Asegúrese de que el archivo `MediaSDK.jar` está seleccionado.
@@ -112,9 +112,9 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    >
    >Asegúrese de que la instancia de `MediaHeartbeat` es accesible y *no se desasigna hasta el final de la sesión*. Esta instancia se utilizará para todos los eventos de seguimiento posteriores.
 
-**Adición de permisos de aplicación**
+**Añadir permisos de aplicación**
 
-La aplicación que utiliza el Media SDK requiere los permisos siguientes para enviar datos en llamadas de seguimiento:
+La aplicación que utiliza el SDK de medios requiere los siguientes permisos para enviar datos en las llamadas de seguimiento:
 
 * `INTERNET`
 * `ACCESS_NETWORK_STATE`
