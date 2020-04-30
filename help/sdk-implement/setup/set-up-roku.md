@@ -2,8 +2,8 @@
 title: Configuración de Roku
 description: Configuración de la aplicación de Media SDK para la implementación en Roku.
 uuid: 904dfda0-4782-41da-b4ab-212e81156633
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+translation-type: tm+mt
+source-git-commit: ccdc3e170d125a76d798be7ce1fa5c12eef1f76a
 
 ---
 
@@ -19,7 +19,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 Adobe Mobile Services proporciona una nueva interfaz de usuario que aúna las capacidades de marketing móvil para aplicaciones móviles desde Adobe Experience Cloud. Inicialmente, el servicio Mobile ofrece una integración perfecta de las prestaciones de orientación y análisis de aplicaciones de las soluciones Adobe Analytics y Adobe Target.
 
-Para obtener más información, consulte la [documentación de Adobe Mobile Services.](https://marketing.adobe.com/resources/help/es_ES/mobile/)
+Para obtener más información, consulte la [documentación de Adobe Mobile Services.](https://docs.adobe.com/content/help/es-ES/mobile-services/using/home.html)
 
 El SDK 2.x de Roku para las soluciones de Experience Cloud le permite medir aplicaciones Roku escritas en BrightScript, aprovechar y recopilar datos de audiencia mediante la gestión de público y medir la interacción de vídeo a través de latidos de vídeo.
 
@@ -136,4 +136,4 @@ El SDK 2.x de Roku para las soluciones de Experience Cloud le permite medir apli
     * [GetRIDA()](https://sdkdocs.roku.com/display/sdkdoc/ifDeviceInfo#ifDeviceInfo-GetRIDA())
     -->
 
-<!--    **Postbacks -** For more information about configuring postbacks, see [Configure Postbacks.](https://marketing.adobe.com/resources/help/en_US/mobile/signals_.html) -->
+<!--    **Postbacks -** For more information about configuring postbacks, see [Configure Postbacks.](https://docs.adobe.com/content/help/en/mobile-services/using/manage-app-settings-ug/configuring-app/signals.html) -->
