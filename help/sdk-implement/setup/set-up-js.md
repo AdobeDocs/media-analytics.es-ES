@@ -2,8 +2,8 @@
 title: Configuración de JavaScript
 description: Configuración de la aplicación de Media SDK para la implementación en JavaScript.
 uuid: 0269d8ad-0af8-4bf1-9d15-e06c2952a005
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+translation-type: tm+mt
+source-git-commit: ccdc3e170d125a76d798be7ce1fa5c12eef1f76a
 
 ---
 
@@ -13,7 +13,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 ## Requisitos previos
 
 * **Obtenga parámetros de configuración válidos**: Estos parámetros se pueden obtener de un representante de Adobe una vez creada la cuenta de Analytics.
-* **Implemente`AppMeasurement`para JavaScript en la aplicación de contenido**: Para obtener más información sobre la documentación del SDK de Adobe Mobile, consulte [Implementación de Analytics utilizando JavaScript.](https://marketing.adobe.com/resources/help/es_ES/sc/implement/js_implementation.html)
+* **Implemente`AppMeasurement`para JavaScript en la aplicación de contenido**: Para obtener más información sobre la documentación del SDK de Adobe Mobile, consulte [Implementación de Analytics utilizando JavaScript.](https://docs.adobe.com/content/help/es-ES/analytics/implementation/js/overview.html)
 
 * **Proporcione las siguientes capacidades en su reproductor de contenidos**:
 
