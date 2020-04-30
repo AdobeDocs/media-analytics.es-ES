@@ -15,15 +15,15 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 _¿Debería utilizar el SDK de JavaScript de Chromecast o puedo usar el SDK de JavaScript estándar?_
 
 La respuesta correcta es “Chromecast”, por los siguientes motivos:
-* Las bibliotecas AppMeasurement y VisitorAPI del SDK de JS estándar no están certificadas para funcionar con plataformas OTT. En el SDK de JS de Chromecast, la biblioteca Video Heartbeats Library (VHL), Analytics y VisitorAPI están incorporadas en el único SDK unificado y certificado para Chromecast.
-* El SDK de Chromecast es mucho más ligero que el SDK de JS estándar. Esto es esencial para el hardware de nivel inferior utilizado por las plataformas OTT.
+* Las bibliotecas de AppMeasurement y VisitorAPI del SDK de JS estándar no están certificadas para funcionar en plataformas OTT. En el SDK de JS de Chromecast, la biblioteca de Video Heartbeats (VHL), Analytics y VisitorAPI están integradas en el SDK único, unificado y certificado para Chromecast.
+* El SDK de Chromecast es mucho más ligero que el SDK de JS estándar. Esto es esencial para el hardware de gama baja que utilizan las plataformas OTT.
 
 ## Requisitos previos
 
 * **Obtenga parámetros de configuración válidos para Heartbeat**: Estos parámetros se pueden obtener de un representante de Adobe una vez creada la cuenta de Media Analytics.
 * **Proporcione las siguientes capacidades en su reproductor de contenidos**:
-   * *Una API para suscribirse a eventos del reproductor*: el Media SDK requiere que se invoquen varias API sencillas cuando se producen eventos en el reproductor.
-   * *Una API que proporcione información del reproductor*: esta información incluye detalles como el nombre del contenido y la posición del cabezal de reproducción.
+   * *Una API para suscribirse a eventos del reproductor*: El SDK de medios requiere que llame a un conjunto de API simples cuando se produzcan eventos en el reproductor.
+   * *Una API que proporciona información del reproductor*: Esta información incluye detalles como el nombre del medio y la posición del cabezal de reproducción.
 
 Adobe Mobile Services proporciona una nueva interfaz de usuario que aúna las capacidades de marketing móvil para aplicaciones móviles desde Adobe Experience Cloud. Inicialmente, el servicio Mobile ofrece una integración perfecta de las prestaciones de orientación y análisis de aplicaciones de las soluciones Adobe Analytics y Adobe Target. Para obtener más información, consulte la [documentación de Adobe Mobile Services.](https://marketing.adobe.com/resources/help/es_ES/mobile/)
 
@@ -103,7 +103,7 @@ El SDK 2.x de Chromecast para las soluciones de Experience Cloud le permite medi
 
 1. Configure el ID de visitante de Experience Cloud.
 
-   El servicio de identificación de visitantes de Experience Cloud proporciona un ID de visitante universal en las soluciones de Experience Cloud. El servicio de medición de vídeos y otras integraciones de Experience Cloud requieren el servicio de ID del visitante.
+   El servicio de ID de visitante de Experience Cloud ofrece un ID de visitante universal para las soluciones de Experience Cloud. Video Heartbeat y otras integraciones de Experience Cloud requieren el servicio de ID de Visitante.
 
    Verifique que su configuración de `ADBMobileConfig` contenga su ID de empresa de `marketingCloud`.
 
@@ -130,7 +130,7 @@ El SDK 2.x de Chromecast para las soluciones de Experience Cloud le permite medi
    | Método | Descripción |
    | --- | --- |
    | `getMarketingCloudID()` | Recupera el ID del visitante de Experience Cloud del servicio de ID del visitante.  <br/><br/>`ADBMobile.visitor.getMarketingCloudID();` |
-   | `syncIdentifiers()` | Con el ID de visitantes de Experience Cloud puede configurar ID adicionales de clientes que se pueden asociar a cada visitante. La API de visitante acepta múltiples ID de cliente para el mismo visitante y un identificador de tipo de cliente para separar el ámbito de los distintos ID de cliente. Este método corresponde a `setCustomerIDs()` en la biblioteca de JavaScript.  Por ejemplo: <br/><br/>`var identifiers = {};` <br/><br/>`identifiers["idType"] = "idValue";` <br/><br/>`ADBMobile.visitor.syncIdentifiers(identifiers);` |
+   | `syncIdentifiers()` | Con el ID de Visitante de Experience Cloud, puede establecer ID de cliente adicionales que se pueden asociar con cada visitante. La API de visitante acepta varios ID de cliente para el mismo visitante y un identificador de tipo de cliente para separar el ámbito de los distintos ID de cliente. Este método corresponde a `setCustomerIDs()` en la biblioteca de JavaScript.  Por ejemplo: <br/><br/>`var identifiers = {};` <br/><br/>`identifiers["idType"] = "idValue";` <br/><br/>`ADBMobile.visitor.syncIdentifiers(identifiers);` |
 
 
 <!--   **Postbacks -** For more information about configuring postbacks, see [Configure Postbacks.](https://marketing.adobe.com/resources/help/en_US/mobile/signals_.html) -->
