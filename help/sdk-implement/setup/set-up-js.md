@@ -17,8 +17,8 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 * **Proporcione las siguientes capacidades en su reproductor de contenidos**:
 
-   * *Una API para suscribirse a eventos del reproductor*: el Media SDK requiere que se invoquen varias API sencillas cuando se producen eventos en el reproductor.
-   * *Una API que proporcione información del reproductor*: esta información incluye detalles como el nombre del contenido y la posición del cabezal de reproducción.
+   * *Una API para suscribirse a eventos del reproductor*: El SDK de medios requiere que llame a un conjunto de API simples cuando se produzcan eventos en el reproductor.
+   * *Una API que proporciona información del reproductor*: Esta información incluye detalles como el nombre del medio y la posición del cabezal de reproducción.
 
 1. Añada la biblioteca [descargada](/help/sdk-implement/download-sdks.md#download-2x-sdks) al proyecto. Cree referencias locales a las clases para mayor comodidad.
 
@@ -27,7 +27,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
    1. Aloje el archivo `MediaSDK.min.js`.
 
-      Este archivo JavaScript principal debe alojarse en un servidor web al que se pueda acceder desde todas las páginas del sitio. Necesitará la ruta de estos archivos para el paso siguiente.
+      Este archivo JavaScript principal debe alojarse en un servidor web al que se pueda acceder desde todas las páginas del sitio. Necesita la ruta a estos archivos para el siguiente paso.
 
    1. Haga referencia a `MediaSDK.min.js` en todas las páginas del sitio.
 
