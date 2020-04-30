@@ -10,17 +10,17 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 # Habilitación de Audience Manager {#audience-manager-enablement}
 
-Adobe Audience Manager (AAM), una plataforma de gestión de datos (DMP), le ayuda a agrupar los activos de datos de audiencia, lo cual facilita la recopilación de información relevante para el comercio acerca de los visitantes del sitio, la creación de segmentos comercializables y el envío de contenido y publicidad a la audiencia adecuada.
+Adobe Audience Manager (AAM), una plataforma de Gestión de datos (DMP), le ayuda a reunir los recursos de datos de su audiencia, lo que facilita la recopilación de información relevante desde el punto de vista comercial sobre los visitantes del sitio, la creación de segmentos comercializables y la distribución de contenido y publicidad dirigidos a la audiencia correcta.
 
-Con AAM, no está ligado a un proveedor de datos, un intercambio o una plataforma de demanda. Además, AAM no trata con los recursos de datos de sus socios. Gracias al acceso a múltiples fuentes de datos, AAM ofrece a los editores digitales la capacidad de utilizar una amplia variedad de datos de terceros y nuestros datos privados. Para obtener más información sobre AAM, consulte la documentación de AAM sobre la [Documentación del producto de Audience Manager.](https://docs.adobe.com/content/help/es-ES/audience-manager/user-guide/aam-home.html)
+Con AAM, no dependerá de un vendedor de datos, un intercambio o una plataforma de demanda. Además, AAM es completamente agnóstico cuando se trata de los recursos de datos de sus socios. Con acceso a múltiples fuentes de datos, AAM permite a los editores digitales utilizar una amplia variedad de datos de terceros y nuestra cooperación de datos privados. Para obtener más información sobre AAM, consulte la documentación de AAM sobre la [Documentación del producto de Audience Manager.](https://docs.adobe.com/content/help/es-ES/audience-manager/user-guide/aam-home.html)
 
-**Transferencia de datos de VA a AAM**: las métricas y los metadatos recopilados mediante las variables de solución (reservadas) se pueden enviar automáticamente a AAM tanto para el contenido de vídeo como para las publicidades de vídeo. La transferencia de datos está disponible en todas las plataformas, entre las que se incluyen escritorio, móvil y OTT. Para activar esta transferencia de datos desde el servidor, debe acceder al servicio de atención al cliente de Adobe y solicitar su habilitación.
+**Transferencia de datos de VA a AAM:** Tanto para el contenido de vídeo como para los anuncios de vídeo, las métricas y los metadatos recopilados mediante variables de solución (reservadas) se pueden enviar automáticamente a AAM. La transferencia de datos está disponible en todas las plataformas, incluidos equipos de escritorio, dispositivos móviles y OTT. Para habilitar esta transferencia de datos del lado del servidor, debe ponerse en contacto con el equipo de Atención al cliente de Adobe y solicitar que se habilite esta fuente.
 
 >[!IMPORTANT]
 >
 >Para garantizar la transferencia perfecta de datos en AAM, debe contar con las últimas versiones de las bibliotecas de Media SDK.
 
-Los datos federados admiten totalmente el uso compartido de datos en AAM. Colabore con su equipo de Adobe para confirmar la configuración de los datos federados.
+Los datos federados admiten totalmente el uso compartido de datos con AAM. Contacte con su equipo de Adobe para confirmar la configuración de Datos federados.
 
 ## Métodos OTT/AAM {#ott-aam-methods}
 
@@ -30,7 +30,7 @@ Puede utilizar estos métodos para enviar señales y recuperar segmentos de visi
 
 * `getVisitorProfile() -`
 
-   Devuelve el perfil del visitante que se haya obtenido más recientemente. Devuelve un objeto vacío si aún no se ha enviado una señal.
+   Devuelve el perfil del visitante que se haya obtenido más recientemente. Devuelve un objeto vacío si todavía no se ha enviado ninguna señal.
 
    ```js
    ADBMobile.audienceManager.getVisitorProfile();
@@ -38,7 +38,7 @@ Puede utilizar estos métodos para enviar señales y recuperar segmentos de visi
 
 * `getDpid() -`
 
-   Devuelve el perfil del visitante que se haya obtenido más recientemente. Devuelve un objeto vacío si aún no se ha enviado una señal.
+   Devuelve el perfil del visitante que se haya obtenido más recientemente. Devuelve un objeto vacío si todavía no se ha enviado ninguna señal.
 
    ```js
    ADBMobile.audienceManager.getDpid();
@@ -54,7 +54,7 @@ Puede utilizar estos métodos para enviar señales y recuperar segmentos de visi
 
 * `setDpidAndDpuuid() -`
 
-   Establece el DPID y el DPUUID. Si DPID y DPUUID se han establecido, se envían con cada señal.
+   Establece el DPID y el DPUUID. Si se establecen DPID y DPUUID, se enviarán con cada señal.
 
    ```js
    ADBMobile.audienceManager.SetDpidAndDpuuid("myDpid", "myDpuuid");
@@ -62,7 +62,7 @@ Puede utilizar estos métodos para enviar señales y recuperar segmentos de visi
 
 * `submitSignal() -`
 
-   Envía una señal con rasgos a la gestión de público.
+   Envía una señal con rasgos a la gestión de audiencias.
 
    ```js
    ADBMobile.audienceManager.SubmitSignal();
@@ -72,7 +72,7 @@ Puede utilizar estos métodos para enviar señales y recuperar segmentos de visi
 
 * `audienceVisitorProfile -`
 
-   Devuelve el perfil del visitante que se haya obtenido más recientemente. Devuelve un objeto vacío si aún no se ha enviado una señal.
+   Devuelve el perfil del visitante que se haya obtenido más recientemente. Devuelve un objeto vacío si todavía no se ha enviado ninguna señal.
 
    ```js
    ADBMobile().audienceVisitorProfile()
@@ -80,7 +80,7 @@ Puede utilizar estos métodos para enviar señales y recuperar segmentos de visi
 
 * `audienceDpid -`
 
-   Devuelve el perfil del visitante que se haya obtenido más recientemente. Devuelve un objeto vacío si aún no se ha enviado una señal.
+   Devuelve el perfil del visitante que se haya obtenido más recientemente. Devuelve un objeto vacío si todavía no se ha enviado ninguna señal.
 
    ```js
    ADBMobile().audienceDpid()
@@ -96,7 +96,7 @@ Puede utilizar estos métodos para enviar señales y recuperar segmentos de visi
 
 * `audienceSetDpidAndDpuuid -`
 
-   Establece el DPID y el DPUUID. Si DPID y DPUUID se han establecido, se envían con cada señal.
+   Establece el DPID y el DPUUID. Si se establecen DPID y DPUUID, se enviarán con cada señal.
 
    ```js
    ADBMobile().audienceSetDpidAndDpuuid("myDpid", "myDpuuid")
@@ -104,7 +104,7 @@ Puede utilizar estos métodos para enviar señales y recuperar segmentos de visi
 
 * `audienceSubmitSignal -`
 
-   Envía una señal con rasgos a la gestión de público.
+   Envía una señal con rasgos a la gestión de audiencias.
 
    ```js
    ADBMobile().audienceSubmitSignal()
