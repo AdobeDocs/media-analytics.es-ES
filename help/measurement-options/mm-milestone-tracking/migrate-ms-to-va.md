@@ -12,7 +12,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ## Información general {#overview}
 
-Los conceptos básicos de la medición de vídeo son los mismos para Milestone y Media Analytics, ya que recopilan los eventos del reproductor de vídeo y los asignan a los métodos de análisis, a la vez que recogen los metadatos y valores del reproductor para asignarlos a las variables de análisis. La solución Media Analytics se desarrolló a partir de Milestone, por lo que muchos de los métodos y métricas son comunes. Sin embargo, el enfoque de la configuración y el código han cambiado considerablemente. Debería ser posible actualizar el código de evento del reproductor para que apunte a los nuevos métodos de Media Analytics. Consulte [Información general de SDK](/help/sdk-implement/setup/setup-overview.md) e [Información general del seguimiento](/help/sdk-implement/track-av-playback/track-core-overview.md) para obtener más información sobre la implementación de Media Analytics.
+Los conceptos principales de la medición de vídeo son los mismos para Milestone y Media Analytics, que lleva eventos de reproductor de vídeo y los asigna a métodos de análisis, al tiempo que toma metadatos y valores del reproductor y los asigna a variables de análisis. La solución de Media Analytics se desarrolló a partir de Milestone, por lo que muchos de los métodos y métricas son los mismos; sin embargo, el enfoque de configuración y el código han cambiado significativamente. Debería ser posible actualizar el código de evento del reproductor para que indique los nuevos métodos de Media Analytics. Consulte [Información general de SDK](/help/sdk-implement/setup/setup-overview.md) e [Información general del seguimiento](/help/sdk-implement/track-av-playback/track-core-overview.md) para obtener más información sobre la implementación de Media Analytics.
 
 En las tablas siguientes se proporcionan las correspondencias entre la solución Milestone y la solución Media Analytics.
 
@@ -22,7 +22,7 @@ En las tablas siguientes se proporcionan las correspondencias entre la solución
 
 | Métrica de Milestone | Tipo de variable | Métrica de Media Analytics |
 | --- | --- | --- |
-| Contenido | <br/><br/>Caducidad predeterminada de eVar: Visita | Contenido |
+| Contenido | <br/><br/>Caducidad predeterminada de la eVar: Visita | Contenido |
 | Tipo de contenido | <br/><br/>Caducidad predeterminada de la eVar: Vista de página | Tipo de contenido |
 | Tiempo invertido en contenido | Tipo de evento<br/><br/>: Contador | Tiempo invertido en contenido |
 | Inicios de vídeo | Tipo de evento<br/><br/>: Contador | Inicios de vídeo |
@@ -50,12 +50,13 @@ Media.trackUsingContextData
 </td>
 <td>
 <pre>
-s.Media.trackUsingContextData = true;
+s.Media.trackUsingContextData
+  = true;
 </pre>
 </td>
 <td>N/D
 </td>
-<td>Los datos de Media Analytics solo se envían mediante el uso de datos de contexto.
+<td>Todos los datos de Media Analytics solo se envían mediante datos de contexto.
 </td>
 </tr>
 <tr>
@@ -150,12 +151,13 @@ Media.autoTrack
 </td>
 <td>
 <pre>
-s.Media.autoTrack = true;
+s.Media.autoTrack
+  = true;
 </pre>
 </td>
 <td>N/D
 </td>
-<td>Ya no proporcionamos asignaciones de reproductor predefinidas.
+<td>Ya no proporcionamos asignaciones de reproductor precompiladas.
 </td>
 </tr>
 <tr>
@@ -171,7 +173,7 @@ s.Media.
 </td>
 <td>N/D
 </td>
-<td>Ya no proporcionamos asignaciones de reproductor predefinidas.
+<td>Ya no proporcionamos asignaciones de reproductor precompiladas.
 </td>
 </tr>
 <tr>
@@ -187,7 +189,7 @@ s.Media.
 </td>
 <td>N/D
 </td>
-<td>El contenido finalizado solo admite un marcador de progreso del 100 %.
+<td>La finalización del contenido solo admite un marcador de progreso del 100%.
 </td>
 </tr>
 <tr>
@@ -203,7 +205,7 @@ s.Media.
 </td>
 <td>N/D
 </td>
-<td>El contenido finalizado solo admite un marcador de progreso del 100 %.
+<td>La finalización del contenido solo admite un marcador de progreso del 100%.
 </td>
 </tr>
 <tr>
@@ -212,7 +214,8 @@ Media.playerName
 </td>
 <td>
 <pre>
-s.Media.playerName = "Nombre de reproductor personalizado"
+s.Media.playerName
+  = "Nombre de reproductor personalizado"
 </pre>
 </td>
 <td>
@@ -280,12 +283,13 @@ Media.segmentByMilestones
 </td>
 <td>
 <pre>
-s.Media.segmentByMilestones = true;
+s.Media.segmentByMilestones
+  = true;
 </pre>
 </td>
 <td>N/D
 </td>
-<td>El seguimiento automático ya no está disponible.
+<td>El seguimiento automático ya no está disponible
 </td>
 </tr>
 <tr>
@@ -301,7 +305,7 @@ s.Media.
 </td>
 <td>N/D
 </td>
-<td>El seguimiento automático ya no está disponible.
+<td>El seguimiento automático ya no está disponible
 </td>
 </tr>
 </tbody>
@@ -352,7 +356,7 @@ s.Media.
 </td>
 <td>N/D
 </td>
-<td>Los marcadores de progreso no se proporcionan de forma predeterminada para los anuncios. Utilice métricas calculadas para crear marcadores de progreso de anuncios.
+<td>Los marcadores de progreso no se proporcionan de forma predeterminada para las publicidades. Utilice métricas calculadas para crear marcadores de progreso de anuncios.
 </td>
 </tr>
 <tr>
@@ -368,7 +372,7 @@ s.Media.
 </td>
 <td>N/D
 </td>
-<td>Media Analytics tiene establecido 1 segundo para los anuncios. No hay más opciones disponibles.
+<td>Media Analytics se establece en 1 segundo para las publicidades. No hay más opciones disponibles.
 </td>
 </tr>
 <tr>
@@ -384,7 +388,7 @@ s.Media.
 </td>
 <td>N/D
 </td>
-<td>El seguimiento automático ya no está disponible.
+<td>El seguimiento automático ya no está disponible
 </td>
 </tr>
 <tr>
@@ -400,7 +404,7 @@ s.Media.
 </td>
 <td>N/D
 </td>
-<td>El seguimiento automático ya no está disponible.
+<td>El seguimiento automático ya no está disponible
 </td>
 </tr>
 </tbody>
@@ -428,7 +432,10 @@ Media.open
 </td>
 <td>
 <pre>
-s.Media.open(mediaName,mediaLength,mediaPlayerName)
+s.Media.open(
+  mediaName,
+  mediaLength,
+  mediaPlayerName)
 </pre>
 </td>
 <td>
@@ -520,7 +527,14 @@ Media.openAd
 </td>
 <td>
 <pre>
-s.Media.openAd(name,length,playerName,parentName,parentPod,parentPodPosition,CPM)
+s.Media.openAd(
+  name,
+  length,
+  playerName,
+  parentName,
+  parentPod,
+  parentPodPosition,
+  CPM)
 </pre>
 </td>
 <td>
@@ -698,7 +712,9 @@ Media.click
 </td>
 <td>
 <pre>
-s.Media.click(name,offset)
+s.Media.click(
+  name,
+  offset)
 </pre>
 </td>
 <td>N/D
@@ -712,7 +728,8 @@ Media.close
 </td>
 <td>
 <pre>
-s.Media.close(mediaName)
+s.Media.close(
+  mediaName)
 </pre>
 </td>
 <td>
@@ -732,7 +749,9 @@ Media.complete
 </td>
 <td>
 <pre>
-s.Media.complete(name,offset)
+s.Media.complete(
+  name,
+  offset)
 </pre>
 </td>
 <td>
@@ -754,7 +773,12 @@ Media.play
 </td>
 <td>
 <pre>
-s.Media.play(name,offset,segmentNum,segment,segmentLength)
+s.Media.play(
+  name,
+  offset,
+  segmentNum,
+  segment,
+  segmentLength)
 </pre>
 </td>
 <td>
@@ -776,7 +800,9 @@ Media.stop
 </td>
 <td>
 <pre>
-s.Media.stop(mediaName,mediaOffset)
+s.Media.stop(
+  mediaName,
+  mediaOffset)
 </pre>
 </td>
 <td>
@@ -859,12 +885,13 @@ Media.track
 </td>
 <td>
 <pre>
-s.Media.track(mediaName)
+s.Media.track(
+  mediaName)
 </pre>
 </td>
 <td>N/D
 </td>
-<td>La frecuencia de la llamada de seguimiento se establece automáticamente.
+<td>La frecuencia de llamada de seguimiento se configura automáticamente.
 </td>
 </tr>
 </tbody>
