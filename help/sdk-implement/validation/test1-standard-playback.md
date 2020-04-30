@@ -2,7 +2,7 @@
 title: Prueba 1  Reproducción estándar
 description: En este tema se describe la prueba de reproducción estándar utilizada en la validación.
 uuid: c4b3fead-1b27-484b-ab6a-39f1ae0f03f2
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: cebf5697e3746721d29bfaa5356d5a2748fea435
 
 ---
@@ -107,7 +107,7 @@ Complete y registre las siguientes acciones (en orden):
 
 
 
-1. **Pausar la reproducción de la publicidad durante 30 segundos, si está disponible.**  **Pausa de publicidad**
+1. **Pausar la reproducción de la publicidad durante 30 segundos, si está disponible.** **Pausa de publicidad**
 
    Durante la pausa de la publicidad, el SDK envía llamadas de “ping” o latidos de Media Analytics al servidor de Media Analytics cada segundo.
 
@@ -117,7 +117,7 @@ Complete y registre las siguientes acciones (en orden):
 
    Para ver los parámetros y metadatos de la llamada, consulte [Detalles de la llamada de prueba.](/help/sdk-implement/validation/test-call-details.md#ma-ad-pause-call)
 
-1. **Reproducir el contenido principal durante 10 minutos sin pausarlo.**  **Reproducción de contenido**
+1. **Reproducir el contenido principal durante 10 minutos sin pausarlo.** **Reproducción de contenido**
 
    Durante la reproducción del contenido principal, Media SDK envía latidos (llamadas de reproducción) al servidor de Media Analytics cada 10 segundos.
 
