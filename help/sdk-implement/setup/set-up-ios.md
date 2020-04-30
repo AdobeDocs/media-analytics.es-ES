@@ -17,12 +17,12 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
    >[!IMPORTANT]
    >
-   >A partir de iOS 9, Apple introdujo una función denominada App Transport Security (ATS). Esta función es útil para mejorar la seguridad de la red al garantizar que las aplicaciones solo utilizan protocolos y codificadores estándar del sector. Esta función está activada de forma predeterminada, pero tiene opciones de configuración que le permiten trabajar con ATS de diferentes formas. Para obtener más información sobre ATS, consulte [Seguridad del transporte de aplicaciones.](https://marketing.adobe.com/resources/help/es_ES/mobile/ios/app_transport_security.html)
+   >A partir de iOS 9, Apple introdujo una función denominada App Transport Security (ATS). Esta función tiene como objetivo mejorar la seguridad de la red asegurándose de que las aplicaciones utilicen únicamente los protocolos y los cifrados estándar del sector. Esta función está habilitada de forma predeterminada, pero tiene opciones de configuración que le permiten trabajar con ATS. Para obtener más información sobre ATS, consulte [Seguridad del transporte de aplicaciones.](https://marketing.adobe.com/resources/help/es_ES/mobile/ios/app_transport_security.html)
 
 * **Proporcione las siguientes capacidades en su reproductor de contenidos**:
 
-   * _Una API para suscribirse a eventos del reproductor_: el Media SDK requiere que se invoquen varias API sencillas cuando se producen eventos en el reproductor.
-   * _Una API que proporcione información del reproductor_: esta información incluye detalles como el nombre del contenido y la posición del cabezal de reproducción.
+   * _Una API para suscribirse a eventos del reproductor_: El SDK de medios requiere que llame a un conjunto de API simples cuando se produzcan eventos en el reproductor.
+   * _Una API que proporciona información del reproductor_: Esta información incluye detalles como el nombre del medio y la posición del cabezal de reproducción.
 
 ## Implementación del SDK
 
@@ -57,13 +57,13 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
          * **AdobeMobileLibrary.a**
          * **MediaSDK.a**
          * **libsqlite3.0.tbd**
-         **Destinos de Apple TV (tvOS):**
+         **Apple TV (tvOS) Targets:**
 
          * **AdobeMobileLibrary_TV.a**
          * **MediaSDK_TV.a**
          * **libsqlite3.0.tbd**
          * **SystemConfiguration.framework**
-      1. Compruebe que la aplicación se compile sin errores.
+      1. Confirme que la aplicación se compila sin errores.
 
 
 
@@ -140,9 +140,9 @@ Para obtener información detallada sobre la migración de 1.x a 2.x, consulte [
 
 ## Configurar una aplicación nativa para tvOS
 
-Ahora, gracias al lanzamiento del nuevo Apple TV, puede crear aplicaciones para utilizarlas en el entorno nativo de tvOS. Puede crear una aplicación original con varios marcos de trabajo disponibles en iOS o crear la aplicación utilizando plantillas XML y JavaScript. MediaSDK es compatible con tvOS a partir de la versión 2.0. Para obtener más información sobre tvOS, consulte el [Sitio para desarrolladores de tvOS.](https://developer.apple.com/tvos/)
+Con el lanzamiento de Apple TV, ahora puede crear aplicaciones para ejecutarlas en el entorno nativo de tvOS. Puede crear una aplicación puramente nativa con cualquiera de los distintos marcos disponibles en iOS o puede crear la aplicación con plantillas XML y JavaScript. A partir de la versión 2.0 de MediaSDK, está disponible la compatibilidad con tvOS. Para obtener más información sobre tvOS, consulte el [Sitio para desarrolladores de tvOS.](https://developer.apple.com/tvos/)
 
-Complete los siguientes pasos en su proyecto Xcode. En esta guía se presupone que el proyecto está dirigido a una aplicación de Apple TV para tvOS:
+Realice los siguientes pasos en su proyecto de Xcode. Esta guía se escribe suponiendo que el proyecto tiene un destinatario que es una aplicación de Apple TV dirigida a tvOS:
 
 1. Arrastre el archivo de biblioteca `VideoHeartbeat_TV.a` a la carpeta `lib` de su proyecto.
 
