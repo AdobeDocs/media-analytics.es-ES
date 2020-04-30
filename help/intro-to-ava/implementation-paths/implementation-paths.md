@@ -14,7 +14,7 @@ Media Analytics (Heartbeats) es la solución de vídeo estandarizada de Adobe. H
 
 Con cada una de estas rutas de implementación, los clientes deberán ponerse en contacto con su representante de ventas/administrador de cuentas para firmar un nuevo pedido de ventas, ya que Media Analytics tiene un SKU único y cambia de un modelo de precios basado en las llamadas del servidor a un modelo basado en las emisiones de vídeo:
 
-* **Lado del cliente:** Son integraciones para Media Analytics únicamente. Puede elegir entre las integraciones del SDK de Video Heartbeat o la API de Media Collection. Esta ruta se puede utilizar en cualquier reproductor de vídeo, incluidos los reproductores de cliente u OVP como Brightcove, Ooyala, thePlatform, etc.
+* **Lado del cliente:** Son integraciones para Media Analytics únicamente. Puede elegir el SDK de Video Heartbeat o las integraciones de la API de Media Collection (recopilación de medios). Esta ruta se puede utilizar en cualquier reproductor de vídeo, incluidos los reproductores de cliente u OVP como Brightcove, Ooyala, thePlatform, etc.
 
    Si Media Analytics es la ruta deseada, consulte [Implementación de Media SDK](/help/sdk-implement/setup/setup-overview.md) y [API de recopilación de contenidos.](/help/media-collection-api/mc-api-overview.md)
 
@@ -27,12 +27,12 @@ Con cada una de estas rutas de implementación, los clientes deberán ponerse en
    Puede obtener más información sobre Experience Platform Launch aquí: [Adobe Media Analytics para la extensión de audio y vídeo](https://docs.adobe.com/content/help/es-ES/launch/using/extensions-ref/adobe-extension/media-analytics-extension/overview.html)
 * **Adobe Primetime:** Se trata de una solución de Adobe Experience Cloud que ayuda a los programadores y distribuidores de contenido a monetizar el contenido en todos los dispositivos conectados.
 
-   Primetime elimina la complejidad de alcanzar, monetizar y activar las audiencias globales en diversos dispositivos, proporcionando una plataforma modular para publicación, publicidad, personalización y análisis de vídeo. Además, Primetime ofrece soluciones y valores para lo siguiente:
+   Primetime elimina la complejidad de alcanzar, monetizar y activar audiencias globales en varios dispositivos al proporcionar una plataforma modular para la publicación, publicidad, personalización y análisis de vídeo. Además, Primetime incluye soluciones y valores para lo siguiente:
 
-   * Compatibilidad con la medición precisa de tipos de contenido en formato Linear y VOD.
-   * Compatibilidad con la medición de cortes de publicidad con (o sin) inserción dinámica de publicidad.
-   * El modelo de inserción de anuncios ininterrumpido de TVSDK permite un análisis que mide directamente la reproducción de la publicidad, lo que aumenta la precisión.
-   * Un sólido conjunto de eventos y metadatos para garantizar la precisión entre el almacenamiento en búfer de la calidad del programa o los problemas de las interrupciones de conectividad móvil o con las interacciones con el usuario final, como la búsqueda, la pausa y la comprobación de antecedentes en dispositivos móviles.
+   * Medir con precisión los tipos de contenido Lineal y VOD.
+   * Compatibilidad para medir saltos de anuncios con (o sin) inserción de publicidad dinámica.
+   * El modelo de inserción de anuncios optimizado de TVSDK permite realizar análisis que miden directamente la reproducción del anuncio, lo que aumenta la precisión.
+   * Conjunto sólido de eventos y metadatos para garantizar la precisión en los problemas de interrupción de la conectividad móvil o de almacenamiento en búfer de QoS y en las interacciones del usuario final, como la búsqueda, la pausa y la puesta en segundo plano en dispositivos móviles.
 <!--
    * Integrated support for Nielsen DTVR (linear) with ID3 metadata and DCR with CMS metadata.
 -->
