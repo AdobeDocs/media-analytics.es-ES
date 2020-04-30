@@ -16,12 +16,12 @@ Enviado con la llamada `sessions`. Cuando reciba la respuesta, extraiga el ID de
 
 ## play
 
-Se envía cuando el reproductor cambia de estado a “reproduciendo” (es decir, la función de llamada de retorno `on('Playing')` se activa en el reproductor). Otros estados desde los que el reproductor se desplaza a "reproduciendo" incluyen "almacenamiento en búfer", seguir desde "en pausa", recuperación de un error, reproducción automática, etc.
+Se envía cuando el reproductor cambia de estado a “reproduciendo” (es decir, la función de llamada de retorno `on('Playing')` se activa en el reproductor). Otros estados desde los que el reproductor se desplaza a &quot;reproduciendo&quot; incluyen &quot;almacenamiento en búfer&quot;, seguir desde &quot;en pausa&quot;, recuperación de un error, reproducción automática, etc.
 
 ## ping
 
-* **Contenido principal**: se debe enviar cada 10 segundos durante la reproducción del contenido principal, independientemente de los demás eventos de API que se hayan enviado. El primer evento de ping debe activarse 10 segundos después de iniciarse la reproducción del contenido principal.
-* **Contenido de publicidad**: se debe enviar cada segundo durante el seguimiento de publicidad.
+* **Contenido principal:** Debe enviarse cada 10 segundos durante la reproducción del contenido principal, independientemente de los demás eventos de API que se hayan enviado. El primer evento de ping debe activarse 10 segundos después de iniciarse la reproducción del contenido principal.
+* **Contenido de la publicidad:** Debe enviarse cada 1 segundo durante el seguimiento de la publicidad.
 
 Los eventos ping *no* deben incluir el mapa de `params` en el cuerpo de la solicitud.
 
