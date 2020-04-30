@@ -10,32 +10,33 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 # Federated Analytics {#federated-analytics}
 
-El servicio de Federated Analytics ofrece un sistema para compartir datos de Adobe Media Analytics (audio y vídeo) entre dos socios. Los datos estandarizados de medición creados por Media Analytics son la seña de identidad de Federated Analytics, y permiten que los datos aparezcan en un único informe de múltiples fuentes.
+El servicio de Federated Analytics ofrece un sistema para compartir datos de Adobe Media Analytics (audio y vídeo) entre dos socios.
+Los datos estandarizados de medición creados por Media Analytics son la seña de identidad de Federated Analytics, y permiten que los datos aparezcan en un único informe de múltiples fuentes.
 A través de las reglas y lógica que rigen Federated Analytics, los datos se controlan y se personalizan para satisfacer las necesidades de cada sociedad.
 Federated Analytics hace que la medición de audio y vídeo sea más eficaz, ágil y procesable.
 
 ## Beneficios {#benefits}
 
-* **Transparencia:** elimine la caja negra de la creación de datos utilizando la misma lógica en diferentes empresas.
-* **Amplitud:** conozca el alcance completo y el impacto del consumo de audio y vídeo en distintas sociedades, plataformas y dispositivos.
-* **Protección:** controle el uso compartido de datos en el servidor mediante reglas y lógica.
-* **Estandarización:** hable el mismo idioma de datos que sus socios.
-* **Procesamiento:** calcule los datos de audio y vídeo para monitorizar reproductores, tendencias y detectar anomalías con Adobe Analytics.
-* **Centralización:** recopile datos de medición de audio y vídeo en una sola ubicación de Adobe.
-* **Cumplimiento legal:** cumpla los requisitos de uso compartido de datos legales fácilmente.
-* **Siempre a tiempo:** envío y recepción de datos en tiempo real.
-* **Sencillez:** marque los reproductores solo una vez con los kits de desarrollo de software de Adobe y comparta los datos con varios socios
+* **Transparencia:** Elimine la caja negra de la creación de datos utilizando la misma lógica en todas las compañías
+* **Amplitud:** Comprenda el alcance y el impacto totales del consumo de audio y vídeo en asociaciones, plataformas y dispositivos
+* **Seguridad:** Controle el uso compartido de datos del lado del servidor mediante reglas y lógicas
+* **Estandarización:** Hable el mismo idioma de datos que sus socios
+* **Útil:** Cuantifique los datos de audio y vídeo para comparar reproductores, monitorizar tendencias y detectar anomalías a través de Adobe Analytics
+* **Gestión centralizada:** Recopilación de datos de medición de audio y vídeo en una ubicación de Adobe
+* **Contractual:** Puede cumplir con los requisitos legales de uso compartido de datos
+* **Siempre a tiempo:** Envíe y reciba datos en tiempo casi real
+* **Fácil:** Etiquete reproductores solo una vez con los SDK de Adobe, comparta datos con muchos socios
 
 ## Definiciones {#definitions}
 
-* **Remitente:** el cliente que genera datos de análisis de audio y vídeo en sus reproductores.
-* **Receptor:** el cliente que recibe los datos de análisis de audio y vídeo del remitente.
+* **Remitente:** Generación por parte del cliente de datos de análisis de audio y vídeo en reproductores propios
+* **Receptor:** Cliente que recibe datos de análisis de audio y vídeo del remitente
 
 ## Requisitos {#requirements}
 
-* **Contrato de emisiones de contenidos:** el receptor y el remitente deben tener contratado Adobe Analytics para emisiones de contenidos para tener acceso a los datos de audio y vídeo en Adobe Analytics. Póngase en contacto con su equipo de cuentas para obtener más detalles.
-* **Apéndice federado:** cada remitente y receptor deben tener un apéndice firmado con Adobe antes de enviar o recibir datos. Es necesario un apéndice por cliente, no por sociedad. Póngase en contacto con su equipo de cuentas para obtener más detalles.
-* **Implementación de Media Analytics:** el remitente debe tener Media Analytics en todos los reproductores que formarán parte del conjunto de datos federados. Solo se pueden federar los datos de Media Analytics. Ver documentación: [Medición de audio y vídeo en Adobe Analytics](/help/media-overview.md)
+* **Contrato de emisiones de contenidos:** el receptor y el remitente deben tener contratado Adobe Analytics para emisiones de contenidos para tener acceso a los datos de audio y vídeo en Adobe Analytics. Póngase en contacto con el equipo de su cuenta para obtener más detalles.
+* **Anexo federado:** Cada remitente y receptor debe tener un anexo firmado con Adobe antes de enviar o recibir datos. Se requiere un anexo por cliente, no uno por sociedad. Póngase en contacto con el equipo de su cuenta para obtener más detalles.
+* **Implementación de Media Analytics:** El remitente debe tener Media Analytics implementado en todos los reproductores que formarán parte del conjunto de datos federado. Solo los datos de Media Analytics están disponibles para la federación. Ver documentación: [Medición de audio y vídeo en Adobe Analytics](/help/media-overview.md)
 
 * **Contrato de consultoría de Adobe:** para la configuración inicial de reglas federadas entre el receptor y el remitente, es importante trabajar con los servicios de consultoría para revisar los datos y crear el acuerdo de uso compartido de datos.
 
@@ -46,11 +47,11 @@ Descargue la versión actual de este formulario aquí: [Acuerdo de reglas de fed
 ## Proceso {#process}
 
 1. El remitente y el receptor colaboran para completar el formulario del acuerdo de reglas de federación. El formulario de acuerdo de reglas de federación contiene campos especiales para el equipo de ingeniería y SOLO debe editarse mediante el uso de Adobe Acrobat. [Descargue Acrobat de forma gratuita.](https://get.adobe.com/es/reader/)
-1. Los servicios de consultoría proporcionan un archivo de datos de muestra al receptor con datos reales de reproductores del remitente para confirmar que se definen las reglas adecuadas de uso compartido de datos, siempre que haya archivos de datos disponibles.
-1. El remitente y el receptor garantizan que el acuerdo de uso compartido de datos cumplirá todos los requisitos contractuales entre las dos partes.
-1. Los servicios de consultoría enviarán el formulario completado a Adobe Engineering para definir las reglas de uso compartido de datos.
-1. Los datos se comparten en el grupo de informes de desarrollo donde el receptor revisará y validará los datos.
-1. Cuando el receptor confirme que los datos son correctos, Adobe Engineering actualizará las reglas para asignar un grupo de informes de producción.
+1. Los servicios de consultoría proporcionan un archivo de datos de muestra al receptor con datos reales de los reproductores del remitente, para confirmar aún más que se han definido las reglas correctas de uso compartido de datos, siempre que haya archivos de datos disponibles.
+1. El remitente y el receptor se aseguran de que el acuerdo de intercambio de datos cumpla todos los requisitos contractuales entre las dos partes.
+1. Los servicios de consultoría envían el formulario completado a Adobe Engineering para configurar las reglas de uso compartido de datos.
+1. Los datos se comparten con el grupo de informes de desarrollo, donde el receptor revisará y validará los datos.
+1. Una vez que el receptor confirma que los datos son correctos, Adobe Engineering actualiza las reglas para que indiquen un grupo de informes de producción.
 1. El receptor revisará y validará los datos en el grupo de informes de producción.
-1. Si en el futuro se hacen cambios en el conjunto de datos, el remitente o el receptor podrán solicitar asistencia del Servicio de atención al cliente.
+1. Si se producen cambios en el conjunto de datos en el futuro, el remitente o el receptor pueden enviar un ticket de atención al cliente para recibir asistencia.
 
