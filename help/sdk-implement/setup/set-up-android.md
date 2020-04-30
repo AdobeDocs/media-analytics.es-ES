@@ -2,8 +2,8 @@
 title: Configuración de Android
 description: Configuración de la aplicación de Media SDK para la implementación en Android.
 uuid: 3ffe3276-a104-4182-9220-038729e9f3d5
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+translation-type: tm+mt
+source-git-commit: ccdc3e170d125a76d798be7ce1fa5c12eef1f76a
 
 ---
 
@@ -13,7 +13,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 ## Requisitos previos
 
 * **Obtenga parámetros de configuración válidos para Media SDK**: Estos parámetros se pueden obtener de un representante de Adobe una vez creada la cuenta de Analytics.
-* **Implemente ADBMobile para Android en su aplicación**: Para obtener más información sobre la documentación del SDK de Adobe Mobile, consulte [SDK de Android 4.x para las soluciones de Experience Cloud.](https://marketing.adobe.com/resources/help/es_ES/mobile/android/)
+* **Implemente ADBMobile para Android en su aplicación**: Para obtener más información sobre la documentación del SDK de Adobe Mobile, consulte [SDK de Android 4.x para las soluciones de Experience Cloud.](https://docs.adobe.com/content/help/es-ES/mobile-services/android/overview.html)
 * **Proporcione las siguientes capacidades en su reproductor de contenidos**:
    * *Una API para suscribirse a eventos del reproductor*: El SDK de medios requiere que llame a un conjunto de API simples cuando se produzcan eventos en el reproductor.
    * *Una API que proporciona información del reproductor*: Esta información incluye detalles como el nombre del medio y la posición del cabezal de reproducción.
@@ -29,23 +29,23 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
       **IntelliJ IDEA:**
 
-      1. Haga clic con el botón secundario en el proyecto desde el panel **[!UICONTROL Navegación del proyecto]**.
-      1. Seleccione **[!UICONTROL Abrir configuración del módulo]**.
-      1. En **[!UICONTROL Configuración del proyecto]**, seleccione **[!UICONTROL Bibliotecas]**.
+      1. Right click your project in the **[!UICONTROL Project navigation]** panel.
+      1. Seleccione **[!UICONTROL Open Module Settings]**.
+      1. En **[!UICONTROL Project Settings]**, seleccione **[!UICONTROL Libraries]**.
 
-      1. Haga clic en **[!UICONTROL +]** para agregar una biblioteca nueva.
+      1. Click **[!UICONTROL +]** to add a new library.
       1. Seleccione **[!UICONTROL Java]** y busque el archivo `MediaSDK.jar`.
 
       1. Seleccione los módulos en los que va a utilizar la biblioteca móvil.
-      1. Haga clic en **[!UICONTROL Aplicar]** y, a continuación, en **[!UICONTROL Aceptar]** para cerrar la ventana Configuración del módulo.
+      1. Click **[!UICONTROL Apply]** and then **[!UICONTROL OK]** to close the Module Settings window.
       **Eclipse:**
 
       1. En Eclipse IDE, haga clic con el botón secundario en el nombre del proyecto.
-      1. Haga clic en **[!UICONTROL Ruta de compilación]** > **[!UICONTROL Agregar archivos externos]**.
+      1. Haga clic  **[!UICONTROL Build Path]** > **[!UICONTROL Add External Archives]** .
       1. Seleccione `MediaSDK.jar`.
-      1. Haga clic en **[!UICONTROL Abrir]**.
-      1. Vuelva a hacer clic con el botón derecho en el proyecto y, a continuación, seleccione **[!UICONTROL Ruta de compilación]** > **[!UICONTROL Configurar ruta de compilación]**.
-      1. Haga clic en las pestañas **[!UICONTROL Ordenar]** y **[!UICONTROL Exportar]**.
+      1. Haga clic en **[!UICONTROL Open]**.
+      1. Vuelva a hacer clic con el botón secundario en el proyecto y haga clic en **[!UICONTROL Build Path]** > **[!UICONTROL Configure Build Path]** .
+      1. Haga clic en las fichas **[!UICONTROL Order]** y **[!UICONTROL Export]** .
 
       1. Asegúrese de que el archivo `MediaSDK.jar` está seleccionado.
 
