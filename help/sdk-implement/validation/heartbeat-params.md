@@ -19,7 +19,7 @@ Lista de parámetros de Media Analytics que Adobe recopila y procesa en el servi
 | s:event:type | Media SDK | (Obligatorio)<br/><br/>Tipo de evento que se rastrea. Tipos de eventos: <ul> <li> s:event:type=start </li> <li> s:event:type=complete </li> <li> s:event:type=chapter_start </li> <li> s:event:type=chapter_complete </li> <li> s:event:type=buffer </li> <li> s:event:type=pause </li> <li> s:event:type=resume </li> <li> s:event:type=bitrate_change </li> <li> s:event:type=aa_start </li> <li> s:event:type=stall </li> <li> s:event:type=end </li> </ul> |
 | l:event:prev_ts | Media SDK | (Obligatorio)<br/><br/>Marca de fecha del último evento del mismo tipo en esta sesión. El valor es -1. |
 | l:event:ts | Media SDK | (Obligatorio)<br/><br/>Marca de tiempo del evento. |
-| l:event:duration | Media SDK | (Obligatorio)<br/><br/>Este valor se establece internamente (en milisegundos) por Media SDK, no por el reproductor. Se utiliza para calcular las métricas de tiempo invertido en el servidor. Por ejemplo, a.media.totalTimePlayed se calcula como una suma de la duración de todos los latidos de reproducción (type=play) que se generan. <br/>*Nota:* Este parámetro se establece en 0 para ciertos eventos porque son “eventos de cambio de estado” (por ejemplo, type=complete, type=chapter_complete o type=bitrate_change). |
+| l:event:duration | Media SDK | (Obligatorio)<br/><br/>Este valor se establece internamente (en milisegundos) por Media SDK, no por el reproductor. Se utiliza para calcular las métricas de tiempo invertido en el servidor. Por ejemplo, a.media.totalTimePlayed se calcula como una suma de la duración de todos los latidos de reproducción (type=play) que se generan. <br/>*Nota:*Este parámetro se establece en 0 para ciertos eventos porque son “eventos de cambio de estado” (por ejemplo, type=complete, type=chapter_complete o type=bitrate_change). |
 | l:event:playhead | VideoInfo | (Obligatorio)<br/><br/>El cabezal de reproducción estaba dentro del recurso activo (principal o anuncio), cuando se registró el evento. |
 | s:event:sid | Media SDK | (Obligatorio)<br/><br/>El ID de sesión (una cadena generada aleatoriamente). Todos los eventos de una sesión determinada (vídeo + anuncios) deben ser los mismos. |
 | l:asset:duration / l:asset:length <br/>(Se ha cambiado el nombre de la duración) | VideoInfo | (Obligatorio)<br/><br/>La duración del recurso de vídeo del recurso principal. |
@@ -39,7 +39,7 @@ Lista de parámetros de Media Analytics que Adobe recopila y procesa en el servi
 | s:sp:ovp | MediaHeartbeatConfig | (Opcional)<br/><br/>Establézcalo en “primetime” para reproductores de Primetime o en el OVP real para otros reproductores. |
 | s:sp:sdk | MediaHeartbeatConfig | (Obligatorio)<br/><br/>La cadena de versión de OVP. |
 | s:sp:player_name | VideoInfo | (Obligatorio)<br/><br/>El nombre del reproductor (el software del reproductor real, utilizado para identificar al mismo). |
-| s:sp:channel | MediaHeartbeatConfig | (Opcional)<br/><br/>Canal donde el usuario ve el contenido. En aplicaciones móviles, el nombre de la aplicación. En sitios web, el nombre del dominio. |
+| s:sp:channel | MediaHeartbeatConfig | (Opcional)<br/><br/>Canal donde el usuario ve el contenido. Para una aplicación móvil, el nombre de la aplicación. Para un sitio web, el nombre de dominio. |
 | s:sp:hb_version | Media SDK | (Obligatorio)<br/><br/>El número de versión de la biblioteca de Media SDK que emite la llamada. |
 | l:stream:bitrate | QoSInfo | (Obligatorio)<br/><br/>Valor real de la velocidad de bits de la emisión (en bps). |
 
