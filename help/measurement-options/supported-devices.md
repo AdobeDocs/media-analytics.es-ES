@@ -3,7 +3,7 @@ title: Dispositivos admitidos
 description: null
 uuid: null
 translation-type: tm+mt
-source-git-commit: c86c7932f932af0a121e0b757921973d6f4084e8
+source-git-commit: 3a237ee31412784f708e772cc3a58047630e2184
 
 ---
 
@@ -46,4 +46,4 @@ La tabla siguiente lista los dispositivos admitidos actualmente. Para descargar 
 |  | Nuevos dispositivos conectados |  |  | X |
 
 
-Para Media SDK, consulte [Compatibilidad con versiones de plataforma mínima](./sdk-implement/setup/setup-overview.md#minimum-platform-version)
+Para Media SDK, consulte [Compatibilidad con versiones de plataforma mínima](/help/sdk-implement/setup/setup-overview.md#minimum-platform-version)
