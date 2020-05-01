@@ -2,8 +2,8 @@
 title: 'Línea de tiempo 1: Ver el contenido hasta el final'
 description: null
 uuid: 0ff591d3-fa99-4123-9e09-c4e71ea1060b
-translation-type: ht
-source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
+translation-type: tm+mt
+source-git-commit: c86c7932f932af0a121e0b757921973d6f4084e8
 
 ---
 
@@ -31,7 +31,7 @@ Los siguientes diagramas ilustran la línea de tiempo del cursor de reproducció
 
 **Detalles de implementación**
 
-Esta llamada indica _la intención del usuario de reproducir_ un vídeo. <br/><br/>Devuelve un ID de sesión (`{sid}`) al cliente que se utiliza para identificar todas las llamadas de seguimiento subsiguientes dentro de la sesión. El estado del reproductor no es "reproduciendo", sino "comenzando". <br/><br/>[Los parámetros de sesión obligatorios](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) deben incluirse en el mapa de `params` en la solicitud. <br/><br/>En el servidor, esta llamada genera una llamada de inicio a Adobe Analytics.
+Esta llamada indica _la intención del usuario de reproducir_ un vídeo. <br/><br/>Devuelve un ID de sesión (`{sid}`) al cliente que se utiliza para identificar todas las llamadas de seguimiento subsiguientes dentro de la sesión. El estado del reproductor no es &quot;reproduciendo&quot;, sino &quot;comenzando&quot;. <br/><br/>[Los parámetros de sesión obligatorios](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) deben incluirse en el mapa de `params` en la solicitud. <br/><br/>En el servidor, esta llamada genera una llamada de inicio a Adobe Analytics.
 
 **Cuerpo de la solicitud de muestra**
 
@@ -338,7 +338,7 @@ La pausa publicitaria ha finalizado. Durante la pausa publicitaria, el estado de
 
 **Detalles de implementación**
 
-Tras el evento `adBreakComplete`, ponga el reproductor en el estado "reproduciendo" utilizando el evento `play`.
+Tras el evento `adBreakComplete`, ponga el reproductor en el estado &quot;reproduciendo&quot; utilizando el evento `play`.
 
 **Cuerpo de la solicitud de muestra**
 
@@ -382,7 +382,7 @@ Mandar un ping al servidor cada 10 segundos.
 
 **Detalles de implementación**
 
-Rastree el movimiento del reproductor al estado "almacenamiento en búfer".
+Rastree el movimiento del reproductor al estado &quot;almacenamiento en búfer&quot;.
 
 **Cuerpo de la solicitud de muestra**
 
@@ -403,7 +403,7 @@ Rastree el movimiento del reproductor al estado "almacenamiento en búfer".
 
 **Detalles de implementación**
 
-El almacenamiento en búfer finaliza después de 3 segundos, por lo que el reproductor vuelve al estado "reproduciendo". Debe enviar otro evento de seguimiento de reproducción cuando termine el almacenamiento en búfer.  **La llamada`play`después de`bufferStart`infiere una llamada “bufferEnd” al back end**, por lo que no es necesario un evento `bufferEnd`.
+El almacenamiento en búfer finaliza después de 3 segundos, por lo que el reproductor vuelve al estado &quot;reproduciendo&quot;. Debe enviar otro evento de seguimiento de reproducción cuando termine el almacenamiento en búfer.  **La llamada`play`después de`bufferStart`infiere una llamada “bufferEnd” al back end**, por lo que no es necesario un evento `bufferEnd`.
 
 **Cuerpo de la solicitud de muestra**
 
@@ -595,7 +595,7 @@ Mandar un ping al servidor cada 10 segundos.
 
 **Detalles de implementación**
 
-La acción del usuario cambia el estado de reproducción a "en pausa".
+La acción del usuario cambia el estado de reproducción a &quot;en pausa&quot;.
 
 **Cuerpo de la solicitud de muestra**
 
@@ -617,7 +617,7 @@ La acción del usuario cambia el estado de reproducción a "en pausa".
 
 **Detalles de implementación**
 
-Mandar un ping al servidor cada 10 segundos. El reproductor sigue en estado "almacenamiento en búfer"; el usuario se queda en los 20 primeros segundos de contenido. Trabajando...
+Mandar un ping al servidor cada 10 segundos. El reproductor sigue en estado &quot;almacenamiento en búfer&quot;; el usuario se queda en los 20 primeros segundos de contenido. Trabajando...
 
 **Cuerpo de la solicitud de muestra**
 
@@ -638,7 +638,7 @@ Mandar un ping al servidor cada 10 segundos. El reproductor sigue en estado "alm
 
 **Detalles de implementación**
 
-Cambie el estado de reproducción a "reproduciendo".  **La llamada`play`después de`pauseStart`ya infiere una llamada “continuar” al final**, por lo que no hay necesidad de un evento `resume`.
+Cambie el estado de reproducción a &quot;reproduciendo&quot;.  **La llamada`play`después de`pauseStart`ya infiere una llamada “continuar” al final**, por lo que no hay necesidad de un evento `resume`.
 
 **Cuerpo de la solicitud de muestra**
 
@@ -696,4 +696,3 @@ Envíe `sessionComplete` al servidor para indicar que el usuario ha terminado de
 >[!NOTE]
 >
 >**¿No hay eventos de búsqueda? -** No hay compatibilidad explícita en la API de Media Collection para eventos `seekStart` o `seekComplete`. Esto se debe a que algunos reproductores generan un número muy grande de eventos cuando el usuario final arrastra el cabezal de reproducción, y varios cientos de usuarios podrían atascar fácilmente el ancho de banda de red de un servidor. Adobe busca la compatibilidad explícita con los eventos de llamada con el cabezal de reproducción, computando la duración del latido en función de la marca de tiempo del dispositivo en lugar de la posición del cabezal.
-
