@@ -2,8 +2,8 @@
 title: 'Línea de tiempo 2: El usuario abandona la sesión'
 description: null
 uuid: 74b89e8f-ef56-4e0c-b9a8-40739e15b4cf
-translation-type: ht
-source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
+translation-type: tm+mt
+source-git-commit: c86c7932f932af0a121e0b757921973d6f4084e8
 
 ---
 
@@ -31,7 +31,7 @@ Los siguientes diagramas ilustran la cronología del cabezal de reproducción y 
 
 **Detalles de implementación**
 
-Esta llamada indica _la intención del usuario de reproducir_ un vídeo. Devuelve un ID de sesión (`{sid}`) al cliente que se utiliza para identificar todas las llamadas de seguimiento subsiguientes dentro de la sesión. El estado del reproductor no es "reproduciendo", sino "comenzando".  [Los parámetros de sesión obligatorios](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) deben incluirse en el mapa de `params` en la solicitud.  En el servidor, esta llamada genera una llamada de inicio a Adobe Analytics.
+Esta llamada indica _la intención del usuario de reproducir_ un vídeo. Devuelve un ID de sesión (`{sid}`) al cliente que se utiliza para identificar todas las llamadas de seguimiento subsiguientes dentro de la sesión. El estado del reproductor no es &quot;reproduciendo&quot;, sino &quot;comenzando&quot;.  [Los parámetros de sesión obligatorios](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) deben incluirse en el mapa de `params` en la solicitud.  En el servidor, esta llamada genera una llamada de inicio a Adobe Analytics.
 
 **Cuerpo de la solicitud de muestra**
 
@@ -181,7 +181,7 @@ El primer anuncio pre-roll ha finalizado.
 
 **Detalles de implementación**
 
-La pausa publicitaria ha finalizado. Durante la pausa publicitaria, el reproductor permanece en el estado "reproduciendo".
+La pausa publicitaria ha finalizado. Durante la pausa publicitaria, el reproductor permanece en el estado &quot;reproduciendo&quot;.
 
 **Cuerpo de la solicitud de muestra**
 
@@ -203,7 +203,7 @@ La pausa publicitaria ha finalizado. Durante la pausa publicitaria, el reproduct
 
 **Detalles de implementación**
 
-Cambie el reproductor al estado "reproducir"; comience a rastrear el inicio de la reproducción del contenido.
+Cambie el reproductor al estado &quot;reproducir&quot;; comience a rastrear el inicio de la reproducción del contenido.
 
 **Cuerpo de la solicitud de muestra**
 
@@ -407,5 +407,3 @@ Envíe `sessionEnd` al servidor de VA para indicar que la sesión debe cerrarse 
     eventType:sessionEnd
 }
 ```
-
-
