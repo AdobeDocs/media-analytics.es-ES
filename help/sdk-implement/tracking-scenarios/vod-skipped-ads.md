@@ -21,10 +21,10 @@ Esta situación es igual la de [Reproducción de VOD con anuncio previo a la emi
 | Activador   | Método de Heartbeat  | Llamadas de red   | Notas   |
 | --- | --- | --- | --- |
 | El usuario hace clic en [!UICONTROL Reproducir]. | `trackSessionStart()` | Inicio del contenido de Analytics, inicio del contenido de Heartbeat | La biblioteca de medición no sabe que hay un anuncio pre-roll. Estas llamadas de red son exactamente iguales que la [Reproducción de VOD sin anuncios](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md). |
-| El anuncio empieza. | <ul> <li> `trackEvent:AdBreakStart` </li> <li> `trackEvent:AdStart` </li> </ul> | Inicio de publicidad de Analytics, inicio de publicidad de Heartbeat |  |
-| Se reproduce el primer fotograma del anuncio. | `trackPlay()` | Reproducción de anuncio de Heartbeat | Cuando se reproduce el contenido del anuncio antes del contenido principal, los latidos empiezan cuando comienza a reproducirse el anuncio. |
+| El anuncio empieza. | <ul> <li> `trackEvent:AdBreakStart` </li> <li> `trackEvent:AdStart` </li> </ul> | Inicio del anuncio de Analytics, inicio del contenido de Heartbeat |  |
+| Se reproduce el primer fotograma del anuncio. | `trackPlay()` | Reproducción de anuncio de Heartbeat | Cuando el contenido del anuncio se reproduce antes del contenido principal, los latidos se iniciarán cuando el anuncio comience a reproducirse. |
 | Se reproduce el anuncio. |  | Latidos de anuncio |  |
-| Se omite el anuncio. | `trackEvent:trackAdSkip` |  | No hay una llamada de red de finalización de publicidad. |
+| Se omite el anuncio. | `trackEvent:trackAdSkip` |  | No hay una llamada de red de finalización de anuncio. |
 | Se reproduce el contenido. |  | Latidos de contenido | Estas llamadas de red son exactamente las mismas que la del caso de [Reproducción de VOD sin anuncios](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md). |
 | El contenido termina de reproducirse. | `trackComplete()` | Finalización de contenido de Heartbeat | Esta llamada de red es exactamente la misma que la del escenario de [Reproducción de VOD sin anuncios](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md). |
 | La sesión finaliza. | `trackSessionEnd()` |  | `SessionEnd` |
