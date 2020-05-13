@@ -18,11 +18,11 @@ Si no se indica lo contrario, las llamadas de red en este escenario son iguales 
 
 | Activador   | Método de Heartbeat   | Llamadas de red   | Notas   |
 |---|---|---|---|
-| El usuario hace clic en **[!UICONTROL Reproducir]**. | `trackSessionStart` | Inicio del contenido de Analytics, inicio del contenido de Heartbeat | Todavía no le hemos indicado a la biblioteca de medición que hay un anuncio pre-roll, por lo que estas llamadas de red siguen siendo exactamente iguales que un solo VOD. |
+| El usuario hace clic en **[!UICONTROL Reproducir]**. | `trackSessionStart` | Inicio del contenido de Analytics, inicio del contenido de Heartbeat | Todavía no hemos informado a la biblioteca de medición que hay un anuncio previo a la emisión, por lo que estas llamadas de red siguen siendo exactamente iguales que las de un VoD individual. |
 | Se inicia el capítulo. | `trackEvent:ChapterStart` | Inicio de capítulo de Heartbeat |  |
-| Se reproduce el primer fotograma del capítulo. | `trackPlay` | Reproducción del contenido de Heartbeat | Cuando el contenido del capítulo se reproduce antes del contenido principal, los latidos comienzan al inicio del capítulo. |
-| Se reproduce el capítulo. |  | Latidos de capítulo |  |
-| El capítulo finaliza. | `trackEvent:trackChapterComplete` | Finalización del capítulo de Heartbeat | Es el momento en que se llega al final de un capítulo. |
+| Se reproduce el primer fotograma del capítulo. | `trackPlay` | Reproducción del contenido de Heartbeat | Cuando el contenido del capítulo se reproduce antes del contenido principal, Heartbeats se iniciará cuando el capítulo comience a reproducirse. |
+| Se reproduce el capítulo. |  | Heartbeats en capítulos |  |
+| El capítulo finaliza. | `trackEvent:trackChapterComplete` | Finalización de capítulo de Heartbeat | En este momento, se llega al final del capítulo. |
 | Se reproduce el contenido. |  | Latidos de contenido | Esta llamada de red es exactamente la misma que la del escenario de [Reproducción de VOD sin anuncios](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md). |
 | El contenido termina de reproducirse. | `trackComplete` | Finalización de contenido de Heartbeat | Esta llamada de red es exactamente la misma que la del escenario de [Reproducción de VOD sin anuncios](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md). |
 | La sesión finaliza. | `trackSessionEnd` |  | `SessionEnd` significa que se ha llegado al final de una sesión de visualización. Hay que invocar a esta API aunque el usuario no vea el contenido completo. |
