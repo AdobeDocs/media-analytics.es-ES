@@ -108,7 +108,7 @@ protected void onCreate(Bundle savedInstanceState) {
 } 
 ```
 
-Ambas instancias de `MediaAnalyticsProvider` y `MediaHeartbeat` rastrean dos sesiones independientes, cada una con sus propios ID de sesión exclusivos. Las dos sesiones de la herramienta de depuración Charles o los registros de depuración se pueden identificar mediante el valor de ID de la sesión. Para mostrar esta situación en Android, configure el código siguiente:
+Ambas instancias de `MediaAnalyticsProvider` y `MediaHeartbeat` rastrean dos sesiones independientes, cada una con sus propios ID de sesión exclusivos. Las dos sesiones de la herramienta de depuración Charles o los registros de depuración se pueden identificar mediante el valor de ID de la sesión. Para ver este escenario en Android, configure el siguiente código:
 
 ```java
 // Set up mediaObject 
@@ -274,7 +274,7 @@ _mediaHeartbeat.trackSessionEnd();
 
 Ambas instancias de `MediaAnalyticsProvider` y `ADBMediaHeartbeat` rastrean dos sesiones independientes, cada una con sus propios ID de sesión exclusivos. Las dos sesiones de la herramienta de depuración Charles o los registros de depuración se pueden identificar mediante el valor de ID de la sesión.
 
-Para mostrar esta situación en iOS, configure el código siguiente:
+Para ver este escenario en iOS, configure el siguiente código:
 
 ```
 // Set up mediaObject 
