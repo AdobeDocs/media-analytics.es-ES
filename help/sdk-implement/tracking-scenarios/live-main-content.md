@@ -12,12 +12,12 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ## Situación {#scenario}
 
-En esta situación, solo hay un recurso activo sin anuncios que se reproduce durante 40 segundos tras unirse a la emisión en directo.
+En este escenario, hay un recurso activo sin anuncios reproducidos durante 40 segundos tras unirse a la emisión en directo.
 
 | Activador | Método de Heartbeat | Llamadas de red | Notas   |
 |---|---|---|---|
 | El usuario hace clic en **[!UICONTROL Reproducir]**. | `trackSessionStart` | Inicio del contenido de Analytics, inicio del contenido de Heartbeat | Puede ser porque el usuario hace clic en **[!UICONTROL Reproducir]** o por un evento de reproducción automática. |
-| Se reproduce el primer fotograma del contenido. | `trackPlay` | Reproducción del contenido de Heartbeat | Este método desencadena el temporizador. Se envían latidos cada 10 segundos mientras dura la reproducción. |
+| Se reproduce el primer fotograma del contenido. | `trackPlay` | Reproducción del contenido de Heartbeat | Este método activa el temporizador. Los latidos se envían cada 10 segundos mientras dure la reproducción. |
 | Se reproduce el contenido. |  | Latidos de contenido |  |
 | La sesión finaliza. | `trackSessionEnd` |  | `SessionEnd` significa el final de una sesión de visualización. Hay que invocar a esta API aunque el usuario no vea el contenido completo. |
 
@@ -29,25 +29,25 @@ Muchos de los valores que existen en las llamadas de inicio de contenido de Adob
 
 | Parámetro | Valor | Notas |
 |---|---|---|
-| `s:sc:rsid` | &lt;El ID de su grupo de informes de Adobe&gt; |  |
-| `s:sc:tracking_serve` | &lt;La URL de servidor de seguimiento de Analytics&gt; |  |
+| `s:sc:rsid` | &lt;El ID de su grupo de informes de Adobe> |  |
+| `s:sc:tracking_serve` | &lt;La URL de servidor de seguimiento de Analytics> |  |
 | `s:user:mid` | `s:user:mid` | Debe coincidir con el valor medio de la llamada de inicio de contenido de Adobe Analytics |
-| `s:event:type` | "start" |  |
-| `s:asset:type` | "main" |  |
-| `s:asset:mediao_id` | &lt;Nombre de su contenido&gt; |  |
+| `s:event:type` | &quot;start&quot; |  |
+| `s:asset:type` | &quot;main&quot; |  |
+| `s:asset:mediao_id` | &lt;Nombre de su contenido> |  |
 | `s:stream:type` | live |  |
 | `s:meta:*` | opcional | Metadatos personalizados definidos en el contenido |
 
 ## Latidos de contenido {#content-heartbeats}
 
-Durante la reproducción del contenido, hay un temporizador que enviará uno o más latidos (o pings) cada 10 segundos para el contenido principal y cada segundo para los anuncios. Estos latidos contienen datos sobre la reproducción, los anuncios y el almacenamiento en búfer, entre otros. El contenido exacto de cada latido no se detallará en este documento. Lo más importante es que los latidos se desencadenan constantemente mientras dura la reproducción.
+Durante la reproducción del contenido, hay un temporizador que enviará uno o más latidos (o pings) cada 10 segundos para el contenido principal y cada segundo para los anuncios. Estos latidos tendrán información sobre la reproducción, los anuncios, el almacenamiento en búfer y muchas otras cosas. El contenido exacto de cada latido está fuera del ámbito de este documento. Lo más importante para validar es que los latidos se activan de forma coherente durante la reproducción.
 
-En los latidos de contenido debe fijarse en ciertos detalles:
+En los latidos de contenido, busque algunas cosas específicas:
 
 | Parámetro | Valor | Notas |
 |---|---|---|
-| `s:event:type` | "play" |  |
-| `l:event:playhead` | &lt;posición del cabezal de reproducción&gt; p.ej., 50, 60, 70 | Debe indicar la posición actual del cabezal de reproducción. |
+| `s:event:type` | &quot;play&quot; |  |
+| `l:event:playhead` | &lt;posición del cabezal de reproducción> p. ej., 50, 60, 70 | Esto debería indicar la posición actual del cabezal de reproducción. |
 
 ## Finalización de contenido de Heartbeat {#heartbeat-content-complete}
 
