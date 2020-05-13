@@ -12,22 +12,22 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ## Primeros pasos {#introduction}
 
-Roku ha presentado un nuevo marco de programación para el desarrollo de aplicaciones: SceneGraph XML. Este marco incluye dos conceptos clave:
+Roku ha presentado un nuevo marco de programación para el desarrollo de aplicaciones: el marco de trabajo de programación SceneGraph XML. Este nuevo marco de trabajo incluye dos nuevos conceptos clave:
 
-* Renderización con SceneGraph de las pantallas de la aplicación
-* Configuración XML de las pantallas de SceneGraph
+* Representación SceneGraph en las pantallas de la aplicación
+* Configuración de XML en las pantallas de SceneGraph
 
-Adobe Mobile SDK for Roku se escribe en BrightScript. El SDK utiliza componentes que no están disponibles para una aplicación que se ejecute con SceneGraph (por ejemplo, subprocesos). Por lo tanto, un desarrollador de aplicaciones Roku que intente utilizar la arquitectura SceneGraph no podrá invocar las API del SDK de Adobe Mobile (similares a las disponibles en aplicaciones heredadas de BrightScript).
+El SDK de Adobe Mobile para Roku está escrito en BrightScript. El SDK utiliza muchos componentes que no están disponibles para una aplicación que se ejecuta en SceneGraph (por ejemplo, los subprocesos). Por lo tanto, un desarrollador de aplicaciones Roku que pretenda usar el marco de trabajo de SceneGraph no puede llamar las API de SDK de Adobe Mobile (estas últimas son similares a las que están disponibles en aplicaciones heredadas de BrightScript).
 
 ## Arquitectura {#architecture}
 
 Para que SceneGraph sea compatible con el SDK de AdobeMobile, Adobe ha añadido una nueva API que crea un puente de conector entre el SDK AdobeMobile y `adbmobileTask`. Este es un nodo SceneGraph utilizado para ejecutar la API del SDK. (El uso de `adbmobileTask` se explica en detalle en el resto de este documento).
 
-El puente conector está diseñado para lo siguiente:
+El puente conector está diseñado para funcionar de la siguiente manera:
 
-* Devolver una instancia de SceneGraph compatible con el SDK de AdobeMobile. Que el SDK compatible con SceneGraph tenga todas las API del SDK heredado.
-* Utilizar las API de SDK de AdobeMobile en SceneGraph de manera muy similar a como se utilizan las API heredadas.
-* El puente también expone un mecanismo para detectar las llamadas de retorno de las API que devuelven datos.
+* El puente devuelve una instancia compatible con SceneGraph del SDK de AdobeMobile. El SDK compatible con SceneGraph tiene todas las API que expone el SDK heredado.
+* Las API de SDK de AdobeMobile se usan en SceneGraph de forma muy similar a como se usan las API heredadas.
+* El puente también expone un mecanismo para escuchar las llamadas de retorno de las API que arrojan algunos datos.
 
 ![](assets/SceneGraph_arch.png)
 
@@ -40,8 +40,8 @@ El puente conector está diseñado para lo siguiente:
 
 **AdobeMobileLibrary:**
 
-* Expone un conjunto de API públicas (heredadas), incluida la API puente conector.
-* Devuelve una instancia de conector SceneGraph que ajusta todas las API públicas heredadas.
+* Expone un conjunto de API públicas (heredadas), incluida la API de puente conector.
+* Arroja una instancia de conector de SceneGraph que envuelve todas las API públicas heredadas.
 * Se comunica con un nodo `adbmobileTask` de SceneGraph para ejecutar las API.
 
 **Nodo adbmobileTask:**
@@ -92,13 +92,13 @@ El puente conector está diseñado para lo siguiente:
 |  |  |  |
 | **MediaHeartbeat** |  |  |
 |  | `mediaTrackLoad` | La API de SceneGraph carga contenido de vídeo para el seguimiento de MediaHeartbeat. |
-|  | mediaTrackStart | La API de SceneGraph inicia la sesión del seguimiento de vídeos con MediaHeartbeat. |
+|  | mediaTrackStart | La API de SceneGraph inicia la sesión de seguimiento de vídeo mediante MediaHeartbeat. |
 |  | `mediaTrackUnload` | La API de SceneGraph descarga contenido de vídeo de seguimiento de MediaHeartbeat. |
 |  | `mediaTrackPlay` | La API de SceneGraph rastrea la reproducción del contenido de vídeo. |
-|  | mediaTrackPause | La API de SceneGraph rastrea el contenido de vídeo en pausa. |
+|  | mediaTrackPause | La API de SceneGraph rastrea contenido de vídeo pausado. |
 |  | `mediaTrackComplete` | La API de SceneGraph rastrea la reproducción completa del contenido de vídeo. |
 |  | `mediaTrackError` | La API de SceneGraph rastrea errores de reproducción. |
-|  | mediaTrackEvent | La API de SceneGraph rastrea eventos de reproducción durante el seguimiento. Por ejemplo: Publicidad o capítulos. |
+|  | mediaTrackEvent | La API de SceneGraph rastrea eventos de reproducción durante el seguimiento. Por ejemplo: anuncios, capítulos. |
 |  | `mediaUpdatePlayhead` | La API de SceneGraph envía actualizaciones del cabezal de reproducción a MediaHeartbeat durante el seguimiento de vídeos. |
 |  | `mediaUpdateQoS` | La API de SceneGraph envía actualizaciones de QoS a MediaHeartbeat durante el seguimiento de vídeos. |
 |  | Para obtener más información, consulte la sección MediaHeartbeat del SDK heredado. |  |
@@ -122,7 +122,7 @@ El puente conector está diseñado para lo siguiente:
 <table>
 <thead>
 <tr>
-<td> Campo </td><td> Tipo </td><td> Valor predeterminado </td><td> Uso </td>
+<td> Campo </td><td> Tipo </td><td> Predeterminado </td><td> Uso </td>
 </tr>
 </thead>
 <tbody>
@@ -136,7 +136,7 @@ El puente conector está diseñado para lo siguiente:
 <td> adbmobileApiResponse </td>
 <td> assocarray </td>
 <td> No válido </td>
-<td> Solo lectura: Todas las API ejecutadas en AdobeMobileSDK devolverán las respuestas en este campo. Regístrelas para que la función de llamada de retorno detecte actualizaciones de este campo y reciba objetos Response. A continuación, se muestra el formato del objeto Response:  
+<td> Solo lectura: Todas las API ejecutadas en AdobeMobileSDK devolverán las respuestas en este campo. Regístrese y reciba una llamada de retorno para conocer las actualizaciones de este campo y recibir los objetos de respuesta. A continuación, se muestra el formato del objeto de respuesta:  
 <codeblock>
 response = {
   "apiName" : &lt;SceneGraphConstants.
@@ -186,10 +186,10 @@ Tipo de devolución: `SceneGraphConstants`
 
 |  Función  | Nombre de la constante | Descripción   |
 |---|---|---|
-| Versiones | `version` | Constante para obtener información de la versión de AdobeMobileLibrary |
-| Privacidad/desactivar | `PRIVACY_STATUS_OPT_IN` | Constante para el estado de privacidad activada. |
+| Versiones | `version` | Constante para recuperar la información de versión de AdobeMobileLibrary |
+| Privacidad/exclusión | `PRIVACY_STATUS_OPT_IN` | Constante para el estado de privacidad activada. |
 |  | `PRIVACY_STATUS_OPT_OUT` | Constante para el estado de privacidad desactivada. |
-| Constantes MediaHeartbeat | Consulte las constantes de esta página: <br/><br/>[Métodos de Heartbeat para contenido multimedia.](/help/sdk-implement/track-av-playback/track-core/track-core-roku.md) | Utilice estas constantes con las API de MediaHeartbeat |
+| Constantes de MediaHeartbeat | Consulte las constantes de esta página: <br/><br/>[Métodos de Heartbeat para contenido multimedia.](/help/sdk-implement/track-av-playback/track-core/track-core-roku.md) | Utilice estas constantes con las API de MediaHeartbeat |
 | Metadatos estándar | Consulte las constantes de esta página: <br/><br/>[Parámetros de metadatos estándar.](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md) | Utilice estas constantes para asociar metadatos de vídeo/publicidad estándar a las API de MediaHeartbeat. |
 
 Las API de `MediaHeartbeat` de utilidades definidas globalmente en el archivo AdobeMobileLibrary heredado son accesibles *tal como se encuentran* en el entorno de SceneGraph porque no utilizan componentes Brightscript que no estén en los nodos SceneGraph. Para obtener más información sobre estos métodos, consulte la siguiente tabla:
