@@ -12,20 +12,20 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ## Situación {#scenario}
 
-En esta situación, se almacena en búfer cuando el contenido de VOD se reproduce.
+En este escenario, se produce un almacenamiento en búfer cuando el contenido de VOD se reproduce.
 
-Si no se indica lo contrario, las llamadas de red en este escenario son iguales a las llamadas que se hacen en el escenario de [Reproducción de VOD sin anuncios.](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)
+Si no se indica lo contrario, las llamadas de red en este escenario son iguales a las llamadas que se hacen en el escenario de [Reproducción de VOD sin anuncios](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md).
 
 | Activador   | Método de Heartbeat   | Llamadas de red   | Notas   |
 |---|---|---|---|
 | El usuario hace clic en **[!UICONTROL Reproducir]**. | `trackSessionStart` | Inicio del contenido de Analytics, inicio del contenido de Heartbeat | Puede ser porque el usuario hace clic en **[!UICONTROL Reproducir]** o por un evento de reproducción automática. |
-| Se reproduce el primer fotograma del vídeo. | `trackPlay` | Reproducción del contenido de Heartbeat | Este método desencadena el temporizador. Se envían latidos cada 10 segundos mientras dura la reproducción. |
+| Se reproduce el primer fotograma del vídeo. | `trackPlay` | Reproducción del contenido de Heartbeat | Este método activa el temporizador. Los latidos se envían cada 10 segundos mientras dure la reproducción. |
 | Se reproduce el contenido. |  | Latidos de contenido |  |
 | Se inicia el almacenamiento en búfer. | `trackEvent:BufferStart` | Búfer de Heartbeat |  |
 | El contenido se almacena en búfer. |  | Latidos de contenido |  |
 | El almacenamiento en búfer finaliza. | `trackEvent:BufferComplete` | Búfer de Heartbeat, reproducción de Heartbeat |  |
 | Se reproduce el contenido. |  | Latidos de contenido |  |
-| El contenido termina de reproducirse. | `trackComplete` | Finalización de contenido de Heartbeat | Se llega al final del cabezal de reproducción. |
+| El contenido termina de reproducirse. | `trackComplete` | Finalización de contenido de Heartbeat | Se llegó al final del cabezal de reproducción. |
 | La sesión finaliza. | `trackSessionEnd` |  | `SessionEnd` significa el final de una sesión de visualización. Hay que llamar a esta API aunque el usuario no vea el vídeo completo. |
 
 ## Parámetros {#parameters}
