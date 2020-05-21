@@ -4,10 +4,10 @@ user-guide-title: Adobe Analytics para audio y vídeo
 product: adobe analytics
 sub-product: media analytics
 translation-type: tm+mt
-source-git-commit: 841e02e5f4fdd6eebd6eac0c1d42997db49b071e
+source-git-commit: 48de18b022d004bf301a55ec71b6a889f7b9ebb3
 workflow-type: tm+mt
 source-wordcount: '677'
-ht-degree: 98%
+ht-degree: 96%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 98%
       + [Lado del cliente](intro-to-ava/implementation-paths/client-side-path.md)
       + Otras rutas de implementación {#other-paths}
          + Seguimiento de Milestone en el módulo multimedia {#mm-milestone-tracking}
-            + [Información general de Milestone](measurement-options/mm-milestone-tracking/milestone-overview.md)
+            + [Información general de hitos](measurement-options/mm-milestone-tracking/milestone-overview.md)
             + [Migración de Milestone a Media Analytics](measurement-options/mm-milestone-tracking/migrate-ms-to-va.md)
             + [Migración de Milestone a Vínculo personalizado](measurement-options/mm-milestone-tracking/migrate-ms-to-cl.md)
          + Vínculo personalizado en Analytics {#cl-in-aa}
@@ -41,7 +41,7 @@ ht-degree: 98%
       + [Configuración de JavaScript](sdk-implement/setup/set-up-js.md)
       + [Configuración de Chromecast ](sdk-implement/setup/set-up-chromecast.md)
       + [Configuración de Roku ](sdk-implement/setup/set-up-roku.md)
-   + Seguimiento de la reproducción de audio y vídeo {#track-av-playback}
+   + Track Audio and Video Playback {#track-av-playback}
       + [Información general](sdk-implement/track-av-playback/track-core-overview.md)
       + Seguimiento de la reproducción de audio y vídeo principales {#track-core}
          + [Seguimiento de reproducción principal en Android](sdk-implement/track-av-playback/track-core/track-core-android.md)
@@ -61,7 +61,7 @@ ht-degree: 98%
          + [Seguimiento de llamada a otro punto del contenido en JavaScript](sdk-implement/track-av-playback/track-seeking/track-seeking-js.md)
          + [Seguimiento de llamada a otro punto del contenido en Chromecast](sdk-implement/track-av-playback/track-seeking/track-seeking-chromecast.md)
          + [Seguimiento de llamada a otro punto del contenido en Roku](sdk-implement/track-av-playback/track-seeking/track-seeking-roku.md)
-      + Implementación de metadatos estándar {#impl-std-metadata}
+      + Implement Standard Metadata {#impl-std-metadata}
          + [Implementación de metadatos estándar en Android](sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-android.md)
          + [Implementación de metadatos estándar en iOS](sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-ios.md)
          + [Claves de metadatos de iOS](sdk-implement/track-av-playback/impl-std-metadata/ios-metadata-keys.md)
@@ -77,7 +77,7 @@ ht-degree: 98%
       + [Seguimiento de anuncios en JavaScript](sdk-implement/track-ads/track-ads-js.md)
       + [Seguimiento de anuncios en Chromecast](sdk-implement/track-ads/track-ads-chromecast.md)
       + [Seguimiento de anuncios en Roku](sdk-implement/track-ads/track-ads-roku.md)
-      + Implemente los metadatos de publicidad estándar {#impl-std-ad-metadata}
+      + Implement Standard ad Metadata {#impl-std-ad-metadata}
          + [Implementación de metadatos de publicidad estándar en Android](sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-android.md)
          + [Implementación de metadatos de publicidad estándar en iOS](sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-ios.md)
          + [Implementación de metadatos de publicidad estándar en JavaScript](sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-js.md)
