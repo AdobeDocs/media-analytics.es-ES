@@ -3,7 +3,10 @@ title: Descarga de SDK
 description: Vínculos a descargas de SDK para plataformas disponibles, como Android, iOS, JavaScript, Chromecast y Roku.
 uuid: a619fbb8-693e-4583-8dad-0ff875e715f8
 translation-type: tm+mt
-source-git-commit: 06e32cbea61ed56220787e2bcb822f6bf02b44ac
+source-git-commit: 300eb77858296f0246a2cb484386c0dcdf8b87b9
+workflow-type: tm+mt
+source-wordcount: '359'
+ht-degree: 90%
 
 ---
 
@@ -12,11 +15,7 @@ source-git-commit: 06e32cbea61ed56220787e2bcb822f6bf02b44ac
 
 >[!IMPORTANT]
 >
->A partir de octubre de 2020, Adobe dejará de ser compatible con los SDK para móviles de la versión 4 y los SDK independientes de Media Analytics para iOS y Android. Puede seguir descargando y utilizando los SDK de la versión 4, pero el servicio de atención al cliente y el acceso a los foros finalizarán. Debe migrar a los SDK de Adobe Experience Platform (AEP) para iOS o Android. El SDK de AEP Mobile (anteriormente denominado v5) solo admitirá las funciones y funciones de Adobe Experience Cloud. Para obtener más información sobre este cambio, consulte las preguntas más frecuentes sobre el fin de la compatibilidad con los SDK móviles de la [versión 4](https://aep-sdks.gitbook.io/docs/version-4-sdk-end-of-support-faq). Le recomendamos que migre al nuevo SDK de AEP Mobile.
-Después de migrar al SDK de AEP Mobile, debe implementar la extensión de inicio de Analytics y la extensión de inicio de Media Analytics para habilitar Adobe Analytics para audio y vídeo. Para obtener más información sobre la migración al nuevo SDK de AEP Mobile, consulte [Migración del SDK de medios independiente a Adobe Launch ](https://docs.adobe.com/content/help/en/media-analytics/using/sdk-implement/sdk-to-launch/sdk-to-launch-migration.html)
-
-
-
+>Con la finalización de la compatibilidad con los SDK para móviles de la versión 4 el 31 de agosto de 2021, Adobe también dejará de ofrecer compatibilidad con los SDK de Media Analytics para iOS y Android.  Para obtener más información, consulte Preguntas más frecuentes sobre el fin de la asistencia técnica del SDK de [Media Analytics](/help/sdk-implement/end-of-support-faqs.md).
 
 ## Descarga de Media SDK 2.x {#download-2x-sdks}
 
