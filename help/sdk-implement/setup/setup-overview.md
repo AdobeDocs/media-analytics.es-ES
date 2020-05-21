@@ -2,8 +2,11 @@
 title: Información general de configuración
 description: Descripción general de la configuración de Media SDK para el seguimiento de contenido en las aplicaciones móviles, OTT y de navegador (JS).
 uuid: 06fefedb-b0c8-4f7d-90c8-e374cdde1695
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+translation-type: tm+mt
+source-git-commit: 300eb77858296f0246a2cb484386c0dcdf8b87b9
+workflow-type: tm+mt
+source-wordcount: '734'
+ht-degree: 95%
 
 ---
 
@@ -12,8 +15,9 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 >[!IMPORTANT]
 >
->Las siguientes instrucciones se aplican a Media SDK 2.x. Si va a implementar la versión 1.x del Media SDK, consulte la [documentación del Media SDK 1.x.](/help/sdk-implement/download-sdks.md) Para integradores de Primetime, consulte _Documentación de Media SDK de Primetime_ a continuación.
+>Con la finalización de la compatibilidad con los SDK para móviles de la versión 4 el 31 de agosto de 2021, Adobe también dejará de ofrecer compatibilidad con los SDK de Media Analytics para iOS y Android.  Para obtener más información, consulte Preguntas más frecuentes sobre el fin de la asistencia técnica del SDK de [Media Analytics](/help/sdk-implement/end-of-support-faqs.md).
 
+Las siguientes instrucciones se aplican a Media SDK 2.x. Si va a implementar la versión 1.x del Media SDK, consulte la [documentación del Media SDK 1.x.](/help/sdk-implement/download-sdks.md) Para integradores de Primetime, consulte _Documentación de Media SDK de Primetime_ a continuación.
 
 ## Compatibilidad con versiones con la plataforma mínima requerida {#minimum-platform-version}
 
@@ -84,36 +88,36 @@ Complete los pasos siguientes de la implementación:
    El siguiente código de ejemplo utiliza nuestro SDK JavaScript 2.x para un reproductor de vídeo HTML5:
 
    ```javascript
-   // Create local references to the heartbeat classes 
-   var MediaHeartbeat = ADB.va.MediaHeartbeat; 
-   var MediaHeartbeatConfig = ADB.va.MediaHeartbeatConfig; 
-   var MediaHeartbeatDelegate = ADB.va.MediaHeartbeatDelegate; 
+   // Create local references to the heartbeat classes
+   var MediaHeartbeat = ADB.va.MediaHeartbeat;
+   var MediaHeartbeatConfig = ADB.va.MediaHeartbeatConfig;
+   var MediaHeartbeatDelegate = ADB.va.MediaHeartbeatDelegate;
    
-   //Media Heartbeat Config 
-   var mediaConfig = new MediaHeartbeatConfig(); 
-   mediaConfig.trackingServer = "[your_namespace].hb.omtrdc.net"; 
-   mediaConfig.playerName = "HTML5 Basic"; 
-   mediaConfig.channel = "Video Channel"; 
-   mediaConfig.debugLogging = true; 
-   mediaConfig.appVersion = "2.0"; 
-   mediaConfig.ssl = false; 
-   mediaConfig.ovp = ""; 
+   //Media Heartbeat Config
+   var mediaConfig = new MediaHeartbeatConfig();
+   mediaConfig.trackingServer = "[your_namespace].hb.omtrdc.net";
+   mediaConfig.playerName = "HTML5 Basic";
+   mediaConfig.channel = "Video Channel";
+   mediaConfig.debugLogging = true;
+   mediaConfig.appVersion = "2.0";
+   mediaConfig.ssl = false;
+   mediaConfig.ovp = "";
    
-   // Media Heartbeat Delegate 
-   var mediaDelegate = new MediaHeartbeatDelegate(); 
+   // Media Heartbeat Delegate
+   var mediaDelegate = new MediaHeartbeatDelegate();
    
-   // Set mediaDelegate CurrentPlaybackTime 
-   mediaDelegate.getCurrentPlaybackTime = function() { 
-       return video.currentTime; 
-   }; 
+   // Set mediaDelegate CurrentPlaybackTime
+   mediaDelegate.getCurrentPlaybackTime = function() {
+       return video.currentTime;
+   };
    
-   // Set mediaDelegate QoSObject - OPTIONAL 
-   mediaDelegate.getQoSObject = function() { 
+   // Set mediaDelegate QoSObject - OPTIONAL
+   mediaDelegate.getQoSObject = function() {
        return MediaHeartbeat.createQoSObject(video.bitrate,  
                                              video.startuptime,  
                                              video.fps,  
-                                             video.droppedframes); 
-   } 
+                                             video.droppedframes);
+   }
    // Create mediaHeartbeat instance      
    this.mediaHeartbeat =  
      new MediaHeartbeat(mediaDelegate, mediaConfig, appMeasurementInstance);  
