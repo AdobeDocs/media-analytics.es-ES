@@ -2,8 +2,11 @@
 title: Información general de Milestone
 description: null
 uuid: 2f9ec6bb-8860-4863-98bc-5cffb356ccc5
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ccdc3e170d125a76d798be7ce1fa5c12eef1f76a
+workflow-type: ht
+source-wordcount: '3344'
+ht-degree: 100%
 
 ---
 
@@ -28,7 +31,7 @@ También puede rastrear cualquier número de métricas adicionales para vídeo. 
 
 ### Configuración de informes de Milestone
 
-Para configurar el sistema de informes de vídeo para una implementación de hitos, vaya a **[!UICONTROL Admin > Report Suite Manager].**Seleccione el grupo de informes y, a continuación, elija**[!UICONTROL Video Management > Video Reporting]:**
+Para configurar los informes de vídeo para una implementación de Milestone, vaya a **[!UICONTROL Administración > Administrador del grupo de informes].**Seleccione el grupo de informes y elija**[!UICONTROL Administración de vídeo > Informes de vídeo]:**
 
 <!--
 ![](assets/0clip_image002_1537416456.png){width="248"}
@@ -36,11 +39,11 @@ Para configurar el sistema de informes de vídeo para una implementación de hit
 
 ![](assets/rs1.png)
 
-En la primera pantalla, solo funcionará Video Core con los datos de Milestone. Seleccione **[!UICONTROL Video Core]** y haga clic en **[!UICONTROL Save].**
+En la primera pantalla, solo funcionará Video Core con los datos de Milestone. Seleccione **[!UICONTROL Video Core]** y haga clic en **[!UICONTROL Guardar].**
 
 ![](assets/video-core-check.png)
 
-En la pantalla siguiente, seleccione **[!UICONTROL Use Custom Variables].**
+En la pantalla siguiente, seleccione **[!UICONTROL Usar variables personalizadas].**
 
 <!--
 ![](assets/0clip_image006_-1561510960.png){width="470"}
