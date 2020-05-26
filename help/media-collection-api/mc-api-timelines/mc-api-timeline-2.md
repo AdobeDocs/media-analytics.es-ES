@@ -2,8 +2,11 @@
 title: 'Línea de tiempo 2: El usuario abandona la sesión'
 description: null
 uuid: 74b89e8f-ef56-4e0c-b9a8-40739e15b4cf
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c86c7932f932af0a121e0b757921973d6f4084e8
+workflow-type: ht
+source-wordcount: '634'
+ht-degree: 100%
 
 ---
 
@@ -25,9 +28,9 @@ Los siguientes diagramas ilustran la cronología del cabezal de reproducción y 
 
 ### Acción 1 - Iniciar sesión {#Action-1}
 
-| Acción | Línea de tiempo de acción (segundos) | Posición del cabezal de reproducción (en segundos) | Solicitud del cliente |
+| Acción | Cronología de acción (segundos) | Posición del cabezal de reproducción (segundos) | Solicitud de cliente |
 | --- | :---: | :---: | --- |
-| Se pulsa el botón de reproducción o se reproduce automáticamente. | 0 | 0 | `/api/v1/sessions` |
+| Botón de reproducción o de reproducción automática pulsado | 0 | 0 | `/api/v1/sessions` |
 
 **Detalles de implementación**
 
@@ -60,9 +63,9 @@ Esta llamada indica _la intención del usuario de reproducir_ un vídeo. Devuelv
 
 ### Acción 2 - Inicio del temporizador de ping {#Action-2}
 
-| Acción | Línea de tiempo de acción (segundos) | Posición del cabezal de reproducción (en segundos) | Solicitud del cliente |
+| Acción | Cronología de acción (segundos) | Posición del cabezal de reproducción (segundos) | Solicitud de cliente |
 | --- | :---: | :---: | --- |
-| La aplicación inicia el temporizador del evento de ping | 0 | 0 |  |
+| La aplicación inicia el temporizador de eventos de ping | 0 | 0 |  |
 
 **Detalles de implementación**
 
@@ -70,13 +73,13 @@ Inicie el temporizador de ping de su aplicación. El primer evento de ping debe 
 
 ### Acción 3 - Inicio de la pausa publicitaria {#Action-3}
 
-| Acción | Línea de tiempo de acción (segundos) | Posición del cabezal de reproducción (en segundos) | Solicitud del cliente |
+| Acción | Cronología de acción (segundos) | Posición del cabezal de reproducción (segundos) | Solicitud de cliente |
 | --- | :---: | :---: | --- |
-| Seguimiento del comienzo de la pausa publicitaria pre-roll | 0 | 0 | `/api/v1/sessions/{sid}/events` |
+| Rastrear inicio de pausa del anuncio previo a la emisión | 0 | 0 | `/api/v1/sessions/{sid}/events` |
 
 **Detalles de implementación**
 
-Se deben rastrear los anuncios pre-roll. Los anuncios solo se pueden rastrear durante una pausa publicitaria.
+Se debe hacer un seguimiento de los anuncios previos a la emisión. Los anuncios solo se pueden rastrear durante una pausa publicitaria.
 
 **Cuerpo de la solicitud de muestra**
 
@@ -96,9 +99,9 @@ Se deben rastrear los anuncios pre-roll. Los anuncios solo se pueden rastrear du
 
 ### Acción 4 - Inicio del anuncio {#Action-4}
 
-| Acción | Línea de tiempo de acción (segundos) | Posición del cabezal de reproducción (en segundos) | Solicitud del cliente |
+| Acción | Cronología de acción (segundos) | Posición del cabezal de reproducción (segundos) | Solicitud de cliente |
 | --- | :---: | :---: | --- |
-| Seguimiento del comienzo del primer anuncio pre-roll | 0 | 0 | `/api/v1/sessions/{sid}/events` |
+| Rastrear inicio del anuncio previo a la emisión n.º 1 | 0 | 0 | `/api/v1/sessions/{sid}/events` |
 
 **Detalles de implementación**
 
@@ -131,7 +134,7 @@ Se inicia una publicidad de 12 segundos.
 
 ### Acción 5 - Agrupaciones de anuncios {#Action-5}
 
-| Acción | Línea de tiempo de acción (segundos) | Posición del cabezal de reproducción (en segundos) | Solicitud del cliente |
+| Acción | Cronología de acción (segundos) | Posición del cabezal de reproducción (segundos) | Solicitud de cliente |
 | --- | :---: | :---: | --- |
 | La aplicación envía eventos de ping | 1 | 0 | `/api/v1/sessions/{sid}/events` |
 
@@ -153,9 +156,9 @@ Mandar un ping al servidor cada segundo. (No se muestran los pings de anuncios p
 
 ### Acción 6 - Finalización del anuncio {#Action-6}
 
-| Acción | Línea de tiempo de acción (segundos) | Posición del cabezal de reproducción (en segundos) | Solicitud del cliente |
+| Acción | Cronología de acción (segundos) | Posición del cabezal de reproducción (segundos) | Solicitud de cliente |
 | --- | :---: | :---: | --- |
-| Se ha completado el seguimiento del primer anuncio pre-roll | 12 | 0 | `/api/v1/sessions/{sid}/events` |
+| Rastrear finalización del anuncio previo a la emisión n.º 1 | 12 | 0 | `/api/v1/sessions/{sid}/events` |
 
 **Detalles de implementación**
 
@@ -175,13 +178,13 @@ El primer anuncio pre-roll ha finalizado.
 
 ### Acción 7 - Se completó la pausa publicitaria {#Action-7}
 
-| Acción | Línea de tiempo de acción (segundos) | Posición del cabezal de reproducción (en segundos) | Solicitud del cliente |
+| Acción | Cronología de acción (segundos) | Posición del cabezal de reproducción (segundos) | Solicitud de cliente |
 | --- | :---: | :---: | --- |
-| Rastrear la pausa publicitaria pre-roll | 12 | 0 | `/api/v1/sessions/{sid}/events` |
+| Rastrear finalización de pausa del anuncio previo a la emisión | 12 | 0 | `/api/v1/sessions/{sid}/events` |
 
 **Detalles de implementación**
 
-La pausa publicitaria ha finalizado. Durante la pausa publicitaria, el reproductor permanece en el estado &quot;reproduciendo&quot;.
+Terminó la pausa publicitaria. Durante la pausa publicitaria, el reproductor ha permanecido en el estado de &quot;reproducción&quot;.
 
 **Cuerpo de la solicitud de muestra**
 
@@ -197,9 +200,9 @@ La pausa publicitaria ha finalizado. Durante la pausa publicitaria, el reproduct
 
 ### Acción 8 - Reproducir contenido {#Action-8}
 
-| Acción | Línea de tiempo de acción (segundos) | Posición del cabezal de reproducción (en segundos) | Solicitud del cliente |
+| Acción | Cronología de acción (segundos) | Posición del cabezal de reproducción (segundos) | Solicitud de cliente |
 | --- | :---: | :---: | --- |
-| Rastrear el evento de Reproducción | 12 | 0 | `/api/v1/sessions/{sid}/events` |
+| Rastrear el evento de reproducción | 12 | 0 | `/api/v1/sessions/{sid}/events` |
 
 **Detalles de implementación**
 
@@ -220,7 +223,7 @@ Cambie el reproductor al estado &quot;reproducir&quot;; comience a rastrear el i
 
 ### Acción 9 - Ping {#Action-9}
 
-| Acción | Línea de tiempo de acción (segundos) | Posición del cabezal de reproducción (en segundos) | Solicitud del cliente |
+| Acción | Cronología de acción (segundos) | Posición del cabezal de reproducción (segundos) | Solicitud de cliente |
 | --- | :---: | :---: | --- |
 | La aplicación envía eventos de ping | 20 | 8 | `/api/v1/sessions/{sid}/events` |
 
@@ -242,7 +245,7 @@ Mandar un ping al servidor cada 10 segundos.
 
 ### Acción 10 - Ping {#Action-10}
 
-| Acción | Línea de tiempo de acción (segundos) | Posición del cabezal de reproducción (en segundos) | Solicitud del cliente |
+| Acción | Cronología de acción (segundos) | Posición del cabezal de reproducción (segundos) | Solicitud de cliente |
 | --- | :---: | :---: | --- |
 | La aplicación envía eventos de ping | 30 | 18 | `/api/v1/sessions/{sid}/events` |
 
@@ -264,9 +267,9 @@ Mandar un ping al servidor cada 10 segundos.
 
 ### Acción 11 - Error {#Action-11}
 
-| Acción | Línea de tiempo de acción (segundos) | Posición del cabezal de reproducción (en segundos) | Solicitud del cliente |
+| Acción | Cronología de acción (segundos) | Posición del cabezal de reproducción (segundos) | Solicitud de cliente |
 | --- | :---: | :---: | --- |
-| Se produce un error, la aplicación envía información del error. | 32 | 20 | `/api/v1/sessions/{sid}/events` |
+| Se produce un error, la aplicación envía información de error. | 32 | 20 | `/api/v1/sessions/{sid}/events` |
 
 **Detalles de implementación**
 
@@ -285,9 +288,9 @@ Mandar un ping al servidor cada 10 segundos.
 
 ### Acción 12 - Reproducir contenido {#Action-12}
 
-| Acción | Línea de tiempo de acción (segundos) | Posición del cabezal de reproducción (en segundos) | Solicitud del cliente |
+| Acción | Cronología de acción (segundos) | Posición del cabezal de reproducción (segundos) | Solicitud de cliente |
 | --- | :---: | :---: | --- |
-| La aplicación se recupera del error, el usuario pulsa Reproducir | 37 | 20 | `/api/v1/sessions/{sid}/events` |
+| La aplicación se recupera de un error, el usuario pulsa Reproducir | 37 | 20 | `/api/v1/sessions/{sid}/events` |
 
 **Detalles de implementación**
 
@@ -307,7 +310,7 @@ Mandar un ping al servidor cada 10 segundos.
 
 ### Acción 13 - Ping {#Action-13}
 
-| Acción | Línea de tiempo de acción (segundos) | Posición del cabezal de reproducción (en segundos) | Solicitud del cliente |
+| Acción | Cronología de acción (segundos) | Posición del cabezal de reproducción (segundos) | Solicitud de cliente |
 | --- | :---: | :---: | --- |
 | La aplicación envía eventos de ping | 40 | 28 | `/api/v1/sessions/{sid}/events` |
 
@@ -329,9 +332,9 @@ Mandar un ping al servidor cada 10 segundos.
 
 ### Acción 14 - Inicio de la pausa publicitaria {#Action-14}
 
-| Acción | Línea de tiempo de acción (segundos) | Posición del cabezal de reproducción (en segundos) | Solicitud del cliente |
+| Acción | Cronología de acción (segundos) | Posición del cabezal de reproducción (segundos) | Solicitud de cliente |
 | --- | :---: | :---: | --- |
-| Seguimiento del comienzo del anuncio mid-roll | 45 | 33 | `/api/v1/sessions/{sid}/events` |
+| Rastrear inicio de pausa del anuncio durante la emisión | 45 | 33 | `/api/v1/sessions/{sid}/events` |
 
 **Detalles de implementación**
 
@@ -355,9 +358,9 @@ Anuncio mid-roll de 8 segundos: enviar `adBreakStart` .
 
 ### Acción 15 - Inicio del anuncio {#Action-15}
 
-| Acción | Línea de tiempo de acción (segundos) | Posición del cabezal de reproducción (en segundos) | Solicitud del cliente |
+| Acción | Cronología de acción (segundos) | Posición del cabezal de reproducción (segundos) | Solicitud de cliente |
 | --- | :---: | :---: | --- |
-| Seguimiento del primer anuncio mid-roll | 45 | 33 | `/api/v1/sessions/{sid}/events` |
+| Rastrear inicio del anuncio durante la emisión n.º 1 | 45 | 33 | `/api/v1/sessions/{sid}/events` |
 
 **Detalles de implementación**
 
@@ -388,9 +391,9 @@ Seguimiento del anuncio mid-roll.
 
 ### Acción 16 - Cerrar aplicación {#Action-16}
 
-| Acción | Línea de tiempo de acción (segundos) | Posición del cabezal de reproducción (en segundos) | Solicitud del cliente |
+| Acción | Cronología de acción (segundos) | Posición del cabezal de reproducción (segundos) | Solicitud de cliente |
 | --- | :---: | :---: | --- |
-| El usuario cierra la aplicación. La aplicación determina que el usuario ha abandonado la visualización y no va a volver a esta sesión. | 48 | 33 | `/api/v1/sessions/{sid}/events` |
+| El usuario cierra la aplicación. La aplicación determina que el usuario ha abandonado la visualización y no vuelve a esta sesión. | 48 | 33 | `/api/v1/sessions/{sid}/events` |
 
 **Detalles de implementación**
 
