@@ -2,11 +2,11 @@
 title: Requisitos previos
 description: null
 uuid: 4c0b37f3-8615-4cc0-b9c9-eeb029067064
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 72cdf2d03ebae6998514c9092ab462c29345c9f9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '424'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -17,9 +17,9 @@ ht-degree: 99%
 
 Antes de comenzar la implementación de seguimiento, tiene que tomar algunas decisiones anticipadas, con respecto a qué implementación tiene mayor sentido para su situación:
 
-* **Media Analytics:** Uso de los últimos SDK de medios (la implementación estándar recomendada) o la API de recopilación de medios (RESTful)
+* **Media Analytics:** uso del Media SDK más reciente (la implementación estándar recomendada) o la API de Media Collection (RESTful)
 * **Milestone:** La implementación de seguimiento de Adobe más antigua
-* **API de inserción de datos:** Implementación del seguimiento sin usar SDK de medios
+* **API de inserción de datos:** Implementación del seguimiento sin usar Media SDK
 
 ## Tareas {#prereq-tasks}
 
@@ -45,7 +45,7 @@ Para una implementación de *Media Analytics*, estas son las tareas que debe com
 
    >[!IMPORTANT]
    >
-   >Si no hubiera información de ID de usuario presente en las llamadas específicas al contenido, se aplicarán los análisis predeterminados de los [Métodos de identificación secundarios](https://docs-author.corp.adobe.com/content/help/en/analytics/implementation/javascript-implementation/unique-visitors/visid-fallback.html).
+   >Si no hubiera información de ID de usuario presente en las llamadas específicas al contenido, se aplicarán los análisis predeterminados de los [Métodos de identificación secundarios](https://docs.adobe.com/content/help/es-ES/analytics/technotes/visitor-identification.translate.html).
 
    Para obtener más información sobre el Experience Cloud ID, consulte [Información general sobre el Experience Cloud ID](https://docs.adobe.com/content/help/es-ES/id-service/using/intro/overview.html) y [Servicio de Adobe Experience Platform.](https://docs.adobe.com/content/help/es-ES/id-service/using/home.html)
 
