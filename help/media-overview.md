@@ -2,8 +2,11 @@
 title: Medición de audio y vídeo en Adobe Analytics
 description: Adobe Analytics para contenidos (también denominado Media Analytics) proporciona a los clientes una medición de contenidos sólida para el contenido, el audio y la publicidad.
 uuid: b3cbe240-b94d-42b8-a99c-0280334aaa14
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: bddcbcd844145788518c60399bee9e4744e42d3a
+workflow-type: ht
+source-wordcount: '912'
+ht-degree: 100%
 
 ---
 
@@ -14,43 +17,43 @@ source-git-commit: bddcbcd844145788518c60399bee9e4744e42d3a
 
 ## Acerca de Adobe Analytics para audio y vídeo
 
-Adobe Analytics para audio y vídeo es un complemento de Adobe Analytics que proporciona potentes herramientas de medición para audio, vídeo y anuncios. Adobe Analytics forma parte de la plataforma Adobe Experience.
+Adobe Analytics para audio y vídeo es un complemento de Adobe Analytics que brinda poderosas herramientas de medición para audio, vídeo y anuncios. Adobe Analytics forma parte de Adobe Experience Platform.
 
-Adobe Analytics para audio y vídeo le permite realizar un seguimiento del viaje completo de los clientes a través del sitio. Las métricas se integran fácilmente en los informes de Adobe Analytics y otros productos de Adobe Experience Cloud. La medición de medios le permite categorizar los datos en varias dimensiones y segmentos, capturando todos los metadatos que necesita para realizar una análisis completa y detallada. A continuación, puede analizar los datos y atribuir los criterios de éxito a los medios totalmente consumidos, el tiempo promedio empleado y las publicidades completadas.
+Adobe Analytics para audio y vídeo le permite hacer un seguimiento del recorrido completo del cliente a través del sitio. Las métricas se integran fácilmente en los informes de Adobe Analytics y en otros productos de Adobe Experience Cloud. La medición de Media le permite categorizar los datos en varias dimensiones y segmentos, capturando todos los metadatos que necesita para hacer un análisis completo y detallado. A continuación, puede analizar los datos y atribuir los criterios de éxito a los medios totalmente consumidos, el tiempo promedio empleado y los anuncios completados.
 
-Puede medir métricas de envío vitales relacionadas con QoS, como fotogramas perdidos, tiempo empleado en almacenamiento en búfer y velocidad de bits promedio. Además, las métricas se pueden combinar con los datos de su sitio web o aplicación para visualizar la ruta y los intereses del cliente, a fin de ofrecer recomendaciones mejoradas y personalizar las experiencias de los clientes mediante Adobe Experience Cloud.
+Puede medir las métricas de entrega esenciales relacionadas con la calidad del servicio, como los fotogramas perdidos, el tiempo de almacenamiento en búfer y la velocidad de bits media. Además, las métricas se pueden combinar con los datos de su sitio web o aplicación para visualizar la ruta y los intereses del cliente, a fin de ofrecer recomendaciones mejoradas y personalizar las experiencias de los clientes mediante Adobe Experience Cloud.
 
 ## Funciones {#features}
 
-Las ventajas de Adobe Analytics para audio y vídeo incluyen supervisión en tiempo real, análisis detallada, perspectivas procesables y oportunidades de monetización.
-* **análisis** en tiempo real: tome decisiones procesables en tiempo real utilizando métricas de rendimiento clave como duration, ex2 y ex3, en varios canales. Los eventos del contenido principal se miden en intervalos de 10 segundos para capturar toda la actividad a medida que se produce. Los eventos de seguimiento de anuncios se producen en intervalos de 1 segundo.
-* **Impulse la participación**: haga participar a los usuarios mediante menos eventos de almacenamiento en búfer y mediante la comprensión de dónde y cuándo deben reproducirse las publicidades dentro del contenido para proporcionar una experiencia fluida y menos intrusiva que ofrezca visitas repetidas.
-* **Imagen** holística: combina varios puntos de datos en todos los distribuidores de contenido para obtener una vista completa de toda la actividad de medios. Mida la participación y las vistas/escuchas en todos los canales posibles mediante la función Federated Analytics.
-* **Mayor granularidad**: evalúe el comportamiento de visualización en el nivel más granular, incluida la hora del día del visitante individual, los visores/oyentes simultáneos por minuto y la duración promedio del contenido consumido.
-* **Medición** precisa: mida en todos los dispositivos utilizados para el consumo de medios, incluidos los dispositivos OTT, smartphone, tablet, escritorio y mucho más, para monitorear los patrones y hábitos de participación del usuario.
-* **Segmentación**: Aplique clasificaciones a sus reproductores, dispositivos, géneros, capítulos y programas para ver cómo cada uno de ellos tiene un impacto en sus vistas/escuchas generales y en la participación del cliente con contenido, audio, anuncios y combinados.
+Las ventajas de Adobe Analytics para audio y vídeo incluyen supervisión en tiempo real, análisis detallado, perspectivas procesables y oportunidades de monetización.
+* **Análisis en tiempo real**: tome decisiones procesables en tiempo real utilizando métricas de rendimiento clave como duration, ex2 y ex3 en varios canales. Los eventos del contenido principal se miden en intervalos de 10 segundos para capturar toda la actividad a medida que se produce. Los eventos de seguimiento de anuncios se producen en intervalos de 1 segundo.
+* **Mejore la participación**: Involucre completamente a los usuarios mediante menos eventos de almacenamiento en búfer y mediante la comprensión de dónde y cuándo debe reproducirse la publicidad dentro del contenido para proporcionar una experiencia agradable y menos intrusiva que genere visitas más frecuentes.
+* **Imagen holística**: combine diversos puntos de datos de todos los distribuidores de contenido y obtenga información de toda la actividad de contenidos. También puede medir la participación y las visualizaciones/escuchas en todos los posibles canales a través de la función Federated Analytics.
+* **Mayor granularidad**: evalúe el comportamiento de visualización en el nivel más granular, incluida la hora del día de cada visitante individual, los espectadores/oyentes simultáneos por minuto y la duración promedio de consumo del contenido.
+* **Medición exacta**: medición en varios dispositivos utilizados para el consumo de contenidos, incluidos OTT, smartphones, tabletas, equipos de escritorio y mucho más, para controlar los patrones de participación del usuario.
+* **Segmentación**: aplique clasificaciones a sus reproductores, dispositivos, géneros, capítulos y programas para ver cómo cada uno de ellos tiene un impacto en sus vistas/escuchas generales y en la participación de los clientes con el contenido, el audio, los anuncios y la combinación.
 
 ## Medición de Heartbeat {#heartbeat}
 
-Adobe Analytics utiliza latidos para recopilar métricas de vídeo. Durante la reproducción de vídeo, los latidos se envían al servidor de seguimiento de Heartbeat para medir el tiempo de reproducción. Las llamadas de Heartbeat se envían cada diez segundos. Los latidos dan como resultado métricas de participación en vídeo granulares e informes de visitas en el orden previsto de vídeo más precisos. Adobe Analytics para audio y vídeo mide los latidos mediante Adobe Launch con la extensión Media Analytics, el SDK de medios y la API de Media Collection. Los componentes `AppMeasurement` y `VisitorID` se utilizan para recibir datos de vídeo.
+Adobe Analytics utiliza «latidos» para recopilar métricas de vídeo. Durante la reproducción de vídeo, los latidos se envían al servidor de seguimiento de Heartbeat para medir el tiempo de reproducción. Las llamadas de Heartbeat se envían cada diez segundos. Los latidos generan métricas de participación en vídeo granulares e informes de visitas en el orden previsto de vídeo más precisos. Adobe Analytics para audio y vídeo mide los latidos mediante Adobe Launch con la extensión Media Analytics, Media SDK y la API de Media Collection. Los componentes `AppMeasurement` y `VisitorID` se utilizan para recibir datos de vídeo.
 
 El uso de latidos de Adobe Analytics para audio y vídeo ofrece las siguientes ventajas:
 
 | Función | Descripción |
 |----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Eventos de contenidos | Los Eventos detallados y personalizados se envían cada 10 segundos para el contenido principal y cada 1 segundo para los anuncios |
-| Métricas y dimensiones | Borrar métricas, dimensiones y puntos de referencia estandarizados entre<br>proveedoresCon una solución estandarizada en todas las plataformas, puede utilizar variables uniformes y estandarizadas en todos los medios y plataformas para permitir una comparación más eficiente entre campañas, dispositivos y proveedores. |
-| Integraciones | El ID de Experience Cloud está vinculado a Adobe Experience Cloud para facilitar el<br>análisis cruzadoCon la integración automática de Adobe Experience Cloud, puede segmentar sus audiencias de medios, darles destinatario y hacer recomendaciones de medios en función de las preferencias del usuario. |
-| Precio  | Seguimiento transparente por emisión de contenido (única) |
-| Implementación y compatibilidad | Configuración optimizada con actualizaciones y<br>mejoras continuasCon un proceso de implementación optimizado, puede asignar rápidamente variables a través de la API del reproductor y validar implementaciones mediante la herramienta de depuración de Adobe para garantizar que todas las variables necesarias se rastrean con precisión. |
-| Uso compartido de socios | Federated Analytics and Certified Metrics<br>With shared data through Federated Analytics, you can capitalize on our industry-first media sharing capabilities, to evaluate data holistically across all of your media distribution partners—operators, programmers, and distributors. |
-| Seguimiento avanzado | Seguimiento de contenido descargado, Seguimiento de recuperación de errores y<br>visores simultáneosPuede realizar un seguimiento del contenido de audio y vídeo que se descarga y reproduce en un dispositivo independientemente de su conectividad. |
+| Eventos de contenidos | Los eventos detallados y personalizados se envían cada 10 segundos para el contenido principal y cada 1 segundo para los anuncios |
+| Métricas y dimensiones | Borrar métricas, dimensiones y puntos de referencia estandarizados entre proveedores<br>Con una solución estandarizada en todas las plataformas, puede usar variables uniformes y estandarizadas en todos los medios y las plataformas para permitir una comparación más eficiente entre campañas, dispositivos y proveedores. |
+| Integraciones | El Experience Cloud ID está vinculado a Adobe Experience Cloud para facilitar el análisis cruzado<br>Con la integración automática de Adobe Experience Cloud, puede segmentar sus audiencias de medios, dirigirlas y hacer recomendaciones de medios en función de las preferencias del usuario. |
+| Precio | Seguimiento transparente por emisión de contenido (única) |
+| Implementación y compatibilidad | Configuración optimizada con actualizaciones y mejoras continuas<br>Con un proceso de implementación optimizado, puede asignar rápidamente variables a través de la API del reproductor y validar implementaciones mediante la herramienta de depuración de Adobe para garantizar que todas las variables necesarias se rastrean con precisión. |
+| Uso compartido de socios | Federated Analytics y métricas certificadas<br>Con los datos compartidos a través de Federated Analytics, rentabilice las opciones de compartir contenidos más novedosas y realice una evaluación integral de los datos de todos sus socios de distribución de contenidos: operadores, programadores y distribuidores. |
+| Seguimiento avanzado | Seguimiento de contenido descargado, seguimiento de recuperación de errores y visores simultáneos<br>Puede hacer un seguimiento del contenido de audio y vídeo que se descarga y reproduce en un dispositivo independientemente de su conectividad. |
 
 
 
 ## Seguridad {#security}
 
-En Adobe, nos tomamos en serio la seguridad de sus recursos digitales. Desde nuestra rigurosa integración de la seguridad en nuestro proceso interno de desarrollo de software y herramientas hasta nuestros equipos interfuncionales de respuesta a incidentes, nos esforzamos por ser proactivos y ágiles. Además, nuestro trabajo colaborativo con socios, investigadores y otras organizaciones del sector nos ayuda a comprender las últimas amenazas y las mejores prácticas de seguridad, así como a incorporar la seguridad en los productos y servicios que oferta.
+En Adobe, nos tomamos muy en serio la seguridad de sus recursos digitales. Desde nuestra rigurosa integración de la seguridad en un proceso interno de desarrollo de software y herramientas hasta nuestros equipos interfuncionales de respuesta a incidentes, nos esforzamos por ser proactivos y ágiles. Además, nuestro trabajo colaborativo con socios, investigadores y otras organizaciones del sector nos ayuda a comprender las últimas amenazas y las prácticas recomendadas de seguridad, así como a incorporar la seguridad en los productos y servicios que ofrecemos.
 
 
 ### Seguridad de la capa de transporte {#transport-layer-security}
