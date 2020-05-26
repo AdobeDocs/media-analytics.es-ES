@@ -2,8 +2,11 @@
 title: Configuración de privacidad y exclusión
 description: Cómo gestionar la inclusión, la exclusión y la privacidad.
 uuid: 7e60c7bd-8dba-4c7a-9c3c-0c634b815397
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ccdc3e170d125a76d798be7ce1fa5c12eef1f76a
+workflow-type: ht
+source-wordcount: '360'
+ht-degree: 100%
 
 ---
 
@@ -15,7 +18,7 @@ source-git-commit: ccdc3e170d125a76d798be7ce1fa5c12eef1f76a
 Puede controlar si se permite el seguimiento de la actividad en un dispositivo determinado:
 
 * **Aplicaciones móviles**: la biblioteca de VA respeta la configuración de privacidad y exclusión de la biblioteca `AdobeMobile`. Para desactivar el seguimiento, debe utilizar la biblioteca `AdobeMobile`. Para obtener más información sobre la configuración de exclusión y privacidad de la biblioteca `AdobeMobile`, consulte [Configuración de privacidad y exclusión](https://docs.adobe.com/content/help/es-ES/mobile-services/android/gdpr-privacy-android/privacy.html).
-* **Aplicaciones JavaScript/de explorador**: la biblioteca de VA respeta la configuración de privacidad y exclusión de `VisitorAPI`. Para desactivar el seguimiento, debe desactivar el servicio API del visitante. Para obtener más información sobre la exclusión y privacidad, consulte [Servicio de identidad de Adobe Experience Platform.](https://docs.adobe.com/content/help/es-ES/id-service/using/home.html).
+* **Aplicaciones JavaScript/de explorador**: la biblioteca de VA respeta la configuración de privacidad y exclusión de `VisitorAPI`. Para desactivar el seguimiento, debe desactivar el servicio API del visitante. Para obtener más información sobre la exclusión y privacidad, consulte [Servicio de identidad de Adobe Experience Platform.](https://docs.adobe.com/content/help/es-ES/id-service/using/home.html)
 * **Aplicaciones OTT (Chromecast, Roku):** Los SDK de OTT proporcionan API preparadas para el Reglamento general de protección de datos (RGPD) que le permiten establecer indicadores de estado `opt` para la recopilación y la transmisión de datos y sacar identidades almacenadas localmente.
 
    >[!NOTE]
