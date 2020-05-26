@@ -2,8 +2,11 @@
 title: Configuración de JavaScript
 description: Configuración de la aplicación de Media SDK para la implementación en JavaScript.
 uuid: 0269d8ad-0af8-4bf1-9d15-e06c2952a005
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ccdc3e170d125a76d798be7ce1fa5c12eef1f76a
+workflow-type: ht
+source-wordcount: '393'
+ht-degree: 100%
 
 ---
 
@@ -17,7 +20,7 @@ source-git-commit: ccdc3e170d125a76d798be7ce1fa5c12eef1f76a
 
 * **Proporcione las siguientes capacidades en su reproductor de contenidos**:
 
-   * *Una API para suscribirse a eventos del reproductor*: El SDK de medios requiere que llame a un conjunto de API simples cuando se produzcan eventos en el reproductor.
+   * *Una API para suscribirse a eventos del reproductor*: Media SDK requiere que llame a un conjunto de API simples cuando se produzcan eventos en el reproductor.
    * *Una API que proporciona información del reproductor*: Esta información incluye detalles como el nombre del medio y la posición del cabezal de reproducción.
 
 1. Añada la biblioteca [descargada](/help/sdk-implement/download-sdks.md#download-2x-sdks) al proyecto. Cree referencias locales a las clases para mayor comodidad.
