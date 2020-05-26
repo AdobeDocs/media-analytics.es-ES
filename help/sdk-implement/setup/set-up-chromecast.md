@@ -2,8 +2,11 @@
 title: Configuración de Chromecast
 description: Configuración de la aplicación de Media SDK para la implementación en Chromecast.
 uuid: d664e394-02a2-4985-bbad-be1bcc44fb2b
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: be82be2eb58f89344f2125288599fef461db441e
+workflow-type: ht
+source-wordcount: '630'
+ht-degree: 100%
 
 ---
 
@@ -22,7 +25,7 @@ La respuesta correcta es “Chromecast”, por los siguientes motivos:
 
 * **Obtenga parámetros de configuración válidos para Heartbeat**: Estos parámetros se pueden obtener de un representante de Adobe una vez creada la cuenta de Media Analytics.
 * **Proporcione las siguientes capacidades en su reproductor de contenidos**:
-   * *Una API para suscribirse a eventos del reproductor*: El SDK de medios requiere que llame a un conjunto de API simples cuando se produzcan eventos en el reproductor.
+   * *Una API para suscribirse a eventos del reproductor*: Media SDK requiere que llame a un conjunto de API simples cuando se produzcan eventos en el reproductor.
    * *Una API que proporciona información del reproductor*: Esta información incluye detalles como el nombre del medio y la posición del cabezal de reproducción.
 
 Adobe Mobile Services proporciona una nueva interfaz de usuario que aúna las capacidades de marketing móvil para aplicaciones móviles desde Adobe Experience Cloud. Inicialmente, el servicio Mobile ofrece una integración perfecta de las prestaciones de orientación y análisis de aplicaciones de las soluciones Adobe Analytics y Adobe Target. Para obtener más información, consulte la [documentación de Adobe Mobile Services.](https://docs.adobe.com/content/help/es-ES/mobile-services/using/home.html)
