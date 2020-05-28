@@ -1,14 +1,17 @@
 ---
-title: Seguimiento de llamada a otro punto del contenido en JavaScript
+title: Seguimiento de búsqueda con JavaScript 2.x
 description: En este tema se describe la implementación del seguimiento de búsqueda mediante Media SDK en aplicaciones de navegador (JS).
 uuid: 089947fb-8bae-4ae8-b215-53793620efd7
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+translation-type: tm+mt
+source-git-commit: 5f274452b9ff5770908f7e2e450935be572a22ea
+workflow-type: tm+mt
+source-wordcount: '127'
+ht-degree: 92%
 
 ---
 
 
-# Seguimiento de llamada a otro punto del contenido en JavaScript {#track-seeking-on-javascript}
+# Seguimiento de búsqueda con JavaScript 2.x{#track-seeking-on-javascript}
 
 >[!IMPORTANT]
 >
@@ -26,16 +29,16 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 1. Escuche los eventos de llamada a otro punto de la reproducción del reproductor de medios y, en la notificación del evento de inicio de la llamada a otro punto del contenido, rastree la búsqueda mediante el evento `SeekStart`:
 
    ```js
-   _onSeekStart = function() { 
-       this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.SeekStart); 
+   _onSeekStart = function() {
+       this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.SeekStart);
    };
    ```
 
 1. En la notificación de finalización de llamada a otro punto del contenido del reproductor, realice un seguimiento del final de la llamada a otro punto del contenido utilizando el evento `SeekComplete`.
 
    ```js
-   _onSeekComplete = function() { 
-       this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.SeekComplete); 
+   _onSeekComplete = function() {
+       this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.SeekComplete);
    };
    ```
 
