@@ -3,8 +3,11 @@ seo-title: Migración del SDK de medios independiente a Adobe Launch
 title: Migración del SDK de medios independiente a Adobe Launch
 seo-description: Instrucciones y ejemplos de código para ayudarle a migrar del SDK de medios a Launch.
 description: Instrucciones y ejemplos de código para ayudarle a migrar del SDK de medios a Launch.
-translation-type: ht
-source-git-commit: ccc23ad0fc7073159431c50b8a8235b692803236
+translation-type: tm+mt
+source-git-commit: fde203bab895c9a49ebc0d1dadb2c96697dea509
+workflow-type: tm+mt
+source-wordcount: '184'
+ht-degree: 100%
 
 ---
 
@@ -29,4 +32,3 @@ Adobe Media Analytics para audio y vídeo está disponible como una extensión d
 * [Android](/help/sdk-implement/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-android.md)
 * [iOS](/help/sdk-implement/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-ios.md)
 * [JS](/help/sdk-implement/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-js.md)
-
