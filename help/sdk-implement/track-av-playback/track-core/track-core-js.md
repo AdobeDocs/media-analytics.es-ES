@@ -1,14 +1,17 @@
 ---
-title: Seguimiento de reproducción principal en JavaScript
-description: En este tema se describe cómo implementar el seguimiento principal mediante Media SDK en aplicaciones de navegador (JS).
+title: Rastrear la reproducción principal mediante JavaScript 2.x
+description: En este tema se describe cómo implementar el seguimiento principal mediante el SDK de medios en un navegador mediante aplicaciones JavaScript 2.x.
 uuid: 3d6e0ab1-899a-43c3-b632-8276e84345ab
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+translation-type: tm+mt
+source-git-commit: 30ed54924c75a9c33e6122b2d7ddbb84c06b8c0c
+workflow-type: tm+mt
+source-wordcount: '688'
+ht-degree: 95%
 
 ---
 
 
-# Seguimiento de reproducción principal en JavaScript {#track-core-playback-on-javascript}
+# Rastrear la reproducción principal mediante JavaScript 2.x{#track-core-playback-on-javascript}
 
 >[!IMPORTANT]
 >Esta documentación abarca el seguimiento en la versión 2.x del SDK. Si va a implementar una versión 1.x del SDK, puede descargar las guías del desarrollador de 1.x aquí: [Descargar SDK](/help/sdk-implement/download-sdks.md).
@@ -49,7 +52,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    var mediaObject =  
      MediaHeartbeat.createMediaObject(<MEDIA_NAME>,  
                                      <MEDIA_ID,  
-                                     <MEDIA_LENGTH>, 
+                                     <MEDIA_LENGTH>,
                                      MediaHeartbeat.StreamType.VOD,
                                      <MEDIA_TYPE>);
    ```
@@ -74,11 +77,11 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
       Cree un objeto de variable para las variables personalizadas y rellénelo con los datos de estos contenidos. Por ejemplo:
 
       ```js
-      /* Set custom context data */ 
-      var customVideoMetadata = { 
-          isUserLoggedIn: "false", 
-          tvStation: "Sample TV station", 
-          programmer: "Sample programmer" 
+      /* Set custom context data */
+      var customVideoMetadata = {
+          isUserLoggedIn: "false",
+          tvStation: "Sample TV station",
+          programmer: "Sample programmer"
       };
       ```
 
@@ -160,4 +163,3 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 * Situaciones de seguimiento: [Reproducción de VOD sin anuncios](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)
 * Reproductor de muestra incluido con el SDK de JavaScript para ver un ejemplo de seguimiento completo.
-
