@@ -2,10 +2,10 @@
 title: 'Migración del SDK de medios independiente a Adobe Launch: Web (JS)'
 description: Instrucciones y ejemplos de código para ayudarle a migrar del SDK de medios a Launch.
 translation-type: tm+mt
-source-git-commit: 0f9a985d04969eeca837a2655c666259ce30aee4
+source-git-commit: fe109e9d670bf7fb6379f3c3631d10cecd2d48ac
 workflow-type: tm+mt
-source-wordcount: '404'
-ht-degree: 100%
+source-wordcount: '409'
+ht-degree: 98%
 
 ---
 
@@ -117,7 +117,8 @@ Pase un objeto delegado a `get-instance` que exponga las funciones `getQoSObject
 
 ### Media SDK
 
-* [Configurar JS](/help/sdk-implement/setup/set-up-js.md)
+* [Configuración de JavaScript 2.x](/help/sdk-implement/setup/setup-javascript/set-up-js-2.md)
+* [Configuración de JavaScript 3.x](/help/sdk-implement/setup/setup-javascript/set-up-js-3.md)
 * [API de JS del SDK de medios](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/MediaHeartbeat.html)
 
 ### Launch
