@@ -1,14 +1,17 @@
 ---
-title: Seguimiento del almacenamiento en búfer en JavaScript
+title: Seguimiento del almacenamiento en búfer mediante JavaScript 2.x
 description: Describe el seguimiento de eventos de almacenamiento en búfer en aplicaciones de navegador (JS).
 uuid: c380cf2c-7729-4d4a-a4da-581bd94a5896
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+translation-type: tm+mt
+source-git-commit: 8235fee973623c168dbf83f43aa85f13b4e06cff
+workflow-type: tm+mt
+source-wordcount: '116'
+ht-degree: 91%
 
 ---
 
 
-# Seguimiento del almacenamiento en búfer en JavaScript {#track-buffering-on-javascript}
+# Seguimiento del almacenamiento en búfer mediante JavaScript 2.x{#track-buffering-on-javascript}
 
 >[!IMPORTANT]
 >
@@ -26,16 +29,16 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 1. Escuche los eventos de almacenamiento en búfer de reproducción procedentes del reproductor de medios y, cuando reciba la notificación del evento Inicio de almacenamiento en búfer, rastree el almacenamiento en búfer mediante el evento `BufferStart`.
 
    ```js
-   _onBufferStart = function() { 
-       this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.BufferStart); 
+   _onBufferStart = function() {
+       this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.BufferStart);
    };
    ```
 
 1. En la notificación de Finalización de almacenamiento en búfer procedente del reproductor de medios, rastree el final del almacenamiento en búfer con el evento `BufferComplete`.
 
    ```js
-   _onBufferComplete = function() { 
-       this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.BufferComplete); 
+   _onBufferComplete = function() {
+       this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.BufferComplete);
    };
    ```
 
