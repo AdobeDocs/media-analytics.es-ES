@@ -2,9 +2,9 @@
 title: Implementación y Sistema de informes
 description: En este tema se describe cómo implementar la función de seguimiento de estado del reproductor, incluyendo .
 translation-type: tm+mt
-source-git-commit: b0bfe74d1f6083e700dbf98f504a17518bd19ecb
+source-git-commit: 614780a121eac6d5f822d439365fa59f85959ce2
 workflow-type: tm+mt
-source-wordcount: '271'
+source-wordcount: '326'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ El SDK de medios incluye dos nuevos métodos para el seguimiento de estado perso
 `trackStateClose("state_name")`
 
 
-La API de Media Collection incluye dos nuevos eventos que tienen &quot;media.stateName&quot; como parámetro requerido:
+La API de Media Collection incluye dos nuevos eventos que tienen `media.stateName` como parámetro requerido:
 
 `stateStart` y `stateEnd`
 
@@ -84,14 +84,19 @@ http(s)://<Analytics_Visitor_Namespace>.hb-api.omtrdc.net/api/v1/sessions/<SID>/
 
 Las métricas proporcionadas para cada estado individual se calculan y transfieren a Adobe Analytics como parámetros de datos de contexto y se almacenan con fines de sistema de informes. Hay tres métricas disponibles para cada estado:
 
-* `a.media.states.(media.state.name).set = true` — Se establece en true si el estado se estableció al menos una vez por cada reproducción específica de un flujo.
-* `a.media.states.(media.state.name).count = 4` — Identifica el número de ocurrencias de un estado durante cada reproducción individual de un flujo
-* `a.media.states.(media.state.name).time = 240` — Identifica la duración total del estado en segundos por cada reproducción individual de un flujo
+* `a.media.states.[state.name].set = true` — Se establece en true si el estado se estableció al menos una vez por cada reproducción específica de un flujo.
+* `a.media.states.[state.name].count = 4` — Identifica el número de ocurrencias de un estado durante cada reproducción individual de un flujo
+* `a.media.states.[state.name].time = 240` — Identifica la duración total del estado en segundos por cada reproducción individual de un flujo
 
 ## Creación de informes
 
-Todas las métricas de estado se pueden utilizar para cualquier visualización de sistema de informes o componente (segmento, métricas calculadas).
-TBD - compruebe la fuente/wiki para obtener información actualizada - para captura de pantalla de AW
+Todas las métricas de estado del reproductor se pueden utilizar para cualquier visualización de sistema de informes disponible en el área de trabajo de Análisis o en un componente (segmento, métricas calculadas) una vez que un grupo de informes esté habilitado para el seguimiento de estado del reproductor. Las nuevas métricas podrían habilitarse desde la Consola de administración para cada informe individual mediante la Configuración de Media Sistema de informes (Editar configuración > Administración de medios > Media Sistema de informes).
+
+![](assets/report-setup.png)
+
+En Espacio de trabajo de Analytics, todas las propiedades nuevas se encuentran en el panel Métricas. Por ejemplo, puede buscar por `full screen` para vista los datos de pantalla completa en el panel de métricas.
+
+![](assets/full-screen-report.png)
 
 ## Importación de métricas declaradas por el reproductor a Adobe Experience Platform
 
