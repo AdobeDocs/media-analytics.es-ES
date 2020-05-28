@@ -1,14 +1,17 @@
 ---
-title: Seguimiento de errores en JavaScript
+title: Seguimiento de errores con JavaScript 2.x
 description: En este tema se describe el seguimiento de errores de implementación mediante el uso de Media SDK en aplicaciones de navegador (JS).
 uuid: 5a4fc5df-2677-4189-92af-5cd074847b39
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+translation-type: tm+mt
+source-git-commit: 5f274452b9ff5770908f7e2e450935be572a22ea
+workflow-type: tm+mt
+source-wordcount: '96'
+ht-degree: 89%
 
 ---
 
 
-# Seguimiento de errores en JavaScript {#track-errors-on-javascript}
+# Seguimiento de errores con JavaScript 2.x{#track-errors-on-javascript}
 
 >[!IMPORTANT]
 >
@@ -19,12 +22,11 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 1. Seguimiento de errores del reproductor de contenidos:
 
    ```js
-   onPlayerError = function() { 
-       this._mediaHeartbeat.trackError("mediaErrorId"); 
+   onPlayerError = function() {
+       this._mediaHeartbeat.trackError("mediaErrorId");
    };
    ```
 
 >[!NOTE]
 >
 >El seguimiento de los errores del reproductor de contenidos no detendrá la sesión de seguimiento de contenidos. Si el reproductor de contenidos impide que continúe la reproducción, asegúrese de que la sesión de seguimiento de contenidos se cierre llamando a `trackSessionEnd` después de invocar a `trackError`.
-
