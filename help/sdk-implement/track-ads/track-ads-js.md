@@ -1,14 +1,17 @@
 ---
-title: Seguimiento de anuncios en JavaScript
+title: Seguimiento de publicidades con JavaScript 2.x
 description: Implementar el seguimiento de anuncios en aplicaciones de navegador (JS) mediante Media SDK.
 uuid: 4d81d29c-c55d-4d48-b505-3260922712ff
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+translation-type: tm+mt
+source-git-commit: f5b3961e0525c26b682490a4376d244c2703ae24
+workflow-type: tm+mt
+source-wordcount: '352'
+ht-degree: 97%
 
 ---
 
 
-# Seguimiento de anuncios en JavaScript {#track-ads-on-javascript}
+# Seguimiento de publicidades con JavaScript 2.x{#track-ads-on-javascript}
 
 >[!IMPORTANT]
 >
@@ -78,11 +81,11 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    * **Metadatos de anuncio personalizados**: para los metadatos personalizados, cree un objeto de variable para las variables de datos personalizadas y rellénelas con los datos del anuncio actual:
 
       ```js
-      /* Set custom context data */ 
-      var adCustomMetadata = { 
-          affiliate: "Sample affiliate", 
-          campaign: "Sample ad campaign", 
-          creative: "Sample creative" 
+      /* Set custom context data */
+      var adCustomMetadata = {
+          affiliate: "Sample affiliate",
+          campaign: "Sample ad campaign",
+          creative: "Sample creative"
       };
       ```
 
@@ -91,26 +94,26 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    Incluya una referencia a la variable de metadatos personalizada (o un objeto vacío) como tercer parámetro de la llamada de evento:
 
    ```js
-   _onAdStart = function() { 
+   _onAdStart = function() {
        this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.AdStart,  
                                        adObject,  
-                                       adCustomMetadata); 
+                                       adCustomMetadata);
    };
    ```
 
 1. Cuando la reproducción del anuncio llega al final, invoque `trackEvent()` con el evento `AdComplete`:
 
    ```js
-   _onAdComplete = function() { 
-       this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.AdComplete); 
+   _onAdComplete = function() {
+       this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.AdComplete);
    };
    ```
 
 1. Si la reproducción de la publicidad no ha finalizado porque el usuario ha elegido omitirla, realice un seguimiento del evento `AdSkip`
 
    ```js
-   _onAdSkip = function() { 
-       this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.AdSkip); 
+   _onAdSkip = function() {
+       this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.AdSkip);
    };
    ```
 
@@ -118,8 +121,8 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 1. Cuando finalice la pausa publicitaria, utilice el evento `AdBreakComplete` para realizar el seguimiento:
 
    ```js
-   _onAdBreakComplete = function() { 
-       this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.AdBreakComplete); 
+   _onAdBreakComplete = function() {
+       this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.AdBreakComplete);
    };
    ```
 
