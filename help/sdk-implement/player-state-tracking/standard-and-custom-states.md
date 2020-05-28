@@ -2,9 +2,9 @@
 title: Acerca de los estados estándar y personalizados
 description: En este tema se describe la función de seguimiento del estado del reproductor, que incluye requisitos y directrices para la implementación y sistema de informes de estados de reproductor estándar y personalizados.
 translation-type: tm+mt
-source-git-commit: 1cf11a6b8971f5be490998bbd855a27bfe366e48
+source-git-commit: f7a45dfbabe71fa9e1de7a4f4b2a7e64849e4ef4
 workflow-type: tm+mt
-source-wordcount: '251'
+source-wordcount: '280'
 ht-degree: 1%
 
 ---
@@ -30,14 +30,15 @@ Los datos se calculan del mismo modo para los estados estándar y personalizados
 
 ## Directrices
 
-* Una sesión de vídeo está limitada a 10 estados de reproductor personalizados únicos.
-* Si pasan varios estados de reproductor, solo se retienen los 10 primeros y se reenvían a través del flujo hacia abajo al componente de procesamiento VA(?video analytics).
+* Una sesión de vídeo está limitada a 10 estados de reproductor.
+* Se permite cualquier combinación de estados.
+* Si pasan varios estados del reproductor, solo se retienen los 10 primeros y se reenvían a la fase posterior al componente de procesamiento de VA.
 * El máximo de 10 estados se aplica a todos los estados, independientemente de si están cerrados o no.
-* El mismo estado se puede iniciar y finalizar cualquier número de veces y se cuenta como un solo estado.
-* ¿Todos los estados que exceden el máximo permitido? estados (10) se descartan.
+* Un estado puede inicio y finalizar varias veces y se cuenta como un solo estado. Por ejemplo, `closedCapationing` se puede iniciar y detener cinco veces, pero se contará como un solo estado.
+* Se descartan todos los estados que superen el máximo de 10 estados permitidos.
 
 ## Estados personalizados
 
 Con la capacidad de crear estados personalizados, puede capturar acciones personalizadas y actualizar los metadatos personalizados durante una sesión de reproducción.
 
-NECESITA más información sobre los estados personalizados
+Para obtener información sobre la creación de estados personalizados, consulte la Guía de referencia de API de [medios: `createStateObject`](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#createstateobject)
