@@ -3,10 +3,10 @@ title: Parámetros de estado del reproductor
 description: En este tema se describen los parámetros de seguimiento del estado del reproductor.
 uuid: 2a6b9247-a694-46e9-98e1-424c08c27ec2
 translation-type: tm+mt
-source-git-commit: c23a8787a8f59746665702eb5e2e74dde2c213e8
+source-git-commit: 1b48565bcc5c9a87e5fabbc906049ab791bf89cc
 workflow-type: tm+mt
-source-wordcount: '2167'
-ht-degree: 29%
+source-wordcount: '2236'
+ht-degree: 28%
 
 ---
 
@@ -155,7 +155,27 @@ Las funciones de seguimiento de estado del reproductor se pueden adjuntar a un f
 | --- | --- | --- |
 | <ul> <li> **Clave **<br/>SDK definida automáticamente</li> <li> **Clave **<br/>de API N/D</li> <li> **No requerido **<br/></li> <li> **Número de tipo **<br/></li> <li> **Enviado con **<br/>cierre de medios</li> <li> **Mínima SDK Version **<br/>3.0</li> <li> **Valor **<br/>de muestra TRUE</li><li> ****<br/>DescripciónTiempo que se mostraba en el foco. This metric is set to 1 only if at least one In Focus State occurred during a playback session.<br/> **Importante** <br/> Si se establece este evento, la hora es igual a la duración del vídeo en el estado Enfoque. Si no se establece este evento, no se enviará ningún valor.   </li> </ul> | <ul> <li> **Adobe Analytics **<br/>(media.state.infocus.time)<br/></li> <li> **Heartbeat **<br/>N/D</li> </ul> | <ul> <li> **Disponible **<br/>Sí</li> <li> **evento de variable **<br/>reservada</li> <li> **Nombre **<br/>Del Informe En Duración Total Del Enfoque</li> <li> **Datos **<br/>de contexto (media.state.infocus.time)<br/> </li> <li> **Fuente **<br/>de datos media.state.infocus.time</li> <li> **Administrador **<br/>de Audiencias (c_contextdata.media.state.infocus.time)</li> </ul> |
 
+## Lista de propiedades para identidades XDM
 
+Los datos almacenados en Analytics se pueden usar para cualquier fin y las métricas de estado del reproductor se pueden importar en la plataforma de Adobe Experience Platform mediante XDM y se pueden usar con el análisis de viajes del cliente.
+
+| Propiedad de estado del reproductor | Asignación |
+|---------------------------------------|------------------------------------|
+| a.media.states.fullScreen.set | media.mediaTimed.primaryAssetViewDetails.fullScreen.playerStateSet |
+| a.media.states.fullScreen.count | media.mediaTimed.primaryAssetViewDetails.fullScreen.playerStateCount |
+| a.media.states.fullScreen.time | media.mediaTimed.primaryAssetViewDetails.fullScreen.playerStateTime |
+| a.media.states.mute.set | media.mediaTimed.primaryAssetViewDetails.mute.playerStateSet |
+| a.media.states.mute.count | media.mediaTimed.primaryAssetViewDetails.mute.playerStateCount |
+| a.media.states.mute.time | media.mediaTimed.primaryAssetViewDetails.mute.playerStateTime |
+| a.media.states.closeCaption.set | media.mediaTimed.primaryAssetViewDetails.closeCaption.playerStateSet |
+| a.media.states.closeCaption.count | media.mediaTimed.primaryAssetViewDetails.closeCaption.playerStateCount |
+| a.media.states.closeCaption.time | media.mediaTimed.primaryAssetViewDetails.closeCaption.playerStateTime |
+| a.media.states.pictureInPicture.set | media.mediaTimed.primaryAssetViewDetails.pictureInPicture.playerStateSet |
+| a.media.states.pictureInPicture.count | media.mediaTimed.primaryAssetViewDetails.pictureInPicture.playerStateCount |
+| a.media.states.pictureInPicture.time | media.mediaTimed.primaryAssetViewDetails.pictureInPicture.playerStateTime |
+| a.media.states.inFocus.set | media.mediaTimed.primaryAssetViewDetails.inFocus.playerStateSet |
+| a.media.states.inFocus.count | media.mediaTimed.primaryAssetViewDetails.inFocus.playerStateCount |
+| a.media.states.inFocus.time | media.mediaTimed.primaryAssetViewDetails.inFocus.playerStateTime |
 
 ## API relacionadas {#related_apis_section}
 
