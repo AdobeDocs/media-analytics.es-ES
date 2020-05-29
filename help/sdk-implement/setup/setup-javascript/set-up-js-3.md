@@ -2,10 +2,10 @@
 title: Configuración de JavaScript 3.x
 description: Configuración de la aplicación del SDK de medios para la implementación en JavaScript 3.x.
 translation-type: tm+mt
-source-git-commit: a73536bd7a818ac23ad322a15f109644e75ee0d5
+source-git-commit: 83b38ac8f7fc88f982d194e776efccf8d5b983e4
 workflow-type: tm+mt
-source-wordcount: '382'
-ht-degree: 50%
+source-wordcount: '398'
+ht-degree: 47%
 
 ---
 
@@ -45,6 +45,16 @@ ht-degree: 50%
       >
       >The JavaScript SDK is compliant with the AMD and CommonJS module specifications, and `MediaSDK.js` can also be used with compatible module loaders.
 
+1. Cree una instancia de `AppMeasurement` y configúrela `visitor`.
+
+   La configuración del SDK de medios requiere una instancia de `AppMeasurement` con `visitor` configurada.
+
+```js
+var appMeasurement = new AppMeasurement(“<rsid>”);
+appMeasurement.visitor = visitor;
+appMeasurement.trackingServer = “<visitor_namespace>.sc.omtrdc.net”;
+```
+
 1. Configurar SDK de medios
 
    El SDK de medios debe configurarse una vez por página web y la configuración se aplica a todas las instancias del rastreador creadas.
@@ -52,6 +62,7 @@ ht-degree: 50%
    >[!IMPORTANT]
    >
    > El SDK de medios (3.x) utiliza la API de recopilación de medios para el seguimiento de medios, que es diferente del extremo HB utilizado en los SDK de 2.x. Póngase en contacto con su representante de Adobe para obtener más información.
+
 
    Este es un ejemplo de una inicialización de `MediaConfig`:
 
