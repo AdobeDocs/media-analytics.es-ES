@@ -2,9 +2,9 @@
 title: Implementación y Sistema de informes
 description: En este tema se describe cómo implementar la función de seguimiento de estado del reproductor, incluyendo .
 translation-type: tm+mt
-source-git-commit: 318bb60d9835d9a07fb7aa0a0a02162248410d09
+source-git-commit: 1b48565bcc5c9a87e5fabbc906049ab791bf89cc
 workflow-type: tm+mt
-source-wordcount: '311'
+source-wordcount: '333'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ El SDK de medios incluye dos nuevos métodos para el seguimiento de estado perso
 `trackStateClose("state_name")`
 
 
-La API de Media Collection incluye dos nuevos eventos que `media.stateName` tienen como parámetro requerido:
+La API de Media Collection incluye dos nuevos eventos que tienen `media.stateName` como parámetro requerido:
 
 `stateStart` y `stateEnd`
 
@@ -100,4 +100,4 @@ En Espacio de trabajo de Analytics, todas las propiedades nuevas se encuentran e
 
 ## Importación de métricas declaradas por el reproductor a Adobe Experience Platform
 
-Los datos almacenados en Analytics se pueden usar para cualquier fin y las métricas del estado del reproductor se pueden importar en la plataforma de Adobe Experience Platform mediante XDM y se pueden usar con el análisis de viajes del cliente. Las propiedades de estado estándar tienen propiedades específicas, mientras que los estados personalizados son propiedades disponibles mediante las eventos personalizadas.
+Los datos almacenados en Analytics se pueden usar para cualquier fin y las métricas del estado del reproductor se pueden importar en la plataforma de Adobe Experience Platform mediante XDM y se pueden usar con el análisis de viajes del cliente. Las propiedades de estado estándar tienen propiedades específicas, mientras que los estados personalizados son propiedades disponibles mediante las eventos personalizadas. Para obtener información adicional sobre las propiedades de estado estándar, consulte la sección Lista de *propiedades para identidades* XDM en la página Parámetros [de estado del](/help/metrics-and-metadata/player-state-parameters.md) reproductor.
