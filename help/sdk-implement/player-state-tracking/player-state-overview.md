@@ -2,9 +2,9 @@
 title: Acerca del seguimiento del estado del reproductor
 description: En este tema se describe la función de seguimiento del estado del reproductor, que incluye requisitos y guías para implementar y estados del reproductor de sistema de informes.
 translation-type: tm+mt
-source-git-commit: d317188ef664c836c7125e8bbe195baa924c0d80
+source-git-commit: 1b48565bcc5c9a87e5fabbc906049ab791bf89cc
 workflow-type: tm+mt
-source-wordcount: '359'
+source-wordcount: '397'
 ht-degree: 1%
 
 ---
@@ -40,8 +40,9 @@ El seguimiento de estado del reproductor requiere una de las siguientes opciones
 
 Antes de implementar el seguimiento de estado del reproductor, considere las siguientes pautas.
 
-* El estado del reproductor se calcula en todos los estados de reproducción (sin división)
-* Puede medir varios estados de reproductor al mismo tiempo
-* El número máximo de estados del reproductor que se pueden rastrear durante una reproducción es de 10 
-* Las métricas de estado del reproductor se envían a Analytics para sistema de informes SOLO en la llamada de cierre de medios
-* Los estados del reproductor se capturan para cada sesión de reproducción individual; el estado del reproductor no se calcula entre reproducciones 
+* El estado del reproductor se calcula en todos los estados de reproducción (sin división).
+* Puede medir varios estados del reproductor al mismo tiempo.
+* El número máximo de estados del reproductor que se pueden rastrear durante una reproducción es de 10.
+* Las métricas de estado del reproductor se envían a Analytics para sistema de informes solo en la llamada de cierre de medios.
+* El conocimiento del estado de la aplicación no se mantiene una vez que se detiene un estado. Una vez finalizado el estado, éste debe volver a iniciarse para continuar con el seguimiento. Para cada nuevo estado de reproducción, se debe volver a iniciar el estado del reproductor.
+* Los estados del reproductor se capturan para cada sesión de reproducción individual; el estado del reproductor no se calcula entre reproducciones.
