@@ -2,10 +2,10 @@
 title: Preguntas más frecuentes sobre el fin de la compatibilidad con el SDK de Media Analytics
 description: Este tema incluye preguntas más frecuentes sobre el fin de la compatibilidad con los SDK de Media Analytics.
 translation-type: tm+mt
-source-git-commit: 300eb77858296f0246a2cb484386c0dcdf8b87b9
+source-git-commit: 38adc54438f85ca8ece8c77d9ff0d0aa14eb6605
 workflow-type: tm+mt
-source-wordcount: '650'
-ht-degree: 2%
+source-wordcount: '703'
+ht-degree: 3%
 
 ---
 
@@ -16,9 +16,9 @@ Con la finalización de la compatibilidad con los SDK para móviles de la versi�
 
 ## 5 cosas principales que saber
 
-1. Los SDK de Mobile v4 ya no serán compatibles a partir del 31 de agosto de 2012. Debe migrar a los SDK de Adobe Experience Platform (AEP) para iOS y Android.
+1. Los SDK de Mobile v4 ya no serán compatibles a partir del 31 de agosto de 2012. Debe migrar a los SDK de Adobe Experience Platform (AEP) para iOS y Android. Para obtener más información, consulte las preguntas más frecuentes [sobre la finalización de la compatibilidad con los SDK móviles de la](https://aep-sdks.gitbook.io/docs/version-4-sdk-end-of-support-faq)versión 4.
 
-1. La implementación de Analytics para audio y vídeo requiere el SDK de AEP y el uso de las extensiones de Analytics y Media Analytics. A partir del 1 de septiembre de 2021, debe utilizar los nuevos SDK y extensiones de AEP.  Las extensiones de Media Analytics se configuran con Adobe Launch.  Para obtener más información, consulte [Migración del SDK de medios independientes a Adobe Launch](https://docs.adobe.com/content/help/en/media-analytics/using/sdk-implement/sdk-to-launch/sdk-to-launch-migration.html)
+1. La implementación de Analytics para audio y vídeo requiere el SDK de AEP y el uso de las extensiones de Analytics y Media Analytics. A partir del 1 de septiembre de 2021, debe utilizar los nuevos SDK y extensiones de AEP.  Las extensiones de Media Analytics se configuran con Adobe Launch.  Para obtener más información, consulte [Migración del SDK de medios independientes a Adobe Launch](https://docs.adobe.com/content/help/es-ES/media-analytics/using/sdk-implement/sdk-to-launch/sdk-to-launch-migration.html)
 
 1. El desarrollo de funciones ha finalizado para los SDK de Media Analytics para iOS y Android.  Las nuevas funciones que se introdujeron a partir del otoño de 2019 se habilitan mediante las extensiones de Media Analytics y la API de Media Collection.
 
@@ -49,7 +49,7 @@ Si tiene alguna pregunta, póngase en contacto con el administrador de éxito de
 
 1. **¿Necesito tener Launch como sistema de administración de etiquetas? ¿Qué sucede si no deseo usar Launch?**
 
-   Para móviles, Launch es necesario para configurar las extensiones de medios como la interfaz de usuario de Mobile Services. En el caso de uso de la aplicación móvil, no se utiliza como sistema de administración de etiquetas.
+   En el caso de uso de la aplicación móvil, Launch no se utiliza como sistema de administración de etiquetas como para la Web.  Se requiere el uso de la interfaz de usuario de Launch para configurar las extensiones de SDK. Esto es similar a cómo se usa la interfaz de usuario de Adobe Mobile Services para configurar el SDK de Mobile v4. Para la instalación, la ventaja de utilizar Launch es que le proporciona instrucciones de instalación personalizadas en función de la extensión que elija.
 
 1. **¿Afecta este fin de soporte al SDK para tvOS?**
 
