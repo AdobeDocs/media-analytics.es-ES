@@ -4,7 +4,7 @@ user-guide-title: Adobe Analytics para audio y vídeo
 product: adobe analytics
 sub-product: media analytics
 translation-type: tm+mt
-source-git-commit: f26816d37f30e9e4ae08dbf7af78f2135e8403f4
+source-git-commit: f90eec31389431fe5275760d510926fb01c33d9a
 workflow-type: tm+mt
 source-wordcount: '809'
 ht-degree: 79%
@@ -193,7 +193,6 @@ ht-degree: 79%
       + [Línea de tiempo 1: Ver el contenido hasta el final](media-collection-api/mc-api-timelines/mc-api-timeline-1.md)
       + [Línea de tiempo 2: El usuario abandona la sesión](media-collection-api/mc-api-timelines/mc-api-timeline-2.md)
       + [Línea de tiempo 3: Capítulos](media-collection-api/mc-api-timelines/mc-api-timeline-3.md)
-   + [Seguimiento del contenido descargado](media-collection-api/track-downloaded-content.md)
 + Guía paso a paso {#media-analytics-cookbook}
    + [Guía paso a paso](media-analytics-cookbook/media-analytics-cookbook.md)
    + [Atribución de flujo de transmisión de contenido](media-analytics-cookbook/media-dimensions.md)
@@ -215,6 +214,7 @@ ht-degree: 79%
       + [Espectadores simultáneos de contenidos](media-reports/media-default-reports/media-concurrent-viewers.md)
       + [Obtener datos del informe JSON de espectadores simultáneos](media-reports/media-default-reports/get-concurrent-json.md)
    + [Plantillas de Workspace de medios](media-reports/media-workspace-templates.md)
++ [Seguimiento del contenido descargado](media-collection-api/track-downloaded-content.md)
 + [Federated Analytics](federated-analytics.md)
 + Seguimiento del estado de reproducción {#player-state-tracking}
    + [Información general](sdk-implement/player-state-tracking/player-state-overview.md)
