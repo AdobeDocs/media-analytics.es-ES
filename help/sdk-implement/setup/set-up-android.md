@@ -2,11 +2,11 @@
 title: Configuración de Android
 description: Configuración de la aplicación de Media SDK para la implementación en Android.
 uuid: 3ffe3276-a104-4182-9220-038729e9f3d5
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 300eb77858296f0246a2cb484386c0dcdf8b87b9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '427'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 92%
 
 >[!IMPORTANT]
 >
->Con la finalización de la compatibilidad con los SDK para móviles de la versión 4 el 31 de agosto de 2021, Adobe también dejará de ofrecer compatibilidad con el SDK de Media Analytics para iOS y Android.  Para obtener más información, consulte Preguntas más frecuentes sobre el fin de la asistencia técnica del SDK de [Media Analytics](/help/sdk-implement/end-of-support-faqs.md).
+>Con la finalización de la compatibilidad con los SDK para móviles de la versión 4 el 31 de agosto de 2021, Adobe también dejará de ofrecer compatibilidad con el SDK de Media Analytics para iOS y Android.  Para obtener más información, consulte [Preguntas frecuentes sobre el fin de la asistencia del SDK de Media Analytics](/help/sdk-implement/end-of-support-faqs.md).
 
 
 ## Requisitos previos
@@ -24,7 +24,7 @@ ht-degree: 92%
 * **Implemente ADBMobile para Android en su aplicación**: Para obtener más información sobre la documentación del SDK de Adobe Mobile, consulte [SDK de Android 4.x para las soluciones de Experience Cloud.](https://docs.adobe.com/content/help/es-ES/mobile-services/android/overview.html)
 
 * **Proporcione las siguientes capacidades en su reproductor de contenidos**:
-   * *Una API para suscribirse a eventos del reproductor*: El SDK de medios requiere que llame a un conjunto de API simples cuando se produzcan eventos en el reproductor.
+   * *Una API para suscribirse a eventos del reproductor*: Media SDK requiere que llame a un conjunto de API simples cuando se produzcan eventos en el reproductor.
    * *Una API que proporciona información del reproductor*: Esta información incluye detalles como el nombre del medio y la posición del cabezal de reproducción.
 
 ## Implementación del SDK
@@ -123,7 +123,7 @@ ht-degree: 92%
 
 **Añadir permisos de aplicación**
 
-La aplicación que utiliza el SDK de medios requiere los siguientes permisos para enviar datos en las llamadas de seguimiento:
+La aplicación que utiliza Media SDK requiere los siguientes permisos para enviar datos en las llamadas de seguimiento:
 
 * `INTERNET`
 * `ACCESS_NETWORK_STATE`
