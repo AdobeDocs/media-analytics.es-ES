@@ -2,24 +2,24 @@
 title: Opciones de medición
 description: null
 uuid: null
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 967a126723ebbbe02097bd07edc2ed967cd35f4c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '293'
-ht-degree: 19%
+ht-degree: 100%
 
 ---
 
 
-# Opciones de medición{#measurement-options}
+# Opciones de medición {#measurement-options}
 
-Puede activar el seguimiento de audio y vídeo mediante Adobe Launch con la extensión Adobe Media Analytics, el SDK de medios o la API de Media Collection.
+Puede activar el seguimiento de audio y vídeo mediante Adobe Launch con la extensión de Adobe Media Analytics, Media SDK o la API de Media Collection.
 
-## Adobe Launch con la extensión Adobe Media Analytics
+## Adobe Launch con la extensión de Adobe Media Analytics
 
-Adobe Launch es la solución de administración de etiquetas de próxima generación de Adobe. Launch proporciona una manera sencilla de implementar y administrar todas las etiquetas de análisis, marketing y publicidad necesarias para potenciar las experiencias relevantes de los clientes. Para crear y mantener sus propias integraciones con Launch, utilice extensiones. Una extensión es un paquete JavaScript, HTML y CSS que amplía la interfaz de usuario de Launch y la funcionalidad del cliente. Para obtener más información, consulte la Guía del usuario del [Experience Platform Launch](https://docs.adobe.com/content/help/es-ES/launch/using/overview.html)
+Adobe Launch es la función de administración de etiquetas de próxima generación de Adobe. Launch ofrece una alternativa sencilla para implementar y gestionar todas las etiquetas de análisis, marketing y publicidad necesarias para potenciar las importantes experiencias del cliente. Para crear y mantener sus propias integraciones con Launch, utiliza extensiones. Una extensión es un paquete de JavaScript, HTML y CSS que amplía la funcionalidad del cliente y la interfaz de usuario de Launch. Para obtener más información, consulte la [Guía del usuario de Experience Platform Launch](https://docs.adobe.com/content/help/es-ES/launch/using/overview.html)
 
-La extensión Adobe Media Analytics (MA) agrega el SDK principal de medios JavaScript (SDK de Media 2.x) para audio y vídeo. Esta extensión proporciona la funcionalidad para agregar la instancia de seguimiento `MediaHeartbeat` a un sitio o proyecto de Launch.
+La extensión de Adobe Media Analytics (MA) agrega el SDK principal de JavaScript Media (Media SDK 2.x) para audio y vídeo. Esta extensión proporciona la funcionalidad para agregar la instancia de seguimiento `MediaHeartbeat` a un sitio o proyecto de Launch.
 
 Adobe Launch con la extensión Media Analytics requiere lo siguiente:
 * Debe ser cliente de Adobe Experience Cloud.
@@ -29,8 +29,8 @@ Adobe Launch con la extensión Media Analytics requiere lo siguiente:
 
 ## Media SDK
 
-El SDK de medios se integra con los reproductores de medios más utilizados.
+Media SDK se integra con los reproductores de contenidos más habituales.
 
-## API de recopilación de medios (API de RESTful)
+## API de Media Collection (API RESTful)
 
-Se integra con reproductores sin compatibilidad con SDK o cuando no se necesita integración con SDK.<br>A partir de la versión v2.2.0, los SDK de Video Heartbeat Library (VHL) pasan a denominarse SDK de Media Analytics para admitir el seguimiento de audio y vídeo. El SDK de Media 2.2.0 es totalmente compatible con la serie VHL 2.x del SDK. El cambio de nombre es simplemente un cambio en la convención de nombres y no representa cambios funcionales.
+Se integra con reproductores sin compatibilidad con SDK o cuando no se necesita integración con SDK.<br>Desde la versión v2.2.0, los SDK de Video Heartbeat Library (VHL) pasan a denominarse Media SDK Analytics para admitir el seguimiento de audio y vídeo. El SDK Media 2.2.0 es totalmente compatible con la serie SDK VHL 2.X. El cambio de nombre es simplemente un cambio en las normas de asignación de nombres y no representa cambios funcionales.
