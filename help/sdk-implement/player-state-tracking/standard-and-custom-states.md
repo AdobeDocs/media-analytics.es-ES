@@ -1,11 +1,11 @@
 ---
 title: Acerca de los estados estándar y personalizados
-description: En este tema se describe la función de seguimiento del estado del reproductor, que incluye requisitos y directrices para la implementación y sistema de informes de estados de reproductor estándar y personalizados.
+description: En este tema se describe la función de seguimiento del estado del reproductor, que incluye requisitos y directrices para la implementación y sistemas de informes de estados de reproductor estándar y personalizados.
 translation-type: tm+mt
 source-git-commit: f7a45dfbabe71fa9e1de7a4f4b2a7e64849e4ef4
 workflow-type: tm+mt
 source-wordcount: '280'
-ht-degree: 1%
+ht-degree: 66%
 
 ---
 
@@ -14,19 +14,19 @@ ht-degree: 1%
 
 Hay cinco estados de reproductor estándar disponibles y puede agregar sus propios estados personalizados.
 
-| Nombre de estado estándar | Constante de SDK de medios | Nombre de la API de Media Collection |
+| Nombre de estado estándar | Constante de Media SDK | Nombre de la API de Media Collection |
 |-----------------------|------------------------------------------|-----------------------------|
 | Pantalla completa | `ADB.Media.PlayerState.Fullscreen` | `fullScreen` |
-| Subtítulos opcionales | `ADB.Media.PlayerState.ClosedCaptioning` | `closedCaptioning` |
+| Subtítulos | `ADB.Media.PlayerState.ClosedCaptioning` | `closedCaptioning` |
 | Silenciar | `ADB.Media.PlayerState.Mute` | `mute` |
 | Imagen en imagen | `ADB.Media.PlayerState.PictureInPicture` | `pictureInPicture` |
-| En Enfoque | `ADB.Media.PlayerState.InFocus` | `inFocus` |
+| Enfocado | `ADB.Media.PlayerState.InFocus` | `inFocus` |
 
-Los datos se calculan del mismo modo para los estados estándar y personalizados, pero los datos se almacenan de forma diferente para Analytics sistema de informes.
+Los datos se calculan del mismo modo para los estados estándar y personalizados, pero los datos se almacenan de forma diferente para el sistema de informes de Analytics.
 
-**Para estados** estándar: cuando se habilita el seguimiento del estado del reproductor desde la consola de Media Management en Analytics sistema de informes (administrador), hay 15 variables de solución disponibles para las exportaciones de sistema de informes y datos.
+**Para estados estándar**: cuando se habilita el seguimiento del estado del reproductor desde la consola de Media Management en el sistema de informes de Analytics (administrador), hay 15 variables de solución disponibles para las exportaciones de datos y sistemas de informes.
 
-**Para los estados** personalizados: puede crear sus propias reglas de procesamiento para almacenar los valores calculados en eventos personalizados y, a continuación, utilizar esas reglas para las exportaciones de sistemas de informes y datos.
+**Para los estados personalizados**: puede crear sus propias reglas de procesamiento para almacenar los valores calculados en eventos personalizados y, a continuación, utilizar esas reglas para las exportaciones de datos y sistemas de informes.
 
 ## Directrices
 
