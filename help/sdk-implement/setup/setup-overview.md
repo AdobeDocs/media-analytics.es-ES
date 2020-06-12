@@ -2,11 +2,11 @@
 title: Información general de configuración
 description: Descripción general de la configuración de Media SDK para el seguimiento de contenido en las aplicaciones móviles, OTT y de navegador (JS).
 uuid: 06fefedb-b0c8-4f7d-90c8-e374cdde1695
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 300eb77858296f0246a2cb484386c0dcdf8b87b9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '734'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 95%
 
 >[!IMPORTANT]
 >
->Con la finalización de la compatibilidad con los SDK para móviles de la versión 4 el 31 de agosto de 2021, Adobe también dejará de ofrecer compatibilidad con los SDK de Media Analytics para iOS y Android.  Para obtener más información, consulte Preguntas más frecuentes sobre el fin de la asistencia técnica del SDK de [Media Analytics](/help/sdk-implement/end-of-support-faqs.md).
+>Con la finalización de la compatibilidad con los SDK para móviles de la versión 4 el 31 de agosto de 2021, Adobe también dejará de ofrecer compatibilidad con los SDK de Media Analytics para iOS y Android.  Para obtener más información, consulte [Preguntas frecuentes sobre el fin de la asistencia del SDK de Media Analytics](/help/sdk-implement/end-of-support-faqs.md).
 
 Las siguientes instrucciones se aplican a Media SDK 2.x. Si va a implementar la versión 1.x del Media SDK, consulte la [documentación del Media SDK 1.x.](/help/sdk-implement/download-sdks.md) Para integradores de Primetime, consulte _Documentación de Media SDK de Primetime_ a continuación.
 
@@ -47,7 +47,7 @@ Complete los pasos siguientes de la implementación:
    |---|---|:---:|---|
    | `trackingServer` | Servidor de seguimiento para análisis de medios. Esto es diferente al servidor de seguimiento de Analytics. | Sí | Cadena vacía |
    | `channel` | Nombre del canal | No | Cadena vacía |
-   | `ovp` | Nombre de la plataforma de medios en línea desde la que se distribuye el contenido | No | Cadena vacía |
+   | `ovp` | Nombre de la plataforma de medios en línea desde la que se distribuye el contenido. | No | Cadena vacía |
    | `appVersion` | La versión del SDK/aplicación del reproductor de medios | No | Cadena vacía |
    | `playerName` | Nombre del reproductor de medios en uso como &quot;AVPlayer&quot;, &quot;HTML5 Player&quot;, &quot;Mi reproductor personalizado&quot; | No | Cadena vacía |
    | `ssl` | Indica si las llamadas deben realizarse a través de HTTPS | No | false |
@@ -123,14 +123,14 @@ Complete los pasos siguientes de la implementación:
      new MediaHeartbeat(mediaDelegate, mediaConfig, appMeasurementInstance);  
    ```
 
-## Validación {#validate}
+## Validación  {#validate}
 
 Las implementaciones de seguimiento de Media Analytics generan dos tipos de llamadas de seguimiento:
 
-* Las llamadas de inicio de contenido y anuncio se envían directamente al servidor de Adobe Analytics (AppMeasurement).
-* Las llamadas de Heartbeat se envían al servidor de seguimiento de Media Analytics (latidos), se procesan y se pasan al servidor de Adobe Analytics.
+* Las llamadas de inicio de contenido y anuncio se envían directamente al servidor de Adobe Analytics (AppMeasurement).
+* Las llamadas de Heartbeat se envían al servidor de seguimiento de Media Analytics (latidos), se procesan y se pasan al servidor de Adobe Analytics.
 
-* **Servidor de Adobe Analytics (AppMeasurement)** Para obtener más información sobre las opciones del servidor de seguimiento, consulte [Rellenar correctamente las variables trackingServer y trackingServerSecure.](https://helpx.adobe.com/es/analytics/kb/determining-data-center.html)
+* **Servidor de Adobe Analytics (AppMeasurement)** Para obtener más información sobre las opciones del servidor de seguimiento, consulte [Rellenar correctamente las variables trackingServer y trackingServerSecure.](https://helpx.adobe.com/es/analytics/kb/determining-data-center.html)
 
    >[!IMPORTANT]
    >
