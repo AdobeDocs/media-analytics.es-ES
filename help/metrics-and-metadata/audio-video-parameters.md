@@ -2,8 +2,11 @@
 title: Parámetros de audio y vídeo
 description: null
 uuid: fdacfb8b-db3e-46fb-b9ad-c3a749555b2a
-translation-type: ht
-source-git-commit: cebf5697e3746721d29bfaa5356d5a2748fea435
+translation-type: tm+mt
+source-git-commit: ccd4209f6fad0547e9595674602ee978d86e10cd
+workflow-type: tm+mt
+source-wordcount: '6128'
+ht-degree: 99%
 
 ---
 
@@ -28,16 +31,16 @@ Descripción de los datos de la tabla:
    * *Tipo*: Especifica el tipo de la variable que se va a establecer, la cadena o el número.
    * *Enviado con*: indica cuándo se envían los datos: *Inicio de contenidos* es la llamada de análisis enviada al inicio del contenido, *Inicio de publicidad* es la llamada de análisis enviada al iniciar el anuncio, etc., las llamadas *Cierre* son llamadas de análisis compiladas enviadas directamente desde el servidor de latidos al servidor de análisis al final de la sesión de contenido, o al final del anuncio, capítulo, etc. Las llamadas Cierre no están disponibles en las llamadas a paquetes de red.
    * *Mínima Versión del SDK*: Indica la versión del SDK a la que debería acceder el parámetro.
-   * *Valor de muestra*: Proporciona un ejemplo del uso común de variables.
+   * *Valor de muestra:* Proporciona un ejemplo del uso común de variables.
 * **Parámetros de red:** Muestra los valores que se pasan a los servidores de Adobe Analytics o Heartbeat. Esta columna muestra los nombres de los parámetros que se ven en las llamadas de red generadas por los SDK de medios de Adobe.
 * **Sistema de informes:** Información sobre cómo realizar vistas y análisis de datos de audio y vídeo.
    * *Disponible*: Indica si los datos están disponibles en el sistema de informes de forma predeterminada (*Sí*) o si requieren una configuración personalizada (*Personalizado*)
    * *Variable reservada*: Indica si los datos se capturan como un evento, una eVar, una propiedad o una clasificación en una variable reservada.
    * *Caducidad*: Indica si los datos caducan después de cada visita individual o después de cada visita.
    * *Nombre del informe*: Nombre del informe de Adobe Analytics para la variable
-   * *Datos de contexto*: Nombre de los datos de contexto de Adobe Analytics pasados al servidor de sistema de informes y utilizados en reglas de procesamiento.
-   * *Fuente de datos*: Nombre de columna para la variable que se encuentra en las fuentes de datos de flujo de navegación o flujo en directo
-   * *Audience Manager*: Nombre de la función de Adobe Audience Manager.
+   * *Datos de contexto:* Nombre de los datos de contexto de Adobe Analytics pasados al servidor de sistema de informes y utilizados en reglas de procesamiento.
+   * *Fuente de datos:* Nombre de columna para la variable que se encuentra en las fuentes de datos de flujo de navegación o flujo en directo
+   * *Audience Manager:* Nombre de la función de Adobe Audience Manager.
 
 >[!IMPORTANT]
 >
@@ -70,7 +73,7 @@ public static MediaObject createMediaObject(java.lang.String name,
 public static MediaObject createMediaObject(java.lang.String name,
                                             java.lang.String mediaId, // <==
                                             java.lang.Double length,
-                                            java.lang.String streamType, 
+                                            java.lang.String streamType,
                                             MediaHeartbeat.MediaType mediaType)
 ```
 
@@ -84,7 +87,7 @@ public static MediaObject createMediaObject(java.lang.String name,
 public static MediaObject createMediaObject(java.lang.String name,
                                             java.lang.String mediaId,
                                             java.lang.Double length, // <==
-                                            java.lang.String streamType, 
+                                            java.lang.String streamType,
                                             MediaHeartbeat.MediaType mediaType)
 ```
 
@@ -98,7 +101,7 @@ public static MediaObject createMediaObject(java.lang.String name,
 public static MediaObject createMediaObject(java.lang.String name,
                                             java.lang.String mediaId,
                                             java.lang.Double length, // <==
-                                            java.lang.String streamType, 
+                                            java.lang.String streamType,
                                             MediaHeartbeat.MediaType mediaType)
 ```
 
@@ -156,7 +159,7 @@ public static MediaObject createMediaObject(java.lang.String name,
 public static MediaObject createMediaObject(java.lang.String name,
                                             java.lang.String mediaId, // <==
                                             java.lang.Double length,
-                                            java.lang.String streamType, 
+                                            java.lang.String streamType,
                                             MediaHeartbeat.MediaType mediaType)
 ```
 
@@ -190,7 +193,7 @@ public static MediaObject createMediaObject(java.lang.String name,
 
 |   Implementación   | Parámetros de red | Creación de informes |
 | --- | --- | --- |
-| <ul> <li> **Clave de SDK:**<br/>SHOW</li> <li> **Clave de API:**<br/>media.show</li> <li> **Requerido:**<br/>no</li> <li> **Tipo:**<br/>cadena</li> <li> **Enviado con:**<br/>Inicio de contenidos, Cierre de contenidos</li> <li> **Mínima Versión de SDK:** 1.5.7 </li> <li> **Valor de muestra:**<br/> “Modern Family” “Blacklist” “New Girl”</li> <li> **Descripción:**<br/>Nombre del episodio/serie<br/>El nombre del episodio solo es necesario si forma parte de una serie.</li></ul> | <ul> <li> **Adobe Analytics:**<br/>(a.media.show)</li> <li> **Heartbeats:**<br/>(s:meta:<br/>a.media.show)</li> </ul> | <ul> <li> **Disponible:**<br/>sí</li> <li> **Variable reservada:**<br/>eVar</li> <li> **Caducidad:**<br/>según HIT</li> <li> **Nombre del informe:**<br/>Programa</li> <li> **Datos de contexto:**<br/>(a.media.show)</li> <li> **Fuente de datos:**<br/>videoshow</li> <li> **Audience Manager:**<br/>(c_contextdata.<br/>a.media.show)</li> </ul> |
+| <ul> <li> **Clave de SDK:**<br/>SHOW</li> <li> **Clave de API:**<br/>media.show</li> <li> **Requerido:**<br/>no</li> <li> **Tipo:**<br/>cadena</li> <li> **Enviado con:**<br/>Inicio de contenidos, Cierre de contenidos</li> <li> **Mínima Versión de SDK:** 1.5.7 </li> <li> **Valor de muestra:**<br/>&quot;Familia Moderna&quot; &quot;La Última Baile&quot; &quot;Niña Nueva&quot;</li> <li> **Descripción:**<br/>Nombre del episodio/serie<br/>El nombre del episodio solo es necesario si forma parte de una serie.</li></ul> | <ul> <li> **Adobe Analytics:**<br/>(a.media.show)</li> <li> **Heartbeats:**<br/>(s:meta:<br/>a.media.show)</li> </ul> | <ul> <li> **Disponible:**<br/>sí</li> <li> **Variable reservada:**<br/>eVar</li> <li> **Caducidad:**<br/>según HIT</li> <li> **Nombre del informe:**<br/>Programa</li> <li> **Datos de contexto:**<br/>(a.media.show)</li> <li> **Fuente de datos:**<br/>videoshow</li> <li> **Audience Manager:**<br/>(c_contextdata.<br/>a.media.show)</li> </ul> |
 
 ### Formato de la emisión
 
@@ -441,13 +444,13 @@ public static MediaObject createMediaObject(java.lang.String name,
 | <ul> <li> **Clave de SDK:**<br/>establecida automáticamente</li> <li> **Clave de API:**<br/>N/D</li> <li> **Tipo:**<br/>cadena</li> <li> **Enviado con:**<br/>Cierre de contenidos</li> <li> **Mínima Versión de SDK:** Cualquiera </li> <li> **Valor de muestra:**<br/> TRUE</li> <li> **Descripción:**<br/>Número de vistas del contenido principal. Se cuenta una vista de segmento de contenido cuando se ha visto al menos un fotograma.<br/> **Importante:** Esto solo ocurre si se configura. Si no se configura, no devuelve ningún valor. </li></ul> | <ul> <li> **Adobe Analytics:**<br/>N/D</li> <li> **Heartbeat:**<br/>N/D</li> </ul> | <ul> <li> **Disponible:**<br/>sí</li> <li> **Variable reservada:**<br/>evento</li> <li> **Nombre del informe:**<br/>Vistas del segmento de contenido</li> <li> **Datos de contexto:**<br/>(a.media.segmentView)</li> <li> **Fuente de datos:**<br/>N/D</li> <li> **Audience Manager:**<br/>(c_contextdata.<br/>a.media.segmentView)</li> </ul> |
 
 <!--
-### Ad Count 
+### Ad Count
 
 | &nbsp;&nbsp;Implementation&nbsp;&nbsp; | Network&nbsp;Parameters | Reporting |
 | --- | --- | --- |
 | <ul> <li> **SDK Key:**<br/> N/A </li> <li> **API Key:**<br/> N/A </li> <li> **Type:**<br/> number </li> <li> **Sent with:**<br/> Media Close </li> <li> **Min. SDK Version:** Any </li> <li> **Sample value:**<br/> 2 </li> <li> **Description:**<br/> The number of ads started during the media session.   <br/> </li></ul> | <ul> <li> **Adobe Analytics:**<br/> N/A </li> <li> **Heartbeats:**<br/> N/A </li> </ul> | <ul> <li> **Available:**<br/> Use custom processing rule </li> <li> **Reserved Variable:**<br/> N/A </li> <li> **Report Name:**<br/> Custom </li> <li> **Context Data:**<br/> (a.media.adCount) </li> <li> **Data Feed:**<br/> N/A </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.adCount) </li> </ul> |
 
-### Chapter Count 
+### Chapter Count
 
 | &nbsp;&nbsp;Implementation&nbsp;&nbsp; | Network&nbsp;Parameters | Reporting |
 | --- | --- | --- |
@@ -482,4 +485,3 @@ public static MediaObject createMediaObject(java.lang.String name,
 * Android - [MediaHeartbeatConfig](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/com/adobe/primetime/va/simple/MediaHeartbeatConfig.html)
 * iOS - [ADBMediaHeartbeatConfig](https://adobe-marketing-cloud.github.io/media-sdks/reference/ios/Classes/ADBMediaHeartbeatConfig.html)
 * JavaScript - [MediaHeartbeatConfig](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/MediaHeartbeatConfig.html)
-
