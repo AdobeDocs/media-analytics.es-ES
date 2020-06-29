@@ -2,11 +2,11 @@
 title: Descarga de SDK
 description: Vínculos a descargas de SDK para plataformas disponibles, como Android, iOS, JavaScript, Chromecast y Roku.
 uuid: a619fbb8-693e-4583-8dad-0ff875e715f8
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: fe109e9d670bf7fb6379f3c3631d10cecd2d48ac
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '493'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -40,15 +40,15 @@ ht-degree: 89%
 | Componente de MA Launch   | Documentación | Ejemplos |
 |---|---|---|
 | **Extensión web** | [Extensión de Adobe Media Analytics para audio y vídeo](https://docs.adobe.com/content/help/es-ES/launch/using/extensions-ref/adobe-extension/media-analytics-extension/overview.html) | [Extensión de Adobe Media Analytics para audio y vídeo](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/samples/launch/js/2.x) |
-| **Extensión web (SDK 3.x)** | [Extensión de Adobe Media Analytics para audio y vídeo](https://docs.adobe.com/content/help/en/launch/using/extensions-ref/adobe-extension/media-analytics-3x-extension/overview.html) | [Extensión de Adobe Media Analytics (3.x SDK) para audio y vídeo](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/samples/launch/js/3.x) |
-| **Extensión móvil** | [Adobe Analytics - Media Analytics para audio y vídeo](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics) | [Adobe Analytics - Media Analytics para la extensión de audio y vídeo](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/samples/launch/mobile) |
+| **Extensión web (SDK 3.x)** | [Extensión de Adobe Media Analytics para audio y vídeo](https://docs.adobe.com/content/help/es-ES/launch/using/extensions-ref/adobe-extension/media-analytics-3x-extension/overview.html) | [Extensión de Adobe Media Analytics (3.x SDK) para audio y vídeo](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/samples/launch/js/3.x) |
+| **Extensión móvil** | [Adobe Analytics Media Analytics para audio y vídeo](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics) | [Adobe Analytics extensión de Media Analytics para audio y vídeo](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/samples/launch/mobile) |
 
 ## Descarga de Media SDK 1.x {#download-the-1.x-media-sDKs}
 
 | SDK 1.x  |  Descargas de Media SDK  |  Guías de introducción  |
 | --- | --- | --- |
 | Android | [SDK para Android v1.5.8](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/releases/tag/android-v1.5.8) | [Primeros pasos: Media 1.x para Android](setup/vhl-dev-guide-v15_android.pdf) |
-| iOS | [SDK para iOS 1.5.9](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/releases/tag/ios-v1.5.9) | [Primeros pasos: Media 1.x para IOS](setup/vhl-dev-guide-v15_ios.pdf) |
+| iOS | [SDK para iOS 1.5.9](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/releases/tag/ios-v1.5.9) | [Primeros pasos: Media 1.x para iOS](setup/vhl-dev-guide-v15_ios.pdf) |
 | JavaScript | [SDK para JavaScript 1.5.7](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/releases/tag/js-v1.5.7) | [Primeros pasos: Media 1.x para JS](setup/vhl-dev-guide-v15_js.pdf) |
 | TVML | [SDK para TVML 1.0.0](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/releases/tag/tvml-v1.0.0) | [Primeros pasos: Media 1.x para TVML](setup/vhl_tvml.pdf) |
 | Apple TV | SDK para Apple TV v1.0.0 (póngase en contacto con el [Servicio de atención al cliente](https://helpx.adobe.com/es/marketing-cloud/contact-support.html) para obtener el SDK 1.x heredado) | [Primeros pasos: Media 1.x para Apple TV](setup/vhl-dev-guide-v1x_appletv.pdf) |
