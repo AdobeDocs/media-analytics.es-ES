@@ -3,11 +3,11 @@ audience: end-user
 user-guide-title: Adobe Analytics para audio y vídeo
 product: adobe analytics
 sub-product: media analytics
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: f90eec31389431fe5275760d510926fb01c33d9a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '809'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -49,33 +49,33 @@ ht-degree: 83%
          + [Seguimiento de reproducción principal en Android](sdk-implement/track-av-playback/track-core/track-core-android.md)
          + [Seguimiento de reproducción principal en iOS](sdk-implement/track-av-playback/track-core/track-core-ios.md)
          + Seguimiento de reproducción principal en JavaScript {#track-core-javascript}
-            + [Seguimiento de la reproducción principal en JavaScript 2.x](sdk-implement/track-av-playback/track-core/track-core-javascript/track-core-js.md)
-            + [Seguimiento de la reproducción principal en JavaScript 3.x](sdk-implement/track-av-playback/track-core/track-core-javascript/track-core-js3.md)
+            + [Seguimiento de reproducción principal en JavaScript 2.x](sdk-implement/track-av-playback/track-core/track-core-javascript/track-core-js.md)
+            + [Seguimiento de reproducción principal en JavaScript 3.x](sdk-implement/track-av-playback/track-core/track-core-javascript/track-core-js3.md)
          + [Seguimiento de reproducción principal en Chromecast](sdk-implement/track-av-playback/track-core/track-core-chromecast.md)
          + [Seguimiento de reproducción principal en Roku](sdk-implement/track-av-playback/track-core/track-core-roku.md)
       + Seguimiento del almacenamiento en búfer {#track-buffering}
          + [Seguimiento del almacenamiento en búfer en Android](sdk-implement/track-av-playback/track-buffering/track-buffering-android.md)
          + [Seguimiento del almacenamiento en búfer en iOS](sdk-implement/track-av-playback/track-buffering/track-buffering-ios.md)
          + Seguimiento del almacenamiento en búfer en JavaScript {#track-buffering-js}
-            + [Seguimiento de almacenamiento en búfer en JavaScript 2.x](sdk-implement/track-av-playback/track-buffering/track-buffering-js/track-buffering-js.md)
-            + [Seguimiento de almacenamiento en búfer en JavaScript 3.x](sdk-implement/track-av-playback/track-buffering/track-buffering-js/track-buffering-js3.md)
+            + [Seguimiento del almacenamiento en búfer en JavaScript 2.x](sdk-implement/track-av-playback/track-buffering/track-buffering-js/track-buffering-js.md)
+            + [Seguimiento del almacenamiento en búfer en JavaScript 3.x](sdk-implement/track-av-playback/track-buffering/track-buffering-js/track-buffering-js3.md)
          + [Seguimiento del almacenamiento en búfer en Chromecast](sdk-implement/track-av-playback/track-buffering/track-buffering-chromecast.md)
          + [Seguimiento del almacenamiento en búfer en Roku](sdk-implement/track-av-playback/track-buffering/track-buffering-roku.md)
       + Seguimiento de llamada a otro punto del contenido {#track-seeking}
          + [Seguimiento de llamada a otro punto del contenido en Android](sdk-implement/track-av-playback/track-seeking/track-seeking-android.md)
          + [Seguimiento de llamada a otro punto del contenido en iOS](sdk-implement/track-av-playback/track-seeking/track-seeking-ios.md)
          + Seguimiento de llamada a otro punto del contenido en JavaScript {#track-seeking-js}
-            + [Búsqueda de seguimiento en JavaScript 2.x](sdk-implement/track-av-playback/track-seeking/track-seeking-js/track-seeking-js.md)
-            + [Seguimiento de búsqueda en JavaScript 3.x](sdk-implement/track-av-playback/track-seeking/track-seeking-js/track-seeking-js3.md)
+            + [Seguimiento de llamada a otro punto del contenido en JavaScript 2.x](sdk-implement/track-av-playback/track-seeking/track-seeking-js/track-seeking-js.md)
+            + [Seguimiento de llamada a otro punto del contenido en JavaScript 3.x](sdk-implement/track-av-playback/track-seeking/track-seeking-js/track-seeking-js3.md)
          + [Seguimiento de llamada a otro punto del contenido en Chromecast](sdk-implement/track-av-playback/track-seeking/track-seeking-chromecast.md)
          + [Seguimiento de llamada a otro punto del contenido en Roku](sdk-implement/track-av-playback/track-seeking/track-seeking-roku.md)
       + Implementación de metadatos estándar {#impl-std-metadata}
          + [Implementación de metadatos estándar en Android](sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-android.md)
          + [Implementación de metadatos estándar en iOS](sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-ios.md)
          + [Claves de metadatos de iOS](sdk-implement/track-av-playback/impl-std-metadata/ios-metadata-keys.md)
-         + Implement Standard Metadata on JavaScript {#impl-std-md-js}
-            + [Implementar metadatos estándar en JavaScript 2.x](sdk-implement/track-av-playback/impl-std-metadata/impl-std-md-js/impl-std-metadata-js.md)
-            + [Implementar metadatos estándar en JavaScript 3.x](sdk-implement/track-av-playback/impl-std-metadata/impl-std-md-js/impl-std-metadata-js3.md)
+         + Implementación de metadatos estándar en JavaScript {#impl-std-md-js}
+            + [Implementación de metadatos estándar en JavaScript 2.x](sdk-implement/track-av-playback/impl-std-metadata/impl-std-md-js/impl-std-metadata-js.md)
+            + [Implementación de metadatos estándar en JavaScript 3.x](sdk-implement/track-av-playback/impl-std-metadata/impl-std-md-js/impl-std-metadata-js3.md)
          + [Implementación de metadatos estándar en Chromecast](sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-chromecast.md)
          + [Parámetros de metadatos estándar: Chromecast ](sdk-implement/track-av-playback/impl-std-metadata/chromecast-metadata.md)
          + [Implementación de metadatos estándar en Roku](sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
@@ -85,24 +85,24 @@ ht-degree: 83%
       + [Seguimiento de anuncios en Android](sdk-implement/track-ads/track-ads-android.md)
       + [Seguimiento de anuncios en iOS](sdk-implement/track-ads/track-ads-ios.md)
       + Seguimiento de anuncios en JavaScript {#track-ads-js}
-         + [Seguimiento de publicidades en JavaScript 2.x](sdk-implement/track-ads/track-ads-js/track-ads-js.md)
-         + [Seguimiento de publicidades en JavaScript 3.x](sdk-implement/track-ads/track-ads-js/track-ads-js3.md)
+         + [Seguimiento de anuncios en JavaScript 2.x](sdk-implement/track-ads/track-ads-js/track-ads-js.md)
+         + [Seguimiento de anuncios en JavaScript 3.x](sdk-implement/track-ads/track-ads-js/track-ads-js3.md)
       + [Seguimiento de anuncios en Chromecast](sdk-implement/track-ads/track-ads-chromecast.md)
       + [Seguimiento de anuncios en Roku](sdk-implement/track-ads/track-ads-roku.md)
       + Implementación de los metadatos de anuncios estándar {#impl-std-ad-metadata}
          + [Implementación de metadatos de publicidad estándar en Android](sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-android.md)
          + [Implementación de metadatos de publicidad estándar en iOS](sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-ios.md)
-         + Implement Standard ad Metadata on JavaScript {#impl-std-ad-md-js}
-            + [Implementar metadatos de anuncio estándar en JavaScript 2.x](sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-md-js/impl-std-ad-metadata-js.md)
-            + [Implementar metadatos de anuncio estándar en JavaScript 3.x](sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-md-js/impl-std-ad-metadata-js3.md)
+         + Implementación de metadatos de publicidad estándar en JavaScript {#impl-std-ad-md-js}
+            + [Implementación de metadatos de publicidad estándar en JavaScript 2.x](sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-md-js/impl-std-ad-metadata-js.md)
+            + [Implementación de metadatos de publicidad estándar en JavaScript 3.x](sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-md-js/impl-std-ad-metadata-js3.md)
          + [Implementación de metadatos de publicidad estándar en Roku](sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-roku.md)
    + Seguimiento de capítulos y segmentos {#track-chapters}
       + [Información general](sdk-implement/track-chapters/track-chapters-overview.md)
       + [Seguimiento de capítulos y segmentos en Android](sdk-implement/track-chapters/track-chapters-android.md)
       + [Seguimiento de capítulos y segmentos en iOS](sdk-implement/track-chapters/track-chapters-ios.md)
       + Seguimiento de capítulos y segmentos en JavaScript {#track-chapters-js}
-         + [Rastrear capítulos y segmentos en JavaScript 2.x](sdk-implement/track-chapters/track-chapters-js/track-chapters-js.md)
-         + [Rastrear capítulos y segmentos en JavaScript 3.x](sdk-implement/track-chapters/track-chapters-js/track-chapters-js3.md)
+         + [Seguimiento de capítulos y segmentos en JavaScript 2.x](sdk-implement/track-chapters/track-chapters-js/track-chapters-js.md)
+         + [Seguimiento de capítulos y segmentos en JavaScript 3.x](sdk-implement/track-chapters/track-chapters-js/track-chapters-js3.md)
       + [Seguimiento de capítulos y segmentos en Chromecast](sdk-implement/track-chapters/track-chapters-chromecast.md)
       + [Seguimiento de capítulos y segmentos en Roku](sdk-implement/track-chapters/track-chapters-roku.md)
    + Seguimiento de la calidad de la experiencia {#track-qos}
@@ -220,6 +220,6 @@ ht-degree: 83%
    + [Información general](sdk-implement/player-state-tracking/player-state-overview.md)
    + [Estados estándar y personalizados](sdk-implement/player-state-tracking/standard-and-custom-states.md)
    + [Implementación y sistema de informes](sdk-implement/player-state-tracking/implementation-and-reporting.md)
-   + [Ejemplos de seguimiento de estado del reproductor](sdk-implement/player-state-tracking/player-state-examples.md)
+   + [Ejemplos de seguimiento del estado de reproducción](sdk-implement/player-state-tracking/player-state-examples.md)
 + Recursos adicionales {#additional-resources}
    + [Notas de la versión](additional-resources/doc-updates.md)
