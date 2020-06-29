@@ -1,11 +1,11 @@
 ---
 title: Implementación y sistema de informes
-description: 'En este tema se describe cómo implementar la función de seguimiento de estado del reproductor, incluyendo '
-translation-type: tm+mt
+description: En este tema se describe cómo implementar la función de seguimiento de estado del reproductor, incluyendo
+translation-type: ht
 source-git-commit: 1b48565bcc5c9a87e5fabbc906049ab791bf89cc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '333'
-ht-degree: 58%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ Media SDK incluye dos nuevos métodos para el seguimiento de estado personalizad
 `trackStateClose("state_name")`
 
 
-The Media Collection API includes two new events that have `media.stateName` as the required parameter:
+La API de recopilación de medios incluye dos nuevos eventos que tienen `media.stateName` como parámetro obligatorio:
 
 `stateStart` y `stateEnd`
 
@@ -90,14 +90,14 @@ Las métricas proporcionadas para cada estado individual se calculan y transfier
 
 ## Creación de informes
 
-Todas las métricas de estado del reproductor se pueden utilizar para cualquier visualización de sistema de informes disponible en Analysis Workspace o en un componente (segmento, métricas calculadas) una vez que un grupo de informes esté habilitado para el seguimiento de estado del reproductor. Las nuevas métricas podrían habilitarse desde la Consola de administración para cada informe individual mediante la Configuración de Media Sistema de informes (Editar configuración > Administración de medios > Media Sistema de informes).
+Todas las métricas de estado del reproductor se pueden utilizar para cualquier visualización de creación de informes disponible en Analysis Workspace o en un componente (segmento, métricas calculadas) una vez que un grupo de informes esté habilitado para el seguimiento de estado del reproductor. Las nuevas métricas podrían habilitarse desde Admin Console para cada informe individual mediante la configuración de creación de informes de medios (Editar configuración > Administración de medios > Creación de informes de medios).
 
 ![](assets/report-setup.png)
 
-En Espacio de trabajo de Analytics, todas las propiedades nuevas se encuentran en el panel Métricas. Por ejemplo, puede buscar por `full screen` para vista los datos de pantalla completa en el panel de métricas.
+En Analytics Workspace, todas las propiedades nuevas se encuentran en el panel de métricas. Por ejemplo, puede buscar por `full screen` para ver los datos de pantalla completa en el panel de métricas.
 
 ![](assets/full-screen-report.png)
 
 ## Importación de métricas declaradas por el reproductor a Adobe Experience Platform
 
-Los datos almacenados en Analytics se pueden usar para cualquier fin y las métricas del estado del reproductor se pueden importar en la plataforma de Adobe Experience Platform mediante XDM y se pueden usar con Customer Journey Analytics. Las propiedades de estado estándar tienen propiedades específicas, mientras que los estados personalizados son propiedades disponibles mediante las eventos personalizadas. Para obtener información adicional sobre las propiedades de estado estándar, consulte la sección Lista de *propiedades para identidades* XDM en la página Parámetros [de estado del](/help/metrics-and-metadata/player-state-parameters.md) reproductor.
+Los datos almacenados en Analytics se pueden usar para cualquier fin y las métricas del estado del reproductor se pueden importar en Adobe Experience Platform mediante XDM y se pueden usar con Customer Journey Analytics. Las propiedades de estado estándar tienen propiedades específicas, mientras que los estados personalizados son propiedades disponibles mediante los eventos personalizados. Para obtener información adicional sobre las propiedades de estado estándar, consulte la sección *Lista de propiedades para identidades XDM* en la página [Parámetros de estado del reproductor](/help/metrics-and-metadata/player-state-parameters.md).
