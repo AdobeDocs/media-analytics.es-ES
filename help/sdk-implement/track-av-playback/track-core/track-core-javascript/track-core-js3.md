@@ -1,19 +1,19 @@
 ---
-title: Rastree la reproducción principal mediante JavaScript v3.x
-description: En este tema se describe cómo implementar el seguimiento principal mediante el SDK de medios en un navegador mediante aplicaciones JavaScript 3.x.
-translation-type: tm+mt
+title: Seguimiento de reproducción principal con JavaScript v3.x
+description: En este tema se describe cómo implementar el seguimiento principal mediante el SDK de medios en un explorador con aplicaciones JavaScript 3.x.
+translation-type: ht
 source-git-commit: 40d75ef32596e915ac07c173b4595bb78db3688d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '643'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
 
-# Rastree la reproducción principal mediante JavaScript 3.x{#track-core-playback-on-javascript}
+# Seguimiento de reproducción principal con JavaScript 3.x{#track-core-playback-on-javascript}
 
 >[!IMPORTANT]
->Esta documentación abarca el seguimiento en la versión 3.x del SDK. If you are implementing any previous versions of the SDK, you can download the Developers Guides here: [Download SDKs](/help/sdk-implement/download-sdks.md)
+>Esta documentación abarca el seguimiento en la versión 3.x del SDK. Si va implementar cualquier versión anterior del SDK, puede descargar las guías del desarrollador aquí: [Descargar SDK](/help/sdk-implement/download-sdks.md)
 
 1. **Configuración de seguimiento inicial**
 
@@ -23,11 +23,11 @@ ht-degree: 81%
 
    | Nombre de variable | Tipo | Descripción |
    | --- | --- | --- |
-   | `name` | string | Cadena no vacía que indica el nombre del medio. |
-   | `id` | string | Cadena no vacía que denota identificador de medios único. |
-   | `length` | entero | Número positivo que indica la longitud del medio en segundos. Utilice 0 si se desconoce la longitud. |
+   | `name` | string | Cadena no vacía que indica el nombre de los medios. |
+   | `id` | string | Cadena no vacía que indica un identificador de medios único. |
+   | `length` | entero | Número positivo que indica la longitud de los medios en segundos. Utilice 0 si se desconoce la longitud. |
    | `streamType` | string |  |
-   | `mediaType` |  | Tipo de medio (audio o vídeo). |
+   | `mediaType` |  | Tipo de medios (audio o vídeo). |
 
    **`StreamType`Constantes de:**
 
@@ -53,7 +53,7 @@ ht-degree: 81%
 
 1. **Adjuntar metadatos**
 
-   Si lo desea, adjunte metadatos estándar o personalizados a la sesión de seguimiento mediante variables de datos de contexto.
+   Opcionalmente, se pueden adjuntar metadatos estándar o personalizados a la sesión de seguimiento mediante el uso de variables de datos de contexto.
 
    * **Metadatos estándar**
 
@@ -112,7 +112,7 @@ ht-degree: 81%
 
    >[!NOTE]
    >
-   >If you are not using contextData, simply send an empty object for the `data` argument in `trackSessionStart`.
+   >Si no utiliza datos de contexto, envíe un objeto vacío para el argumento `data` en `trackSessionStart`.
 
 1. **Realizar un seguimiento del inicio real de la reproducción**
 
