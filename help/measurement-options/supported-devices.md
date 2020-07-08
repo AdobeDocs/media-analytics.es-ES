@@ -1,9 +1,9 @@
 ---
 title: Dispositivos y plataformas compatibles
 description: Adobe Analytics para audio y vídeo garantiza que cada flujo de medios se recopile y se informe en todos los dispositivos.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 4db4e4281ba9c7af078c18d03f73b6e1e007a0e8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '338'
 ht-degree: 100%
 
@@ -41,7 +41,7 @@ En la tabla siguiente, se detallan los dispositivos y las plataformas actualment
 |  | ROKU |  | ![](/help/assets/icon-blue-check.png)   <br>(BrightScript) | ![](/help/assets/icon-blue-check.png)<br>(nativo) |
 |  | Fire TV (sistema operativo Fire) | ![](/help/assets/icon-blue-check.png) | ![](/help/assets/icon-blue-check.png) <sup>1</sup> | ![](/help/assets/icon-blue-check.png) |
 |  | Android TV | ![](/help/assets/icon-blue-check.png) | ![](/help/assets/icon-blue-check.png) <sup>1</sup> | ![](/help/assets/icon-blue-check.png) |
-|  | Chromecast |  | ![](/help/assets/icon-blue-check.png)    | ![](/help/assets/icon-blue-check.png) |
+|  | Chromecast |  | ![](/help/assets/icon-blue-check.png) | ![](/help/assets/icon-blue-check.png) |
 |  | Consolas de juegos (por ejemplo, Xbox ONE, Sony PS3/PS4) |  |  | ![](/help/assets/icon-blue-check.png) |
 |  | Definir los cuadros superiores (por ejemplo, xfinity X1) |  |  | ![](/help/assets/icon-blue-check.png) |
 |  | Televisores inteligentes (por ejemplo, Samsung, LG, Sony, Vizio) |  | ![](/help/assets/icon-blue-check.png)   <br>(basado en la Web) | ![](/help/assets/icon-blue-check.png) |
@@ -50,4 +50,4 @@ En la tabla siguiente, se detallan los dispositivos y las plataformas actualment
 
 1. La compatibilidad con estos SDK finaliza el 31 de agosto de 2021. Para obtener más información, consulte [Preguntas frecuentes sobre el fin de la asistencia del SDK de Media Analytics](/help/sdk-implement/end-of-support-faqs.md).
 
-Para obtener información adicional sobre las versiones de plataforma mínimas admitidas para cada SDK, consulte [Compatibilidad con versiones de plataforma mínima](https://docs.adobe.com/content/help/es-ES/media-analytics/using/sdk-implement/setup/setup-overview.html)
+Para obtener información adicional sobre las versiones de plataforma mínimas admitidas para cada SDK, consulte [Compatibilidad con versiones de plataforma mínima](https://docs.adobe.com/content/help/es-ES/media-analytics/using/sdk-implement/setup/setup-overview.html).
