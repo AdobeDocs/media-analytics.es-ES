@@ -1,8 +1,11 @@
 ---
 title: Atribución de flujo de transmisión de contenido
 description: null
-translation-type: ht
-source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
+translation-type: tm+mt
+source-git-commit: cab9724476f7864ac23c4293e402e0443771cb1e
+workflow-type: tm+mt
+source-wordcount: '209'
+ht-degree: 100%
 
 ---
 
@@ -18,8 +21,8 @@ Con Atribución de flujo de transmisión de contenido, los clientes ahora pueden
 También deberá volver a habilitar la configuración del seguimiento de contenido desde Admin console para cada informe para el que desee habilitar esta función.
 
 >[!NOTE]
->Las métricas de contenidos _no_ están disponibles para su uso fuera del seguimiento de contenido, ya que la mayoría de ellas las calcula Media Analytics
->en función de los eventos de latidos. Además, es importante que las métricas de contenidos no se vean infladas por implementaciones diferentes.
+>
+>Las métricas de contenidos _no_ están disponibles para su uso fuera del seguimiento de contenido, ya que la mayoría de ellas las calcula Media Analytics en función de los eventos de latidos. Además, es importante que las métricas de contenidos no se vean infladas por implementaciones diferentes.
 
 ## Cómo
 
