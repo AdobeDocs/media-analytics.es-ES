@@ -6,7 +6,7 @@ translation-type: tm+mt
 source-git-commit: e25c4d0add969ad31393f2eeb33b1a12b7205586
 workflow-type: tm+mt
 source-wordcount: '669'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -27,9 +27,9 @@ En las tablas siguientes se proporcionan las correspondencias entre la solución
 | --- | --- | --- |
 | Contenido | <br>Caducidad predeterminada de la eVar: Visita | Contenido |
 | Tipo de contenido | <br>Caducidad predeterminada de la eVar: Vista de página | Tipo de contenido |
-| Tiempo invertido en contenido | Tipo de evento<br>: Contador | Tiempo invertido en contenido |
-| Inicios de vídeo | Tipo de evento<br>: Contador | Inicios de vídeo |
-| Vídeos completados | Tipo de evento<br>: Contador | Contenido finalizado |
+| Tiempo invertido en contenido | Tipo de evento: <br>Contador | Tiempo invertido en contenido |
+| Inicios de vídeo | Tipo de evento: <br>Contador | Inicios de vídeo |
+| Vídeos completados | Tipo de evento: <br>Contador | Contenido finalizado |
 
 ### Variables de módulo multimedia
 
@@ -77,14 +77,14 @@ En las tablas siguientes se proporcionan las correspondencias entre la solución
 | name | `name`: (requerido) nombre o ID del anuncio. | name | `createAdObject(` <br> `  name, ` <br> `  adId, ` <br> `  position, ` <br> `  length)` |
 | length | `length`: (requerido) duración del anuncio. | length | `createAdObject(` <br> `  name, ` <br> `  adId, ` <br> `  position, ` <br> `  length)` |
 | playerName | `playerName`: (requerido) nombre del reproductor de contenidos que se utilizó para ver el anuncio. | playerName | `MediaHeartbeatConfig.` <br> `  playerName` |
-| parentName | `parentName`: nombre o ID del contenido primario donde está incrustado el anuncio. | N/D | Heredado automáticamente. |
-| parentPod | `parentPod`: la posición en el contenido principal en la que se reprodujo el anuncio. | position | `createAdBreakObject(` <br> `  name, ` <br> `  position, ` <br> `  startTime)` |
-| parentPodPosition | `parentPodPosition`: la posición dentro de la secuencia en la que se reprodujo el anuncio. | position | `createAdObject(` <br> `  name, ` <br> `  adId, ` <br> `  position, ` <br> `  length)` |
-| CPM | `CPM`: el CPM o CPM cifrado (con el prefijo “~”) que se aplica a esta reproducción. | N/D | No disponible de forma predeterminada en Media Analytics. |
-| Media.click | `s.Media.click(name, offset)` | N/D | Utilice una llamada de análisis de vínculos personalizada para rastrear clics. |
+| parentName | `parentName`: Nombre o ID del contenido primario donde está incrustado el anuncio. | N/D | Heredado automáticamente. |
+| parentPod | `parentPod`: Posición en el contenido primario en que se reprodujo el anuncio. | position | `createAdBreakObject(` <br> `  name, ` <br> `  position, ` <br> `  startTime)` |
+| parentPodPosition | `parentPodPosition`: Posición dentro del pod donde se reproduce el anuncio. | position | `createAdObject(` <br> `  name, ` <br> `  adId, ` <br> `  position, ` <br> `  length)` |
+| CPM | `CPM`: CPM o CPM cifrado (con el prefijo “~”) que se aplica a esta reproducción. | N/D | No disponible de forma predeterminada en Media Analytics. |
+| Media.click | `s.Media.click(name, offset)` | N/D | Utilice una llamada de análisis de vínculo personalizado para hacer un seguimiento de los clics. |
 | Media.close | `s.Media.close(mediaName)` | trackSessionEnd | `trackSessionEnd()` |
 | Media.complete | `s.Media.complete(name, offset)` | trackComplete | `trackComplete()` |
 | Media.play | `s.Media.play(` <br> `  name,` <br> `  offset,` <br> `  segmentNum,` <br> `  segment, ` <br> `  segmentLength)` | trackPlay | `trackPlay()` |
-| Media.stop | `s.Media.stop(mediaName, mediaOffset)` | trackPause<br> o <br>trackEvent | `trackPause()` <br> o `trackEvent(` <br> `  MediaHeartbeat.` <br> `  Event.` <br> `  SeekStart)` <br> o <br> `trackEvent(` <br> `  MediaHeartbeat.` <br> `  Event.` <br> `  BufferStart);` |
+| Media.stop | `s.Media.stop(mediaName, mediaOffset)` | trackPause<br> o <br>trackEvent | `trackPause()` <br> O bien `trackEvent(` <br> `  MediaHeartbeat.` <br> `  Event.` <br> `  SeekStart)` <br> O bien <br> `trackEvent(` <br> `  MediaHeartbeat.` <br> `  Event.` <br> `  BufferStart);` |
 | Media.monitor | `s.Media.monitor(s, media)` | Utilice metadatos personalizados o estándar para establecer variables adicionales. | `var customVideoMetadata = ` <br> `{` <br> `  isUserLoggedIn: ` <br> `    "false",` <br> `  tvStation: ` <br> `    "Sample TV station",` <br> `  programmer: ` <br> `    "Sample programmer"` <br> `};` <br> `...` <br> `var standardVideoMetadata ` <br> `  = {};` <br> `standardVideoMetadata` <br> `  [MediaHeartbeat.` <br> `   VideoMetadataKeys.` <br> `   EPISODE] = ` <br> `  "Sample Episode";` <br> `standardVideoMetadata` <br> `  [MediaHeartbeat.` <br> `   VideoMetadataKeys.` <br> `   SHOW] = "Sample Show";` <br> `...` <br> `mediaObject.setValue(` <br> `  MediaHeartbeat.` <br> `  MediaObjectKey.` <br> `  StandardVideoMetadata, ` <br> `  standardVideoMetadata);` |
 | Media.track | `s.Media.track(mediaName)` | N/D | La frecuencia de llamada de seguimiento se configura automáticamente. |
