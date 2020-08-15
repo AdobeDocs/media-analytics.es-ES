@@ -2,10 +2,10 @@
 title: Descarga de SDK
 description: Vínculos a descargas de SDK para plataformas disponibles, como Android, iOS, JavaScript, Chromecast y Roku.
 uuid: a619fbb8-693e-4583-8dad-0ff875e715f8
-translation-type: ht
-source-git-commit: fe109e9d670bf7fb6379f3c3631d10cecd2d48ac
-workflow-type: ht
-source-wordcount: '493'
+translation-type: tm+mt
+source-git-commit: b127e50efd0e5ecbb19ed617b1d1afc31d7d9417
+workflow-type: tm+mt
+source-wordcount: '517'
 ht-degree: 100%
 
 ---
@@ -23,6 +23,7 @@ ht-degree: 100%
 | Media SDK 3.x  | Últimas descargas de Media SDK |  API   |  Documentación  |
 | --- | --- | --- | --- |
 | JavaScript | [Media SDK para JS v3.0](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/js-v3.0.0) | [Referencia de la API de JS](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript_3x/index.html) | [Configuración de JavaScript 3.x](/help/sdk-implement/setup/setup-javascript/set-up-js-3.md) |
+| Chromecast | [Media SDK para Chromecast v3.0.0](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/chromecast-v3.0.0) | [Referencia de la API de Chromecast](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/) | [Configuración de Chromecast ](/help/sdk-implement/setup/set-up-chromecast.md) |
 
 
 ## Descarga de Media SDK 2.x {#download-2x-sdks}
@@ -40,7 +41,7 @@ ht-degree: 100%
 | Componente de MA Launch   | Documentación | Ejemplos |
 |---|---|---|
 | **Extensión web** | [Extensión de Adobe Media Analytics para audio y vídeo](https://docs.adobe.com/content/help/es-ES/launch/using/extensions-ref/adobe-extension/media-analytics-extension/overview.html) | [Extensión de Adobe Media Analytics para audio y vídeo](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/samples/launch/js/2.x) |
-| **Extensión web (SDK 3.x)** | [Extensión de Adobe Media Analytics para audio y vídeo](https://docs.adobe.com/content/help/es-ES/launch/using/extensions-ref/adobe-extension/media-analytics-3x-extension/overview.html) | [Extensión de Adobe Media Analytics (3.x SDK) para audio y vídeo](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/samples/launch/js/3.x) |
+| **Extensión web (SDK 3.x)** | [Extensión de Adobe Media Analytics para audio y vídeo](https://docs.adobe.com/content/help/es-ES/launch/using/extensions-ref/adobe-extension/media-analytics-3x-extension/overview.html) | [Extensión de Adobe Media Analytics (3.x SDK) for Audio and Video](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/samples/launch/js/3.x) |
 | **Extensión móvil** | [Adobe Analytics Media Analytics para audio y vídeo](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics) | [Adobe Analytics extensión de Media Analytics para audio y vídeo](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/samples/launch/mobile) |
 
 ## Descarga de Media SDK 1.x {#download-the-1.x-media-sDKs}
@@ -51,5 +52,5 @@ ht-degree: 100%
 | iOS | [SDK para iOS 1.5.9](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/releases/tag/ios-v1.5.9) | [Primeros pasos: Media 1.x para iOS](setup/vhl-dev-guide-v15_ios.pdf) |
 | JavaScript | [SDK para JavaScript 1.5.7](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/releases/tag/js-v1.5.7) | [Primeros pasos: Media 1.x para JS](setup/vhl-dev-guide-v15_js.pdf) |
 | TVML | [SDK para TVML 1.0.0](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/releases/tag/tvml-v1.0.0) | [Primeros pasos: Media 1.x para TVML](setup/vhl_tvml.pdf) |
-| Apple TV | SDK para Apple TV v1.0.0 (póngase en contacto con el [Servicio de atención al cliente](https://helpx.adobe.com/es/marketing-cloud/contact-support.html) para obtener el SDK 1.x heredado) | [Primeros pasos: Media 1.x para Apple TV](setup/vhl-dev-guide-v1x_appletv.pdf) |
-| Chromecast | SDK para Chromecast v1.0.0 (póngase en contacto con el [Servicio de atención al cliente](https://helpx.adobe.com/es/marketing-cloud/contact-support.html) para obtener el SDK 1.x heredado) | [Primeros pasos: Media 1.x para Chromecast](setup/chromecast_1.x_sdk.pdf) |
+| Apple TV | SDK para Apple TV v1.0.0 (póngase en contacto con el [Servicio de atención al cliente](https://helpx.adobe.com/marketing-cloud/contact-support.html) para obtener el SDK 1.x heredado) | [Primeros pasos: Media 1.x para Apple TV](setup/vhl-dev-guide-v1x_appletv.pdf) |
+| Chromecast | SDK para Chromecast v1.0.0 (póngase en contacto con el [Servicio de atención al cliente](https://helpx.adobe.com/marketing-cloud/contact-support.html) para obtener el SDK 1.x heredado) | [Primeros pasos: Media 1.x para Chromecast](setup/chromecast_1.x_sdk.pdf) |
