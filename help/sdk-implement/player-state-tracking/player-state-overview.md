@@ -1,11 +1,11 @@
 ---
 title: Acerca del seguimiento del estado de reproducción
 description: En este tema se describe la función de seguimiento del estado del reproductor, que incluye requisitos y directrices para la implementación y sistemas de informes de estados de reproductor.
-translation-type: ht
-source-git-commit: 1b48565bcc5c9a87e5fabbc906049ab791bf89cc
-workflow-type: ht
-source-wordcount: '397'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 4c11efd0b8bb457246c746621e7fbb9fbda621b2
+workflow-type: tm+mt
+source-wordcount: '404'
+ht-degree: 98%
 
 ---
 
@@ -31,6 +31,7 @@ El seguimiento del estado del reproductor ofrece las siguientes ventajas:
 
 El seguimiento de estado del reproductor requiere una de las siguientes opciones para la recopilación de datos:
 * Media JS SDK 3.0+
+* SDK de Chromecast 3.0 para soluciones de Adobe Marketing Cloud
 * Extensión de Media Analytics (para uso con los SDK de Adobe Experience Platform (AEP))
    * Web: Adobe Media Analytics (SDK 3.x) para audio y vídeo v1.0 o posterior
    * Móvil: extensión de Adobe Media Analytics para audio y vídeo versión 2.0 o posterior
