@@ -2,9 +2,9 @@
 title: Descarga de SDK
 description: Vínculos a descargas de SDK para plataformas disponibles, como Android, iOS, JavaScript, Chromecast y Roku.
 uuid: a619fbb8-693e-4583-8dad-0ff875e715f8
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: b127e50efd0e5ecbb19ed617b1d1afc31d7d9417
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '517'
 ht-degree: 100%
 
@@ -52,5 +52,5 @@ ht-degree: 100%
 | iOS | [SDK para iOS 1.5.9](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/releases/tag/ios-v1.5.9) | [Primeros pasos: Media 1.x para iOS](setup/vhl-dev-guide-v15_ios.pdf) |
 | JavaScript | [SDK para JavaScript 1.5.7](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/releases/tag/js-v1.5.7) | [Primeros pasos: Media 1.x para JS](setup/vhl-dev-guide-v15_js.pdf) |
 | TVML | [SDK para TVML 1.0.0](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/releases/tag/tvml-v1.0.0) | [Primeros pasos: Media 1.x para TVML](setup/vhl_tvml.pdf) |
-| Apple TV | SDK para Apple TV v1.0.0 (póngase en contacto con el [Servicio de atención al cliente](https://helpx.adobe.com/marketing-cloud/contact-support.html) para obtener el SDK 1.x heredado) | [Primeros pasos: Media 1.x para Apple TV](setup/vhl-dev-guide-v1x_appletv.pdf) |
-| Chromecast | SDK para Chromecast v1.0.0 (póngase en contacto con el [Servicio de atención al cliente](https://helpx.adobe.com/marketing-cloud/contact-support.html) para obtener el SDK 1.x heredado) | [Primeros pasos: Media 1.x para Chromecast](setup/chromecast_1.x_sdk.pdf) |
+| Apple TV | SDK para Apple TV v1.0.0 (póngase en contacto con el [Servicio de atención al cliente](https://helpx.adobe.com/es/marketing-cloud/contact-support.html) para obtener el SDK 1.x heredado) | [Primeros pasos: Media 1.x para Apple TV](setup/vhl-dev-guide-v1x_appletv.pdf) |
+| Chromecast | SDK para Chromecast v1.0.0 (póngase en contacto con el [Servicio de atención al cliente](https://helpx.adobe.com/es/marketing-cloud/contact-support.html) para obtener el SDK 1.x heredado) | [Primeros pasos: Media 1.x para Chromecast](setup/chromecast_1.x_sdk.pdf) |
