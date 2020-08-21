@@ -2,8 +2,11 @@
 title: Seguimiento en SceneGraph (Roku)
 description: Seguimiento de contenidos con la plataforma de programación XML de Roku SceneGraph.
 uuid: fa85e546-c79b-4df4-8c03-d6593fa296d5
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+translation-type: tm+mt
+source-git-commit: 305f97d6d1350a3bb8b0ad9c4c58e0a5fefca045
+workflow-type: tm+mt
+source-wordcount: '1171'
+ht-degree: 100%
 
 ---
 
@@ -137,31 +140,30 @@ El puente conector está diseñado para funcionar de la siguiente manera:
 <td> assocarray </td>
 <td> No válido </td>
 <td> Solo lectura: Todas las API ejecutadas en AdobeMobileSDK devolverán las respuestas en este campo. Regístrese y reciba una llamada de retorno para conocer las actualizaciones de este campo y recibir los objetos de respuesta. A continuación, se muestra el formato del objeto de respuesta:  
-<codeblock>
+<pre>
 response = {
   "apiName" : &lt;SceneGraphConstants.
                API_NAME&gt; 
   "returnValue : &lt;API_RESPONSE&gt; 
-} 
-</codeblock>
+}</pre>
 Se enviará una instancia de este objeto Response para cualquier llamada de API en AdobeMobileSDK de la que se espera un valor de retorno conforme a la guía de referencia de la API. Por ejemplo, una llamada API para visitorMarketingCloudID() devolverá el siguiente objeto de respuesta: 
-<codeblock>
+<pre>
 response = {
   "apiName" : m.
               adbmobileConstants.
               VISITOR_MARKETING_CLOUD_ID  
   "returnValue : "07050x25671x33760x72644x14"  
 } 
-</codeblock>
+</pre>
 O bien, los datos de respuesta podrían no ser válidos: 
-<codeblock>
+<pre>
 response = {  
   "apiName" : m.
               adbmobileConstants.
               VISITOR_MARKETING_CLOUD_ID  
   "returnValue : invalid 
 } 
-</codeblock>
+</pre>
 </td>
 </tr>
 </tbody>
