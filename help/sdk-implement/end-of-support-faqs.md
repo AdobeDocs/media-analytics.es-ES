@@ -1,10 +1,10 @@
 ---
 title: Preguntas frecuentes sobre el fin de la asistencia del SDK de Media Analytics
 description: Este tema incluye preguntas frecuentes sobre el fin de la compatibilidad con los SDK de Media Analytics.
-translation-type: ht
-source-git-commit: 38adc54438f85ca8ece8c77d9ff0d0aa14eb6605
-workflow-type: ht
-source-wordcount: '703'
+translation-type: tm+mt
+source-git-commit: cea8c4b31b21f1b13a55268fbcfb9100a7bdbd7c
+workflow-type: tm+mt
+source-wordcount: '679'
 ht-degree: 100%
 
 ---
@@ -53,8 +53,8 @@ Si tiene más preguntas, póngase en contacto con el administrador de satisfacci
 
 1. **¿Afecta este fin de soporte al SDK para tvOS?**
 
-   Sí, para tvOS (versión 10 o posterior) la implementación recomendada es migrar a las extensiones de Media Analytics.  La compatibilidad con AEP SDK y la extensión de Media Analytics está prevista para junio de 2020.  Para obtener más información, consulte [Migración del Media SDK independiente a Adobe Launch: iOS](https://docs.adobe.com/content/help/es-ES/media-analytics/using/sdk-implement/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-ios.html).
+   Sí, para tvOS (versión 10 o posterior) la implementación recomendada es migrar a las extensiones de Media Analytics.  Para obtener más información, consulte [Migración del Media SDK independiente a Adobe Launch: iOS](https://docs.adobe.com/content/help/en/media-analytics/using/sdk-implement/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-ios.html).
 
 1. **¿Afecta este fin de soporte al SDK para FireTV y AndroidTV?&#x200B;**
 
-   Sí, para FireTV y AndroidTV, la implementación recomendada es migrar a las extensiones de Media Analytics.  La compatibilidad con AEP SDK y la extensión de Media Analytics está prevista para junio de 2020.  Para obtener más información, consulte [Migración del Media SDK independiente a Adobe Launch - Android](https://docs.adobe.com/content/help/es-ES/media-analytics/using/sdk-implement/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-android.html).
+   Sí, para FireTV y AndroidTV, la implementación recomendada es migrar a las extensiones de Media Analytics.  Para obtener más información, consulte [Migración del Media SDK independiente a Adobe Launch - Android](https://docs.adobe.com/content/help/en/media-analytics/using/sdk-implement/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-android.html).
