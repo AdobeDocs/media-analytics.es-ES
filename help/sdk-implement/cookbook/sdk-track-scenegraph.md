@@ -2,9 +2,9 @@
 title: Seguimiento en SceneGraph (Roku)
 description: Seguimiento de contenidos con la plataforma de programación XML de Roku SceneGraph.
 uuid: fa85e546-c79b-4df4-8c03-d6593fa296d5
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 305f97d6d1350a3bb8b0ad9c4c58e0a5fefca045
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1171'
 ht-degree: 100%
 
@@ -174,11 +174,13 @@ response = {
 #### `getADBMobileConnectorInstance`
 
 Firma de API: `ADBMobile().getADBMobileConnectorInstance()`\
-Entrada: `adbmobileTask`Tipo de devolución: `ADBMobileConnector`
+Entrada: `adbmobileTask`
+Tipo de devolución: `ADBMobileConnector`
 
 #### `sgConstants`
 
-Firma de API: `ADBMobile().sgConstants()`Entrada: Ninguno\
+Firma de API: `ADBMobile().sgConstants()`
+Entrada: Ninguno\
 Tipo de devolución: `SceneGraphConstants`
 
 >[!NOTE]
@@ -188,10 +190,10 @@ Tipo de devolución: `SceneGraphConstants`
 
 |  Función  | Nombre de la constante | Descripción   |
 |---|---|---|
-| Versiones | `version` | Constante para recuperar la información de versión de AdobeMobileLibrary |
+| Versiones | `version` | Constante para recuperar la información de versión de AdobeMobileLibrary. |
 | Privacidad/exclusión | `PRIVACY_STATUS_OPT_IN` | Constante para el estado de privacidad activada. |
 |  | `PRIVACY_STATUS_OPT_OUT` | Constante para el estado de privacidad desactivada. |
-| Constantes de MediaHeartbeat | Consulte las constantes de esta página: <br/><br/>[Métodos de Heartbeat para contenido multimedia.](/help/sdk-implement/track-av-playback/track-core/track-core-roku.md) | Utilice estas constantes con las API de MediaHeartbeat |
+| Constantes de MediaHeartbeat | Consulte las constantes de esta página: <br/><br/>[Métodos de Heartbeat para contenido multimedia.](/help/sdk-implement/track-av-playback/track-core/track-core-roku.md) | Utilice estas constantes con las API de MediaHeartbeat. |
 | Metadatos estándar | Consulte las constantes de esta página: <br/><br/>[Parámetros de metadatos estándar.](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md) | Utilice estas constantes para asociar metadatos de vídeo/publicidad estándar a las API de MediaHeartbeat. |
 
 Las API de `MediaHeartbeat` de utilidades definidas globalmente en el archivo AdobeMobileLibrary heredado son accesibles *tal como se encuentran* en el entorno de SceneGraph porque no utilizan componentes Brightscript que no estén en los nodos SceneGraph. Para obtener más información sobre estos métodos, consulte la siguiente tabla:
@@ -200,11 +202,11 @@ Las API de `MediaHeartbeat` de utilidades definidas globalmente en el archivo Ad
 
 | Método | Descripción |
 | --- | --- |
-| `adb_media_init_mediainfo` | Este método devuelve un objeto de información multimedia inicializado.`Function adb_media_init_mediainfo(name As String, id As String, length As Double, streamType As String) As Object` |
-| `adb_media_init_adinfo` | Este método devuelve el objeto de información de publicidad inicializado.`Function adb_media_init_adinfo(name As String, id As String, position As Double, length As Double) As Object` |
-| `adb_media_init_chapterinfo` | Este método devuelve el objeto de información del capítulo inicializado.  `Function adb_media_init_adbreakinfo(name As String, startTime as Double, position as Double) As Object` |
-| `adb_media_init_adbreakinfo` | Este método devuelve el objeto de información de AdBreak inicializado.  `Function adb_media_init_chapterinfo(name As String, position As Double, length As Double, startTime As Double) As Object` |
-| `adb_media_init_qosinfo` | Este método devuelve un objeto de información de QoS inicializado.  `Function adb_media_init_qosinfo(bitrate As Double, startupTime as Double, fps as Double, droppedFrames as Double) As Object` |
+| `adb_media_init_mediainfo` | Este método devuelve un objeto de información multimedia inicializado.  `Function adb_media_init_mediainfo(name As String, id As String, length As Double, streamType As String) As Object` |
+| `adb_media_init_adinfo` | Este método devuelve el objeto de información de publicidad inicializado.  `Function adb_media_init_adinfo(name As String, id As String, position As Double, length As Double) As Object` |
+| `adb_media_init_chapterinfo` | Este método devuelve el objeto de información del capítulo inicializado.  `Function adb_media_init_adbreakinfo(name As String, startTime as Double, position as Double) As Object` |
+| `adb_media_init_adbreakinfo` | Este método devuelve el objeto de información de AdBreak inicializado.  `Function adb_media_init_chapterinfo(name As String, position As Double, length As Double, startTime As Double) As Object` |
+| `adb_media_init_qosinfo` | Este método devuelve un objeto de información de QoS inicializado.  `Function adb_media_init_qosinfo(bitrate As Double, startupTime as Double, fps as Double, droppedFrames as Double) As Object` |
 
 ## Implementación {#implementation}
 
@@ -230,7 +232,7 @@ Las API de `MediaHeartbeat` de utilidades definidas globalmente en el archivo Ad
       m.adbmobileTask = createObject("roSGNode", "adbmobileTask")
       ```
 
-   1. Obtenga una instancia del conector `adbmobile` para SceneGraph con la instancia de `adbmobileTask`
+   1. Obtenga una instancia del conector `adbmobile` para SceneGraph con la instancia de `adbmobileTask`.
 
       ```
       m.adbmobile = ADBMobile().getADBMobileConnectorInstance(m.adbmobileTask)
