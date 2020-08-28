@@ -2,11 +2,11 @@
 title: Configurar Adobe Debug
 description: En este tema se describe cómo configurar Adobe Debug, que puede utilizar para solucionar problemas con las implementaciones de Media SDK.
 uuid: e416458d-f23c-41ce-8d99-fa5076c455f0
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: f0f04ffab851999becb2b7771eef36ad7477c9f3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '653'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -40,7 +40,7 @@ Los navegadores recomendados son las versiones más recientes de Chrome y Firefo
 
 Descargar y configurar el proxy de depuración:
 
-1. Descargue la aplicación proxy de depuración en [Descargas de aplicaciones.](https://debug.adobe.com/#/downloads)
+1. Descargue la aplicación proxy de depuración en [Descargas de aplicaciones](https://debug.adobe.com/#/downloads).
 
    Los sistemas operativos admitidos son:
    * OS X 10.7 de 64 bits o superior
@@ -72,13 +72,13 @@ Descargue e instale el certificado SSL:
    1. Complete uno de los siguientes procesos:
 
       * [Añadir certificados al almacén de entidades emisoras de certificados raíz de confianza para un equipo local](https://technet.microsoft.com/es-es/library/cc754841.aspx#BKMK_addlocal)
-   1. Para Firefox, complete el procedimiento de [Instalación del certificado raíz en Mozilla Firefox.](https://wiki.wmtransfer.com/projects/webmoney/wiki/Installing_root_certificate_in_Mozilla_Firefox)
+   1. Para Firefox, complete el procedimiento de [Instalación del certificado raíz en Mozilla Firefox](https://wiki.wmtransfer.com/projects/webmoney/wiki/Installing_root_certificate_in_Mozilla_Firefox).
 
       Es posible que tenga que cerrar y volver a abrir Firefox para ver el cambio.
    **Dispositivos iOS**
    1. Configure su dispositivo iOS para que utilice Adobe Debug como proxy HTTP haciendo clic en **[!UICONTROL Configuración de la aplicación]** **>** **[!UICONTROL Configuración de Wi-Fi]**.
 
-   1. En Safari, vaya a [Depurar.](https://proxy.debug.adobe.com/ssl)
+   1. En Safari, vaya a [Debug](https://proxy.debug.adobe.com/ssl).
 
       Safari le pedirá que instale el certificado SSL.
 
@@ -93,13 +93,13 @@ Si no tiene las llamadas HTTPS en Adobe Debug, debe instalar el certificado SSL 
 
 Para instalar el certificado SSL en un dispositivo iOS:
 
-1. En el equipo portátil, active el proxy de depuración y vaya a [Adobe Debug.](https://debug.adobe.com)
+1. En el equipo portátil, active el proxy de depuración y vaya a [Adobe Debug](https://debug.adobe.com).
 1. Complete los siguientes pasos en el dispositivo iOS:
    1. Active el modo avión del dispositivo.
    1. Seleccione la misma red Wi-Fi que utiliza su portátil.
    1. En el ordenador portátil, configure manualmente la IP y el puerto que se muestran en la aplicación del proxy de depuración.
    1. Abra una ventana del explorador Apple Safari.
-   1. Vaya a [https://proxy.debug.adobe.com/ssl.](https://proxy.debug.adobe.com/ssl)
+   1. Vaya a [https://proxy.debug.adobe.com/ssl](https://proxy.debug.adobe.com/ssl).
    1. Descargue e instale el certificado SSL.
 
 1. En el ordenador portátil, inicie la sesión de Adobe Debug.
@@ -109,15 +109,15 @@ Para instalar el certificado SSL en un dispositivo iOS:
 
 Para instalar el certificado SSL en un dispositivo Android:
 
-1. En su portátil, active Debug Proxy y vaya a [Adobe Debug.](https://debug.adobe.com)
+1. En su portátil, active Debug Proxy y vaya a [Adobe Debug](https://debug.adobe.com).
 1. Complete los siguientes pasos en el dispositivo Android:
    1. Active el modo avión del dispositivo.
    1. Seleccione la misma red Wi-Fi que utiliza su portátil.
    1. En el ordenador portátil, configure manualmente la IP y el puerto que se muestran en la aplicación del proxy de depuración.
    1. Abra una ventana del explorador.
-   1. Vaya a [https://proxy.debug.adobe.com/ssl.](https://proxy.debug.adobe.com/ssl)
+   1. Vaya a [https://proxy.debug.adobe.com/ssl](https://proxy.debug.adobe.com/ssl).
    1. Descargue e instale el certificado SSL.
 
 1. En el ordenador portátil, inicie la sesión de Adobe Debug.
-1. Inicie las pruebas en el dispositivo Android
+1. Inicie las pruebas en el dispositivo Android.
 
