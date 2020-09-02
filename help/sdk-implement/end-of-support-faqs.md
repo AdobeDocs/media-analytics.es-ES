@@ -1,9 +1,9 @@
 ---
 title: Preguntas frecuentes sobre el fin de la asistencia del SDK de Media Analytics
 description: Este tema incluye preguntas frecuentes sobre el fin de la compatibilidad con los SDK de Media Analytics.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: cea8c4b31b21f1b13a55268fbcfb9100a7bdbd7c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '679'
 ht-degree: 100%
 
@@ -12,7 +12,7 @@ ht-degree: 100%
 
 # Preguntas frecuentes sobre el fin de la asistencia del SDK de Media Analytics
 
-Con la finalización de la compatibilidad con los SDK para móviles de la versión 4 el 31 de agosto de 2021, Adobe también dejará de ofrecer compatibilidad con los SDK de Media Analytics para iOS y Android. A partir del 31 de agosto de 2021, Adobe no proporcionará correcciones, actualizaciones relacionadas con el sistema operativo ni compatibilidad con el SDK de Media Analytics.  Durante el proceso de migración a estos nuevos SDK de la plataforma de experiencia, tenga en cuenta que las [extensiones de Media Analytics](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics) deben implementarse para habilitar Adobe Analytics para audio y vídeo.
+Con la finalización de la compatibilidad con los SDK para móviles de la versión 4 el 31 de agosto de 2021, Adobe también dejará de ofrecer compatibilidad con los SDK de Media Analytics para iOS y Android. A partir del 31 de agosto de 2021, Adobe no proporcionará correcciones, actualizaciones relacionadas con el sistema operativo ni compatibilidad con el SDK de Media Analytics.  Durante el proceso de migración a estos nuevos SDK de Experience Platform, tenga en cuenta que las [extensiones de Media Analytics](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics) deben implementarse para habilitar Adobe Analytics para audio y vídeo.
 
 ## Las cinco cuestiones principales que saber
 
@@ -33,6 +33,7 @@ Si tiene más preguntas, póngase en contacto con el administrador de satisfacci
 1. **¿Se verá afectada la compatibilidad con los SDK de Roku y Chromecast?**
 
    No.  Los SDK de Roku y Chromecast seguirán siendo compatibles como SDK independientes por el momento.
+
 1. **¿Se verán afectadas las implementaciones del SDK de JS de Media Analytics por este cambio?&#x200B;**
 
    No.  Los clientes que utilicen el SDK de JS para Media Analytics pueden seguir utilizando el SDK o habilitarlo mediante Adobe Launch.
@@ -53,8 +54,8 @@ Si tiene más preguntas, póngase en contacto con el administrador de satisfacci
 
 1. **¿Afecta este fin de soporte al SDK para tvOS?**
 
-   Sí, para tvOS (versión 10 o posterior) la implementación recomendada es migrar a las extensiones de Media Analytics.  Para obtener más información, consulte [Migración del Media SDK independiente a Adobe Launch: iOS](https://docs.adobe.com/content/help/en/media-analytics/using/sdk-implement/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-ios.html).
+   Sí, para tvOS (versión 10 o posterior) la implementación recomendada es migrar a las extensiones de Media Analytics.  Para obtener más información, consulte [Migración del Media SDK independiente a Adobe Launch: iOS](https://docs.adobe.com/content/help/es-ES/media-analytics/using/sdk-implement/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-ios.html).
 
 1. **¿Afecta este fin de soporte al SDK para FireTV y AndroidTV?&#x200B;**
 
-   Sí, para FireTV y AndroidTV, la implementación recomendada es migrar a las extensiones de Media Analytics.  Para obtener más información, consulte [Migración del Media SDK independiente a Adobe Launch - Android](https://docs.adobe.com/content/help/en/media-analytics/using/sdk-implement/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-android.html).
+   Sí, para FireTV y AndroidTV, la implementación recomendada es migrar a las extensiones de Media Analytics.  Para obtener más información, consulte [Migración del Media SDK independiente a Adobe Launch - Android](https://docs.adobe.com/content/help/es-ES/media-analytics/using/sdk-implement/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-android.html).
