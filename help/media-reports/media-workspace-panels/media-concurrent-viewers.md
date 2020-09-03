@@ -2,7 +2,7 @@
 title: Sistema de informes de visores simultáneos de medios
 description: Para los clientes de Media Analytics, el panel Visores simultáneos de medios de Analysis Workspace le permite analizar los visores simultáneos para saber dónde se produjo la concurrencia máxima o dónde se produjeron las bajas.
 translation-type: tm+mt
-source-git-commit: 9c87109477518dd647b263edfa6bcf89be3e067d
+source-git-commit: 5d6f2c35f11b14222b704888a80e08e7217b33e9
 workflow-type: tm+mt
 source-wordcount: '224'
 ht-degree: 10%
@@ -10,7 +10,7 @@ ht-degree: 10%
 ---
 
 
-# Sistema de informes de visores de Media Concurrent{#media-concurrent-viewers}
+# Sistema de informes de visores simultáneos de medios{#media-concurrent-viewers}
 
 >[!IMPORTANT]
 >
