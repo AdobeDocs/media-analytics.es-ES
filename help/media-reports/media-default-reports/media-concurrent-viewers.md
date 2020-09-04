@@ -2,8 +2,11 @@
 title: Espectadores simultáneos de medios
 description: null
 uuid: e61c50e5-8196-4538-b67c-ebc01c6e6ba7
-translation-type: ht
-source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
+translation-type: tm+mt
+source-git-commit: 420d17294f8f4b5c38d960e4e4ebd0b2ee80a60b
+workflow-type: tm+mt
+source-wordcount: '268'
+ht-degree: 85%
 
 ---
 
@@ -13,8 +16,9 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 El panel Espectadores simultáneos de medios muestra los visualizadores simultáneos durante un día. Dichos datos pueden filtrarse por contenido, tipo de dispositivo o país.
 
 >[!TIP]
->
->No se mostrarán datos si el intervalo seleccionado no es un día completo.
+> 
+> Sugerencia: Este informe se basa en sesiones de medios activas simultáneas.  Para ver los visores concurrentes por visitante único, con las capacidades adicionales para aplicar un segmento, desglosar y comparar, utilice la variable [Panel de visores simultáneos de medios en Analysis Workspace](https://docs.adobe.com/content/help/es-ES/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers.html).
+
 
 ![](assets/video-concurrent-viewers.png)
 
@@ -34,6 +38,7 @@ Estas son algunas de las características de este informe:
 
 Estas son algunas limitaciones de este informe:
 
+* No se mostrarán datos si el intervalo seleccionado no es un día completo.
 * No es posible exportar los datos, como ReportBuilder.
 * No se pueden presentar los datos en formato de tabla.
 * No puede enviar un informe por correo electrónico.
