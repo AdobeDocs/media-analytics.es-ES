@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 5d6f2c35f11b14222b704888a80e08e7217b33e9
 workflow-type: tm+mt
 source-wordcount: '224'
-ht-degree: 10%
+ht-degree: 14%
 
 ---
 
@@ -20,7 +20,7 @@ El análisis de los visores concurrentes le permite comprender dónde se produjo
 
 ## Panel de visores simultáneos de medios en Analysis Workspace
 
-En Analysis Workspace, los visores simultáneos es el número de visitantes únicos que visualizan sus flujos de medios en un momento específico, independientemente del número de sesiones. El panel Visores simultáneos de medios está disponible para visualizar visores concurrentes, desglosar y comparar. [Más información...](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers.html)
+En Analysis Workspace, los visores simultáneos es el número de visitantes únicos que visualizan sus flujos de medios en un momento específico, independientemente del número de sesiones. El panel Visores simultáneos de medios está disponible para visualizar visores concurrentes, desglosar y comparar. [Más información...](https://docs.adobe.com/content/help/es-ES/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers.html)
 
 ## Obtener visores simultáneos mediante la API de Sistema de informes de Analytics
 
