@@ -2,10 +2,10 @@
 title: Sistema de informes de visores simultáneos de medios
 description: Para los clientes de Media Analytics, el panel Visores simultáneos de medios de Analysis Workspace le permite analizar los visores simultáneos para saber dónde se produjo la concurrencia máxima o dónde se produjeron las bajas.
 translation-type: tm+mt
-source-git-commit: 5d6f2c35f11b14222b704888a80e08e7217b33e9
+source-git-commit: 687ae6f2037590b58b30ea776635898c93ca144f
 workflow-type: tm+mt
-source-wordcount: '224'
-ht-degree: 14%
+source-wordcount: '212'
+ht-degree: 13%
 
 ---
 
@@ -24,4 +24,4 @@ En Analysis Workspace, los visores simultáneos es el número de visitantes úni
 
 ## Obtener visores simultáneos mediante la API de Sistema de informes de Analytics
 
-También puede obtener datos del visor simultáneo de hasta 1 mes a la vez con granularidad de nivel de minuto mediante la API de Sistema de informes de Analytics 2.0. La API de sistema de informes utiliza la misma definición de visores simultáneos que Analysis Workspace.  Para obtener más información sobre las API de Analytics, consulte la [Guía del usuario de informes de API de Analytics](https://www.adobe.io/apis/experiencecloud/analytics/docs.html#!AdobeDocs/analytics-2.0-apis/master/reporting-guide.md).
+También puede obtener datos del visor simultáneo de hasta 1 mes a la vez con granularidad de nivel de minuto mediante la API de Sistema de informes de Analytics 2.0. La API de sistema de informes utiliza la misma definición de visores simultáneos que Analysis Workspace.  Para obtener más información, consulte [_*API de Analytics 2.0*_](https://www.adobe.io/apis/experiencecloud/analytics/docs.html).
