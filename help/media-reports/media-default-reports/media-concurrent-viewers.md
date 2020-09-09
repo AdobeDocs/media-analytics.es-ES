@@ -3,10 +3,10 @@ title: Espectadores simultáneos de medios
 description: null
 uuid: e61c50e5-8196-4538-b67c-ebc01c6e6ba7
 translation-type: tm+mt
-source-git-commit: 420d17294f8f4b5c38d960e4e4ebd0b2ee80a60b
+source-git-commit: cb54b862a0d4a179c499e3a28ab49301121de1bf
 workflow-type: tm+mt
-source-wordcount: '268'
-ht-degree: 85%
+source-wordcount: '267'
+ht-degree: 86%
 
 ---
 
@@ -16,8 +16,8 @@ ht-degree: 85%
 El panel Espectadores simultáneos de medios muestra los visualizadores simultáneos durante un día. Dichos datos pueden filtrarse por contenido, tipo de dispositivo o país.
 
 >[!TIP]
-> 
-> Sugerencia: Este informe se basa en sesiones de medios activas simultáneas.  Para ver los visores concurrentes por visitante único, con las capacidades adicionales para aplicar un segmento, desglosar y comparar, utilice la variable [Panel de visores simultáneos de medios en Analysis Workspace](https://docs.adobe.com/content/help/es-ES/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers.html).
+>
+> Este informe se basa en sesiones de medios activas simultáneas.  Para ver los visores concurrentes por visitante único, con las capacidades adicionales para aplicar un segmento, desglosar y comparar, utilice la variable [Panel de visores simultáneos de medios en Analysis Workspace](https://docs.adobe.com/content/help/es-ES/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers.html).
 
 
 ![](assets/video-concurrent-viewers.png)
@@ -44,4 +44,3 @@ Estas son algunas limitaciones de este informe:
 * No puede enviar un informe por correo electrónico.
 * Incluso si no rastrea anuncios, debe volver a habilitar el seguimiento de medios y seleccionar el módulo de publicidad de medios.
 * Esta funcionalidad proporciona datos precisos cuando se usa una biblioteca de latidos con capacidades de seguimiento de pausa.
-
