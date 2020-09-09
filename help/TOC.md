@@ -5,10 +5,10 @@ user-guide-description: Implement Analytics on audio or video sources. Includes 
 product: adobe analytics
 sub-product: media analytics
 translation-type: tm+mt
-source-git-commit: 126b54173b8b488e53fe27fbc99ad9e83fb2c078
+source-git-commit: cb54b862a0d4a179c499e3a28ab49301121de1bf
 workflow-type: tm+mt
-source-wordcount: '816'
-ht-degree: 99%
+source-wordcount: '830'
+ht-degree: 97%
 
 ---
 
@@ -211,12 +211,13 @@ ht-degree: 99%
       + [Información general de informes predeterminados](media-reports/media-default-reports/default-reports-overview.md)
       + [Información general de contenidos](media-reports/media-default-reports/media-reports-overview.md)
       + [Detalles de contenidos](media-reports/media-default-reports/media-reports-detail.md)
-      + [Horario de contenidos](media-reports/media-default-reports/media-reports-daypart.md)
-      + [Espectadores simultáneos de contenidos](media-reports/media-default-reports/media-concurrent-viewers.md)
-      + [Obtener datos del informe JSON de espectadores simultáneos](media-reports/media-default-reports/get-concurrent-json.md)
+      + [Informe de partición de días de medios](media-reports/media-default-reports/media-reports-daypart.md)
+      + [Informe de visores simultáneos de medios](media-reports/media-default-reports/media-concurrent-viewers.md)
+      + [Obtener datos del informe JSON de espectadores simultáneos](media-reports/media-default-reports/get-concurrent-json20.md)
    + Paneles de Media Workspace {#media-workspace-panels}
       + [Panel de visores simultáneos de medios](media-reports/media-workspace-panels/media-concurrent-viewers.md)
    + [Plantillas de Workspace de medios](media-reports/media-workspace-templates.md)
+   + [Obtener datos de visores simultáneos mediante API](https://www.adobe.io/apis/experiencecloud/analytics/docs.html)
 + [Seguimiento del contenido descargado](media-collection-api/track-downloaded-content.md)
 + [Federated Analytics](federated-analytics.md)
 + Seguimiento del estado de reproducción {#player-state-tracking}
