@@ -6,25 +6,25 @@ translation-type: tm+mt
 source-git-commit: e93a39fb76c3ccca2c05e5d1590a53394e50b29b
 workflow-type: tm+mt
 source-wordcount: '167'
-ht-degree: 32%
+ht-degree: 89%
 
 ---
 
 
 # Obtener datos de informes JSON de visores simultáneos con API de Analytics 2.0{#get-concurrent-viewers-json-report-data}
 
-Puede obtener datos de informes de visores concurrentes mediante la variable [_*API de Analytics 2.0*_](https://www.adobe.io/apis/experiencecloud/analytics/docs.html).
+Puede obtener datos de informes de visualizadores simultáneos mediante las [_*API de Analytics 2.0*_](https://www.adobe.io/apis/experiencecloud/analytics/docs.html).
 
-1. Filtre los datos con cualquier segmento creado en la interfaz de usuario. Para filtrar por un ID de contenido específico, cree un nuevo segmento.
+1. Filtre los datos con cualquier segmento que se haya creado en la interfaz de usuario. Para filtrar por un ID de contenido específico, cree un nuevo segmento.
 1. Establezca el `elements` -> `id` en el cuerpo de la solicitud en `metrics/concurrent_viewers_visitors`.
 1. Solicite una cantidad suficiente de datos.
 
    * El intervalo de datos que especifique en el informe recopila todos los datos del visor simultáneo _al finalizar la sesión de vídeo._
-Debe tener en cuenta las sesiones de ese inicio en un día y finalizar después de medianoche, que es el día siguiente.
+Debe tener en cuenta las sesiones que comienzan un día y finalizan después de la medianoche (es decir, al día siguiente).
 
-   * Solicite un día más de datos para el período previsto en la solicitud, pero en la análisis _*utilizar solo los datos deseados.*_
+   * Solicite un día más de datos para el período previsto en la solicitud, pero en el análisis, _*use solo los datos necesarios.*_
 
-Una carga útil de solicitud de muestra para un día de datos sería como la siguiente muestra. La solicitud se realiza durante 2 días consecutivos, pero en sistema de informes sólo se utiliza el primer día.
+Una carga de solicitud de ejemplo para un día de datos sería como el siguiente ejemplo. La solicitud se realiza para 2 días consecutivos, pero en sistema de informes solo se utiliza el primer día.
 
 ## Solicitud de ejemplo
 
