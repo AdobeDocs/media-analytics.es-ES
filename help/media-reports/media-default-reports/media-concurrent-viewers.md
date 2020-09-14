@@ -2,11 +2,11 @@
 title: Espectadores simultáneos de medios
 description: null
 uuid: e61c50e5-8196-4538-b67c-ebc01c6e6ba7
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: cb54b862a0d4a179c499e3a28ab49301121de1bf
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '267'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ El panel Espectadores simultáneos de medios muestra los visualizadores simultá
 
 >[!TIP]
 >
-> Este informe se basa en sesiones de medios activas simultáneas.  Para ver los visores concurrentes por visitante único, con las capacidades adicionales para aplicar un segmento, desglosar y comparar, utilice la variable [Panel de visores simultáneos de medios en Analysis Workspace](https://docs.adobe.com/content/help/es-ES/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers.html).
+> Este informe se basa en sesiones de medios activas simultáneas.  Para ver los visualizadores simultáneos por visitante único, con las funcionalidades adicionales para aplicar un segmento, desglosar y comparar, utilice la variable [Panel de visualizadores simultáneos de medios en Analysis Workspace](https://docs.adobe.com/content/help/es-ES/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers.html).
 
 
 ![](assets/video-concurrent-viewers.png)
