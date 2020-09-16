@@ -2,8 +2,11 @@
 title: Esquemas de validación de JSON
 description: null
 uuid: 7c9d5ce4-f5d2-4129-900e-4d02800907d1
-translation-type: ht
-source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
+translation-type: tm+mt
+source-git-commit: 72fd9b359d778c912ae6439aa0438ed467ebeef1
+workflow-type: tm+mt
+source-wordcount: '55'
+ht-degree: 100%
 
 ---
 
@@ -13,7 +16,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 El back end de Media Analytics valida los parámetros de solicitud para cada tipo de evento con esquemas de validación JSON. Estos esquemas están disponibles para usted y sirven como autoridad actual en los tipos de parámetros utilizados en la API de MA.
 
 ```
-POST
+GET
 https://{uri}/api/v1/schemas/{event-type}
 ```
 
