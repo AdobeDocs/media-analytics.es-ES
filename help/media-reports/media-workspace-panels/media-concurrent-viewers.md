@@ -1,20 +1,16 @@
 ---
 title: Sistema de informes de espectadores simultáneos de contenidos
 description: Para los clientes de Media Analytics, el panel Visualizadores simultáneos de medios en Analysis Workspace le permite analizar los visualizadores simultáneos para saber dónde se produjo la concurrencia máxima o dónde se produjeron las bajas.
-translation-type: ht
-source-git-commit: ee925e7bf2d32431679dd1b82e46c7c124256d13
-workflow-type: ht
-source-wordcount: '224'
+translation-type: tm+mt
+source-git-commit: eb69c5c68b7bc367a944ce441a196f45791bcb53
+workflow-type: tm+mt
+source-wordcount: '204'
 ht-degree: 100%
 
 ---
 
 
 # Sistema de informes de espectadores simultáneos de contenidos {#media-concurrent-viewers}
-
->[!IMPORTANT]
->
->Esta función se encuentra en Prueba limitada para clientes de Media Analytics. [Más información...](https://docs.adobe.com/content/help/es-ES/analytics/landing/an-releases.html)
 
 El análisis de visualizadores simultáneos le permite comprender dónde se produjo el pico de concurrencia o dónde se produjeron los descensos para proporcionar una valiosa perspectiva de la calidad del contenido y la participación del visualizador, así como ayudar a solucionar problemas o a planificar el volumen y la escala.
 
