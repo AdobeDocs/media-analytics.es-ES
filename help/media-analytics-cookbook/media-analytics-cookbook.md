@@ -1,8 +1,11 @@
 ---
 title: Guía de Media Analytics
 description: Página principal de la Guía, con vínculos generales de MA y vínculos específicos de SDK.
-translation-type: ht
-source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
+translation-type: tm+mt
+source-git-commit: 298d17ced7a62cad8e2a45814fbfb80c3f58ce35
+workflow-type: tm+mt
+source-wordcount: '32'
+ht-degree: 100%
 
 ---
 
