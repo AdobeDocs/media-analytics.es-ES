@@ -1,12 +1,12 @@
 ---
 title: Federated Analytics
-description: El servicio de Federated Analytics ofrece un sistema para compartir datos de Adobe Media Analytics (audio y vídeo) entre dos socios.
+description: El servicio Federated Analytics proporciona un sistema para compartir datos de Adobe Analytics para flujo continuo de medios entre dos socios.
 uuid: a82ace81-c2f6-4799-9a62-4c6a737a7dab
 translation-type: tm+mt
-source-git-commit: 88f4479ec072ab2a332ade09a83e9fbff94a98e9
+source-git-commit: 4dad6507966e30accfb4f6c2eb5f1d6a5507d29d
 workflow-type: tm+mt
-source-wordcount: '554'
-ht-degree: 97%
+source-wordcount: '552'
+ht-degree: 92%
 
 ---
 
@@ -39,7 +39,8 @@ Federated Analytics hace que la medición de audio y vídeo sea más eficaz, ág
 
 * **Contrato de emisiones de contenidos:** el receptor y el remitente deben tener contratado Adobe Analytics para emisiones de contenidos para tener acceso a los datos de audio y vídeo en Adobe Analytics. Póngase en contacto con el equipo de su cuenta para obtener más detalles.
 * **Anexo federado:** Cada remitente y receptor debe tener un anexo firmado con Adobe antes de enviar o recibir datos. Se requiere un anexo por cliente, no uno por sociedad. Póngase en contacto con el equipo de su cuenta para obtener más detalles.
-* **Implementación de Media Analytics:** El remitente debe tener Media Analytics implementado en todos los reproductores que formarán parte del conjunto de datos federado. Solo los datos de Media Analytics están disponibles para la federación. Ver documentación: [Medición de audio y vídeo en Adobe Analytics](/help/media-overview.md)
+
+* **Implementación de Media Analytics:** El remitente debe tener Media Analytics implementado en todos los reproductores que formarán parte del conjunto de datos federado. Solo los datos de Media Analytics están disponibles para la federación. Consulte la documentación: [Medición de medios de vapor en Adobe Analytics](/help/media-overview.md)
 
 * **Contrato de consultoría de Adobe:** para la configuración inicial de reglas federadas entre el receptor y el remitente, es importante trabajar con los servicios de consultoría para revisar los datos y crear el acuerdo de uso compartido de datos.
 
