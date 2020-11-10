@@ -2,9 +2,9 @@
 title: Migración de Milestone a Media Analytics
 description: null
 uuid: fdc96146-af63-48ce-b938-c0ca70729277
-translation-type: ht
-source-git-commit: e25c4d0add969ad31393f2eeb33b1a12b7205586
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: e079b90f8fb9197e5ebae0fb6ca31081ba28de1d
+workflow-type: tm+mt
 source-wordcount: '669'
 ht-degree: 100%
 
@@ -31,6 +31,7 @@ En las tablas siguientes se proporcionan las correspondencias entre la solución
 | Inicios de vídeo | Tipo de evento: <br>Contador | Inicios de vídeo |
 | Vídeos completados | Tipo de evento: <br>Contador | Contenido finalizado |
 
+
 ### Variables de módulo multimedia
 
 | Milestone | Sintaxis de Milestone | Media Analytics | Sintaxis de Media Analytics |
@@ -42,7 +43,7 @@ En las tablas siguientes se proporcionan las correspondencias entre la solución
 
 ### Variables opcionales
 
-| Milestone | Sintaxis de Milestone | Media Analytics | Sintaxis de Media Analytics |
+| Hito | Sintaxis de Milestone | Análisis de medios | Sintaxis de Media Analytics |
 | --- | --- | --- | --- |
 | Media.autoTrack | `s.Media.autoTrack` <br> `  = true;` | N/D | Ya no proporcionamos asignaciones de reproductor precompiladas. |
 | Media.autoTrackNetStreams | `s.Media.` <br> `  autoTrackNetStreams` <br> `  = true` | N/D | Ya no proporcionamos asignaciones de reproductor precompiladas. |
@@ -57,7 +58,7 @@ En las tablas siguientes se proporcionan las correspondencias entre la solución
 
 ### Variables de seguimiento de publicidades
 
-| Milestone | Sintaxis de Milestone | Media Analytics | Sintaxis de Media Analytics |
+| Hito | Sintaxis de Milestone | Análisis de medios | Sintaxis de Media Analytics |
 | --- | --- | --- | --- |
 | Media.adTrackSeconds | `s.Media.` <br> `  adTrackSeconds` <br> `  = 15` | N/D | Media Analytics tiene establecido 10 segundos para el contenido y 1 segundo para los anuncios. No hay más opciones disponibles. |
 | Media.adTrackMilestones | `s.Media.` <br> `  adTrackMilestones` <br> `  = "25,50,75";` | N/D | Los marcadores de progreso no se proporcionan de forma predeterminada para las publicidades. Utilice métricas calculadas para crear marcadores de progreso de anuncios. |
@@ -67,7 +68,7 @@ En las tablas siguientes se proporcionan las correspondencias entre la solución
 
 ### Métodos de módulo multimedia
 
-| Milestone | Sintaxis de Milestone | Media Analytics | Sintaxis de Media Analytics |
+| Hito | Sintaxis de Milestone | Análisis de medios | Sintaxis de Media Analytics |
 | --- | --- | --- | --- |
 | Media.open | `s.Media.open(` <br> `  mediaName,` <br> `  mediaLength,` <br> `  mediaPlayerName)` | trackSessionStart | `trackSessionStart(` <br> `  mediaObject,` <br> `  contextData)` |
 | mediaName | `mediaName`: (requerido) nombre del vídeo tal como desea que aparezca en informes de vídeo. | name | `createMediaObject(` <br> `  name,` <br> `  mediaId,` <br> `  length,` <br> `  streamType)` |
@@ -88,3 +89,4 @@ En las tablas siguientes se proporcionan las correspondencias entre la solución
 | Media.stop | `s.Media.stop(mediaName, mediaOffset)` | trackPause<br> o <br>trackEvent | `trackPause()` <br> O bien `trackEvent(` <br> `  MediaHeartbeat.` <br> `  Event.` <br> `  SeekStart)` <br> O bien <br> `trackEvent(` <br> `  MediaHeartbeat.` <br> `  Event.` <br> `  BufferStart);` |
 | Media.monitor | `s.Media.monitor(s, media)` | Utilice metadatos personalizados o estándar para establecer variables adicionales. | `var customVideoMetadata = ` <br> `{` <br> `  isUserLoggedIn: ` <br> `    "false",` <br> `  tvStation: ` <br> `    "Sample TV station",` <br> `  programmer: ` <br> `    "Sample programmer"` <br> `};` <br> `...` <br> `var standardVideoMetadata ` <br> `  = {};` <br> `standardVideoMetadata` <br> `  [MediaHeartbeat.` <br> `   VideoMetadataKeys.` <br> `   EPISODE] = ` <br> `  "Sample Episode";` <br> `standardVideoMetadata` <br> `  [MediaHeartbeat.` <br> `   VideoMetadataKeys.` <br> `   SHOW] = "Sample Show";` <br> `...` <br> `mediaObject.setValue(` <br> `  MediaHeartbeat.` <br> `  MediaObjectKey.` <br> `  StandardVideoMetadata, ` <br> `  standardVideoMetadata);` |
 | Media.track | `s.Media.track(mediaName)` | N/D | La frecuencia de llamada de seguimiento se configura automáticamente. |
+
