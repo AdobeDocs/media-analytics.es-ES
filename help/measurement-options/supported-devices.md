@@ -1,11 +1,11 @@
 ---
 title: Dispositivos y plataformas compatibles
-description: Adobe Analytics para audio y vídeo garantiza que cada flujo de medios se recopile y se informe en todos los dispositivos.
-translation-type: ht
-source-git-commit: 4db4e4281ba9c7af078c18d03f73b6e1e007a0e8
-workflow-type: ht
-source-wordcount: '338'
-ht-degree: 100%
+description: Adobe Analytics para medios de flujo continuo garantiza que cada flujo de medios se recopile y se notifique en todos los dispositivos.
+translation-type: tm+mt
+source-git-commit: fdec4da99a43d889690638f1ff3579e145548b69
+workflow-type: tm+mt
+source-wordcount: '336'
+ht-degree: 91%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 100%
 >
 >Con la finalización de la compatibilidad con los SDK para móviles de la versión 4 el 31 de agosto de 2021, Adobe también dejará de ofrecer compatibilidad con el SDK de Media Analytics para iOS y Android.  Para obtener más información, consulte [Preguntas frecuentes sobre el fin de la asistencia del SDK de Media Analytics](/help/sdk-implement/end-of-support-faqs.md).
 
-Adobe Analytics para audio y vídeo admite todos los dispositivos principales, incluidos:
+Adobe Analytics para Streaming Media admite todos los dispositivos principales, incluidos:
 
 * Smartphones y tabletas iOS y Android
 * Dispositivos OTT para ROKU, AppleTV, FireTV y Android TV
@@ -41,7 +41,7 @@ En la tabla siguiente, se detallan los dispositivos y las plataformas actualment
 |  | ROKU |  | ![](/help/assets/icon-blue-check.png)   <br>(BrightScript) | ![](/help/assets/icon-blue-check.png)<br>(nativo) |
 |  | Fire TV (sistema operativo Fire) | ![](/help/assets/icon-blue-check.png) | ![](/help/assets/icon-blue-check.png) <sup>1</sup> | ![](/help/assets/icon-blue-check.png) |
 |  | Android TV | ![](/help/assets/icon-blue-check.png) | ![](/help/assets/icon-blue-check.png) <sup>1</sup> | ![](/help/assets/icon-blue-check.png) |
-|  | Chromecast |  | ![](/help/assets/icon-blue-check.png) | ![](/help/assets/icon-blue-check.png) |
+|  | Chromecast |  | ![](/help/assets/icon-blue-check.png)    | ![](/help/assets/icon-blue-check.png) |
 |  | Consolas de juegos (por ejemplo, Xbox ONE, Sony PS3/PS4) |  |  | ![](/help/assets/icon-blue-check.png) |
 |  | Definir los cuadros superiores (por ejemplo, xfinity X1) |  |  | ![](/help/assets/icon-blue-check.png) |
 |  | Televisores inteligentes (por ejemplo, Samsung, LG, Sony, Vizio) |  | ![](/help/assets/icon-blue-check.png)   <br>(basado en la Web) | ![](/help/assets/icon-blue-check.png) |
