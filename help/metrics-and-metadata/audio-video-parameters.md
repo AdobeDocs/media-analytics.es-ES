@@ -3,9 +3,9 @@ title: Parámetros de audio y vídeo
 description: null
 uuid: fdacfb8b-db3e-46fb-b9ad-c3a749555b2a
 translation-type: tm+mt
-source-git-commit: abb2cd2d056ffbefa72126061b11286cc10ec1ca
+source-git-commit: 4dad6507966e30accfb4f6c2eb5f1d6a5507d29d
 workflow-type: tm+mt
-source-wordcount: '6262'
+source-wordcount: '6259'
 ht-degree: 99%
 
 ---
@@ -47,7 +47,7 @@ Descripción de los datos de la tabla:
 >No cambie los nombres de clasificación de ninguna de las variables enumeradas a continuación que se describan en Informes/Variables reservadas como “clasificación”.\
 >Las clasificaciones de contenidos se definen cuando se habilita un grupo de informes para el seguimiento de contenidos. De vez en cuando, Adobe agrega nuevas propiedades y, cuando esto sucede, los clientes deben volver a habilitar sus grupos de informes para obtener acceso a las propiedades de los nuevos contenidos. Durante el proceso de actualización, Adobe determina si las clasificaciones están habilitadas mediante la comprobación de los nombres de las variables. Si falta alguno de ellos, Adobe agrega los que faltan de nuevo.
 
-## Datos básicos de audio y vídeo {#core-audio-and-video-data}
+## Datos principales de medios de vapor {#core-audio-and-video-data}
 
 ### Tipo de emisión {#stream-type}
 
@@ -187,7 +187,7 @@ public static MediaObject createMediaObject(java.lang.String name,
 | --- | --- | --- |
 | <ul> <li> **Clave de SDK:**<br/> establecida automáticamente </li> <li> **Clave de API:**<br/> N/D </li> <li> **Requerido:**<br/> no </li> <li> **Tipo:**<br/> cadena </li> <li> **Enviado con:**<br/> Cierre de contenidos </li> <li> **Mínima Versión de SDK:**  1.5.7 </li> <li> **Valor de muestra:**<br/> &quot;js-2.0.1.88-c8c0b1&quot; </li> <li> **Descripción:**<br/> Versión de Media SDK utilizado para la sesión de seguimiento. <br/><br/>Los clientes deberán crear sus propias reglas de procesamiento si desean tener el valor disponible para los informes.  <br/><br/>[MediaHeartbeat.version();](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/MediaHeartbeat.html) </li></ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.<br/>vhlVersion) </li> <li> **Heartbeats:**<br/> (s:sp:hb_version) </li> </ul> | <ul> <li> **Disponible:**<br/> utilizar regla de procesamiento personalizada </li> <li> **Variable reservada:**<br/> N/D </li> <li> **Nombre del informe:**<br/> Personalizado </li> <li> **Datos de contexto:**<br/> (a.media.vhlVersion) </li> <li> **Fuente de datos:**<br/> N/D </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.vhlVersion) </li> </ul> |
 
-## Metadatos estándar de audio y vídeo {#standard-audio-and-video-metadata}
+## Metadatos de medios de vapor estándar {#standard-audio-and-video-metadata}
 
 ### Show
 
@@ -321,7 +321,7 @@ public static MediaObject createMediaObject(java.lang.String name,
 | --- | --- | --- |
 | <ul> <li> **Clave de SDK:**<br/> </li> <li> **Clave de API:**<br/> media.publisher </li> <li> **Requerido:**<br/> no </li> <li> **Tipo:**<br/> cadena </li> <li> **Enviado con:**<br/> Inicio de contenidos, Cierre de contenidos </li> <li> **Mínima Versión del SDK:** 1.5.7 <br/>Disponible en [Información general de recopilación de contenidos](/help/media-collection-api/mc-api-overview.md) o [Descargar SDK - Versiones 2.2](/help/sdk-implement/download-sdks.md).  </li> <li> **Valor de muestra:**<br/> &quot;Random Bauhaus&quot; </li> <li> **Descripción:**<br/> Nombre del editor del contenido de audio.  <br/> **Fecha de la versión: 13/9/18** </li></ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.publisher) </li> <li> **Heartbeats:**<br/> (s:meta:<br/>a.media.publisher) </li> </ul> | <ul> <li> **Disponible:**<br/> sí </li> <li> **Variable reservada:**<br/> eVar </li> <li> **Caducidad:**<br/> según HIT </li> <li> **Nombre del informe:**<br/> </li> <li> **Datos de contexto:**<br/> (a.media.publisher) </li> <li> **Fuente de datos:**<br/> videoaudiopublisher </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.publisher) </li> </ul> |
 
-## Métricas de audio y vídeo {#audio-and-video-metrics}
+## Métricas de medios de flujo continuo {#audio-and-video-metrics}
 
 ### Inicios de contenidos
 
