@@ -6,7 +6,7 @@ user-guide-description: Implemente Analytics en fuentes de audio o vídeo. Inclu
 product: adobe analytics
 sub-product: media analytics
 translation-type: tm+mt
-source-git-commit: da13db682f859cfd176a5ab379b7a0a947dc0e3a
+source-git-commit: 82b38f7870b6f890aaa812de30fa2d02d4f3ba8a
 workflow-type: tm+mt
 source-wordcount: '830'
 ht-degree: 94%
@@ -14,7 +14,7 @@ ht-degree: 94%
 ---
 
 
-# Adobe Analytics para medios de flujo continuo {#using}
+# Adobe Analytics para Streaming Media {#using}
 
 + [Medición de medios de flujo continuo en Adobe Analytics](media-overview.md)
 + [Dispositivos y plataformas compatibles](measurement-options/supported-devices.md)
@@ -47,7 +47,7 @@ ht-degree: 94%
       + [Configuración de Roku ](sdk-implement/setup/set-up-roku.md)
    + Reproducción de medios de flujo continuo {#track-av-playback}
       + [Información general](sdk-implement/track-av-playback/track-core-overview.md)
-      + Reproducción de medios de flujo continuo de núcleo {#track-core}
+      + Reproducción de medios de flujo continuo principal {#track-core}
          + [Seguimiento de reproducción principal en Android](sdk-implement/track-av-playback/track-core/track-core-android.md)
          + [Seguimiento de reproducción principal en iOS](sdk-implement/track-av-playback/track-core/track-core-ios.md)
          + Seguimiento de reproducción principal en JavaScript {#track-core-javascript}
@@ -199,7 +199,7 @@ ht-degree: 94%
    + [Guía paso a paso](media-analytics-cookbook/media-analytics-cookbook.md)
    + [Atribución de flujo de transmisión de contenido](media-analytics-cookbook/media-dimensions.md)
 + Métricas y metadatos {#metrics-and-metadata}
-   + [Parámetros de medios de vapor](metrics-and-metadata/audio-video-parameters.md)
+   + [Parámetros de flujo de medios](metrics-and-metadata/audio-video-parameters.md)
    + [Parámetros de anuncio](metrics-and-metadata/ad-parameters.md)
    + [Parámetros de capítulo ](metrics-and-metadata/chapter-parameters.md)
    + [Parámetros de estado del reproductor](metrics-and-metadata/player-state-parameters.md)
