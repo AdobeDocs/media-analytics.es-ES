@@ -1,9 +1,9 @@
 ---
-title: Medición de medios de vapor en Adobe Analytics
+title: Medición de medios de flujo continuo en Adobe Analytics
 description: Adobe Analytics para contenidos (también denominado Media Analytics) proporciona a los clientes una medición de contenidos sólida para el contenido, el audio y la publicidad.
 uuid: b3cbe240-b94d-42b8-a99c-0280334aaa14
 translation-type: tm+mt
-source-git-commit: fdec4da99a43d889690638f1ff3579e145548b69
+source-git-commit: 82b38f7870b6f890aaa812de30fa2d02d4f3ba8a
 workflow-type: tm+mt
 source-wordcount: '903'
 ht-degree: 85%
@@ -11,7 +11,7 @@ ht-degree: 85%
 ---
 
 
-# Medición de medios de vapor en Adobe Analytics{#measuring-audio-and-video-in-adobe-analytics}
+# Medición de medios de flujo en Adobe Analytics{#measuring-audio-and-video-in-adobe-analytics}
 
 ![Banner](./assets/media_analytics_banner.png)
 
@@ -47,7 +47,7 @@ El uso de Adobe Analytics Heartbeat para Streaming Media ofrece las siguientes v
 | Precio | Seguimiento transparente por emisión de contenido (única) |
 | Implementación y compatibilidad | Configuración optimizada con actualizaciones y mejoras continuas<br>Con un proceso de implementación optimizado, puede asignar rápidamente variables a través de la API del reproductor y validar implementaciones mediante la herramienta de depuración de Adobe para garantizar que todas las variables necesarias se rastrean con precisión. |
 | Uso compartido de socios | Federated Analytics y métricas certificadas<br>Con los datos compartidos a través de Federated Analytics, rentabilice las opciones de compartir contenidos más novedosas y realice una evaluación integral de los datos de todos sus socios de distribución de contenidos: operadores, programadores y distribuidores. |
-| Seguimiento avanzado | Seguimiento de contenido descargado, seguimiento de recuperación de errores y visores simultáneos<br>Puede realizar el seguimiento de contenido multimedia de flujo continuo que se descarga y reproduce en un dispositivo independientemente de su conectividad. |
+| Seguimiento avanzado | Seguimiento de contenido descargado, Seguimiento de recuperación de errores y Visores simultáneos<br>Puede rastrear el contenido de medios de flujo que se descarga y reproduce en un dispositivo independientemente de su conectividad. |
 
 
 
