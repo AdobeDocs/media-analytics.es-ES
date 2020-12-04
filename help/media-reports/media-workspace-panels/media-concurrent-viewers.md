@@ -2,9 +2,9 @@
 title: Sistema de informes de espectadores simultáneos de contenidos
 description: Para los clientes de Media Analytics, el panel Visualizadores simultáneos de medios en Analysis Workspace le permite analizar los visualizadores simultáneos para saber dónde se produjo la concurrencia máxima o dónde se produjeron las bajas.
 translation-type: tm+mt
-source-git-commit: eb69c5c68b7bc367a944ce441a196f45791bcb53
+source-git-commit: 2eb5318267546408f2aab5da074dd7f30c4fbb1d
 workflow-type: tm+mt
-source-wordcount: '204'
+source-wordcount: '193'
 ht-degree: 100%
 
 ---
@@ -20,4 +20,4 @@ En Analysis Workspace, los visualizadores simultáneos comprende la cantidad de 
 
 ## Obtener visores simultáneos mediante la API de informes de Analytics
 
-También puede obtener datos del visualizador simultáneo de hasta 1 mes a la vez con granularidad de nivel de minuto mediante la API del sistema de informes de Analytics 2.0. La API del sistema de informes utiliza la misma definición de visualizadores simultáneos que Analysis Workspace.  Para obtener más información, consulte [_*Obtener datos de informes JSON de visores simultáneos con API de Analytics 2.0*_](https://docs.adobe.com/content/help/en/media-analytics/using/media-reports/media-default-reports/get-concurrent-json20.html).
+También puede obtener datos del visualizador simultáneo de hasta 1 mes a la vez con granularidad de nivel de minuto mediante la API del sistema de informes de Analytics 2.0. La API del sistema de informes utiliza la misma definición de visualizadores simultáneos que Analysis Workspace.  Para obtener más información, consulte [_*Obtener datos de informes JSON de visores simultáneos con API de Analytics 2.0*_](/help/media-reports/media-default-reports/get-concurrent-json20.md).
