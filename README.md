@@ -1,21 +1,12 @@
 ---
-source-git-commit: 7dbbd8b77801243a4a557be811dc678156c39d31
+source-git-commit: 4c4f296aced1e0e65a5fef7cf26ee9f6481139dd
 workflow-type: tm+mt
 translation-type: tm+mt
-source-wordcount: '568'
-ht-degree: 72%
+source-wordcount: '434'
+ht-degree: 91%
 
 ---
 # Artículo sobre colaboración
-
-| EXL-PR | EXL | Vista previa | Activar | Publicadas | Ayuda |
-|--- |--- |--- |--- |--- |--- |
-| [![Estado de compilación](https://docs.ci.corp.adobe.com/view/exl-pr/job/media-analytics.en_pr-exl/badge/icon)](https://docs.ci.corp.adobe.com/view/exl-pr/job/media-analytics.en_pr-exl/lastBuild/) | [![Estado de compilación](https://docs.ci.corp.adobe.com/view/exl-pr/job/media-analytics.en_exl/lastBuild/badge/icon)](https://docs.ci.corp.adobe.com/view/exl-pr/job/media-analytics.en_exl/lastBuild/lastBuild) | [URL de previsualización](https://experienceleague.corp.adobe.com/docs/media-analytics/using/media-overview.html?lang=en) | [activate-exl](https://docs.ci.corp.adobe.com/job/activate-exl/build/) | [Dirección URL en directo](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=en) | [Guía de creación](https://experienceleague.adobe.com/docs/authoring-guide-exl/using/home.html?lang=en) |
-
-| Producción | Fase |
-|---|---|
-| [![Estado de compilación](https://docs.ci.corp.adobe.com/job/media-analytics.en_production/badge/icon)](https://docs.ci.corp.adobe.com/job/media-analytics.en_production/lastBuild) | [![Estado de compilación](https://docs.ci.corp.adobe.com/job/media-analytics.en_stage/badge/icon)](https://docs.ci.corp.adobe.com/job/media-analytics.en_stage/lastBuild) |
-| [Producto de salida](https://docs.adobe.com/content/help/es-ES/media-analytics/using/media-overview.html) | [Output Stg](https://docs-stg.corp.adobe.com/content/help/en/media-analytics/using/media-overview.html) |
 
 Agradecemos las contribuciones de nuestra comunidad, así como de los empleados de Adobe que no forman parte de los equipos de documentación.
 
@@ -45,7 +36,7 @@ If you submit a pull request with significant changes to documentation and code 
 
 ### Cambios importantes de los empleados de Adobe
 
-Si es un escritor técnico, un administrador de programas o un desarrollador del equipo de productos para una solución de Adobe Experience Cloud y su trabajo es contribuir o crear artículos técnicos, debe utilizar el repositorio privado [git.corp.adobe.com/AdobeDocs](https://git.corp.adobe.com/AdobeDocs). <!--Employees from other parts of the Adobe world should use the public repo for minor updates.-->
+Si es un escritor técnico, administrador de programas o desarrollador del equipo de productos para una solución de Adobe Experience Cloud y su trabajo es contribuir o crear artículos técnicos, debe utilizar el repositorio privado [git.corp.adobe.com/AdobeDocs](https://git.corp.adobe.com/AdobeDocs). <!--Employees from other parts of the Adobe world should use the public repo for minor updates.-->
 
 ## Herramientas y configuración
 
