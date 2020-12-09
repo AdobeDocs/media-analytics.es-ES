@@ -2,10 +2,10 @@
 title: Dispositivos y plataformas compatibles
 description: Adobe Analytics para medios de flujo continuo garantiza que cada flujo de medios se recopile y se notifique en todos los dispositivos.
 translation-type: tm+mt
-source-git-commit: fdec4da99a43d889690638f1ff3579e145548b69
+source-git-commit: dfffcf1e1d815ca178e0bdba881d973d60fe1631
 workflow-type: tm+mt
-source-wordcount: '336'
-ht-degree: 91%
+source-wordcount: '337'
+ht-degree: 89%
 
 ---
 
@@ -28,7 +28,7 @@ En el caso de dispositivos o plataformas que actualmente no son compatibles con 
 
 En la tabla siguiente, se detallan los dispositivos y las plataformas actualmente compatibles. Para descargar la versión más actualizada del SDK, consulte [Descarga de SDK](https://docs.adobe.com/content/help/es-ES/media-analytics/using/sdk-implement/download-sdks.html). Si un dispositivo no aparece en la lista, póngase en contacto con el servicio de atención al cliente o con el consultor de soluciones para conocer el estado de dicho dispositivo.
 
-| Plataformas y dispositivos de transmisión |  | Extensión de Media Launch con SDK de AEP | Media SDK | API de Media Collection |
+| Plataformas y dispositivos de transmisión |  | Media Launch Extension con el SDK de AEP Mobile | Media SDK | API de Media Collection |
 |:---------------------------:|:-----------------------------------------------:|:----------------------------:|:-------------------:|:--------------------:|
 | Web/Web móvil |  |  |  |  |
 |  | Exploradores con JavaScript | ![](/help/assets/icon-blue-check.png) | ![](/help/assets/icon-blue-check.png)    | ![](/help/assets/icon-blue-check.png) |
