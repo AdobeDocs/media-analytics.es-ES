@@ -6,7 +6,7 @@ user-guide-description: Implemente Analytics en fuentes de audio o vídeo. Inclu
 product: adobe analytics
 sub-product: media analytics
 translation-type: tm+mt
-source-git-commit: a6f9c93c8c21f261eb5b592d4a2d8c9d2532efee
+source-git-commit: a51f9bb33c7385fef0f13b7e1e9009b07a788305
 workflow-type: tm+mt
 source-wordcount: '830'
 ht-degree: 95%
@@ -219,11 +219,16 @@ ht-degree: 95%
    + [Plantillas de Workspace de medios](media-reports/media-workspace-templates.md)
    + [Obtener datos de visores simultáneos mediante API](media-reports/media-default-reports/get-concurrent-json20.md)
 + [Seguimiento del contenido descargado](media-collection-api/track-downloaded-content.md)
-+ [Federated Analytics](federated-analytics.md)
 + Seguimiento del estado de reproducción {#player-state-tracking}
    + [Información general](sdk-implement/player-state-tracking/player-state-overview.md)
    + [Estados estándar y personalizados](sdk-implement/player-state-tracking/standard-and-custom-states.md)
    + [Implementación y sistema de informes](sdk-implement/player-state-tracking/implementation-and-reporting.md)
    + [Ejemplos de seguimiento del estado de reproducción](sdk-implement/player-state-tracking/player-state-examples.md)
++ [Federated Analytics](federated-analytics.md)
+<!-- + Player State Tracking {#player-state-tracking}
+    + [Overview](sdk-implement/player-state-tracking/player-state-overview.md)
+    + [Standard and custom states](sdk-implement/player-state-tracking/standard-and-custom-states.md)
+    + [Implementation and reporting](sdk-implement/player-state-tracking/implementation-and-reporting.md)
+    + [Player state tracking examples](sdk-implement/player-state-tracking/player-state-examples.md) -->
 + Recursos adicionales {#additional-resources}
    + [Notas de la versión](additional-resources/doc-updates.md)
