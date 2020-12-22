@@ -1,15 +1,15 @@
 ---
 audience: end-user
 user-guide-title: Adobe Analytics para medios de transmisión
-breadcrumb-title: Guía de Media Analytics
-user-guide-description: Implemente Analytics en fuentes de audio o vídeo. Incluye el SDK de medios y la API de recopilación de medios.
+breadcrumb-title: Guía de Streaming Media Analytics
+user-guide-description: Implementar Adobe Analytics para medios de flujo continuo. Incluye el SDK de medios y la API de recopilación de medios.
 product: adobe analytics
 sub-product: media analytics
 translation-type: tm+mt
-source-git-commit: a51f9bb33c7385fef0f13b7e1e9009b07a788305
+source-git-commit: 640005cbd90a074a1a441865c4b6abc8f94c1277
 workflow-type: tm+mt
 source-wordcount: '830'
-ht-degree: 95%
+ht-degree: 94%
 
 ---
 
