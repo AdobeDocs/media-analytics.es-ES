@@ -1,11 +1,11 @@
 ---
 title: Dispositivos y plataformas compatibles
-description: Adobe Analytics para medios de flujo continuo garantiza que cada flujo de medios se recopile y se notifique en todos los dispositivos.
-translation-type: tm+mt
+description: Adobe Analytics para Streaming Media garantiza que cada flujo de medios se recopile y notifique a todos los dispositivos.
+translation-type: ht
 source-git-commit: dfffcf1e1d815ca178e0bdba881d973d60fe1631
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '337'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 89%
 >
 >Con la finalización de la compatibilidad con los SDK para móviles de la versión 4 el 31 de agosto de 2021, Adobe también dejará de ofrecer compatibilidad con el SDK de Media Analytics para iOS y Android.  Para obtener más información, consulte [Preguntas frecuentes sobre el fin de la asistencia del SDK de Media Analytics](/help/sdk-implement/end-of-support-faqs.md).
 
-Adobe Analytics para Streaming Media admite todos los dispositivos principales, incluidos:
+Adobe Analytics para Streaming Media es compatible con todos los dispositivos principales, incluidos:
 
 * Smartphones y tabletas iOS y Android
 * Dispositivos OTT para ROKU, AppleTV, FireTV y Android TV
@@ -28,7 +28,7 @@ En el caso de dispositivos o plataformas que actualmente no son compatibles con 
 
 En la tabla siguiente, se detallan los dispositivos y las plataformas actualmente compatibles. Para descargar la versión más actualizada del SDK, consulte [Descarga de SDK](https://docs.adobe.com/content/help/es-ES/media-analytics/using/sdk-implement/download-sdks.html). Si un dispositivo no aparece en la lista, póngase en contacto con el servicio de atención al cliente o con el consultor de soluciones para conocer el estado de dicho dispositivo.
 
-| Plataformas y dispositivos de transmisión |  | Media Launch Extension con el SDK de AEP Mobile | Media SDK | API de Media Collection |
+| Plataformas y dispositivos de transmisión |  | Extensión Media Launch con SDK móvil de AEP | Media SDK | API de Media Collection |
 |:---------------------------:|:-----------------------------------------------:|:----------------------------:|:-------------------:|:--------------------:|
 | Web/Web móvil |  |  |  |  |
 |  | Exploradores con JavaScript | ![](/help/assets/icon-blue-check.png) | ![](/help/assets/icon-blue-check.png)    | ![](/help/assets/icon-blue-check.png) |
@@ -38,13 +38,13 @@ En la tabla siguiente, se detallan los dispositivos y las plataformas actualment
 |  | Dispositivos con Windows |  |  | ![](/help/assets/icon-blue-check.png) |
 | OTT |  |  |  |  |
 |  | Apple TV (tvOS) | ![](/help/assets/icon-blue-check.png) | ![](/help/assets/icon-blue-check.png) <sup>1</sup> | ![](/help/assets/icon-blue-check.png) |
-|  | ROKU |  | ![](/help/assets/icon-blue-check.png)   <br>(BrightScript) | ![](/help/assets/icon-blue-check.png)<br>(nativo) |
+|  | ROKU |  | ![](/help/assets/icon-blue-check.png)   <br>(BrightScript)    | ![](/help/assets/icon-blue-check.png)<br>(nativo) |
 |  | Fire TV (sistema operativo Fire) | ![](/help/assets/icon-blue-check.png) | ![](/help/assets/icon-blue-check.png) <sup>1</sup> | ![](/help/assets/icon-blue-check.png) |
 |  | Android TV | ![](/help/assets/icon-blue-check.png) | ![](/help/assets/icon-blue-check.png) <sup>1</sup> | ![](/help/assets/icon-blue-check.png) |
 |  | Chromecast |  | ![](/help/assets/icon-blue-check.png)    | ![](/help/assets/icon-blue-check.png) |
 |  | Consolas de juegos (por ejemplo, Xbox ONE, Sony PS3/PS4) |  |  | ![](/help/assets/icon-blue-check.png) |
 |  | Definir los cuadros superiores (por ejemplo, xfinity X1) |  |  | ![](/help/assets/icon-blue-check.png) |
-|  | Televisores inteligentes (por ejemplo, Samsung, LG, Sony, Vizio) |  | ![](/help/assets/icon-blue-check.png)   <br>(basado en la Web) | ![](/help/assets/icon-blue-check.png) |
+|  | Televisores inteligentes (por ejemplo, Samsung, LG, Sony, Vizio) |  | ![](/help/assets/icon-blue-check.png)   <br>(basado en la Web)    | ![](/help/assets/icon-blue-check.png) |
 | Otro |  |  |  |  |
 |  | Nuevos dispositivos conectados |  |  | ![](/help/assets/icon-blue-check.png) |
 
