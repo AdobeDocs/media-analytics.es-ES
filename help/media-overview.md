@@ -1,33 +1,33 @@
 ---
-title: Medición de medios de flujo continuo en Adobe Analytics
+title: Medición de Streaming Media en Adobe Analytics
 description: Adobe Analytics para contenidos (también denominado Media Analytics) proporciona a los clientes una medición de contenidos sólida para el contenido, el audio y la publicidad.
 uuid: b3cbe240-b94d-42b8-a99c-0280334aaa14
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 82b38f7870b6f890aaa812de30fa2d02d4f3ba8a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '903'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
 
-# Medición de medios de flujo en Adobe Analytics{#measuring-audio-and-video-in-adobe-analytics}
+# Medición de Streaming Media en Adobe Analytics {#measuring-audio-and-video-in-adobe-analytics}
 
 ![Banner](./assets/media_analytics_banner.png)
 
-## Acerca de Adobe Analytics para medios de flujo continuo
+## Acerca de Adobe Analytics para Streaming Media
 
-Adobe Analytics para Streaming Media es un complemento de Adobe Analytics que proporciona potentes herramientas de medición para audio, vídeo y anuncios. Adobe Analytics forma parte de Adobe Experience Platform.
+Adobe Analytics para Streaming Media es un complemento de Adobe Analytics que ofrece potentes herramientas de medición de audio, vídeo y anuncios. Adobe Analytics forma parte de Adobe Experience Platform.
 
-Adobe Analytics para Streaming Media le permite realizar un seguimiento de todo el viaje del cliente a través del sitio. Las métricas se integran fácilmente en los informes de Adobe Analytics y en otros productos de Adobe Experience Cloud. La medición de Media le permite categorizar los datos en varias dimensiones y segmentos, capturando todos los metadatos que necesita para hacer un análisis completo y detallado. A continuación, puede analizar los datos y atribuir los criterios de éxito a los medios totalmente consumidos, el tiempo promedio empleado y los anuncios completados.
+Adobe Analytics para Streaming Media le permite hacer un seguimiento del recorrido completo del cliente a través del sitio. Las métricas se integran fácilmente en los informes de Adobe Analytics y en otros productos de Adobe Experience Cloud. La medición de Media le permite categorizar los datos en varias dimensiones y segmentos, capturando todos los metadatos que necesita para hacer un análisis completo y detallado. A continuación, puede analizar los datos y atribuir los criterios de éxito a los medios totalmente consumidos, el tiempo promedio empleado y los anuncios completados.
 
 Puede medir las métricas de entrega esenciales relacionadas con la calidad del servicio, como los fotogramas perdidos, el tiempo de almacenamiento en búfer y la velocidad de bits media. Además, las métricas se pueden combinar con los datos de su sitio web o aplicación para visualizar la ruta y los intereses del cliente, a fin de ofrecer recomendaciones mejoradas y personalizar las experiencias de los clientes mediante Adobe Experience Cloud.
 
 ## Funciones {#features}
 
-Los beneficios de Adobe Analytics para Streaming Media incluyen monitoreo en tiempo real, análisis detallada, perspectivas procesables y oportunidades de monetización.
+Las ventajas de Adobe Analytics para Streaming Media incluyen monitorización en tiempo real, análisis detallado, perspectivas procesables y oportunidades de monetización.
 * **Análisis en tiempo real**: tome decisiones procesables en tiempo real utilizando métricas de rendimiento clave como duration, ex2 y ex3 en varios canales. Los eventos del contenido principal se miden en intervalos de 10 segundos para capturar toda la actividad a medida que se produce. Los eventos de seguimiento de anuncios se producen en intervalos de 1 segundo.
-* **Mejore la participación**: Involucre completamente a los usuarios mediante menos eventos de almacenamiento en búfer y mediante la comprensión de dónde y cuándo debe reproducirse la publicidad dentro del contenido para proporcionar una experiencia agradable y menos intrusiva que genere visitas más frecuentes.
+* **Mejore la participación**: involucre completamente a los usuarios mediante menos eventos de almacenamiento en búfer y mediante la comprensión de dónde y cuándo debe reproducirse la publicidad dentro del contenido para proporcionar una experiencia agradable y menos intrusiva que genere visitas más frecuentes.
 * **Imagen holística**: combine diversos puntos de datos de todos los distribuidores de contenido y obtenga información de toda la actividad de contenidos. También puede medir la participación y las visualizaciones/escuchas en todos los posibles canales a través de la función Federated Analytics.
 * **Mayor granularidad**: evalúe el comportamiento de visualización en el nivel más granular, incluida la hora del día de cada visitante individual, los espectadores/oyentes simultáneos por minuto y la duración promedio de consumo del contenido.
 * **Medición exacta**: medición en varios dispositivos utilizados para el consumo de contenidos, incluidos OTT, smartphones, tabletas, equipos de escritorio y mucho más, para controlar los patrones de participación del usuario.
@@ -35,9 +35,9 @@ Los beneficios de Adobe Analytics para Streaming Media incluyen monitoreo en tie
 
 ## Medición de Heartbeat {#heartbeat}
 
-Adobe Analytics utiliza «latidos» para recopilar métricas de vídeo. Durante la reproducción de vídeo, los latidos se envían al servidor de seguimiento de Heartbeat para medir el tiempo de reproducción. Las llamadas de Heartbeat se envían cada diez segundos. Los latidos generan métricas de participación en vídeo granulares e informes de visitas en el orden previsto de vídeo más precisos. Adobe Analytics para Streaming Media mide los latidos mediante Adobe Launch con la extensión Media Analytics, el SDK de medios y la API de Media Collection. Los componentes `AppMeasurement` y `VisitorID` se utilizan para recibir datos de vídeo.
+Adobe Analytics utiliza «latidos» para recopilar métricas de vídeo. Durante la reproducción de vídeo, los latidos se envían al servidor de seguimiento de Heartbeat para medir el tiempo de reproducción. Las llamadas de Heartbeat se envían cada diez segundos. Los latidos generan métricas de participación en vídeo granulares e informes de visitas en el orden previsto de vídeo más precisos. Adobe Analytics para Streaming Media mide los latidos mediante Adobe Launch con la extensión Media Analytics, Media SDK y la API de Media Collection. Los componentes `AppMeasurement` y `VisitorID` se utilizan para recibir datos de vídeo.
 
-El uso de Adobe Analytics Heartbeat para Streaming Media ofrece las siguientes ventajas:
+El uso de latidos de Adobe Analytics para Streaming Media ofrece las siguientes ventajas:
 
 | Función | Descripción |
 |----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -47,7 +47,7 @@ El uso de Adobe Analytics Heartbeat para Streaming Media ofrece las siguientes v
 | Precio | Seguimiento transparente por emisión de contenido (única) |
 | Implementación y compatibilidad | Configuración optimizada con actualizaciones y mejoras continuas<br>Con un proceso de implementación optimizado, puede asignar rápidamente variables a través de la API del reproductor y validar implementaciones mediante la herramienta de depuración de Adobe para garantizar que todas las variables necesarias se rastrean con precisión. |
 | Uso compartido de socios | Federated Analytics y métricas certificadas<br>Con los datos compartidos a través de Federated Analytics, rentabilice las opciones de compartir contenidos más novedosas y realice una evaluación integral de los datos de todos sus socios de distribución de contenidos: operadores, programadores y distribuidores. |
-| Seguimiento avanzado | Seguimiento de contenido descargado, Seguimiento de recuperación de errores y Visores simultáneos<br>Puede rastrear el contenido de medios de flujo que se descarga y reproduce en un dispositivo independientemente de su conectividad. |
+| Seguimiento avanzado | Seguimiento de contenido descargado, seguimiento de recuperación de errores y visualizadores simultáneos<br>Puede hacer un seguimiento del contenido de Streaming Media que se descarga y reproduce en un dispositivo, independientemente de su conectividad. |
 
 
 
