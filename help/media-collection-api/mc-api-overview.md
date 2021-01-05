@@ -3,11 +3,11 @@ seo-title: Información general
 title: Información general
 description: null
 uuid: c14bdbef-5846-4d31-8a14-8e9e0e9c9861
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 82b38f7870b6f890aaa812de30fa2d02d4f3ba8a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '331'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 92%
 
 La API de recopilación de medios es la alternativa RESTful de Adobe al SDK de medios del lado del cliente. Con la API de recopilación de medios, el reproductor puede realizar el seguimiento de eventos de audio y vídeo mediante llamadas HTTP RESTful.
 
-La API de recopilación de medios es esencialmente un adaptador que actúa como una versión del SDK de medios en el lado del servidor. Eso significa que algunos aspectos de la documentación de Media SDK también son pertinentes para la API de recopilación de contenido. Por ejemplo: ambas soluciones utilizan los mismos [parámetros de medios de flujo](/help/metrics-and-metadata/audio-video-parameters.md) y los datos recopilados del seguimiento de medios de flujo llevan al mismo [Sistema de informes y Análisis.](/help/media-reports/media-reports-enable.md)
+La API de recopilación de medios es esencialmente un adaptador que actúa como una versión del SDK de medios en el lado del servidor. Eso significa que algunos aspectos de la documentación de Media SDK también son pertinentes para la API de recopilación de contenido. Por ejemplo, ambas soluciones utilizan los mismos [Parámetros de Streaming Media](/help/metrics-and-metadata/audio-video-parameters.md), y los datos recopilados de seguimiento de medios llevan al mismo [Creación de informes y análisis.](/help/media-reports/media-reports-enable.md)
 
 ## Flujos de datos del seguimiento de contenidos {#media-tracking-data-flows}
 
@@ -34,13 +34,13 @@ Los datos de seguimiento capturados con la API de recopilación de contenido se 
 
 ### Llamadas de API {#mc-api-calls}
 
-* **`sessions`-** : Establece una sesión con el servidor y devuelve un ID de sesión utilizado en las llamadas a `events` posteriores. La aplicación invocará una vez al principio de una sesión de seguimiento.
+* **`sessions`-** Establece una sesión con el servidor y devuelve un ID de sesión utilizado en las llamadas a `events` posteriores. La aplicación invocará una vez al principio de una sesión de seguimiento.
 
    ```
    {uri}/api/v1/sessions
    ```
 
-* **`events`-**  Enviar datos de seguimiento de contenidos.
+* **`events`-** Enviar datos de seguimiento de contenidos.
 
    ```
    {uri}/api/v1/sessions/{session-id}/events
@@ -78,7 +78,7 @@ Los datos de seguimiento capturados con la API de recopilación de contenido se 
 * `params` - obligatorio para determinados `eventTypes`. Compruebe el [esquema de validación JSON](mc-api-ref/mc-api-json-validation.md) para determinar qué tipos de evento eventTypes son obligatorios y cuáles son opcionales.
 
 * `qoeData` - opcional para todas las solicitudes.
-* `customMetadata` - Opcional para todas las peticiones, pero solo se envía con los tipos de evento `sessionStart`, `adStart` y `chapterStart`.
+* `customMetadata` - opcional para todas las peticiones, pero solo se envía con los tipos de evento `sessionStart`, `adStart` y `chapterStart`.
 
 Para cada `eventType`, hay [un esquema de validación JSON](mc-api-ref/mc-api-json-validation.md) disponible públicamente que debe utilizarse para verificar tipos de parámetros y si uno de estos es opcional o necesario para un evento determinado.
 
