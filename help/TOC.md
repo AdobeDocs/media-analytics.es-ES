@@ -9,14 +9,14 @@ translation-type: tm+mt
 source-git-commit: 82923f4ad4d6fd2394fe83850edca3ffd6a913ea
 workflow-type: tm+mt
 source-wordcount: '829'
-ht-degree: 94%
+ht-degree: 99%
 
 ---
 
 
 # Adobe Analytics para medios de transmisión {#using}
 
-+ [Medición de medios de flujo continuo en Adobe Analytics](media-overview.md)
++ [Medición de Streaming Media en Adobe Analytics](media-overview.md)
 + [Dispositivos y plataformas compatibles](measurement-options/supported-devices.md)
 + Introducción a Streaming Media Analytics {#intro-to-ava}
    + [Requisitos previos](intro-to-ava/prereqs.md)
@@ -45,9 +45,9 @@ ht-degree: 94%
          + [Configuración de JavaScript 3.x](sdk-implement/setup/setup-javascript/set-up-js-3.md)
       + [Configuración de Chromecast ](sdk-implement/setup/set-up-chromecast.md)
       + [Configuración de Roku ](sdk-implement/setup/set-up-roku.md)
-   + Reproducción de medios de flujo continuo {#track-av-playback}
+   + Seguimiento de Streaming Media Playback {#track-av-playback}
       + [Información general](sdk-implement/track-av-playback/track-core-overview.md)
-      + Reproducción de medios de flujo continuo principal {#track-core}
+      + Seguimiento de Core Streaming Media Playback {#track-core}
          + [Seguimiento de reproducción principal en Android](sdk-implement/track-av-playback/track-core/track-core-android.md)
          + [Seguimiento de reproducción principal en iOS](sdk-implement/track-av-playback/track-core/track-core-ios.md)
          + Seguimiento de reproducción principal en JavaScript {#track-core-javascript}
@@ -199,7 +199,7 @@ ht-degree: 94%
    + [Guía paso a paso](media-analytics-cookbook/media-analytics-cookbook.md)
    + [Atribución de flujo de transmisión de contenido](media-analytics-cookbook/media-dimensions.md)
 + Métricas y metadatos {#metrics-and-metadata}
-   + [Parámetros de flujo de medios](metrics-and-metadata/audio-video-parameters.md)
+   + [Parámetros de Streaming Media](metrics-and-metadata/audio-video-parameters.md)
    + [Parámetros de anuncio](metrics-and-metadata/ad-parameters.md)
    + [Parámetros de capítulo ](metrics-and-metadata/chapter-parameters.md)
    + [Parámetros de estado del reproductor](metrics-and-metadata/player-state-parameters.md)
@@ -212,12 +212,12 @@ ht-degree: 94%
       + [Información general de informes predeterminados](media-reports/media-default-reports/default-reports-overview.md)
       + [Información general de contenidos](media-reports/media-default-reports/media-reports-overview.md)
       + [Detalles de contenidos](media-reports/media-default-reports/media-reports-detail.md)
-      + [Informe de partición de días de medios](media-reports/media-default-reports/media-reports-daypart.md)
-      + [Informe de visores simultáneos de medios](media-reports/media-default-reports/media-concurrent-viewers.md)
+      + [Informe de Media Daypart](media-reports/media-default-reports/media-reports-daypart.md)
+      + [Informe de visualizadores simultáneos de medios](media-reports/media-default-reports/media-concurrent-viewers.md)
    + Paneles de Media Workspace {#media-workspace-panels}
       + [Panel de visualizadores simultáneos de medios](media-reports/media-workspace-panels/media-concurrent-viewers.md)
    + [Plantillas de Workspace de medios](media-reports/media-workspace-templates.md)
-   + [Obtener datos de visores simultáneos mediante API](media-reports/media-default-reports/get-concurrent-json20.md)
+   + [Obtener datos de visualizadores simultáneos mediante API](media-reports/media-default-reports/get-concurrent-json20.md)
 + [Seguimiento del contenido descargado](media-collection-api/track-downloaded-content.md)
 + Seguimiento del estado de reproducción {#player-state-tracking}
    + [Información general](sdk-implement/player-state-tracking/player-state-overview.md)
