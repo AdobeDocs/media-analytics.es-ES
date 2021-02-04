@@ -1,19 +1,18 @@
 ---
-title: Rutas de implementación
-description: null
-uuid: 8400c938-e77e-4c88-b23b-5f5977a5316c
-translation-type: ht
-source-git-commit: 0bc3928b8e3076feb8e9a16e005cd0415f723408
-workflow-type: ht
-source-wordcount: '489'
-ht-degree: 100%
+title: ¿Qué rutas de implementación de medios de flujo están disponibles?
+description: Obtenga información sobre las rutas de implementación de medios de flujo continuo de Adobe, incluido Adobe Launch.
+translation-type: tm+mt
+source-git-commit: 901539a2095b23f9108a934eb61d182b14ccd9e8
+workflow-type: tm+mt
+source-wordcount: '505'
+ht-degree: 87%
 
 ---
 
 
 # Rutas de implementación {#implementation-paths}
 
-Con cada ruta de implementación, los clientes deberán ponerse en contacto con su representante de ventas/administrador de cuentas para firmar un nuevo pedido de ventas, ya que Media Analytics tiene un SKU único y cambia de un modelo de precios basado en las llamadas del servidor a un modelo basado en las transmisiones de vídeo.
+Para cada ruta de implementación, los clientes deben ponerse en contacto con su representante de ventas/administrador de cuentas para firmar un nuevo pedido de venta, ya que Streaming Media Analytics tiene un SKU único y cambia de un modelo de precios basado en llamadas al servidor a un modelo basado en flujos de vídeo.
 
 * **Adobe Launch con la extensión de Adobe Media Analytics**
 
@@ -44,6 +43,7 @@ Con cada ruta de implementación, los clientes deberán ponerse en contacto con 
    * Compatibilidad para medir saltos de anuncios con (o sin) inserción de publicidad dinámica.
    * El modelo de inserción de anuncios optimizado de TVSDK permite realizar análisis que miden directamente la reproducción del anuncio, lo que aumenta la precisión.
    * Conjunto sólido de eventos y metadatos para garantizar la precisión en los problemas de interrupción de la conectividad móvil o de almacenamiento en búfer de QoS y en las interacciones del usuario final, como la búsqueda, la pausa y la puesta en segundo plano en dispositivos móviles.
+
 <!--
    * Integrated support for Nielsen DTVR (linear) with ID3 metadata and DCR with CMS metadata.
 -->
