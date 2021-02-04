@@ -1,9 +1,11 @@
 ---
-title: Habilitación de Audience Manager
-description: null
-uuid: 8a7f9343-ebc3-4087-9d7e-5972640d2455
-translation-type: ht
-source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
+title: ¿Qué es la habilitación de Adobe Audience Manager?
+description: Obtenga información sobre cómo vincular las acciones de la aplicación a los datos de seguimiento de medios sin necesidad de reglas de procesamiento y variables personalizadas adicionales.
+translation-type: tm+mt
+source-git-commit: 901539a2095b23f9108a934eb61d182b14ccd9e8
+workflow-type: tm+mt
+source-wordcount: '409'
+ht-degree: 93%
 
 ---
 
@@ -109,4 +111,3 @@ Puede utilizar estos métodos para enviar señales y recuperar segmentos de visi
    ```js
    ADBMobile().audienceSubmitSignal()
    ```
-
