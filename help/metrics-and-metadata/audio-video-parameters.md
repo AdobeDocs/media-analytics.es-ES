@@ -3,9 +3,9 @@ title: Parámetros de audio y vídeo
 description: null
 uuid: fdacfb8b-db3e-46fb-b9ad-c3a749555b2a
 translation-type: tm+mt
-source-git-commit: 5802a474588a6df6c66e0d1d7cb2fd30f83e4e3d
+source-git-commit: b1b94b4cde74908ea528fb69d78250dc1da1db80
 workflow-type: tm+mt
-source-wordcount: '6270'
+source-wordcount: '6268'
 ht-degree: 98%
 
 ---
@@ -199,7 +199,7 @@ public static MediaObject createMediaObject(java.lang.String name,
 
 |   Implementación   | Parámetros de red | Creación de informes |
 | --- | --- | --- |
-| <ul> <li> **Clave de SDK:**<br/> STREAM_FORMAT </li> <li> **Clave de API:**<br/> N/D </li> <li> **Requerido:**<br/> no </li> <li> **Tipo:**<br/> cadena </li> <li> **Enviado con:**<br/> Inicio de contenidos, Cierre de contenidos </li> <li> **Mínima Versión de SDK:**  1.5.7 </li> <li> **Valor de muestra:**<br/> &quot;Live&quot; </li> <li> **Descripción:**<br/> Formato de la emisión (en directo, VOD, Lineal).  </li></ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.format) </li> <li> **Heartbeats:**<br/> (s:meta:<br/>a.media.format) </li> </ul> | <ul> <li> **Disponible:**<br/> utilizar regla de procesamiento personalizada </li> <li> **Variable reservada:**<br/> N/D </li> <li> **Nombre del informe:**<br/> Personalizado </li> <li> **Datos de contexto:**<br/> (a.media.format) </li> <li> **Fuente de datos:**<br/> N/D </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.format) </li> </ul> |
+| <ul> <li> **Clave de SDK:**<br/> STREAM_FORMAT </li> <li> **Clave de API:**<br/> media.streamFormat </li> <li> **Requerido:**<br/> no </li> <li> **Tipo:**<br/> cadena </li> <li> **Enviado con:**<br/> Inicio de contenidos, Cierre de contenidos </li> <li> **Mínima Versión de SDK:**  1.5.7 </li> <li> **Valor de muestra:**<br/> &quot;HD&quot; </li> <li> **Descripción:**<br/> Formato del flujo (HD, SD)  </li></ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.format) </li> <li> **Heartbeats:**<br/> (s:meta:<br/>a.media.format) </li> </ul> | <ul> <li> **Disponible:**<br/> utilizar regla de procesamiento personalizada </li> <li> **Variable reservada:**<br/> N/D </li> <li> **Nombre del informe:**<br/> Personalizado </li> <li> **Datos de contexto:**<br/> (a.media.format) </li> <li> **Fuente de datos:**<br/> N/D </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.format) </li> </ul> |
 
 ### Temporada
 
