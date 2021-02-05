@@ -2,8 +2,11 @@
 title: Parámetros de solicitud
 description: null
 uuid: f83e9ef1-803d-4152-a6c7-acaa325036b9
-translation-type: ht
-source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
+translation-type: tm+mt
+source-git-commit: b1b94b4cde74908ea528fb69d78250dc1da1db80
+workflow-type: tm+mt
+source-wordcount: '1195'
+ht-degree: 99%
 
 ---
 
@@ -45,6 +48,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 | Clave de solicitud  | Requerido | Establecer en... |  Descripción  |
 | --- | :---: | :---: | --- |
+| `media.streamFormat` | N | `sessionStart` | Formato del flujo, por ejemplo &quot;HD&quot; |
 | `media.show` | N | `sessionStart` | El nombre del programa o serie |
 | `media.season` | N | `sessionStart` | La temporada a la que pertenece el programa o la serie |
 | `media.episode` | N | `sessionStart` | El número del episodio |
@@ -123,17 +127,17 @@ Pase el ID de usuario de Experience Cloud (también conocido como `MID` o `MCID`
 
 ### appInstallationId
 
-* **Si *no*transmite`appInstallationId`como un valor:** El servidor back-end de MA dejará de generar una MCID y, en su lugar, dependerá de Adobe Analytics para hacerlo. La recomendación de Adobe es enviar una MCID si está disponible, o bien una `appInstallationId` (junto con la `marketingCloudOrgId` obligatoria) para que la API de Media Collection genere la MCID y la envíe en todas las llamadas.
+* **Si *no* transmite `appInstallationId` como un valor:** El servidor back-end de MA dejará de generar una MCID y, en su lugar, dependerá de Adobe Analytics para hacerlo. La recomendación de Adobe es enviar una MCID si está disponible, o bien una `appInstallationId` (junto con la `marketingCloudOrgId` obligatoria) para que la API de Media Collection genere la MCID y la envíe en todas las llamadas.
 
-* **Si *transmite*el valor`appInstallationId`:** El MCID *puede* generarse en el final de MA si transmite valores para los parámetros `appInstallationId` y `marketingCloudOrgId` (obligatorios). Si transmite `appInstallationId` usted mismo, debe mantener su valor en el lado del cliente. Debe ser exclusivo de la aplicación en un dispositivo y persistente durante todo el tiempo en que la aplicación no se reinstale.
+* **Si *transmite* el valor `appInstallationId`:** El MCID *puede* generarse en el final de MA si transmite valores para los parámetros `appInstallationId` y `marketingCloudOrgId` (obligatorios). Si transmite `appInstallationId` usted mismo, debe mantener su valor en el lado del cliente. Debe ser exclusivo de la aplicación en un dispositivo y persistente durante todo el tiempo en que la aplicación no se reinstale.
 
 >[!NOTE]
 >
 >`appInstallationId` identifica exclusivamente la aplicación *y el dispositivo*. Debe ser exclusivo para cada aplicación en cada dispositivo, es decir, dos usuarios que utilicen la misma versión de la misma aplicación en distintos dispositivos deben enviar un `appInstallationId` diferente (exclusivo).
 
-<!-- Initially, there were no browser-based customers. In future this will be part of a two-bullet list, one bullet for Native Apps, the other for Browser apps. The . 
-\<ul id="ul_iwc_fqt_pbb"\> 
- \<li\>For Browser Apps, this should be a first-party cookie that is persistent for as long as the user stays in the same browser. If clients have multiple websites, they need to have different cookies for each site.</li> 
+<!-- Initially, there were no browser-based customers. In future this will be part of a two-bullet list, one bullet for Native Apps, the other for Browser apps. The .
+\<ul id="ul_iwc_fqt_pbb"\>
+ \<li\>For Browser Apps, this should be a first-party cookie that is persistent for as long as the user stays in the same browser. If clients have multiple websites, they need to have different cookies for each site.</li>
 </ul> -->
 
 ### visitor.marketingCloudOrgId
@@ -152,7 +156,7 @@ Además de ser necesario para generar MCID cuando no se proporciona, este parám
    ```js
    "<<insert your ID name here>>": {  
      "id": " <<insert your id here>>",  
-      "authState": <<insert one of 0, 1, 2>> 
+      "authState": <<insert one of 0, 1, 2>>
    }
    ```
 
