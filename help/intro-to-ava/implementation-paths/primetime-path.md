@@ -1,16 +1,18 @@
 ---
-title: Primetime
-description: null
-uuid: 3d5a5ebd-b897-40f6-ba75-bba1bae3a081
-translation-type: ht
-source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
+title: ¿Qué es Adobe Primetime?
+description: Obtenga información sobre la solución Adobe Primetime y cómo ayuda a monetizar los medios de transmisión.
+translation-type: tm+mt
+source-git-commit: 5f0de1e0f0694987c6bab0bd97ac8c98e843f23a
+workflow-type: tm+mt
+source-wordcount: '255'
+ht-degree: 89%
 
 ---
 
 
 # Primetime {#primetime}
 
-Media Analytics (Heartbeats) es la solución de seguimiento de medios estandarizada de Adobe. Ha reemplazado el modelo anterior de Milestone de Adobe.
+Media Analytics (latidos) es la solución de seguimiento de medios estandarizados de Adobe que sustituye al modelo Milestone del Adobe.
 
 Se trata de una solución de Adobe Experience Cloud que ayuda a los programadores y distribuidores de contenido a monetizar el contenido en todos los dispositivos conectados.
 
