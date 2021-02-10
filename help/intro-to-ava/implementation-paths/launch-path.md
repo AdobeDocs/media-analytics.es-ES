@@ -1,18 +1,18 @@
 ---
 title: ¿Cómo implementa Adobe Launch el seguimiento de medios de transmisión?
-description: Obtenga información sobre la extensión de Adobe Streaming Media Launch para los medios de flujo continuo.
-translation-type: tm+mt
+description: Obtenga información acerca de la extensión de Adobe Streaming Media Launch para los medios de transmisión.
+translation-type: ht
 source-git-commit: 901539a2095b23f9108a934eb61d182b14ccd9e8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '132'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
 
 # Adobe Experience Platform Launch {#adobe-launch}
 
-Media Analytics (Heartbeats) es la solución de seguimiento de medios estandarizada de Adobe. Ha reemplazado al modelo Milestone del Adobe.
+Media Analytics (Heartbeats) es la solución de seguimiento de medios estandarizada de Adobe. Se ha reemplazado el modelo Milestone de Adobe.
 
 Adobe Experience Platform Launch, el producto de seguimiento de Dynamic Tag Management, cuenta con una extensión de Experience Platform Launch que facilita la implementación del seguimiento en los reproductores de contenido.
 
