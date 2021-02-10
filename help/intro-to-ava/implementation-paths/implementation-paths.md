@@ -1,18 +1,18 @@
 ---
-title: ¿Qué rutas de implementación de medios de flujo están disponibles?
-description: Obtenga información sobre las rutas de implementación de medios de flujo continuo de Adobe, incluido Adobe Launch.
-translation-type: tm+mt
+title: ¿Qué rutas de implementación de medios de flujo continuo están disponibles?
+description: Obtenga información acerca de las rutas de implementación de medios de flujo continuo de Adobe, incluido Adobe Launch.
+translation-type: ht
 source-git-commit: 901539a2095b23f9108a934eb61d182b14ccd9e8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '505'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
 
 # Rutas de implementación {#implementation-paths}
 
-Para cada ruta de implementación, los clientes deben ponerse en contacto con su representante de ventas/administrador de cuentas para firmar un nuevo pedido de venta, ya que Streaming Media Analytics tiene un SKU único y cambia de un modelo de precios basado en llamadas al servidor a un modelo basado en flujos de vídeo.
+Con cada ruta de implementación, los clientes deberán ponerse en contacto con su representante de ventas/administrador de cuentas para firmar un nuevo pedido de ventas, ya que Media Analytics tiene una SKU única y cambia de un modelo de precios basado en las llamadas del servidor a un modelo basado en las transmisiones de vídeo.
 
 * **Adobe Launch con la extensión de Adobe Media Analytics**
 
