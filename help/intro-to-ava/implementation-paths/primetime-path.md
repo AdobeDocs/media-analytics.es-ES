@@ -1,18 +1,18 @@
 ---
 title: ¿Qué es Adobe Primetime?
-description: Obtenga información sobre la solución Adobe Primetime y cómo ayuda a monetizar los medios de transmisión.
-translation-type: tm+mt
+description: Conozca la solución Adobe Primetime y cómo ayuda a monetizar los medios de transmisión.
+translation-type: ht
 source-git-commit: 5f0de1e0f0694987c6bab0bd97ac8c98e843f23a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '255'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
 
 # Primetime {#primetime}
 
-Media Analytics (latidos) es la solución de seguimiento de medios estandarizados de Adobe que sustituye al modelo Milestone del Adobe.
+Media Analytics (latidos) es la solución de seguimiento de medios estandarizados de Adobe que sustituye al modelo Milestone de Adobe.
 
 Se trata de una solución de Adobe Experience Cloud que ayuda a los programadores y distribuidores de contenido a monetizar el contenido en todos los dispositivos conectados.
 
