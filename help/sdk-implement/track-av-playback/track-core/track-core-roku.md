@@ -2,14 +2,14 @@
 title: Seguimiento de reproducción principal en Roku
 description: En este tema se describe cómo implementar el seguimiento principal mediante Media SDK en Roku.
 uuid: a8aa7b3c-2d39-44d7-8ebc-b101d130101f
+exl-id: 5272c0ce-4e3d-48c6-bfa6-94066ccbf9ac
 translation-type: tm+mt
-source-git-commit: 815965d1cd41e73e50666a89f4a7c450af5022da
+source-git-commit: d11f68d0967dc27a6866a9b5a39c6b84ac9532e4
 workflow-type: tm+mt
-source-wordcount: '1022'
+source-wordcount: '681'
 ht-degree: 100%
 
 ---
-
 
 # Seguimiento de reproducción principal en Roku {#track-core-playback-on-roku}
 
@@ -99,91 +99,6 @@ ht-degree: 100%
    Opcionalmente, se pueden adjuntar objetos de metadatos estándar o personalizados a la sesión de seguimiento mediante el uso de variables de datos de contexto.
 
    * **Metadatos estándar**
-
-      [Implementación de metadatos estándar en JavaScript](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-md-js/impl-std-metadata-js.md)
-
-      >[!NOTE]
-      >
-      >No es obligatorio adjuntar el objeto de metadatos estándar al objeto de contenidos.
-
-      * Referencia de API de claves de metadatos de contenidos: [Claves de metadatos estándar de JavaScript](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript)
-
-         Consulte el conjunto completo de metadatos disponibles aquí: [Parámetros de audio y vídeo](/help/metrics-and-metadata/audio-video-parameters.md).
-   * **Metadatos personalizados**
-
-      Cree un objeto de variable para las variables personalizadas y rellénelo con los datos de estos contenidos. Por ejemplo:
-
-      ```js
-      /* Set custom context data */
-      var customVideoMetadata = {
-          isUserLoggedIn: "false",
-          tvStation: "Sample TV station",
-          programmer: "Sample programmer"
-      };
-      ```
-
-
-1. **Realice un seguimiento de la intención de iniciar la reproducción**
-
-   Para empezar a realizar el seguimiento de una sesión multimedia, invoque a `trackSessionStart` en la instancia de Media Heartbeat:
-
-   ```js
-   mediaHeartbeat.trackSessionStart(mediaObject, customVideoMetadata);
-   ```
-
-   >[!TIP]
-   >
-   >El segundo valor es el nombre de objeto de metadatos de contenido personalizado que ha creado en el paso 2.
-
-   >[!IMPORTANT]
-   >
-   >`trackSessionStart` rastrea la intención de reproducción, no el comienzo de la reproducción. Esta API se utiliza para cargar los datos y los metadatos, y para calcular la métrica de QoS (tiempo entre `trackSessionStart` y `trackPlay`).
-
-   >[!NOTE]
-   >
-   >Si no utiliza metadatos personalizados, envíe un objeto vacío para el argumento `data` en `trackSessionStart`, tal y como se muestra en la línea comentada del ejemplo para iOS anterior.
-
-1. **Realizar un seguimiento del inicio real de la reproducción**
-
-   Identifique el evento del reproductor de contenido para el principio de la reproducción, cuando se renderice el primer fotograma del contenido en la pantalla, e invoque `trackPlay`:
-
-   ```js
-   mediaHeartbeat.trackPlay();
-   ```
-
-1. **Realizar un seguimiento de la finalización de la reproducción**
-
-   Identifique el evento del reproductor de contenido para la finalización de la reproducción cuando el usuario ha visto el contenido hasta el final e invoque `trackComplete`:
-
-   ```js
-   mediaHeartbeat.trackComplete();
-   ```
-
-1. **Realizar un seguimiento del final de la sesión**
-
-   Identifique el evento del reproductor de contenido para la carga o el cierre de la reproducción, cuando el usuario cierra o se completa la descarga, e invoque `trackSessionEnd`:
-
-   ```js
-   mediaHeartbeat.trackSessionEnd();
-   ```
-
-   >[!IMPORTANT]
-   >
-   >`trackSessionEnd` marca el final de una sesión de seguimiento. Si la sesión se ha visto por completo correctamente, es decir, el usuario ha visto el contenido hasta el final, asegúrese de invocar `trackComplete` antes que `trackSessionEnd`. Las demás llamadas de la API `track*` se pasan por alto después de `trackSessionEnd` (salvo `trackSessionStart` en una nueva sesión de seguimiento).  Método de seguimiento de reproducción de contenidos para hacer un seguimiento de la carga de contenidos y establecer la sesión actual como activa:
-
-   ```
-   ‘ Create a media info object
-   mediaInfo = adb_media_init_mediainfo()
-   mediaInfo.id = <MEDIA_ID>
-   mediaInfo.playhead = "0"
-   mediaInfo.length = "600"
-   ```
-
-1. **Adjuntar metadatos de vídeo**
-
-   Opcionalmente, se pueden adjuntar objetos de metadatos de vídeo estándar o personalizados a la sesión de seguimiento de vídeo mediante el uso de variables de datos de contexto.
-
-   * **Metadatos de vídeo estándar**
 
       [Implementación de metadatos estándar en Roku](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
 
