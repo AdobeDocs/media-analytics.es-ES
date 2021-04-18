@@ -1,12 +1,15 @@
 ---
 title: Condiciones de tiempo de espera
-description: null
+description: Condiciones de tiempo de espera
 uuid: 2a4ea13e-a561-4adf-b567-f980301b32c8
-translation-type: ht
-source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
+exl-id: 0b494b27-a4a6-4af7-84c1-c44b33b6da8f
+translation-type: tm+mt
+source-git-commit: d4491dfec33d8729f40bcef1d57622467443bdbb
+workflow-type: tm+mt
+source-wordcount: '156'
+ht-degree: 100%
 
 ---
-
 
 # Condiciones de tiempo de espera {#timeout-conditions}
 
@@ -24,4 +27,3 @@ La API de recopilación de contenido, al no tener estado, no utiliza el mismo me
 >[!NOTE]
 >
 >También puede forzar un final de sesión enviando una solicitud `events` con un tipo de evento `sessionEnd`.
-
