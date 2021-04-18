@@ -1,15 +1,15 @@
 ---
 title: Migración de Milestone a vínculo personalizado
-description: null
+description: Migración de Milestone a vínculo personalizado
 uuid: 1c8edde5-0ef1-4bc0-a62d-1747f4907f09
-translation-type: ht
-source-git-commit: e25c4d0add969ad31393f2eeb33b1a12b7205586
-workflow-type: ht
-source-wordcount: '576'
+exl-id: 732079f4-3eb8-4b9a-892b-25a1c9332be4
+translation-type: tm+mt
+source-git-commit: d4491dfec33d8729f40bcef1d57622467443bdbb
+workflow-type: tm+mt
+source-wordcount: '582'
 ht-degree: 100%
 
 ---
-
 
 # Migración de Milestone a vínculo personalizado {#migrating-from-milestone-to-custom-link}
 
