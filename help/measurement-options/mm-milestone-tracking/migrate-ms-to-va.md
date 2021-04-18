@@ -1,15 +1,15 @@
 ---
 title: Migración de Milestone a Media Analytics
-description: null
+description: Migración de Milestone a Media Analytics
 uuid: fdc96146-af63-48ce-b938-c0ca70729277
-translation-type: ht
-source-git-commit: e079b90f8fb9197e5ebae0fb6ca31081ba28de1d
-workflow-type: ht
-source-wordcount: '669'
+exl-id: 655841ed-3a02-4e33-bbc9-46fb14302194
+translation-type: tm+mt
+source-git-commit: d4491dfec33d8729f40bcef1d57622467443bdbb
+workflow-type: tm+mt
+source-wordcount: '675'
 ht-degree: 100%
 
 ---
-
 
 # Migración de Milestone a Media Analytics {#migrating-from-milestone-to-media-analytics}
 
@@ -89,4 +89,3 @@ En las tablas siguientes se proporcionan las correspondencias entre la solución
 | Media.stop | `s.Media.stop(mediaName, mediaOffset)` | trackPause<br> o <br>trackEvent | `trackPause()` <br> O bien `trackEvent(` <br> `  MediaHeartbeat.` <br> `  Event.` <br> `  SeekStart)` <br> O bien <br> `trackEvent(` <br> `  MediaHeartbeat.` <br> `  Event.` <br> `  BufferStart);` |
 | Media.monitor | `s.Media.monitor(s, media)` | Utilice metadatos personalizados o estándar para establecer variables adicionales. | `var customVideoMetadata = ` <br> `{` <br> `  isUserLoggedIn: ` <br> `    "false",` <br> `  tvStation: ` <br> `    "Sample TV station",` <br> `  programmer: ` <br> `    "Sample programmer"` <br> `};` <br> `...` <br> `var standardVideoMetadata ` <br> `  = {};` <br> `standardVideoMetadata` <br> `  [MediaHeartbeat.` <br> `   VideoMetadataKeys.` <br> `   EPISODE] = ` <br> `  "Sample Episode";` <br> `standardVideoMetadata` <br> `  [MediaHeartbeat.` <br> `   VideoMetadataKeys.` <br> `   SHOW] = "Sample Show";` <br> `...` <br> `mediaObject.setValue(` <br> `  MediaHeartbeat.` <br> `  MediaObjectKey.` <br> `  StandardVideoMetadata, ` <br> `  standardVideoMetadata);` |
 | Media.track | `s.Media.track(mediaName)` | N/D | La frecuencia de llamada de seguimiento se configura automáticamente. |
-
