@@ -1,12 +1,15 @@
 ---
 title: Solicitud de sesiones
-description: null
+description: Solicitud de sesiones
 uuid: 9609192d-4f7f-4fb5-844f-ea89d47c4e30
-translation-type: ht
-source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
+exl-id: f55f5838-610f-4f82-b3c5-72165ea2c86b
+translation-type: tm+mt
+source-git-commit: d4491dfec33d8729f40bcef1d57622467443bdbb
+workflow-type: tm+mt
+source-wordcount: '80'
+ht-degree: 100%
 
 ---
-
 
 # Solicitud de sesiones {#sessions-request}
 
@@ -93,4 +96,3 @@ Encabezado `Location:`: La parte `/api/v1/` proporciona la versión de API. La p
 | 201 | Sesión creada |
 | 400 | Solicitud incorrecta |
 | 500 | Error del servidor |
-
