@@ -1,12 +1,15 @@
 ---
 title: Solicitud de eventos
-description: null
+description: Solicitud de eventos
 uuid: b237f0a0-dc29-418b-89ee-04c596a27f39
-translation-type: ht
-source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
+exl-id: ee0dd8a6-1529-4258-af12-0e2f5948ec38
+translation-type: tm+mt
+source-git-commit: d4491dfec33d8729f40bcef1d57622467443bdbb
+workflow-type: tm+mt
+source-wordcount: '246'
+ht-degree: 100%
 
 ---
-
 
 # Solicitud de eventos {#events-request}
 
@@ -74,4 +77,3 @@ Access-Control-Expose-Headers Location
 | **404** | **No encontrado.** <br/><br/>No se ha encontrado el ID de la sesión de contenido en el servicio back-end. | La aplicación del cliente debe utilizar la API de [solicitud de sesiones](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) para crear otra sesión de medios y realizar el seguimiento de informes. |
 | **410** | **Se ha marchado.** <br/><br/>Se ha encontrado la sesión de contenido en el servicio back-end, pero el cliente ya no puede informar de la actividad en ella. | La aplicación del cliente debe utilizar la API de [solicitud de sesiones](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) para crear otra sesión de medios y realizar el seguimiento de informes. |
 | **500** | **Error del servidor** | N/D |
-
