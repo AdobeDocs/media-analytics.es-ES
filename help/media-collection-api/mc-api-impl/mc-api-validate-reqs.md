@@ -1,12 +1,15 @@
 ---
 title: Validación de solicitudes de eventos
-description: null
+description: Validación de solicitudes de eventos
 uuid: 1fc92f21-b510-4c96-8ea2-47e819f4a96e
-translation-type: ht
-source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
+exl-id: a78739da-9fc9-42e3-9181-1887fb3dd357
+translation-type: tm+mt
+source-git-commit: d4491dfec33d8729f40bcef1d57622467443bdbb
+workflow-type: tm+mt
+source-wordcount: '112'
+ht-degree: 100%
 
 ---
-
 
 # Validación de solicitudes de eventos {#validating-event-requests}
 
@@ -126,4 +129,3 @@ Connection: keep-alive
 >[!NOTE]
 >
 >No es posible validar el nivel de sesión porque el contexto no está disponible en la capa de recopilación.
-
