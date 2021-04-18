@@ -1,15 +1,15 @@
 ---
 title: Requisitos previos
-description: null
+description: Requisitos previos
 uuid: 4c0b37f3-8615-4cc0-b9c9-eeb029067064
-translation-type: ht
-source-git-commit: 72cdf2d03ebae6998514c9092ab462c29345c9f9
-workflow-type: ht
-source-wordcount: '424'
+exl-id: 85ab1dbd-f4a7-4f11-afc9-8d5000e2de70
+translation-type: tm+mt
+source-git-commit: d4491dfec33d8729f40bcef1d57622467443bdbb
+workflow-type: tm+mt
+source-wordcount: '425'
 ht-degree: 100%
 
 ---
-
 
 # Requisitos previos {#prerequisites}
 
@@ -52,4 +52,3 @@ Para una implementación de *Media Analytics*, estas son las tareas que debe com
 1. **Habilitar los informes de Adobe Analytics**.
 
    Para habilitar los informes en Analytics y ver los datos de contenido y de publicidad que está recopilando, consulte [Habilitación de informes de contenidos.](/help/media-reports/media-reports-enable.md)
-
