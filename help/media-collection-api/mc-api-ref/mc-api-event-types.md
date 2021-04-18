@@ -1,12 +1,15 @@
 ---
 title: Tipos de eventos y descripciones
-description: null
+description: Tipos de eventos y descripciones
 uuid: bc4f75a7-ea22-47eb-a50d-5f41274c6d41
-translation-type: ht
-source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
+exl-id: f2919e69-8b03-45b4-b9cd-365222a061e0
+translation-type: tm+mt
+source-git-commit: d4491dfec33d8729f40bcef1d57622467443bdbb
+workflow-type: tm+mt
+source-wordcount: '346'
+ht-degree: 100%
 
 ---
-
 
 # Tipos de eventos y descripciones {#event-types-and-descriptions}
 
@@ -86,4 +89,3 @@ Se envía cuando se llega al final del contenido principal.
 >[!IMPORTANT]
 >
 >Debe hacer referencia a los [esquemas de validación de JSON](/help/media-collection-api/mc-api-ref/mc-api-json-validation.md) para cada tipo de evento y comprobar los requisitos y tipos de parámetros de eventos correctos.
-
