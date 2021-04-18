@@ -1,12 +1,15 @@
 ---
 title: Segmentos
-description: null
+description: Segmentos
 uuid: 61906b8c-3362-4463-82be-fe0e741a5eb3
-translation-type: ht
-source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
+exl-id: a450801c-0d6b-4e2a-8662-f00aaaa6e4e0
+translation-type: tm+mt
+source-git-commit: d4491dfec33d8729f40bcef1d57622467443bdbb
+workflow-type: tm+mt
+source-wordcount: '125'
+ht-degree: 100%
 
 ---
-
 
 # Segmentos {#segments}
 
@@ -25,4 +28,3 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 | Tipo de contenido de medios: podcast | Segmentar todo el contenido del podcast | &quot;Tipo de contenido = `podcast`&quot; |
 | Tipo de contenido de medios: audiolibro | Segmentar todo el contenido de Audiobook | &quot;Tipo de contenido = `audiobook`&quot; |
 | Tipo de contenido de medios: AoD | Segmentar todo el contenido de AoD | &quot;Tipo de contenido = `aod`&quot; |
-
