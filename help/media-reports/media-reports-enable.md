@@ -1,12 +1,15 @@
 ---
 title: Habilitación de informes de contenidos
-description: null
+description: Habilitación de informes de contenidos
 uuid: d306068d-a308-4b6e-8a72-742dda0de428
-translation-type: ht
-source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
+exl-id: 686d88a5-79b6-4936-ba9e-8f834ef330d1
+translation-type: tm+mt
+source-git-commit: d4491dfec33d8729f40bcef1d57622467443bdbb
+workflow-type: tm+mt
+source-wordcount: '899'
+ht-degree: 100%
 
 ---
-
 
 # Habilitación de informes de contenidos {#media-reports-enablement}
 
@@ -21,7 +24,7 @@ Para enviar datos sobre los contenidos, es necesario configurar todos los grupos
 
    ![](assets/media-reporting.png){width=&quot;400px&quot;}
 
-1. En la página **[!UICONTROL Informes de contenidos]**, habilite **[!UICONTROL Componentes básicos de contenidos],**y, opcionalmente, también**[!UICONTROL Anuncios de contenidos],** **[!UICONTROL Capítulos de contenidos],**y**[!UICONTROL Calidad de contenidos].**
+1. En la página **[!UICONTROL Informes de contenidos]**, habilite **[!UICONTROL Componentes básicos de contenidos],** y, opcionalmente, también **[!UICONTROL Anuncios de contenidos],** **[!UICONTROL Capítulos de contenidos],** y **[!UICONTROL Calidad de contenidos].**
 
    La medición de contenidos incluye los siguientes módulos:
 
@@ -61,7 +64,7 @@ Para enviar datos sobre los contenidos, es necesario configurar todos los grupos
    | Opción | Notas |
    | --- | --- |
    | Continuar usando variables personalizadas | Ventajas e inconvenientes:<ul> <li> **Profesionales:** las tendencias de contenidos siguen funcionando después de la migración. </li> <li> **Inconvenientes:** Requiere que mantenga dos eVars personalizadas y tres eventos personalizados asignados a contenidos. Recuperará el uso de una eVar personalizada y un evento personalizado. </li> </ul> Para seguir usando variables personalizadas: <ol> <li>Seleccione **[!UICONTROL Usar variables personalizadas]** y luego haga clic en **[!UICONTROL Guardar]**. </li> <li>Cuando se le solicite, asigne sus eVars y eventos personalizados actuales y luego haga clic en **[!UICONTROL Guardar:]** </li> </ol> |
-   | Migrar a variables de solución | Ventajas e inconvenientes:<ul> <li> **Ventajas:** Recuperará el uso de tres eVars personalizadas y cuatro eventos personalizados. </li> <li> **Desventajas:** pierde **todas** las tendencias y comparativas históricas para los informes de contenidos. Esto significa que no puede aplicar tendencias a las vistas de contenido ni al tiempo de contenido reproducido para ninguna fecha antes de migrar a latidos. </li> </ul> **Restricción:** no migre a las variables de solución a menos que esté seguro de que no desea conservar esta tendencia. Todos los clientes deben utilizar variables de solución y reglas de procesamiento para incluir datos de contenidos en las props y eVars existentes, solo si necesitan conservar la continuidad histórica. Para migrar a variables de solución: Seleccione **[!UICONTROL Usar variables de solución]** y haga clic en **[!UICONTROL Guardar].**<br><br>IMPORTANTE: La migración a las variables de solución hace que se pierdan **todas ** las tendencias y comparativas históricas para los informes de contenidos. |
+   | Migrar a variables de solución | Ventajas e inconvenientes:<ul> <li> **Ventajas:** Recuperará el uso de tres eVars personalizadas y cuatro eventos personalizados. </li> <li> **Desventajas:** pierde **todas** las tendencias y comparativas históricas para los informes de contenidos. Esto significa que no puede aplicar tendencias a las vistas de contenido ni al tiempo de contenido reproducido para ninguna fecha antes de migrar a latidos. </li> </ul> **Restricción:** no migre a las variables de solución a menos que esté seguro de que no desea conservar esta tendencia. Todos los clientes deben utilizar variables de solución y reglas de procesamiento para incluir datos de contenidos en las props y eVars existentes, solo si necesitan conservar la continuidad histórica. Para migrar a variables de solución: Seleccione **[!UICONTROL Usar variables de solución]** y haga clic en **[!UICONTROL Guardar].** <br><br> IMPORTANTE: La migración a las variables de solución hace que se pierdan **todas** las tendencias y comparativas históricas para los informes de contenidos. |
 
 >[!IMPORTANT]
 >
