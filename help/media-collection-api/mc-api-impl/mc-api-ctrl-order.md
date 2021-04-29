@@ -4,7 +4,7 @@ description: Control del orden de los eventos
 uuid: 007fccc6-be72-4b79-826d-588c957ccf15
 exl-id: c0cac319-2bea-42c8-8674-641dfbb44fa2
 translation-type: tm+mt
-source-git-commit: e0da35f364dc057a241fbb05a718a731ffee1e94
+source-git-commit: 27694ec83de89980404df7a7cc77fa42b3d1a751
 workflow-type: tm+mt
 source-wordcount: '307'
 ht-degree: 4%
@@ -16,6 +16,7 @@ ht-degree: 4%
 El seguimiento de vídeo en flujo es una operación dependiente del tiempo y, ocasionalmente, las llamadas de seguimiento de API de recopilación de contenido llegan al back end sin orden. En esta situación, el back end intenta poner en cola y reordenar eventos basados en la marca de tiempo proporcionada en el objeto `playerTime`.  Esto ocurre con algunos límites. Actualmente, la reordenación puede fallar si los retrasos entre las llamadas desordenadas son superiores a un segundo. En futuras actualizaciones, el &quot;tiempo de demora aceptable&quot; puede optimizarse y configurarse.
 
 ## Ejemplo de evento desordenado
+
 Los eventos desordenados se producen cuando los eventos pasan por la red, lo que a veces provoca un retraso.
 
 Por ejemplo, puede enviar un evento `adBreakStart` seguido de un evento `adStart`. Este es un caso de uso común, ya que es necesario para que un anuncio comience dentro de una pausa publicitaria.
