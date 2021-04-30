@@ -2,9 +2,9 @@
 title: Obtención de datos del informe JSON de espectadores simultáneos
 description: Obtención de datos del informe JSON de espectadores simultáneos
 uuid: 9168f114-2459-4951-a06c-57b735d09dc0
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d4491dfec33d8729f40bcef1d57622467443bdbb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '164'
 ht-degree: 100%
 
