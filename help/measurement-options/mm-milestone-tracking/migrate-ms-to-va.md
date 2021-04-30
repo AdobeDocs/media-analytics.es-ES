@@ -3,9 +3,9 @@ title: Migración de Milestone a Media Analytics
 description: Migración de Milestone a Media Analytics
 uuid: fdc96146-af63-48ce-b938-c0ca70729277
 exl-id: 655841ed-3a02-4e33-bbc9-46fb14302194
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d4491dfec33d8729f40bcef1d57622467443bdbb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '675'
 ht-degree: 100%
 
