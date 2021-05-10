@@ -2,14 +2,14 @@
 title: Parámetros de solicitud
 description: null
 uuid: f83e9ef1-803d-4152-a6c7-acaa325036b9
+exl-id: a70025ec-1418-46f1-b41f-433d09f024e1
 translation-type: tm+mt
-source-git-commit: b1b94b4cde74908ea528fb69d78250dc1da1db80
+source-git-commit: 64a91795bd2f9120991be2a67e68c645dc24c8d1
 workflow-type: tm+mt
-source-wordcount: '1195'
-ht-degree: 99%
+source-wordcount: '1205'
+ht-degree: 98%
 
 ---
-
 
 # Parámetros de solicitud {#request-parameters}
 
@@ -28,7 +28,7 @@ ht-degree: 99%
 | --- | :---: | :---: | --- |
 | `visitor.marketingCloudOrgId` | Y | `sessionStart` | El ID de organización de Experience Cloud indentifica su organización en el sistema de Adobe Experience Cloud |
 | `visitor.marketingCloudUserId` | N | `sessionStart` | Este es el ID de usuario de Experience Cloud (ECID). En la mayoría de los casos, este es el ID que debe utilizar para identificar a un usuario. Heartbeat `marketingCloudUserId` es igual a `MID` en Adobe Analytics. Aunque técnicamente no es obligatorio, este parámetro es necesario para acceder a la familia de aplicaciones de Experience Cloud. |
-| `visitor.aamLocationHint` | N | `sessionStart` | Proporciona datos de Adobe Audience Manager Edge |
+| `visitor.aamLocationHint` | N | `sessionStart` | Proporciona datos de Adobe Audience Manager Edge — Si no se introduce un valor, el valor es nulo. |
 | `appInstallationId` | N | `sessionStart` | La clase appInstallationId identifica exclusivamente la aplicación y el dispositivo |
 
 ## Datos de contenido
@@ -48,11 +48,11 @@ ht-degree: 99%
 
 | Clave de solicitud  | Requerido | Establecer en... |  Descripción  |
 | --- | :---: | :---: | --- |
-| `media.streamFormat` | N | `sessionStart` | Formato del flujo, por ejemplo &quot;HD&quot; |
+| `media.streamFormat` | N | `sessionStart` | Formato de la emisión, por ejemplo &quot;HD&quot; |
 | `media.show` | N | `sessionStart` | El nombre del programa o serie |
 | `media.season` | N | `sessionStart` | La temporada a la que pertenece el programa o la serie |
 | `media.episode` | N | `sessionStart` | El número del episodio |
-| `media.assetId` | N | `sessionStart` | El identificador exclusivo del contenido del recurso de vídeo, como el identificador de episodio de series de TV, el identificador de recursos de una película o el identificador de eventos en directo. Normalmente, estos ID se derivan de autoridades de metadatos como EIDR, TMS/Gracenote o Rovi. Estos identificadores también pueden proceder de otros sistemas propietarios o internos. |
+| `media.assetId` | N | `sessionStart` | El identificador único del contenido del recurso de vídeo, como el identificador de episodio de series de TV, el identificador de recursos de una película o el identificador de eventos en directo. Normalmente, estos ID se derivan de autoridades de metadatos como EIDR, TMS/Gracenote o Rovi. Estos identificadores también pueden proceder de otros sistemas propietarios o internos. |
 | `media.genre` | N | `sessionStart` | El tipo de contenido definido por el productor de contenido |
 | `media.firstAirDate` | N | `sessionStart` | La fecha en la que el contenido se emitió por primera vez en televisión |
 | `media.firstDigitalDate` | N | `sessionStart` | La fecha en la que el contenido se emitió por primera vez en cualquier plataforma digital |
