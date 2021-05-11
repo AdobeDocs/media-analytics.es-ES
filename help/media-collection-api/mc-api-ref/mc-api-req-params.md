@@ -4,7 +4,7 @@ description: null
 uuid: f83e9ef1-803d-4152-a6c7-acaa325036b9
 exl-id: a70025ec-1418-46f1-b41f-433d09f024e1
 translation-type: tm+mt
-source-git-commit: 64a91795bd2f9120991be2a67e68c645dc24c8d1
+source-git-commit: 786327371aa1fc8809c8a5827bc9c8991b1ecae1
 workflow-type: tm+mt
 source-wordcount: '1205'
 ht-degree: 98%
@@ -164,7 +164,7 @@ Tenga en cuenta que el valor de `visitor.customerIDs` puede tener cualquier núm
 
 ### visitor.aamLocationHint
 
-Este parámetro indica qué Adobe Audience Manager (AAM) se inicia cuando Adobe Analytics envía los datos del cliente a Audience Manager. Si no pasa este parámetro, Adobe lo codifica como 1. Esto es particularmente importante cuando los usuarios finales tienden a utilizar sus dispositivos en ubicaciones geográficamente distantes (por ejemplo, EE. UU.-Este, EE. UU.-Oeste, Europa o Asia). De lo contrario, los datos de usuario se distribuirán en varios perímetros de AAM.
+Este parámetro indica qué Adobe Audience Manager (AAM) se inicia cuando Adobe Analytics envía los datos del cliente a Audience Manager. Si no se introduce ningún valor, el valor es nulo. Esto es particularmente importante cuando los usuarios finales tienden a utilizar sus dispositivos en ubicaciones geográficamente distantes (por ejemplo, EE. UU.-Este, EE. UU.-Oeste, Europa o Asia). De lo contrario, los datos de usuario se distribuirán en varios perímetros de AAM.
 
 ### media.resume
 
