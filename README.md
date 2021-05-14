@@ -59,3 +59,4 @@ En el repositorio público, las etiquetas automatizadas se asignan a solicitudes
 * **preparado-para-fusionar**: listo para su revisión por nuestro equipo de revisión de solicitud de extracción.
 
 
+
