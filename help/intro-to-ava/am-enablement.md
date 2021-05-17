@@ -2,9 +2,8 @@
 title: ¿Qué es la habilitación de Adobe Audience Manager?
 description: Esta función le permite vincular acciones de aplicación a datos de seguimiento de medios sin necesidad de reglas de procesamiento ni variables personalizadas adicionales.
 exl-id: c0d73bc2-4713-498a-8882-ff66c7f3dd50
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
+source-git-commit: e781af84f23400aa7c899b686f0e9fee2c19d660
+workflow-type: tm+mt
 source-wordcount: '409'
 ht-degree: 100%
 
@@ -59,7 +58,7 @@ Puede utilizar estos métodos para enviar señales y recuperar segmentos de visi
    Establece el DPID y el DPUUID. Si se establecen DPID y DPUUID, se enviarán con cada señal.
 
    ```js
-   ADBMobile.audienceManager.SetDpidAndDpuuid("myDpid", "myDpuuid");
+   ADBMobile.audienceManager.setDpidAndDpuuid("myDpid", "myDpuuid");
    ```
 
 * `submitSignal() -`
@@ -67,7 +66,7 @@ Puede utilizar estos métodos para enviar señales y recuperar segmentos de visi
    Envía una señal con rasgos a la gestión de audiencias.
 
    ```js
-   ADBMobile.audienceManager.SubmitSignal();
+   ADBMobile.audienceManager.submitSignal({"sampleTrait":"sampleValue"});
    ```
 
 ### Roku {#am-roku}
@@ -109,5 +108,7 @@ Puede utilizar estos métodos para enviar señales y recuperar segmentos de visi
    Envía una señal con rasgos a la gestión de audiencias.
 
    ```js
-   ADBMobile().audienceSubmitSignal()
+   traitData = {}
+   traitData["sampleTrait"] = "sampleValue"
+   ADBMobile().audienceSubmitSignal(traitData)
    ```
