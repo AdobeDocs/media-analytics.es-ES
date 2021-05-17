@@ -2,14 +2,13 @@
 title: Configuración de Roku
 description: Configuración de la aplicación de Media SDK para la implementación en Roku.
 uuid: 904dfda0-4782-41da-b4ab-212e81156633
-translation-type: ht
-source-git-commit: ccdc3e170d125a76d798be7ce1fa5c12eef1f76a
-workflow-type: ht
-source-wordcount: '577'
-ht-degree: 100%
+exl-id: b8de88d0-3a93-4776-b372-736bf979ee26
+source-git-commit: 218c4f6a841a988477eb4509bff8d418e18715f5
+workflow-type: tm+mt
+source-wordcount: '709'
+ht-degree: 81%
 
 ---
-
 
 # Configuración de Roku {#set-up-roku}
 
@@ -47,40 +46,40 @@ El SDK 2.x de Roku para las soluciones de Experience Cloud le permite medir apli
 
       ```
       {
-        "version":"1.0", 
+        "version":"1.0",
         "analytics":{
           "rsids":"",
           "server":"",
-          "charset":"UTF-8", 
-          "ssl":false, 
-          "offlineEnabled":false, 
-          "lifecycleTimeout":30, 
-          "batchLimit":50, 
-          "privacyDefault":"optedin", 
+          "charset":"UTF-8",
+          "ssl":true,
+          "offlineEnabled":false,
+          "lifecycleTimeout":30,
+          "batchLimit":50,
+          "privacyDefault":"optedin",
           "poi":[ ]
       },
       "marketingCloud":{
         "org":""
       },
-      "target":{ 
-        "clientCode":"", 
+      "target":{
+        "clientCode":"",
         "timeout":5
       },
-      "audienceManager":{ 
+      "audienceManager":{
         "server":""
       },
-      "acquisition":{ 
+      "acquisition":{
         "server":"example.com",
         "appid":"sample-app-id"
       },
       
-      "mediaHeartbeat":{ 
-         "server":"example.com", 
-         "publisher":"sample-publisher", 
-         "channel":"sample-channel", 
-         "ssl":false,
-         "ovp":"sample-ovp", 
-         "sdkVersion":"sample-sdk", 
+      "mediaHeartbeat":{
+         "server":"example.com",
+         "publisher":"sample-publisher",
+         "channel":"sample-channel",
+         "ssl":true,
+         "ovp":"sample-ovp",
+         "sdkVersion":"sample-sdk",
          "playerName":"roku"
          }    
       }
@@ -89,7 +88,7 @@ El SDK 2.x de Roku para las soluciones de Experience Cloud le permite medir apli
       | Parámetro de configuración | Descripción     |
       | --- | --- |
       | `server` | Cadena que representa la URL del punto final de seguimiento en el servidor. |
-      | `publisher` | Cadena que representa el identificador exclusivo del editor de contenido. |
+      | `publisher` | Cadena que representa el identificador único del editor de contenido. |
       | `channel` | Cadena que representa el nombre del canal de distribución de contenido. |
       | `ssl` | Booleano que representa si SSL debe utilizarse para rastrear llamadas. |
       | `ovp` | Cadena que representa el nombre del proveedor del reproductor de vídeo. |
@@ -132,11 +131,41 @@ El SDK 2.x de Roku para las soluciones de Experience Cloud le permite medir apli
    | `visitorMarketingCloudID` | Recupera el ID del visitante de Experience Cloud del servicio de ID del visitante.  <br/><br/>`ADBMobile().visitorMarketingCloudID()` |
    | `visitorSyncIdentifiers` | Con el ID de Visitante de Experience Cloud, puede establecer ID de cliente adicionales que se pueden asociar con cada visitante. La API de visitante acepta varios ID de cliente para el mismo visitante y un identificador de tipo de cliente para separar el ámbito de los distintos ID de cliente. Este método corresponde a `setCustomerIDs`. Por ejemplo: <br/><br/>`identifiers={}` <br/>`identifiers["idType"]="idValue"` <br/>`ADBMobile().visitorSyncIdentifiers(identifiers)` |
    | `setAdvertisingIdentifier` | Se utiliza para establecer el ID de Roku para publicidad (RIDA) en el SDK. Por ejemplo: <br/><br/> `ADBMobile().setAdvertisingIdentifier(`<br/>  `"<sample_roku_identifier_for_advertising>")` <br/><br/><br/>Obtenga el ID de Roku para publicidad (RIDA) mediante la API de SDK de Roku [getRIDA()](https://developer.roku.com/docs/references/brightscript/interfaces/ifdeviceinfo.md#getrida-as-dynamic). |
-
+   | `getAllIdentifiers` | Devuelve una lista de todos los identificadores almacenados por el SDK, incluidos los identificadores de Analytics, Visitante, Audience Manager y personalizado. <br/><br/> `identifiers = ADBMobile().getAllIdentifiers()` |
    <!--
-    Roku Api Reference: 
+    Roku Api Reference:
     * [Integrating the Roku Advertising Framework](https://sdkdocs.roku.com/display/sdkdoc/Integrating+the+Roku+Advertising+Framework)  
     * [GetRIDA()](https://sdkdocs.roku.com/display/sdkdoc/ifDeviceInfo#ifDeviceInfo-GetRIDA())
     -->
+
+   <br/><br/>
+
+   **API públicas adicionales**
+
+   **DebugLogging**
+| Método   | Descripción | | — | — | |  `setDebugLogging` | Se utiliza para habilitar o deshabilitar el registro de depuración para el SDK.  <br/><br/>`ADBMobile().setDebugLogging(true)` | |  `getDebugLogging` | Devuelve true si el registro de depuración está habilitado.   <br/><br/>`isDebugLoggingEnabled = ADBMobile().getDebugLogging()` |
+
+   <br/><br/>
+
+   **PrivacyStatus**
+ | Constante   | Descripción | | — | — | |  `PRIVACY_STATUS_OPT_IN` | Constante que se pasará al llamar a setPrivacyStatus para activar. <br/><br/>`optInString = ADBMobile().PRIVACY_STATUS_OPT_IN`| |  `PRIVACY_STATUS_OPT_OUT` | Constante que se pasará al llamar a setPrivacyStatus para desactivar.  <br/><br/>`optOutString = ADBMobile().PRIVACY_STATUS_OPT_OUT`|
+
+   <br/>
+
+   |  Método   | Descripción |
+   | --- | --- |
+   | `setPrivacyStatus` | Establece el estado de privacidad en el SDK. <br/><br/>`ADBMobile().setPrivacyStatus(ADBMobile().PRIVACY_STATUS_OPT_IN)` |
+   | `getPrivacyStatus` | Obtiene el estado de privacidad actual establecido en el SDK. <br/><br/>`privacyStatus = ADBMobile().getPrivacyStatus()` |
+
+   <br/><br/>
+   >[!IMPORTANT]
+   >
+   >Asegúrese de llamar a las funciones `processMessages` y `processMediaMessages` en el bucle de evento principal cada 250 ms para asegurarse de que el SDK envía los pings correctamente.
+
+   |  Método   | Descripción |
+   | --- | --- |
+   | `processMessages` | Responsable de pasar los eventos de Analytics al SDK que se va a gestionar.  <br/><br/>`ADBMobile().processMessages()` |
+   | `processMediaMessages` | Responsable de pasar los eventos de medios al SDK que se va a gestionar. <br/><br/>`ADBMobile().processMediaMessages()` |
+
 
 <!--    **Postbacks -** For more information about configuring postbacks, see [Configure Postbacks.](https://docs.adobe.com/content/help/en/mobile-services/using/manage-app-settings-ug/configuring-app/signals.html) -->
