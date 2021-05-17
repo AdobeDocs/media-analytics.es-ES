@@ -2,14 +2,13 @@
 title: Configuración de Chromecast
 description: Configuración de la aplicación de Media SDK para la implementación en Chromecast.
 uuid: d664e394-02a2-4985-bbad-be1bcc44fb2b
-translation-type: ht
-source-git-commit: be82be2eb58f89344f2125288599fef461db441e
-workflow-type: ht
+exl-id: 5dfe3407-2858-48c0-a70c-8ea87967ac47
+source-git-commit: 218c4f6a841a988477eb4509bff8d418e18715f5
+workflow-type: tm+mt
 source-wordcount: '630'
 ht-degree: 100%
 
 ---
-
 
 # Configuración de Chromecast {#set-up-chromecast}
 
@@ -63,7 +62,7 @@ El SDK 2.x de Chromecast para las soluciones de Experience Cloud le permite medi
             "analytics": {
               "rsids": "mobile5vhl.sample.player",
               "server": "obumobile5.sc.omtrdc.net",
-              "ssl": false,
+              "ssl": true,
               "offlineEnabled": false,
               "charset": "UTF-8",
               "lifecycleTimeout": 300,
@@ -78,7 +77,7 @@ El SDK 2.x de Chromecast para las soluciones de Experience Cloud le permite medi
               "server": "obumobile5.hb.omtrdc.net",
               "publisher": "972C898555E9F7BC7F000101@AdobeOrg",
               "channel": "test-channel-chromecast",
-              "ssl": false,
+              "ssl": true,
               "ovp": "chromecast-player",
               "sdkVersion": "chromecast-sdk",
               "playerName": "Chromecast"
@@ -96,7 +95,7 @@ El SDK 2.x de Chromecast para las soluciones de Experience Cloud le permite medi
    | Parámetro de configuración | Descripción     |
    | --- | --- |
    | `server` | Cadena que representa la URL del punto final de seguimiento en el servidor. |
-   | `publisher` | Cadena que representa el identificador exclusivo del editor de contenido. |
+   | `publisher` | Cadena que representa el identificador único del editor de contenido. |
    | `channel` | Cadena que representa el nombre del canal de distribución de contenido. |
    | `ssl` | Booleano que representa si SSL debe utilizarse para rastrear llamadas. |
    | `ovp` | Cadena que representa el nombre del proveedor del reproductor de vídeo. |
@@ -138,4 +137,3 @@ El SDK 2.x de Chromecast para las soluciones de Experience Cloud le permite medi
 
 
 <!--   **Postbacks -** For more information about configuring postbacks, see [Configure Postbacks.](https://docs.adobe.com/content/help/en/mobile-services/using/manage-app-settings-ug/configuring-app/signals.html) -->
-
