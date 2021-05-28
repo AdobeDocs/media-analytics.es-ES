@@ -3,7 +3,7 @@ title: ¿Qué es la habilitación de Adobe Audience Manager?
 description: Esta función le permite vincular acciones de aplicación a datos de seguimiento de medios sin necesidad de reglas de procesamiento ni variables personalizadas adicionales.
 exl-id: c0d73bc2-4713-498a-8882-ff66c7f3dd50
 source-git-commit: e781af84f23400aa7c899b686f0e9fee2c19d660
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '409'
 ht-degree: 100%
 
