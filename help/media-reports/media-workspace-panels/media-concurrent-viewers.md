@@ -2,11 +2,10 @@
 title: Sistema de informes de espectadores simultáneos de contenidos
 description: Para los clientes de Media Analytics, el panel Visualizadores simultáneos de medios en Analysis Workspace le permite analizar los visualizadores simultáneos para saber dónde se produjo la concurrencia máxima o dónde se produjeron las bajas.
 exl-id: 2eadd5e7-45de-4275-aac5-d16e2a6a9fed
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '193'
-ht-degree: 100%
+source-git-commit: 0d5edcae0a80357247ada7f61daece9840d5c4b5
+workflow-type: tm+mt
+source-wordcount: '191'
+ht-degree: 95%
 
 ---
 
@@ -16,7 +15,7 @@ El análisis de visualizadores simultáneos le permite comprender dónde se prod
 
 ## Panel de visualizadores simultáneos de medios en Analysis Workspace
 
-En Analysis Workspace, los visualizadores simultáneos comprende la cantidad de visitantes únicos que visualizan sus flujos de medios en un momento específico, independientemente de la cantidad de sesiones. El panel Visualizadores simultáneos de medios está disponible para ver visualizadores concurrentes, desglosar y comparar. [Más información...](https://docs.adobe.com/content/help/es-ES/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers.html)
+En Analysis Workspace, los visualizadores simultáneos comprende la cantidad de visitantes únicos que visualizan sus flujos de medios en un momento específico, independientemente de la cantidad de sesiones. El panel Visualizadores simultáneos de medios está disponible para ver visualizadores concurrentes, desglosar y comparar. [Más información...](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers.html)
 
 ## Obtener visores simultáneos mediante la API de informes de Analytics
 
