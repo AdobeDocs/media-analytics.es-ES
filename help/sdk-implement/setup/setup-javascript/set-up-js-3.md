@@ -1,22 +1,21 @@
 ---
 title: Configuración de JavaScript 3.x
 description: Configuración de la aplicación del SDK de medios para la implementación en JavaScript 3.x.
-translation-type: ht
-source-git-commit: b642bd1a136e62901847f2a8cf004d05282fca01
-workflow-type: ht
-source-wordcount: '398'
+exl-id: 35e27495-e480-4463-9f00-4b60a54d02c1
+source-git-commit: 0d5edcae0a80357247ada7f61daece9840d5c4b5
+workflow-type: tm+mt
+source-wordcount: '396'
 ht-degree: 100%
 
 ---
-
 
 # Configuración de JavaScript 3.x{#set-up-javascript}
 
 ## Requisitos previos
 
 * **Obtenga parámetros de configuración válidos**: Estos parámetros se pueden obtener de un representante de Adobe una vez creada la cuenta de Analytics.
-* **Implementación de`AppMeasurement`y`Experience Cloud Identity Service`para JavaScript en la aplicación de medios**
-Para obtener más información, consulte [Implementación de Analytics con JavaScript](https://docs.adobe.com/content/help/es-ES/analytics/implementation/js/overview.html) e [Implementación del servicio de identidad de Experience Cloud.](https://docs.adobe.com/content/help/es-ES/id-service/using/implementation/setup-analytics.html)
+* **Implementación de `AppMeasurement` y `Experience Cloud Identity Service` para JavaScript en la aplicación de medios**
+Para obtener más información, consulte [Implementación de Analytics con JavaScript](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html?lang=es) e [Implementación del servicio de identidad de Experience Cloud.](https://docs.adobe.com/content/help/es-ES/id-service/using/implementation/setup-analytics.html)
 
 * **Proporcione las siguientes capacidades en su reproductor de contenidos**:
 
