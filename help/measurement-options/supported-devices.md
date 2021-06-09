@@ -2,11 +2,10 @@
 title: Dispositivos y plataformas compatibles
 description: Adobe Analytics para Streaming Media garantiza que cada flujo de medios se recopile y notifique a todos los dispositivos.
 exl-id: 169ff7b9-e577-45b7-8927-74bdcccc0a77
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '337'
-ht-degree: 100%
+source-git-commit: 0d5edcae0a80357247ada7f61daece9840d5c4b5
+workflow-type: tm+mt
+source-wordcount: '333'
+ht-degree: 95%
 
 ---
 
@@ -26,7 +25,7 @@ Los Media SDK se actualizan normalmente cuando salen al mercado nuevas versiones
 
 En el caso de dispositivos o plataformas que actualmente no son compatibles con SDK, o en situaciones en que no desea utilizar un SDK, puede implementar la API de Media Collection. La API de Media Collection le permite hacer llamadas a la API de RESTful directamente de un dispositivo o plataforma al servidor de Media Analytics.
 
-En la tabla siguiente, se detallan los dispositivos y las plataformas actualmente compatibles. Para descargar la versión más actualizada del SDK, consulte [Descarga de SDK](https://docs.adobe.com/content/help/es-ES/media-analytics/using/sdk-implement/download-sdks.html). Si un dispositivo no aparece en la lista, póngase en contacto con el servicio de atención al cliente o con el consultor de soluciones para conocer el estado de dicho dispositivo.
+En la tabla siguiente, se detallan los dispositivos y las plataformas actualmente compatibles. Para descargar la versión más actualizada del SDK, consulte [Descarga de SDK](https://experienceleague.adobe.com/docs/media-analytics/using/sdk-implement/download-sdks.html). Si un dispositivo no aparece en la lista, póngase en contacto con el servicio de atención al cliente o con el consultor de soluciones para conocer el estado de dicho dispositivo.
 
 | Plataformas y dispositivos de transmisión |  | Extensión Media Launch con SDK móvil de AEP | Media SDK | API de Media Collection |
 |:---------------------------:|:-----------------------------------------------:|:----------------------------:|:-------------------:|:--------------------:|
@@ -50,4 +49,4 @@ En la tabla siguiente, se detallan los dispositivos y las plataformas actualment
 
 1. La compatibilidad con estos SDK finaliza el 31 de agosto de 2021. Para obtener más información, consulte [Preguntas frecuentes sobre el fin de la asistencia del SDK de Media Analytics](/help/sdk-implement/end-of-support-faqs.md).
 
-Para obtener información adicional sobre las versiones de plataforma mínimas admitidas para cada SDK, consulte [Compatibilidad con versiones de plataforma mínima](https://docs.adobe.com/content/help/es-ES/media-analytics/using/sdk-implement/setup/setup-overview.html).
+Para obtener información adicional sobre las versiones de plataforma mínimas admitidas para cada SDK, consulte [Compatibilidad con versiones de plataforma mínima](https://experienceleague.adobe.com/docs/media-analytics/using/sdk-implement/setup/setup-overview.html).
