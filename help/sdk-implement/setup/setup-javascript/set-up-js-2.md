@@ -2,21 +2,20 @@
 title: Configuración de JavaScript 2.x
 description: Configuración de la aplicación del SDK de medios para la implementación en JavaScript 2.x.
 uuid: 0269d8ad-0af8-4bf1-9d15-e06c2952a005
-translation-type: ht
-source-git-commit: a73536bd7a818ac23ad322a15f109644e75ee0d5
-workflow-type: ht
-source-wordcount: '394'
+exl-id: 33976096-8b86-4353-906b-e25bf4693471
+source-git-commit: 0d5edcae0a80357247ada7f61daece9840d5c4b5
+workflow-type: tm+mt
+source-wordcount: '392'
 ht-degree: 100%
 
 ---
-
 
 # Configuración de JavaScript 2.x{#set-up-javascript}
 
 ## Requisitos previos
 
 * **Obtenga parámetros de configuración válidos**: Estos parámetros se pueden obtener de un representante de Adobe una vez creada la cuenta de Analytics.
-* **Implemente`AppMeasurement`para JavaScript en la aplicación de contenido**: Para obtener más información sobre la documentación del SDK de Adobe Mobile, consulte [Implementación de Analytics utilizando JavaScript.](https://docs.adobe.com/content/help/es-ES/analytics/implementation/js/overview.html)
+* **Implemente `AppMeasurement` para JavaScript en la aplicación de contenido**: Para obtener más información sobre la documentación del SDK de Adobe Mobile, consulte [Implementación de Analytics utilizando JavaScript.](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html?lang=es)
 
 * **Proporcione las siguientes capacidades en su reproductor de contenidos**:
 
