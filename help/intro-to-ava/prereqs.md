@@ -3,15 +3,14 @@ title: Requisitos previos
 description: Requisitos previos
 uuid: 4c0b37f3-8615-4cc0-b9c9-eeb029067064
 exl-id: 85ab1dbd-f4a7-4f11-afc9-8d5000e2de70
-translation-type: ht
-source-git-commit: d4491dfec33d8729f40bcef1d57622467443bdbb
-workflow-type: ht
-source-wordcount: '425'
-ht-degree: 100%
+source-git-commit: 0d5edcae0a80357247ada7f61daece9840d5c4b5
+workflow-type: tm+mt
+source-wordcount: '421'
+ht-degree: 96%
 
 ---
 
-# Requisitos previos {#prerequisites}
+# Requisitos previos{#prerequisites}
 
 ## Decisiones {#decision}
 
@@ -33,7 +32,7 @@ Para una implementación de *Media Analytics*, estas son las tareas que debe com
 
    ![](assets/mc_id_service_graphic.png)
 
-   El servicio de ID también puede reemplazar los distintos ID específicos de la solución (por ejemplo, Analytics AID). Gracias al [ID de cliente y a los estados de autenticación](https://docs.adobe.com/content/help/es-ES/id-service/using/reference/authenticated-state.html), el servicio de ID le permite transferir sus propios ID de cliente a Experience Cloud. No obstante, tenga en cuenta que el servicio de ID solo funciona con las soluciones a las que ya se ha suscrito. Si no se ha registrado para acceder a otros productos, el servicio de ID no proporciona el acceso.
+   El servicio de ID también puede reemplazar los distintos ID específicos de la solución (por ejemplo, Analytics AID). Gracias al [ID de cliente y a los estados de autenticación](https://experienceleague.adobe.com/docs/id-service/using/reference/authenticated-state.html), el servicio de ID le permite transferir sus propios ID de cliente a Experience Cloud. No obstante, tenga en cuenta que el servicio de ID solo funciona con las soluciones a las que ya se ha suscrito. Si no se ha registrado para acceder a otros productos, el servicio de ID no proporciona el acceso.
 
    De ahora en adelante, el servicio de ID será un componente integral de muchas funciones, mejoras y servicios tanto actuales como futuros de Experience Cloud. En la actualidad, el servicio de ID es compatible con [Analytics](https://www.adobe.com/es/marketing-cloud/web-analytics.html), [Audience Manager](https://www.adobe.com/es/marketing-cloud/data-management-platform.html) y [Target.](https://www.adobe.com/es/marketing-cloud/testing-targeting.html)
 
@@ -47,7 +46,7 @@ Para una implementación de *Media Analytics*, estas son las tareas que debe com
    >
    >Si no hubiera información de ID de usuario presente en las llamadas específicas al contenido, se aplicarán los análisis predeterminados de los [Métodos de identificación secundarios](https://docs.adobe.com/content/help/es-ES/analytics/technotes/visitor-identification.translate.html).
 
-   Para obtener más información sobre el Experience Cloud ID, consulte [Información general sobre el Experience Cloud ID](https://docs.adobe.com/content/help/es-ES/id-service/using/intro/overview.html) y [Servicio de Adobe Experience Platform.](https://docs.adobe.com/content/help/es-ES/id-service/using/home.html)
+   Para obtener más información sobre el Experience Cloud ID, consulte [Información general sobre el Experience Cloud ID](https://experienceleague.adobe.com/docs/id-service/using/intro/overview.html) y [Servicio de Adobe Experience Platform.](https://docs.adobe.com/content/help/es-ES/id-service/using/home.html)
 
 1. **Habilitar los informes de Adobe Analytics**.
 
