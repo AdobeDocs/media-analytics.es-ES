@@ -2,14 +2,13 @@
 title: Descarga de SDK
 description: Vínculos a descargas de SDK para plataformas disponibles, como Android, iOS, JavaScript, Chromecast y Roku.
 uuid: a619fbb8-693e-4583-8dad-0ff875e715f8
-translation-type: tm+mt
-source-git-commit: cd3efa68ba0903bc9a616ac41dd5b20346c66870
+exl-id: d211fa2e-d5b0-4e9f-bdb7-eda838194f3d
+source-git-commit: 0d5edcae0a80357247ada7f61daece9840d5c4b5
 workflow-type: tm+mt
-source-wordcount: '517'
-ht-degree: 100%
+source-wordcount: '513'
+ht-degree: 96%
 
 ---
-
 
 # Descarga de SDK {#download-sdks}
 
@@ -40,8 +39,8 @@ ht-degree: 100%
 
 | Componente de MA Launch   | Documentación | Ejemplos |
 |---|---|---|
-| **Extensión web** | [Extensión de Adobe Media Analytics para audio y vídeo](https://docs.adobe.com/content/help/es-ES/launch/using/extensions-ref/adobe-extension/media-analytics-extension/overview.html) | [Extensión de Adobe Media Analytics para audio y vídeo](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/samples/launch/js/2.x) |
-| **Extensión web (SDK 3.x)** | [Extensión de Adobe Media Analytics para audio y vídeo](https://docs.adobe.com/content/help/es-ES/launch/using/extensions-ref/adobe-extension/media-analytics-3x-extension/overview.html) | [Extensión de Adobe Media Analytics (3.x SDK) for Audio and Video](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/samples/launch/js/3.x) |
+| **Extensión web** | [Extensión de Adobe Media Analytics para audio y vídeo](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/media-analytics-extension/overview.html) | [Extensión de Adobe Media Analytics para audio y vídeo](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/samples/launch/js/2.x) |
+| **Extensión web (SDK 3.x)** | [Extensión de Adobe Media Analytics para audio y vídeo](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/media-analytics-3x-extension/overview.html) | [Extensión de Adobe Media Analytics (3.x SDK) for Audio and Video](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/samples/launch/js/3.x) |
 | **Extensión móvil** | [Adobe Analytics Media Analytics para audio y vídeo](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics) | [Adobe Analytics extensión de Media Analytics para audio y vídeo](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/samples/launch/mobile) |
 
 ## Descarga de Media SDK 1.x {#download-the-1.x-media-sDKs}
