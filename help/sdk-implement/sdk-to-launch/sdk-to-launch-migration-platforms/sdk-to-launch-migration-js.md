@@ -1,14 +1,13 @@
 ---
 title: 'Migración del SDK de medios independiente a Adobe Launch: Web (JS)'
 description: Instrucciones y ejemplos de código para ayudarle a migrar del SDK de medios a Launch.
-translation-type: tm+mt
-source-git-commit: fe109e9d670bf7fb6379f3c3631d10cecd2d48ac
+exl-id: 19b506b2-3070-4a5e-9732-a5cd0867afde
+source-git-commit: 0d5edcae0a80357247ada7f61daece9840d5c4b5
 workflow-type: tm+mt
-source-wordcount: '409'
-ht-degree: 98%
+source-wordcount: '403'
+ht-degree: 95%
 
 ---
-
 
 # Migración del SDK de medios independiente a Adobe Launch: Web (JS)
 
@@ -50,7 +49,7 @@ y haga clic en [!UICONTROL Instalar].
 
    ![](assets/launch_config_js.png)
 
-[Guía del usuario de Launch: Instalar y configurar la extensión de medios](https://docs.adobe.com/content/help/es-ES/launch/using/extensions-ref/adobe-extension/media-analytics-extension/overview.html#install-and-configure-the-ma-extension)
+[Guía del usuario de Launch: Instalar y configurar la extensión de medios](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/media-analytics-extension/overview.html#install-and-configure-the-ma-extension)
 
 ## Diferencias en la creación del rastreador
 
@@ -81,7 +80,7 @@ this.mediaHeartbeat = new MediaHeartbeat(mediaDelegate, mediaConfig, appMeasurem
 ```
 
 <!--  Dead Link - from 2019 - can't locate where this should go
-[Media SDK - Tracker Creation](https://docs.adobe.com/content/help/en/media-analytics/using/sdk-implement/cookbook/sdk-vs-launch-qoe.html) -->
+[Media SDK - Tracker Creation](https://experienceleague.adobe.com/docs/media-analytics/using/sdk-implement/cookbook/sdk-vs-launch-qoe.html) -->
 
 ### Launch
 
@@ -123,5 +122,5 @@ Pase un objeto delegado a `get-instance` que exponga las funciones `getQoSObject
 
 ### Launch
 
-* [Información general sobre Launch](https://docs.adobe.com/content/help/es-ES/launch/using/overview.html)
-* [Extensión de Media Analytics](https://docs.adobe.com/content/help/es-ES/launch/using/extensions-ref/adobe-extension/media-analytics-extension/overview.html)
+* [Información general sobre Launch](https://docs.adobe.com/content/help/es-ES/experience-cloud/user-guides/home.translate.html)
+* [Extensión de Media Analytics](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/media-analytics-extension/overview.html)
