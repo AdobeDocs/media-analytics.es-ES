@@ -2,11 +2,10 @@
 title: ¿Qué rutas de implementación de medios de flujo continuo están disponibles?
 description: Obtenga información acerca de las rutas de implementación de medios de flujo continuo de Adobe, incluido Adobe Launch.
 exl-id: eee70e62-ba45-440a-8ce1-e151b66d2c1f
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '505'
-ht-degree: 100%
+source-git-commit: 0d5edcae0a80357247ada7f61daece9840d5c4b5
+workflow-type: tm+mt
+source-wordcount: '499'
+ht-degree: 96%
 
 ---
 
@@ -16,15 +15,15 @@ Con cada ruta de implementación, los clientes deberán ponerse en contacto con 
 
 * **Adobe Launch con la extensión de Adobe Media Analytics**
 
-   Adobe Launch es la función de administración de etiquetas de próxima generación de Adobe. Launch ofrece una alternativa sencilla para implementar y gestionar todas las etiquetas de análisis, marketing y publicidad necesarias para potenciar las importantes experiencias del cliente. Para crear y mantener sus propias integraciones con Launch, utiliza extensiones. Una extensión es un paquete de JavaScript, HTML y CSS que amplía la funcionalidad del cliente y la interfaz de usuario de Launch. Para obtener más información, consulte la [Guía del usuario de Experience Platform Launch](https://docs.adobe.com/content/help/es-ES/launch/using/overview.html)
+   Adobe Launch es la función de administración de etiquetas de próxima generación de Adobe. Launch ofrece una alternativa sencilla para implementar y gestionar todas las etiquetas de análisis, marketing y publicidad necesarias para potenciar las importantes experiencias del cliente. Para crear y mantener sus propias integraciones con Launch, utiliza extensiones. Una extensión es un paquete de JavaScript, HTML y CSS que amplía la funcionalidad del cliente y la interfaz de usuario de Launch. Para obtener más información, consulte la [Guía del usuario de Experience Platform Launch](https://docs.adobe.com/content/help/es-ES/experience-cloud/user-guides/home.translate.html)
 
    La extensión de Adobe Media Analytics (MA) agrega el SDK principal de JavaScript Media (Media SDK 2.x) para audio y vídeo. Esta extensión proporciona la funcionalidad para agregar la instancia de seguimiento `MediaHeartbeat` a un sitio o proyecto de Launch.
 
    Adobe Launch con la extensión Media Analytics requiere lo siguiente:
    * Debe ser cliente de Adobe Experience Cloud.
    * Debe implementar el código incrustado de Launch o DTM en las páginas web.
-   * [Extensión de Analytics](https://docs.adobe.com/content/help/es-ES/launch/using/extensions-ref/adobe-extension/analytics-extension/overview.html)
-   * [Extensión de Experience Cloud ID](https://docs.adobe.com/content/help/es-ES/launch/using/extensions-ref/adobe-extension/id-service-extension/overview.html)
+   * [Extensión de Analytics](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/analytics-extension/overview.html)
+   * [Extensión de Experience Cloud ID](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/id-service-extension/overview.html)
 
 
 * **Lado del cliente:** Son integraciones para Media Analytics únicamente. Puede elegir el SDK de Video Heartbeat o las integraciones de la API de Media Collection (recopilación de medios). Esta ruta se puede utilizar en cualquier reproductor de vídeo, incluidos los reproductores de cliente u OVP como Brightcove, Ooyala, thePlatform, etc.
