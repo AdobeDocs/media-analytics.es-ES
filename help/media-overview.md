@@ -3,11 +3,10 @@ title: Medición de Streaming Media en Adobe Analytics
 description: Adobe Analytics para contenidos (también denominado Media Analytics) proporciona a los clientes una medición de contenidos sólida para el contenido, el audio y la publicidad.
 uuid: b3cbe240-b94d-42b8-a99c-0280334aaa14
 exl-id: 826530f7-2c39-41ef-b3b4-d3f44b46858f
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '903'
-ht-degree: 100%
+source-git-commit: eaae56abd3e549ad57c45852fe0bedb618f80e9e
+workflow-type: tm+mt
+source-wordcount: '879'
+ht-degree: 98%
 
 ---
 
@@ -26,7 +25,7 @@ Puede medir las métricas de entrega esenciales relacionadas con la calidad del 
 ## Funciones {#features}
 
 Las ventajas de Adobe Analytics para Streaming Media incluyen monitorización en tiempo real, análisis detallado, perspectivas procesables y oportunidades de monetización.
-* **Análisis en tiempo real**: tome decisiones procesables en tiempo real utilizando métricas de rendimiento clave como duration, ex2 y ex3 en varios canales. Los eventos del contenido principal se miden en intervalos de 10 segundos para capturar toda la actividad a medida que se produce. Los eventos de seguimiento de anuncios se producen en intervalos de 1 segundo.
+* **Análisis en tiempo real**: Tome decisiones procesables en tiempo real usando métricas clave de rendimiento como inicios de contenido en varios canales.
 * **Mejore la participación**: involucre completamente a los usuarios mediante menos eventos de almacenamiento en búfer y mediante la comprensión de dónde y cuándo debe reproducirse la publicidad dentro del contenido para proporcionar una experiencia agradable y menos intrusiva que genere visitas más frecuentes.
 * **Imagen holística**: combine diversos puntos de datos de todos los distribuidores de contenido y obtenga información de toda la actividad de contenidos. También puede medir la participación y las visualizaciones/escuchas en todos los posibles canales a través de la función Federated Analytics.
 * **Mayor granularidad**: evalúe el comportamiento de visualización en el nivel más granular, incluida la hora del día de cada visitante individual, los espectadores/oyentes simultáneos por minuto y la duración promedio de consumo del contenido.
