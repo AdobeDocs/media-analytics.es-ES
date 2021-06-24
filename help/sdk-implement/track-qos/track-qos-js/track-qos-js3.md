@@ -1,26 +1,27 @@
 ---
-title: Rastree la calidad de la experiencia con JavaScript 3.x
-description: En este tema se describe la implementación del seguimiento de calidad de experiencia (QoE, QoS) mediante el SDK de medios en aplicaciones de navegador que utilizan JavaScript 3x.
-translation-type: tm+mt
-source-git-commit: fa161e2d41629fdfe77100d87d6a44728e23d77f
+title: Aprenda a rastrear la calidad de la experiencia usando JavaScript 3.x
+description: '"Obtenga información sobre la implementación del seguimiento de calidad de experiencia (QoE, QoS) mediante Media SDK en aplicaciones de navegador mediante JavaScript 3x."'
+exl-id: b5570e9c-8fb1-4458-bd1a-86ff6fce7813
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
 workflow-type: tm+mt
-source-wordcount: '223'
-ht-degree: 49%
+source-wordcount: '226'
+ht-degree: 58%
 
 ---
 
-
-# Rastree la calidad de la experiencia con JavaScript 3.x{#track-quality-of-experience-on-javascript}
+# Seguimiento de la calidad de la experiencia con JavaScript 3.x{#track-quality-of-experience-on-javascript}
 
 >[!IMPORTANT]
 >
->En las siguientes instrucciones se indican los pasos para la implementación en todos los kits de desarrollo de software de 3.x. If you are implementing any previous versions of the SDK, you can download the Developers Guides here: [Download SDKs.](/help/sdk-implement/download-sdks.md)
+>En las siguientes instrucciones se indican los pasos para la implementación en todos los kits de desarrollo de software de 3.x. Si va implementar cualquier versión anterior del SDK, puede descargar las guías del desarrollador aquí: [Descargar SDK.](/help/sdk-implement/download-sdks.md)
 
-## QOE de implementación
+## Implementación de QOE
 
-1. Identify when the bitrate changes during media playback and create the `qoeObject` instance using the QoE information.
+1. Identifique cuándo cambia la velocidad de bits durante la reproducción de contenido y cree la instancia `qoeObject` con la información de QoE.
 
-   Variables de QoEObject:
+   Variables QoEObject:
 
    >[!TIP]
    >
@@ -33,7 +34,7 @@ ht-degree: 49%
    | `fps` | entero | Valor FPS |
    | `droppedFrames` | entero | Número de fotogramas perdidos |
 
-   Creación de objetos QoE:
+   Creación del objeto QoE:
 
    ```js
    // Replace <bitrate>, <startuptime>, <fps> and
@@ -59,9 +60,9 @@ ht-degree: 49%
 
    >[!IMPORTANT]
    >
-   >Actualice el objeto QoE y llame al evento de cambio de velocidad de bits en cada cambio de velocidad de bits. Esto proporciona los datos de QoE más precisos.
+   >Actualice el objeto QoE e invoque el evento de cambio de velocidad de bits en cada cambio. Esto proporciona los datos de QoE más precisos.
 
-1. Asegúrese de llamar al `updateQoEObject()` método para proporcionar la información de QoE más actualizada al SDK.
+1. Asegúrese de llamar al método `updateQoEObject()` para proporcionar la información de QoE más actualizada al SDK.
 1. Cuando el reproductor de contenido encuentre un error, y el evento de error esté disponible con la API del reproductor, utilice el evento `trackError()` para capturar la información de error. (Consulte [Información general](/help/sdk-implement/track-errors/track-errors-overview.md).)
 
    >[!TIP]
