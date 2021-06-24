@@ -1,12 +1,16 @@
 ---
-title: Descripciones de parámetros de Heartbeat
-description: Una lista de parámetros de latido que Adobe recopila y procesa en el servidor de latidos de Media Analytics.
+title: Descripciones del parámetro de latido
+description: Explore los parámetros de latido que Adobe recopila y procesa en el servidor de latidos de Media Analytics.
 uuid: e9ddda32-0952-43d0-a702-49f5b1bfd8cf
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: ffa67b5e-ee54-4a5b-8064-decd108f944b
+feature: '"Media Analytics, Variables"'
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '813'
+ht-degree: 79%
 
 ---
-
 
 # Descripciones de parámetros de Media Analytics (latidos) {#heartbeat-parameter-descriptions}
 
@@ -19,8 +23,8 @@ Lista de parámetros de Media Analytics que Adobe recopila y procesa en el servi
 | s:event:type | Media SDK | (Obligatorio)<br/><br/>Tipo de evento que se rastrea. Tipos de eventos: <ul> <li> s:event:type=start </li> <li> s:event:type=complete </li> <li> s:event:type=chapter_start </li> <li> s:event:type=chapter_complete </li> <li> s:event:type=buffer </li> <li> s:event:type=pause </li> <li> s:event:type=resume </li> <li> s:event:type=bitrate_change </li> <li> s:event:type=aa_start </li> <li> s:event:type=stall </li> <li> s:event:type=end </li> </ul> |
 | l:event:prev_ts | Media SDK | (Obligatorio)<br/><br/>Marca de fecha del último evento del mismo tipo en esta sesión. El valor es -1. |
 | l:event:ts | Media SDK | (Obligatorio)<br/><br/>Marca de tiempo del evento. |
-| l:event:duration | Media SDK | (Obligatorio)<br/><br/>Este valor se establece internamente (en milisegundos) por Media SDK, no por el reproductor. Se utiliza para calcular las métricas de tiempo invertido en el servidor. Por ejemplo, a.media.totalTimePlayed se calcula como una suma de la duración de todos los latidos de reproducción (type=play) que se generan. <br/>*Nota:*Este parámetro se establece en 0 para ciertos eventos porque son “eventos de cambio de estado” (por ejemplo, type=complete, type=chapter_complete o type=bitrate_change). |
-| l:event:playhead | VideoInfo | (Obligatorio)<br/><br/>El cabezal de reproducción estaba dentro del recurso activo (principal o anuncio), cuando se registró el evento. |
+| l:event:duration | Media SDK | (Obligatorio)<br/><br/>Este valor se establece internamente (en milisegundos) por Media SDK, no por el reproductor. Se utiliza para calcular las métricas de tiempo invertido en el servidor. Por ejemplo, a.media.totalTimePlayed se calcula como una suma de la duración de todos los latidos de reproducción (type=play) que se generan. <br/>*Nota:* Este parámetro se establece en 0 para ciertos eventos porque son “eventos de cambio de estado” (por ejemplo, type=complete, type=chapter_complete o type=bitrate_change). |
+| l:event:cabezal de reproducción | VideoInfo | (Obligatorio)<br/><br/>El cabezal de reproducción estaba dentro del recurso activo (principal o anuncio), cuando se registró el evento. |
 | s:event:sid | Media SDK | (Obligatorio)<br/><br/>El ID de sesión (una cadena generada aleatoriamente). Todos los eventos de una sesión determinada (vídeo + anuncios) deben ser los mismos. |
 | l:asset:duration / l:asset:length <br/>(Se ha cambiado el nombre de la duración) | VideoInfo | (Obligatorio)<br/><br/>La duración del recurso de vídeo del recurso principal. |
 | s:asset:publisher | MediaHeartbeatConfig | (Obligatorio)<br/><br/>El editor del recurso. |
@@ -41,7 +45,7 @@ Lista de parámetros de Media Analytics que Adobe recopila y procesa en el servi
 | s:sp:player_name | VideoInfo | (Obligatorio)<br/><br/>El nombre del reproductor (el software del reproductor real, utilizado para identificar al mismo). |
 | s:sp:channel | MediaHeartbeatConfig | (Opcional)<br/><br/>Canal donde el usuario ve el contenido. Para una aplicación móvil, el nombre de la aplicación. Para un sitio web, el nombre de dominio. |
 | s:sp:hb_version | Media SDK | (Obligatorio)<br/><br/>El número de versión de la biblioteca de Media SDK que emite la llamada. |
-| l:stream:bitrate | QoSInfo | (Obligatorio)<br/><br/>Valor real de la velocidad de bits de la emisión (en bps). |
+| l:stream:velocidad de bits | QoSInfo | (Obligatorio)<br/><br/>Valor real de la velocidad de bits de la emisión (en bps). |
 
 ## Eventos de error
 
@@ -65,9 +69,9 @@ Lista de parámetros de Media Analytics que Adobe recopila y procesa en el servi
 
 | Nombre | Fuente de datos | Descripción   |
 | ---  | --- | --- |
-| s:stream:chapter_sid | Media SDK | (Obligatorio)<br/><br/>Identificador exclusivo asociado a la instancia de reproducción del capítulo.<br/> **Nota:** Un capítulo se puede reproducir varias veces debido a las operaciones seek-back realizadas por el usuario. |
+| s:stream:chapter_sid | Media SDK | (Obligatorio)<br/><br/>Identificador único asociado a la instancia de reproducción del capítulo.  <br/> **Nota:** Un capítulo se puede reproducir varias veces debido a las operaciones seek-back realizadas por el usuario. |
 | s:stream:chapter_name | ChapterInfo | (Opcional)<br/><br/>El nombre descriptivo del capítulo (por ejemplo, que sea comprensible). |
-| s:stream:chapter_id | Media SDK | (Obligatorio)<br/><br/>ID exclusivo del capítulo. Este valor se calcula automáticamente en función de la siguiente fórmula: <br/>`MD5(video_id) +`<br/>` "_" +`<br/>`chapter_pos` |
+| s:stream:chapter_id | Media SDK | (Obligatorio)<br/><br/>ID único del capítulo. Este valor se calcula automáticamente en función de la siguiente fórmula: <br/>`MD5(video_id) +`<br/>` "_" +`<br/>`chapter_pos` |
 | l:stream:chapter_pos | ChapterInfo | (Obligatorio)<br/><br/>Índice del capítulo en la lista de capítulos (a partir del 1). |
 | l:stream:chapter_offset | ChapterInfo | (Obligatorio)<br/><br/>El desplazamiento del capítulo (expresado en segundos) dentro del contenido principal, sin incluir los anuncios. |
 | l:stream:chapter_length | ChapterInfo | (Obligatorio)<br/><br/>La duración del capítulo (expresada en segundos). |
@@ -78,4 +82,3 @@ Lista de parámetros de Media Analytics que Adobe recopila y procesa en el servi
 | Nombre | Fuente de datos | Descripción   |
 | ---  | --- | --- |
 | s:event:type=end | Media SDK | (Obligatorio)<br/><br/> El `end` `close` |
-
