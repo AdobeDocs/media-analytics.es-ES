@@ -1,17 +1,18 @@
 ---
-title: 'Línea de tiempo 1: Ver el contenido hasta el final'
-description: null
+title: Obtenga información sobre las líneas de tiempo de seguimiento de contenido � ver hasta el final del contenido
+description: Profundice en la cronología del cabezal de reproducción y las acciones correspondientes del � de usuario. Obtenga información sobre los detalles de cada acción y las solicitudes que la acompañan.
 uuid: 0ff591d3-fa99-4123-9e09-c4e71ea1060b
-translation-type: ht
-source-git-commit: c86c7932f932af0a121e0b757921973d6f4084e8
-workflow-type: ht
-source-wordcount: '1164'
-ht-degree: 100%
+exl-id: 16b15e03-5581-471f-ab0c-077189dd32d6
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '1193'
+ht-degree: 97%
 
 ---
 
-
-# Línea de tiempo 1: Ver el contenido hasta el final {#timeline-view-to-end-of-content}
+# Línea de tiempo 1: Ver el contenido hasta el final{#timeline-view-to-end-of-content}
 
 ## VOD, anuncios pre-roll, pausar, almacenar en búfer, ver contenido hasta el final
 
@@ -406,7 +407,7 @@ Rastree el movimiento del reproductor al estado &quot;almacenamiento en búfer&q
 
 **Detalles de implementación**
 
-El almacenamiento en búfer finaliza después de 3 segundos, por lo que el reproductor vuelve al estado &quot;reproduciendo&quot;. Debe enviar otro evento de seguimiento de reproducción cuando termine el almacenamiento en búfer.  **La llamada`play`después de`bufferStart`infiere una llamada “bufferEnd” al back end**, por lo que no es necesario un evento `bufferEnd`.
+El almacenamiento en búfer finaliza después de 3 segundos, por lo que el reproductor vuelve al estado &quot;reproduciendo&quot;. Debe enviar otro evento de seguimiento de reproducción cuando termine el almacenamiento en búfer.  **La llamada `play` después de `bufferStart` infiere una llamada “bufferEnd” al back end**, por lo que no es necesario un evento `bufferEnd`.
 
 **Cuerpo de la solicitud de muestra**
 
@@ -641,7 +642,7 @@ Mandar un ping al servidor cada 10 segundos. El reproductor sigue en estado de &
 
 **Detalles de implementación**
 
-Cambie el estado de reproducción a &quot;reproduciendo&quot;.  **La llamada`play`después de`pauseStart`ya infiere una llamada “continuar” al final**, por lo que no hay necesidad de un evento `resume`.
+Cambie el estado de reproducción a &quot;reproduciendo&quot;.  **La llamada `play` después de `pauseStart` ya infiere una llamada “continuar” al final**, por lo que no hay necesidad de un evento `resume`.
 
 **Cuerpo de la solicitud de muestra**
 
