@@ -1,14 +1,18 @@
 ---
-title: Implementación de metadatos de publicidad estándar en Android
+title: Obtenga información sobre cómo implementar metadatos de publicidad estándar en Android
 description: Cómo usar metadatos de anuncio estándar en el seguimiento de anuncios en Android.
 uuid: 19b98bc1-c659-4182-a4ff-b3340fe2453c
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: f1aa017f-b2ae-40ca-b4d9-b508cf45cb0c
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '65'
+ht-degree: 86%
 
 ---
 
-
-# Implementación de metadatos de publicidad estándar en Android {#implement-standard-ad-metadata-on-android}
+# Implementación de metadatos de publicidad estándar en Android{#implement-standard-ad-metadata-on-android}
 
 ## Constantes de publicidad
 
@@ -27,4 +31,3 @@ standardAdMetadata.put(MediaHeartbeat.AdMetadataKeys.ADVERTISER, "Sample Adverti
 standardAdMetadata.put(MediaHeartbeat.AdMetadataKeys.CAMPAIGN_ID, "Sample Campaign"); 
 adInfo.setValue(MediaHeartbeat.MediaObjectKey.StandardAdMetadata, standardAdMetadata); 
 ```
-
