@@ -1,12 +1,11 @@
 ---
+product: adobe analytics
 audience: end-user
 user-guide-title: Adobe Analytics para medios de transmisión
 breadcrumb-title: Guía de Media Analytics
 user-guide-description: Implementar Adobe Analytics para medios de transmisión. Incluye el SDK de medios y la API de recopilación de medios.
-product: adobe analytics
 sub-product: media analytics
-translation-type: tm+mt
-source-git-commit: 82923f4ad4d6fd2394fe83850edca3ffd6a913ea
+source-git-commit: 230488398dc145798e4b12ddb94cd73f4f790f28
 workflow-type: tm+mt
 source-wordcount: '829'
 ht-degree: 100%
@@ -19,7 +18,7 @@ ht-degree: 100%
 + [Medición de Streaming Media en Adobe Analytics](media-overview.md)
 + [Dispositivos y plataformas compatibles](measurement-options/supported-devices.md)
 + Introducción a Streaming Media Analytics {#intro-to-ava}
-   + [Requisitos previos](intro-to-ava/prereqs.md)
+   + [Requisitos previos ](intro-to-ava/prereqs.md)
    + Rutas de implementación {#implementation-paths}
       + [Información general](intro-to-ava/implementation-paths/implementation-paths.md)
       + [Lado del cliente](intro-to-ava/implementation-paths/client-side-path.md)
@@ -27,9 +26,9 @@ ht-degree: 100%
          + Seguimiento de Milestone en el módulo multimedia {#mm-milestone-tracking}
             + [Información general de Milestone](measurement-options/mm-milestone-tracking/milestone-overview.md)
             + [Migración de Milestone a Media Analytics](measurement-options/mm-milestone-tracking/migrate-ms-to-va.md)
-            + [Migración de Milestone a Vínculo personalizado](measurement-options/mm-milestone-tracking/migrate-ms-to-cl.md)
+            + [Migración de Milestone a vínculo personalizado](measurement-options/mm-milestone-tracking/migrate-ms-to-cl.md)
          + Vínculo personalizado en Analytics {#cl-in-aa}
-            + [Guía de implementación de Vínculo personalizado](measurement-options/cl-in-aa/cl-impl-guide.md)
+            + [Guía de implementación de Vínculo personalizado ](measurement-options/cl-in-aa/cl-impl-guide.md)
          + Primetime {#primetime}
             + [Primetime](intro-to-ava/implementation-paths/primetime-path.md)
          + [Habilitación de Audience Manager](intro-to-ava/am-enablement.md)
@@ -43,8 +42,8 @@ ht-degree: 100%
       + Configuración de JavaScript {#setup-javascript}
          + [Configuración de JavaScript 2.x](sdk-implement/setup/setup-javascript/set-up-js-2.md)
          + [Configuración de JavaScript 3.x](sdk-implement/setup/setup-javascript/set-up-js-3.md)
-      + [Configuración de Chromecast ](sdk-implement/setup/set-up-chromecast.md)
-      + [Configuración de Roku ](sdk-implement/setup/set-up-roku.md)
+      + [Configuración de Chromecast](sdk-implement/setup/set-up-chromecast.md)
+      + [Configuración de Roku](sdk-implement/setup/set-up-roku.md)
    + Seguimiento de Streaming Media Playback {#track-av-playback}
       + [Información general](sdk-implement/track-av-playback/track-core-overview.md)
       + Seguimiento de Core Streaming Media Playback {#track-core}
@@ -136,7 +135,7 @@ ht-degree: 100%
       + [Reproducción de VOD con almacenamiento en búfer](sdk-implement/tracking-scenarios/vod-buffering.md)
       + [Varios rastreadores de VOD en paralelo](sdk-implement/tracking-scenarios/vod-multi-trackers.md)
       + [Un rastreador de VOD para varias sesiones](sdk-implement/tracking-scenarios/vod-multi-track-one-session.md)
-      + [Contenido principal activo](sdk-implement/tracking-scenarios/live-main-content.md)
+      + [Contenido principal en directo](sdk-implement/tracking-scenarios/live-main-content.md)
       + [Contenido principal activo con seguimiento secuencial](sdk-implement/tracking-scenarios/live-sequential.md)
    + Validación {#validation}
       + [Información general sobre validación](sdk-implement/validation/validation-overview.md)
@@ -146,7 +145,7 @@ ht-degree: 100%
       + [Descripciones del parámetro de latido](sdk-implement/validation/heartbeat-params.md)
       + Depuración {#debugging}
          + [Depuración de SDK](sdk-implement/validation/debugging/sdk-debugging.md)
-         + [Configuración de Adobe Debug](sdk-implement/validation/debugging/config-adobe-debug.md)
+         + [Configurar Adobe Debug](sdk-implement/validation/debugging/config-adobe-debug.md)
          + [Crear un nuevo informe de Debug](sdk-implement/validation/debugging/create-new-debug-report.md)
          + [Paneles e informes de Debug](sdk-implement/validation/debugging/debug-dash-repts.md)
    + Analytics en aplicaciones OTT {#analytics-with-ott}
@@ -158,7 +157,7 @@ ht-degree: 100%
    + Guía paso a paso {#cookbook}
       + [Guía de SDK](sdk-implement/cookbook/sdk-cookbook-overview.md)
       + [Administración de interrupciones de la aplicación durante la reproducción](sdk-implement/cookbook/app-interrupts.md)
-      + [Solución cuando aparece main:play entre anuncios](sdk-implement/cookbook/fix-ad-play-ad.md)
+      + [Solución cuando aparece main:play entre anuncios ](sdk-implement/cookbook/fix-ad-play-ad.md)
       + [Reanudar sesiones inactivas](sdk-implement/cookbook/resuming-inactive.md)
       + [Seguimiento en SceneGraph (Roku)](sdk-implement/cookbook/sdk-track-scenegraph.md)
    + Migración de Media Analytics 1.x a 2.x {#va-1x-to-2x}
@@ -224,7 +223,7 @@ ht-degree: 100%
    + [Estados estándar y personalizados](sdk-implement/player-state-tracking/standard-and-custom-states.md)
    + [Implementación y sistema de informes](sdk-implement/player-state-tracking/implementation-and-reporting.md)
    + [Ejemplos de seguimiento del estado de reproducción](sdk-implement/player-state-tracking/player-state-examples.md)
-+ [Federated Analytics](federated-analytics.md)
++ [Federated Analytics](federated-analytics.md)
 <!-- + Player State Tracking {#player-state-tracking}
     + [Overview](sdk-implement/player-state-tracking/player-state-overview.md)
     + [Standard and custom states](sdk-implement/player-state-tracking/standard-and-custom-states.md)
