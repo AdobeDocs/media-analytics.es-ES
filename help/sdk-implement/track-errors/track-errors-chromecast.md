@@ -1,14 +1,18 @@
 ---
-title: Seguimiento de errores en Chromecast
-description: En este tema se describe el seguimiento de errores de implementación mediante el uso de Media SDK en Chromecast.
+title: Descubra cómo rastrear errores en Chromecast
+description: Obtenga información sobre la implementación del seguimiento de errores mediante Media SDK en Chromecast.
 uuid: efa9de8d-c626-4cb6-b46d-108495dd013a
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: 513772c2-582d-4b4b-92ed-0c32b99d7fdc
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '104'
+ht-degree: 82%
 
 ---
 
-
-# Seguimiento de errores en Chromecast {#track-errors-on-chromecast}
+# Seguimiento de errores en Chromecast{#track-errors-on-chromecast}
 
 >[!IMPORTANT]
 >
@@ -25,4 +29,3 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 >[!NOTE]
 >
 >El seguimiento de los errores del reproductor de contenidos no detendrá la sesión de seguimiento de contenidos. Si el reproductor de contenidos impide que continúe la reproducción, asegúrese de que la sesión de seguimiento de contenidos se cierre llamando a `trackSessionEnd` después de invocar a `trackError`.
-
