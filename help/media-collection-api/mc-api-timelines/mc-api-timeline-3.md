@@ -1,15 +1,16 @@
 ---
-title: 'Línea de tiempo 3: Capítulos'
-description: null
+title: Descubra Cronologías de seguimiento de contenidos � capítulos
+description: Obtenga información sobre la cronología del cabezal de reproducción y cuándo comienza y finaliza un capítulo.
 uuid: 41b52072-e1cd-4dda-9253-31f3408924f6
-translation-type: ht
-source-git-commit: 197041df4c985cdc572564652a976bd733448787
-workflow-type: ht
-source-wordcount: '1219'
-ht-degree: 100%
+exl-id: e3f5bbdb-7007-435b-920c-566d163e57ad
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '1237'
+ht-degree: 98%
 
 ---
-
 
 # Línea de tiempo 3: Capítulos {#timeline-3-chapters}
 
@@ -381,7 +382,7 @@ Rastree el movimiento al estado “almacenamiento en búfer”.
 
 **Detalles de implementación**
 
-El almacenamiento en búfer finaliza después de 3 segundos, por lo que el reproductor vuelve al estado &quot;reproduciendo&quot;. Debe enviar otro evento de seguimiento de reproducción cuando termine el almacenamiento en búfer.  **La llamada`play`después de`bufferStart`infiere una llamada “bufferEnd” al back end**, por lo que no es necesario un evento `bufferEnd`.
+El almacenamiento en búfer finaliza después de 3 segundos, por lo que el reproductor vuelve al estado &quot;reproduciendo&quot;. Debe enviar otro evento de seguimiento de reproducción cuando termine el almacenamiento en búfer.  **La llamada `play` después de `bufferStart` infiere una llamada “bufferEnd” al back end**, por lo que no es necesario un evento `bufferEnd`.
 
 **Cuerpo de la solicitud de muestra**
 
@@ -664,7 +665,7 @@ Mandar un ping al servidor cada 10 segundos. El reproductor sigue en estado de &
 
 **Detalles de implementación**
 
-Cambie el estado de reproducción a &quot;reproduciendo&quot;.  **La llamada`play`después de`pauseStart`ya infiere una llamada &quot;continuar&quot; al final**, por lo que no hay necesidad de un evento `resume`.
+Cambie el estado de reproducción a &quot;reproduciendo&quot;.  **La llamada `play` después de `pauseStart` ya infiere una llamada &quot;continuar&quot; al final**, por lo que no hay necesidad de un evento `resume`.
 
 **Cuerpo de la solicitud de muestra**
 
