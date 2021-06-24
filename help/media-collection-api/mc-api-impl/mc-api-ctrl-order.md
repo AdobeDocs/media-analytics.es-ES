@@ -1,17 +1,18 @@
 ---
 title: Control del orden de los eventos
-description: Control del orden de los eventos
+description: Obtenga información sobre cómo controlar el orden de los eventos y cómo, en algunos casos, se reordenan los eventos en función de la marca de tiempo proporcionada en el objeto playerTime .
 uuid: 007fccc6-be72-4b79-826d-588c957ccf15
 exl-id: c0cac319-2bea-42c8-8674-641dfbb44fa2
-translation-type: tm+mt
-source-git-commit: 27694ec83de89980404df7a7cc77fa42b3d1a751
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
 workflow-type: tm+mt
-source-wordcount: '307'
-ht-degree: 4%
+source-wordcount: '328'
+ht-degree: 3%
 
 ---
 
-# Control del orden de los eventos {#controlling-the-order-of-events}
+# Control del orden de los eventos{#controlling-the-order-of-events}
 
 El seguimiento de vídeo en flujo es una operación dependiente del tiempo y, ocasionalmente, las llamadas de seguimiento de API de recopilación de contenido llegan al back end sin orden. En esta situación, el back end intenta poner en cola y reordenar eventos basados en la marca de tiempo proporcionada en el objeto `playerTime`.  Esto ocurre con algunos límites. Actualmente, la reordenación puede fallar si los retrasos entre las llamadas desordenadas son superiores a un segundo. En futuras actualizaciones, el &quot;tiempo de demora aceptable&quot; puede optimizarse y configurarse.
 
