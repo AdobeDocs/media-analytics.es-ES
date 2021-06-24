@@ -1,14 +1,18 @@
 ---
-title: Seguimiento de anuncios en iOS
+title: Aprenda a rastrear anuncios en iOS
 description: Implemente el seguimiento de anuncios en aplicaciones de iOS mediante Media SDK.
 uuid: e979e679-cde5-4c30-8f34-867feceac13a
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: a352bca9-bcfc-4418-b2a2-c9b1ad226359
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '357'
+ht-degree: 98%
 
 ---
 
-
-# Seguimiento de anuncios en iOS {#track-ads-on-ios}
+# Seguimiento de anuncios en iOS{#track-ads-on-ios}
 
 >[!IMPORTANT]
 >
