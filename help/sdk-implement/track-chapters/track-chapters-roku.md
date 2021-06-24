@@ -1,14 +1,18 @@
 ---
-title: Seguimiento de capítulos y segmentos en Roku
-description: En este tema se describe la implementación del seguimiento de capítulos y segmentos mediante Media SDK en Roku.
+title: Aprenda a rastrear capítulos y segmentos en Roku
+description: Obtenga información sobre la implementación del seguimiento de capítulos y segmentos mediante Media SDK en Roku.
 uuid: 15c07131-77d7-4a97-92c6-0a190c6b08d3
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: b5eb8be7-4b85-4ba7-9216-dd691be7ba46
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '201'
+ht-degree: 89%
 
 ---
 
-
-# Seguimiento de capítulos y segmentos en Roku {#track-chapters-and-segments-on-roku}
+# Seguimiento de capítulos y segmentos en Roku{#track-chapters-and-segments-on-roku}
 
 >[!IMPORTANT]
 >
@@ -71,4 +75,3 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    ```
 
 1. Si hay más capítulos, repita los pasos del 1 al 5.
-
