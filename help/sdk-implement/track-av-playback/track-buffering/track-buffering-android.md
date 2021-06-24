@@ -1,14 +1,18 @@
 ---
-title: Seguimiento del almacenamiento en búfer en Android
-description: Describe el seguimiento de eventos de almacenamiento en búfer en Android.
+title: Obtenga información sobre cómo rastrear el almacenamiento en búfer en Android
+description: Obtenga información sobre cómo rastrear eventos de almacenamiento en búfer en Android.
 uuid: f16ce76d-1db3-4b51-8c98-54cb781f71d7
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: fcea2ef8-53c5-41fb-8b70-06599c2d9cbf
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '119'
+ht-degree: 87%
 
 ---
 
-
-# Seguimiento del almacenamiento en búfer en Android {#track-buffering-on-android}
+# Seguimiento del almacenamiento en búfer en Android{#track-buffering-on-android}
 
 >[!IMPORTANT]
 >En las siguientes instrucciones se indican los pasos para la implementación en todos los kits de desarrollo de software de 2.x. Si va a implementar una versión 1.x del SDK, puede descargar las guías del desarrollador de 1.x aquí: [Descargar SDK.](/help/sdk-implement/download-sdks.md)
