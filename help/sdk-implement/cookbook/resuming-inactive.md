@@ -1,14 +1,18 @@
 ---
-title: Reanudación de sesiones inactivas
-description: Cómo controlar la reanudación de una sesión inactiva.
+title: Reanudar sesiones inactivas
+description: Obtenga información sobre cómo controlar la reanudación de una sesión inactiva.
 uuid: 3ff1205d-7bbe-4016-9bd7-6e34b7862c4c
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: ee4cf7f5-5788-4d35-a04d-4ed714ccd663
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '160'
+ht-degree: 95%
 
 ---
 
-
-# Reanudar sesiones inactivas {#resuming-inactive-sessions}
+# Reanudación de sesiones inactivas{#resuming-inactive-sessions}
 
 ## Pausas largas
 
@@ -86,4 +90,3 @@ _onmediaLoad = function () {
   this._mediaHeartbeat.trackSessionStart(mediaObject, contextData); 
 };
 ```
-
