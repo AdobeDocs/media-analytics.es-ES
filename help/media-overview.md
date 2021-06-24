@@ -1,16 +1,18 @@
 ---
-title: Medición de Streaming Media en Adobe Analytics
-description: Adobe Analytics para contenidos (también denominado Media Analytics) proporciona a los clientes una medición de contenidos sólida para el contenido, el audio y la publicidad.
+title: 'Medios de transmisión de Adobe en Adobe Analytics '
+description: '"Profundizar en la medición de medios de transmisión más avanzada para contenido, audio y anuncios. Obtenga información sobre Adobe Analytics para medios de transmisión".'
 uuid: b3cbe240-b94d-42b8-a99c-0280334aaa14
 exl-id: 826530f7-2c39-41ef-b3b4-d3f44b46858f
-source-git-commit: eaae56abd3e549ad57c45852fe0bedb618f80e9e
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
 workflow-type: tm+mt
-source-wordcount: '879'
-ht-degree: 98%
+source-wordcount: '880'
+ht-degree: 95%
 
 ---
 
-# Medición de Streaming Media en Adobe Analytics {#measuring-audio-and-video-in-adobe-analytics}
+# Medición de Streaming Media en Adobe Analytics{#measuring-audio-and-video-in-adobe-analytics}
 
 ![Banner](./assets/media_analytics_banner.png)
 
