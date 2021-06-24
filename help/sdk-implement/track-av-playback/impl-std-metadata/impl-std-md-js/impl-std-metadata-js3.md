@@ -1,20 +1,21 @@
 ---
-title: Implementar metadatos estándar con JavaScript 3.x
-description: Describe la configuración de metadatos de anuncios y vídeos estándar para enviarlos con llamadas de seguimiento en aplicaciones de navegador (JS).
-translation-type: tm+mt
-source-git-commit: 318bb60d9835d9a07fb7aa0a0a02162248410d09
+title: Aprenda a implementar metadatos estándar con JavaScript 3.x
+description: Obtenga información sobre cómo configurar metadatos de anuncios y vídeos estándar para que se envíen con llamadas de seguimiento en aplicaciones de navegador (JS 3.x).
+exl-id: 228ba000-10e2-4906-8417-265a03367a9b
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
 workflow-type: tm+mt
-source-wordcount: '43'
-ht-degree: 46%
+source-wordcount: '50'
+ht-degree: 10%
 
 ---
 
-
-# Implementar metadatos estándar con JavaScript 3.x{#implement-standard-metadata-on-javascript}
+# Implementación de metadatos estándar con JavaScript 3.x{#implement-standard-metadata-on-javascript}
 
 ## Implementación
 
-Cree una instancia de un objeto de datos de contexto, rellene las variables de metadatos estándar que desee. Por ejemplo:
+Cree una instancia de un objeto de datos de contexto y rellene las variables de metadatos estándar que desee. Por ejemplo:
 
 ```js
 _onVideoLoad = function () {
