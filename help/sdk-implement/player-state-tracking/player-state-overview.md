@@ -1,14 +1,15 @@
 ---
 title: Acerca del seguimiento del estado de reproducción
-description: En este tema se describe la función de seguimiento del estado del reproductor, que incluye requisitos y directrices para la implementación y sistemas de informes de estados de reproductor.
-translation-type: tm+mt
-source-git-commit: 4c11efd0b8bb457246c746621e7fbb9fbda621b2
+description: Obtenga información sobre la función de seguimiento del estado del reproductor, que incluye requisitos y directrices para la implementación y creación de informes de estados del reproductor.
+exl-id: c678e182-74e4-4f46-8596-7be57e645c66
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
 workflow-type: tm+mt
-source-wordcount: '404'
-ht-degree: 98%
+source-wordcount: '405'
+ht-degree: 94%
 
 ---
-
 
 # Acerca del seguimiento del estado de reproducción
 
