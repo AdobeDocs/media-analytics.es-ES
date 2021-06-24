@@ -1,18 +1,19 @@
 ---
 seo-title: Información general
-title: Información general
-description: null
+title: Información general sobre la API de recopilación de medios de transmisión
+description: Obtenga información sobre la API de Media Collection y cómo su reproductor puede rastrear eventos de audio y vídeo mediante llamadas HTTP RESTful.
 uuid: c14bdbef-5846-4d31-8a14-8e9e0e9c9861
 exl-id: 58430636-7fab-433a-8ead-52ccaa45d920
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '331'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '357'
+ht-degree: 92%
 
 ---
 
-# Información general {#overview}
+# Información general{#overview}
 
 La API de recopilación de medios es la alternativa RESTful de Adobe al SDK de medios del lado del cliente. Con la API de recopilación de medios, el reproductor puede realizar el seguimiento de eventos de audio y vídeo mediante llamadas HTTP RESTful.
 
