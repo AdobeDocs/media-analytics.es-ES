@@ -1,15 +1,16 @@
 ---
-title: 'Línea de tiempo 2: El usuario abandona la sesión'
-description: null
+title: Descubra las líneas de tiempo de seguimiento de contenidos � el usuario abandona la sesión
+description: Obtenga información sobre la cronología del cabezal de reproducción y la acción � usuario correspondiente cuando se abandona una sesión de vídeo. Obtenga información sobre los detalles de cada acción y solicitud.
 uuid: 74b89e8f-ef56-4e0c-b9a8-40739e15b4cf
-translation-type: ht
-source-git-commit: c86c7932f932af0a121e0b757921973d6f4084e8
-workflow-type: ht
-source-wordcount: '634'
-ht-degree: 100%
+exl-id: 0c6a89f4-7949-4623-8ed9-ce1d1547bdfa
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '665'
+ht-degree: 95%
 
 ---
-
 
 # Línea de tiempo 2: El usuario abandona la sesión {#timeline--2-user-abandons-session}
 
