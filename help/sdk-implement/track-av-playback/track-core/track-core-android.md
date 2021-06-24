@@ -1,14 +1,18 @@
 ---
-title: Seguimiento de reproducción principal en Android
-description: En este tema se describe cómo implementar el seguimiento principal mediante Media SDK en Android.
+title: Obtenga información sobre cómo rastrear la reproducción principal en Android
+description: Obtenga información sobre cómo implementar el seguimiento principal mediante Media SDK en Android.
 uuid: ab5fab95-76ed-4ae6-aedb-2e66eece7607
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: d5f5a3f0-f1e0-4d68-af7f-88a30faed0db
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '710'
+ht-degree: 97%
 
 ---
 
-
-# Seguimiento de reproducción principal en Android {#track-core-playback-on-android}
+# Seguimiento de reproducción principal en Android{#track-core-playback-on-android}
 
 >[!IMPORTANT]
 >Esta documentación abarca el seguimiento en la versión 2.x del SDK. Si va a implementar una versión 1.x del SDK, puede descargar la guía del desarrollador de 1.x para Android aquí: [Descargar SDK](/help/sdk-implement/download-sdks.md).
@@ -27,7 +31,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    | `streamType` | Tipo de flujo (consulte _Constantes de StreamType_ a continuación) | Sí |
    | `mediaType` | Tipo de contenido (consulte _Constantes de MediaType_ a continuación) | Sí |
 
-   **Constantes de`StreamType`:**
+   **`StreamType`Constantes de:**
 
    | Nombre de la constante | Descripción |
    |---|---|
@@ -38,7 +42,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    | `AUDIOBOOK` | Tipo de emisión de audiolibro. |
    | `PODCAST` | Tipo de emisión de podcast. |
 
-   **Constantes de`MediaType`:**
+   **`MediaType`Constantes de:**
 
    | Nombre de la constante | Descripción |
    |---|---|
@@ -150,10 +154,10 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
    Identifique cualquier situación en la que se pausará el reproductor y compruebe que se ha invocado `trackPause` correctamente. Las siguientes situaciones requieren que la aplicación invoque `trackPause()`:
 
-   * Cuando el usuario pausa explícitamente en la aplicación.
-   * Cuando el reproductor se sitúa en el estado En pausa.
-   * (*Aplicaciones móviles*): cuando el usuario coloca la aplicación en segundo plano, pero desea que la sesión continúe abierta.
-   * (*Aplicaciones móviles*): cuando se produce cualquier tipo de interrupción del sistema que provoca que una aplicación se quede en segundo plano. Por ejemplo, si el usuario recibe una llamada o aparece una ventana emergente de otra aplicación, pero desea que la aplicación mantenga la sesión activa para que el usuario pueda reanudar el contenido desde donde se produjo la interrupción.
+   * El usuario hace una pausa explícita en la aplicación.
+   * El reproductor se pone en estado de pausa.
+   * (*Aplicaciones móviles*): El usuario pone la aplicación en segundo plano, pero desea que la aplicación mantenga abierta la sesión.
+   * (*Aplicaciones móviles*): Se produce cualquier tipo de interrupción del sistema que provoca que una aplicación se ponga en segundo plano. Por ejemplo, si el usuario recibe una llamada o aparece una ventana emergente de otra aplicación, pero desea que la aplicación mantenga la sesión activa para que el usuario pueda reanudar el contenido desde donde se produjo la interrupción.
 
 1. Identifique el evento del reproductor para la reproducción o reanudación de contenido después de la pausa e invoque `trackPlay`.
 
@@ -172,4 +176,3 @@ Consulte lo siguiente para obtener más información sobre el seguimiento de la 
 
 * Situaciones de seguimiento: [Reproducción de VOD sin anuncios](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)
 * Reproductor de muestra incluido con el SDK para Android para ver un ejemplo de seguimiento completo.
-
