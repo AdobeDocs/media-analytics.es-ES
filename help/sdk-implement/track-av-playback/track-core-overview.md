@@ -1,14 +1,18 @@
 ---
-title: Información general de seguimiento
-description: 'Este tema describe el seguimiento de la reproducción principal, incluido el seguimiento de la carga, el inicio, la pausa y la finalización de los contenidos. '
+title: Seguimiento de la reproducción de contenido explicado
+description: '"Obtenga información sobre el seguimiento de la reproducción principal, incluido el seguimiento de la carga, el inicio, la pausa y la finalización de los contenidos. "'
 uuid: 7b8e2f76-bc4e-4721-8933-3e4453b01788
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: 98ad2783-c9e3-48de-88df-8549f26114a0
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '894'
+ht-degree: 97%
 
 ---
 
-
-# Información general de seguimiento {#tracking-overview}
+# Información general de seguimiento{#tracking-overview}
 
 >[!IMPORTANT]
 >
@@ -235,4 +239,3 @@ if (e.type == “buffered”) {
 ## Validación {#validate}
 
 Para obtener información sobre la validación de la implementación, consulte [Validación.](/help/sdk-implement/validation/validation-overview.md)
-
