@@ -1,14 +1,15 @@
 ---
 title: Ejemplos de seguimiento del estado de reproducción
 description: Este tema incluye ejemplos de la función de seguimiento de estado del reproductor.
-translation-type: ht
-source-git-commit: 1c2992d2a5992b07fa24823501d542c1878aa296
-workflow-type: ht
-source-wordcount: '119'
+exl-id: a77bc882-ac03-40b4-ac64-87f26a09707b
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: 8a421ee4ee5d2e61126fc6ac8f10f326427e78a7
+workflow-type: tm+mt
+source-wordcount: '121'
 ht-degree: 100%
 
 ---
-
 
 # Ejemplos de seguimiento del estado de reproducción
 
@@ -17,8 +18,7 @@ ht-degree: 100%
 
 Cuando una sesión de vídeo tiene una duración de pausa superior a 30 minutos, la API requiere una nueva sesión. Cuando esto sucede, el cliente debe generar un nuevo ID de sesión. Para ambas sesiones de vídeo, el cliente debe conservar todos los estados en los que se encuentra un reproductor y enviar toda la información como un `stateStart` evento justo después de la llamada de `sessionStart`.
 
-`sessionStart → stateStart (fullscreen) → stateStart (mute) → pauseStart → (pings for 30 minutes) → sessionEnd
-`
+`sessionStart → stateStart (fullscreen) → stateStart (mute) → pauseStart → (pings for 30 minutes) → sessionEnd`
 
 Después de enviar `sessionEnd`, se debe iniciar una nueva sesión de vídeo y los primeros eventos de API serían:
 
