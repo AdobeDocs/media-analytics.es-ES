@@ -1,12 +1,16 @@
 ---
 title: Prueba 2  Interrupción de contenido
-description: En este tema se describe la prueba de interrupción de contenido utilizada en la validación.
+description: Obtenga información sobre la prueba de interrupción de contenido que se utiliza en la validación.
 uuid: eeccd534-63fd-4dd3-b096-0431bc9a11ff
-translation-type: tm+mt
-source-git-commit: cebf5697e3746721d29bfaa5356d5a2748fea435
+exl-id: 3f22ce2d-4385-4a3b-8d1f-52e25a9b1101
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '245'
+ht-degree: 96%
 
 ---
-
 
 # Prueba 2: Interrupción de contenido {#test-media-interruption}
 
@@ -23,6 +27,7 @@ Debe completar y registrar estas tareas en el siguiente orden:
    1. Inicio de Adobe Analytics (AppMeasurement)
    1. Inicio de Media Analytics (latidos)
    1. Llamada de inicio de Adobe Analytics (latidos) de Media Analytics solicitada
+
    Las dos primeras llamadas descritas contienen metadatos y variables adicionales. Para ver los parámetros y metadatos de la llamada, consulte [Detalles de la llamada de prueba.](/help/sdk-implement/validation/test-call-details.md#start-the-media-player)
 
    La tercera llamada descrita indica al servidor de Media Analytics que Media SDK solicitó que la llamada de inicio (`pev2=ms_s`) de Adobe Analytics se enviara al servidor de Adobe Analytics.
