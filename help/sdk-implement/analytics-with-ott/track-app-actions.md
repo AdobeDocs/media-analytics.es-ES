@@ -2,13 +2,17 @@
 title: Seguimiento de acciones de aplicaciones
 description: Las acciones de la aplicación son los eventos que tienen lugar en su aplicación y que desea medir.
 uuid: 9cdc048a-419a-4725-bd61-6ca6d909cf10
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: 88b7d540-67b7-4ec1-8273-02e34853bf60
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '134'
+ht-degree: 100%
 
 ---
 
-
-# Seguimiento de acciones de aplicaciones {#track-app-actions}
+# Seguimiento de acciones de aplicaciones{#track-app-actions}
 
 Las acciones son los eventos que tienen lugar en su aplicación y que desea medir.
 
@@ -49,4 +53,3 @@ Las acciones no se rastrean automáticamente, por lo que debe invocar `trackActi
       ```
 
 También puede enviar datos de contexto adicionales con cada llamada de acción de seguimiento.
-
