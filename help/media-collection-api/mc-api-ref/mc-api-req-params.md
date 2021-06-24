@@ -1,16 +1,18 @@
 ---
-title: Parámetros de solicitud
-description: Obtenga información sobre los parámetros de solicitud de medios de flujo continuo de Adobe Analytics.
+title: Parámetros de solicitud � API de recopilación de medios de transmisión
+description: '"¿Cuáles son los parámetros de solicitud de la API de Media Collection, las claves de solicitud y las descripciones?"'
 uuid: f83e9ef1-803d-4152-a6c7-acaa325036b9
 exl-id: a70025ec-1418-46f1-b41f-433d09f024e1
-source-git-commit: 00e9992712034dc67072e09cce7819719c0371d1
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
 workflow-type: tm+mt
-source-wordcount: '1297'
-ht-degree: 94%
+source-wordcount: '1307'
+ht-degree: 93%
 
 ---
 
-# Parámetros de solicitud {#request-parameters}
+# Parámetros de solicitud{#request-parameters}
 
 ## Datos de análisis
 
@@ -107,7 +109,7 @@ ht-degree: 94%
 | `media.qoe.framesPerSecond` | N | integer | Cualquiera | Número de fotogramas por segundo |
 | `media.qoe.timeToStart` | N | integer | Cualquiera | Cantidad de tiempo (en milisegundos) transcurrido entre el momento en que el usuario pulsa el botón Reproducir y el momento en que se carga el contenido y se reproduce |
 
-## Parámetros de la Ley de privacidad del consumidor de California (CCPA) {#ccpa-params}
+## Parámetros de la Ley de privacidad del consumidor de California (CCPA)  {#ccpa-params}
 
 | Clave de solicitud  | Requerido | Clave de tipo de solicitud | Establecer en... |  Descripción  |
 | --- | :---: | :---: | :---: | --- |
