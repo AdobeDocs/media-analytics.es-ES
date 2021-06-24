@@ -1,14 +1,18 @@
 ---
-title: Seguimiento de la calidad de la experiencia en Roku
-description: En este tema se describe la implementación del seguimiento de calidad de experiencia (QoE, QoS) mediante Media SDK en Roku.
+title: Descubra cómo rastrear la calidad de la experiencia en Roku
+description: '"Obtenga información sobre la implementación del seguimiento de calidad de experiencia (QoE, QoS) mediante Media SDK en Roku".'
 uuid: a8b242ab-da3c-4297-9eef-f0b9684ef56a
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: cd84c26d-ad91-4179-9532-83408030ff3e
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '199'
+ht-degree: 87%
 
 ---
 
-
-# Seguimiento de la calidad de la experiencia en Roku {#track-quality-of-experience-on-roku}
+# Seguimiento de la calidad de la experiencia en Roku{#track-quality-of-experience-on-roku}
 
 >[!IMPORTANT]
 >
@@ -81,4 +85,3 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    >[!TIP]
    >
    >El seguimiento de los errores del reproductor de contenidos no detendrá la sesión de seguimiento de contenidos. Si el reproductor de contenidos impide que continúe la reproducción, asegúrese de que la sesión de seguimiento de contenidos se cierre llamando a `trackSessionEnd()` después de invocar a `trackError()`.
-
