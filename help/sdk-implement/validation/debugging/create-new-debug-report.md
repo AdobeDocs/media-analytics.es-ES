@@ -1,14 +1,18 @@
 ---
-title: Creación de un nuevo informe de Debug
-description: En este tema se describe cómo crear un nuevo informe de Debug.
+title: Crear un nuevo informe de Debug
+description: Obtenga información sobre cómo crear un nuevo informe de Debug.
 uuid: 438fde3d-98f9-46d1-9672-75d204361568
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: 047acf35-8c1c-4493-9ee7-e2bad47c351e
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '205'
+ht-degree: 96%
 
 ---
 
-
-# Creación de un nuevo informe de Debug {#create-a-new-debug-report}
+# Creación de un nuevo informe de Debug{#create-a-new-debug-report}
 
 Para crear un nuevo informe de Debug:
 
@@ -25,14 +29,11 @@ Para crear un nuevo informe de Debug:
 
          Puede acceder de las siguientes maneras:
 
-         * [!UICONTROL Analytics &gt; Administrador &gt; Configuración de la empresa &gt; Servicios web]
-         * [!UICONTROL Analytics &gt; Administrador &gt; Administración de usuarios &gt; Usuarios &gt; Configuración de usuario individual] Para crear una credencial de API de servicios web para un nuevo usuario, en [!UICONTROL Administración de usuarios], agregue el usuario al grupo de usuarios **Acceso al servicio web**.
+         * [!UICONTROL Analytics > Administrador > Configuración de la empresa > Servicios web]
+         * [!UICONTROL Analytics > Administrador > Administración de usuarios > Usuarios > Configuración de usuario individual] Para crear una credencial de API de servicios web para un nuevo usuario, en [!UICONTROL Administración de usuarios], agregue el usuario al grupo de usuarios **Acceso al servicio web**.
       * [!UICONTROL Punto final por defecto]: Adobe proporciona los datos de este campo y no se pueden cambiar.
       * [!UICONTROL Punto final extra]: Añada `CNAMES` como servidor de seguimiento, si los usa, como `metrics.companyname.com`
    * **Video Heartbeats (Media Analytics)**
 
       * [!UICONTROL Punto final por defecto]: Adobe proporciona los datos de este campo y no se pueden cambiar.
       * [!UICONTROL Punto final extra]: Añada `CNAMES`, si los usa, para su servidor de seguimiento, es decir, `metrics.companyname.com`.
-
-
-
