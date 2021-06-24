@@ -1,14 +1,18 @@
 ---
 title: Reproducción de VOD sin anuncios
-description: Ejemplo de seguimiento de la reproducción de VOD que no contenga anuncios.
+description: Vea un ejemplo de seguimiento de la reproducción de VOD que no contiene anuncios.
 uuid: ee2a1b79-2c2f-42e1-8e81-b62bbdd0d8cb
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: 9e2240f0-da8d-4dcc-9d44-0f121c60d924
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '367'
+ht-degree: 95%
 
 ---
 
-
-# Reproducción de VOD sin anuncios {#vod-playback-with-no-ads}
+# Reproducción de VOD sin anuncios{#vod-playback-with-no-ads}
 
 ## Situación {#scenario}
 
@@ -198,4 +202,3 @@ this._mediaHeartbeat.trackSessionEnd();
 ........ 
 ........
 ```
-
