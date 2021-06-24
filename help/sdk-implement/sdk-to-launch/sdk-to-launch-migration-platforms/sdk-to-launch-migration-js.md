@@ -1,11 +1,13 @@
 ---
-title: 'Migración del SDK de medios independiente a Adobe Launch: Web (JS)'
-description: Instrucciones y ejemplos de código para ayudarle a migrar del SDK de medios a Launch.
+title: '"Migración del SDK de medios independiente a Adobe Launch: web (JS)"'
+description: Obtenga información sobre cómo migrar del SDK de medios a Launch para JS.
 exl-id: 19b506b2-3070-4a5e-9732-a5cd0867afde
-source-git-commit: 0d5edcae0a80357247ada7f61daece9840d5c4b5
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
 workflow-type: tm+mt
 source-wordcount: '403'
-ht-degree: 95%
+ht-degree: 91%
 
 ---
 
@@ -122,5 +124,5 @@ Pase un objeto delegado a `get-instance` que exponga las funciones `getQoSObject
 
 ### Launch
 
-* [Información general sobre Launch](https://docs.adobe.com/content/help/es-ES/experience-cloud/user-guides/home.translate.html)
+* [Información general sobre Launch](https://experienceleague.adobe.com/docs/launch/using/overview.html)
 * [Extensión de Media Analytics](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/media-analytics-extension/overview.html)
