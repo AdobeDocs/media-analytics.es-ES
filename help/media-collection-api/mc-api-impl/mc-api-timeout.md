@@ -1,17 +1,18 @@
 ---
 title: Condiciones de tiempo de espera
-description: Condiciones de tiempo de espera
+description: Obtenga información sobre las condiciones de tiempo de espera de la API de recopilación de medios de transmisión.
 uuid: 2a4ea13e-a561-4adf-b567-f980301b32c8
 exl-id: 0b494b27-a4a6-4af7-84c1-c44b33b6da8f
-translation-type: tm+mt
-source-git-commit: d4491dfec33d8729f40bcef1d57622467443bdbb
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
 workflow-type: tm+mt
-source-wordcount: '156'
-ht-degree: 100%
+source-wordcount: '164'
+ht-degree: 95%
 
 ---
 
-# Condiciones de tiempo de espera {#timeout-conditions}
+# Condiciones de tiempo de espera{#timeout-conditions}
 
 **Condiciones de tiempo de espera de API de recopilación de contenido**
 
