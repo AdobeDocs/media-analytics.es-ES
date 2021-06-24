@@ -1,14 +1,18 @@
 ---
-title: Seguimiento de capítulos y segmentos en Android
-description: En este tema se describe la implementación del seguimiento de capítulos y segmentos mediante Media SDK en Android.
+title: Descubra cómo rastrear capítulos y segmentos en Android
+description: Obtenga información sobre la implementación del seguimiento de capítulos y segmentos mediante Media SDK en Android.
 uuid: 013815d7-4d9e-48f4-a2b9-3b70cb1149d3
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: ada2e2a7-1383-471c-9ce6-c82ea93fa79d
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '200'
+ht-degree: 89%
 
 ---
 
-
-# Seguimiento de capítulos y segmentos en Android {#track-chapters-and-segments-on-android}
+# Seguimiento de capítulos y segmentos en Android{#track-chapters-and-segments-on-android}
 
 >[!IMPORTANT]
 >
@@ -78,4 +82,3 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    ```
 
 1. Si hay más capítulos, repita los pasos del 1 al 5.
-
