@@ -1,14 +1,15 @@
 ---
-title: ¿Qué es la atribución de flujo de recursos multimedia?
-description: Obtenga información sobre cómo vincular las acciones de la aplicación a los datos de seguimiento de medios sin necesidad de reglas de procesamiento y variables personalizadas adicionales.
-translation-type: tm+mt
-source-git-commit: 901539a2095b23f9108a934eb61d182b14ccd9e8
+title: ¿Qué es la atribución de flujo de transmisión de contenido?
+description: Esta función le permite vincular acciones de aplicación a datos de seguimiento de medios sin necesidad de reglas de procesamiento ni variables personalizadas adicionales.
+exl-id: 75cc9088-776d-4b10-b358-9fff956a7eb7
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
 workflow-type: tm+mt
-source-wordcount: '231'
-ht-degree: 89%
+source-wordcount: '233'
+ht-degree: 97%
 
 ---
-
 
 # Atribución de flujo de transmisión de contenido
 
