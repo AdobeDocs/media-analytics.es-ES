@@ -1,14 +1,18 @@
 ---
-title: Implementación de metadatos estándar en Roku
-description: Describe la configuración de metadatos de anuncios y vídeos estándar para enviarlos con llamadas de seguimiento en Roku.
+title: Obtenga información sobre cómo implementar metadatos estándar en Roku
+description: Obtenga información sobre cómo configurar metadatos de anuncios y vídeos estándar para que se envíen con llamadas de seguimiento en Roku.
 uuid: ae14d809-343f-452c-832a-f94bd3d83a90
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: 1552b16a-3c2d-4caa-b571-e6628f0b6866
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '65'
+ht-degree: 61%
 
 ---
 
-
-# Implementación de metadatos estándar en Roku {#implement-standard-metadata-on-roku}
+# Implementación de metadatos estándar en Roku{#implement-standard-metadata-on-roku}
 
 Cree una instancia de un objeto de metadatos estándar, rellene las variables deseadas y establezca el objeto de metadatos en el objeto de Media Heartbeat.
 
@@ -35,4 +39,3 @@ mediaInfo[ADBMobile().MEDIA_STANDARD_MEDIA_METADATA] = standardMetadata
 ```
 
 Consulte la lista completa de metadatos de vídeo aquí: [Parámetros de audio y vídeo](/help/metrics-and-metadata/audio-video-parameters.md).
-
