@@ -1,17 +1,18 @@
 ---
 title: Poner eventos en cola cuando la respuesta de las sesiones es lenta
-description: Poner eventos en cola cuando la respuesta de las sesiones es lenta
+description: 'Descubra qué hacer cuando se devuelve el ID de sesión después de que el reproductor active eventos. '
 uuid: 39ea59d9-89d3-4087-a806-48a43ecf0c98
 exl-id: 2c23c378-c104-4256-b6e7-8eb6871f62da
-translation-type: tm+mt
-source-git-commit: d4491dfec33d8729f40bcef1d57622467443bdbb
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
 workflow-type: tm+mt
-source-wordcount: '197'
-ht-degree: 100%
+source-wordcount: '207'
+ht-degree: 92%
 
 ---
 
-# Poner eventos en cola cuando la respuesta de las sesiones es lenta {#queueing-events-when-sessions-response-is-slow}
+# Poner eventos en cola cuando la respuesta de las sesiones es lenta{#queueing-events-when-sessions-response-is-slow}
 
 La API de Media Collection es RESTful: es decir, el usuario realiza una solicitud HTTP y espera la respuesta. Esto solo es importante para cuando se realiza una [Solicitud de sesiones](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) para obtener un ID de sesión al principio de la reproducción de vídeo. Esto es importante porque el ID de sesión es necesario para todas las llamadas de seguimiento subsiguientes.
 
