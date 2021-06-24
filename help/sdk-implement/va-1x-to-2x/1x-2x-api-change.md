@@ -1,12 +1,16 @@
 ---
-title: Conversión de API 1.x a 2.x
-description: Este tema incluye vínculos a referencias de API y listas de API de seguimiento opcionales y necesarias para las versiones 1.x y 2.x de Media SDK.
+title: Conversión de API versión 1.x a 2.x
+description: Explore las referencias de API y las listas de API de seguimiento opcionales y obligatorias para las versiones 1.x y 2.x de Media SDK.
 uuid: 6e619288-c082-4cb4-8685-e90823dadf4a
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: 8d06b7df-f246-49e6-aa58-91a9d6fa889a
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '202'
+ht-degree: 87%
 
 ---
-
 
 # Conversión de API 1.x a 2.x {#one-x-to-two-x-conv}
 
@@ -50,4 +54,3 @@ Todas las API de seguimiento opcionales como anuncios, capítulos, cambio de vel
 | `playerPlugin.trackBufferComplete()` | `trackEvent(Event.BufferComplete)` |
 | `playerPlugin.trackBitrateChange()` | `trackEvent(Event.BitrateChange)` |
 | `playerPlugin.trackTimedMetadata()` | `trackEvent(Event.TimedMetadataUpdate)` |
-
