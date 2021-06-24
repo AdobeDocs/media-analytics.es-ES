@@ -1,14 +1,18 @@
 ---
-title: Tableros e informes de Debug
-description: En este tema se describen los tableros de Debug de Adobe.
+title: Paneles e informes de Debug
+description: Obtenga información sobre los paneles de depuración de Adobe.
 uuid: 8e6f6245-d8bd-4329-89e1-4c5595e04ec5
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: fc5590a5-4d0e-4a2d-8f40-54c53eabc6f0
+feature: '"Media Analytics, paneles de Analytics"'
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '86'
+ht-degree: 88%
 
 ---
 
-
-# Tableros e informes de Debug {#debug-dashboards-and-reports}
+# Tableros e informes de Debug{#debug-dashboards-and-reports}
 
 Adobe Debug proporciona informes en tiempo real, para que pueda ver las visitas y los metadatos que se envían durante la reproducción del vídeo. Cada uno de estos informes se puede guardar en Debug.
 
@@ -19,4 +23,3 @@ Para su certificación, estos informes se pueden compartir con tan solo copiar l
 >Solo puede haber una sesión activa a la vez. La sesión activa se puede abrir desde el panel de control.
 
 ![](assets/debug-dashboard.png)
-
