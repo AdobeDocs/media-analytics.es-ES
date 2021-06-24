@@ -1,14 +1,15 @@
 ---
 title: Acerca de los estados estándar y personalizados
-description: En este tema se describe la función de seguimiento del estado del reproductor, que incluye requisitos y directrices para la implementación y sistemas de informes de estados de reproductor estándar y personalizados.
-translation-type: ht
-source-git-commit: f7a45dfbabe71fa9e1de7a4f4b2a7e64849e4ef4
-workflow-type: ht
-source-wordcount: '280'
-ht-degree: 100%
+description: Obtenga información sobre la función de seguimiento del estado del reproductor, que incluye requisitos y directrices para la implementación y creación de informes de estados de reproductor estándar y personalizados.
+exl-id: 3c492055-d471-4147-aa78-b058d6b931f4
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '281'
+ht-degree: 92%
 
 ---
-
 
 # Acerca de los estados estándar y personalizados
 
