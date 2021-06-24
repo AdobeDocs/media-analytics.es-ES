@@ -1,17 +1,18 @@
 ---
 title: Parámetros de estado del reproductor
-description: En este tema se describen los parámetros de seguimiento del estado del reproductor.
+description: '"Obtenga información sobre los parámetros de seguimiento del estado del reproductor para la pantalla completa, el subtítulo, el silencio y la imagen en las propiedades de la imagen".'
 uuid: 2a6b9247-a694-46e9-98e1-424c08c27ec2
-translation-type: tm+mt
-source-git-commit: 1cf631d7f3d5365a02be99af78655ac3b53fb3cb
+exl-id: cd51ed3a-fe37-41e9-8243-dfd9deb514c1
+feature: '"Media Analytics, Variables"'
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
 workflow-type: tm+mt
-source-wordcount: '2236'
-ht-degree: 99%
+source-wordcount: '2249'
+ht-degree: 98%
 
 ---
 
-
-# Parámetros de estado del reproductor {#player-state-parameters}
+# Parámetros de estado del reproductor{#player-state-parameters}
 
 En este tema se presenta una lista de los datos del estado del reproductor que Adobe recopila a través de variables de solución.
 
@@ -78,7 +79,7 @@ La funcionalidad de seguimiento de estado del reproductor se puede adjuntar a un
 
 |   Implementación   | Parámetros de red | Creación de informes |
 | --- | --- | --- |
-| <ul> <li> **Clave de SDK:**<br/> establecida automáticamente  </li> <li> **Clave de API:**<br/> N/D </li> <li> **Obligatorio:**<br/> no </li> <li> **Tipo:**<br/> número </li> <li> **Enviado con:**<br/> cierre de medios </li> <li> **Mínima Versión de SDK:**<br/> 3.0</li> <li> **Valor de muestra:**<br/> TRUE </li><li> **Descripción:**<br/> La cantidad de veces que se han mostrado Subtítulos. Esta métrica se define como 1 solo si tuvo lugar al menos un estado de subtítulo durante una sesión de reproducción. <br/> **Importante:**<br/> Si se establece este evento, el recuento es igual al número de veces que el vídeo estaba en el estado Subtítulos. Si no se establece este evento, no se enviará ningún valor.   </li> </ul> | <ul> <li> **Adobe**<br/> Analytics.media.state.closedcaptioning.count<br/></li> <li> **Heartbeat:**<br/> N/D </li> </ul> | <ul> <li> **Disponible:**<br/> sí </li> <li> **Variable reservada:**<br/> evento </li> <li> **Nombre de informe:**<br/> Recuento de subtítulos </li> <li> **Datos de contexto:**<br/> a.media.states.closedcaptioning.count<br/> </li> <li> **Fuente de datos:**<br/> videostateclosedcaptioningcount </li> <li> **Audience Manager:**<br/> c_contextdata.media.states.closedcaptioning.count </li> </ul> |
+| <ul> <li> **Clave de SDK:**<br/> establecida automáticamente  </li> <li> **Clave de API:**<br/> N/D </li> <li> **Obligatorio:**<br/> no </li> <li> **Tipo:**<br/> número </li> <li> **Enviado con:**<br/> cierre de medios </li> <li> **Mínima Versión de SDK:**<br/> 3.0</li> <li> **Valor de muestra:**<br/> TRUE </li><li> **Descripción:**<br/> La cantidad de veces que se han mostrado Subtítulos. Esta métrica se define como 1 solo si tuvo lugar al menos un estado de subtítulo durante una sesión de reproducción. <br/> **Importante:**<br/> Si se establece este evento, el recuento es igual al número de veces que el vídeo estaba en el estado Subtítulos. Si no se establece este evento, no se enviará ningún valor.   </li> </ul> | <ul> <li> **Adobe**<br/> Analytics.media.states.closedcaptioning.count<br/></li> <li> **Heartbeat:**<br/> N/D </li> </ul> | <ul> <li> **Disponible:**<br/> sí </li> <li> **Variable reservada:**<br/> evento </li> <li> **Nombre de informe:**<br/> Recuento de subtítulos </li> <li> **Datos de contexto:**<br/> a.media.states.closedcaptioning.count<br/> </li> <li> **Fuente de datos:**<br/> videostateclosedcaptioningcount </li> <li> **Audience Manager:**<br/> c_contextdata.media.states.closedcaptioning.count </li> </ul> |
 
 
 #### Duración total de Subtítulos
