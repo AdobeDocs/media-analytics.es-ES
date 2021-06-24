@@ -1,11 +1,13 @@
 ---
-title: Preguntas frecuentes sobre el fin de la asistencia del SDK de Media Analytics
+title: Descubra las preguntas frecuentes sobre el fin de la asistencia del SDK de Media Analytics
 description: Este tema incluye preguntas frecuentes sobre el fin de la compatibilidad con los SDK de Media Analytics.
 exl-id: 9601ec17-8421-49d0-9d81-1cfa5e8f37cf
-source-git-commit: 0d5edcae0a80357247ada7f61daece9840d5c4b5
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
 workflow-type: tm+mt
-source-wordcount: '669'
-ht-degree: 80%
+source-wordcount: '673'
+ht-degree: 78%
 
 ---
 
