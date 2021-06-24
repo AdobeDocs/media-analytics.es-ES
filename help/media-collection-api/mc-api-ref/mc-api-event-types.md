@@ -1,17 +1,18 @@
 ---
-title: Tipos de eventos y descripciones
-description: Tipos de eventos y descripciones
+title: Tipos y descripciones de eventos de medios de transmisión
+description: '"¿Cuáles son los tipos de eventos y las descripciones de la recopilación de contenido? "'
 uuid: bc4f75a7-ea22-47eb-a50d-5f41274c6d41
 exl-id: f2919e69-8b03-45b4-b9cd-365222a061e0
-translation-type: tm+mt
-source-git-commit: d4491dfec33d8729f40bcef1d57622467443bdbb
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
 workflow-type: tm+mt
-source-wordcount: '346'
-ht-degree: 100%
+source-wordcount: '355'
+ht-degree: 95%
 
 ---
 
-# Tipos de eventos y descripciones {#event-types-and-descriptions}
+# Tipos de eventos y descripciones{#event-types-and-descriptions}
 
 ## sessionStart
 
