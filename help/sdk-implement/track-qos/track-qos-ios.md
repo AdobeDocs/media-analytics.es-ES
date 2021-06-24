@@ -1,14 +1,18 @@
 ---
-title: Seguimiento de la calidad de la experiencia en iOS
-description: En este tema se describe la implementación del seguimiento de calidad de experiencia (QoE, QoS) mediante Media SDK en iOS.
+title: Descubra cómo rastrear la calidad de la experiencia en iOS
+description: '"Obtenga información sobre la implementación del seguimiento de calidad de experiencia (QoE, QoS) mediante Media SDK en iOS."'
 uuid: cae2c142-ed39-4234-a711-765dcabc5415
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: 7f01e6eb-95bd-4e3d-93d0-8a2e68323313
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '158'
+ht-degree: 84%
 
 ---
 
-
-# Seguimiento de la calidad de la experiencia en iOS {#track-quality-of-experience-on-ios}
+# Seguimiento de la calidad de la experiencia en iOS{#track-quality-of-experience-on-ios}
 
 >[!IMPORTANT]
 >
@@ -54,4 +58,3 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    >[!IMPORTANT]
    >
    >Actualice el objeto QoS e invoque el evento de cambio de velocidad de bits en cada cambio. Esto proporciona los datos de QoS más precisos.
-
