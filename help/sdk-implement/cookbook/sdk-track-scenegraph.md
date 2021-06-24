@@ -1,17 +1,18 @@
 ---
 title: Seguimiento en SceneGraph (Roku)
-description: Seguimiento de contenidos con la plataforma de programación XML de Roku SceneGraph.
+description: Aprenda a realizar un seguimiento del contenido multimedia con el marco de programación XML de Roku SceneGraph.
 uuid: fa85e546-c79b-4df4-8c03-d6593fa296d5
-translation-type: ht
-source-git-commit: 305f97d6d1350a3bb8b0ad9c4c58e0a5fefca045
-workflow-type: ht
-source-wordcount: '1171'
-ht-degree: 100%
+exl-id: e428d3cd-dbc7-48bb-82ff-61b6b892884c
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '1176'
+ht-degree: 98%
 
 ---
 
-
-# Seguimiento en SceneGraph (Roku) {#tracking-in-scenegraph-roku}
+# Seguimiento en SceneGraph (Roku){#tracking-in-scenegraph-roku}
 
 ## Primeros pasos {#introduction}
 
@@ -358,4 +359,3 @@ function onAdbmobileApiResponse() as void
     endif 
 end function
 ```
-
