@@ -1,18 +1,20 @@
 ---
-title: Segmentos
+title: Segmentos de flujo de medios explicados
 description: '"Obtenga información sobre los segmentos de informes asociados con el tipo de flujo de medios, incluidos el segmento, la descripción y la regla para el tipo de flujo de medios".'
 uuid: 61906b8c-3362-4463-82be-fe0e741a5eb3
 exl-id: a450801c-0d6b-4e2a-8662-f00aaaa6e4e0
 feature: '"Media Analytics, Segmentación"'
 role: Business Practitioner, Administrator, Data Engineer
-source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+source-git-commit: 2d9d4352b0fd71710a9952ba4a77f6796ea9f5cc
 workflow-type: tm+mt
-source-wordcount: '147'
-ht-degree: 84%
+source-wordcount: '207'
+ht-degree: 66%
 
 ---
 
 # Segmentos{#segments}
+
+Los segmentos le permiten identificar subconjuntos de visitantes basándose en sus características o en las interacciones con el sitio web. Los segmentos de medios de transmisión le permiten identificar el tipo de flujo del visitante, como emisiones de audio, en directo o podcast. Para obtener información sobre los segmentos de Adobe Analytics, consulte [Acerca de los segmentos y contenedores](https://experienceleague.adobe.com/docs/analytics/components/segmentation/seg-overview.html?lang=en) en la Guía de componentes de Adobe Analytics.
 
 >[!NOTE]
 >
