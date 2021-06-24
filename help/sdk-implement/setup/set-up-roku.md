@@ -1,16 +1,18 @@
 ---
-title: Configuración de Roku
-description: Configuración de la aplicación de Media SDK para la implementación en Roku.
+title: Configuración del SDK de medios para Roku
+description: Siga estos pasos para configurar la aplicación de Media SDK en Roku.
 uuid: 904dfda0-4782-41da-b4ab-212e81156633
 exl-id: b8de88d0-3a93-4776-b372-736bf979ee26
-source-git-commit: 0d5edcae0a80357247ada7f61daece9840d5c4b5
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
 workflow-type: tm+mt
-source-wordcount: '707'
-ht-degree: 81%
+source-wordcount: '718'
+ht-degree: 78%
 
 ---
 
-# Configuración de Roku {#set-up-roku}
+# Configuración de Roku{#set-up-roku}
 
 ## Requisitos previos
 
