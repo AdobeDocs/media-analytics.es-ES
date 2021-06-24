@@ -1,14 +1,18 @@
 ---
-title: Seguimiento de reproducción principal en iOS
-description: En este tema se describe cómo implementar el seguimiento principal mediante Media SDK en iOS.
+title: Descubra cómo rastrear la reproducción principal en iOS
+description: Obtenga información sobre cómo implementar el seguimiento principal mediante Media SDK en iOS.
 uuid: bdc0e05c-4fe5-430e-aee2-f331bc59ac6b
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: 5c6b36b3-a421-45a4-a65e-4eb57513ca4a
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '713'
+ht-degree: 95%
 
 ---
 
-
-# Seguimiento de reproducción principal en iOS {#track-core-playback-on-ios}
+# Seguimiento de reproducción principal en iOS{#track-core-playback-on-ios}
 
 >[!IMPORTANT]
 >Esta documentación abarca el seguimiento en la versión 2.x del SDK. Si va a implementar una versión 1.x del SDK, puede descargar las guías del desarrollador de 1.x aquí: [Descargar SDK](/help/sdk-implement/download-sdks.md).
@@ -27,7 +31,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    | `streamType` | Tipo de flujo (consulte _Constantes de StreamType_ a continuación) | Sí |
    | `mediaType` | Tipo de contenido (consulte _Constantes de MediaType_ a continuación) | Sí |
 
-   **Constantes de`StreamType`:**
+   **`StreamType`Constantes de:**
 
    | Nombre de la constante | Descripción |
    |---|---|
@@ -38,7 +42,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    | `ADBMediaHeartbeatStreamTypeAUDIOBOOK` | Tipo de emisión de audiolibro. |
    | `ADBMediaHeartbeatStreamTypePODCAST` | Tipo de emisión de podcast. |
 
-   **Constantes de`MediaType`:**
+   **`MediaType`Constantes de:**
 
    | Nombre de la constante | Descripción |
    |---|---|
@@ -64,6 +68,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
       * [Implementación de metadatos estándar en iOS](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-ios.md)
       * **Claves de metadatos de vídeo**
+
          [Claves de metadatos de iOS](/help/sdk-implement/track-av-playback/impl-std-metadata/ios-metadata-keys.md)
 
       * Consulte la lista completa de metadatos de vídeo aquí: [Parámetros de audio y vídeo](/help/metrics-and-metadata/audio-video-parameters.md).
@@ -153,10 +158,10 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
    Identifique cualquier situación en la que se pausará el reproductor y compruebe que se ha invocado `trackPause` correctamente. Las siguientes situaciones requieren que la aplicación invoque `trackPause()`:
 
-   * Cuando el usuario pausa explícitamente en la aplicación.
-   * Cuando el reproductor se sitúa en el estado En pausa.
-   * (*Aplicaciones móviles*): cuando el usuario coloca la aplicación en segundo plano, pero desea que la sesión continúe abierta.
-   * (*Aplicaciones móviles*): cuando se produce cualquier tipo de interrupción del sistema que provoca que una aplicación se quede en segundo plano. Por ejemplo, si el usuario recibe una llamada o aparece una ventana emergente de otra aplicación, pero desea que la aplicación mantenga la sesión activa para que el usuario pueda reanudar el vídeo desde donde se produjo la interrupción.
+   * El usuario hace una pausa explícita en la aplicación.
+   * El reproductor se pone en estado de pausa.
+   * (*Aplicaciones móviles*): El usuario pone la aplicación en segundo plano, pero desea que la aplicación mantenga abierta la sesión.
+   * (*Aplicaciones móviles*): Se produce cualquier tipo de interrupción del sistema que provoca que una aplicación se ponga en segundo plano. Por ejemplo, si el usuario recibe una llamada o aparece una ventana emergente de otra aplicación, pero desea que la aplicación mantenga la sesión activa para que el usuario pueda reanudar el vídeo desde donde se produjo la interrupción.
 
 1. Identifique el evento del reproductor en el que el vídeo se reproduzca o se reanude e invoque `trackPlay`:
 
@@ -174,4 +179,3 @@ Consulte lo siguiente para obtener más información sobre el seguimiento de la 
 
 * Situaciones de seguimiento: [Reproducción de VOD sin anuncios](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)
 * Reproductor de muestra incluido con el SDK para iOS para ver un ejemplo de seguimiento completo.
-
