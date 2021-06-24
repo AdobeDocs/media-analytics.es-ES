@@ -1,17 +1,18 @@
 ---
 title: Habilitación de informes de contenidos
-description: Habilitación de informes de contenidos
+description: Obtenga información sobre el grupo de informes multimedia que recopila métricas de medios.  Siga estos pasos para configurar los informes de medios antes de enviar los datos de medios.
 uuid: d306068d-a308-4b6e-8a72-742dda0de428
 exl-id: 686d88a5-79b6-4936-ba9e-8f834ef330d1
-translation-type: ht
-source-git-commit: d4491dfec33d8729f40bcef1d57622467443bdbb
-workflow-type: ht
-source-wordcount: '899'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '920'
+ht-degree: 97%
 
 ---
 
-# Habilitación de informes de contenidos {#media-reports-enablement}
+# Habilitación de informes de contenidos{#media-reports-enablement}
 
 Para enviar datos sobre los contenidos, es necesario configurar todos los grupos de informes que recopilan métricas de contenidos.
 
