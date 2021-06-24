@@ -1,16 +1,18 @@
 ---
 title: Obtenga datos de informes JSON de visualizadores simultáneos con las API de Analytics 2.0
-description: null
+description: Obtenga información sobre cómo obtener datos de informes de espectadores simultáneos mediante las API de Analytics 2.0. Vea una solicitud y una respuesta de ejemplo.
 uuid: 9168f114-2459-4951-a06c-57b735d09dc0
 exl-id: f84f63d3-b0d0-45fe-95a7-159f22d60660
-source-git-commit: 0d5edcae0a80357247ada7f61daece9840d5c4b5
-workflow-type: ht
-source-wordcount: '167'
-ht-degree: 100%
+feature: '"Aspectos básicos de Media Analytics, Reports & Analytics"'
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '190'
+ht-degree: 87%
 
 ---
 
-# Obtenga datos de informes JSON de visualizadores simultáneos con las API de Analytics 2.0 {#get-concurrent-viewers-json-report-data}
+# Obtenga datos de informes JSON de visualizadores simultáneos con las API de Analytics 2.0{#get-concurrent-viewers-json-report-data}
 
 Puede obtener datos de informes de visualizadores simultáneos mediante las [_*API de Analytics 2.0*_](https://www.adobe.io/apis/experiencecloud/analytics/docs.html).
 
