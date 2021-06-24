@@ -1,16 +1,18 @@
 ---
 title: Espectadores simultáneos de medios
-description: null
+description: '"Obtenga información sobre el tablero Espectadores simultáneos de medios que se utiliza para mostrar los espectadores simultáneos durante un día. Los datos se pueden filtrar por contenido, tipo de dispositivo o país".'
 uuid: e61c50e5-8196-4538-b67c-ebc01c6e6ba7
 exl-id: 2c679c1a-a4bd-44fc-8e11-173c8544ab06
-source-git-commit: 0d5edcae0a80357247ada7f61daece9840d5c4b5
-workflow-type: ht
-source-wordcount: '265'
-ht-degree: 100%
+feature: '"Aspectos básicos de Media Analytics, Reports & Analytics"'
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '295'
+ht-degree: 89%
 
 ---
 
-# Espectadores simultáneos de medios {#media-concurrent-viewers}
+# Espectadores simultáneos de medios{#media-concurrent-viewers}
 
 El panel Espectadores simultáneos de medios muestra los visualizadores simultáneos durante un día. Dichos datos pueden filtrarse por contenido, tipo de dispositivo o país.
 
