@@ -1,14 +1,18 @@
 ---
-title: Reproducción de VOD con anuncios previos a la emisión
-description: Ejemplo de cómo realizar un seguimiento del contenido de VOD que contiene anuncios previos a la emisión mediante Media SDK.
+title: '"Reproducción de VOD con anuncios previos a la emisión"'
+description: '"Vea un ejemplo de cómo rastrear contenido de VOD que contiene anuncios previos a la emisión mediante Media SDK."'
 uuid: 5d1022a8-88cb-40aa-919c-60dd592a639e
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: c77f6457-ac3b-4d7a-8eed-e7ebd357a6a5
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '529'
+ht-degree: 95%
 
 ---
 
-
-# Reproducción de VOD con anuncios previos a la emisión {#vod-playback-with-pre-roll-ads}
+# Reproducción de VOD con anuncios previos a la emisión{#vod-playback-with-pre-roll-ads}
 
 En esta situación, se han insertado anuncios previos a la emisión antes del contenido principal. Si no se indica lo contrario, las llamadas de red son iguales a las llamadas que se hacen en la [Reproducción de VOD sin anuncios. ](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) Las llamadas de red se realizan al mismo tiempo, pero la carga útil es distinta.
 
