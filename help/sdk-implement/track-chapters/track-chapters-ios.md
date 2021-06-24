@@ -1,14 +1,18 @@
 ---
-title: Seguimiento de capítulos y segmentos en iOS
-description: En este tema se describe la implementación del seguimiento de capítulos y segmentos mediante Media SDK en iOS.
+title: Descubra cómo rastrear capítulos y segmentos en iOS
+description: Obtenga información sobre la implementación del seguimiento de capítulos y segmentos mediante Media SDK en iOS.
 uuid: ffc5ce9f-04ba-4059-92d4-4cb4180ac9ed
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: ea8a1dd6-043f-41a4-9cef-845da92bfa32
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '197'
+ht-degree: 88%
 
 ---
 
-
-# Seguimiento de capítulos y segmentos en iOS {#track-chapters-and-segments-on-ios}
+# Seguimiento de capítulos y segmentos en iOS{#track-chapters-and-segments-on-ios}
 
 >[!IMPORTANT]
 >
@@ -79,4 +83,3 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    ```
 
 1. Si hay más capítulos, repita los pasos del 1 al 5.
-
