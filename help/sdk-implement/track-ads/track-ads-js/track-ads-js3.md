@@ -1,20 +1,21 @@
 ---
-title: Seguimiento de publicidades con JavaScript 3.x
+title: Aprenda a rastrear anuncios con JavaScript 3.x
 description: Implementar el seguimiento de anuncios en aplicaciones de navegador (JS) mediante Media SDK.
-translation-type: tm+mt
-source-git-commit: 815965d1cd41e73e50666a89f4a7c450af5022da
+exl-id: 6b34b2c0-5e50-471a-b52c-b9c760fa3169
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
 workflow-type: tm+mt
-source-wordcount: '359'
-ht-degree: 80%
+source-wordcount: '364'
+ht-degree: 85%
 
 ---
 
-
-# Seguimiento de publicidades con JavaScript 3.x{#track-ads-on-javascript}
+# Seguimiento de anuncios con JavaScript 3.x{#track-ads-on-javascript}
 
 >[!IMPORTANT]
 >
->Las siguientes instrucciones proporcionan directrices para la implementación mediante SDK de 3.x. If you are implementing any previous versions of the SDK, you can download the Developers Guides here: [Download SDKs.](/help/sdk-implement/download-sdks.md)
+>Las siguientes instrucciones proporcionan directrices para la implementación mediante SDK de 3.x. Si va implementar cualquier versión anterior del SDK, puede descargar las guías del desarrollador aquí: [Descargar SDK.](/help/sdk-implement/download-sdks.md)
 
 ## Constantes de seguimiento de anuncio
 
@@ -34,7 +35,7 @@ ht-degree: 80%
 
    | Nombre de variable | Tipo | Descripción |
    | --- | --- | --- |
-   | `name` | string | Cadena que no está vacía y que indica el nombre del salto de página (previo, intermedio y posterior). |
+   | `name` | string | Cadena no vacía que indica un nombre de pausa publicitaria (anuncio previo a la emisión, anuncio intermedio y anuncio posterior). |
    | `position` | entero | La posición numérica de la pausa publicitaria, comenzando por 1. |
    | `startTime` | entero | Valor del cabezal de reproducción al comienzo de la pausa publicitaria. |
 
@@ -59,10 +60,10 @@ ht-degree: 80%
 
    | Nombre de variable | Tipo | Descripción |
    | --- | --- | --- |
-   | `name` | string | Cadena no vacía que indica el nombre de la publicidad. |
-   | `adId` | string | Cadena no vacía que denota identificador de publicidad. |
-   | `position` | entero | La posición numérica de la publicidad dentro de la pausa, comenzando por 1. |
-   | `length` | entero | Número positivo que indica la longitud de la publicidad. |
+   | `name` | string | Cadena no vacía que indica el nombre del anuncio. |
+   | `adId` | string | Cadena no vacía que indica el identificador de la publicidad. |
+   | `position` | entero | La posición numérica del anuncio dentro de la pausa publicitaria, comenzando por 1. |
+   | `length` | entero | Número positivo que indica la longitud del anuncio. |
 
    Creación de objeto de anuncio:
 
