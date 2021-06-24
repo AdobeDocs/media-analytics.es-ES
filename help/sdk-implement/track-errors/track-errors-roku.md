@@ -1,14 +1,18 @@
 ---
-title: Seguimiento de errores en Roku
-description: En este tema se describe la implementación del seguimiento de errores mediante el uso de Media SDK en Roku.
+title: Obtenga información sobre cómo rastrear errores en Roku
+description: Obtenga información sobre la implementación del seguimiento de errores mediante Media SDK en Roku.
 uuid: 4e0165f9-9169-47ed-9f11-ea8a8778f663
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: 6a6aae4c-60c3-43ea-9954-0bb31f6456f8
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '96'
+ht-degree: 81%
 
 ---
 
-
-# Seguimiento de errores en Roku {#track-errors-on-roku}
+# Seguimiento de errores en Roku{#track-errors-on-roku}
 
 >[!IMPORTANT]
 >
@@ -26,4 +30,3 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 >[!NOTE]
 >
 >El seguimiento de los errores del reproductor de contenidos no detendrá la sesión de seguimiento de contenidos. Si el reproductor de contenidos impide que continúe la reproducción, asegúrese de que la sesión de seguimiento de contenidos se cierre llamando a `trackSessionEnd` después de invocar a `trackError`.
-
