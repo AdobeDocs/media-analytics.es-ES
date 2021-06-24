@@ -1,14 +1,18 @@
 ---
-title: Claves de metadatos de Chromecast
-description: Describe la configuración de metadatos de anuncios y vídeos estándar para enviarlos con llamadas de seguimiento en Chromecast.
+title: Claves de metadatos de Chromecast explicadas
+description: Obtenga información sobre cómo configurar metadatos de anuncios y vídeos estándar para que se envíen con llamadas de seguimiento en Chromecast.
 uuid: c446ad41-51b8-46d6-9bc1-abfae866023f
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: ccc717ae-d846-4349-8282-5e3511ddeb9b
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '141'
+ht-degree: 85%
 
 ---
 
-
-# Claves de metadatos de Chromecast {#chromecast-metadata-keys}
+# Claves de metadatos de Chromecast{#chromecast-metadata-keys}
 
 Los metadatos de publicidad y vídeo estándar se pueden establecer en objetos de información de publicidad y contenido multimedia, respectivamente. El uso de las claves constantes para los metadatos de vídeo/publicidad establece el diccionario con metadatos estándar en el objeto info antes de invocar las API de seguimiento. Consulte las siguientes tablas para ver la lista completa de constantes de metadatos estándar, con ejemplos.
 
@@ -111,4 +115,3 @@ adObject[ADBMobile.media.MediaObjectKey.StandardAdMetadata] = standardVideoMetad
  
 ADBMobile.media.trackEvent(ADBMobile.media.Event.AdStart, this._player.getAdInfo(), adContextData);
 ```
-
