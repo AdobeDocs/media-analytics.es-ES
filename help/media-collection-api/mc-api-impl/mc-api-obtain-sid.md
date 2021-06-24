@@ -1,17 +1,18 @@
 ---
 title: Obtención de un ID de sesión
-description: Obtención de un ID de sesión
+description: Aprenda a codificar una solicitud de sesiones para obtener el ID de sesión del encabezado Ubicación en una respuesta.
 uuid: fc8712fa-848f-4564-af5d-5dd9d6b088d8
 exl-id: 4a1c4ade-4a5e-4af0-8117-19d718dd8bda
-translation-type: tm+mt
-source-git-commit: d4491dfec33d8729f40bcef1d57622467443bdbb
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
 workflow-type: tm+mt
-source-wordcount: '46'
-ht-degree: 100%
+source-wordcount: '63'
+ht-degree: 69%
 
 ---
 
-# Obtención de un ID de sesión {#obtaining-a-session-id}
+# Obtención de un ID de sesión{#obtaining-a-session-id}
 
 Este fragmento de código del reproductor de referencia muestra una forma de codificar una [solicitud de sesiones](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) junto con la extracción del ID de sesión (y la versión de la API de recopilación de contenido) en el encabezado Ubicación en la respuesta:
 
