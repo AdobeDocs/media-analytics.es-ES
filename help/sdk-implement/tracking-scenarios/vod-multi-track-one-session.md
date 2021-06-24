@@ -1,14 +1,18 @@
 ---
 title: Un rastreador de VOD para varias sesiones
-description: Ejemplo de cómo utilizar un rastreador para rastrear varias sesiones mediante Media SDK.
+description: Vea un ejemplo de cómo utilizar un rastreador para rastrear varias sesiones mediante Media SDK.
 uuid: 355c83f4-52bd-4bdd-92dc-ab506e412d0a
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: 72edb484-0d45-446e-bda3-cda9e2272e7e
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '186'
+ht-degree: 87%
 
 ---
 
-
-# Un rastreador de VOD para varias sesiones {#vod-one-tracker-for-multiple-sessions}
+# Un rastreador de VOD para varias sesiones{#vod-one-tracker-for-multiple-sessions}
 
 ## Situación {#scenario}
 
@@ -378,4 +382,3 @@ analyticsProvider1 = new MediaAnalyticsProvider(_player1);
 // Load the main media content.  
 _player1.loadContent(URL_TO_MEDIA_1);
 ```
-
