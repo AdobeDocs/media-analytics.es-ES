@@ -1,17 +1,18 @@
 ---
-title: Información general de configuración
-description: Descripción general de la configuración de Media SDK para el seguimiento de contenido en las aplicaciones móviles, OTT y de navegador (JS).
+title: Implementación de Media SDK explicados
+description: '"Obtenga información sobre cómo configurar Media SDK para el seguimiento de medios en sus aplicaciones móviles, OTT y de navegador (JS)."'
 uuid: 06fefedb-b0c8-4f7d-90c8-e374cdde1695
-translation-type: ht
-source-git-commit: 300eb77858296f0246a2cb484386c0dcdf8b87b9
-workflow-type: ht
-source-wordcount: '734'
-ht-degree: 100%
+exl-id: a175332e-0bdc-44aa-82cb-b3f879e7abfc
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '739'
+ht-degree: 96%
 
 ---
 
-
-# Información general de configuración {#setup-overview}
+# Información general de configuración{#setup-overview}
 
 >[!IMPORTANT]
 >
