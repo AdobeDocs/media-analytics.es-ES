@@ -1,17 +1,18 @@
 ---
 title: Información general de informes predeterminados
-description: Información general de informes predeterminados
+description: '"Conozca los tipos de informes y las métricas que se usan para realizar el seguimiento de contenido multimedia en su sitio web. Explore los informes de estilo tablero que están disponibles con el módulo Media Core".'
 uuid: a078aa59-3b2d-45b2-9e66-3d9c29c82f0c
 exl-id: 0040006e-cd59-48a1-b019-1feafc275fa3
-translation-type: ht
-source-git-commit: d4491dfec33d8729f40bcef1d57622467443bdbb
-workflow-type: ht
-source-wordcount: '328'
-ht-degree: 100%
+feature: '"Aspectos básicos de Media Analytics, Reports & Analytics"'
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '355'
+ht-degree: 91%
 
 ---
 
-# Información general de informes predeterminados {#default-reports-overview}
+# Información general de informes predeterminados{#default-reports-overview}
 
 Adobe Analytics proporciona varios informes y métricas para realizar un seguimiento del rendimiento de los medios en el sitio web.
 
