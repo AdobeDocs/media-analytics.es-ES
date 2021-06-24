@@ -1,14 +1,18 @@
 ---
 title: Reproducción de VOD con almacenamiento en búfer
-description: Ejemplo de cómo rastrear contenido de VOD mediante Media SDK.
+description: Vea un ejemplo de cómo rastrear contenido de VOD mediante Media SDK.
 uuid: 958f7692-7193-40fb-a8e7-2ff4fa805330
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: 3a8f913f-cb51-45ae-ac1d-862ea1e7c994
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '231'
+ht-degree: 92%
 
 ---
 
-
-# Reproducción de VOD con almacenamiento en búfer {#vod-playback-with-buffering}
+# Reproducción de VOD con almacenamiento en búfer{#vod-playback-with-buffering}
 
 ## Situación {#scenario}
 
@@ -222,4 +226,3 @@ this._mediaHeartbeat.trackSessionEnd();
 ........ 
 ........ 
 ```
-
