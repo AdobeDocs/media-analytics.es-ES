@@ -1,18 +1,22 @@
 ---
-title: Métricas calculadas
+title: Métricas calculadas de medios de transmisión
 description: Obtenga información sobre las métricas calculadas y fórmulas de métricas de medios de flujo continuo de Adobe.
 uuid: 9dd35155-58aa-4f05-896e-c5cbc4b13d59
 exl-id: 253f6c61-70b5-4bdf-8e79-840545aeca0e
 feature: Media Analytics
 role: Business Practitioner, Administrator, Data Engineer
-source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+source-git-commit: 2d9d4352b0fd71710a9952ba4a77f6796ea9f5cc
 workflow-type: tm+mt
-source-wordcount: '198'
-ht-degree: 78%
+source-wordcount: '258'
+ht-degree: 59%
 
 ---
 
 # Métricas calculadas{#calculated-metrics}
+
+Las métricas calculadas para los medios de flujo continuo son métricas personalizadas que le permiten obtener datos de medios de flujo orientados, como el tiempo promedio invertido en la publicidad o el promedio de anuncios por flujo de medios.
+
+Para obtener información sobre las métricas calculadas de Adobe Analytics, consulte [Métricas calculadas y calculadas avanzadas (derivadas)](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/cm-overview.html?lang=en) en la Guía de componentes de Adobe Analytics.
 
 >[!NOTE]
 >
