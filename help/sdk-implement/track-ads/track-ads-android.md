@@ -1,14 +1,18 @@
 ---
-title: Seguimiento de anuncios en Android
+title: Obtenga información sobre cómo rastrear anuncios en Android
 description: Implementar el seguimiento de anuncios en aplicaciones de Android mediante Media SDK.
 uuid: 4a4249fb-dc39-4947-a14d-a51d972f32d4
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: 1f96dde9-c924-4fce-8b14-7dec7137f265
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '357'
+ht-degree: 98%
 
 ---
 
-
-# Seguimiento de anuncios en Android {#track-ads-on-android}
+# Seguimiento de anuncios en Android{#track-ads-on-android}
 
 >[!IMPORTANT]
 >
