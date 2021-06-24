@@ -1,20 +1,21 @@
 ---
-title: Seguimiento del almacenamiento en búfer mediante JavaScript 3.x
-description: Describe el seguimiento de eventos de almacenamiento en búfer en aplicaciones de navegador (JS).
-translation-type: tm+mt
-source-git-commit: 318bb60d9835d9a07fb7aa0a0a02162248410d09
+title: Obtenga Información Sobre Cómo Rastrear El Almacenamiento En Búfer Con JavaScript 3.x
+description: Obtenga información sobre cómo rastrear eventos de almacenamiento en búfer en aplicaciones de navegador (JS).
+exl-id: c6941942-02f9-4f9c-99ad-0c52ed2f793b
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
 workflow-type: tm+mt
-source-wordcount: '115'
-ht-degree: 74%
+source-wordcount: '122'
+ht-degree: 81%
 
 ---
 
-
-# Seguimiento del almacenamiento en búfer mediante JavaScript 3.x{#track-buffering-on-javascript}
+# Seguimiento del almacenamiento en búfer con JavaScript 3.x{#track-buffering-on-javascript}
 
 >[!IMPORTANT]
 >
->En las siguientes instrucciones se indican los pasos para la implementación en todos los kits de desarrollo de software de 3.x. If you are implementing any previous versions of the SDK, you can download the Developers Guides here: [Download SDKs.](/help/sdk-implement/download-sdks.md)
+>En las siguientes instrucciones se indican los pasos para la implementación en todos los kits de desarrollo de software de 3.x. Si va implementar cualquier versión anterior del SDK, puede descargar las guías del desarrollador aquí: [Descargar SDK.](/help/sdk-implement/download-sdks.md)
 
 ## Constantes de seguimiento de búfer
 
