@@ -1,14 +1,18 @@
 ---
-title: Claves de metadatos de Roku
-description: En este tema se describen las claves de metadatos Roku disponibles.
+title: Explicación de las claves de metadatos de Roku
+description: Obtenga información sobre las claves de metadatos Roku disponibles y vea toda la lista de constantes de metadatos estándar.
 uuid: 2ca6bb1d-c545-43d3-9c3e-63b890aa268d
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: 687dbaa5-4723-4b3f-ab1e-4d5bf447cddf
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '472'
+ht-degree: 95%
 
 ---
 
-
-# Claves de metadatos de Roku {#roku-metadata-keys}
+# Claves de metadatos de Roku{#roku-metadata-keys}
 
 Los metadatos de publicidad, audio y vídeo estándar se pueden establecer en objetos de información de publicidad y contenido multimedia, respectivamente. El uso de las claves constantes para los metadatos de vídeo/publicidad establece el diccionario con metadatos estándar en el objeto info antes de invocar las API de seguimiento. Consulte las siguientes tablas para ver la lista completa de constantes de metadatos estándar, con ejemplos.
 
@@ -99,4 +103,3 @@ Puede utilizar las siguientes constantes para hacer un seguimiento de eventos de
 | `MEDIA_AD_START` | Tipo de evento para el inicio de publicidad. |
 | `MEDIA_AD_COMPLETE` | Tipo de evento para la finalización de publicidad. |
 | `MEDIA_AD_SKIP` | Tipo de evento para la omisión de publicidad. |
-
