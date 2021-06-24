@@ -1,14 +1,18 @@
 ---
-title: Implementación de metadatos estándar en Android
-description: Describe la configuración de metadatos de anuncios y vídeos estándar para enviarlos con llamadas de seguimiento en Android.
+title: Obtenga información sobre cómo implementar metadatos estándar en Android
+description: Obtenga información sobre cómo configurar metadatos de anuncios y vídeos estándar para que se envíen con llamadas de seguimiento en Android.
 uuid: c48b4190-b062-4c4e-9c40-8dde4598a50e
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: 31afd8b5-0f23-4025-afcb-6df906cf6be5
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '108'
+ht-degree: 76%
 
 ---
 
-
-# Implementación de metadatos estándar en Android {#implement-standard-metadata-on-android}
+# Implementación de metadatos estándar en Android{#implement-standard-metadata-on-android}
 
 ## Constantes de metadatos estándar
 
