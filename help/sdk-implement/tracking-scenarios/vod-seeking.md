@@ -1,14 +1,18 @@
 ---
 title: Reproducción de VOD con llamada a otro punto del contenido principal
-description: Ejemplo de cómo rastrear contenido de VOD en el que se ha producido una búsqueda mediante Media SDK.
+description: Vea un ejemplo de cómo rastrear contenido de VOD en el que se ha producido una búsqueda mediante Media SDK.
 uuid: 5c2392f6-9b9c-42f5-833f-77423d1e6222
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: d77aa717-5dcb-4429-8dce-1914434f2b32
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '277'
+ht-degree: 90%
 
 ---
 
-
-# Reproducción de VOD con llamada a otro punto del contenido principal {#vod-playback-with-seeking-in-the-main-content}
+# Reproducción de VOD con llamada a otro punto del contenido principal{#vod-playback-with-seeking-in-the-main-content}
 
 ## Situación {#scenario}
 
@@ -209,4 +213,3 @@ this._mediaHeartbeat.trackSessionEnd();
 ........ 
 ........ 
 ```
-
