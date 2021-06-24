@@ -1,18 +1,22 @@
 ---
 title: Detalles de la llamada de prueba
-description: En este tema se detallan las llamadas que debe realizar para validar la implementación.
+description: Explore las llamadas que debe realizar para validar la implementación.
 uuid: d3a0e62f-2fc3-413d-ac56-adbbc9b3e983
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: 5e167714-3f0c-4afa-b171-7d51cff6522e
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '616'
+ht-degree: 98%
 
 ---
 
-
-# Detalles de la llamada de prueba {#test-call-details}
+# Detalles de la llamada de prueba{#test-call-details}
 
 ## Iniciar el reproductor de contenidos {#start-the-media-player}
 
-### Llamada de inicio de Adobe Analytics (AppMeasurement) {#aa-start-call}
+### Llamada de inicio de Adobe Analytics (AppMeasurement)  {#aa-start-call}
 
 | Parámetro |  Valor (ejemplo)  |
 |---|---|
@@ -31,13 +35,13 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 * Las variables de datos de contexto adicionales deben estar presentes y contener metadatos. Consulte los detalles de metadatos a continuación.
 * La duración de las emisiones lineales debe establecerse con la mejor estimación para el programa actual.
 
-### Metadatos estándar en la llamada de inicio de Adobe Analytics (AppMeasurement) {#std-metadata-aa}
+### Metadatos estándar en la llamada de inicio de Adobe Analytics (AppMeasurement)  {#std-metadata-aa}
 
 | Parámetro |  Valor (ejemplo)  |
 |---|---|
 | `a.media.show` | Show Title |
 | `a.media.season` | 6 |
-| `a.media.episode` | Episode Title |
+| `a.media.episode` | Título episodio |
 | `a.media.asset_id` | 123456 |
 | `a.media.genre` | comedy |
 | `a.media.first_air_date` | 2016-07-04 |
@@ -50,21 +54,21 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 | `a.media.feed` | no feed |
 | `a.media.stream_format` | 0 |
 
-### Metadatos personalizados en la llamada de inicio de Adobe Analytics (AppMeasurement) {#custom-metadata-aa}
+### Metadatos personalizados en la llamada de inicio de Adobe Analytics (AppMeasurement)  {#custom-metadata-aa}
 
 | Parámetro |  Valor (ejemplo)  |
 |---|---|
 | `custom.metadataA` | valor |
 | `custom.metadataB` | valor |
 
-### Llamada de inicio de Media Analytics (latidos) {#ma-start-call}
+### Llamada de inicio de Media Analytics (latidos)  {#ma-start-call}
 
 | Parámetro |  Valor (ejemplo)  |
 |---|---|
 | `s:event:type` | start |
 | _**`l:event:playhead`**_ | _**0**_ |
 | `l:event:duration` | 4 |
-| `s:asset:name` | Episode Title |
+| `s:asset:name` | Título episodio |
 | `s:asset:video_id` | 123456 |
 | `l:asset:length` | 120 |
 | `s:stream:type` | vod |
@@ -77,13 +81,13 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 * Las variables de datos de contexto adicionales deben estar presentes y contener metadatos. Consulte los detalles de metadatos a continuación.
 * La posición del cabezal de reproducción para las emisiones lineales al inicio del vídeo debe establecerse en los segundos transcurridos desde el inicio del programa actual, en lugar de 0.
 
-### Metadatos estándar en la llamada de inicio de Media Analytics (latidos) {#std-metadata-ma}
+### Metadatos estándar en la llamada de inicio de Media Analytics (latidos)  {#std-metadata-ma}
 
 | Parámetro |  Valor (ejemplo)  |
 |---|---|
 | `s:meta:a.media.show` | Show |
 | `s:meta:a.media.season` | 6 |
-| `s:meta:a.media.episode` | Episode Title |
+| `s:meta:a.media.episode` | Título episodio |
 | `s:meta:a.media.asset_id` | 123456 |
 | `s:meta:a.media.genre` | comedy |
 | `s:meta:a.media.first_air_date` | 2018-07-04 |
@@ -92,11 +96,11 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 | `s:meta:a.media.network` | network |
 | `s:meta:a.media.ad_load` | 1 |
 | `s:meta:a.media.mvpd` | mvpd |
-| `s:meta:a.media.authorized` | unlocked |
+| `s:meta:a.media.authorized` | desbloqueado |
 | `s:meta:a.media.feed` | no feed |
 | `s:meta:a.media.stream_format` | 0 |
 
-### Metadatos personalizados en la llamada de inicio de Media Analytics (latidos) {#custom-metadata-ma}
+### Metadatos personalizados en la llamada de inicio de Media Analytics (latidos)  {#custom-metadata-ma}
 
 | Parámetro |  Valor (ejemplo)  |
 |---|---|
@@ -110,7 +114,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 | _**`s:event:type`**_ | _**aa_start**_ |
 | `l:event:playhead` | 0 |
 | `l:event:duration` | 4 |
-| `s:asset:name` | Episode Title |
+| `s:asset:name` | Título episodio |
 | `s:asset:video_id` | 123456 |
 | `l:asset:length` | 120 |
 | `s:stream:type` | vod |
@@ -123,7 +127,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ## Visualización de la reproducción de anuncio {#view-ad-playback}
 
-### Llamada de inicio de anucio de Adobe Analytics (AppMeasurement) {#aa-ad-start-call}
+### Llamada de inicio de anucio de Adobe Analytics (AppMeasurement)  {#aa-ad-start-call}
 
 | Parámetro |  Valor (ejemplo)  |
 |---|---|
@@ -146,33 +150,33 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 * Las variables de datos de contexto adicionales deben estar presentes y contener metadatos. Consulte los detalles de metadatos a continuación.
 * La duración del anuncio debe establecerse en -1 si no está disponible al inicio del anuncio.
 
-### Metadatos estándar en la llamada de inicio de anuncio de Adobe Analytics (AppMeasurement) {#std-metadata-aa-ad-start}
+### Metadatos estándar en la llamada de inicio de anuncio de Adobe Analytics (AppMeasurement)  {#std-metadata-aa-ad-start}
 
 | Parámetro |  Valor (ejemplo)  |
 |---|---|
-| `a.media.show` | Show Title |
+| `a.media.show` | Mostrar título |
 | `a.media.season` | 6 |
-| `a.media.episode` | Episode Title |
+| `a.media.episode` | Título episodio |
 | `a.media.asset_id` | 123456 |
 | `a.media.genre` | comedy |
-| `a.media.first_air_date` | 2016-07-04 |
+| `a.media.first_air_date` | 07-2016-04 |
 | `a.media.rating` | TV-14 |
 | `a.media.originator` | production house |
 | `a.media.network` | network |
 | `a.media.ad_load` | 1 |
 | `a.media.mvpd` | mvpd |
-| `a.media.authorized` | unlocked |
+| `a.media.authorized` | desbloqueado |
 | `a.media.feed` | no feed |
 | `a.media.stream_format` | 0 |
 
-### Metadatos personalizados en la llamada de inicio de anuncio de Adobe Analytics (AppMeasurement) {#custom-metadata-aa-ad-start}
+### Metadatos personalizados en la llamada de inicio de anuncio de Adobe Analytics (AppMeasurement)  {#custom-metadata-aa-ad-start}
 
 | Parámetro |  Valor (ejemplo)  |
 |---|---|
 | `custom.metadata` | valor |
 | `custom.metadata` | valor |
 
-### Llamada de inicio de anuncio de Media Analytics (latidos) {#ma-ad-start-call}
+### Llamada de inicio de anuncio de Media Analytics (latidos)  {#ma-ad-start-call}
 
 | Parámetro |  Valor (ejemplo)  |
 |---|---|
@@ -191,26 +195,26 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 * Las variables de datos de contexto adicionales deben estar presentes y contener metadatos. Consulte los detalles de metadatos a continuación.
 * La duración del anuncio debe establecerse en -1 si no está disponible al inicio del anuncio.
 
-### Metadatos estándar en la llamada de inicio de anuncio de Media Analytics (latidos) {#std-metadata-ma-ad-start}
+### Metadatos estándar en la llamada de inicio de anuncio de Media Analytics (latidos)  {#std-metadata-ma-ad-start}
 
 | Parámetro |  Valor (ejemplo)  |
 |---|---|
 | `s:meta:a.media.show` | Show |
 | `s:meta:a.media.season` | 6 |
-| `s:meta:a.media.episode` | Episode Title |
+| `s:meta:a.media.episode` | Título episodio |
 | `s:meta:a.media.asset_id` | 123456 |
 | `s:meta:a.media.genre` | comedy |
-| `s:meta:a.media.first_air_date` | 2018-07-04 |
+| `s:meta:a.media.first_air_date` | 07-2018 |
 | `s:meta:a.media.rating` | TV-14 |
 | `s:meta:a.media.originator` | production house |
 | `s:meta:a.media.network` | network |
 | `s:meta:a.media.ad_load` | 1 |
 | `s:meta:a.media.mvpd` | mvpd |
-| `s:meta:a.media.authorized` | unlocked |
+| `s:meta:a.media.authorized` | desbloqueado |
 | `s:meta:a.media.feed` | no feed |
 | `s:meta:a.media.stream_format` | 0 |
 
-### Metadatos personalizados en la llamada de inicio de anuncio de Media Analytics (latidos) {#custom-metadata-ma-ad-start}
+### Metadatos personalizados en la llamada de inicio de anuncio de Media Analytics (latidos)  {#custom-metadata-ma-ad-start}
 
 | Parámetro |  Valor (ejemplo)  |
 |---|---|
@@ -229,7 +233,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 | `s:stream:type` | vod |
 | `s:asset:type` | ad |
 
-### Llamada de reproducción de anuncio de Media Analytics (latidos) {#ma-ad-play-call}
+### Llamada de reproducción de anuncio de Media Analytics (latidos)  {#ma-ad-play-call}
 
 | Parámetro |  Valor (ejemplo)  |
 |---|---|
@@ -241,7 +245,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 | `s:stream:type` | vod |
 | _**`s:asset:type`**_ | _**ad**_ |
 
-### Llamada de pausa de anuncio de Media Analytics (latidos) {#ma-ad-pause-call}
+### Llamada de pausa de anuncio de Media Analytics (latidos)  {#ma-ad-pause-call}
 
 | Parámetro |  Valor (ejemplo)  |
 |---|---|
@@ -267,14 +271,14 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ## Reproducción del contenido principal {#play-main-content}
 
-### Llamada de reproducción de Media Analytics (latidos) {#ma-play-call}
+### Llamada de reproducción de Media Analytics (latidos)  {#ma-play-call}
 
 | Parámetro |  Valor (ejemplo)  |
 |---|---|
 | `s:event:type` | play |
 | _**`l:event:playhead`**_ | _**29**_ |
 | _**`l:event:duration`**_ | _**10189**_ |
-| `s:asset:name` | Episode Title |
+| `s:asset:name` | Título episodio |
 | `s:asset:video_id` | 123456 |
 | `l:asset:length` | 120 |
 | `s:stream:type` | vod |
@@ -287,17 +291,15 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ## Pausar contenido principal {#pause-main-content}
 
-### Llamada de pausa de Media Analytics (latidos) {#ma-pause-call}
+### Llamada de pausa de Media Analytics (latidos)  {#ma-pause-call}
 
 | Parámetro |  Valor (ejemplo)  |
 |---|---|
 | _**`s:event:type`**_ | _**pause**_ |
 | _**`l:event:playhead`**_ | _**29**_ |
 | `l:event:duration` | 10189 |
-| `s:asset:name` | Episode Title |
+| `s:asset:name` | Título episodio |
 | `s:asset:video_id` | 123456 |
 | `l:asset:length` | 120 |
 | `s:stream:type` | vod |
 | `s:asset:type` | main |
-
-
