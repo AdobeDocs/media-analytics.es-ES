@@ -1,17 +1,18 @@
 ---
-title: Seguimiento de reproducción principal en Roku
-description: En este tema se describe cómo implementar el seguimiento principal mediante Media SDK en Roku.
+title: Aprenda a rastrear la reproducción principal en Roku
+description: Obtenga información sobre cómo implementar el seguimiento principal mediante Media SDK en Roku.
 uuid: a8aa7b3c-2d39-44d7-8ebc-b101d130101f
 exl-id: 5272c0ce-4e3d-48c6-bfa6-94066ccbf9ac
-translation-type: tm+mt
-source-git-commit: d11f68d0967dc27a6866a9b5a39c6b84ac9532e4
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
 workflow-type: tm+mt
-source-wordcount: '681'
-ht-degree: 100%
+source-wordcount: '684'
+ht-degree: 97%
 
 ---
 
-# Seguimiento de reproducción principal en Roku {#track-core-playback-on-roku}
+# Seguimiento de reproducción principal en Roku{#track-core-playback-on-roku}
 
 >[!IMPORTANT]
 >Esta documentación abarca el seguimiento en la versión 2.x del SDK. Si va a implementar una versión 1.x del SDK, puede descargar las guías del desarrollador de 1.x aquí: [Descargar SDK](/help/sdk-implement/download-sdks.md).
@@ -100,7 +101,7 @@ ht-degree: 100%
 
    * **Metadatos estándar**
 
-      [Implementación de metadatos estándar en Roku](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
+[Implementación de metadatos estándar en Roku](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
 
       >[!NOTE]
       >No es obligatorio adjuntar el objeto de metadatos de vídeo estándar al objeto de contenidos.
