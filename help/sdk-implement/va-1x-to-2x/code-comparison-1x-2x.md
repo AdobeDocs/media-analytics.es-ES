@@ -1,15 +1,16 @@
 ---
-title: Comparación de código 1.x a 2.x
-description: En este tema se compara el código de las versiones 1.x y 2.x de Media SDK.
+title: Comparación de código v1.x y v2.x
+description: Conozca la diferencia entre el código de las versiones 1.x y 2.x de Media SDK.
 uuid: 9f0a1660-2100-446d-ab75-afdf966478b3
-translation-type: tm+mt
-source-git-commit: 72cdf2d03ebae6998514c9092ab462c29345c9f9
+exl-id: c2324c6a-329f-44e2-bea0-9d43ef9c6ef7
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
 workflow-type: tm+mt
-source-wordcount: '567'
-ht-degree: 97%
+source-wordcount: '572'
+ht-degree: 93%
 
 ---
-
 
 # Comparación de código: 1.x a 2.x {#code-comparison-x-to-x}
 
