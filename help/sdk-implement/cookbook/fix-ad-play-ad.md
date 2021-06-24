@@ -1,12 +1,16 @@
 ---
-title: Solución cuando aparece main:play entre anuncios
-description: Cómo gestionar llamadas main:play inesperadas entre anuncios.
+title: Resolución de la reproducción principal entre anuncios
+description: '"Aprenda a gestionar llamadas main:play inesperadas entre anuncios".'
 uuid: 228b4812-c23e-40c8-ae2b-e15ca69b0bc2
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: f27ce2ba-7584-4601-8837-d8316c641708
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '451'
+ht-degree: 96%
 
 ---
-
 
 # Solución cuando aparece main:play entre anuncios {#resolving-main-play-appearing-between-ads}
 
@@ -45,11 +49,11 @@ Administre el espacio desde dentro del reproductor invocando `trackEvent:AdCompl
 
 **En cada inicio de recurso de publicidad:**
 
-* **Llama a`trackEvent(MediaHeartbeat.Event.AdComplete);`**
+* **La llamada`trackEvent(MediaHeartbeat.Event.AdComplete);`**
 
    >[!NOTE]
    >
-   >Invoque esta llamada solo si no se ha completado el anuncio anterior. Utilice un valor booleano para mantener el estado "`isinAd`" para el anuncio anterior.
+   >Invoque esta llamada solo si no se ha completado el anuncio anterior. Utilice un valor booleano para mantener el estado &quot;`isinAd`&quot; para el anuncio anterior.
 
 * Cree la instancia del objeto de anuncio para el recurso de publicidad: por ejemplo, `adObject`.
 * Rellenar metadatos de publicidad, `adCustomMetadata`.
@@ -70,11 +74,10 @@ Administre el espacio desde dentro del reproductor invocando `trackEvent:AdCompl
 
 **Al finalizar un anuncio:**
 
-* **Llama a`trackEvent(MediaHeartbeat.Event.AdComplete);`**
+* **La llamada`trackEvent(MediaHeartbeat.Event.AdComplete);`**
 
    >[!NOTE]
    >
    >Si este paso ya se ha realizado como parte de la última llamada a `trackEvent:AdComplete`, se puede omitir.
 
 * La llamada `trackEvent(MediaHeartbeat.Event.AdBreakComplete);`.
-
