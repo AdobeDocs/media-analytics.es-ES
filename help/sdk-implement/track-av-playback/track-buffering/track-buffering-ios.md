@@ -1,14 +1,18 @@
 ---
-title: Seguimiento del almacenamiento en búfer en iOS
-description: Describe el seguimiento de eventos de almacenamiento en búfer en iOS.
+title: Obtenga información sobre cómo rastrear el almacenamiento en búfer en iOS
+description: Obtenga información sobre cómo rastrear eventos de almacenamiento en búfer en iOS.
 uuid: 4f4db23a-489b-4b41-bb6e-393ec64d52a2
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: 5f0a3c4b-7c9e-499d-98d0-6fcf316c4d9c
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '119'
+ht-degree: 87%
 
 ---
 
-
-# Seguimiento del almacenamiento en búfer en iOS {#track-buffering-on-ios}
+# Seguimiento del almacenamiento en búfer en iOS{#track-buffering-on-ios}
 
 >[!IMPORTANT]
 >
