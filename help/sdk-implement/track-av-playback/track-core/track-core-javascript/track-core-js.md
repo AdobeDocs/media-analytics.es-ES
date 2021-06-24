@@ -1,15 +1,16 @@
 ---
-title: Seguimiento de reproducción principal con JavaScript 2.x
-description: En este tema se describe cómo implementar el seguimiento principal mediante el SDK de medios en un explorador con aplicaciones JavaScript 2.x.
+title: Aprenda A Rastrear La Reproducción Principal Con JavaScript 2.x
+description: Obtenga información sobre cómo implementar el seguimiento principal mediante Media SDK en un explorador con aplicaciones JavaScript 2.x.
 uuid: 3d6e0ab1-899a-43c3-b632-8276e84345ab
-translation-type: ht
-source-git-commit: 815965d1cd41e73e50666a89f4a7c450af5022da
-workflow-type: ht
-source-wordcount: '688'
-ht-degree: 100%
+exl-id: d8af37a0-9048-4e6b-8cba-809386cbed5f
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '691'
+ht-degree: 96%
 
 ---
-
 
 # Seguimiento de reproducción principal con JavaScript 2.x{#track-core-playback-on-javascript}
 
