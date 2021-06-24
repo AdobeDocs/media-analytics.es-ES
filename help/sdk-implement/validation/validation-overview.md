@@ -1,17 +1,21 @@
 ---
 title: Información general sobre validación
-description: Este tema es una descripción general del proceso de validación.
+description: Profundizar en el proceso de validación. Obtenga información sobre cómo enviar registros para validar una implementación adecuada.
 uuid: bbc6b6d6-1899-45b9-9fb7-8031f07563f6
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: 908e9de6-9461-4f3d-9d94-5541c5dfeabb
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '61'
+ht-degree: 73%
 
 ---
 
-
-# Información general sobre validación {#validation-overview}
+# Información general sobre validación{#validation-overview}
 
 La validación incluye una lista de los casos de prueba necesarios que los clientes deben ejecutar (mediante Adobe Debug) para enviar los registros y validar una implementación adecuada.
 Se esperan resultados para cada parámetro de evento y de metadatos.
 
-* [Prueba 1: Reproducción estándar](test1-standard-playback.md)
-* [Prueba 2: Interrupción del contenido](test2-media-interrupt.md)
+* [Prueba 1: Reproducción estándar ](test1-standard-playback.md)
+* [Prueba 2: Interrupción de contenido ](test2-media-interrupt.md)
