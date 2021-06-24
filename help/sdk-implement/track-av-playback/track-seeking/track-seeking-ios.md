@@ -1,14 +1,18 @@
 ---
-title: Seguimiento de llamada a otro punto del contenido en iOS
-description: En este tema se describe la implementación del seguimiento de búsqueda mediante Media SDK en iOS.
+title: Obtenga información sobre cómo rastrear la llamada a otro punto del contenido en iOS
+description: Obtenga información sobre cómo rastrear eventos de inicio y finalización de llamada a otro punto del contenido mediante Media SDK en iOS.
 uuid: 1d31ae99-384f-4b4d-b557-4018db177349
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: e8cb4962-2a14-4bfe-9a25-2405e503ba0b
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '132'
+ht-degree: 82%
 
 ---
 
-
-# Seguimiento de llamada a otro punto del contenido en iOS {#track-seeking-on-ios}
+# Seguimiento de llamada a otro punto del contenido en iOS{#track-seeking-on-ios}
 
 >[!IMPORTANT]
 >
