@@ -1,17 +1,18 @@
 ---
 title: Administración de interrupciones de la aplicación durante la reproducción
-description: Cómo controlar las interrupciones al seguimiento durante la reproducción del contenido.
+description: Obtenga información sobre cómo controlar las interrupciones al seguimiento durante la reproducción del contenido.
 uuid: 1ccb4507-bda6-462d-bf67-e22978a4db3d
-translation-type: tm+mt
-source-git-commit: 29b0d38e904a561d467ba0432b255fdb17d6b829
+exl-id: a84af6ad-dd4f-4f0d-93dd-66f2f84ddc0e
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
 workflow-type: tm+mt
-source-wordcount: '366'
-ht-degree: 100%
+source-wordcount: '369'
+ht-degree: 95%
 
 ---
 
-
-# Administración de interrupciones de la aplicación durante la reproducción {#handling-application-interrupts-during-playback}
+# Administración de interrupciones de la aplicación durante la reproducción{#handling-application-interrupts-during-playback}
 
 En una aplicación, la reproducción de contenido se puede interrumpir de distintas formas: cuando el usuario pone explícitamente el vídeo en pausa, o cuando este coloca la aplicación en segundo plano. Con independencia de la causa de la interrupción de la reproducción de contenido, las instrucciones de seguimiento son las mismas:
 
@@ -35,4 +36,3 @@ En una aplicación, la reproducción de contenido se puede interrumpir de distin
 * _¿Cómo funciona el reinicio de la misma sesión?_
 
    Para obtener instrucciones detalladas sobre el reinicio de una sesión de seguimiento, consulte esta página: [Reanudar sesiones inactivas](/help/sdk-implement/cookbook/resuming-inactive.md). El SDK envía un ping de reanudación para notificar al back-end que el usuario está reanudando la sesión manualmente.
-
