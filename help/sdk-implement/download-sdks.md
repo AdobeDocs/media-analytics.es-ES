@@ -1,16 +1,18 @@
 ---
-title: Descarga de SDK
+title: Vínculos de acceso para descargar SDK de Media Analytics
 description: Vínculos a descargas de SDK para plataformas disponibles, como Android, iOS, JavaScript, Chromecast y Roku.
 uuid: a619fbb8-693e-4583-8dad-0ff875e715f8
 exl-id: d211fa2e-d5b0-4e9f-bdb7-eda838194f3d
-source-git-commit: 0d5edcae0a80357247ada7f61daece9840d5c4b5
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
 workflow-type: tm+mt
-source-wordcount: '513'
+source-wordcount: '520'
 ht-degree: 96%
 
 ---
 
-# Descarga de SDK {#download-sdks}
+# Descarga de SDK{#download-sdks}
 
 >[!IMPORTANT]
 >
@@ -39,7 +41,7 @@ ht-degree: 96%
 
 | Componente de MA Launch   | Documentación | Ejemplos |
 |---|---|---|
-| **Extensión web** | [Extensión de Adobe Media Analytics para audio y vídeo](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/media-analytics-extension/overview.html) | [Extensión de Adobe Media Analytics para audio y vídeo](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/samples/launch/js/2.x) |
+| **Extensión web** | [Extensión de Adobe Media Analytics para audio y vídeo](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/media-analytics-extension/overview.html?lang=es) | [Extensión de Adobe Media Analytics para audio y vídeo](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/samples/launch/js/2.x) |
 | **Extensión web (SDK 3.x)** | [Extensión de Adobe Media Analytics para audio y vídeo](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/media-analytics-3x-extension/overview.html) | [Extensión de Adobe Media Analytics (3.x SDK) for Audio and Video](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/samples/launch/js/3.x) |
 | **Extensión móvil** | [Adobe Analytics Media Analytics para audio y vídeo](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics) | [Adobe Analytics extensión de Media Analytics para audio y vídeo](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/samples/launch/mobile) |
 
