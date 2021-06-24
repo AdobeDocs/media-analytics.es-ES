@@ -1,14 +1,18 @@
 ---
-title: Seguimiento de reproducción principal en Chromecast
-description: En este tema se describe cómo implementar el seguimiento principal mediante Media SDK en Chromecast.
+title: Aprenda a rastrear la reproducción principal en Chromecast
+description: Obtenga información sobre cómo implementar el seguimiento principal mediante Media SDK en Chromecast.
 uuid: a9fc59d8-a2f4-4889-bdec-55c42a835d06
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: 9812d06d-9efd-460c-a626-6a15f61a4c35
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '664'
+ht-degree: 96%
 
 ---
 
-
-# Seguimiento de reproducción principal en Chromecast {#track-core-playback-on-chromecast}
+# Seguimiento de reproducción principal en Chromecast{#track-core-playback-on-chromecast}
 
 >[!IMPORTANT]
 >
@@ -26,11 +30,11 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    mediaObject = ADBMobile.media.createMediaObject(<name>, <id>, <duration>, <streamType>, <mediaType>); 
    ```
 
-   **Constantes de`StreamType`:**
+   **`StreamType`Constantes de:**
 
    [Contenido ADBMobile](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.StreamType)
 
-   **Constantes de`MediaType`:**
+   **`MediaType`Constantes de:**
 
    [Contenido ADBMobile](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.MediaType)
 
@@ -115,10 +119,10 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
    Identifique cualquier situación en la que se pausará el reproductor y compruebe que se ha invocado `trackPause` correctamente. Las siguientes situaciones requieren que la aplicación invoque `trackPause()`:
 
-   * Cuando el usuario pausa explícitamente en la aplicación.
-   * Cuando el reproductor se sitúa en el estado En pausa.
-   * (*Aplicaciones móviles*): cuando el usuario coloca la aplicación en segundo plano, pero desea que la sesión continúe abierta.
-   * (*Aplicaciones móviles*): cuando se produce cualquier tipo de interrupción del sistema que provoca que una aplicación se quede en segundo plano. Por ejemplo, si el usuario recibe una llamada o aparece una ventana emergente de otra aplicación, pero desea que la aplicación mantenga la sesión activa para que el usuario pueda reanudar el vídeo desde donde se produjo la interrupción.
+   * El usuario hace una pausa explícita en la aplicación.
+   * El reproductor se pone en estado de pausa.
+   * (*Aplicaciones móviles*): El usuario pone la aplicación en segundo plano, pero desea que la aplicación mantenga abierta la sesión.
+   * (*Aplicaciones móviles*): Se produce cualquier tipo de interrupción del sistema que provoca que una aplicación se ponga en segundo plano. Por ejemplo, si el usuario recibe una llamada o aparece una ventana emergente de otra aplicación, pero desea que la aplicación mantenga la sesión activa para que el usuario pueda reanudar el vídeo desde donde se produjo la interrupción.
 
 1. Identifique el evento del reproductor en el que el vídeo se reproduzca o se reanude e invoque [trackPlay:](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.trackComplete)
 
@@ -132,4 +136,3 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 * Situaciones de seguimiento: [Reproducción de VOD sin anuncios](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)
 * Reproductor de muestra incluido con el SDK para Chromecast para ver un ejemplo de seguimiento completo.
-
