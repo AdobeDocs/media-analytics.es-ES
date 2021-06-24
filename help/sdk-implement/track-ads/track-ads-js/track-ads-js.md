@@ -1,17 +1,18 @@
 ---
-title: Seguimiento de publicidades con JavaScript 2.x
+title: Aprenda a rastrear anuncios con JavaScript 2.x
 description: Implementar el seguimiento de anuncios en aplicaciones de navegador (JS) mediante Media SDK.
 uuid: 4d81d29c-c55d-4d48-b505-3260922712ff
-translation-type: tm+mt
-source-git-commit: 815965d1cd41e73e50666a89f4a7c450af5022da
+exl-id: 4404d3a6-ab98-40f0-9573-ee32f480f650
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
 workflow-type: tm+mt
-source-wordcount: '352'
-ht-degree: 97%
+source-wordcount: '357'
+ht-degree: 96%
 
 ---
 
-
-# Seguimiento de publicidades con JavaScript 2.x{#track-ads-on-javascript}
+# Seguimiento de anuncios con JavaScript 2.x{#track-ads-on-javascript}
 
 >[!IMPORTANT]
 >
