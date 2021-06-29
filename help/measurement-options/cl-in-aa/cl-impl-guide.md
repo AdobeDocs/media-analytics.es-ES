@@ -8,7 +8,7 @@ role: Business Practitioner, Administrator, Data Engineer
 source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
 workflow-type: tm+mt
 source-wordcount: '202'
-ht-degree: 89%
+ht-degree: 92%
 
 ---
 
@@ -18,7 +18,7 @@ El seguimiento de vídeo personalizado utiliza el seguimiento de vínculo manual
 Con frecuencia, el seguimiento de enlace de vídeo personalizado se utiliza en las plataformas y los dispositivos en los que es necesaria una medición mínima del vídeo.
 
 * En JavaScript: la función `s.tl()`
-* En aplicaciones móviles: [trackAction() para Android](https://experienceleague.adobe.com/docs/mobile-services/android/analytics-android/actions.html?lang=es), [trackAction() para iOS](https://experienceleague.adobe.com/docs/mobile-services/ios/analytics-ios/actions.html) y [trackAction() para OTT](/help/sdk-implement/analytics-with-ott/track-app-actions.md)
+* En aplicaciones móviles: [trackAction() para Android](https://experienceleague.adobe.com/docs/mobile-services/android/analytics-android/actions.html?lang=es), [trackAction() para iOS](https://experienceleague.adobe.com/docs/mobile-services/ios/analytics-ios/actions.html?lang=es) y [trackAction() para OTT](/help/sdk-implement/analytics-with-ott/track-app-actions.md)
 * En la API de inserción de datos: [etiqueta linktype](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/data-insertion-api/reference/r_supported_tags.md)
 
 ## Requisitos
