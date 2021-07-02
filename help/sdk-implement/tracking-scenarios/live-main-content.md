@@ -5,10 +5,10 @@ uuid: e92e99f4-c395-48aa-8a30-cbdd2f5fc07c
 exl-id: f6a00ffd-da6a-4d62-92df-15d119cfc426
 feature: Media Analytics
 role: Business Practitioner, Administrator, Data Engineer
-source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+source-git-commit: a6872703529159ded6f747b6429a9b94b4202abe
 workflow-type: tm+mt
-source-wordcount: '531'
-ht-degree: 96%
+source-wordcount: '549'
+ht-degree: 75%
 
 ---
 
@@ -59,17 +59,17 @@ No habrá una llamada de finalización en este caso, ya que la emisión en direc
 
 ## Configuración del valor del cabezal de reproducción
 
-En el caso de los flujos en directo, debe establecer el cabezal de reproducción en un desplazamiento con respecto al inicio de la programación, de modo que en los informes los analistas puedan determinar en qué momento se unen los usuarios y abandonan el flujo en vivo en una vista de 24 horas.
+Para los flujos en directo, debe establecer el valor del cursor de reproducción como el número de segundos desde la medianoche UTC de ese día, de modo que en los informes, los analistas puedan determinar en qué momento se unen los usuarios y abandonan el flujo en vivo en una vista de 24 horas.
 
 ### Al comienzo
 
-En el caso de los contenidos en directo, cuando un usuario comienza a reproducir el flujo, debe establecer `l:event:playhead` para el desplazamiento actual en segundos. Esto es lo contrario a VOD, donde establecería el cursor de reproducción en “0”.
+En el caso de los contenidos en directo, cuando un usuario comienza a reproducir el flujo, debe establecer `l:event:playhead` en el número de segundos transcurridos desde la medianoche del UTC ese día. Esto es lo contrario a VOD, donde establecería el cursor de reproducción en “0”.
 
-Por ejemplo, supongamos que un evento de transmisión en vivo comienza a medianoche y se ejecuta durante 24 horas (`a.media.length=86400`; `l:asset:length=86400`). Entonces, digamos que un usuario empieza a reproducir ese flujo en vivo a las 12:00 pm. En este escenario, debe establecerse `l:event:playhead` en 43200 (12 horas en el flujo).
+Por ejemplo, supongamos que un evento de transmisión en vivo comienza a medianoche y se ejecuta durante 24 horas (`a.media.length=86400`; `l:asset:length=86400`). Entonces, digamos que un usuario empieza a reproducir ese flujo en vivo a las 12:00 pm. En este escenario, debe establecerse `l:event:playhead` en 43200 (12 horas desde la medianoche UTC en ese día en segundos).
 
 ### Al pausar
 
-La misma lógica de “cabezal de lectura en directo” aplicada al inicio de la reproducción debe aplicarse cuando un usuario pone en pausa la reproducción. Cuando el usuario vuelve a reproducir el flujo en directo, debe establecer el valor `l:event:playhead` en la nueva posición del cursor de reproducción de desplazamiento, _no_ en el punto en el que el usuario detuvo el flujo en directo.
+La misma lógica de “cabezal de lectura en directo” aplicada al inicio de la reproducción debe aplicarse cuando un usuario pone en pausa la reproducción. Cuando el usuario vuelve a reproducir el flujo en directo, debe establecer el valor `l:event:playhead` según el nuevo número de segundos desde la medianoche UTC, _no_ en el punto en el que el usuario detuvo el flujo en directo.
 
 ## Código de muestra {#sample-code}
 
