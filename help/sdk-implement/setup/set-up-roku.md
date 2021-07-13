@@ -4,11 +4,11 @@ description: Siga estos pasos para configurar la aplicación de Media SDK en Rok
 uuid: 904dfda0-4782-41da-b4ab-212e81156633
 exl-id: b8de88d0-3a93-4776-b372-736bf979ee26
 feature: Media Analytics
-role: Business Practitioner, Administrator, Data Engineer
-source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+role: User, Admin, Data Engineer
+source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '718'
-ht-degree: 78%
+ht-degree: 79%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 78%
 
 Adobe Mobile Services proporciona una nueva interfaz de usuario que aúna las capacidades de marketing móvil para aplicaciones móviles desde Adobe Experience Cloud. Inicialmente, el servicio Mobile ofrece una integración perfecta de las prestaciones de orientación y análisis de aplicaciones de las soluciones Adobe Analytics y Adobe Target.
 
-Para obtener más información, consulte la [documentación de Adobe Mobile Services.](https://experienceleague.adobe.com/docs/mobile-services/using/home.html)
+Para obtener más información, consulte la [documentación de Adobe Mobile Services.](https://experienceleague.adobe.com/docs/mobile-services/using/home.html?lang=es)
 
 El SDK 2.x de Roku para las soluciones de Experience Cloud le permite medir aplicaciones Roku escritas en BrightScript, aprovechar y recopilar datos de audiencia mediante la gestión de público y medir la interacción de vídeo a través de latidos de vídeo.
 
