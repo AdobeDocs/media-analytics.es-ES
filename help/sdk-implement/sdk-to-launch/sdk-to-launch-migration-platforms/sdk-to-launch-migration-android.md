@@ -3,8 +3,8 @@ title: '"Migración del SDK de medios independiente a Adobe Launch - Android"'
 description: Obtenga información sobre cómo migrar del SDK de medios a Launch para Android.
 exl-id: 26764835-4781-417b-a6c0-ea6ae78d76ae
 feature: Media Analytics
-role: Business Practitioner, Administrator, Data Engineer
-source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+role: User, Admin, Data Engineer
+source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '361'
 ht-degree: 93%
