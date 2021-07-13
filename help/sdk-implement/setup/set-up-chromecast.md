@@ -4,11 +4,11 @@ description: Siga estos pasos para configurar la aplicación de Media SDK en Chr
 uuid: d664e394-02a2-4985-bbad-be1bcc44fb2b
 exl-id: 5dfe3407-2858-48c0-a70c-8ea87967ac47
 feature: Media Analytics
-role: Business Practitioner, Administrator, Data Engineer
-source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+role: User, Admin, Data Engineer
+source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '639'
-ht-degree: 95%
+ht-degree: 96%
 
 ---
 
@@ -29,7 +29,7 @@ La respuesta correcta es “Chromecast”, por los siguientes motivos:
    * *Una API para suscribirse a eventos del reproductor*: Media SDK requiere que llame a un conjunto de API simples cuando se produzcan eventos en el reproductor.
    * *Una API que proporciona información del reproductor*: Esta información incluye detalles como el nombre del medio y la posición del cabezal de reproducción.
 
-Adobe Mobile Services proporciona una nueva interfaz de usuario que aúna las capacidades de marketing móvil para aplicaciones móviles desde Adobe Experience Cloud. Inicialmente, el servicio Mobile ofrece una integración perfecta de las prestaciones de orientación y análisis de aplicaciones de las soluciones Adobe Analytics y Adobe Target. Para obtener más información, consulte la [documentación de Adobe Mobile Services.](https://experienceleague.adobe.com/docs/mobile-services/using/home.html)
+Adobe Mobile Services proporciona una nueva interfaz de usuario que aúna las capacidades de marketing móvil para aplicaciones móviles desde Adobe Experience Cloud. Inicialmente, el servicio Mobile ofrece una integración perfecta de las prestaciones de orientación y análisis de aplicaciones de las soluciones Adobe Analytics y Adobe Target. Para obtener más información, consulte la [documentación de Adobe Mobile Services.](https://experienceleague.adobe.com/docs/mobile-services/using/home.html?lang=es)
 
 El SDK 2.x de Chromecast para las soluciones de Experience Cloud le permite medir aplicaciones Chromecast escritas en JavaScript, aprovechar y recopilar datos de audiencia mediante la gestión de público, y medir la intervención de vídeo a través de los latidos de vídeo.
 
