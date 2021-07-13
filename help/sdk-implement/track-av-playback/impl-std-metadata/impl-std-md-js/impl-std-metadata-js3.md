@@ -3,8 +3,8 @@ title: Aprenda a implementar metadatos estándar con JavaScript 3.x
 description: Obtenga información sobre cómo configurar metadatos de anuncios y vídeos estándar para que se envíen con llamadas de seguimiento en aplicaciones de navegador (JS 3.x).
 exl-id: 228ba000-10e2-4906-8417-265a03367a9b
 feature: Media Analytics
-role: Business Practitioner, Administrator, Data Engineer
-source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+role: User, Admin, Data Engineer
+source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '50'
 ht-degree: 10%
