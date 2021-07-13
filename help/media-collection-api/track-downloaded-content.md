@@ -4,11 +4,11 @@ description: Aprenda a utilizar la función Contenido descargado para realizar u
 uuid: 0718689d-9602-4e3f-833c-8297aae1d909
 exl-id: 82d3e5d7-4f88-425c-8bdb-e9101fc1db92
 feature: Media Analytics
-role: Business Practitioner, Administrator, Data Engineer
-source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+role: User, Admin, Data Engineer
+source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '628'
-ht-degree: 96%
+ht-degree: 97%
 
 ---
 
@@ -57,7 +57,7 @@ La función Contenido descargado es la versión sin conexión de la API (estánd
 
 ## Integración con Adobe Analtyics {#integration-with-adobe-analtyics}
 
-Al calcular las llamadas de inicio y cierre de Analytics para el escenario de contenido descargado, el back-end establece un campo adicional de Analytics llamado `ts.` Estas son marcas de hora para el primer y último evento recibido (inicio y finalización). Este mecanismo permite colocar una sesión de contenido finalizada en el momento correcto (es decir, incluso si el usuario no vuelve a estar en línea durante varios días, la sesión de contenido se registra como si hubiera tenido lugar en el momento en el que el contenido se visualizó). Debe habilitar este mecanismo en Adobe Analytics. Para ello, cree un _grupo de informes con marca de hora opcional._ Para habilitar un grupo de informes con marca de hora opcional, consulte [Marcas de hora opcionales.](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/timestamp-optional.html)
+Al calcular las llamadas de inicio y cierre de Analytics para el escenario de contenido descargado, el back-end establece un campo adicional de Analytics llamado `ts.` Estas son marcas de hora para el primer y último evento recibido (inicio y finalización). Este mecanismo permite colocar una sesión de contenido finalizada en el momento correcto (es decir, incluso si el usuario no vuelve a estar en línea durante varios días, la sesión de contenido se registra como si hubiera tenido lugar en el momento en el que el contenido se visualizó). Debe habilitar este mecanismo en Adobe Analytics. Para ello, cree un _grupo de informes con marca de hora opcional._ Para habilitar un grupo de informes con marca de hora opcional, consulte [Marcas de hora opcionales.](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/timestamp-optional.html?lang=es)
 
 ## Comparación de sesión de muestra {#sample-session-comparison}
 
