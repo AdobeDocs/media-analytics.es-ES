@@ -1,14 +1,14 @@
 ---
 title: Obtenga datos de informes JSON de visualizadores simultáneos con las API de Analytics 2.0
-description: Obtenga información sobre cómo obtener datos de informes de espectadores simultáneos mediante las API de Analytics 2.0. Vea una solicitud y una respuesta de ejemplo.
+description: Obtenga información sobre cómo conseguir datos de informes de espectadores simultáneos mediante las API de Analytics 2.0. Vea una solicitud y una respuesta de ejemplo.
 uuid: 9168f114-2459-4951-a06c-57b735d09dc0
 exl-id: f84f63d3-b0d0-45fe-95a7-159f22d60660
-feature: '"Aspectos básicos de Media Analytics, Reports & Analytics"'
+feature: “Aspectos básicos de Media Analytics, Reports & Analytics”
 role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
-source-wordcount: '190'
-ht-degree: 87%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
