@@ -7,8 +7,8 @@ user-guide-description: Implementar Adobe Analytics para medios de transmisión.
 sub-product: media analytics
 source-git-commit: 42a8e33f03c95c7ad7d1c73387450ef36b3e1560
 workflow-type: tm+mt
-source-wordcount: '829'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -24,11 +24,11 @@ ht-degree: 100%
       + [Lado del cliente](intro-to-ava/implementation-paths/client-side-path.md)
       + Otras rutas de implementación {#other-paths}
          + Seguimiento de Milestone en el módulo multimedia {#mm-milestone-tracking}
-            + [Información general de Milestone](measurement-options/mm-milestone-tracking/milestone-overview.md)
+            + [Información general de Milestone ](measurement-options/mm-milestone-tracking/milestone-overview.md)
             + [Migración de Milestone a Media Analytics](measurement-options/mm-milestone-tracking/migrate-ms-to-va.md)
             + [Migración de Milestone a vínculo personalizado](measurement-options/mm-milestone-tracking/migrate-ms-to-cl.md)
          + Vínculo personalizado en Analytics {#cl-in-aa}
-            + [Guía de implementación de Vínculo personalizado ](measurement-options/cl-in-aa/cl-impl-guide.md)
+            + [Guía de implementación de Vínculo personalizado](measurement-options/cl-in-aa/cl-impl-guide.md)
          + Primetime {#primetime}
             + [Primetime](intro-to-ava/implementation-paths/primetime-path.md)
          + [Habilitación de Audience Manager](intro-to-ava/am-enablement.md)
@@ -78,9 +78,9 @@ ht-degree: 100%
             + [Implementación de metadatos estándar en JavaScript 2.x](sdk-implement/track-av-playback/impl-std-metadata/impl-std-md-js/impl-std-metadata-js.md)
             + [Implementación de metadatos estándar en JavaScript 3.x](sdk-implement/track-av-playback/impl-std-metadata/impl-std-md-js/impl-std-metadata-js3.md)
          + [Implementación de metadatos estándar en Chromecast](sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-chromecast.md)
-         + [Parámetros de metadatos estándar: Chromecast ](sdk-implement/track-av-playback/impl-std-metadata/chromecast-metadata.md)
+         + [Parámetros de metadatos estándar: Chromecast](sdk-implement/track-av-playback/impl-std-metadata/chromecast-metadata.md)
          + [Implementación de metadatos estándar en Roku](sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
-         + [Parámetros de metadatos estándar: Roku ](sdk-implement/track-av-playback/impl-std-metadata/roku-metadata.md)
+         + [Parámetros de metadatos estándar: Roku](sdk-implement/track-av-playback/impl-std-metadata/roku-metadata.md)
    + Seguimiento de anuncios {#track-ads}
       + [Información general](sdk-implement/track-ads/track-ads-overview.md)
       + [Seguimiento de anuncios en Android](sdk-implement/track-ads/track-ads-android.md)
@@ -96,7 +96,7 @@ ht-degree: 100%
          + Implementación de metadatos de publicidad estándar en JavaScript {#impl-std-ad-md-js}
             + [Implementación de metadatos de publicidad estándar en JavaScript 2.x](sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-md-js/impl-std-ad-metadata-js.md)
             + [Implementación de metadatos de publicidad estándar en JavaScript 3.x](sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-md-js/impl-std-ad-metadata-js3.md)
-         + [Implementación de metadatos de publicidad estándar en Roku](sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-roku.md)
+         + [Implementación de metadatos de publicidad estándar en Roku ](sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-roku.md)
    + Seguimiento de capítulos y segmentos {#track-chapters}
       + [Información general](sdk-implement/track-chapters/track-chapters-overview.md)
       + [Seguimiento de capítulos y segmentos en Android](sdk-implement/track-chapters/track-chapters-android.md)
@@ -152,12 +152,12 @@ ht-degree: 100%
       + [Seguimiento de estados de aplicaciones](sdk-implement/analytics-with-ott/track-app-states.md)
       + [Seguimiento de acciones de aplicaciones](sdk-implement/analytics-with-ott/track-app-actions.md)
       + [Establecimiento de ID de usuario](sdk-implement/analytics-with-ott/set-user-ids.md)
-      + [OTT y Audience Manager](sdk-implement/analytics-with-ott/ott-am.md)
-      + [OTT y Experience Cloud](sdk-implement/analytics-with-ott/ott-experience-cloud.md)
+      + [OTT y Audience Manager ](sdk-implement/analytics-with-ott/ott-am.md)
+      + [OTT y Experience Cloud ](sdk-implement/analytics-with-ott/ott-experience-cloud.md)
    + Guía paso a paso {#cookbook}
       + [Guía de SDK](sdk-implement/cookbook/sdk-cookbook-overview.md)
       + [Administración de interrupciones de la aplicación durante la reproducción](sdk-implement/cookbook/app-interrupts.md)
-      + [Solución cuando aparece main:play entre anuncios ](sdk-implement/cookbook/fix-ad-play-ad.md)
+      + [Solución cuando aparece main:play entre anuncios](sdk-implement/cookbook/fix-ad-play-ad.md)
       + [Reanudar sesiones inactivas](sdk-implement/cookbook/resuming-inactive.md)
       + [Seguimiento en SceneGraph (Roku)](sdk-implement/cookbook/sdk-track-scenegraph.md)
    + Migración de Media Analytics 1.x a 2.x {#va-1x-to-2x}
@@ -200,9 +200,9 @@ ht-degree: 100%
 + Métricas y metadatos {#metrics-and-metadata}
    + [Parámetros de Streaming Media](metrics-and-metadata/audio-video-parameters.md)
    + [Parámetros de anuncio](metrics-and-metadata/ad-parameters.md)
-   + [Parámetros de capítulo ](metrics-and-metadata/chapter-parameters.md)
+   + [Parámetros de capítulo](metrics-and-metadata/chapter-parameters.md)
    + [Parámetros de estado del reproductor](metrics-and-metadata/player-state-parameters.md)
-   + [Parámetros de calidad ](metrics-and-metadata/quality-parameters.md)
+   + [Parámetros de calidad](metrics-and-metadata/quality-parameters.md)
    + [Segmentos](metrics-and-metadata/segments.md)
    + [Métricas calculadas](metrics-and-metadata/calculated-metrics.md)
 + Informes y análisis {#media-reports}
