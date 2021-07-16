@@ -5,9 +5,9 @@ uuid: 0d9fa764-edef-4178-8650-90c9a0852a57
 exl-id: aac178dc-5a46-4ce3-80e9-ec82cbfbfff5
 feature: '"Media Analytics, Variables"'
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
-source-wordcount: '2980'
+source-wordcount: '3001'
 ht-degree: 92%
 
 ---
@@ -50,11 +50,11 @@ Descripción de los datos de la tabla:
 | <ul> <li> **Clave de SDK:**<br/> </li> <li> **Clave de API:**<br/> media.qoe.timeToStart </li> <li> **Requerido:**<br/> no </li> <li> **Tipo:**<br/> número </li> <li> **Enviado con:**<br/> Inicio de contenidos, Cierre de contenidos </li> <li> **Mínima Versión de SDK:** Cualquiera </li> <li> **Valor de muestra:**<br/> 30.000 </li><li> **Descripción:**<br/> El valor predeterminado es cero si no se establece a través de QoSObject. Este se establece en milisegundos. El valor se muestra en el formato de hora (HH:MM:SS) en Analysis Workspace y en Reports &amp; Analytics. En las fuentes de datos, el Data Warehouse y las API de informes, los valores se mostrarán en segundos.  </li> </ul> | <ul> <li> **Adobe Analytics:**<br/>  (a.media.qoe.<br/>timeToStart) </li> <li> **Heartbeat:**<br/>  (:stream:tiempo_inicio) </li> </ul> | <ul> <li> **Disponible:**<br/> sí </li> <li> **Variable reservada:**<br/> eVar </li> <li> **Caducidad:**<br/> según HIT </li> <li> **Nombre del informe:**<br/> Tiempo para el inicio </li> <li> **Datos de contexto:**<br/> (a.media.qoe.<br/>timeToStart) </li> <li> **Fuente de datos:**<br/> videoqoetimetostartevar </li> <li> **Audience Manager:**<br/>  (c_contextdata.<br/>a.media.qoe.<br/>timeToStart) </li> </ul> |
 
 
-### FPS
+### Fotogramas por segundo
 
 |   Implementación   | Parámetros de red | Creación de informes |
 | --- | --- | --- |
-| <ul> <li> **Clave de SDK:**<br/> </li> <li> **Clave de API:**<br/> media.qoe.framesPerSecond </li> <li> **Requerido:**<br/> no </li> <li> **Tipo:**<br/> número </li> <li> **Enviado con:**<br/> Inicio de contenidos, Cierre de contenidos </li> <li> **Mínima Versión de SDK:** Cualquiera </li> <li> **Valor de muestra:**<br/> 24 </li><li> **Descripción:**<br/> El valor actual del flujo de fotogramas de vídeo de la emisión (en fotogramas por segundo).  </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> </li> <li> **Heartbeat:**<br/> (:stream:lfps) </li> </ul> | <ul> <li> **Disponible:**<br/> no </li> <li> **Variable reservada:**<br/> N/D </li> <li> **Nombre del informe:**<br/> N/D </li> <li> **Datos de contexto:**<br/> </li> <li> **Fuente de datos:**<br/> N/D </li> <li> **Audience Manager:**<br/> </li> </ul> |
+| <ul> <li> **Clave de SDK:**<br/> </li> <li> **Clave de API:**<br/> media.qoe.framesPerSecond </li> <li> **Requerido:**<br/> no </li> <li> **Tipo:**<br/> número </li> <li> **Enviado con:**<br/> Inicio de contenidos, Cierre de contenidos </li> <li> **Mínima Versión de SDK:** Cualquiera </li> <li> **Valor de muestra:**<br/> 24 </li><li> **Descripción:**<br/> El valor actual del flujo de fotogramas de vídeo de la emisión (en fotogramas por segundo). El campo está asignado al campo fps de la llamada de cierre y se puede acceder a él mediante reglas de procesamiento.  </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> </li> <li> **Heartbeat:**<br/> (:stream:lfps) </li> </ul> | <ul> <li> **Disponible:**<br/> no </li> <li> **Variable reservada:**<br/> N/D </li> <li> **Nombre del informe:**<br/> N/D </li> <li> **Datos de contexto:**<br/> </li> <li> **Fuente de datos:**<br/> N/D </li> <li> **Audience Manager:**<br/> </li> </ul> |
 
 
 
