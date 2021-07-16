@@ -1,14 +1,14 @@
 ---
 title: Espectadores simultáneos de medios
-description: '"Obtenga información sobre el tablero Espectadores simultáneos de medios que se utiliza para mostrar los espectadores simultáneos durante un día. Los datos se pueden filtrar por contenido, tipo de dispositivo o país".'
+description: “Obtenga información acerca del panel Espectadores simultáneos de medios que se utiliza para mostrar los espectadores simultáneos de un día. Los datos pueden filtrarse por contenido, tipo de dispositivo o país”.
 uuid: e61c50e5-8196-4538-b67c-ebc01c6e6ba7
 exl-id: 2c679c1a-a4bd-44fc-8e11-173c8544ab06
-feature: '"Aspectos básicos de Media Analytics, Reports & Analytics"'
+feature: “Aspectos básicos de Media Analytics, Reports & Analytics”
 role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
-source-wordcount: '295'
-ht-degree: 89%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
