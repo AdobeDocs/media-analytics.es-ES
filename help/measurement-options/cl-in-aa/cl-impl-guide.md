@@ -7,12 +7,12 @@ feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
-source-wordcount: '202'
-ht-degree: 92%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
-# Guía de implementación de Vínculo personalizado {#custom-link-implementation-guide}
+# Guía de implementación de Vínculo personalizado{#custom-link-implementation-guide}
 
 El seguimiento de vídeo personalizado utiliza el seguimiento de vínculo manual mediante el código de vínculo personalizado con `appMeasurement` de Analytics.
 Con frecuencia, el seguimiento de enlace de vídeo personalizado se utiliza en las plataformas y los dispositivos en los que es necesaria una medición mínima del vídeo.
