@@ -1,14 +1,14 @@
 ---
 title: Información general de medio
-description: Utilice el tablero Información general de medio para mostrar las mediciones agregadas. Aprenda a monitorizar rápidamente el rendimiento de los medios.
+description: Utilice el panel Información general de medios para mostrar las mediciones agregadas. Aprenda a monitorizar rápidamente el rendimiento de los medios.
 uuid: bdbd998f-9b5e-40c9-a8ea-12dfa5acd35c
 exl-id: 4fe91372-da41-44c5-bea9-2bba762512ef
-feature: '"Aspectos básicos de Media Analytics, Reports & Analytics"'
+feature: “Aspectos básicos de Media Analytics, Reports & Analytics”
 role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
-source-wordcount: '112'
-ht-degree: 81%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -34,7 +34,7 @@ Muestre rápidamente métricas de medio por dispositivo o por país:
 
 ## Rendimiento de medios {#media-performance}
 
-Haga clic y arrastre para aumentar y, a continuación, pase el ratón por encima para ver las métricas detalladas de cada medio. Haga clic en  ![](assets/video-overview-report-revert.png)
+Haga clic y arrastre para aumentar y, a continuación, pase el ratón por encima para ver las métricas detalladas de cada medio. Haga clic en ![](assets/video-overview-report-revert.png)
 
 para restablecer la vista después de ampliar.
 
