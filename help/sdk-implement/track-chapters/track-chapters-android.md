@@ -5,7 +5,7 @@ uuid: 013815d7-4d9e-48f4-a2b9-3b70cb1149d3
 exl-id: ada2e2a7-1383-471c-9ce6-c82ea93fa79d
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
 source-wordcount: '200'
 ht-degree: 89%
@@ -14,9 +14,11 @@ ht-degree: 89%
 
 # Seguimiento de capítulos y segmentos en Android{#track-chapters-and-segments-on-android}
 
+Las siguientes instrucciones proporcionan directrices para la implementación mediante SDK de 2.x.
+
 >[!IMPORTANT]
 >
->Las siguientes instrucciones proporcionan directrices para la implementación mediante SDK de 2.x. Si va a implementar una versión 1.x del SDK, puede descargar la guía del desarrollador aquí: [Descargar SDK.](/help/sdk-implement/download-sdks.md)
+>Si va a implementar una versión 1.x del SDK, puede descargar la guía del desarrollador aquí: [Descargar SDK.](/help/sdk-implement/download-sdks.md)
 
 ## Implementación del seguimiento de capítulos
 
@@ -49,9 +51,9 @@ ht-degree: 89%
 
    ```java
    HashMap<String, String> chapterMetadata =  
-     new HashMap<String,String>(); 
-   chapterMetadata.put("segmentType", "Sample Segment Type"); 
-   chapterMetadata.put("segmentName", "Sample Segment Name"); 
+     new HashMap<String,String>();
+   chapterMetadata.put("segmentType", "Sample Segment Type");
+   chapterMetadata.put("segmentName", "Sample Segment Name");
    chapterMetadata.put("segmentInfo", "Sample Segment Info");
    ```
 
@@ -61,7 +63,7 @@ ht-degree: 89%
    public void onChapterStart(Observable observable, Object data) {  
        _heartbeat.trackEvent(MediaHeartbeat.Event.ChapterStart,  
                              chapterDataInfo,  
-                             chapterMetadata); 
+                             chapterMetadata);
    }
    ```
 
@@ -69,7 +71,7 @@ ht-degree: 89%
 
    ```java
    public void onChapterComplete(Observable observable, Object data) {  
-       _heartbeat.trackEvent(MediaHeartbeat.Event.ChapterComplete, null, null); 
+       _heartbeat.trackEvent(MediaHeartbeat.Event.ChapterComplete, null, null);
    }
    ```
 
@@ -77,7 +79,7 @@ ht-degree: 89%
 
    ```java
    public void onChapterSkip(Observable observable, Object data) {  
-       _heartbeat.trackEvent(MediaHeartbeat.Event.ChapterSkip, null, null); 
+       _heartbeat.trackEvent(MediaHeartbeat.Event.ChapterSkip, null, null);
    }
    ```
 
