@@ -5,7 +5,7 @@ uuid: 5ea562b9-0e07-4fbb-9a3b-213d746304f5
 exl-id: 26b71e4d-ced7-49cb-a838-2b1c8d4ee4de
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
 source-wordcount: '222'
 ht-degree: 90%
@@ -14,9 +14,11 @@ ht-degree: 90%
 
 # Seguimiento de capítulos y segmentos en Chromecast{#track-chapters-and-segments-on-chromecast}
 
+Las siguientes instrucciones proporcionan directrices para la implementación mediante SDK de 2.x.
+
 >[!IMPORTANT]
 >
->Las siguientes instrucciones proporcionan directrices para la implementación mediante SDK de 2.x. Si va a implementar una versión 1.x del SDK, puede descargar la guía del desarrollador aquí: [Descargar SDK.](/help/sdk-implement/download-sdks.md)
+> Si va a implementar una versión 1.x del SDK, puede descargar la guía del desarrollador aquí: [Descargar SDK.](/help/sdk-implement/download-sdks.md)
 
 1. Identifique cuándo se produce el evento de inicio de capítulo y cree la instancia de `ChapterObject` con la información del capítulo.
 
@@ -42,15 +44,15 @@ ht-degree: 90%
 1. Si incluye metadatos personalizados para el capítulo, cree las variables de datos de contexto para los metadatos:
 
    ```js
-   var chapterContextData = { 
-       segmentType: "Sample segment type" 
+   var chapterContextData = {
+       segmentType: "Sample segment type"
    };
    ```
 
 1. Para empezar a rastrear la reproducción del capítulo, realice un seguimiento del evento `ChapterStart`: [trackEvent](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.trackEvent).
 
    ```js
-   ADBMobile.media.trackEvent(ADBMobile.media.Event.ChapterStart, ChapterInfo, chapterContextData); 
+   ADBMobile.media.trackEvent(ADBMobile.media.Event.ChapterStart, ChapterInfo, chapterContextData);
    ```
 
 1. Cuando la reproducción llega al final del capítulo, como se define en el código personalizado, invoque el evento `ChapterComplete` en la instancia de `MediaHeartbeat`: [trackEvent](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.trackEvent).
@@ -62,7 +64,7 @@ ht-degree: 90%
 1. Si no se ha completado la reproducción del capítulo porque el usuario ha elegido omitirlo (por ejemplo, si el usuario hace clic en la línea de tiempo para saltar el capítulo), realice un seguimiento del evento `ChapterSkip`: [trackEvent](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.trackEvent).
 
    ```js
-   ADBMobile.media.trackEvent(ADBMobile.media.Event.ChapterSkip); 
+   ADBMobile.media.trackEvent(ADBMobile.media.Event.ChapterSkip);
    ```
 
 1. Si hay más capítulos, repita los pasos del 1 al 5.
