@@ -4,7 +4,7 @@ description: Obtenga información sobre la implementación del seguimiento de er
 exl-id: 3769fc47-fbc4-4498-9d2a-04c88cdd0e83
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
 source-wordcount: '99'
 ht-degree: 73%
@@ -13,9 +13,11 @@ ht-degree: 73%
 
 # Seguimiento de errores con JavaScript 3.x{#track-errors-on-javascript}
 
+En las siguientes instrucciones se indican los pasos para la implementación en todos los kits de desarrollo de software de 2.x.
+
 >[!IMPORTANT]
 >
->En las siguientes instrucciones se indican los pasos para la implementación en todos los kits de desarrollo de software de 3.x. Si va implementar cualquier versión anterior del SDK, puede descargar las guías del desarrollador aquí: [Descargar SDK.](/help/sdk-implement/download-sdks.md)
+>Si va implementar cualquier versión anterior del SDK, puede descargar las guías del desarrollador aquí: [Descargar SDK.](/help/sdk-implement/download-sdks.md)
 
 ## Implementación del seguimiento de errores
 
