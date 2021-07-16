@@ -1,14 +1,14 @@
 ---
-title: Información sobre la migración de Milestone a vínculo personalizado
-description: Aprenda a cambiar las variables de Milestone por métodos de módulo Vínculo personalizado y Milestone por la sintaxis Vínculo personalizado.
+title: Obtenga información acerca de la migración de Milestone a vínculo personalizado
+description: Aprenda a cambiar variables de Milestone por métodos de vínculo personalizado, y métodos de módulo de Milestone por sintaxis de vínculo personalizado.
 uuid: 1c8edde5-0ef1-4bc0-a62d-1747f4907f09
 exl-id: 732079f4-3eb8-4b9a-892b-25a1c9332be4
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
-source-wordcount: '598'
-ht-degree: 95%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -56,7 +56,7 @@ En las tablas siguientes se proporcionan las correspondencias entre la solución
 | Media.segmentByMilestones | `s.Media.segmentByMilestones` <br> `  = true;` | N/D | No disponible. |
 | Media.segmentByOffsetMilestones | `s.Media.` <br> `  segmentByOffsetMilestones` <br> `  = true;` | N/D | No disponible. |
 
-### Variables de seguimiento de publicidades
+### Variables de seguimiento de anuncios
 
 | Milestone | Sintaxis de Milestone | Vínculo personalizado | Vínculo personalizado Sintaxis |
 | --- | --- | --- | --- |
