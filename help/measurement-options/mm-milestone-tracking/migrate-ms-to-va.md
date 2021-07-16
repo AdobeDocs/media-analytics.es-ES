@@ -1,14 +1,14 @@
 ---
 title: Obtenga información sobre cómo migrar de Milestone a Media Analytics
-description: Aprenda a cambiar las variables de Milestone por las métricas de Media Analytics y los métodos del módulo Milestone por la sintaxis de Media Analytics.
+description: Aprenda a cambiar variables de Milestone por métricas de Media Analytics, y métodos del módulo Milestone por sintaxis de Media Analytics.
 uuid: fdc96146-af63-48ce-b938-c0ca70729277
 exl-id: 655841ed-3a02-4e33-bbc9-46fb14302194
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
-source-wordcount: '692'
-ht-degree: 96%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -57,7 +57,7 @@ En las tablas siguientes se proporcionan las correspondencias entre la solución
 | Media.segmentByMilestones | `s.Media.segmentByMilestones` <br> `  = true;` | N/D | El seguimiento automático ya no está disponible. |
 | Media.segmentByOffsetMilestones | `s.Media.` <br> `  segmentByOffsetMilestones` <br> `  = true;` | N/D | El seguimiento automático ya no está disponible. |
 
-### Variables de seguimiento de publicidades
+### Variables de seguimiento de anuncios
 
 | Milestone | Sintaxis de Milestone | Media Analytics | Sintaxis de Media Analytics |
 | --- | --- | --- | --- |
