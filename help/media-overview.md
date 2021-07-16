@@ -1,14 +1,14 @@
 ---
-title: 'Medios de transmisión de Adobe en Adobe Analytics '
-description: '"Profundizar en la medición de medios de transmisión más avanzada para contenido, audio y anuncios. Obtenga información sobre Adobe Analytics para medios de transmisión".'
+title: 'Adobe Streaming Media en Adobe Analytics '
+description: “Profundice en la medición de medios de transmisión más avanzada para contenido, audio y anuncios. Obenga información acerca de Adobe Analytics for Streaming Media”.
 uuid: b3cbe240-b94d-42b8-a99c-0280334aaa14
 exl-id: 826530f7-2c39-41ef-b3b4-d3f44b46858f
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
-source-wordcount: '880'
-ht-degree: 95%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -27,7 +27,7 @@ Puede medir las métricas de entrega esenciales relacionadas con la calidad del 
 ## Funciones {#features}
 
 Las ventajas de Adobe Analytics para Streaming Media incluyen monitorización en tiempo real, análisis detallado, perspectivas procesables y oportunidades de monetización.
-* **Análisis en tiempo real**: Tome decisiones procesables en tiempo real usando métricas clave de rendimiento como inicios de contenido en varios canales.
+* **Análisis en tiempo real**: tome decisiones procesables en tiempo real utilizando métricas de rendimiento clave como los inicios de medios en varios canales.
 * **Mejore la participación**: involucre completamente a los usuarios mediante menos eventos de almacenamiento en búfer y mediante la comprensión de dónde y cuándo debe reproducirse la publicidad dentro del contenido para proporcionar una experiencia agradable y menos intrusiva que genere visitas más frecuentes.
 * **Imagen holística**: combine diversos puntos de datos de todos los distribuidores de contenido y obtenga información de toda la actividad de contenidos. También puede medir la participación y las visualizaciones/escuchas en todos los posibles canales a través de la función Federated Analytics.
 * **Mayor granularidad**: evalúe el comportamiento de visualización en el nivel más granular, incluida la hora del día de cada visitante individual, los espectadores/oyentes simultáneos por minuto y la duración promedio de consumo del contenido.
