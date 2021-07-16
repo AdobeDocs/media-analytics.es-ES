@@ -5,17 +5,19 @@ uuid: 3d6e0ab1-899a-43c3-b632-8276e84345ab
 exl-id: d8af37a0-9048-4e6b-8cba-809386cbed5f
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
 source-wordcount: '691'
-ht-degree: 96%
+ht-degree: 94%
 
 ---
 
 # Seguimiento de reproducción principal con JavaScript 2.x{#track-core-playback-on-javascript}
 
+Las siguientes instrucciones proporcionan directrices para la implementación en SDK 2.x.
+
 >[!IMPORTANT]
->Esta documentación abarca el seguimiento en la versión 2.x del SDK. Si va a implementar una versión 1.x del SDK, puede descargar las guías del desarrollador de 1.x aquí: [Descargar SDK](/help/sdk-implement/download-sdks.md).
+>Si va a implementar una versión 1.x del SDK, puede descargar las guías del desarrollador de 1.x aquí: [Descargar SDK](/help/sdk-implement/download-sdks.md).
 
 1. **Configuración de seguimiento inicial**
 
