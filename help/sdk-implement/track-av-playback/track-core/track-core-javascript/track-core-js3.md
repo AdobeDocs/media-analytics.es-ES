@@ -4,7 +4,7 @@ description: Obtenga información sobre cómo implementar el seguimiento princip
 exl-id: f3145450-82ba-4790-91a4-9d2cc97bbaa5
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
 source-wordcount: '647'
 ht-degree: 95%
@@ -13,8 +13,10 @@ ht-degree: 95%
 
 # Seguimiento de reproducción principal con JavaScript 3.x{#track-core-playback-on-javascript}
 
+Esta documentación abarca el seguimiento en la versión 3.x del SDK.
+
 >[!IMPORTANT]
->Esta documentación abarca el seguimiento en la versión 3.x del SDK. Si va implementar cualquier versión anterior del SDK, puede descargar las guías del desarrollador aquí: [Descargar SDK](/help/sdk-implement/download-sdks.md)
+> Si va implementar cualquier versión anterior del SDK, puede descargar las guías del desarrollador aquí: [Descargar SDK](/help/sdk-implement/download-sdks.md)
 
 1. **Configuración de seguimiento inicial**
 
