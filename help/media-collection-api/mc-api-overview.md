@@ -1,15 +1,15 @@
 ---
 seo-title: Información general
-title: Información general sobre la API de recopilación de medios de transmisión
-description: Obtenga información sobre la API de Media Collection y cómo su reproductor puede rastrear eventos de audio y vídeo mediante llamadas HTTP RESTful.
+title: Información general sobre la API de Streaming Media Collection
+description: Obtenga información acerca de la API de Media Collection y cómo el reproductor puede realizar un seguimiento de eventos de audio y vídeo mediante llamadas HTTP de RESTful.
 uuid: c14bdbef-5846-4d31-8a14-8e9e0e9c9861
 exl-id: 58430636-7fab-433a-8ead-52ccaa45d920
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
-source-wordcount: '357'
-ht-degree: 92%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
