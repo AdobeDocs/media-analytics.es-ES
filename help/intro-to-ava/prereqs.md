@@ -1,18 +1,18 @@
 ---
-title: Conozca los requisitos previos para los medios de transmisión
-description: Introducción a Adobe Analytics Streaming Media. Aprenda lo que necesita para implementar Adobe Analytics para medios de transmisión.
+title: Conozca los requisitos previos de Streaming Media
+description: Introducción a Adobe Analytics Streaming Media. Aprenda lo que necesita para implementar Adobe Analytics for Streaming Media.
 uuid: 4c0b37f3-8615-4cc0-b9c9-eeb029067064
 exl-id: 85ab1dbd-f4a7-4f11-afc9-8d5000e2de70
-feature: '"Media Analytics, requisitos del sistema"'
+feature: “Media Analytics, requisitos del sistema”
 role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
-source-wordcount: '414'
-ht-degree: 93%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
-# Requisitos previos {#prerequisites}
+# Requisitos previos{#prerequisites}
 
 ## Decisiones {#decision}
 
