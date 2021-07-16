@@ -1,13 +1,13 @@
 ---
-title: Información sobre dispositivos y plataformas compatibles
-description: '"Obtenga información sobre los principales dispositivos, como iOS, Android, dispositivos OTT y exploradores JavaScript compatibles con Adobe Analytics para Streaming Media".'
+title: Información acerca de dispositivos y plataformas compatibles
+description: “Obtenga información acerca de los principales dispositivos, como iOS, Android, dispositivos OTT y exploradores JavaScript que Adobe Analytics for Streaming Media admite”.
 exl-id: 169ff7b9-e577-45b7-8927-74bdcccc0a77
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
-source-wordcount: '341'
-ht-degree: 92%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
