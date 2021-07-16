@@ -5,7 +5,7 @@ uuid: a8aa7b3c-2d39-44d7-8ebc-b101d130101f
 exl-id: 5272c0ce-4e3d-48c6-bfa6-94066ccbf9ac
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
 source-wordcount: '684'
 ht-degree: 97%
@@ -14,8 +14,10 @@ ht-degree: 97%
 
 # Seguimiento de reproducción principal en Roku{#track-core-playback-on-roku}
 
+Esta documentación abarca el seguimiento en la versión 2.x del SDK.
+
 >[!IMPORTANT]
->Esta documentación abarca el seguimiento en la versión 2.x del SDK. Si va a implementar una versión 1.x del SDK, puede descargar las guías del desarrollador de 1.x aquí: [Descargar SDK](/help/sdk-implement/download-sdks.md).
+>Si va a implementar una versión 1.x del SDK, puede descargar las guías del desarrollador de 1.x aquí: [Descargar SDK](/help/sdk-implement/download-sdks.md).
 
 1. **Configuración de seguimiento inicial**
 
@@ -101,7 +103,7 @@ ht-degree: 97%
 
    * **Metadatos estándar**
 
-      [Implementación de metadatos estándar en Roku](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
+[Implementación de metadatos estándar en Roku](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
 
       >[!NOTE]
       >No es obligatorio adjuntar el objeto de metadatos de vídeo estándar al objeto de contenidos.
