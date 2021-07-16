@@ -5,24 +5,26 @@ uuid: 7d0c77e5-924c-4619-8e29-3484748ab736
 exl-id: 6c4f693d-45c0-4a9c-bda1-c8721afe31f5
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
-source-wordcount: '93'
+source-wordcount: '92'
 ht-degree: 80%
 
 ---
 
 # Seguimiento de errores en Android{#track-errors-on-android}
 
+Las siguientes instrucciones proporcionan directrices para la implementación mediante SDK de 2.x.
+
 >[!IMPORTANT]
 >
->En las siguientes instrucciones se indican los pasos para la implementación en todos los kits de desarrollo de software de 2.x. Si va a implementar una versión 1.x del SDK, puede descargar las guías del desarrollador de 1.x aquí: [Descargar SDK.](/help/sdk-implement/download-sdks.md)
+>Si va a implementar una versión 1.x del SDK, puede descargar las guías del desarrollador de 1.x aquí: [Descargar SDK.](/help/sdk-implement/download-sdks.md)
 
 1. Seguimiento de errores del reproductor de contenidos:
 
    ```java
    public void onPlayerError(Observable observable, Object data) {  
-       _heartbeat.trackError("mediaErrorID"); 
+       _heartbeat.trackError("mediaErrorID");
    }
    ```
 
