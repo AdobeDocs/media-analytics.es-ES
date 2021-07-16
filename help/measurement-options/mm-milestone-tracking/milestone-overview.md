@@ -1,18 +1,18 @@
 ---
-title: Información sobre los informes de Milestone (obsoleto)
-description: � obsoleto Obtenga información sobre cómo configurar informes de vídeo para una implementación de Milestone
+title: Información acerca de los informes de Milestone (obsoleto)
+description: Obsoleto � Obtenga información sobre cómo configurar informes de vídeo para una implementación de Milestone
 uuid: 2f9ec6bb-8860-4863-98bc-5cffb356ccc5
 exl-id: 960785e3-f507-4f09-8f85-6eeca57dd2f3
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
-source-wordcount: '3353'
-ht-degree: 99%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
-# Información general de Milestone{#milestone-overview}
+# Información general de Milestone {#milestone-overview}
 
 >[!CAUTION]
 >
