@@ -1,14 +1,14 @@
 ---
 title: Plantillas de Workspace de medios
-description: Utilice las plantillas de Workspace de medios para analizar los datos de seguimiento. Elija plantillas estándar para medios de adquisición o de transmisión, o cree sus propias plantillas personalizadas.
+description: Utilice las plantillas de espacio de trabajo de medios para analizar los datos de seguimiento. Elija plantillas estándar para medios de adquisición o de transmisión, o cree sus propias plantillas personalizadas.
 uuid: 0024b06a-eaf5-4d2e-be45-aeda9d0554c1
 exl-id: a835f86a-a93a-4a56-91f4-14628cf48214
-feature: '"Media Analytics, Conceptos básicos de Workspace"'
+feature: “Media Analytics, Conceptos básicos de Workspace”
 role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
-source-wordcount: '214'
-ht-degree: 87%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
