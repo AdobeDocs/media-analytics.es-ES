@@ -5,7 +5,7 @@ uuid: c380cf2c-7729-4d4a-a4da-581bd94a5896
 exl-id: 62c1d5b4-2717-42b3-8343-d41e895a9da3
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
 source-wordcount: '123'
 ht-degree: 81%
@@ -14,9 +14,11 @@ ht-degree: 81%
 
 # Seguimiento del almacenamiento en búfer con JavaScript 2.x{#track-buffering-on-javascript}
 
+En las siguientes instrucciones se indican los pasos para la implementación en todos los kits de desarrollo de software de 2.x.
+
 >[!IMPORTANT]
 >
->En las siguientes instrucciones se indican los pasos para la implementación en todos los kits de desarrollo de software de 2.x. Si va a implementar una versión 1.x del SDK, puede descargar las guías del desarrollador de 1.x aquí: [Descargar SDK.](/help/sdk-implement/download-sdks.md)
+>Si va a implementar una versión 1.x del SDK, puede descargar las guías del desarrollador de 1.x aquí: [Descargar SDK.](/help/sdk-implement/download-sdks.md)
 
 ## Constantes de seguimiento de búfer
 
