@@ -4,7 +4,7 @@ description: Obtenga información sobre la implementación del seguimiento de ca
 exl-id: 00ba11df-d226-45a2-a561-dc9f15dcf714
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
 source-wordcount: '220'
 ht-degree: 64%
@@ -13,9 +13,11 @@ ht-degree: 64%
 
 # Seguimiento de capítulos y segmentos con JavaScript 3.x{#track-chapters-and-segments-on-javascript}
 
+Las siguientes instrucciones proporcionan directrices para la implementación mediante SDK de 3.x.
+
 >[!IMPORTANT]
 >
->Las siguientes instrucciones proporcionan directrices para la implementación mediante SDK de 3.x. Si va a implementar cualquier versión anterior del SDK, puede descargar la guía del desarrollador aquí: [Descargar SDK.](/help/sdk-implement/download-sdks.md)
+> Si va a implementar cualquier versión anterior del SDK, puede descargar la guía del desarrollador aquí: [Descargar SDK.](/help/sdk-implement/download-sdks.md)
 
 1. Identifique cuándo se produce el evento de inicio de capítulo y cree la instancia de `ChapterObject` con la información del capítulo.
 
