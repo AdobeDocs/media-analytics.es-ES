@@ -6,9 +6,9 @@ exl-id: 85ab1dbd-f4a7-4f11-afc9-8d5000e2de70
 feature: “Media Analytics, requisitos del sistema”
 role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '414'
+ht-degree: 100%
 
 ---
 
