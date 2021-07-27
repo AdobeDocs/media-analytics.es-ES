@@ -6,9 +6,9 @@ exl-id: 4fe91372-da41-44c5-bea9-2bba762512ef
 feature: “Aspectos básicos de Media Analytics, Reports & Analytics”
 role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '112'
+ht-degree: 100%
 
 ---
 
