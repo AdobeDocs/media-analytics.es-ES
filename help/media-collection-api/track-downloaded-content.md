@@ -5,16 +5,16 @@ uuid: 0718689d-9602-4e3f-833c-8297aae1d909
 exl-id: 82d3e5d7-4f88-425c-8bdb-e9101fc1db92
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: 41023be25308092a1b3e7c40bad2d8085429a0bc
 workflow-type: tm+mt
-source-wordcount: '628'
-ht-degree: 97%
+source-wordcount: '698'
+ht-degree: 87%
 
 ---
 
 # Seguimiento del contenido descargado{#track-downloaded-content}
 
-## Información general {#overview}
+## Información general  {#overview}
 
 La función Contenido descargado proporciona la capacidad de realizar un seguimiento del consumo de contenido cuando un usuario está sin conexión. Por ejemplo, un usuario descarga e instala una aplicación en un dispositivo móvil y, a continuación, utiliza la aplicación para descargar contenido en el almacenamiento local del dispositivo. Para realizar un seguimiento de los datos descargados, Adobe ha desarrollado la funcionalidad Contenido descargado. Con esta funcionalidad, cuando el usuario reproduce contenido desde el almacenamiento de un dispositivo, los datos de seguimiento se almacenan en el dispositivo, independientemente de su conectividad. Cuando el usuario termina la sesión de reproducción y el dispositivo vuelve a estar en línea, la información de seguimiento almacenada se envía al back-end de la API de recopilación de contenido en una única carga. A continuación, la información de seguimiento almacenada se procesa y se comunica como de costumbre en la API de recopilación de medios.
 
@@ -61,13 +61,11 @@ Al calcular las llamadas de inicio y cierre de Analytics para el escenario de co
 
 ## Comparación de sesión de muestra {#sample-session-comparison}
 
-```
-[url]/api/v1/sessions
-```
-
 ### Contenido en línea
 
 ```
+POST /api/v1/sessions HTTP/1.1
+
 {
   eventType: "sessionStart",
   playerTime: {
@@ -82,13 +80,49 @@ Al calcular las llamadas de inicio y cierre de Analytics para el escenario de co
 ### Contenido descargado
 
 ```
+POST /api/v1/downloaded HTTP/1.1
+
 [{
     eventType: "sessionStart",
     playerTime:{
       playhead: 0,
-      ts: 1529997923478},  
+      ts: 1529997923478
+    },  
+    params:{...},
+    customMetadata:{},  
+    qoeData:{}
+},
+    {eventType: "play", playerTime:
+        {playhead: 0,  ts: 1529997928174}},
+    {eventType: "ping", playerTime:
+        {playhead: 10, ts: 1529997937503}},
+    {eventType: "ping", playerTime:
+        {playhead: 20, ts: 1529997947533}},
+    {eventType: "ping", playerTime:
+        {playhead: 30, ts: 1529997957545},},
+    {eventType: "sessionComplete", playerTime:
+        {playhead: 35, ts: 1529997960559}
+}]
+```
+
+#### Aviso de fin de compatibilidad
+
+Anteriormente, el contenido descargado también se podía enviar a la API `/api/v1/sessions`. Esta forma de rastrear el contenido descargado está **obsoleto** y se **eliminará** en el futuro.
+La API `/api/v1/sessions` solo aceptará eventos de inicialización de sesión.
+Al utilizar la nueva API, ya no es necesario el indicador `media.downloaded` obligatorio anterior.
+Recomendamos encarecidamente utilizar la API `/api/v1/downloaded` para nuevas implementaciones de contenido descargado, así como actualizar las implementaciones existentes que dependen de la API antigua.
+
+
+```
+POST /api/v1/sessions HTTP/1.1
+[{
+    eventType: "sessionStart",
+    playerTime:{
+      playhead: 0,
+      ts: 1529997923478
+    },
     params:{
-        "media.downloaded": true
+        "media.downloaded": true,
         ...
     },
     customMetadata:{},  
