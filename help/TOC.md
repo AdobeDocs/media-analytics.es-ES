@@ -3,11 +3,11 @@ product: adobe analytics
 audience: end-user
 user-guide-title: Adobe Analytics para medios de transmisión
 breadcrumb-title: Guía de Media Analytics
-user-guide-description: Implementar Adobe Analytics para medios de transmisión. Incluye el SDK de medios y la API de recopilación de medios.
+user-guide-description: Implemente Adobe Analytics para medios de transmisión. Incluye el SDK de medios y la API de recopilación de medios.
 sub-product: media analytics
 source-git-commit: 42a8e33f03c95c7ad7d1c73387450ef36b3e1560
 workflow-type: ht
-source-wordcount: '829'
+source-wordcount: '827'
 ht-degree: 100%
 
 ---
