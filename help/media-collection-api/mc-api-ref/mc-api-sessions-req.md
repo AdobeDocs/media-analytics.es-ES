@@ -5,10 +5,10 @@ uuid: 9609192d-4f7f-4fb5-844f-ea89d47c4e30
 exl-id: f55f5838-610f-4f82-b3c5-72165ea2c86b
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: ca709046e477bd471e2f55eb6dcf45e5c3c2be17
 workflow-type: tm+mt
-source-wordcount: '97'
-ht-degree: 80%
+source-wordcount: '130'
+ht-degree: 46%
 
 ---
 
@@ -62,8 +62,8 @@ El cuerpo de la solicitud debe ser JSON y tener la misma estructura que este cue
 ```
 
 * `playerTime` (Obligatorio)
-   * `playhead`: debe estar en segundos, pero puede ser float.
-   * `ts`: marca de tiempo; debe estar en milisegundos.
+   * `playhead` - Si el contenido está activo, el cabezal de reproducción debe ser el segundo del día actual, 0  &lt;> Si se registra el contenido, el cabezal de reproducción debe ser el segundo del contenido actual, 0 &lt;= cabezal de reproducción &lt; duración del contenido. El valor puede ser un número de coma flotante.
+   * `ts` - Marca de tiempo; debe estar en milisegundos; Hora universal coordinada (UTC).
 * `eventType` (Obligatorio)
 
    **Valor válido:** `sessionStart`
