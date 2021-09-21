@@ -103,7 +103,7 @@ Esta documentación abarca el seguimiento en la versión 2.x del SDK.
 
    * **Metadatos estándar**
 
-[Implementación de metadatos estándar en Roku ](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
+   [Implementación de metadatos estándar en Roku ](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
 
       >[!NOTE]
       >No es obligatorio adjuntar el objeto de metadatos de vídeo estándar al objeto de contenidos.
