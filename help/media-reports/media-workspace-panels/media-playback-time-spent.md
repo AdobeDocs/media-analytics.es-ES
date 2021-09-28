@@ -4,16 +4,16 @@ description: '"Aprenda a utilizar el panel Tiempo de reproducción de contenido 
 exl-id: null
 feature: Media Analytics, Workspace Basics
 role: User, Admin, Data Engineer
-source-git-commit: 55d77d1576236fbc1165a41d7a0775b9ee246d8a
+source-git-commit: 60e222e85c593e331d13e804f520a35a682e66a3
 workflow-type: tm+mt
-source-wordcount: '217'
+source-wordcount: '218'
 ht-degree: 8%
 
 ---
 
 # Tiempo invertido en la reproducción de contenido {#media-playback-time-spent}
 
-El análisis del tiempo invertido en la reproducción le permite comprender dónde se produjo la concurrencia máxima o dónde se produjeron los descensos. El tiempo invertido en la reproducción de contenido proporciona una valiosa perspectiva de la calidad del contenido, la participación del visualizador y cómo el contenido está afectando a las horas extras del visualizador. La función de tiempo invertido en la reproducción de contenido ayuda a solucionar problemas o a planificar el volumen o la escala.
+El análisis del tiempo invertido en la reproducción le permite comprender dónde se produjo la concurrencia máxima o dónde se produjeron los descensos. El tiempo invertido en la reproducción de contenido proporciona una valiosa perspectiva de la calidad del contenido, la participación del visualizador y cómo el contenido afecta a los visitantes a lo largo del tiempo. La función de tiempo invertido en la reproducción de contenido ayuda a solucionar problemas o a planificar el volumen o la escala.
 
 ## Tiempo invertido en la reproducción de contenido en el panel de Analysis Workspace
 
