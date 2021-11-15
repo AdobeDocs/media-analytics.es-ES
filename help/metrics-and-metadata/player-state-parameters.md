@@ -1,18 +1,18 @@
 ---
-title: Parámetros de estado del reproductor
-description: '"Obtenga información sobre los parámetros de seguimiento del estado del reproductor para la pantalla completa, el subtítulo, el silencio y la imagen en las propiedades de la imagen".'
+title: 'Parámetros de estado del reproductor '
+description: “Obtenga información acerca de los parámetros de seguimiento del estado del reproductor para la pantalla completa, los subtítulos, el silencio y la imagen en las propiedades de la imagen“.
 uuid: 2a6b9247-a694-46e9-98e1-424c08c27ec2
 exl-id: cd51ed3a-fe37-41e9-8243-dfd9deb514c1
 feature: Media Analytics, Variables
 role: User, Admin, Data Engineer
 source-git-commit: c53c97ce06a5a6e2e7d7b20ed06b097a29b71fcb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2237'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
-# Parámetros de estado del reproductor{#player-state-parameters}
+# Parámetros de estado del reproductor {#player-state-parameters}
 
 En este tema se presenta una lista de los datos del estado del reproductor que Adobe recopila a través de variables de solución.
 
