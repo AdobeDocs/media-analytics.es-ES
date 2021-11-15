@@ -1,24 +1,24 @@
 ---
-title: Obtención de datos del informe JSON de tiempo de reproducción de contenido con las API de Analytics 2.0
-description: Obtenga información sobre cómo obtener el tiempo de reproducción de contenido invertido en datos de informes mediante las API de Analytics 2.0. Vea una solicitud y una respuesta de ejemplo.
+title: 'Obtención de datos del informe JSON de tiempo de reproducción de medios con las API de Analytics 2.0 '
+description: Obtenga información acerca de cómo conseguir los datos del informe de tiempo invertido en la reproducción de medios mediante las API de Analytics 2.0. Vea una solicitud y una respuesta de ejemplo.
 uuid: null
 exl-id: null
 feature: Media Analytics, Reports & Analytics Basics
 role: User, Admin, Data Engineer
 source-git-commit: 3118a5eeef56c7768d88df7c658468c356921aac
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '205'
-ht-degree: 66%
+ht-degree: 100%
 
 ---
 
 
-# Obtención de datos del informe JSON de tiempo de reproducción de contenido con las API de Analytics 2.0{#get-media-playback-time-spent-json-report-data}
+# Obtención de datos del informe JSON de tiempo de reproducción de medios con las API de Analytics 2.0 {#get-media-playback-time-spent-json-report-data}
 
-Puede obtener datos de informes de tiempo invertido en la reproducción de contenido mediante las [_*API de Analytics 2.0*_](https://www.adobe.io/apis/experiencecloud/analytics/docs.html).
+Puede obtener datos de informes de tiempo invertido en la reproducción de medios mediante la [_*API de Analytics 2.0*_](https://www.adobe.io/apis/experiencecloud/analytics/docs.html).
 
 1. Filtre los datos con cualquier segmento que se haya creado en la interfaz de usuario. Para filtrar por un ID de contenido específico, cree un nuevo segmento.
-1. Establezca el `elements` -> `id` en el cuerpo de la solicitud en `metrics/playback_time_spent_seconds` o `metrics/playback_time_spent_minutes` en función de si desea el resultado en segundos o minutos.
+1. Configure `elements`->`id` en el cuerpo de la solicitud a `metrics/playback_time_spent_seconds` o `metrics/playback_time_spent_minutes` dependiendo de si desea el resultado en segundos o minutos.
 1. Solicite una cantidad suficiente de datos.
 
    * El intervalo de datos que especifique en el informe recopila todos los datos del visor simultáneo _al finalizar la sesión de vídeo._
