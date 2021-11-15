@@ -5,15 +5,15 @@ exl-id: null
 feature: Media Analytics, Workspace Basics
 role: User, Admin, Data Engineer
 source-git-commit: 60e222e85c593e331d13e804f520a35a682e66a3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '218'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
 # Tiempo invertido en la reproducción de contenido {#media-playback-time-spent}
 
-El análisis del tiempo invertido en la reproducción le permite comprender dónde se produjo el pico de concurrencia o dónde se produjeron los descensos. El tiempo invertido en la reproducción de contenido proporciona una valiosa perspectiva de la calidad del contenido, la participación del visualizador y cómo el contenido afecta a los visitantes a lo largo del tiempo. La función de tiempo invertido en la reproducción de contenido ayuda a solucionar problemas o a planificar el volumen o la escala.
+El análisis del tiempo invertido en la reproducción le permite comprender dónde se produjo el pico de concurrencia o dónde se produjeron los descensos. El tiempo invertido en la reproducción de medios proporciona una valiosa perspectiva de la calidad del contenido, la participación del espectador y el impacto del contenido en el tiempo. La función de tiempo invertido en la reproducción de contenido ayuda a solucionar problemas o a planificar el volumen o la escala.
 
 ## Panel Tiempo invertido en la reproducción de contenido en Analysis Workspace
 
