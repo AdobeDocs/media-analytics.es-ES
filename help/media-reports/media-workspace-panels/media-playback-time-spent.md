@@ -4,10 +4,10 @@ description: Aprenda a utilizar el panel Tiempo invertido en la reproducción de
 exl-id: null
 feature: Media Analytics, Workspace Basics
 role: User, Admin, Data Engineer
-source-git-commit: 60e222e85c593e331d13e804f520a35a682e66a3
-workflow-type: ht
-source-wordcount: '218'
-ht-degree: 100%
+source-git-commit: d5769f3eed3f0c3770e427420025ff624e775f9f
+workflow-type: tm+mt
+source-wordcount: '219'
+ht-degree: 95%
 
 ---
 
@@ -20,7 +20,7 @@ El análisis del tiempo invertido en la reproducción le permite comprender dón
 En Analysis Workspace, Tiempo invertido en la reproducción de contenido es la cantidad de tiempo que se emplea para ver flujos de medios en un momento específico, e incluye pausas, el búfer y el tiempo para el inicio. En el panel Tiempo invertido en la reproducción de contenido, puede dividir la duración de la reproducción en distintos intervalos de tiempo, como 5 minutos, 15 minutos, 30 minutos o 1 hora.
 
 
-El tiempo invertido en la reproducción del contenido ayuda a analizar la reproducción a lo largo del tiempo, con detalles sobre los picos de concurrencia y la capacidad de realizar desgloses y comparaciones. Para acceder al panel Tiempo invertido en la reproducción de contenido, vaya a un grupo de informes con los componentes de Media Analytics habilitados. A continuación, haga clic en el icono del panel situado en el extremo izquierdo y arrastre el panel a su proyecto de Analysis Workspace. [Más información...](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/media-playback-time-spent.html?lang=es)
+El tiempo invertido en la reproducción del contenido ayuda a analizar la reproducción a lo largo del tiempo, con detalles sobre los picos de concurrencia y la capacidad de realizar desgloses y comparaciones. Para acceder al panel Tiempo invertido en la reproducción de contenido, vaya a un grupo de informes con los componentes de Media Analytics habilitados. A continuación, haga clic en el icono del panel situado en el extremo izquierdo y arrastre el panel a su proyecto de Analysis Workspace. [Más información...](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/media-playback-timespent/media-playback-time-spent.html)
 
 <!-- ## DOES THIS APPLY Get Concurrent Viewers via Analytics Reporting API
 
