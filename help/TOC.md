@@ -5,10 +5,10 @@ user-guide-title: Adobe Analytics para medios de transmisión
 breadcrumb-title: Guía de Media Analytics
 user-guide-description: Implemente Adobe Analytics para medios de transmisión. Incluye el SDK de medios y la API de recopilación de medios.
 sub-product: media analytics
-source-git-commit: 407f17a5b1134362c6be7c6bfae909e9e66077be
-workflow-type: ht
-source-wordcount: '840'
-ht-degree: 100%
+source-git-commit: 819f4a7035e5d9704d17abce6a7cd4c607b7ce39
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -145,9 +145,6 @@ ht-degree: 100%
       + [Descripciones del parámetro de latido](sdk-implement/validation/heartbeat-params.md)
       + Depuración {#debugging}
          + [Depuración de SDK](sdk-implement/validation/debugging/sdk-debugging.md)
-         + [Configurar Adobe Debug](sdk-implement/validation/debugging/config-adobe-debug.md)
-         + [Crear un nuevo informe de Debug](sdk-implement/validation/debugging/create-new-debug-report.md)
-         + [Paneles e informes de Debug](sdk-implement/validation/debugging/debug-dash-repts.md)
    + Analytics en aplicaciones OTT {#analytics-with-ott}
       + [Seguimiento de estados de aplicaciones](sdk-implement/analytics-with-ott/track-app-states.md)
       + [Seguimiento de acciones de aplicaciones](sdk-implement/analytics-with-ott/track-app-actions.md)
