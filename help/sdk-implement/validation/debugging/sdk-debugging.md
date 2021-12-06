@@ -1,18 +1,18 @@
 ---
 title: Depuración de SDK
-description: Obtenga información sobre el seguimiento/registro disponible en Media SDK.
+description: Obtenga información acerca del seguimiento/registro disponible en Media SDK.
 uuid: a5972d87-c593-4b4f-a56f-dca6e25268e1
 exl-id: c2de6454-8538-4d07-a099-e278b153d894
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: 819f4a7035e5d9704d17abce6a7cd4c607b7ce39
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '217'
+ht-degree: 100%
 
 ---
 
-# Depuración de SDK{#sdk-debugging}
+# Depuración de SDK {#sdk-debugging}
 
 Puede habilitar y deshabilitar el registro. Media SDK proporciona un amplio mecanismo de seguimiento/registro en toda la pila de seguimiento de contenido. Puede habilitar o deshabilitar este registro estableciendo el indicador `debugLogging` en el objeto de configuración.
 
