@@ -1,12 +1,10 @@
 ---
 title: 'Obtención de datos del informe JSON de tiempo de reproducción de medios con las API de Analytics 2.0 '
 description: Obtenga información acerca de cómo conseguir los datos del informe de tiempo invertido en la reproducción de medios mediante las API de Analytics 2.0. Vea una solicitud y una respuesta de ejemplo.
-uuid: null
-exl-id: null
 feature: Media Analytics, Reports & Analytics Basics
 role: User, Admin, Data Engineer
-source-git-commit: 3118a5eeef56c7768d88df7c658468c356921aac
-workflow-type: ht
+source-git-commit: 30f71465feac8bbca917630597ece4876b955ca0
+workflow-type: tm+mt
 source-wordcount: '205'
 ht-degree: 100%
 
