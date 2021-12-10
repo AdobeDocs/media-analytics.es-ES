@@ -1,12 +1,13 @@
 ---
 title: Tiempo invertido en la reproducción de contenido
-description: Aprenda a utilizar el panel Tiempo invertido en la reproducción de contenido para analizar el tiempo empleado en la reproducción y comprender los picos de concurrencia y dónde se producen los descensos.
+description: Aprenda a utilizar el panel Tiempo invertido en la reproducción de contenido para analizar el tiempo invertido en la reproducción y comprender la concurrencia máxima y dónde se produjeron los descensos.
 feature: Media Analytics, Workspace Basics
 role: User, Admin, Data Engineer
-source-git-commit: 30f71465feac8bbca917630597ece4876b955ca0
+exl-id: 958b4968-0f52-464c-81e0-5ab9b84aaa9c
+source-git-commit: 65e3615dc4af1eeaf4b58c9db6896d2ff90f56f6
 workflow-type: tm+mt
 source-wordcount: '219'
-ht-degree: 95%
+ht-degree: 89%
 
 ---
 
@@ -19,7 +20,7 @@ El análisis del tiempo invertido en la reproducción le permite comprender dón
 En Analysis Workspace, Tiempo invertido en la reproducción de contenido es la cantidad de tiempo que se emplea para ver flujos de medios en un momento específico, e incluye pausas, el búfer y el tiempo para el inicio. En el panel Tiempo invertido en la reproducción de contenido, puede dividir la duración de la reproducción en distintos intervalos de tiempo, como 5 minutos, 15 minutos, 30 minutos o 1 hora.
 
 
-El tiempo invertido en la reproducción del contenido ayuda a analizar la reproducción a lo largo del tiempo, con detalles sobre los picos de concurrencia y la capacidad de realizar desgloses y comparaciones. Para acceder al panel Tiempo invertido en la reproducción de contenido, vaya a un grupo de informes con los componentes de Media Analytics habilitados. A continuación, haga clic en el icono del panel situado en el extremo izquierdo y arrastre el panel a su proyecto de Analysis Workspace. [Más información...](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/media-playback-timespent/media-playback-time-spent.html)
+El tiempo invertido en la reproducción del contenido ayuda a analizar la reproducción a lo largo del tiempo, con detalles sobre los picos de concurrencia y la capacidad de realizar desgloses y comparaciones. Para acceder al panel Tiempo invertido en la reproducción de contenido, vaya a un grupo de informes con los componentes de Media Analytics habilitados. A continuación, haga clic en el icono del panel situado en el extremo izquierdo y arrastre el panel a su proyecto de Analysis Workspace. [Más información...](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/media-playback-timespent/media-playback-time-spent.html?lang=es)
 
 <!-- ## DOES THIS APPLY Get Concurrent Viewers via Analytics Reporting API
 
