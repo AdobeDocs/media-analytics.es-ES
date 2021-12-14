@@ -4,16 +4,20 @@ description: Este tema incluye preguntas frecuentes sobre el fin de la compatibi
 exl-id: 9601ec17-8421-49d0-9d81-1cfa5e8f37cf
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: f0abffb48a6c0babb37f16aff2e3302bf5dd0cb4
 workflow-type: tm+mt
-source-wordcount: '673'
-ht-degree: 78%
+source-wordcount: '723'
+ht-degree: 80%
 
 ---
 
 # Preguntas frecuentes sobre el fin de la asistencia del SDK de Media Analytics
 
-Con la finalización de la compatibilidad con los SDK para móviles de la versión 4 el 31 de agosto de 2021, Adobe también dejará de ofrecer compatibilidad con los SDK de Media Analytics para iOS y Android. A partir del 31 de agosto de 2021, Adobe no proporcionará correcciones, actualizaciones relacionadas con el sistema operativo ni compatibilidad con el SDK de Media Analytics.  Durante el proceso de migración a estos nuevos SDK de Experience Platform, tenga en cuenta que las [extensiones de Media Analytics](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics) deben implementarse para habilitar Adobe Analytics para medios de transmisión.
+Con la finalización de la compatibilidad con los SDK para móviles de la versión 4 el 31 de agosto de 2021, Adobe también dejará de ofrecer compatibilidad con los SDK de Media Analytics para iOS y Android. A partir del 31 de agosto de 2021, Adobe no proporcionará correcciones, actualizaciones relacionadas con el sistema operativo ni compatibilidad con el SDK de Media Analytics.  Durante el proceso de migración a estos nuevos SDK de Experience Platform, tenga en cuenta que la variable [Extensiones de Media Analytics](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics) debe implementarse para habilitar Adobe Analytics para medios de transmisión.
+
+>[!NOTE]
+>Adobe Experience Platform Launch se ha convertido en un conjunto de tecnologías de recopilación de datos en Experience Platform. Como resultado, se han implementado varios cambios terminológicos en la documentación del producto. Consulte el siguiente [documento](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html?lang=es) para obtener una referencia consolidada de los cambios terminológicos.
+
 
 ## Las cinco cuestiones principales que saber
 

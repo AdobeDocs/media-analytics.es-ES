@@ -1,13 +1,13 @@
 ---
-title: 'Adobe Streaming Media en Adobe Analytics '
+title: Adobe Streaming Media en Adobe Analytics
 description: “Profundice en la medición de medios de transmisión más avanzada para contenido, audio y anuncios. Obenga información acerca de Adobe Analytics for Streaming Media”.
 uuid: b3cbe240-b94d-42b8-a99c-0280334aaa14
 exl-id: 826530f7-2c39-41ef-b3b4-d3f44b46858f
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
-workflow-type: ht
-source-wordcount: '880'
+source-git-commit: f0abffb48a6c0babb37f16aff2e3302bf5dd0cb4
+workflow-type: tm+mt
+source-wordcount: '930'
 ht-degree: 100%
 
 ---
@@ -37,6 +37,10 @@ Las ventajas de Adobe Analytics para Streaming Media incluyen monitorización en
 ## Medición de Heartbeat {#heartbeat}
 
 Adobe Analytics utiliza «latidos» para recopilar métricas de vídeo. Durante la reproducción de vídeo, los latidos se envían al servidor de seguimiento de Heartbeat para medir el tiempo de reproducción. Las llamadas de Heartbeat se envían cada diez segundos. Los latidos generan métricas de participación en vídeo granulares e informes de visitas en el orden previsto de vídeo más precisos. Adobe Analytics para Streaming Media mide los latidos mediante Adobe Launch con la extensión Media Analytics, Media SDK y la API de Media Collection. Los componentes `AppMeasurement` y `VisitorID` se utilizan para recibir datos de vídeo.
+
+>[!NOTE]
+>Adobe Experience Platform Launch se ha convertido en un conjunto de tecnologías de recopilación de datos en Experience Platform. Como resultado, se han implementado varios cambios terminológicos en la documentación del producto. Consulte el siguiente [documento](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html?lang=es) para obtener una referencia consolidada de los cambios terminológicos.
+
 
 El uso de latidos de Adobe Analytics para Streaming Media ofrece las siguientes ventajas:
 

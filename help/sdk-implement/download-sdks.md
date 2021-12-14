@@ -5,18 +5,24 @@ uuid: a619fbb8-693e-4583-8dad-0ff875e715f8
 exl-id: d211fa2e-d5b0-4e9f-bdb7-eda838194f3d
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: ceef739641ae07ea05314fb2bc23028de6ee5efb
+source-git-commit: f0abffb48a6c0babb37f16aff2e3302bf5dd0cb4
 workflow-type: tm+mt
-source-wordcount: '520'
-ht-degree: 95%
+source-wordcount: '602'
+ht-degree: 90%
 
 ---
 
 # Descarga de SDK{#download-sdks}
 
+La información de esta página incluye vínculos para descargar los Media SDK 3.x y 2.x actuales. También se incluyen vínculos para los Media SDK heredados de 1.x y la extensión Media Analytics Launch.
+
 >[!IMPORTANT]
 >
 >Con la finalización de la compatibilidad con los SDK para móviles de la versión 4 el 31 de agosto de 2021, Adobe también dejará de ofrecer compatibilidad con los SDK de Media Analytics para iOS y Android.  Para obtener más información, consulte [Preguntas frecuentes sobre el fin de la asistencia del SDK de Media Analytics](/help/sdk-implement/end-of-support-faqs.md).
+
+>[!NOTE]
+>Adobe Experience Platform Launch se ha convertido en un conjunto de tecnologías de recopilación de datos en Experience Platform. Como resultado, se han implementado varios cambios terminológicos en la documentación del producto. Consulte el siguiente [documento](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html?lang=es) para obtener una referencia consolidada de los cambios terminológicos.
+
 
 
 ## Descarga de Media SDK 3.x {#download-3x-sdks}

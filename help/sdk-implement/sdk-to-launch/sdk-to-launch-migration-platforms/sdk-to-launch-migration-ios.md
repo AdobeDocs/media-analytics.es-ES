@@ -4,14 +4,17 @@ description: Obtenga información acerca de cómo migrar del SDK de medios a Lau
 exl-id: f70b8e1b-cb9f-4230-86b2-171bdaed4615
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: 7afd4d6ff7fd2dd2c4edb7ad2b5d6462eb7eba2f
-workflow-type: ht
-source-wordcount: '360'
+source-git-commit: f0abffb48a6c0babb37f16aff2e3302bf5dd0cb4
+workflow-type: tm+mt
+source-wordcount: '412'
 ht-degree: 100%
 
 ---
 
 # Migración del SDK de medios independiente a Adobe Launch: iOS
+
+>[!NOTE]
+>Adobe Experience Platform Launch se ha convertido en un conjunto de tecnologías de recopilación de datos en Experience Platform. Como resultado, se han implementado varios cambios terminológicos en la documentación del producto. Consulte el siguiente [documento](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html?lang=es) para obtener una referencia consolidada de los cambios terminológicos.
 
 ## Configuración
 

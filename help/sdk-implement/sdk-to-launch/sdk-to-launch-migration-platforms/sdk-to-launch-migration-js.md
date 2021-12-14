@@ -4,14 +4,17 @@ description: Obtenga información sobre cómo migrar del SDK de medios a Launch 
 exl-id: 19b506b2-3070-4a5e-9732-a5cd0867afde
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: ceef739641ae07ea05314fb2bc23028de6ee5efb
+source-git-commit: f0abffb48a6c0babb37f16aff2e3302bf5dd0cb4
 workflow-type: tm+mt
-source-wordcount: '403'
-ht-degree: 88%
+source-wordcount: '453'
+ht-degree: 90%
 
 ---
 
 # Migración del SDK de medios independiente a Adobe Launch: Web (JS)
+
+>[!NOTE]
+>Adobe Experience Platform Launch se ha convertido en un conjunto de tecnologías de recopilación de datos en Experience Platform. Como resultado, se han implementado varios cambios terminológicos en la documentación del producto. Consulte el siguiente [documento](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html?lang=es) para obtener una referencia consolidada de los cambios terminológicos.
 
 ## Diferencias de características
 
@@ -124,5 +127,5 @@ Pase un objeto delegado a `get-instance` que exponga las funciones `getQoSObject
 
 ### Launch
 
-* [Información general sobre Launch](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)
+* [Información general sobre Launch](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=es)
 * [Extensión de Media Analytics](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics/overview.html)
