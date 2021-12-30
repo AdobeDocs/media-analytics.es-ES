@@ -1,13 +1,13 @@
 ---
 title: Tiempo invertido en la reproducción de contenido
-description: Aprenda a utilizar el panel Tiempo invertido en la reproducción de contenido para analizar el tiempo invertido en la reproducción y comprender la concurrencia máxima y dónde se produjeron los descensos.
+description: Aprenda a utilizar el panel Tiempo invertido en la reproducción de contenido para analizar el tiempo empleado en la reproducción y comprender los picos de concurrencia y dónde se producen los descensos.
 feature: Media Analytics, Workspace Basics
 role: User, Admin, Data Engineer
 exl-id: 958b4968-0f52-464c-81e0-5ab9b84aaa9c
 source-git-commit: 65e3615dc4af1eeaf4b58c9db6896d2ff90f56f6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '219'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
