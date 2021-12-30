@@ -1,13 +1,13 @@
 ---
-title: '"Migración del SDK de medios independiente a Adobe Launch: web (JS)"'
-description: Obtenga información sobre cómo migrar del SDK de medios a Launch para JS.
+title: '"Migración del SDK de medios independiente a Adobe Launch: Web (JS)"'
+description: Obtenga información acerca de cómo migrar del SDK de medios a Launch para JS.
 exl-id: 19b506b2-3070-4a5e-9732-a5cd0867afde
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: f0abffb48a6c0babb37f16aff2e3302bf5dd0cb4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '453'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -54,7 +54,7 @@ y haga clic en [!UICONTROL Instalar].
 
    ![](assets/launch_config_js.png)
 
-[Guía del usuario de Launch: Instalar y configurar la extensión de medios](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics/overview.html#install-and-configure-the-ma-extension)
+[Guía del usuario de Launch: Instalar y configurar la extensión de medios](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics/overview.html?lang=es#install-and-configure-the-ma-extension)
 
 ## Diferencias en la creación del rastreador
 
@@ -128,4 +128,4 @@ Pase un objeto delegado a `get-instance` que exponga las funciones `getQoSObject
 ### Launch
 
 * [Información general sobre Launch](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=es)
-* [Extensión de Media Analytics](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics/overview.html)
+* [Extensión de Media Analytics](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics/overview.html?lang=es)
