@@ -1,18 +1,18 @@
 ---
-title: Cómo configurar el Media SDK para Roku
-description: Siga estos pasos para configurar la aplicación de Media SDK en Roku.
+title: Cómo configurar Media SDK para Roku
+description: Siga estos pasos para configurar la aplicación Media SDK en Roku.
 uuid: 904dfda0-4782-41da-b4ab-212e81156633
 exl-id: b8de88d0-3a93-4776-b372-736bf979ee26
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: 07192eca8bad89d005d88fa084ec891df346f96a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '716'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
-# Configuración de Roku{#set-up-roku}
+# Configuración de Roku {#set-up-roku}
 
 ## Requisitos previos
 
@@ -133,7 +133,7 @@ El SDK 2.x de Roku para las soluciones de Experience Cloud le permite medir apli
    | `visitorMarketingCloudID` | Recupera el ID del visitante de Experience Cloud del servicio de ID del visitante.  <br/><br/>`ADBMobile().visitorMarketingCloudID()` |
    | `visitorSyncIdentifiers` | Con el ID de Visitante de Experience Cloud, puede establecer ID de cliente adicionales que se pueden asociar con cada visitante. La API de visitante acepta varios ID de cliente para el mismo visitante y un identificador de tipo de cliente para separar el ámbito de los distintos ID de cliente. Este método corresponde a `setCustomerIDs`. Por ejemplo: <br/><br/>`identifiers={}` <br/>`identifiers["idType"]="idValue"` <br/>`ADBMobile().visitorSyncIdentifiers(identifiers)` |
    | `setAdvertisingIdentifier` | Se utiliza para establecer el ID de Roku para publicidad (RIDA) en el SDK. Por ejemplo: <br/><br/> `ADBMobile().setAdvertisingIdentifier(`<br/>  `"<sample_roku_identifier_for_advertising>")` <br/><br/><br/>Obtenga el ID de Roku para publicidad (RIDA) mediante la API de SDK de Roku [getRIDA()](https://developer.roku.com/docs/references/brightscript/interfaces/ifdeviceinfo.md#getrida-as-dynamic). |
-   | `getAllIdentifiers` | Devuelve una lista de todos los identificadores almacenados por el SDK, incluidos los identificadores de Analytics, Visitante, Audience Manager y personalizado. <br/><br/> `identifiers = ADBMobile().getAllIdentifiers()` |
+   | `getAllIdentifiers` | Devuelve una lista de todos los identificadores almacenados por el SDK, incluidos los identificadores de Analytics, Visitante, Audience Manager y personalizados. <br/><br/> `identifiers = ADBMobile().getAllIdentifiers()` |
    <!--
     Roku Api Reference:
     * [Integrating the Roku Advertising Framework](https://sdkdocs.roku.com/display/sdkdoc/Integrating+the+Roku+Advertising+Framework)  
@@ -151,10 +151,10 @@ El SDK 2.x de Roku para las soluciones de Experience Cloud le permite medir apli
 
    **PrivacyStatus**
 
-   |  Constante   | Descripción |
+   | Constante   | Descripción |
    | --- | --- |
-   | `PRIVACY_STATUS_OPT_IN` | Constante que se pasará al llamar a setPrivacyStatus para activar. <br/><br/>`optInString = ADBMobile().PRIVACY_STATUS_OPT_IN` |
-   | `PRIVACY_STATUS_OPT_OUT` | Constante que se pasa al llamar a setPrivacyStatus para desactivar. <br/><br/>`optOutString = ADBMobile().PRIVACY_STATUS_OPT_OUT` |
+   | `PRIVACY_STATUS_OPT_IN` | Constante que se pasa al llamar a setPrivacyStatus para la adhesión. <br/><br/>`optInString = ADBMobile().PRIVACY_STATUS_OPT_IN` |
+   | `PRIVACY_STATUS_OPT_OUT` | Constante que se pasa al llamar a setPrivacyStatus para la exclusión. <br/><br/>`optOutString = ADBMobile().PRIVACY_STATUS_OPT_OUT` |
 
    |  Método   | Descripción |
    | --- | --- |
@@ -163,7 +163,7 @@ El SDK 2.x de Roku para las soluciones de Experience Cloud le permite medir apli
 
    >[!IMPORTANT]
    >
-   >Asegúrese de invocar a `processMessages` y `processMediaMessages` en el bucle de evento principal cada 250 ms para garantizar que el SDK envíe los pings correctamente.
+   >Asegúrese de llamar a la función `processMessages` y `processMediaMessages` en el bucle de evento principal cada 250 m para garantizar que el SDK envíe los pings correctamente.
 
    |  Método   | Descripción |
    | --- | --- |
