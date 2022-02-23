@@ -1,12 +1,12 @@
 ---
 title: Audiencia media por minuto de medio
-description: Aprenda a utilizar el panel Audiencia media por minuto de medio a _____.
+description: Aprenda a utilizar el panel Audiencia media por minuto de medio para analizar la audiencia media por minuto de un contenido específico o durante un período de tiempo personalizado.
 feature: Media Analytics, Workspace Basics
 role: User, Admin, Data Engineer
 exl-id: af4d430c-1349-4606-b587-da5d40e0fe4b
-source-git-commit: 45a566dd66b7ace05e3b63fb63df9266a9912b91
+source-git-commit: 806d3e68eb32adef2af8629474fa5c69a280e433
 workflow-type: tm+mt
-source-wordcount: '248'
+source-wordcount: '264'
 ht-degree: 7%
 
 ---
