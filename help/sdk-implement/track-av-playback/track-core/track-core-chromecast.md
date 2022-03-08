@@ -5,10 +5,10 @@ uuid: a9fc59d8-a2f4-4889-bdec-55c42a835d06
 exl-id: 9812d06d-9efd-460c-a626-6a15f61a4c35
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
+source-git-commit: 165c7f01a2d2c32df518c89a5c49637107d41086
 workflow-type: tm+mt
-source-wordcount: '664'
-ht-degree: 96%
+source-wordcount: '750'
+ht-degree: 85%
 
 ---
 
@@ -87,6 +87,14 @@ Esta documentación abarca el seguimiento en la versión 2.x del SDK.
 
    ```
    ADBMobile.media.trackPlay();
+   ```
+
+1. **Actualizar valor del cabezal de reproducción**
+
+   Actualizar `mediaUpdatePlayhead`&#39; posición varias veces cuando cambia el cabezal de reproducción. <br /> En el caso de vídeo bajo demanda (VOD), el valor se especifica segundos después del comienzo del elemento multimedia. <br /> Para la transmisión en directo, si el reproductor no proporciona información sobre la duración del contenido, el valor se puede especificar como el número de segundos desde la medianoche UTC de ese día. <br />  Nota: Cuando se utilizan marcadores de progreso, la duración del contenido es obligatoria y el cabezal de reproducción debe actualizarse como número de segundos desde el principio del elemento de medios, empezando por 0.
+
+   ```
+   ADBMobile().mediaUpdatePlayhead(position)
    ```
 
 1. **Realizar un seguimiento de la finalización de la reproducción**

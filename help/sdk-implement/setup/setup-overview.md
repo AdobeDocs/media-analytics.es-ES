@@ -5,10 +5,10 @@ uuid: 06fefedb-b0c8-4f7d-90c8-e374cdde1695
 exl-id: a175332e-0bdc-44aa-82cb-b3f879e7abfc
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
+source-git-commit: 165c7f01a2d2c32df518c89a5c49637107d41086
 workflow-type: tm+mt
-source-wordcount: '742'
-ht-degree: 94%
+source-wordcount: '781'
+ht-degree: 89%
 
 ---
 
@@ -60,7 +60,7 @@ Complete los pasos siguientes de la implementación:
    |  Nombre del método  |  Descripción  | Requerido |
    | --- | --- | :---: |
    | `getQoSObject()` | Devuelve la instancia de `MediaObject` que contiene la información actual de QoS. Se llamará varias veces a este método durante una sesión de reproducción. La implementación del reproductor debe devolver siempre los datos de QoS más recientes que haya disponibles. | Sí |
-   | `getCurrentPlaybackTime()` | Devuelve la posición actual del cabezal de reproducción. Para el seguimiento de vídeos VOD, el valor se especifica segundos después del comienzo del contenido multimedia. Para el seguimiento LINEAR/LIVE, el valor se especifica como el número de segundos desde la medianoche UTC en ese día. | Sí |
+   | `getCurrentPlaybackTime()` | Devuelve la posición actual del cabezal de reproducción. <br /> Para el seguimiento de vídeos VOD, el valor se especifica segundos después del comienzo del contenido multimedia. <br /> Para la transmisión en directo, si el reproductor no proporciona información sobre la duración del contenido, el valor se puede especificar como el número de segundos desde la medianoche UTC de ese día. <br /> Nota: Cuando se utilizan marcadores de progreso, la duración del contenido es obligatoria y el cabezal de reproducción debe actualizarse como número de segundos desde el principio del elemento de medios, empezando por 0. | Sí |
 
    >[!TIP]
    >

@@ -5,10 +5,10 @@ uuid: e92e99f4-c395-48aa-8a30-cbdd2f5fc07c
 exl-id: f6a00ffd-da6a-4d62-92df-15d119cfc426
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: 165c7f01a2d2c32df518c89a5c49637107d41086
 workflow-type: tm+mt
-source-wordcount: '549'
-ht-degree: 75%
+source-wordcount: '577'
+ht-degree: 71%
 
 ---
 
@@ -63,13 +63,13 @@ Para los flujos en directo, debe establecer el valor del cursor de reproducción
 
 ### Al comienzo
 
-En el caso de los contenidos en directo, cuando un usuario comienza a reproducir el flujo, debe establecer `l:event:playhead` en el número de segundos transcurridos desde la medianoche del UTC ese día. Esto es lo contrario a VOD, donde establecería el cursor de reproducción en “0”.
+En el caso de los contenidos en directo, cuando un usuario comienza a reproducir el flujo, debe establecer `l:event:playhead` a la cantidad de segundos desde la medianoche UTC en ese día. Esto es lo contrario a VOD, donde establecería el cursor de reproducción en “0”. Nota: Cuando se utilizan marcadores de progreso, la duración del contenido es obligatoria y el cabezal de reproducción debe actualizarse como número de segundos desde el principio del elemento de medios, empezando por 0.
 
-Por ejemplo, supongamos que un evento de transmisión en vivo comienza a medianoche y se ejecuta durante 24 horas (`a.media.length=86400`; `l:asset:length=86400`). Entonces, digamos que un usuario empieza a reproducir ese flujo en vivo a las 12:00 pm. En este escenario, debe establecerse `l:event:playhead` en 43200 (12 horas desde la medianoche UTC en ese día en segundos).
+Por ejemplo, supongamos que un evento de transmisión en vivo comienza a medianoche y se ejecuta durante 24 horas (`a.media.length=86400`; `l:asset:length=86400`). Entonces, digamos que un usuario empieza a reproducir ese flujo en vivo a las 12:00 pm. En esta situación, debe configurar `l:event:playhead` a 43200 (12 horas desde la medianoche UTC ese día en segundos).
 
 ### Al pausar
 
-La misma lógica de “cabezal de lectura en directo” aplicada al inicio de la reproducción debe aplicarse cuando un usuario pone en pausa la reproducción. Cuando el usuario vuelve a reproducir el flujo en directo, debe establecer el valor `l:event:playhead` según el nuevo número de segundos desde la medianoche UTC, _no_ en el punto en el que el usuario detuvo el flujo en directo.
+La misma lógica de “cabezal de lectura en directo” aplicada al inicio de la reproducción debe aplicarse cuando un usuario pone en pausa la reproducción. Cuando el usuario vuelve a reproducir el flujo en directo, debe establecer la variable `l:event:playhead` según el nuevo número de segundos transcurridos desde la medianoche UTC, _not_ hasta el punto en el que el usuario detuvo el flujo en directo.
 
 ## Código de muestra {#sample-code}
 

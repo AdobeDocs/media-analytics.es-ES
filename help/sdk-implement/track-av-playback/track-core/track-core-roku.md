@@ -5,10 +5,10 @@ uuid: a8aa7b3c-2d39-44d7-8ebc-b101d130101f
 exl-id: 5272c0ce-4e3d-48c6-bfa6-94066ccbf9ac
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: d7cb36c2dd6b35da4531ca975c7fc730e387b750
+source-git-commit: 14329fab02e88cbad69ceea4ccd719b90f6555a6
 workflow-type: tm+mt
-source-wordcount: '729'
-ht-degree: 90%
+source-wordcount: '771'
+ht-degree: 85%
 
 ---
 
@@ -103,7 +103,7 @@ Esta documentación abarca el seguimiento en la versión 2.x del SDK.
 
    * **Metadatos estándar**
 
-   [Implementación de metadatos estándar en Roku ](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
+[Implementación de metadatos estándar en Roku ](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
 
       >[!NOTE]
       >No es obligatorio adjuntar el objeto de metadatos de vídeo estándar al objeto de contenidos.
@@ -145,7 +145,8 @@ Esta documentación abarca el seguimiento en la versión 2.x del SDK.
 
 1. **Actualizar valor del cabezal de reproducción**
 
-   Cuando el cabezal de reproducción de contenido cambie, notifique al SDK llamando a la API `mediaUpdatePlayhead` . En el caso de vídeo bajo demanda (VOD), el valor se especifica segundos después del comienzo del elemento multimedia. Para la transmisión en directo, el valor se especifica como el número de segundos desde la medianoche UTC de ese día.
+   Cuando el cabezal de reproducción de contenido cambie, notifique al SDK llamando a `mediaUpdatePlayhead` API. <br /> En el caso de vídeo bajo demanda (VOD), el valor se especifica segundos después del comienzo del elemento multimedia. <br /> Para la transmisión en directo, si el reproductor no proporciona información sobre la duración del contenido, el valor se puede especificar como el número de segundos desde la medianoche UTC de ese día. <br /> Nota: Cuando se utilizan marcadores de progreso, la duración del contenido es obligatoria y el cabezal de reproducción debe actualizarse como número de segundos desde el principio del elemento de medios, empezando por 0.
+
 
    ```
    ADBMobile().mediaUpdatePlayhead(position)
