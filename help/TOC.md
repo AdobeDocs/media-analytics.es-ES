@@ -6,9 +6,9 @@ breadcrumb-title: Guía de Media Analytics
 user-guide-description: Implemente Adobe Analytics para medios de transmisión. Incluye el SDK de medios y la API de recopilación de medios.
 sub-product: media analytics
 source-git-commit: 5465631bf29e746d7d5dc07603f57fd7033935c4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '833'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -211,8 +211,8 @@ ht-degree: 99%
       + [Informe de Media Daypart](media-reports/media-default-reports/media-reports-daypart.md)
       + [Informe de visualizadores simultáneos de medios](media-reports/media-default-reports/media-concurrent-viewers.md)
    + Paneles de Media Workspace {#media-workspace-panels}
-   + [Panel de audiencia media por minuto de medio](media-reports/media-workspace-panels/average-minute-audience.md)
-   + [Panel de visualizadores simultáneos de medios](media-reports/media-workspace-panels/media-concurrent-viewers.md)
+   + [Panel Audiencia media por minuto de medios](media-reports/media-workspace-panels/average-minute-audience.md)
+   + [Panel Visualizadores simultáneos de medios](media-reports/media-workspace-panels/media-concurrent-viewers.md)
    + [Panel Tiempo invertido en la reproducción de contenido](media-reports/media-workspace-panels/media-playback-time-spent.md)
    + [Plantillas de Media Workspace](media-reports/media-workspace-templates.md)
    + [Obtener datos de visualizadores simultáneos mediante API](media-reports/media-default-reports/get-concurrent-json20.md)
