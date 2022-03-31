@@ -6,7 +6,7 @@ breadcrumb-title: Guía de Media Analytics
 user-guide-description: Implemente Adobe Analytics para medios de transmisión. Incluye el SDK de medios y la API de recopilación de medios.
 sub-product: media analytics
 source-git-commit: 534f6f77d69a8fe3574c214cd56d2f77758c1643
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '833'
 ht-degree: 100%
 
@@ -188,7 +188,7 @@ ht-degree: 100%
       + [Control del orden de los eventos](media-collection-api/mc-api-impl/mc-api-ctrl-order.md)
       + [Poner eventos en cola cuando la respuesta de las sesiones es lenta](media-collection-api/mc-api-impl/mc-api-queuing.md)
    + Cronologías de seguimiento de contenidos {#mc-api-timelines}
-      + [Línea de tiempo 1: Ver el contenido hasta el final](media-collection-api/mc-api-timelines/mc-api-timeline-1.md)
+      + [Cronología 1: ver hasta el final del contenido](media-collection-api/mc-api-timelines/mc-api-timeline-1.md)
       + [Línea de tiempo 2: El usuario abandona la sesión](media-collection-api/mc-api-timelines/mc-api-timeline-2.md)
       + [Línea de tiempo 3: Capítulos](media-collection-api/mc-api-timelines/mc-api-timeline-3.md)
 + Guía paso a paso {#media-analytics-cookbook}
