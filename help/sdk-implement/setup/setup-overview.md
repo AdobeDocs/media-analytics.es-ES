@@ -1,18 +1,18 @@
 ---
-title: Implementación de Media SDK explicados
-description: '"Obtenga información sobre cómo configurar Media SDK para el seguimiento de medios en sus aplicaciones móviles, OTT y de navegador (JS)."'
+title: Explicación de la implementación de Media SDK
+description: “Aprenda a configurar Media SDK para el seguimiento de medios en las aplicaciones móviles, OTT y de explorador (JS)”.
 uuid: 06fefedb-b0c8-4f7d-90c8-e374cdde1695
 exl-id: a175332e-0bdc-44aa-82cb-b3f879e7abfc
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: 165c7f01a2d2c32df518c89a5c49637107d41086
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '781'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
-# Información general de configuración{#setup-overview}
+# Información general de configuración {#setup-overview}
 
 Las siguientes instrucciones se aplican a Media SDK 2.x. Si va a implementar la versión 1.x del Media SDK, consulte la [documentación del Media SDK 1.x.](/help/sdk-implement/download-sdks.md) Para integradores de Primetime, consulte _Documentación de Media SDK de Primetime_ a continuación.
 
@@ -60,7 +60,7 @@ Complete los pasos siguientes de la implementación:
    |  Nombre del método  |  Descripción  | Requerido |
    | --- | --- | :---: |
    | `getQoSObject()` | Devuelve la instancia de `MediaObject` que contiene la información actual de QoS. Se llamará varias veces a este método durante una sesión de reproducción. La implementación del reproductor debe devolver siempre los datos de QoS más recientes que haya disponibles. | Sí |
-   | `getCurrentPlaybackTime()` | Devuelve la posición actual del cabezal de reproducción. <br /> Para el seguimiento de vídeos VOD, el valor se especifica segundos después del comienzo del contenido multimedia. <br /> Para la transmisión en directo, si el reproductor no proporciona información sobre la duración del contenido, el valor se puede especificar como el número de segundos desde la medianoche UTC de ese día. <br /> Nota: Cuando se utilizan marcadores de progreso, la duración del contenido es obligatoria y el cabezal de reproducción debe actualizarse como número de segundos desde el principio del elemento de medios, empezando por 0. | Sí |
+   | `getCurrentPlaybackTime()` | Devuelve la posición actual del cabezal de reproducción. <br /> Para el seguimiento de vídeos VOD, el valor se especifica segundos después del comienzo del elemento de medios. <br /> Para el streaming en directo, si el reproductor no proporciona información acerca de la duración del contenido, el valor se puede especificar como el número de segundos desde la medianoche (UTC) de ese día. <br /> Nota: Cuando se utilizan marcadores de progreso, la duración del contenido es obligatoria y el cabezal de reproducción debe actualizarse como número de segundos desde el principio del elemento de medios, empezando por 0. | Sí |
 
    >[!TIP]
    >
@@ -157,6 +157,6 @@ El seguimiento de medios funciona del mismo modo en todas las plataformas, equip
 | Primetime | <ul> <li> Android: [Configurar Media Analytics](https://helpx.adobe.com/es/support/primetime.html#PSDKs-task-Initialize_and_configure_video_analytics_) </li> <li> DHLS: [Configurar Media Analytics](https://helpx.adobe.com/es/support/primetime.html#PSDKs-task-Initialize_and_configure_video_analytics_) </li> <li> iOS: [Configurar Media Analytics](https://helpx.adobe.com/es/support/primetime.html#PSDKs-task-Initialize_and_configure_video_analytics_) </li> </ul> |
 | TVML | [Configurar para TVML ](vhl_tvml.pdf) |
 
-## Documentación del Media SDK de Primetime {#primetime-docs}
+## Documentación de Media SDK de Primetime {#primetime-docs}
 
 * [Guías del usuario de Primetime](https://helpx.adobe.com/es/support/primetime.html)
