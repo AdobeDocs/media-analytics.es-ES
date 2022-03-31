@@ -1,14 +1,14 @@
 ---
-title: Aprenda a rastrear la reproducción principal en Roku
-description: Obtenga información sobre cómo implementar el seguimiento principal mediante Media SDK en Roku.
+title: Cómo rastrear la reproducción principal en Roku
+description: Aprenda a implementar el seguimiento principal mediante Media SDK en Roku.
 uuid: a8aa7b3c-2d39-44d7-8ebc-b101d130101f
 exl-id: 5272c0ce-4e3d-48c6-bfa6-94066ccbf9ac
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: 14329fab02e88cbad69ceea4ccd719b90f6555a6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '771'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -33,7 +33,7 @@ Esta documentación abarca el seguimiento en la versión 2.x del SDK.
    | `streamType` | Tipo de flujo (consulte _Constantes de StreamType_ a continuación) | Sí |
    | `mediaType` | Tipo de contenido (consulte _Constantes de MediaType_ a continuación) | Sí |
 
-   **`StreamType`Constantes de:**
+   Constantes de **`StreamType`:**
 
    | Nombre de la constante | Descripción   |
    |---|---|
@@ -44,7 +44,7 @@ Esta documentación abarca el seguimiento en la versión 2.x del SDK.
    | `MEDIA_STREAM_TYPE_AUDIOBOOK` | Tipo de emisión de audiolibro. |
    | `MEDIA_STREAM_TYPE_PODCAST` | Tipo de emisión de podcast. |
 
-   **`MediaType`Constantes de:**
+   Constantes de **`MediaType`:**
 
    | Nombre de la constante | Descripción |
    |---|---|
@@ -143,9 +143,9 @@ Esta documentación abarca el seguimiento en la versión 2.x del SDK.
    ADBMobile().mediaTrackPlay()
    ```
 
-1. **Actualizar valor del cabezal de reproducción**
+1. **Actualización de valor del cabezal de reproducción**
 
-   Cuando el cabezal de reproducción de contenido cambie, notifique al SDK llamando a `mediaUpdatePlayhead` API. <br /> En el caso de vídeo bajo demanda (VOD), el valor se especifica segundos después del comienzo del elemento multimedia. <br /> Para la transmisión en directo, si el reproductor no proporciona información sobre la duración del contenido, el valor se puede especificar como el número de segundos desde la medianoche UTC de ese día. <br /> Nota: Cuando se utilizan marcadores de progreso, la duración del contenido es obligatoria y el cabezal de reproducción debe actualizarse como número de segundos desde el principio del elemento de medios, empezando por 0.
+   Cuando el cabezal de reproducción de contenido cambie, notifique al SDK llamando a la API `mediaUpdatePlayhead`. <br /> Para el vídeo bajo demanda (VOD), el valor se especifica segundos después del comienzo del elemento de medios. <br /> Para el streaming en directo, si el reproductor no proporciona información acerca de la duración del contenido, el valor se puede especificar como el número de segundos desde la medianoche (UTC) de ese día. <br /> Nota: Cuando se utilizan marcadores de progreso, la duración del contenido es obligatoria y el cabezal de reproducción debe actualizarse como número de segundos desde el principio del elemento de medios, empezando por 0.
 
 
    ```
