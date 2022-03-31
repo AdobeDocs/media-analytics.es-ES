@@ -1,13 +1,13 @@
 ---
 title: Audiencia media por minuto de medios
-description: Aprenda a utilizar el panel Audiencia media por minuto de medio para analizar la audiencia media por minuto de un contenido específico o durante un período de tiempo personalizado.
+description: Aprenda a utilizar el panel Audiencia media por minuto de medios para analizar la audiencia media por minuto de un contenido específico o durante un período de tiempo personalizado.
 feature: Media Analytics, Workspace Basics
 role: User, Admin, Data Engineer
 exl-id: af4d430c-1349-4606-b587-da5d40e0fe4b
 source-git-commit: df950709d5eafd91d9f0958aeb66f09765e9026b
 workflow-type: tm+mt
-source-wordcount: '264'
-ht-degree: 85%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -22,4 +22,4 @@ En Analysis Workspace, la audiencia media por minuto es el tiempo que se pasa vi
 
 El panel Audiencia media por minuto de medios proporciona análisis de audiencia de minuto promedio según el contenido específico seleccionado si la duración está disponible mediante Clasificaciones.
 
-El panel Audiencia media por minuto también proporciona análisis durante un período de tiempo dado que se puede filtrar por contenido específico, independientemente de si la duración está disponible mediante Clasificaciones. Para acceder al panel Audiencia media por minuto de medios, vaya a un grupo de informes con los componentes de Media Analytics habilitados. A continuación, haga clic en el icono del panel situado en el extremo izquierdo y arrastre el panel a su proyecto de Analysis Workspace. [Más información...](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/average-minute-audience-panel.html?lang=en)
+El panel Audiencia media por minuto también proporciona análisis durante un período de tiempo dado que se puede filtrar por contenido específico, independientemente de si la duración está disponible mediante Clasificaciones. Para acceder al panel Audiencia media por minuto de medios, vaya a un grupo de informes con los componentes de Media Analytics habilitados. A continuación, haga clic en el icono del panel situado en el extremo izquierdo y arrastre el panel a su proyecto de Analysis Workspace. [Más información...](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/average-minute-audience-panel.html?lang=es)
