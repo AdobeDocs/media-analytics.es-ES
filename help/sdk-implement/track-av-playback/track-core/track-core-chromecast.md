@@ -1,18 +1,18 @@
 ---
-title: Aprenda a rastrear la reproducción principal en Chromecast
-description: Obtenga información sobre cómo implementar el seguimiento principal mediante Media SDK en Chromecast.
+title: Cómo rastrear la reproducción principal en Chromecast
+description: Aprenda a implementar el seguimiento principal mediante Media SDK en Chromecast.
 uuid: a9fc59d8-a2f4-4889-bdec-55c42a835d06
 exl-id: 9812d06d-9efd-460c-a626-6a15f61a4c35
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: 165c7f01a2d2c32df518c89a5c49637107d41086
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '750'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
-# Seguimiento de reproducción principal en Chromecast{#track-core-playback-on-chromecast}
+# Seguimiento de reproducción principal en Chromecast {#track-core-playback-on-chromecast}
 
 Esta documentación abarca el seguimiento en la versión 2.x del SDK.
 
@@ -32,11 +32,11 @@ Esta documentación abarca el seguimiento en la versión 2.x del SDK.
    mediaObject = ADBMobile.media.createMediaObject(<name>, <id>, <duration>, <streamType>, <mediaType>);
    ```
 
-   **`StreamType`Constantes de:**
+   Constantes de **`StreamType`:**
 
-   [Contenido ADBMobile](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.StreamType)
+   [Medios de ADBMobile](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.StreamType)
 
-   **`MediaType`Constantes de:**
+   Constantes de **`MediaType`:**
 
    [Contenido ADBMobile](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.MediaType)
 
@@ -89,9 +89,9 @@ Esta documentación abarca el seguimiento en la versión 2.x del SDK.
    ADBMobile.media.trackPlay();
    ```
 
-1. **Actualizar valor del cabezal de reproducción**
+1. **Actualización del valor del cabezal de reproducción**
 
-   Actualizar `mediaUpdatePlayhead`&#39; posición varias veces cuando cambia el cabezal de reproducción. <br /> En el caso de vídeo bajo demanda (VOD), el valor se especifica segundos después del comienzo del elemento multimedia. <br /> Para la transmisión en directo, si el reproductor no proporciona información sobre la duración del contenido, el valor se puede especificar como el número de segundos desde la medianoche UTC de ese día. <br />  Nota: Cuando se utilizan marcadores de progreso, la duración del contenido es obligatoria y el cabezal de reproducción debe actualizarse como número de segundos desde el principio del elemento de medios, empezando por 0.
+   Actualice la posición de `mediaUpdatePlayhead` varias veces cuando cambia el cabezal de reproducción. <br /> Para el vídeo bajo demanda (VOD), el valor se especifica segundos después del comienzo del elemento de medios. <br /> Para el streaming en directo, si el reproductor no proporciona información acerca de la duración del contenido, el valor se puede especificar como el número de segundos desde la medianoche (UTC) de ese día. <br /> Nota: Cuando se utilizan marcadores de progreso, la duración del contenido es obligatoria, y el cabezal de reproducción debe actualizarse como número de segundos desde el principio del elemento de medios, empezando por 0.
 
    ```
    ADBMobile().mediaUpdatePlayhead(position)
@@ -144,5 +144,5 @@ Esta documentación abarca el seguimiento en la versión 2.x del SDK.
    >
    >Puede ser el mismo origen de evento empleado en el paso 4. Asegúrese de que cada llamada de API a `trackPause()` esté vinculada a continuación con una llamada de API a `trackPlay()` cuando se reanude la reproducción de vídeo.
 
-* Situaciones de seguimiento: [Reproducción de VOD sin anuncios](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)
+* Situaciones de seguimiento: [reproducción de VOD sin anuncios](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)
 * Reproductor de muestra incluido con el SDK para Chromecast para ver un ejemplo de seguimiento completo.
