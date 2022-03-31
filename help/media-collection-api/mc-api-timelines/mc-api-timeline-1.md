@@ -1,18 +1,18 @@
 ---
-title: Obtenga información sobre las líneas de tiempo de seguimiento de contenido � ver hasta el final del contenido
-description: Profundice en la cronología del cabezal de reproducción y las acciones correspondientes del � de usuario. Obtenga información sobre los detalles de cada acción y las solicitudes que la acompañan.
+title: Obtenga información acerca de las cronologías de seguimiento de medios Ver hasta el final del contenido
+description: Profundice en la cronología del cabezal de reproducción y las acciones correspondientes de los usuarios. Obtenga información acerca de los detalles de cada acción y las solicitudes que la acompañan.
 uuid: 0ff591d3-fa99-4123-9e09-c4e71ea1060b
 exl-id: 16b15e03-5581-471f-ab0c-077189dd32d6
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: 88bf699cb5b0872cefa4d6a6609c74f8fa35189a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1203'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
-# Línea de tiempo 1: Ver el contenido hasta el final{#timeline-view-to-end-of-content}
+# Cronología 1: ver hasta el final del contenido{#timeline-view-to-end-of-content}
 
 ## VOD, anuncios pre-roll, pausar, almacenar en búfer, ver contenido hasta el final
 
@@ -27,7 +27,7 @@ Los siguientes diagramas ilustran la línea de tiempo del cursor de reproducció
 
 ## Detalles de la acción
 
-### Acción 1 - Iniciar sesión {#Action-1}
+### Acción 1: inicio de la sesión {#Action-1}
 
 | Acción | Cronología de acción (segundos) | Posición del cabezal de reproducción (segundos) | Solicitud de cliente |
 | --- | :---: | :---: | --- |
@@ -61,7 +61,7 @@ Esta llamada indica _la intención del usuario de reproducir_ un vídeo. <br/><b
 }
 ```
 
-### Acción 2 - Inicio del temporizador de ping {#Action-2}
+### Acción 2: inicio del temporizador de ping {#Action-2}
 
 | Acción | Cronología de acción (segundos) | Posición del cabezal de reproducción (segundos) | Solicitud de cliente |
 | --- | :---: | :---: | --- |
@@ -71,7 +71,7 @@ Esta llamada indica _la intención del usuario de reproducir_ un vídeo. <br/><b
 
 Inicie el temporizador de ping de su aplicación. El primer evento de ping debe activarse en el primer segundo si hay anuncios previos a la emisión y en los 10 primeros segundos en caso contrario.
 
-### Acción 3 - Inicio de la pausa publicitaria {#Action-3}
+### Acción 3: inicio de la pausa publicitaria {#Action-3}
 
 | Acción | Cronología de acción (segundos) | Posición del cabezal de reproducción (segundos) | Solicitud de cliente |
 | --- | :---: | :---: | --- |
@@ -97,7 +97,7 @@ Los anuncios solo se pueden rastrear durante una pausa publicitaria.
 }
 ```
 
-### Acción 4 - Inicio del anuncio {#Action-4}
+### Acción 4: inicio del anuncio {#Action-4}
 
 | Acción | Cronología de acción (segundos) | Posición del cabezal de reproducción (segundos) | Solicitud de cliente |
 | --- | :---: | :---: | --- |
@@ -139,9 +139,9 @@ Comience a rastrear el primer anuncio pre-roll, que dura 15 segundos. Incluir me
 
 **NOTA: Entre los eventos AdBreakStart y AdStart no debería haber ningún evento de reproducción adicional.**
 
-### Acción 5 - Agrupaciones de anuncios {#Action-5}
+### Acción 5: pings de anuncios {#Action-5}
 
-#### Acción 5.1 - Anuncio ping 1 {#Action-5-1}
+#### Acción 5.1: ping de anuncio 1 {#Action-5-1}
 
 | Acción | Cronología de acción (segundos) | Posición del cabezal de reproducción (segundos) | Solicitud de cliente |
 | --- | :---: | :---: | --- |
@@ -163,7 +163,7 @@ Mande un ping al servidor cada segundo mientras se encuentra dentro de un anunci
 }
 ```
 
-#### Acción 5.2 - Anuncio ping 2 {#Action-5-2}
+#### Acción 5.2: ping de anuncio 2 {#Action-5-2}
 
 | Acción | Cronología de acción (segundos) | Posición del cabezal de reproducción (segundos) | Solicitud de cliente |
 | --- | :---: | :---: | --- |
@@ -185,7 +185,7 @@ Mande un ping al servidor cada segundo mientras se encuentra dentro de un anunci
 }
 ```
 
-#### Acción 5.3 - Anuncio ping 3 {#Action-5-3}
+#### Acción 5.3: ping de anuncio 3 {#Action-5-3}
 
 
 | Acción | Cronología de acción (segundos) | Posición del cabezal de reproducción (segundos) | Solicitud de cliente |
@@ -213,7 +213,7 @@ Mande un ping al servidor cada segundo mientras se encuentra dentro de un anunci
 }
 ```
 
-### Acción 6 - Finalización del anuncio {#Action-6}
+### Acción 6: anuncio completo {#Action-6}
 
 | Acción | Cronología de acción (segundos) | Posición del cabezal de reproducción (segundos) | Solicitud de cliente |
 | --- | :---: | :---: | --- |
@@ -235,7 +235,7 @@ Rastrear el final del primer anuncio pre-roll.
 }
 ```
 
-### Acción 7 - Inicio del anuncio {#Action-7}
+### Acción 7: inicio del anuncio {#Action-7}
 
 | Acción | Cronología de acción (segundos) | Posición del cabezal de reproducción (segundos) | Solicitud de cliente |
 | --- | :---: | :---: | --- |
@@ -270,7 +270,7 @@ Realice un seguimiento del inicio del segundo anuncio pre-roll, que dura 7 segun
 }
 ```
 
-### Acción 8 - Agrupaciones de anuncios {#Action-8}
+### Acción 8: pings de anuncios {#Action-8}
 
 | Acción | Cronología de acción (segundos) | Posición del cabezal de reproducción (segundos) | Solicitud de cliente |
 | --- | :---: | :---: | --- |
@@ -292,7 +292,7 @@ Mandar un ping al servidor cada segundo.
 }
 ```
 
-### Acción 9 - Finalización del anuncio {#Action-9}
+### Acción 9: anuncio completo {#Action-9}
 
 | Acción | Cronología de acción (segundos) | Posición del cabezal de reproducción (segundos) | Solicitud de cliente |
 | --- | :---: | :---: | --- |
@@ -314,7 +314,7 @@ Rastrear el final del segundo anuncio pre-roll.
 }
 ```
 
-### Acción 10 - Se completó la pausa publicitaria {#Action-10}
+### Acción 10: pausa publicitaria completa {#Action-10}
 
 | Acción | Cronología de acción (segundos) | Posición del cabezal de reproducción (segundos) | Solicitud de cliente |
 | --- | :---: | :---: | --- |
@@ -336,7 +336,7 @@ Terminó la pausa publicitaria. Durante la pausa publicitaria, el estado de repr
 }
 ```
 
-### Acción 11 - Reproducir contenido {#Action-11}
+### Acción 11: reproducir contenido {#Action-11}
 
 | Acción | Cronología de acción (segundos) | Posición del cabezal de reproducción (segundos) | Solicitud de cliente |
 | --- | :---: | :---: | --- |
@@ -358,7 +358,7 @@ Tras el evento `adBreakComplete`, ponga el reproductor en el estado “reproduci
 }
 ```
 
-### Acción 12 - Ping {#Action-12}
+### Acción 12: ping {#Action-12}
 
 | Acción | Cronología de acción (segundos) | Posición del cabezal de reproducción (segundos) | Solicitud de cliente |
 | --- | :---: | :---: | --- |
@@ -380,7 +380,7 @@ Mandar un ping al servidor cada 10 segundos.
 }
 ```
 
-### Acción 13 - Inicio del búfer {#Action-13}
+### Acción 13: inicio del búfer {#Action-13}
 
 | Acción | Cronología de acción (segundos) | Posición del cabezal de reproducción (segundos) | Solicitud de cliente |
 | --- | :---: | :---: | --- |
@@ -401,7 +401,7 @@ Rastree el movimiento del reproductor al estado &quot;almacenamiento en búfer&q
 }
 ```
 
-### Acción 14 - Fin del búfer {#Action-14}
+### Acción 14: fin del búfer {#Action-14}
 
 | Acción | Cronología de acción (segundos) | Posición del cabezal de reproducción (segundos) | Solicitud de cliente |
 | --- | :---: | :---: | --- |
@@ -423,7 +423,7 @@ El almacenamiento en búfer finaliza después de 3 segundos, por lo que el repro
 }
 ```
 
-### Acción 15 - Ping {#Action-15}
+### Acción 15: ping {#Action-15}
 
 | Acción | Cronología de acción (segundos) | Posición del cabezal de reproducción (segundos) | Solicitud de cliente |
 | --- | :---: | :---: | --- |
@@ -444,7 +444,7 @@ Mandar un ping al servidor cada 10 segundos.
 }
 ```
 
-### Acción 16 - Inicio de la pausa publicitaria {#Action-16}
+### Acción 16: inicio de la pausa publicitaria {#Action-16}
 
 | Acción | Cronología de acción (segundos) | Posición del cabezal de reproducción (segundos) | Solicitud de cliente |
 | --- | :---: | :---: | --- |
@@ -471,7 +471,7 @@ Anuncio mid-roll de 8 segundos: enviar `adBreakStart` .
 }
 ```
 
-### Acción 17 - Inicio del anuncio {#Action-17}
+### Acción 17: inicio del anuncio {#Action-17}
 
 | Acción | Cronología de acción (segundos) | Posición del cabezal de reproducción (segundos) | Solicitud de cliente |
 | --- | :---: | :---: | --- |
@@ -506,7 +506,7 @@ Seguimiento del anuncio mid-roll.
 }
 ```
 
-### Acción 18 - Ping de publicidad {#Action-18}
+### Acción 18: ping de publicidad {#Action-18}
 
 | Acción | Cronología de acción (segundos) | Posición del cabezal de reproducción (segundos) | Solicitud de cliente |
 | --- | :---: | :---: | --- |
@@ -527,7 +527,7 @@ Mandar un ping al servidor cada 10 segundos.
 }
 ```
 
-### Acción 19 - Finalización del anuncio {#Action-19}
+### Acción 19: anuncio completo {#Action-19}
 
 | Acción | Cronología de acción (segundos) | Posición del cabezal de reproducción (segundos) | Solicitud de cliente |
 | --- | :---: | :---: | --- |
@@ -549,7 +549,7 @@ El anuncio mid-roll ha finalizado.
 }
 ```
 
-### Acción 20 - Se completó la pausa publicitaria {#Action-20}
+### Acción 20: pausa publicitaria completa {#Action-20}
 
 | Acción | Cronología de acción (segundos) | Posición del cabezal de reproducción (segundos) | Solicitud de cliente |
 | --- | :---: | :---: | --- |
@@ -571,7 +571,7 @@ Se ha completado la pausa publicitaria.
 }
 ```
 
-### Acción 21 - Ping {#Action-21}
+### Acción 21: ping {#Action-21}
 
 | Acción | Cronología de acción (segundos) | Posición del cabezal de reproducción (segundos) | Solicitud de cliente |
 | --- | :---: | :---: | --- |
@@ -593,7 +593,7 @@ Mandar un ping al servidor cada 10 segundos.
 }
 ```
 
-### Acción 22 - Pausa {#Action-22}
+### Acción 22: pausa {#Action-22}
 
 | Acción | Cronología de acción (segundos) | Posición del cabezal de reproducción (segundos) | Solicitud de cliente |
 | --- | :---: | :---: | --- |
@@ -615,7 +615,7 @@ La acción del usuario cambia el estado de reproducción a &quot;en pausa&quot;.
 }
 ```
 
-### Acción 23 - Ping {#Action-23}
+### Acción 23: ping {#Action-23}
 
 | Acción | Cronología de acción (segundos) | Posición del cabezal de reproducción (segundos) | Solicitud de cliente |
 | --- | :---: | :---: | --- |
@@ -636,7 +636,7 @@ Mandar un ping al servidor cada 10 segundos. El reproductor sigue en estado de &
 }
 ```
 
-### Acción 24 - Reproducir {#Action-24}
+### Acción 24: reproducir {#Action-24}
 
 | Acción | Cronología de acción (segundos) | Posición del cabezal de reproducción (segundos) | Solicitud de cliente |
 | --- | :---: | :---: | --- |
@@ -657,7 +657,7 @@ Cambie el estado de reproducción a &quot;reproduciendo&quot;.  **La llamada `pl
 }
 ```
 
-### Acción 25 - Ping {#Action-25}
+### Acción 25: ping {#Action-25}
 
 | Acción | Cronología de acción (segundos) | Posición del cabezal de reproducción (segundos) | Solicitud de cliente |
 | --- | :---: | :---: | --- |
@@ -678,7 +678,7 @@ Mandar un ping al servidor cada 10 segundos.
 }
 ```
 
-### Acción 26 - Sesión completa {#Action-26}
+### Acción 26: sesión completa {#Action-26}
 
 | Acción | Cronología de acción (segundos) | Posición del cabezal de reproducción (segundos) | Solicitud de cliente |
 | --- | :---: | :---: | --- |
