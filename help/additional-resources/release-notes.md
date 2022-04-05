@@ -3,9 +3,9 @@ title: Notas de la versión de Adobe Analytics for Streaming Media
 description: Vea las notas de la versión de Adobe Analytics.
 feature: Release Notes
 exl-id: ef068aa6-fdf4-4a5c-b5d0-b93ad31894e8
-source-git-commit: 232d7ce89e3867527363235f08b492a92193d50e
+source-git-commit: 8ca8416ba3dd8f5d3ef4ba9399e7c84335f3abf1
 workflow-type: tm+mt
-source-wordcount: '545'
+source-wordcount: '525'
 ht-degree: 68%
 
 ---
@@ -48,7 +48,7 @@ Nuevos tutoriales y cursos de Analytics
 
 | Función | Disponibilidad general | Descripción |
 | ----------- | ---------- | -------------- |
-| **Tiempo invertido en la reproducción de medios** | 28 de septiembre de 2021 | El Tiempo invertido en la reproducción de contenido de Adobe proporciona un valioso conocimiento sobre la participación de los espectadores y permite a las organizaciones de medios obtener una información más profunda y granular, con la participación de los usuarios detallada minuto a minuto, a través de un análisis avanzado del tiempo invertido con capacidades de partición del día. Puede observar la cantidad de tiempo que se dedica a ver sus flujos de contenido en un momento determinado. Puede dividir la duración de la reproducción por diferentes granularidades, incluyendo las nuevas granularidades de 5, 15 y 30 minutos. [Más información...](https://experienceleague.adobe.com/docs/media-analytics/using/media-reports/media-workspace-panels/media-playback-time-spent.html?lang=en) |
+| **Tiempo invertido en la reproducción de medios** | 28 de septiembre de 2021 | El Tiempo invertido en la reproducción de contenido de Adobe proporciona un valioso conocimiento sobre la participación de los espectadores y permite a las organizaciones de medios obtener una información más profunda y granular, con la participación de los usuarios detallada minuto a minuto, a través de un análisis avanzado del tiempo invertido con capacidades de partición del día. Puede observar la cantidad de tiempo que se dedica a ver sus flujos de contenido en un momento determinado. Puede dividir la duración de la reproducción por diferentes granularidades, incluyendo las nuevas granularidades de 5, 15 y 30 minutos. [Más información...](/help/media-reports/media-workspace-panels/media-playback-time-spent.md) |
 
 ## Enero de 2021
 
@@ -65,7 +65,7 @@ Nuevas funciones en Media Analytics
 
 | Función | Disponibilidad general | Descripción |
 | -------- | -------------------- | ----------- |
-| **Visualizador simultáneo de medios en Workspace** | 17 de septiembre de 2020 | El panel Visualizadores simultáneos de medios le permite comprender dónde se produjo la concurrencia máxima o dónde se produjeron los descensos. Proporciona una valiosa perspectiva de la calidad del contenido y de la participación del visualizador, y ayuda a solucionar problemas o a planificar el volumen o la escala. [Más información…](https://experienceleague.adobe.com/docs/media-analytics/using/media-reports/media-workspace-panels/media-concurrent-viewers.html?lang=en) |
+| **Visualizador simultáneo de medios en Workspace** | 17 de septiembre de 2020 | El panel Visualizadores simultáneos de medios le permite comprender dónde se produjo la concurrencia máxima o dónde se produjeron los descensos. Proporciona una valiosa perspectiva de la calidad del contenido y de la participación del visualizador, y ayuda a solucionar problemas o a planificar el volumen o la escala. [Más información…](/help/media-reports/media-workspace-panels/media-concurrent-viewers.md) |
 
 
 ## Julio de 2020
