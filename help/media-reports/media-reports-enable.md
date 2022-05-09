@@ -6,17 +6,17 @@ exl-id: 686d88a5-79b6-4936-ba9e-8f834ef330d1
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: 1682a10a1d24e55854a77a8f44b43f92893adaa2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '952'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
-# Habilitación de informes de contenidos{#media-reports-enablement}
+# Habilitación de informes de contenidos {#media-reports-enablement}
 
 Para enviar datos sobre los contenidos, es necesario configurar todos los grupos de informes que recopilan métricas de contenidos.
 
-Los clientes avanzados solo pueden usar los paneles de medios en Analysis Workspace una vez que Media Core esté habilitado y el seguimiento esté habilitado para [Calidad de la experiencia](https://experienceleague.adobe.com/docs/media-analytics/using/sdk-implement/track-qos/track-qos-overview.html?lang=en).
+Los clientes avanzados solo pueden usar los paneles de medios en Analysis Workspace una vez que Media Core esté habilitado y el seguimiento esté habilitado para [Calidad de la experiencia](https://experienceleague.adobe.com/docs/media-analytics/using/sdk-implement/track-qos/track-qos-overview.html?lang=es).
 
 >[!TIP]
 >
