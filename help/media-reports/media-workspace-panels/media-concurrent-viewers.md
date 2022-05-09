@@ -2,11 +2,11 @@
 title: Sistema de informes de espectadores simultáneos de contenidos
 description: “Aprenda a utilizar el panel Visualizadores simultáneos de medios para analizar los visualizadores simultáneos y comprender la concurrencia máxima y las bajas”.
 exl-id: 2eadd5e7-45de-4275-aac5-d16e2a6a9fed
-feature: “Media Analytics, Conceptos básicos de Workspace”
+feature: Media Analytics, Workspace Basics
 role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: ht
-source-wordcount: '187'
+source-wordcount: '183'
 ht-degree: 100%
 
 ---
