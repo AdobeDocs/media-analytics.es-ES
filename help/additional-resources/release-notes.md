@@ -1,28 +1,28 @@
 ---
-title: Notas de la versión de Adobe Analytics for Streaming Media
-description: Vea las notas de la versión de Adobe Analytics.
+title: Notas de la versión de Adobe Analytics para medios de streaming
+description: Ver las notas de la versión actuales de Adobe Analytics.
 feature: Release Notes
 exl-id: ef068aa6-fdf4-4a5c-b5d0-b93ad31894e8
 source-git-commit: 8ca8416ba3dd8f5d3ef4ba9399e7c84335f3abf1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '525'
-ht-degree: 68%
+ht-degree: 100%
 
 ---
 
-# Notas de la versión de Adobe Analytics for Streaming Media (marzo de 2022)
+# Notas de la versión de Adobe Analytics para medios de streaming (marzo de 2022)
 
 **Última actualización**: 23 de marzo de 2022
 
 ## *Notas de la versión actual*
 
-## Nuevas funciones de Adobe Analytics para medios de transmisión  {#sm-features}
+## Nuevas funciones de Adobe Analytics para medios de streaming  {#sm-features}
 
 | Función | Descripción | Fecha objetivo |
 | ----------- | ---------- | ------- |
-| **Promedio de audiencia por minuto** | Los clientes de Media Analytics pueden usar el panel Audiencia media por minuto para comprender mejor el consumo promedio de contenido. <br>La audiencia media por minuto permite comparar la programación de cualquier género o duración. Además, puede comparar o anexar la audiencia de minuto promedio digital a las métricas de minuto promedio de TV lineal. Este panel proporciona más flexibilidad para medir la audiencia promedio para periodos de tiempo personalizados, así como cuando se ha actualizado la clasificación de duración.  [Más información](https://experienceleague.adobe.com/docs/media-analytics/using/media-reports/average-minute-audience.html?lang=en) | 16 de marzo de 2022 |
+| **Promedio de audiencia por minuto** | Los clientes de Media Analytics pueden usar el panel Audiencia media por minuto de medios para comprender mejor el consumo promedio de su contenido. <br>La audiencia media por minuto permite comparar la programación de cualquier género o duración. Además, los clientes pueden comparar o anexar esta audiencia de minuto promedio digital a métricas de minuto promedio de televisión lineales. Este panel proporciona más flexibilidad para medir la audiencia promedio en períodos de tiempo personalizados, así como cuando la clasificación de duración se ha actualizado. [Más información](https://experienceleague.adobe.com/docs/media-analytics/using/media-reports/average-minute-audience.html?lang=es) | 16 de marzo de 2022 |
 
-## Recursos de ayuda de Analytics for Streaming Media
+## Recursos de ayuda de Analytics para medios de streaming
 
 Obtenga la documentación de autoayuda más reciente, tutoriales y cursos sobre Experience League.
 
@@ -32,7 +32,7 @@ Obtenga información sobre las últimas actualizaciones de la versión para [Ado
 
 Obtenga información sobre las últimas actualizaciones de la versión para [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/releases/latest.html?lang=es).
 
-Utilice la última [Tutorials de Adobe Analytics](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/overview.html?lang=es) junto con la documentación para comprender mejor cómo usar Adobe Analytics y Analytics para medios de transmisión.
+Utilice los últimos [Tutoriales de Adobe Analytics](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/overview.html?lang=es) junto con la documentación para comprender mejor cómo usar Adobe Analytics y Analytics para medios de streaming.
 
 ## *Notas de la versión anterior*
 
@@ -48,7 +48,7 @@ Nuevos tutoriales y cursos de Analytics
 
 | Función | Disponibilidad general | Descripción |
 | ----------- | ---------- | -------------- |
-| **Tiempo invertido en la reproducción de medios** | 28 de septiembre de 2021 | El Tiempo invertido en la reproducción de contenido de Adobe proporciona un valioso conocimiento sobre la participación de los espectadores y permite a las organizaciones de medios obtener una información más profunda y granular, con la participación de los usuarios detallada minuto a minuto, a través de un análisis avanzado del tiempo invertido con capacidades de partición del día. Puede observar la cantidad de tiempo que se dedica a ver sus flujos de contenido en un momento determinado. Puede dividir la duración de la reproducción por diferentes granularidades, incluyendo las nuevas granularidades de 5, 15 y 30 minutos. [Más información...](/help/media-reports/media-workspace-panels/media-playback-time-spent.md) |
+| **Tiempo invertido en la reproducción de medios** | 28 de septiembre de 2021 | El Tiempo invertido en la reproducción de contenido de Adobe proporciona un valioso conocimiento sobre la participación de los espectadores y permite a las organizaciones de medios obtener una información más profunda y granular. Esto se realiza con la participación de los usuarios detallada minuto a minuto, a través de un análisis avanzado del tiempo invertido con capacidades de partición del día. Puede observar la cantidad de tiempo que se dedica a ver sus flujos de contenido en un momento determinado. Puede dividir la duración de la reproducción por diferentes granularidades, incluyendo las nuevas granularidades de 5, 15 y 30 minutos. [Más información...](/help/media-reports/media-workspace-panels/media-playback-time-spent.md) |
 
 ## Enero de 2021
 
@@ -65,7 +65,7 @@ Nuevas funciones en Media Analytics
 
 | Función | Disponibilidad general | Descripción |
 | -------- | -------------------- | ----------- |
-| **Visualizador simultáneo de medios en Workspace** | 17 de septiembre de 2020 | El panel Visualizadores simultáneos de medios le permite comprender dónde se produjo la concurrencia máxima o dónde se produjeron los descensos. Proporciona una valiosa perspectiva de la calidad del contenido y de la participación del visualizador, y ayuda a solucionar problemas o a planificar el volumen o la escala. [Más información…](/help/media-reports/media-workspace-panels/media-concurrent-viewers.md) |
+| **Visualizador simultáneo de medios en el espacio de trabajo** | 17 de septiembre de 2020 | El panel Visualizadores simultáneos de medios le permite comprender dónde se produjo la concurrencia máxima o dónde se produjeron los descensos. Proporciona una valiosa perspectiva de la calidad del contenido y de la participación del visualizador, y ayuda a solucionar problemas o a planificar el volumen o la escala. [Más información…](/help/media-reports/media-workspace-panels/media-concurrent-viewers.md) |
 
 
 ## Julio de 2020
@@ -74,7 +74,7 @@ Nuevas funciones en Media Analytics
 
 | Función | Disponibilidad general | Descripción |
 | -------- | -------------------- | ----------- |
-| [**Dispositivos y plataformas compatibles**](https://experienceleague.adobe.com/docs/media-analytics/using/supported-devices.html?lang=en) | 18 de junio de 2020 | Media Launch Extension con el SDK de AEP ahora admite los siguientes dispositivos OTT: <div><ul><li>Apple TV (tvOS)</li><li>Fire TV (sistema operativo Fire)</li><li>Android TV</li></ul></div> |
+| [**Dispositivos y plataformas compatibles**](https://experienceleague.adobe.com/docs/media-analytics/using/supported-devices.html?lang=es) | 18 de junio de 2020 | Media Launch Extension con el SDK de AEP ahora admite los siguientes dispositivos OTT: <div><ul><li>Apple TV (tvOS)</li><li>Fire TV (sistema operativo Fire)</li><li>Android TV</li></ul></div> |
 
 
 
