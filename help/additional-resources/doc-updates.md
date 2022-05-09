@@ -1,6 +1,6 @@
 ---
-title: ¿Qué novedades hay en Adobe Analytics para medios de transmisión?
-description: Descubra las novedades de Adobe Analytics para medios de transmisión.
+title: ¿Qué novedades hay en Adobe Analytics para medios de streaming?
+description: Descubra las novedades de Adobe Analytics para medios de streaming.
 uuid: 1f3e48df-83b6-418c-8cf7-d79466481f79
 index: y
 internal: n
@@ -9,15 +9,15 @@ exl-id: 881a94f4-d248-4668-a2d1-4e50d3f9135a
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
-workflow-type: tm+mt
-source-wordcount: '30'
-ht-degree: 43%
+workflow-type: ht
+source-wordcount: '28'
+ht-degree: 100%
 
 ---
 
 # Recursos {#resources}
 
-## Notas de la versión{#release-notes}
+## Notas de la versión {#release-notes}
 
 * [Notas de la versión](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html?lang=es)
 
