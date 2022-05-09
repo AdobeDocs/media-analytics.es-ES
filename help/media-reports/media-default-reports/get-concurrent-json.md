@@ -10,7 +10,7 @@ ht-degree: 100%
 ---
 
 
-# Obtención de datos del informe JSON de espectadores simultáneos {#get-concurrent-viewers-json-report-data}
+# Obtención de datos del informe JSON de espectadores simultáneos{#get-concurrent-viewers-json-report-data}
 
 Puede obtener datos de informes de visores simultáneos mediante la _*versión 1.4*_ de las API de Analytics:
 * [API de Analytics ](https://github.com/AdobeDocs/analytics-1.4-apis)
