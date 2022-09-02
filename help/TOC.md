@@ -5,10 +5,10 @@ user-guide-title: Adobe Analytics para medios de transmisión
 breadcrumb-title: Guía de Media Analytics
 user-guide-description: Implemente Adobe Analytics para medios de transmisión. Incluye el SDK de medios y la API de recopilación de medios.
 sub-product: media analytics
-source-git-commit: 534f6f77d69a8fe3574c214cd56d2f77758c1643
-workflow-type: ht
-source-wordcount: '833'
-ht-degree: 100%
+source-git-commit: 6794ba332945047c821628b79e6e796de321fbeb
+workflow-type: tm+mt
+source-wordcount: '837'
+ht-degree: 99%
 
 ---
 
@@ -222,6 +222,7 @@ ht-degree: 100%
    + [Información general ](sdk-implement/player-state-tracking/player-state-overview.md)
    + [Estados estándar y personalizados](sdk-implement/player-state-tracking/standard-and-custom-states.md)
    + [Implementación y sistema de informes](sdk-implement/player-state-tracking/implementation-and-reporting.md)
+   + [Seguimiento de varios estados de reproductor](sdk-implement/player-state-tracking/multiple-player-states.md)
    + [Ejemplos de seguimiento del estado de reproducción](sdk-implement/player-state-tracking/player-state-examples.md)
 + [Federated Analytics](federated-analytics.md)
 + Recursos adicionales {#additional-resources}
