@@ -1,11 +1,11 @@
 ---
-title: 'Parámetros de estado del reproductor '
+title: Parámetros de estado del reproductor
 description: “Obtenga información acerca de los parámetros de seguimiento del estado del reproductor para la pantalla completa, los subtítulos, el silencio y la imagen en las propiedades de la imagen“.
 uuid: 2a6b9247-a694-46e9-98e1-424c08c27ec2
 exl-id: cd51ed3a-fe37-41e9-8243-dfd9deb514c1
-feature: Media Analytics, Variables
+feature: "Media Analytics, Variables"
 role: User, Admin, Data Engineer
-source-git-commit: 01afcf648f13af4d47b5fb41b7c9e89c2a89f590
+source-git-commit: 7e5ce452a9c96c4e34150ae0e06d73b0cff98741
 workflow-type: tm+mt
 source-wordcount: '2331'
 ht-degree: 94%
@@ -41,7 +41,7 @@ Descripción de los datos de la tabla:
 
 ## Propiedades de estado del reproductor {#player-state-properties}
 
-La funcionalidad de seguimiento de estado del reproductor se puede adjuntar a un flujo de audio o vídeo. Las métricas de seguimiento de estado del reproductor estandarizado se almacenan como variables de solución. Los estados estándar son: fullScreen, mute, closeCaption, pictureInPicture, and inFocus.
+La funcionalidad de seguimiento de estado del reproductor se puede adjuntar a un flujo de audio o vídeo. Las métricas de seguimiento de estado del reproductor estandarizado se almacenan como variables de solución. Los estados estándar son: pantalla completa, silenciar, ClosedCaptioning, pictureInPicture y inFocus.
 
 ### Propiedades de pantalla completa
 
