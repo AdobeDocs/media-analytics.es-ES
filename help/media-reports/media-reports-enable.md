@@ -6,8 +6,8 @@ exl-id: 686d88a5-79b6-4936-ba9e-8f834ef330d1
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: 1682a10a1d24e55854a77a8f44b43f92893adaa2
-workflow-type: ht
-source-wordcount: '952'
+workflow-type: tm+mt
+source-wordcount: '950'
 ht-degree: 100%
 
 ---
@@ -25,7 +25,7 @@ Los clientes avanzados solo pueden usar los paneles de medios en Analysis Worksp
 1. En [Reports &amp; Analytics](https://my.omniture.com/login/) haga clic en **[!UICONTROL Administración > Grupos de informes].**
 1. Seleccione los grupos de informes donde desee recopilar los datos de contenidos y haga clic en **[!UICONTROL Editar configuración > Gestión de contenidos > Informes de contenidos].**
 
-   ![](assets/media-reporting.png){width=&quot;400px&quot;}
+   ![](assets/media-reporting.png){width="400px"}
 
 1. En la página **[!UICONTROL Informes de contenidos]**, habilite **[!UICONTROL Componentes básicos de contenidos],** y, opcionalmente, también **[!UICONTROL Anuncios de contenidos],** **[!UICONTROL Capítulos de contenidos],** y **[!UICONTROL Calidad de contenidos].**
 

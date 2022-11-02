@@ -3,10 +3,10 @@ title: Información general de medio
 description: Utilice el panel Información general de medios para mostrar las mediciones agregadas. Aprenda a monitorizar rápidamente el rendimiento de los medios.
 uuid: bdbd998f-9b5e-40c9-a8ea-12dfa5acd35c
 exl-id: 4fe91372-da41-44c5-bea9-2bba762512ef
-feature: Media Analytics, Reports & Analytics Basics
+feature: "Media Analytics, Reports & Analytics Basics"
 role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '107'
 ht-degree: 100%
 
