@@ -1,22 +1,22 @@
 ---
-title: Métricas calculadas de medios de transmisión
-description: Obtenga información sobre las métricas calculadas y fórmulas de métricas de medios de flujo continuo de Adobe.
+title: Métricas calculadas de medios de streaming
+description: Obtenga información acerca de las métricas calculadas y fórmulas de métricas de medios de streaming de Adobe.
 uuid: 9dd35155-58aa-4f05-896e-c5cbc4b13d59
 exl-id: 253f6c61-70b5-4bdf-8e79-840545aeca0e
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
-workflow-type: tm+mt
-source-wordcount: '258'
-ht-degree: 59%
+workflow-type: ht
+source-wordcount: '256'
+ht-degree: 100%
 
 ---
 
-# Métricas calculadas{#calculated-metrics}
+# Métricas calculadas {#calculated-metrics}
 
-Las métricas calculadas para los medios de flujo continuo son métricas personalizadas que le permiten obtener datos de medios de flujo orientados, como el tiempo promedio invertido en la publicidad o el promedio de anuncios por flujo de medios.
+Las métricas calculadas para los medios de streaming son métricas personalizadas que le permiten obtener datos de medios de streaming orientados, como el tiempo promedio invertido en la publicidad o el promedio de anuncios por flujo de medios.
 
-Para obtener información sobre las métricas calculadas de Adobe Analytics, consulte [Métricas calculadas y calculadas avanzadas (derivadas)](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/cm-overview.html?lang=en) en la Guía de componentes de Adobe Analytics.
+Para obtener información acerca de las métricas calculadas de Adobe Analytics, consulte [Métricas calculadas y calculadas avanzadas (derivadas)](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/cm-overview.html?lang=es) en la Guía de componentes de Adobe Analytics.
 
 >[!NOTE]
 >
@@ -26,10 +26,10 @@ Para obtener información sobre las métricas calculadas de Adobe Analytics, con
 |---|---|---|
 | Promedio de anuncios por flujo de medios | Inicios de publicidad por inicios de contenido | `Ad Starts / Media Starts` |
 | Promedio de capítulos por flujo de medios | Inicios de capítulo por inicios de contenido | `Chapter Start / Media Starts` |
-| Promedio de Tiempo invertido en contenido | Tiempo total empleado por inicios de contenido (HH:MM:SS) | `Media Time Spent / Media Starts` |
-| Promedio de Tiempo invertido en contenido | Tiempo invertido en contenido por contenido iniciado (HH:MM:SS) | `Content Time Spent / Content Start` |
-| Promedio de Tiempo invertido en publicidad | Tiempo invertido en publicidad por anuncios iniciados (HH:MM:SS) | `Ad Time Spent / Ad Start` |
-| Promedio de Tiempo invertido en el capítulo | Tiempo invertido en el capítulo por capítulos iniciados (HH:MM:SS) | `Chapter Time Spent / Chapter Start` |
+| Promedio de Tiempo invertido en contenido | Tiempo total empleado por inicios de medios (HH:MM:SS) | `Media Time Spent / Media Starts` |
+| Promedio de Tiempo invertido en contenido | Tiempo invertido en contenido por inicios de contenido (HH:MM:SS) | `Content Time Spent / Content Start` |
+| Promedio de Tiempo invertido en publicidad | Tiempo invertido en publicidad por inicios de anuncios (HH:MM:SS) | `Ad Time Spent / Ad Start` |
+| Promedio de Tiempo invertido en el capítulo | Tiempo invertido en el capítulo por inicios de capítulo (HH:MM:SS) | `Chapter Time Spent / Chapter Start` |
 | Índice de medios finalizados | Tasa de contenido completado frente a medio iniciado (%) | `Content Completes/ Media Starts` |
 | Relación de contenido finalizado | Relación de contenido finalizado frente a contenido iniciado (%) | `Content Completes / Content Starts` |
 | Relación de anuncios finalizados | Relación de anuncios finalizados frente a anuncios iniciados (%) | `Ad Completes / Ad Starts` |
