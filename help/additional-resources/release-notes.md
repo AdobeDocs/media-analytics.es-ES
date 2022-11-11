@@ -3,8 +3,8 @@ title: Notas de la versión de Adobe Analytics para medios de streaming
 description: Ver las notas de la versión actuales de Adobe Analytics.
 feature: Release Notes
 exl-id: ef068aa6-fdf4-4a5c-b5d0-b93ad31894e8
-source-git-commit: 5a7d1725333f9f47fb13469a0877402f4fff506f
-workflow-type: ht
+source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+workflow-type: tm+mt
 source-wordcount: '854'
 ht-degree: 100%
 
@@ -54,8 +54,8 @@ Para obtener información acerca de nuevas funciones, correcciones e informació
 
 | Funcionalidad | Descripción | Fecha de objetivo o actualización |
 | ----------- | ---------- | -------------- |
-| Tiempo invertido en la reproducción de contenido | El Tiempo invertido en la reproducción de contenido de Adobe proporciona un valioso conocimiento sobre la participación de los espectadores y permite a las organizaciones de medios obtener una información más profunda y granular. Esto se realiza con la participación de los usuarios detallada minuto a minuto, a través de un análisis avanzado del tiempo invertido con capacidades de partición del día. Puede observar la cantidad de tiempo que se dedica a ver sus flujos de contenido en un momento determinado. Puede dividir la duración de la reproducción por diferentes granularidades, incluyendo las nuevas granularidades de 5, 15 y 30 minutos. [Más información...](/help/media-reports/media-workspace-panels/media-playback-time-spent.md) | Septiembre de 2021 |
-| Panel de visualizador simultáneo de medios en Analytics Workspace | Comprenda dónde se produjo el pico de concurrencia o dónde se produjeron las disminuciones. Obtenga valiosos conocimientos de la calidad del contenido y de la participación del visualizador, y solucione problemas o planifique el volumen o la escala. [Más información…](/help/media-reports/media-workspace-panels/media-concurrent-viewers.md) <br><br>[Panel de visualizadores simultáneos de medios en Analytics Workspace (tutorial)](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/media-concurrent-viewers-panel-in-analysis-workspace.html?lang=es#analysis-workspace) | Septiembre de 2020 <br><br><br>enero de 2021 |
+| Tiempo invertido en la reproducción de contenido | El Tiempo invertido en la reproducción de contenido de Adobe proporciona un valioso conocimiento sobre la participación de los espectadores y permite a las organizaciones de medios obtener una información más profunda y granular. Esto se realiza con la participación de los usuarios detallada minuto a minuto, a través de un análisis avanzado del tiempo invertido con capacidades de partición del día. Puede observar la cantidad de tiempo que se dedica a ver sus flujos de contenido en un momento determinado. Puede dividir la duración de la reproducción por diferentes granularidades, incluyendo las nuevas granularidades de 5, 15 y 30 minutos. [Más información...](/help/reporting/workspace/media-playback-time-spent.md) | Septiembre de 2021 |
+| Panel de visualizador simultáneo de medios en Analytics Workspace | Comprenda dónde se produjo el pico de concurrencia o dónde se produjeron las disminuciones. Obtenga valiosos conocimientos de la calidad del contenido y de la participación del visualizador, y solucione problemas o planifique el volumen o la escala. [Más información…](/help/reporting/workspace/media-concurrent-viewers-overview.md) <br><br>[Panel de visualizadores simultáneos de medios en Analytics Workspace (tutorial)](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/media-concurrent-viewers-panel-in-analysis-workspace.html?lang=es#analysis-workspace) | Septiembre de 2020 <br><br><br>enero de 2021 |
 | Dispositivos y plataformas compatibles | Media Launch Extension con el SDK de AEP ahora admite los siguientes dispositivos OTT: <div><ul><li>Apple TV (tvOS)</li><li>Fire TV (sistema operativo Fire)</li><li>Android TV</li></ul></div> | Junio de 2020 |
 
 

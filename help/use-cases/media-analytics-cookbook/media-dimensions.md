@@ -1,0 +1,56 @@
+---
+title: ¿Qué es la atribución de flujo de transmisión de contenido?
+description: Esta función le permite vincular acciones de aplicación a datos de seguimiento de medios sin necesidad de reglas de procesamiento ni variables personalizadas adicionales.
+exl-id: 75cc9088-776d-4b10-b358-9fff956a7eb7
+feature: Media Analytics
+role: User, Admin, Data Engineer
+source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+workflow-type: tm+mt
+source-wordcount: '231'
+ht-degree: 39%
+
+---
+
+# Atribución de flujo de transmisión de contenido {#media-stream-attribution}
+
+Con Atribución de flujo de transmisión de contenido, puede vincular acciones de aplicación a datos de seguimiento de contenido sin necesidad de reglas de procesamiento y variables personalizadas adicionales.
+
+## Dimensiones de contenido fuera del seguimiento de contenido
+
+Puede agregar dimensiones de medios a las llamadas de análisis, como vistas de página y vínculos personalizados. Durante la implementación, debe agregar los parámetros de datos de contexto de contenido a las llamadas de seguimiento de Analytics. Para ver la lista completa de parámetros de datos de contexto disponibles que se utilizan para los contenidos, consulte [Parámetros de audio y vídeo.](/help/implementation/variables/audio-video-parameters.md)
+
+Para habilitar esta función para un informe específico, vuelva a habilitar la configuración de seguimiento de medios desde Admin Console.
+
+>[!NOTE]
+>
+>Las métricas de medios son _not_ está disponible para su uso fuera del seguimiento de contenido, ya que la mayoría de ellas se calculan mediante Streaming Media Analytics en función de eventos de latidos. Además, es importante que las métricas de contenidos no se vean infladas por implementaciones diferentes.
+
+## Uso de la atribución de flujo de transmisión de contenido
+
+El siguiente ejemplo de JavaScript genera una llamada de seguimiento de vínculos personalizados que tiene el nombre establecido como &quot;Hero Banner&quot;.
+
+```javascript
+s.contextData["a.media.show"]="Mi Amore"
+s.tl(this,'o','Hero Banner');
+```
+
+En los informes de Analytics, puede utilizar la eVar `Show` para desglosar los datos y contar las instancias de seguimiento de vínculos. El informe sería similar al siguiente:
+
+![](/assets/myShow-rpt-1.png)
+
+## Casos de uso
+
+Los siguientes ejemplos muestran casos de uso para lo siguiente:
+
+* Colocación de la categoría
+* Colocación principal
+* Participación
+* Suscripciones
+
+![](/assets/vid-stream-attr-category.png)
+
+![](/assets/vid-stream-attr-hero.png)
+
+![](/assets/show-engagement.png)
+
+![](/assets/vid-stream-attr-subs.png)

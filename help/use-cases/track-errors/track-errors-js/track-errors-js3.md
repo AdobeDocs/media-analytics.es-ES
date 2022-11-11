@@ -1,0 +1,34 @@
+---
+title: Descubra cómo rastrear errores usando JavaScript 3.x
+description: Obtenga información sobre la implementación del seguimiento de errores mediante Media SDK en aplicaciones de navegador (JS).
+exl-id: 3769fc47-fbc4-4498-9d2a-04c88cdd0e83
+feature: Media Analytics
+role: User, Admin, Data Engineer
+source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+workflow-type: tm+mt
+source-wordcount: '97'
+ht-degree: 73%
+
+---
+
+# Seguimiento de errores con JavaScript 3.x{#track-errors-on-javascript}
+
+En las siguientes instrucciones se indican los pasos para la implementación en todos los kits de desarrollo de software de 2.x.
+
+>[!IMPORTANT]
+>
+>Si va implementar cualquier versión anterior del SDK, puede descargar las guías del desarrollador aquí: [Descargar SDK.](/help/getting-started/download-sdks.md)
+
+## Implementación del seguimiento de errores
+
+1. Seguimiento de errores del reproductor de contenidos:
+
+   ```js
+   onPlayerError = function() {
+       tracker.trackError("errorId");
+   };
+   ```
+
+>[!NOTE]
+>
+>El seguimiento de los errores del reproductor de contenidos no detendrá la sesión de seguimiento de contenidos. Si el reproductor de contenidos impide que continúe la reproducción, asegúrese de que la sesión de seguimiento de contenidos se cierre llamando a `trackSessionEnd` después de invocar a `trackError`.
