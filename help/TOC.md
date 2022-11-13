@@ -5,9 +5,9 @@ user-guide-title: Adobe Analytics para medios de transmisión
 breadcrumb-title: Guía de Media Analytics
 user-guide-description: Implemente Adobe Analytics para medios de transmisión. Incluye el SDK de medios y la API de recopilación de medios.
 sub-product: media analytics
-source-git-commit: 1d30415b0874c1e0f35045026cb341bab1833d98
+source-git-commit: 5ea67e55448ccdcfc098c6bead78ba23d0fe8e96
 workflow-type: tm+mt
-source-wordcount: '869'
+source-wordcount: '880'
 ht-degree: 78%
 
 ---
@@ -54,6 +54,10 @@ ht-degree: 78%
          + [Condiciones de tiempo de espera](implementation/media-collection-api/mc-api-impl/mc-api-timeout.md)
          + [Control del orden de los eventos](implementation/media-collection-api/mc-api-impl/mc-api-ctrl-order.md)
          + [Poner eventos en cola cuando la respuesta de las sesiones es lenta](implementation/media-collection-api/mc-api-impl/mc-api-queuing.md)
+      + Cronologías de seguimiento de contenidos {#mc-api-timelines}
+         + [Cronología 1: ver hasta el final del contenido](implementation/media-collection-api/mc-api-timelines/mc-api-timeline-1.md)
+         + [Línea de tiempo 2: El usuario abandona la sesión](implementation/media-collection-api/mc-api-timelines/mc-api-timeline-2.md)
+         + [Línea de tiempo 3: Capítulos](implementation/media-collection-api/mc-api-timelines/mc-api-timeline-3.md)
    + Variables {#variables}
       + [Parámetros de Streaming Media](implementation/variables/audio-video-parameters.md)
       + [Parámetros de anuncio](implementation/variables/ad-parameters.md)
@@ -179,8 +183,7 @@ ht-degree: 78%
    + [Seguimiento del contenido descargado sin conexión](use-cases/track-downloaded-content.md)
    + [Federated Analytics](use-cases/federated-analytics.md)
    + [Administración de interrupciones de la aplicación durante la reproducción](use-cases/cookbook/app-interrupts.md)
-   + [Información general sobre la guía de cookies de SDK heredada](use-cases/cookbook/sdk-cookbook-overview.md)
-   + [Heredado: Guía de Media Analytics](use-cases/media-analytics-cookbook/media-analytics-cookbook.md)
+   + [Casos de uso de Media SDK](use-cases/cookbook/sdk-cookbook-overview.md)
    + [Atribución de flujo de transmisión de contenido](use-cases/media-analytics-cookbook/media-dimensions.md)
    + [Reanudación de sesiones inactivas](use-cases/cookbook/resuming-inactive.md)
    + [Seguimiento de Roku en SceneGraph](use-cases/cookbook/sdk-track-scenegraph.md)
