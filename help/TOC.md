@@ -5,7 +5,7 @@ user-guide-title: Adobe Analytics para medios de transmisión
 breadcrumb-title: Guía de Media Analytics
 user-guide-description: Implemente Adobe Analytics para medios de transmisión. Incluye el SDK de medios y la API de recopilación de medios.
 sub-product: media analytics
-source-git-commit: 4c68f5997a9d336e8c3545cdfb7b9cb955602b69
+source-git-commit: 7b33301495a6596ce5e343e9e720d15619da2af9
 workflow-type: tm+mt
 source-wordcount: '865'
 ht-degree: 78%
@@ -61,98 +61,6 @@ ht-degree: 78%
       + [Parámetros de estado del reproductor ](implementation/variables/player-state-parameters.md)
       + [Parámetros de calidad ](implementation/variables/quality-parameters.md)
       + [Métricas calculadas ](implementation/variables/calculated-metrics.md)
-+ Seguimiento {#track-av-playback}
-   + [Información general ](use-cases/track-av-playback/track-core-overview.md)
-   + Seguimiento de Core Streaming Media Playback {#track-core}
-      + [Seguimiento de reproducción principal en Android](use-cases/track-av-playback/track-core/track-core-android.md)
-      + [Seguimiento de reproducción principal en iOS](use-cases/track-av-playback/track-core/track-core-ios.md)
-      + Seguimiento de reproducción principal en JavaScript {#track-core-javascript}
-         + [Seguimiento de reproducción principal en JavaScript 2.x](use-cases/track-av-playback/track-core/track-core-javascript/track-core-js.md)
-         + [Seguimiento de reproducción principal en JavaScript 3.x](use-cases/track-av-playback/track-core/track-core-javascript/track-core-js3.md)
-      + [Seguimiento de reproducción principal en Chromecast](use-cases/track-av-playback/track-core/track-core-chromecast.md)
-      + [Seguimiento de reproducción principal en Roku](use-cases/track-av-playback/track-core/track-core-roku.md)
-   + Seguimiento del almacenamiento en búfer {#track-buffering}
-      + [Seguimiento del almacenamiento en búfer en Android](use-cases/track-av-playback/track-buffering/track-buffering-android.md)
-      + [Seguimiento del almacenamiento en búfer en iOS](use-cases/track-av-playback/track-buffering/track-buffering-ios.md)
-      + Seguimiento del almacenamiento en búfer en JavaScript {#track-buffering-js}
-         + [Seguimiento del almacenamiento en búfer en JavaScript 2.x](use-cases/track-av-playback/track-buffering/track-buffering-js/track-buffering-js.md)
-         + [Seguimiento del almacenamiento en búfer en JavaScript 3.x](use-cases/track-av-playback/track-buffering/track-buffering-js/track-buffering-js3.md)
-      + [Seguimiento del almacenamiento en búfer en Chromecast](use-cases/track-av-playback/track-buffering/track-buffering-chromecast.md)
-      + [Seguimiento del almacenamiento en búfer en Roku](use-cases/track-av-playback/track-buffering/track-buffering-roku.md)
-   + Seguimiento de llamada a otro punto del contenido {#track-seeking}
-      + [Seguimiento de llamada a otro punto del contenido en Android](use-cases/track-av-playback/track-seeking/track-seeking-android.md)
-      + [Seguimiento de llamada a otro punto del contenido en iOS](use-cases/track-av-playback/track-seeking/track-seeking-ios.md)
-      + Seguimiento de llamada a otro punto del contenido en JavaScript {#track-seeking-js}
-         + [Seguimiento de llamada a otro punto del contenido en JavaScript 2.x](use-cases/track-av-playback/track-seeking/track-seeking-js/track-seeking-js.md)
-         + [Seguimiento de llamada a otro punto del contenido en JavaScript 3.x](use-cases/track-av-playback/track-seeking/track-seeking-js/track-seeking-js3.md)
-      + [Seguimiento de llamada a otro punto del contenido en Chromecast](use-cases/track-av-playback/track-seeking/track-seeking-chromecast.md)
-      + [Seguimiento de llamada a otro punto del contenido en Roku](use-cases/track-av-playback/track-seeking/track-seeking-roku.md)
-   + Implementación de metadatos estándar {#impl-std-metadata}
-      + [Implementación de metadatos estándar en Android](use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-android.md)
-      + [Implementación de metadatos estándar en iOS](use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-ios.md)
-      + [Claves de metadatos de iOS](use-cases/track-av-playback/impl-std-metadata/ios-metadata-keys.md)
-      + Implementación de metadatos estándar en JavaScript {#impl-std-md-js}
-         + [Implementación de metadatos estándar en JavaScript 2.x](use-cases/track-av-playback/impl-std-metadata/impl-std-md-js/impl-std-metadata-js.md)
-         + [Implementación de metadatos estándar en JavaScript 3.x](use-cases/track-av-playback/impl-std-metadata/impl-std-md-js/impl-std-metadata-js3.md)
-      + [Implementación de metadatos estándar en Chromecast](use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-chromecast.md)
-      + [Parámetros de metadatos estándar: Chromecast](use-cases/track-av-playback/impl-std-metadata/chromecast-metadata.md)
-      + [Implementación de metadatos estándar en Roku ](use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
-      + [Parámetros de metadatos estándar: Roku](use-cases/track-av-playback/impl-std-metadata/roku-metadata.md)
-   + Seguimiento de anuncios {#track-ads}
-      + [Información general ](use-cases/track-ads/track-ads-overview.md)
-      + [Seguimiento de anuncios en Android](use-cases/track-ads/track-ads-android.md)
-      + [Seguimiento de anuncios en iOS](use-cases/track-ads/track-ads-ios.md)
-      + Seguimiento de anuncios en JavaScript {#track-ads-js}
-         + [Seguimiento de anuncios en JavaScript 2.x](use-cases/track-ads/track-ads-js/track-ads-js.md)
-         + [Seguimiento de anuncios en JavaScript 3.x](use-cases/track-ads/track-ads-js/track-ads-js3.md)
-      + [Seguimiento de anuncios en Chromecast](use-cases/track-ads/track-ads-chromecast.md)
-      + [Seguimiento de anuncios en Roku](use-cases/track-ads/track-ads-roku.md)
-      + Implementación de los metadatos de anuncios estándar {#impl-std-ad-metadata}
-         + [Implementación de metadatos de publicidad estándar en Android ](use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-android.md)
-         + [Implementación de metadatos de publicidad estándar en iOS ](use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-ios.md)
-         + Implementación de metadatos de publicidad estándar en JavaScript {#impl-std-ad-md-js}
-            + [Implementación de metadatos de publicidad estándar en JavaScript 2.x](use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-md-js/impl-std-ad-metadata-js.md)
-            + [Implementación de metadatos de publicidad estándar en JavaScript 3.x](use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-md-js/impl-std-ad-metadata-js3.md)
-         + [Implementación de metadatos de publicidad estándar en Roku ](use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-roku.md)
-   + Seguimiento de capítulos y segmentos {#track-chapters}
-      + [Información general ](use-cases/track-chapters/track-chapters-overview.md)
-      + [Seguimiento de capítulos y segmentos en Android](use-cases/track-chapters/track-chapters-android.md)
-      + [Seguimiento de capítulos y segmentos en iOS](use-cases/track-chapters/track-chapters-ios.md)
-      + Seguimiento de capítulos y segmentos en JavaScript {#track-chapters-js}
-         + [Seguimiento de capítulos y segmentos en JavaScript 2.x](use-cases/track-chapters/track-chapters-js/track-chapters-js.md)
-         + [Seguimiento de capítulos y segmentos en JavaScript 3.x](use-cases/track-chapters/track-chapters-js/track-chapters-js3.md)
-      + [Seguimiento de capítulos y segmentos en Chromecast](use-cases/track-chapters/track-chapters-chromecast.md)
-      + [Seguimiento de capítulos y segmentos en Roku](use-cases/track-chapters/track-chapters-roku.md)
-   + Seguimiento de la calidad de la experiencia {#track-qos}
-      + [Información general ](use-cases/track-qos/track-qos-overview.md)
-      + [Seguimiento de la calidad de la experiencia en Android](use-cases/track-qos/track-qos-android.md)
-      + [Seguimiento de la calidad de la experiencia en iOS](use-cases/track-qos/track-qos-ios.md)
-      + Seguimiento de la calidad de la experiencia en JavaScript {#track-qos-js}
-         + [Seguimiento de la calidad de la experiencia en JavaScript 2.x](use-cases/track-qos/track-qos-js/track-qos-js.md)
-         + [Seguimiento de la calidad de la experiencia en JavaScript 3.x](use-cases/track-qos/track-qos-js/track-qos-js3.md)
-      + [Seguimiento de la calidad de la experiencia en Chromecast](use-cases/track-qos/track-qos-chromecast.md)
-      + [Seguimiento de la calidad de la experiencia en Roku](use-cases/track-qos/track-qos-roku.md)
-   + Seguimiento de errores {#track-errors}
-      + [Información general ](use-cases/track-errors/track-errors-overview.md)
-      + [Seguimiento de errores en Android](use-cases/track-errors/track-errors-android.md)
-      + [Seguimiento de errores en iOS ](use-cases/track-errors/track-errors-ios.md)
-      + Seguimiento de errores en JavaScript {#track-errors-js}
-         + [Seguimiento de errores en JavaScript 2.x](use-cases/track-errors/track-errors-js/track-errors-js.md)
-         + [Seguimiento de errores en JavaScript 3.x](use-cases/track-errors/track-errors-js/track-errors-js3.md)
-      + [Seguimiento de errores en Chromecast](use-cases/track-errors/track-errors-chromecast.md)
-      + [Seguimiento de errores en Roku](use-cases/track-errors/track-errors-roku.md)
-   + Situaciones de seguimiento {#tracking-scenarios}
-      + [Reproducción de VOD sin anuncios](use-cases/tracking-scenarios/vod-no-intrs-details.md)
-      + [Reproducción de VOD con anuncios previos a la emisión](use-cases/tracking-scenarios/vod-preroll-ads.md)
-      + [Reproducción de VOD con anuncios omitidos](use-cases/tracking-scenarios/vod-skipped-ads.md)
-      + [Reproducción de VOD con un capítulo](use-cases/tracking-scenarios/vod-one-chapter.md)
-      + [Reproducción de VOD con un capítulo omitido](use-cases/tracking-scenarios/vod-skipped-chapter.md)
-      + [Reproducción de VOD con llamada a otro punto del contenido principal](use-cases/tracking-scenarios/vod-seeking.md)
-      + [Reproducción de VOD con almacenamiento en búfer](use-cases/tracking-scenarios/vod-buffering.md)
-      + [Varios rastreadores de VOD en paralelo](use-cases/tracking-scenarios/vod-multi-trackers.md)
-      + [Un rastreador de VOD para varias sesiones](use-cases/tracking-scenarios/vod-multi-track-one-session.md)
-      + [Contenido principal en directo](use-cases/tracking-scenarios/live-main-content.md)
-      + [Contenido principal activo con seguimiento secuencial](use-cases/tracking-scenarios/live-sequential.md)
 + Creación de informes {#media-reports}
    + [Habilitación de informes de contenidos](reporting/media-reports-enable.md)
    + [Acerca de los segmentos](reporting/segments.md)
@@ -233,3 +141,95 @@ ht-degree: 78%
    + [API de seguimiento de 1x a 2x](legacy/va-1x-to-2x/1x-2x-api-change.md)
    + [Heredado: introducción a AVA](legacy/intro-to-ava/implementation-paths/implementation-paths.md)
    + [Ruta del lado del cliente](legacy/intro-to-ava/implementation-paths/client-side-path.md)
+   + Seguimiento {#track-av-playback}
+      + [Información general ](use-cases/track-av-playback/track-core-overview.md)
+      + Seguimiento de Core Streaming Media Playback {#track-core}
+         + [Seguimiento de reproducción principal en Android](use-cases/track-av-playback/track-core/track-core-android.md)
+         + [Seguimiento de reproducción principal en iOS](use-cases/track-av-playback/track-core/track-core-ios.md)
+         + Seguimiento de reproducción principal en JavaScript {#track-core-javascript}
+            + [Seguimiento de reproducción principal en JavaScript 2.x](use-cases/track-av-playback/track-core/track-core-javascript/track-core-js.md)
+            + [Seguimiento de reproducción principal en JavaScript 3.x](use-cases/track-av-playback/track-core/track-core-javascript/track-core-js3.md)
+         + [Seguimiento de reproducción principal en Chromecast](use-cases/track-av-playback/track-core/track-core-chromecast.md)
+         + [Seguimiento de reproducción principal en Roku](use-cases/track-av-playback/track-core/track-core-roku.md)
+      + Seguimiento del almacenamiento en búfer {#track-buffering}
+         + [Seguimiento del almacenamiento en búfer en Android](use-cases/track-av-playback/track-buffering/track-buffering-android.md)
+         + [Seguimiento del almacenamiento en búfer en iOS](use-cases/track-av-playback/track-buffering/track-buffering-ios.md)
+         + Seguimiento del almacenamiento en búfer en JavaScript {#track-buffering-js}
+            + [Seguimiento del almacenamiento en búfer en JavaScript 2.x](use-cases/track-av-playback/track-buffering/track-buffering-js/track-buffering-js.md)
+            + [Seguimiento del almacenamiento en búfer en JavaScript 3.x](use-cases/track-av-playback/track-buffering/track-buffering-js/track-buffering-js3.md)
+         + [Seguimiento del almacenamiento en búfer en Chromecast](use-cases/track-av-playback/track-buffering/track-buffering-chromecast.md)
+         + [Seguimiento del almacenamiento en búfer en Roku](use-cases/track-av-playback/track-buffering/track-buffering-roku.md)
+      + Seguimiento de llamada a otro punto del contenido {#track-seeking}
+         + [Seguimiento de llamada a otro punto del contenido en Android](use-cases/track-av-playback/track-seeking/track-seeking-android.md)
+         + [Seguimiento de llamada a otro punto del contenido en iOS](use-cases/track-av-playback/track-seeking/track-seeking-ios.md)
+         + Seguimiento de llamada a otro punto del contenido en JavaScript {#track-seeking-js}
+            + [Seguimiento de llamada a otro punto del contenido en JavaScript 2.x](use-cases/track-av-playback/track-seeking/track-seeking-js/track-seeking-js.md)
+            + [Seguimiento de llamada a otro punto del contenido en JavaScript 3.x](use-cases/track-av-playback/track-seeking/track-seeking-js/track-seeking-js3.md)
+         + [Seguimiento de llamada a otro punto del contenido en Chromecast](use-cases/track-av-playback/track-seeking/track-seeking-chromecast.md)
+         + [Seguimiento de llamada a otro punto del contenido en Roku](use-cases/track-av-playback/track-seeking/track-seeking-roku.md)
+      + Implementación de metadatos estándar {#impl-std-metadata}
+         + [Implementación de metadatos estándar en Android](use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-android.md)
+         + [Implementación de metadatos estándar en iOS](use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-ios.md)
+         + [Claves de metadatos de iOS](use-cases/track-av-playback/impl-std-metadata/ios-metadata-keys.md)
+         + Implementación de metadatos estándar en JavaScript {#impl-std-md-js}
+            + [Implementación de metadatos estándar en JavaScript 2.x](use-cases/track-av-playback/impl-std-metadata/impl-std-md-js/impl-std-metadata-js.md)
+            + [Implementación de metadatos estándar en JavaScript 3.x](use-cases/track-av-playback/impl-std-metadata/impl-std-md-js/impl-std-metadata-js3.md)
+         + [Implementación de metadatos estándar en Chromecast](use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-chromecast.md)
+         + [Parámetros de metadatos estándar: Chromecast](use-cases/track-av-playback/impl-std-metadata/chromecast-metadata.md)
+         + [Implementación de metadatos estándar en Roku ](use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
+         + [Parámetros de metadatos estándar: Roku](use-cases/track-av-playback/impl-std-metadata/roku-metadata.md)
+      + Seguimiento de anuncios {#track-ads}
+         + [Información general ](use-cases/track-ads/track-ads-overview.md)
+         + [Seguimiento de anuncios en Android](use-cases/track-ads/track-ads-android.md)
+         + [Seguimiento de anuncios en iOS](use-cases/track-ads/track-ads-ios.md)
+         + Seguimiento de anuncios en JavaScript {#track-ads-js}
+            + [Seguimiento de anuncios en JavaScript 2.x](use-cases/track-ads/track-ads-js/track-ads-js.md)
+            + [Seguimiento de anuncios en JavaScript 3.x](use-cases/track-ads/track-ads-js/track-ads-js3.md)
+         + [Seguimiento de anuncios en Chromecast](use-cases/track-ads/track-ads-chromecast.md)
+         + [Seguimiento de anuncios en Roku](use-cases/track-ads/track-ads-roku.md)
+         + Implementación de los metadatos de anuncios estándar {#impl-std-ad-metadata}
+            + [Implementación de metadatos de publicidad estándar en Android ](use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-android.md)
+            + [Implementación de metadatos de publicidad estándar en iOS ](use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-ios.md)
+            + Implementación de metadatos de publicidad estándar en JavaScript {#impl-std-ad-md-js}
+               + [Implementación de metadatos de publicidad estándar en JavaScript 2.x](use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-md-js/impl-std-ad-metadata-js.md)
+               + [Implementación de metadatos de publicidad estándar en JavaScript 3.x](use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-md-js/impl-std-ad-metadata-js3.md)
+            + [Implementación de metadatos de publicidad estándar en Roku ](use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-roku.md)
+      + Seguimiento de capítulos y segmentos {#track-chapters}
+         + [Información general ](use-cases/track-chapters/track-chapters-overview.md)
+         + [Seguimiento de capítulos y segmentos en Android](use-cases/track-chapters/track-chapters-android.md)
+         + [Seguimiento de capítulos y segmentos en iOS](use-cases/track-chapters/track-chapters-ios.md)
+         + Seguimiento de capítulos y segmentos en JavaScript {#track-chapters-js}
+            + [Seguimiento de capítulos y segmentos en JavaScript 2.x](use-cases/track-chapters/track-chapters-js/track-chapters-js.md)
+            + [Seguimiento de capítulos y segmentos en JavaScript 3.x](use-cases/track-chapters/track-chapters-js/track-chapters-js3.md)
+         + [Seguimiento de capítulos y segmentos en Chromecast](use-cases/track-chapters/track-chapters-chromecast.md)
+         + [Seguimiento de capítulos y segmentos en Roku](use-cases/track-chapters/track-chapters-roku.md)
+      + Seguimiento de la calidad de la experiencia {#track-qos}
+         + [Información general ](use-cases/track-qos/track-qos-overview.md)
+         + [Seguimiento de la calidad de la experiencia en Android](use-cases/track-qos/track-qos-android.md)
+         + [Seguimiento de la calidad de la experiencia en iOS](use-cases/track-qos/track-qos-ios.md)
+         + Seguimiento de la calidad de la experiencia en JavaScript {#track-qos-js}
+            + [Seguimiento de la calidad de la experiencia en JavaScript 2.x](use-cases/track-qos/track-qos-js/track-qos-js.md)
+            + [Seguimiento de la calidad de la experiencia en JavaScript 3.x](use-cases/track-qos/track-qos-js/track-qos-js3.md)
+         + [Seguimiento de la calidad de la experiencia en Chromecast](use-cases/track-qos/track-qos-chromecast.md)
+         + [Seguimiento de la calidad de la experiencia en Roku](use-cases/track-qos/track-qos-roku.md)
+      + Seguimiento de errores {#track-errors}
+         + [Información general ](use-cases/track-errors/track-errors-overview.md)
+         + [Seguimiento de errores en Android](use-cases/track-errors/track-errors-android.md)
+         + [Seguimiento de errores en iOS ](use-cases/track-errors/track-errors-ios.md)
+         + Seguimiento de errores en JavaScript {#track-errors-js}
+            + [Seguimiento de errores en JavaScript 2.x](use-cases/track-errors/track-errors-js/track-errors-js.md)
+            + [Seguimiento de errores en JavaScript 3.x](use-cases/track-errors/track-errors-js/track-errors-js3.md)
+         + [Seguimiento de errores en Chromecast](use-cases/track-errors/track-errors-chromecast.md)
+         + [Seguimiento de errores en Roku](use-cases/track-errors/track-errors-roku.md)
+      + Situaciones de seguimiento {#tracking-scenarios}
+         + [Reproducción de VOD sin anuncios](use-cases/tracking-scenarios/vod-no-intrs-details.md)
+         + [Reproducción de VOD con anuncios previos a la emisión](use-cases/tracking-scenarios/vod-preroll-ads.md)
+         + [Reproducción de VOD con anuncios omitidos](use-cases/tracking-scenarios/vod-skipped-ads.md)
+         + [Reproducción de VOD con un capítulo](use-cases/tracking-scenarios/vod-one-chapter.md)
+         + [Reproducción de VOD con un capítulo omitido](use-cases/tracking-scenarios/vod-skipped-chapter.md)
+         + [Reproducción de VOD con llamada a otro punto del contenido principal](use-cases/tracking-scenarios/vod-seeking.md)
+         + [Reproducción de VOD con almacenamiento en búfer](use-cases/tracking-scenarios/vod-buffering.md)
+         + [Varios rastreadores de VOD en paralelo](use-cases/tracking-scenarios/vod-multi-trackers.md)
+         + [Un rastreador de VOD para varias sesiones](use-cases/tracking-scenarios/vod-multi-track-one-session.md)
+         + [Contenido principal en directo](use-cases/tracking-scenarios/live-main-content.md)
+         + [Contenido principal activo con seguimiento secuencial](use-cases/tracking-scenarios/live-sequential.md)
