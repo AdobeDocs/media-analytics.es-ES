@@ -4,13 +4,13 @@ description: Introducción a Adobe Analytics para medios de transmisión.
 uuid: null
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+exl-id: 660aa29a-2a3d-4a4f-acd6-471551d1047b
+source-git-commit: 8b939da2374acb5d573a553c848ba880345e64b5
 workflow-type: tm+mt
-source-wordcount: '444'
+source-wordcount: '439'
 ht-degree: 6%
 
 ---
-
 
 # Introducción {#getting-started}
 
@@ -47,10 +47,6 @@ La variable **API de recopilación de medios** le permite personalizar su imple
 Para obtener información sobre el uso de las API de recopilación de medios, consulte [Documentación de la API de medios de transmisión](/help/implementation/media-collection-api/mc-api-overview.md).
 
 ## Extensiones de Adobe {#adobe-extensions}
-
->[!NOTE]
->
->NECESITA INTRODUCCIÓN PARA LAS EXTENSIONES
 
 * La variable [**Extensión de Adobe Medium Analytics for Audio and Video**](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics/overview.html?lang=en) (Extensión de Media Analytics), es necesario para implementaciones de iOS y tvOS. Proporciona la funcionalidad para agregar la instancia de seguimiento a un sitio o proyecto de etiquetas. La extensión MA también requiere la extensión de Analytics y la extensión de ID de Experience Cloud.
 
