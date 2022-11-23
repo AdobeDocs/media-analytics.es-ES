@@ -12,11 +12,11 @@ ht-degree: 16%
 
 ---
 
-# Información general sobre medios de transmisión de Adobe Analytics
+# Información general de Adobe Analytics para medios de streaming
 
 ![Banner](./assets/media_analytics_banner.png)
 
-Adobe Analytics para Streaming Media es un complemento de Adobe Analytics que ofrece potentes herramientas de medición de audio, vídeo y anuncios. Con Analytics para medios de transmisión, obtiene detalles granulares y en tiempo real sobre la duración, las paradas y los inicios que le permiten evaluar y combinar métricas de vídeo y audio. Estas perspectivas le permiten comprender los hábitos de visualización y escucha de sus clientes y aumentar la participación con recomendaciones altamente personalizadas.
+Adobe Analytics para Streaming Media es un complemento de Adobe Analytics que ofrece potentes herramientas de medición de audio, vídeo y anuncios. Con Analytics para medios de streaming, obtiene detalles granulares y en tiempo real sobre la duración, las paradas y los inicios que le permiten evaluar y combinar métricas de vídeo y audio. Estas perspectivas le permiten comprender los hábitos de visualización y escucha de sus clientes y aumentar la participación con recomendaciones altamente personalizadas.
 
 Adobe Analytics para medios de transmisión le permite hacer un seguimiento del recorrido completo de los clientes en su sitio y en las aplicaciones de flujo continuo. Las métricas de medios de transmisión se pueden combinar con otras funciones de Adobe Analytics, como Audience Analytics, Mobile o Cross-Device Analytics. Las métricas se integran fácilmente en los informes de Adobe Analytics y en otros productos de Adobe Experience Platform. La medición de Media le permite categorizar los datos en varias dimensiones y segmentos, capturando todos los metadatos que necesita para hacer un análisis completo y detallado. A continuación, puede analizar los datos y atribuir los criterios de éxito a los medios totalmente consumidos, el tiempo promedio empleado y los anuncios completados.
 
