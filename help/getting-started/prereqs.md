@@ -6,38 +6,38 @@ exl-id: 85ab1dbd-f4a7-4f11-afc9-8d5000e2de70
 feature: "Media Analytics, System Requirements"
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '503'
-ht-degree: 50%
+ht-degree: 100%
 
 ---
 
 # Requisitos previos {#prerequisites}
 
-Para implementar Adobe Analytics para medios de transmisión, complete las siguientes tareas:
+Para implementar Adobe Analytics para Streaming de medios, complete las siguientes tareas:
 
-1. **Confirmar el modelo de precios de Steaming Media**<br>
-El modelo de precios actual se basa en las emisiones de vídeo. Si es necesario, póngase en contacto con su representante de ventas o administrador de cuentas para firmar un nuevo pedido de ventas, ya que Streaming Media Analytics se vende por separado de Adobe Analytics.
+1. **Confirmar el modelo de precios del Streaming de medios**<br>
+El modelo de precios actual se basa en las transmisiones de vídeo. Si es necesario, póngase en contacto con su representante de ventas o administrador de cuentas para firmar un nuevo pedido de ventas, ya que Streaming de medios de Analytics se vende por separado de Adobe Analytics.
 
-1. **Confirme que va a implementar Adobe Analytics**<br>
-Streaming Media para Adobe Analytics también requiere una implementación básica de Adobe Analytics. Consulte [Implementación de Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/home.html?lang=es) para obtener más información.
+1. **Confirmar la implementación de Adobe Analytics**<br>
+Streaming de medios para Adobe Analytics también requiere una implementación básica de Adobe Analytics. Consulte [Implementación de Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/home.html?lang=es) para obtener más información.
 
 1. **Obtener la URL del servidor de seguimiento de medios**<br>
 Solicite a su representante de Adobe Analytics la URL del servidor de seguimiento de medios. Esta es la 
-`collection-api-server` URL para el SDK de Mobile, el SDK de JavaScript y el servidor de seguimiento de api no de recopilación para Roku. Los nombres de dominio para la implementación de API son: `[your_namespace].hb-api.omtrdc.net`.
+`collection-api-server` URL para el SDK de Mobile, el SDK de JavaScript y el servidor de seguimiento de la API de no recopilación para Roku. Los nombres de dominio para la implementación de API son: `[your_namespace].hb-api.omtrdc.net`.
 
-1. **Descargar el Media SDK actual o implementar las extensiones necesarias**<br>
-Según la ruta de implementación, [descargar el SDK actual](download-sdks.md) para plataformas web, móviles o de Internet. Las extensiones necesarias deben implementarse para habilitar Adobe Analytics para medios de transmisión. Para obtener información sobre las extensiones requeridas, consulte [Extensiones de Adobe](download-sdks.md#media-extension). (NECESITA aclarar si descargar Media SDK u Obtener la extensión)
+1. **Descargar Media SDK actual o implementar las extensiones necesarias**<br>
+Según la ruta de implementación, [descargue el SDK actual](download-sdks.md) para plataformas web, móviles o de servicios OTT. Las extensiones necesarias deben implementarse para habilitar Adobe Analytics para streaming de medios. Para obtener información acerca de las extensiones necesarias, consulte [Extensiones de Adobe](download-sdks.md#media-extension). (NECESITA aclarar si desea descargar Media SDK u obtener la extensión)
 
 1. **Habilitar los informes de Adobe Analytics**<br>
-Para habilitar los informes en Analytics y ver los datos de contenido y publicidad que está recopilando, debe habilitar los informes en Analytics. Consulte [Habilitación de informes de contenidos.](/help/reporting/media-reports-enable.md).
+Para habilitar los informes en Analytics y ver los datos de contenido y publicidad que está recopilando, debe habilitar los informes en Analytics. Consulte [Habilitación de informes de medios](/help/reporting/media-reports-enable.md).
 
 1. **Habilitar Experience Cloud**<br>
 
 
-## Implementación del servicio de ID de Adobe Experience Platform. {#implement-id}
+## Implementación del servicio de ID de Adobe Experience Platform {#implement-id}
 
-La variable **Servicio de identidad** habilita el marco de identificación común para los servicios principales de Experience Cloud, las soluciones, los atributos de cliente y las audiencias en el servicio principal Personas. Funciona asignando ID únicos y persistentes a los visitantes del sitio. Cuando su organización implementa el servicio de ID, este ID le permite identificar el mismo visitante del sitio y sus datos en diferentes soluciones de Experience Cloud.
+El **servicio de identidad** habilita el marco de identificación común para los servicios principales de Experience Cloud, sus soluciones y los atributos de cliente y las audiencias en el servicio principal People. Funciona asignando ID únicos y persistentes a los visitantes del sitio. Cuando su organización implementa el servicio de ID, este ID le permite identificar el mismo visitante del sitio y sus datos en diferentes soluciones de Experience Cloud.
 
 ![Gráfico del servicio de ID](assets/mc_id_service_graphic.png)
 
