@@ -5,13 +5,13 @@ exl-id: 2eadd5e7-45de-4275-aac5-d16e2a6a9fed
 feature: "Media Analytics, Workspace Basics"
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '183'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
-# Información general sobre los visualizadores simultáneos de medios {#media-concurrent-viewers}
+# Información general sobre visualizadores simultáneos de medios {#media-concurrent-viewers}
 
 El análisis de visualizadores simultáneos le permite comprender dónde se produjo el pico de concurrencia o dónde se produjeron los descensos para proporcionar una valiosa perspectiva de la calidad del contenido y la participación del visualizador, así como ayudar a solucionar problemas o a planificar el volumen y la escala.
 
