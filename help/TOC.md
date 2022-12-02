@@ -6,25 +6,25 @@ breadcrumb-title: Guía de Media Analytics
 user-guide-description: Implemente Adobe Analytics para medios de transmisión. Incluye el SDK de medios y la API de recopilación de medios.
 sub-product: media analytics
 source-git-commit: 7b33301495a6596ce5e343e9e720d15619da2af9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '865'
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
 
-# Adobe Analytics para medios de transmisión {#using}
+# Adobe Analytics para medios de streaming {#using}
 
-+ [Guía de Streaming Media Analytics](media-overview.md)
++ [Guía de medios de streaming de Analytics](media-overview.md)
 + Notas de la versión {#release-notes}
-   + [Notas de la versión de Streaming Media](additional-resources/release-notes.md)
+   + [Notas de la versión de medios de streaming](additional-resources/release-notes.md)
 + Introducción {#getting-started}
    + [Información general](getting-started/getting-started.md)
    + [SDK, bibliotecas y extensiones](getting-started/download-sdks.md)
    + [Dispositivos compatibles](getting-started/supported-devices.md)
    + [Requisitos previos ](getting-started/prereqs.md)
-   + [Fin de la asistencia](additional-resources/end-of-support-faqs.md)
-   + [Documentación de Streaming Media](getting-started/implementation-documentation.md)
+   + [Fin del soporte técnico](additional-resources/end-of-support-faqs.md)
+   + [Documentación de medios de streaming](getting-started/implementation-documentation.md)
 + Implementación {#implementation}
    + [Información general sobre la implementación](implementation/overview.md)
    + Media SDK: implementación {#media-sdk}
@@ -32,7 +32,7 @@ ht-degree: 78%
       + Instalación y configuración {#setup}
          + [Instalación de SDK web](implementation/media-sdk/setup/web-implementation.md)
          + [Instalación de SDK móviles](implementation/media-sdk/setup/mobile-implementation.md)
-         + Instalación de SDK de OTT {#ott-setup}
+         + Instalación de SDK para OTT {#ott-setup}
             + [Instalación del SDK de Chromecast](implementation/media-sdk/setup/set-up-chromecast.md)
             + [Instalación del SDK de Roku](implementation/media-sdk/setup/set-up-roku.md)
    + API de recopilación de medios: implementación {#streaming-media-apis}
@@ -62,7 +62,7 @@ ht-degree: 78%
       + [Parámetros de calidad ](implementation/variables/quality-parameters.md)
       + [Métricas calculadas ](implementation/variables/calculated-metrics.md)
 + Creación de informes {#media-reports}
-   + [Habilitación de informes de contenidos](reporting/media-reports-enable.md)
+   + [Habilitación de informes de medios](reporting/media-reports-enable.md)
    + [Acerca de los segmentos](reporting/segments.md)
    + Informes predeterminados de contenidos {#media-default-reports}
       + [Información general de informes predeterminados](reporting/reports-and-analytics/default-reports-overview.md)
@@ -74,7 +74,7 @@ ht-degree: 78%
       + [Panel Audiencia media por minuto de medios](reporting/workspace/average-minute-audience.md)
       + [Panel Visualizadores simultáneos de medios](reporting/workspace/media-concurrent-viewers-overview.md)
       + [Panel Tiempo invertido en la reproducción de contenido](reporting/workspace/media-playback-time-spent.md)
-   + [Plantillas de medios del espacio de trabajo](reporting/workspace/media-workspace-templates.md)
+   + [Plantillas de medios del espacio de trabajo ](reporting/workspace/media-workspace-templates.md)
    + [Obtener datos de visualizadores simultáneos mediante API](reporting/reports-and-analytics/get-concurrent-json20.md)
    + [Obtención de datos del tiempo invertido en la reproducción de medios mediante API](reporting/reports-and-analytics/get-mediaplaybacktimespent-json20.md)
 + Casos de uso {#media-use-cases}
@@ -86,15 +86,15 @@ ht-degree: 78%
       + [Seguimiento de varios estados de reproductor](use-cases/player-state-tracking/multiple-player-states.md)
       + [Ejemplos de seguimiento del estado de reproducción](use-cases/player-state-tracking/player-state-examples.md)
    + [Seguimiento del contenido descargado sin conexión](use-cases/track-downloaded-content.md)
-   + [Federated Analytics](use-cases/federated-analytics.md)
+   + [Federated Analytics ](use-cases/federated-analytics.md)
    + [Administración de interrupciones de la aplicación durante la reproducción](use-cases/cookbook/app-interrupts.md)
-   + [Atribución de flujo de transmisión de contenido](use-cases/media-analytics-cookbook/media-dimensions.md)
+   + [Atribución de flujo de transmisión de medios](use-cases/media-analytics-cookbook/media-dimensions.md)
    + [Reanudación de sesiones inactivas](use-cases/cookbook/resuming-inactive.md)
    + [Seguimiento de Roku en SceneGraph](use-cases/cookbook/sdk-track-scenegraph.md)
-   + [Distribución de brechas entre anuncios](use-cases/cookbook/fix-ad-play-ad.md)
-   + Líneas de tiempo {#timelines}
+   + [Distribución de espacios entre anuncios](use-cases/cookbook/fix-ad-play-ad.md)
+   + Cronologías {#timelines}
       + [Inicio y final del capítulo](use-cases/timelines/chapter-start-end.md)
-      + [Ver al final del contenido](use-cases/timelines/view-to-end-of-content.md)
+      + [Ver hasta el final del contenido](use-cases/timelines/view-to-end-of-content.md)
       + [Abandonar sesión](use-cases/timelines/user-abandons-session.md)
    + Uso de Analytics en aplicaciones OTT {#analytics-with-ott}
       + [Seguimiento de estados de aplicaciones](use-cases/analytics-with-ott/track-app-states.md)
@@ -109,24 +109,24 @@ ht-degree: 78%
    + [Heredado: información general](legacy/setup/legacy-setup-overview.md)
    + [Heredado: descargar SDK](legacy/legacy-download-sdks.md)
    + Heredado: Media SDK {#legacy-media-sdks}
-      + [Heredado: Información general de Media SDK](legacy/media-sdk/setup/setup-overview.md)
+      + [Heredado: información general de Media SDK](legacy/media-sdk/setup/setup-overview.md)
       + [Configuración de Android](legacy/media-sdk/setup/set-up-android.md)
       + [Configuración de iOS](legacy/media-sdk/setup/set-up-ios.md)
       + Configuración de JavaScript {#setup-javascript}
          + [Configuración de JavaScript 3.x](legacy/media-sdk/setup/setup-javascript/set-up-js-3.md)
-   + Heredado: SDK de medios para la migración a Launch {#sdk-to-launch}
+   + Heredado: Media SDK para la migración a Launch {#sdk-to-launch}
       + [Información general](legacy/sdk-to-launch/sdk-to-launch-migration.md)
       + [Android: Media SDK para Launch](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-android.md)
       + [iOS: Media SDK para Launch](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-ios.md)
       + [JavaScript: Media SDK para Launch](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-js.md)
-   + [Acerca de la medición de Heartbeat](legacy/heartbeat-measurement.md)
-   + [Adobe Primetime y Streaming Media Analytics](legacy/intro-to-ava/implementation-paths/primetime-path.md)
+   + [Acerca de la medición del ritmo cardíaco](legacy/heartbeat-measurement.md)
+   + [Adobe Primetime y medios de streaming de Analytics](legacy/intro-to-ava/implementation-paths/primetime-path.md)
    + [Habilitación de la gestión de público de Adobe](legacy/intro-to-ava/am-enablement.md)
-   + [Implementación de vínculo personalizado](legacy/measurement-options/cl-in-aa/cl-impl-guide.md)
-   + Seguimiento de Milestone heredado {#legacy-milestone-tracking}
-      + [Seguimiento de Milestone heredado](legacy/measurement-options/mm-milestone-tracking/milestone-overview.md)
-      + [Migración de Milestone a VA](legacy/measurement-options/mm-milestone-tracking/migrate-ms-to-va.md)
-      + [Migración de Milestone a CL](legacy/measurement-options/mm-milestone-tracking/migrate-ms-to-cl.md)
+   + [Implementación de Vínculo personalizado](legacy/measurement-options/cl-in-aa/cl-impl-guide.md)
+   + Seguimiento de hitos heredado {#legacy-milestone-tracking}
+      + [Seguimiento de hitos heredado](legacy/measurement-options/mm-milestone-tracking/milestone-overview.md)
+      + [Migración de hitos a VA](legacy/measurement-options/mm-milestone-tracking/migrate-ms-to-va.md)
+      + [Migración de hitos a CL](legacy/measurement-options/mm-milestone-tracking/migrate-ms-to-cl.md)
    + Validación {#validation}
       + [Información general sobre validación](legacy/validation/validation-overview.md)
       + [Prueba 1: Reproducción estándar](legacy/validation/test1-standard-playback.md)
@@ -137,7 +137,7 @@ ht-degree: 78%
          + [Depuración de SDK](legacy/validation/debugging/sdk-debugging.md)
    + [Migración heredada: VHL 1.x a VHL 2.x](legacy/va-1x-to-2x/mig-1x-2x-overview.md)
    + [Configuración de JavaScript 2.x](legacy/media-sdk/setup/setup-javascript/set-up-js-2.md)
-   + [Comparación de código v1.x y v2.x](legacy/va-1x-to-2x/code-comparison-1x-2x.md)
+   + [Comparación del código de la v1.x y la v2.x](legacy/va-1x-to-2x/code-comparison-1x-2x.md)
    + [API de seguimiento de 1x a 2x](legacy/va-1x-to-2x/1x-2x-api-change.md)
    + [Heredado: introducción a AVA](legacy/intro-to-ava/implementation-paths/implementation-paths.md)
    + [Ruta del lado del cliente](legacy/intro-to-ava/implementation-paths/client-side-path.md)
