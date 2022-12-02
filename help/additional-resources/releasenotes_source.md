@@ -10,7 +10,7 @@ ht-degree: 100%
 El siguiente contenido se ha copiado de las notas de la versión de Experience Cloud. Esto se trasladará a las nuevas notas de la versión de medios de streaming.
 
 
-Obtenga información sobre las últimas actualizaciones de la versión para [productos de Adobe Experience Cloud](https://business.adobe.com/es/products/adobe-experience-cloud-products.html). Obtenga la documentación de autoayuda más reciente, tutoriales y cursos sobre Experience League.
+Obtenga información sobre las últimas actualizaciones de la versión para los [productos de Adobe Experience Cloud](https://business.adobe.com/es/products/adobe-experience-cloud-products.html). Obtenga la documentación de autoayuda más reciente: tutoriales y cursos sobre Experience League.
 
 Obtenga información sobre las últimas actualizaciones de la versión para [Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/release-notes/latest.html?lang=es). Obtenga la documentación de autoayuda más reciente, tutoriales y cursos sobre Experience League.
 
@@ -60,7 +60,7 @@ Nuevos tutoriales y cursos de Analytics
 
 | Publicadas | Nombre | tipo | Descripción |
 | ----------- | ---------- | ---------- | --------- |
-| 6 de enero de 2021 | [Panel de visualizadores simultáneos de medios en Analysis Workspace](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/media-concurrent-viewers-panel-in-analysis-workspace.html?lang=es#analysis-workspace) | Vídeo | Comprenda dónde se produjo el pico de concurrencia o dónde se produjeron las disminuciones. Obtenga valiosos conocimientos de la calidad del contenido y de la participación del visualizador, y ayude a solucionar problemas o a planificar el volumen o la escala. |
+| 6 de enero de 2021 | [Panel de visualizadores simultáneos de medios en Analysis Workspace](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/media-concurrent-viewers-panel-in-analysis-workspace.html?lang=es#analysis-workspace) | Vídeo | Comprenda dónde se produjo el pico de concurrencia o dónde se produjeron las disminuciones. Obtenga valiosos conocimientos de la calidad del contenido y de la participación del visualizador, y solucione problemas o planifique el volumen o la escala. |
 
 
 ## Noviembre de 2020
