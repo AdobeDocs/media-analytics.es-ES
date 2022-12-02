@@ -1,22 +1,22 @@
 ---
-title: Seguimiento del contenido descargado sin conexión en medios de transmisión de Adobe
-description: Aprenda a utilizar la función Contenido descargado para realizar un seguimiento del consumo de contenido cuando un usuario está sin conexión.
+title: Seguimiento del contenido descargado sin conexión en medios de streaming de Adobe
+description: Aprenda a utilizar la funcionalidad Contenido descargado para seguir el consumo de medios cuando un usuario está sin conexión.
 uuid: 0718689d-9602-4e3f-833c-8297aae1d909
 exl-id: 82d3e5d7-4f88-425c-8bdb-e9101fc1db92
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '703'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
-# Seguimiento del contenido descargado{#track-downloaded-content}
+# Seguimiento del contenido descargado {#track-downloaded-content}
 
 ## Información general {#overview}
 
-La función Contenido descargado proporciona la capacidad de realizar un seguimiento del consumo de contenido cuando un usuario está sin conexión. Por ejemplo, un usuario descarga e instala una aplicación en un dispositivo móvil y, a continuación, utiliza la aplicación para descargar contenido en el almacenamiento local del dispositivo. Para realizar un seguimiento de los datos descargados, Adobe ha desarrollado la funcionalidad Contenido descargado. Con esta funcionalidad, cuando el usuario reproduce contenido desde el almacenamiento de un dispositivo, los datos de seguimiento se almacenan en el dispositivo, independientemente de su conectividad. Cuando el usuario termina la sesión de reproducción y el dispositivo vuelve a estar en línea, la información de seguimiento almacenada se envía al back-end de la API de recopilación de contenido en una única carga. A continuación, la información de seguimiento almacenada se procesa y se comunica como de costumbre en la API de recopilación de medios.
+La funcionalidad Contenido descargado proporciona la capacidad de realizar un seguimiento del consumo de medios cuando un usuario está sin conexión. Por ejemplo, un usuario descarga e instala una aplicación en un dispositivo móvil y, a continuación, utiliza la aplicación para descargar contenido en el almacenamiento local del dispositivo. Para realizar un seguimiento de los datos descargados, Adobe ha desarrollado la funcionalidad Contenido descargado. Con esta funcionalidad, cuando el usuario reproduce contenido desde el almacenamiento de un dispositivo, los datos de seguimiento se almacenan en el dispositivo, independientemente de su conectividad. Cuando el usuario termina la sesión de reproducción y el dispositivo vuelve a estar en línea, la información de seguimiento almacenada se envía al back-end de la API de recopilación de contenido en una única carga. A continuación, la información de seguimiento almacenada se procesa y se comunica como de costumbre en la API de recopilación de medios.
 
 Contrastar los dos enfoques:
 
@@ -109,12 +109,12 @@ POST /api/v1/downloaded HTTP/1.1
 
 >[!IMPORTANT]
 >
->Anteriormente, el contenido descargado también se podía enviar a `/api/v1/sessions` API. Esta forma de rastrear el contenido descargado es **obsoleto** y **eliminado** en el futuro.
+>Anteriormente, el contenido descargado también se podía enviar a la API `/api/v1/sessions`. Esta forma de seguimiento del contenido descargado está **obsoleta** y se **eliminará** en el futuro.
 
 
-La variable `/api/v1/sessions` La API solo aceptará eventos de inicialización de sesión.
-Al utilizar la nueva API, la `media.downloaded` El indicador ya no es necesario.
-Le recomendamos encarecidamente que use la variable `/api/v1/downloaded` API para nuevas implementaciones de contenido descargado, así como para actualizar implementaciones existentes que dependen de la API antigua.
+La API `/api/v1/sessions` solo aceptará eventos de inicialización de sesión.
+Al utilizar la nueva API, el indicador `media.downloaded`, antes obligatorio, ya no es necesario.
+Le recomendamos encarecidamente que use la API `/api/v1/downloaded` para nuevas implementaciones de contenido descargado, así como para actualizar las existentes que dependen de la API antigua.
 
 
 ```
