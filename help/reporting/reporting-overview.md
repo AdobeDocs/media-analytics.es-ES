@@ -6,9 +6,9 @@ exl-id: 686d88a5-79b6-4936-ba9e-8f834ef330d1
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '915'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ Para enviar datos sobre los contenidos, es necesario configurar todos los grupos
 >
 >Para aprovechar las nuevas capacidades, los clientes de Media Analytics deben volver a habilitar el seguimiento de contenidos para sus RSID.
 
-1. En [Adobe Analytics](https://experience.adobe.com) click **[!UICONTROL Administración > Grupos de informes].**
+1. En [Adobe Analytics](https://experience.adobe.com) haga clic en **[!UICONTROL Administración > Grupos de informes].**
 1. Seleccione los grupos de informes donde desee recopilar los datos de contenidos y haga clic en **[!UICONTROL Editar configuración > Gestión de contenidos > Informes de contenidos].**
 
    ![](assets/media-reporting.png){width="400px"}
@@ -35,7 +35,7 @@ Para enviar datos sobre los contenidos, es necesario configurar todos los grupos
 
    * **Anuncios multimedia**
 
-      La medición de anuncios de contenidos se usa para medir anuncios dentro del contenido de contenidos. Se utilizarán las evars de solución para medir la publicidad, el nombre del reproductor del anuncio, el pod de anuncios y la posición del anuncio en la secuencia. Los eventos de solución se utilizarán para Inicios de publicidad, finalizaciones de publicidad, tiempo invertido en publicidad y tiempo invertido en vídeo.
+      La medición de anuncios de contenidos se usa para medir anuncios dentro del contenido de contenidos. Esta usa las eVars de solución para medir el anuncio, el nombre del reproductor del anuncio, pod de anuncios y la posición del anuncio en la secuencia. Los eventos de solución se utilizarán para Inicios de publicidad, finalizaciones de publicidad, tiempo invertido en publicidad y tiempo invertido en vídeo.
 
    * **Capítulos multimedia**
 
