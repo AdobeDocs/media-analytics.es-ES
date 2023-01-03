@@ -4,10 +4,10 @@ description: Obtenga información acerca de cómo migrar del SDK de medios a Lau
 exl-id: 26764835-4781-417b-a6c0-ea6ae78d76ae
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: fb09280ae6fb9f0ab7e67bd6ae134e6e26f88ec8
 workflow-type: tm+mt
 source-wordcount: '411'
-ht-degree: 100%
+ht-degree: 93%
 
 ---
 
@@ -48,7 +48,7 @@ vídeo y haga clic en [!UICONTROL Instalar].
 
 ![](assets/launch_config_mobile.png)
 
-[Uso de extensiones móviles](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics)
+[Uso de extensiones móviles](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/)
 
 ## Creación de rastreadores
 
@@ -90,7 +90,7 @@ MediaHeartbeatDelegate delegate = new MediaHeartbeatDelegate() {
 
 ### Extensión de Launch
 
-[Referencia de API de medios: Crear un rastreador de medios](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#create-a-media-tracker)
+[Referencia de API de medios: Crear un rastreador de medios](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/api-reference/#createtracker)
 
 Antes de crear el rastreador, debe registrar la extensión multimedia
 y las extensiones dependientes con el núcleo móvil.
@@ -145,13 +145,13 @@ La implementación debe actualizar el cabezal de reproducción actual invocando 
 `updateCurrentPlayhead` expuesto por el rastreador. Para realizar un seguimiento preciso,
 debe invocar este método al menos una vez por segundo.
 
-[Referencia de API de medios: Actualizar el reproductor actual](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#updatecurrentplayhead)
+[Referencia de API de medios: Actualizar el reproductor actual](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/api-reference/#updatecurrentplayhead)
 
 La implementación debe actualizar la información de QoE invocando el método `updateQoEObject`
 expuesto por el rastreador. Esperamos que se llame a este método
 siempre que se produzca un cambio en las métricas de calidad.
 
-[Referencia de la API de medios: Actualizar objeto de QoE](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#updateqoeobject)
+[Referencia de la API de medios: Actualizar objeto de QoE](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/api-reference/#createqoeobject)
 
 ## Transmisión de metadatos estándar/metadatos publicitarios
 

@@ -5,10 +5,10 @@ uuid: b3cbe240-b94d-42b8-a99c-0280334aaa14
 exl-id: 826530f7-2c39-41ef-b3b4-d3f44b46858f
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '529'
-ht-degree: 100%
+source-git-commit: b022bed6b7be0cc97caaaf6b7bbc42474a57b400
+workflow-type: tm+mt
+source-wordcount: '531'
+ht-degree: 95%
 
 ---
 
@@ -24,7 +24,7 @@ Puede medir las métricas de envío esenciales relacionadas con la calidad de la
 
 ## Funcionamiento
 
-Los datos de seguimiento de medios de streaming se recopilan de un reproductor mediante Media SDK, las API de recopilación de medios o las extensiones de medios (con etiquetas). Todos los datos granulares (hasta 10 segundos) se envían al servicio de Media Analytics que recopila y procesa los datos de cada sesión de reproducción individual. Una vez que finaliza una sesión de reproducción, los datos de seguimiento calculados se envían a Adobe Analytics para su almacenamiento y para la creación de informes. Con las implementaciones de Adobe Customer Journey Analytics (CJA), los datos se pueden enviar a CJA mediante el conector de datos de Analytics (ADC) para que los clientes puedan utilizar CJA como herramienta de creación de informes.
+Los datos de seguimiento de medios de transmisión se recopilan de un reproductor mediante Media SDK o las extensiones de Adobe Experience Platform Media y las API de recopilación de medios. Todos los datos granulares (hasta 10 segundos) se envían al servicio de Media Analytics que recopila y procesa los datos de cada sesión de reproducción individual. Una vez que finaliza una sesión de reproducción, los datos de seguimiento calculados se envían a Adobe Analytics para su almacenamiento y para la creación de informes. Con las implementaciones de Adobe Customer Journey Analytics (CJA), los datos se pueden enviar a CJA mediante el conector de datos de Analytics (ADC) para que los clientes puedan utilizar CJA como herramienta de creación de informes.
 
 <!-- ![streaming media process](./assets/streaming-process1.png) -->
 

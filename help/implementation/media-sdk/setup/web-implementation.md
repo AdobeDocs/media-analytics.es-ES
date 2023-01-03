@@ -1,22 +1,23 @@
 ---
-title: Configuración de una implementación web para Analytics para medios de transmisión
+title: Configuración de una implementación web para Analytics para medios de streaming
 description: Aprenda a implementar medios de transmisión de Adobe para aplicaciones web.
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+exl-id: aed561d0-defc-4be5-87d3-0f331cdfab34
+source-git-commit: 85e1d5223cec7168bbf592d941e6a5aece249459
 workflow-type: tm+mt
-source-wordcount: '442'
-ht-degree: 69%
+source-wordcount: '449'
+ht-degree: 71%
 
 ---
 
-
 # Instalación de SDK web {#install-web-sdks}
 
-Configuración de Media SDK v3.x para JavaScript >> lo que Calise desea en la página/vínculo de descarga
+Esta sección incluye información sobre cómo instalar el SDK independiente web y configurar JavaScript.
 
-Esta sección incluye información sobre cómo instalar el SDK web y configurar JavaScript.
+* [SDK web independiente](/help/implementation/media-sdk/setup/web-implementation.md)
 
+* [SDK de extensión web](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics-3x/overview.html?lang=es){target=_blank}
 
 ## Requisitos previos  {#prerequesites}
 

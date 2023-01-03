@@ -1,15 +1,15 @@
 ---
 title: Implementación de los SDK de medios de transmisión de Adobe
-description: Obtenga información sobre la implementación de Adobe Analytics para medios de transmisión mediante Media SDK.
+description: Obtenga información sobre la implementación de Adobe Analytics para medios de streaming mediante Media SDK.
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+exl-id: dc1b9fe0-6c75-4f93-a558-a3f3186bcf22
+source-git-commit: 85e1d5223cec7168bbf592d941e6a5aece249459
 workflow-type: tm+mt
 source-wordcount: '202'
-ht-degree: 3%
+ht-degree: 6%
 
 ---
-
 
 # Información general de Media SDK {#implementation-overview}
 
@@ -33,7 +33,7 @@ Implemente los SDK de medios de transmisión en sus aplicaciones de marco y víd
 
 * La extensión de audio y vídeo de iOS Media Analytics es compatible con iOS, iPadOS y tvOS.
 
-### Implementación de Over-The-Top
+### Implementación OTT
 
 | Plataforma | Versión |
 |:------:|:-----|
