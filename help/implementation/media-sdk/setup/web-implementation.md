@@ -4,20 +4,18 @@ description: Aprenda a implementar medios de transmisión de Adobe para aplicaci
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: aed561d0-defc-4be5-87d3-0f331cdfab34
-source-git-commit: 85e1d5223cec7168bbf592d941e6a5aece249459
+source-git-commit: d0ea5f9d8ee61475aa40c606fb79659dfd6b3870
 workflow-type: tm+mt
-source-wordcount: '449'
-ht-degree: 71%
+source-wordcount: '453'
+ht-degree: 69%
 
 ---
 
-# Instalación de SDK web {#install-web-sdks}
+# Implementar Analytics mediante JavaScript {#install-web-sdks}
 
-Esta sección incluye información sobre cómo instalar el SDK independiente web y configurar JavaScript.
+La información de esta página describe cómo instalar el SDK independiente web y configurar JavaScript.
 
-* [SDK web independiente](/help/implementation/media-sdk/setup/web-implementation.md)
-
-* [SDK de extensión web](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics-3x/overview.html?lang=es){target=_blank}
+Como alternativa, puede utilizar la extensión de Adobe Medium Analytics para implementar Analytics, tal como se describe en [Implementar Analytics con la extensión Media Analytics](/help/implementation/media-sdk/setup/web-implementation-tags.md).
 
 ## Requisitos previos  {#prerequesites}
 
