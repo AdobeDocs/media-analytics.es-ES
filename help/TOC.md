@@ -5,10 +5,10 @@ user-guide-title: Adobe Analytics para medios de transmisión
 breadcrumb-title: Guía de Media Analytics
 user-guide-description: Implemente Adobe Analytics para medios de transmisión. Incluye el SDK de medios y la API de recopilación de medios.
 sub-product: media analytics
-source-git-commit: d1e7a74a03c68e08987f03a295edc69989d9a4c6
+source-git-commit: f25a661c9ad4af1aa1cd97854c26fda44cc6816e
 workflow-type: tm+mt
-source-wordcount: '887'
-ht-degree: 98%
+source-wordcount: '894'
+ht-degree: 97%
 
 ---
 
@@ -23,7 +23,13 @@ ht-degree: 98%
    + [SDK, bibliotecas y extensiones](getting-started/download-sdks.md)
    + [Dispositivos compatibles](getting-started/supported-devices.md)
    + [Requisitos previos ](getting-started/prereqs.md)
-   + [Fin del soporte técnico](additional-resources/end-of-support-faqs.md)
+   + Fin del soporte técnico {#end-of-support}
+      + [Finalización de la compatibilidad con el SDK móvil de Media Analytics](additional-resources/end-of-support-faqs.md)
+      + Heredado: Media SDK para la migración a Launch {#sdk-to-launch}
+      + [Información general](legacy/sdk-to-launch/sdk-to-launch-migration.md)
+      + [Android: Media SDK para Launch](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-android.md)
+      + [iOS: Media SDK para Launch](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-ios.md)
+      + [JavaScript: Media SDK para Launch](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-js.md)
    + [Documentación de medios de streaming](getting-started/implementation-documentation.md)
 + Implementación {#implementation}
    + [Información general sobre la implementación](implementation/overview.md)
@@ -160,11 +166,6 @@ ht-degree: 98%
       + [Configuración de iOS](legacy/media-sdk/setup/set-up-ios.md)
       + Configuración de JavaScript {#setup-javascript}
          + [Configuración de JavaScript 3.x](legacy/media-sdk/setup/setup-javascript/set-up-js-3.md)
-   + Heredado: Media SDK para la migración a Launch {#sdk-to-launch}
-      + [Información general](legacy/sdk-to-launch/sdk-to-launch-migration.md)
-      + [Android: Media SDK para Launch](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-android.md)
-      + [iOS: Media SDK para Launch](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-ios.md)
-      + [JavaScript: Media SDK para Launch](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-js.md)
    + [Acerca de la medición del ritmo cardíaco](legacy/heartbeat-measurement.md)
    + [Adobe Primetime y medios de streaming de Analytics](legacy/intro-to-ava/implementation-paths/primetime-path.md)
    + [Habilitación de la gestión de público de Adobe](legacy/intro-to-ava/am-enablement.md)
