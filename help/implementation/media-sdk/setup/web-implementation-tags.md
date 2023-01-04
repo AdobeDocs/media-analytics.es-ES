@@ -3,14 +3,15 @@ title: Configuración de una implementación web para Analytics para medios de s
 description: Aprenda a implementar medios de transmisión de Adobe para aplicaciones web.
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a9366d5bf590f16b193c7e2905cadca0f7afd636
+exl-id: 05c68b0a-f387-4bcc-8792-f6b1caa40706
+source-git-commit: a6dba33839bba976b67a9b1e9669fce266d1cabd
 workflow-type: tm+mt
 source-wordcount: '121'
 ht-degree: 9%
 
 ---
 
-# Implementar Analytics con la extensión Media Analytics
+# Instalación de Analytics con la extensión Media Analytics
 
 Puede utilizar la extensión de Adobe Medium Analytics para implementar Analytics. La extensión Media Analytics agrega el SDK principal de JavaScript Media SDK (SDK Media 3.x). Esta extensión proporciona la funcionalidad para agregar la instancia de Media Tracker a un sitio o proyecto habilitado para etiquetas.
 

@@ -4,14 +4,14 @@ description: Aprenda a implementar medios de transmisión de Adobe para aplicaci
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: aed561d0-defc-4be5-87d3-0f331cdfab34
-source-git-commit: d0ea5f9d8ee61475aa40c606fb79659dfd6b3870
+source-git-commit: d1e7a74a03c68e08987f03a295edc69989d9a4c6
 workflow-type: tm+mt
 source-wordcount: '453'
-ht-degree: 69%
+ht-degree: 68%
 
 ---
 
-# Implementar Analytics mediante JavaScript {#install-web-sdks}
+# Instalación de Analytics mediante JavaScript {#install-web-sdks}
 
 La información de esta página describe cómo instalar el SDK independiente web y configurar JavaScript.
 
