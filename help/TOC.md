@@ -5,7 +5,7 @@ user-guide-title: Adobe Analytics para medios de transmisión
 breadcrumb-title: Guía de Media Analytics
 user-guide-description: Implemente Adobe Analytics para medios de transmisión. Incluye el SDK de medios y la API de recopilación de medios.
 sub-product: media analytics
-source-git-commit: 97d5d1df35bb282cac803500e1ddd72d654aef6e
+source-git-commit: 9ff1cf4f622f9f2d34275297ffbc3ebf92c2f1ba
 workflow-type: tm+mt
 source-wordcount: '894'
 ht-degree: 97%
@@ -20,9 +20,10 @@ ht-degree: 97%
    + [Notas de la versión de medios de streaming](additional-resources/release-notes.md)
 + Introducción {#getting-started}
    + [Información general](getting-started/getting-started.md)
-   + [SDK, bibliotecas y extensiones](getting-started/download-sdks.md)
-   + [Dispositivos compatibles](getting-started/supported-devices.md)
    + [Requisitos previos ](getting-started/prereqs.md)
+   + [Dispositivos compatibles](getting-started/supported-devices.md)
+   + [Documentación de medios de streaming](getting-started/implementation-documentation.md)
+   + [SDK, bibliotecas y extensiones](getting-started/download-sdks.md)
    + Fin del soporte técnico {#end-of-support}
       + [Finalización de la compatibilidad con el SDK móvil de Media Analytics](additional-resources/end-of-support-faqs.md)
       + Heredado: Media SDK para la migración a Launch {#sdk-to-launch}
@@ -30,7 +31,6 @@ ht-degree: 97%
          + [Android: Media SDK para Launch](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-android.md)
          + [iOS: Media SDK para Launch](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-ios.md)
          + [JavaScript: Media SDK para Launch](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-js.md)
-   + [Documentación de medios de streaming](getting-started/implementation-documentation.md)
 + Implementación {#implementation}
    + [Información general sobre la implementación](implementation/overview.md)
    + Media SDK: implementación {#media-sdk}
