@@ -1,14 +1,14 @@
 ---
 title: 'API de recopilación de medios de transmisión: Punto final de solicitud de sesiones'
-description: "¿Qué son las sesiones de API de recopilación de medios que solicitan parámetros y respuestas de extremo?"
+description: "¿Qué son las sesiones de API de recopilación de medios que solicitan parámetros y respuestas de punto final?"
 uuid: 9609192d-4f7f-4fb5-844f-ea89d47c4e30
 exl-id: f55f5838-610f-4f82-b3c5-72165ea2c86b
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '130'
-ht-degree: 46%
+ht-degree: 100%
 
 ---
 
