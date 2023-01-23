@@ -1,13 +1,13 @@
 ---
 title: Acerca del seguimiento del estado de reproducción
-description: Obtenga información sobre la función de seguimiento del estado del reproductor, que incluye requisitos y directrices para la implementación y creación de informes de estados del reproductor.
+description: Obtenga información sobre la función de seguimiento del estado de los jugadores, incluidos los requisitos y las directrices para implementar e informar sobre los estados de los jugadores.
 exl-id: c678e182-74e4-4f46-8596-7be57e645c66
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '403'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ Para optimizar la experiencia del producto y aumentar el valor para su empresa, 
 
 El seguimiento de estado del reproductor ofrece la capacidad de capturar la interacción del visor durante la reproducción mediante un conjunto estándar de variables de solución para pantalla completa, subtítulos, silenciar, imagen en imagen y enfocado.  El seguimiento de estado del reproductor también proporciona la flexibilidad para crear estados de reproductor personalizados. Puede utilizar las variables de seguimiento de estado del reproductor para la creación de informes en Analysis Workspace.
 
-Para capturar los cambios en el estado del reproductor, el seguimiento de estado del reproductor actualiza los metadatos de medición de vídeo. Por ejemplo, para determinar la participación &quot;verdadera&quot; en el vídeo, el seguimiento de estado del reproductor mide el tiempo empleado con el sonido en comparación con las vistas de vídeo pasivas o no comprometidas cuando el sonido está desactivado o el tiempo empleado en el modo Normal frente al modo de Pantalla completa.
+Para capturar los cambios en el estado del reproductor, el seguimiento de estado del reproductor actualiza los metadatos de medición de vídeo. Por ejemplo, para determinar la participación “true” en el vídeo, el seguimiento de estado del reproductor mide el tiempo empleado con el sonido en comparación con las vistas de vídeo pasivas o no comprometidas cuando el sonido está desactivado o el tiempo empleado en el modo Normal frente al modo de Pantalla completa.
 
 El seguimiento del estado del reproductor ofrece las siguientes ventajas:
 
@@ -32,7 +32,7 @@ El seguimiento del estado del reproductor ofrece las siguientes ventajas:
 
 El seguimiento de estado del reproductor requiere una de las siguientes opciones para la recopilación de datos:
 * Media JS SDK 3.0+
-* SDK de Chromecast 3.0 para soluciones de Adobe Marketing Cloud
+* SDK de Chromecast 3.0 para las soluciones de Adobe Marketing Cloud
 * Extensión de Media Analytics (para uso con los SDK de Adobe Experience Platform (AEP))
    * Web: Adobe Media Analytics (SDK 3.x) para audio y vídeo v1.0 o posterior
    * Móvil: extensión de Adobe Media Analytics para audio y vídeo versión 2.0 o posterior
