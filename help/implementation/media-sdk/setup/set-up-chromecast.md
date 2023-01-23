@@ -1,36 +1,36 @@
 ---
-title: Cómo configurar Media SDK para Chromecast
-description: Siga estos pasos para configurar la aplicación de Media SDK en Chromecast.
+title: Configuración de Media SDK para Chromecast
+description: Siga estos pasos para configurar la aplicación Media SDK en Chromecast.
 uuid: d664e394-02a2-4985-bbad-be1bcc44fb2b
 exl-id: 5dfe3407-2858-48c0-a70c-8ea87967ac47
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '575'
-ht-degree: 69%
+ht-degree: 100%
 
 ---
 
-# Configuración del SDK v3.x de Mobile para Chromecast {#set-up-chromecast}
+# Configurar SDK móvil v3.x para Chromecast {#set-up-chromecast}
 
-En esta sección se describen los requisitos previos para configurar una instalación de Chromecast para medios de transmisión.
+En esta sección se describen los requisitos previos para configurar una instalación de Chromecast para el streaming multimedia.
 
 ## Requisitos previos 
 
 * **Obtener parámetros de configuración válidos**
 
-   Estos parámetros se pueden obtener de un representante de Adobe una vez creada la cuenta de análisis de medios.
-* **Incluya las siguientes API en su reproductor de medios**
+   Puede solicitar estos parámetros a un representante de Adobe después de configurar su cuenta de análisis de medios.
+* **Incluya las siguientes API en su reproductor multimedia**
 
    * *Una API para suscribirse a eventos del reproductor*: Media SDK requiere que llame a un conjunto de API simples cuando se produzcan eventos en el reproductor.
    * *Una API que proporciona información del reproductor*: Esta información incluye detalles como el nombre del medio y la posición del cabezal de reproducción.
 
 Adobe Mobile Services proporciona una nueva interfaz de usuario que aúna las capacidades de marketing móvil para aplicaciones móviles desde Adobe Experience Cloud. Inicialmente, el servicio Mobile ofrece una integración perfecta de las prestaciones de orientación y análisis de aplicaciones de las soluciones Adobe Analytics y Adobe Target. Para obtener más información, consulte la [documentación de Adobe Mobile Services.](https://experienceleague.adobe.com/docs/mobile-services/using/home.html?lang=es)
 
-La biblioteca móvil de Adobe para Chromecast v3.x para soluciones de Experience Cloud le permite medir aplicaciones de Chromecast escritas en JavaScript, aprovechar y recopilar datos de audiencia mediante la gestión de público y medir la participación en los vídeos.
+Adobe Mobile Library para Chromecast v3.x para Experience Cloud Solutions le permite medir las aplicaciones de Chromecast escritas en JavaScript, aprovechar y recopilar datos de audiencia mediante la gestión de público y medir la participación en los vídeos.
 
-## Biblioteca móvil / Implementación de SDK
+## Biblioteca móvil / Implementación SDK
 
 1. Añada la biblioteca de Chromecast descargada al proyecto.
 
@@ -43,7 +43,7 @@ La biblioteca móvil de Adobe para Chromecast v3.x para soluciones de Experience
       * Configuración `ADBMobileConfig`
 
          Este archivo de configuración del SDK se personaliza en función de la aplicación. Con el SDK se proporciona una implementación de muestra de `ADBMobileConfig` (en `samples/`). Consulte con un representante de Adobe la configuración adecuada.
-   1. Añada el archivo de biblioteca a su `index.html` y cree el `ADBMobileConfig` variable global como se indica a continuación (la variable global utilizada para configurar Adobe Mobile for Media Analytics tiene una clave exclusiva denominada `mediaHeartbeat`):
+   1. Añada el archivo de biblioteca a su archivo `index.html` y cree la variable global `ADBMobileConfig` del siguiente modo (la variable global utilizada para configurar Adobe Mobile para Media Analytics tiene una clave exclusiva denominada `mediaHeartbeat`):
 
       ```js
       <script>
@@ -88,7 +88,7 @@ La biblioteca móvil de Adobe para Chromecast v3.x para soluciones de Experience
 
       >[!IMPORTANT]
       >
-      >If `mediaHeartbeat` está configurado incorrectamente, el módulo multimedia introduce un estado de error y dejará de enviar llamadas de seguimiento.
+      >Si `mediaHeartbeat` está mal configurado, el módulo multimedia entra en estado de error y dejará de enviar llamadas de seguimiento.
 
       Parámetros de configuración de ADBMobile para la clave de mediaHeartbeat:
    | Parámetro de configuración | Descripción     |
@@ -104,7 +104,7 @@ La biblioteca móvil de Adobe para Chromecast v3.x para soluciones de Experience
 
 1. Configure el ID de visitante de Experience Cloud.
 
-   El servicio de ID de visitante de Experience Cloud ofrece un ID de visitante universal para las soluciones de Experience Cloud. Media Analytics y otras integraciones de Marketing Cloud requieren el servicio de ID de visitante.
+   El servicio de ID de visitante de Experience Cloud ofrece un ID de visitante universal para las soluciones de Experience Cloud. El servicio ID de visitante es necesario para Media Analytics y otras integraciones de Marketing Cloud.
 
    Verifique que su configuración de `ADBMobileConfig` contenga su ID de empresa de `marketingCloud`.
 
@@ -133,7 +133,7 @@ La biblioteca móvil de Adobe para Chromecast v3.x para soluciones de Experience
    | `getMarketingCloudID()` | Recupera el ID del visitante de Experience Cloud del servicio de ID del visitante.  <br/><br/>`ADBMobile.visitor.getMarketingCloudID();` |
    | `syncIdentifiers()` | Con el ID de Visitante de Experience Cloud, puede establecer ID de cliente adicionales que se pueden asociar con cada visitante. La API de visitante acepta varios ID de cliente para el mismo visitante y un identificador de tipo de cliente para separar el ámbito de los distintos ID de cliente. Este método corresponde a `setCustomerIDs()` en la biblioteca de JavaScript.  Por ejemplo: <br/><br/>`var identifiers = {};` <br/><br/>`identifiers["idType"] = "idValue";` <br/><br/>`ADBMobile.visitor.syncIdentifiers(identifiers);` |
 
-1. Para realizar el seguimiento de contenidos, implemente el protocolo MediaDelegate
+1. Para el seguimiento de los medios, aplique el protocolo MediaDelegate
 
    ```js
     var delegate = {
