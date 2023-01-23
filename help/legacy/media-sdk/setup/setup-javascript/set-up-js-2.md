@@ -1,14 +1,14 @@
 ---
 title: Configuración de Media SDK mediante JavaScript 2.x
-description: Siga estos pasos para configurar la aplicación de Media SDK en JavaScript 2.x.
+description: Siga estos pasos para configurar la aplicación Media SDK en JavaScript 2.x.
 uuid: 0269d8ad-0af8-4bf1-9d15-e06c2952a005
 exl-id: 33976096-8b86-4353-906b-e25bf4693471
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '399'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -119,4 +119,4 @@ ht-degree: 91%
 
 En la versión 2.x, todos los métodos públicos se incluyen en la clase `ADB.va.MediaHeartbeat` para facilitar el trabajo de los desarrolladores. Asimismo, todas las configuraciones están consolidadas en la clase `ADB.va.MediaHeartbeatConfig`.
 
-Para obtener información sobre la migración de 1.x a 2.x, consulte la documentación de Implementación heredada .
+Para obtener información sobre la migración de 1.x a 2.x, consulte la documentación de Implementación heredada.
