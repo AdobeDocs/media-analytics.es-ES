@@ -1,18 +1,18 @@
 ---
-title: Explicación de la configuración de privacidad y exclusión
+title: Explicación de privacidad y exclusión
 description: Cómo gestionar la inclusión, la exclusión y la privacidad.
 uuid: 7e60c7bd-8dba-4c7a-9c3c-0c634b815397
 exl-id: 64f5ef2b-7850-43d8-8f32-3d008ea4f156
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: d2d0f34c64ecb2a900412d5959449c8c36328730
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '362'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
-# Configuración de privacidad y exclusión {#opt-out-and-privacy}
+# Privacidad y exclusión {#opt-out-and-privacy}
 
 ## Inclusión/Exclusión {#opt-out-opt-in}
 
