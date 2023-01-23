@@ -1,14 +1,14 @@
 ---
-title: Obtenga información sobre cómo rastrear la llamada a otro punto del contenido en Android
+title: Aprenda a rastrear la búsqueda en Android
 description: Obtenga información sobre cómo rastrear eventos de inicio y finalización de llamada a otro punto del contenido mediante Media SDK en Android.
 uuid: 65addd99-eebf-4a80-8b4a-d5fbdff8ab06
 exl-id: 8a8fcbcf-3232-4565-8c27-4167b6741613
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '130'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
