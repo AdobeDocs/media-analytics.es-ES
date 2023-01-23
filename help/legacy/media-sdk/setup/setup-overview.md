@@ -6,29 +6,29 @@ exl-id: a175332e-0bdc-44aa-82cb-b3f879e7abfc
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '618'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
-# Heredado: Información general sobre la configuración de Media SDK {#setup-overview}
+# Heredado - Información general de la configuración de Media SDK {#setup-overview}
 
 Después de descargar el Media SDK para su aplicación de vídeo o reproductor, siga la información de esta sección para configurar e implementar el Media SDK.
 
 
 ## Directrices generales de implementación {#general-implementation-guidelines}
 
-Hay tres componentes principales del SDK que se utilizan en el seguimiento de medios de flujo de Adobe:
-* Configuración de Media Heartbeat: `MediaHeartbeatConfig` contiene la configuración básica de los informes.
-* Delegado de Media Heartbeat: El `MediaHeartbeatDelegate` controla el tiempo de reproducción y el objeto QoS.
-* Media Heartbeat: `MediaHeartbeat` es la biblioteca principal que contiene miembros y métodos.
+Hay tres componentes principales del SDK utilizados en el seguimiento de Adobe Streaming Media:
+* Media Heartbeat Config-El `MediaHeartbeatConfig` contiene la configuración básica para la creación de informes.
+* Media Heartbeat Delegate-El `MediaHeartbeatDelegate` controla el tiempo de reproducción y el objeto QoS.
+* Media Heartbeat-La `MediaHeartbeat` es la biblioteca principal que contiene miembros y métodos.
 
-## Implementación del SDK de medios de transmisión
+## Implementación del SDK de medios de streaming
 
-Para configurar y utilizar el SDK de medios de transmisión, complete los siguientes pasos de implementación:
+Para configurar y utilizar el SDK de medios de streaming, complete los siguientes pasos de implementación:
 
-1. Cree un `MediaHeartbeatConfig` y establezca los valores de parámetro de configuración.
+1. Cree una instancia `MediaHeartbeatConfig` y establezca los valores de sus parámetros de configuración.
 
    |  Nombre de variable  | Descripción  | Requerido |  Valor predeterminado  |
    |---|---|:---:|---|
