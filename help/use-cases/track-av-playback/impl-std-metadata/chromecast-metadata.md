@@ -1,14 +1,14 @@
 ---
 title: Claves de metadatos de Chromecast explicadas
-description: Obtenga información sobre cómo configurar metadatos de anuncios y vídeos estándar para que se envíen con llamadas de seguimiento en Chromecast.
+description: Aprenda a configurar los metadatos de anuncios y vídeos estándar para enviarlos con llamadas de seguimiento en Chromecast.
 uuid: c446ad41-51b8-46d6-9bc1-abfae866023f
 exl-id: ccc717ae-d846-4349-8282-5e3511ddeb9b
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '139'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
