@@ -1,18 +1,18 @@
 ---
 title: Aprenda a implementar metadatos estándar con JavaScript 2.x
-description: Obtenga información sobre cómo configurar metadatos de anuncios y vídeos estándar para que se envíen con llamadas de seguimiento en aplicaciones de navegador (JS 2.x).
+description: Obtenga información sobre cómo configurar metadatos de anuncios y vídeos estándar para que se envíen con llamadas de seguimiento en aplicaciones de explorador (JS 2.x).
 uuid: 523d29e3-0a62-40d7-ac74-da645024cdcb
 exl-id: 889c294b-ac45-4e82-abb3-88ab70abbc3d
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '67'
-ht-degree: 49%
+ht-degree: 100%
 
 ---
 
-# Implementación de metadatos estándar con JavaScript 2.x{#implement-standard-metadata-on-javascript}
+# Implementación de metadatos estándar en JavaScript 2.x{#implement-standard-metadata-on-javascript}
 
 ## Constante de metadatos
 
