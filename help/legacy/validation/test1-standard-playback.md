@@ -6,9 +6,9 @@ exl-id: 3781f0f7-be75-43e5-a40b-a34956dce36e
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '838'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -125,7 +125,7 @@ Complete y registre las siguientes acciones (en orden):
 
    Para ver los parámetros y metadatos de la llamada, consulte [Detalles de la llamada de prueba.](/help/legacy/validation/test-call-details.md#ma-ad-pause-call)
 
-1. **Reproducir el contenido principal durante 10 segundos sin pausarlo.** **Reproducción de contenido**
+1. **Reproduce el contenido principal durante 10 segundos ininterrumpidos.** **Reproducción de contenido**
 
    Durante la reproducción del contenido principal, Media SDK envía latidos (llamadas de reproducción) al servidor de Media Analytics cada 10 segundos.
 
