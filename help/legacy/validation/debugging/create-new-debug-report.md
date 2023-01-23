@@ -1,18 +1,18 @@
 ---
 title: Crear un nuevo informe de Debug
-description: Obtenga información sobre cómo crear un nuevo informe de Debug.
+description: Aprenda a crear un nuevo informe Debug.
 uuid: 438fde3d-98f9-46d1-9672-75d204361568
 exl-id: 047acf35-8c1c-4493-9ee7-e2bad47c351e
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '203'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
-# Creación de un nuevo informe de Debug{#create-a-new-debug-report}
+# Crear un nuevo informe de Debug{#create-a-new-debug-report}
 
 Para crear un nuevo informe de Debug:
 
