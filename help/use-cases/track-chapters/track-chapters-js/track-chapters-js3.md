@@ -1,23 +1,23 @@
 ---
 title: Aprenda a rastrear capítulos y segmentos usando JavaScript 3.x
-description: Obtenga información sobre la implementación del seguimiento de capítulos y segmentos mediante Media SDK en aplicaciones de navegador (JS).
+description: Obtenga información sobre la implementación del seguimiento de capítulos y segmentos mediante el uso de Media SDK en aplicaciones de explorador (JS).
 exl-id: 00ba11df-d226-45a2-a561-dc9f15dcf714
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '218'
-ht-degree: 63%
+ht-degree: 100%
 
 ---
 
-# Seguimiento de capítulos y segmentos con JavaScript 3.x{#track-chapters-and-segments-on-javascript}
+# Seguimiento de capítulos y segmentos en JavaScript 3.x{#track-chapters-and-segments-on-javascript}
 
 Las siguientes instrucciones proporcionan directrices para la implementación mediante SDK de 3.x.
 
 >[!IMPORTANT]
 >
-> Si va a implementar cualquier versión anterior del SDK, puede descargar la guía del desarrollador aquí: [Descargar SDK.](/help/getting-started/download-sdks.md)
+> Si está implementando alguna versión anterior del SDK, puede descargar la Guía del desarrollador aquí: [Descargar SDKs.](/help/getting-started/download-sdks.md)
 
 1. Identifique cuándo se produce el evento de inicio de capítulo y cree la instancia de `ChapterObject` con la información del capítulo.
 
@@ -30,9 +30,9 @@ Las siguientes instrucciones proporcionan directrices para la implementación me
    | Nombre de variable | Tipo | Descripción |
    | --- | --- | --- |
    | `name` | string | Cadena no vacía que indica el nombre del capítulo. |
-   | `position` | entero | Posición del capítulo dentro del contenido, comenzando por 1. |
-   | `length` | entero | Número positivo que indica la longitud del capítulo. |
-   | `startTime` | entero | Valor del cabezal de reproducción al principio del capítulo. |
+   | `position` | number | La posición del capítulo dentro del contenido, comenzando por 1. |
+   | `length` | number | Número positivo que indica la longitud del capítulo. |
+   | `startTime` | number | Valor del cabezal de reproducción al principio del capítulo. |
 
    Objeto de capítulo:
 
