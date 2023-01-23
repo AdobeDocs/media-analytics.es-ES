@@ -1,14 +1,14 @@
 ---
 title: Envío de eventos ping
-description: Los eventos ping son la base de Streaming Media Analytics. Aprenda a enviar un ping temporizado para el contenido principal o el seguimiento de anuncios.
+description: Los eventos Ping son la base de Streaming Media Analytics. Aprenda a enviar un ping temporizado para el contenido principal o el seguimiento de anuncios.
 uuid: c92c1a92-3af6-4474-9e42-ffb8f6c94b33
 exl-id: 0a645363-26d5-41e7-aa16-c775253e2b1d
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '108'
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
