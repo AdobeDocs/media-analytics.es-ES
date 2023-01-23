@@ -6,15 +6,15 @@ feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: c37aeea2-7c8f-4815-ae28-634ae691e84f
 source-git-commit: fb09280ae6fb9f0ab7e67bd6ae134e6e26f88ec8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '293'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
 # Documentación de implementación de medios de streaming {#streaming-media-documentation}
 
-La documentación de Adobe Analytics para medios de streaming se encuentra en varios sitios web de productos. Según la implementación de Streaming Media Analytics, es posible que deba hacer referencia a uno o más conjuntos de documentación.
+La documentación de Adobe Analytics para medios de transmisión se encuentra en varios sitios web de productos. Según la implementación de Streaming Media Analytics, es posible que deba hacer referencia a uno o más conjuntos de documentación.
 
 Utilice la información de la tabla siguiente para localizar la documentación del método de implementación elegido.
 
