@@ -1,14 +1,14 @@
 ---
 title: Reproducción de VOD sin anuncios
-description: Vea un ejemplo de seguimiento de la reproducción de VOD que no contiene anuncios.
+description: Vea un ejemplo de seguimiento de la reproducción de VOD que no contenga anuncios.
 uuid: ee2a1b79-2c2f-42e1-8e81-b62bbdd0d8cb
 exl-id: 9e2240f0-da8d-4dcc-9d44-0f121c60d924
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '365'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -61,7 +61,7 @@ En los latidos de contenido, busque los parámetros siguientes:
 | `s:event:type` | `"play"` |  |
 | `l:event:playhead` | &lt;posición del cabezal de reproducción> p.ej., 50,60,70 | Este parámetro indica la posición actual del cabezal de reproducción. |
 
-## Contenido de latidos completo {#heartbeat-content-complete}
+## Finalización de contenido de Heartbeat {#heartbeat-content-complete}
 
 Cuando termina la reproducción de contenido, lo que significa que se ha llegado al final del cabezal de reproducción, se envía una llamada de `Heartbeat Content Complete`. Esta llamada se parece a otras llamadas de Heartbeat, pero contiene algunos parámetros específicos:
 
