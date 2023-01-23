@@ -1,14 +1,14 @@
 ---
-title: Seguimiento de la calidad de la experiencia explicada
+title: Explicación del seguimiento de la calidad de la experiencia
 description: Información general sobre el seguimiento de la calidad de la experiencia (QoE, QoS) mediante Media SDK.
 uuid: 4d73c47f-d0a4-4228-9040-d6432311c9eb
 exl-id: af5f3372-a9a5-46ea-9c2f-81b0f5c96ccf
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '258'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
