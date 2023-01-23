@@ -1,14 +1,14 @@
 ---
 title: Contenido principal activo con seguimiento secuencial
-description: Vea un ejemplo de cómo rastrear contenido en directo con seguimiento secuencial mediante Media SDK.
+description: Vea un ejemplo de cómo realizar el seguimiento de contenidos en directo con seguimiento secuencial mediante Media SDK.
 uuid: b03477b6-9be8-4b67-a5a0-4cef3cf262ab
 exl-id: 277a72b8-453b-41e5-b640-65c43587baf8
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '520'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -48,7 +48,7 @@ Este es el mismo escenario que el de [reproducción de VOD sin anuncios](/help/u
 
 ## Reproducción del contenido de Heartbeat {#heartbeat-content-play}
 
-Esto debería ser casi exactamente igual que la llamada de inicio de contenido de Heartbeat, pero con la diferencia clave en la variable &quot;s&quot;:event:type&quot;. Todos los parámetros deben seguir en su lugar.
+Esto debería parecerse casi exactamente a la llamada de Inicio de Contenido del Latido, pero con la diferencia clave en el parámetro &quot; s:event:tipo&quot;. Todos los parámetros deben seguir en su lugar.
 
 | Parámetro | Valor | Notas |
 |---|---|---|
@@ -66,7 +66,7 @@ En los latidos de contenido, busque algunas cosas específicas:
 | `s:event:type` | `"play"` |  |
 | `l:event:playhead` | &lt;posición del cabezal de reproducción> p. ej., 50, 60, 70 | Esto debería indicar la posición actual del cabezal de reproducción. |
 
-## Contenido de latidos completo {#heartbeat-content-complete}
+## Finalización de contenido de Heartbeat {#heartbeat-content-complete}
 
 Cuando se completa la reproducción de un episodio determinado (el cabezal de reproducción cruza el límite del episodio), se envía una llamada de finalización de contenido de Heartbeat. Esto se parece a otras llamadas de Heartbeat, pero tiene un par de cuestiones específicas:
 
