@@ -1,14 +1,14 @@
 ---
-title: Descubra cómo rastrear la calidad de la experiencia en iOS
-description: "Obtenga información sobre la implementación del seguimiento de calidad de experiencia (QoE, QoS) mediante Media SDK en iOS."
+title: Aprende a controlar la calidad de la experiencia en iOS
+description: '"Aprenda a implementar el seguimiento de la calidad de la experiencia (QoE, QoS) utilizando el Media SDK en iOS".'
 uuid: cae2c142-ed39-4234-a711-765dcabc5415
 exl-id: 7f01e6eb-95bd-4e3d-93d0-8a2e68323313
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '156'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
