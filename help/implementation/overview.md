@@ -6,9 +6,9 @@ feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: ed9297b1-6487-4099-bc62-0c3a40572255
 source-git-commit: 85e1d5223cec7168bbf592d941e6a5aece249459
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '138'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 80%
 
 La ruta de implementación que siga depende de si decide utilizar la lógica integrada de los Media SDK (la implementación estándar recomendada) o si decide implementar por su cuenta y utilizar las API de Media Collection simples, aunque potentes y personalizables (RESTful).
 
-Elija la ruta de implementación según las plataformas admitidas. Algunos reproductores no son compatibles con los Media SDK ni con las extensiones de Adobe Experience Platform Media. Las API de Media Collection proporcionan una forma de admitir estos reproductores. Para obtener información sobre los dispositivos compatibles, consulte [Dispositivos y plataformas compatibles](/help/getting-started/supported-devices.md).
+Elija la ruta de implementación según las plataformas admitidas. Algunos reproductores no son compatibles con los Media SDK ni con las extensiones de Adobe Experience Platform Media. Las API de colección de medios proporcionan una forma de admitir estos reproductores. Para obtener información sobre los dispositivos compatibles, consulte [Dispositivos y plataformas compatibles](/help/getting-started/supported-devices.md).
 
 ![Flujo de medios](media-sdk/assets/choose-media-flow2.png)
 
