@@ -1,14 +1,14 @@
 ---
 title: Seguimiento de estados de aplicaciones
-description: Los estados de la aplicación son las diferentes pantallas o vistas de la aplicación. Obtenga información sobre cómo rastrear el estado de la aplicación en la aplicación mediante la llamada trackState .
+description: Los estados de la aplicación son las diferentes pantallas o vistas de su aplicación. Obtenga información sobre cómo rastrear el estado de la aplicación en la aplicación mediante la llamada trackState.
 uuid: 2f98fb43-c362-4a9b-8732-fa7e963da729
 exl-id: bb1e0eee-7c59-40b4-9359-a7441b9686b8
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '188'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
