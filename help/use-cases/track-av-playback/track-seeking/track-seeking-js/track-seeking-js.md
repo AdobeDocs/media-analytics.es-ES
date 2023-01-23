@@ -1,18 +1,18 @@
 ---
-title: Obtenga información sobre cómo rastrear la llamada a otro punto del contenido utilizando JavaScript 2.x
-description: Obtenga información sobre cómo rastrear eventos de inicio y finalización de llamada a otro punto del contenido mediante Media SDK en aplicaciones de navegador (JS 2.x).
+title: Aprenda a rastrear búsquedas con JavaScript 2.x
+description: Obtenga información sobre cómo rastrear eventos de inicio y finalización de llamada a otro punto del contenido mediante Media SDK en aplicaciones de explorador (JS 2.x).
 uuid: 089947fb-8bae-4ae8-b215-53793620efd7
 exl-id: 90f35376-24d8-405d-82b4-d6b737acf7b9
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '135'
-ht-degree: 76%
+ht-degree: 100%
 
 ---
 
-# Seguimiento de llamada a otro punto del contenido utilizando JavaScript 2.x{#track-seeking-on-javascript}
+# Seguimiento de la búsqueda mediante JavaScript 2.x{#track-seeking-on-javascript}
 
 En las siguientes instrucciones se indican los pasos para la implementación en todos los kits de desarrollo de software de 2.x.
 
