@@ -5,7 +5,7 @@ exl-id: 756e4e62-35b3-42a2-93f5-81531e1c9cc8
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '256'
 ht-degree: 100%
 
@@ -15,7 +15,7 @@ ht-degree: 100%
 
 Media Analytics (latidos) es la solución de seguimiento de medios estandarizados de Adobe que sustituye al modelo Milestone de Adobe.
 
-Se trata de una solución de Adobe Experience Cloud que ayuda a los programadores y distribuidores de contenido a monetizar el contenido en todos los dispositivos conectados.
+Adobe Primetime es una solución de Adobe Experience Cloud que ayuda a los programadores y distribuidores de contenido a monetizar los medios en todos los dispositivos conectados.
 
 Primetime elimina la complejidad de alcanzar, monetizar y activar audiencias globales en varios dispositivos al proporcionar una plataforma modular para la publicación, publicidad, personalización y análisis de medios. Además, Primetime incluye soluciones y valores para lo siguiente:
 
