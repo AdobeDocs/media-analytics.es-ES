@@ -1,14 +1,14 @@
 ---
 title: Descubra cómo rastrear capítulos y segmentos en Android
-description: Obtenga información sobre la implementación del seguimiento de capítulos y segmentos mediante Media SDK en Android.
+description: Obtenga información acerca de la implementación del seguimiento de capítulos y segmentos mediante Media SDK en Android.
 uuid: 013815d7-4d9e-48f4-a2b9-3b70cb1149d3
 exl-id: ada2e2a7-1383-471c-9ce6-c82ea93fa79d
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '198'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
