@@ -1,22 +1,23 @@
 ---
-title: Implementación de Media SDK heredados explicados
-description: "Aprenda a configurar el Media SDK **heredado** 2.x para el seguimiento de contenido en sus aplicaciones móviles, OTT y de navegador (JS)."
+title: Explicación de la implementación de los SDK para medios heredados
+description: Aprenda a configurar el SDK de medios **legacy** 2.x para el seguimiento de medios en sus aplicaciones móviles, OTT y de navegador (JS).
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+exl-id: d94ede3e-95f8-4591-9833-ef39aff12ba9
+source-git-commit: a7d897c6f6fbc6ed0d5b71f5801ab18ee21f0411
+workflow-type: ht
 source-wordcount: '789'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
-# Información general sobre la configuración del SDK de medios de transmisión 2.x heredado{#setup-overview}
+# Información general de la configuración del SDK de medios de streaming heredado 2.x{#setup-overview}
 
-Las instrucciones de esta sección se aplican a la variable **heredado** Media SDK 2.x.
+Las instrucciones de esta sección se aplican a la variable Media SDK 2.x. **heredado**.
 
-* Para obtener información sobre la implementación de una versión 1.x de Media SDK, consulte la [Documentación de Media SDK 1.x.](/help/getting-started/download-sdks.md)
+* Para obtener información sobre la implementación de una versión 1.x del Media SDK, consulte la [Documentación del Media SDK 1.x.](/help/getting-started/download-sdks.md)
 
-* Para los integradores de Primetime, consulte la _Documentación del Media SDK de Primetime_.
+* Para los integradores de Primetime, consulta la _Documentación del SDK de Primetime Media_.
 
 >[!IMPORTANT]
 >
@@ -156,7 +157,7 @@ El seguimiento de medios funciona del mismo modo en todas las plataformas, equip
 | Chromecast | [Configurar para Chromecast ](chromecast_1.x_sdk.pdf) |
 | iOS | [Configurar para iOS ](vhl-dev-guide-v15_ios.pdf) |
 | JavaScript | [Configurar para JavaScript ](vhl-dev-guide-v15_js.pdf) |
-| Primetime | <ul> <li> Android: [Configurar Media Analytics](https://help.adobe.com/en_US/primetime/psdk/android/1.4/index.html) </li> <li> DHLS: [Configurar Media Analytics](https://helpx.adobe.com/es/support/primetime.html#PSDKs-task-Initialize_and_configure_video_analytics_) </li> <li> iOS: [Configurar Media Analytics](https://helpx.adobe.com/es/support/primetime.html#PSDKs-task-Initialize_and_configure_video_analytics_) </li> </ul> |
+| Primetime | <ul> <li> Android: [Configurar Media Analytics](https://helpx.adobe.com/es/support/primetime.html) </li> <li> DHLS: [Configurar Media Analytics](https://helpx.adobe.com/es/support/primetime.html#PSDKs-task-Initialize_and_configure_video_analytics_) </li> <li> iOS: [Configurar Media Analytics](https://helpx.adobe.com/es/support/primetime.html#PSDKs-task-Initialize_and_configure_video_analytics_) </li> </ul> |
 | TVML | [Configurar para TVML ](vhl_tvml.pdf) |
 
 ## Documentación de Media SDK de Primetime {#primetime-docs}
