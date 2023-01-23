@@ -1,18 +1,18 @@
 ---
-title: Comparación de código v1.x y v2.x
+title: Comparación del código de la v1.x y la v2.x
 description: Conozca la diferencia entre el código de las versiones 1.x y 2.x de Media SDK.
 uuid: 9f0a1660-2100-446d-ab75-afdf966478b3
 exl-id: c2324c6a-329f-44e2-bea0-9d43ef9c6ef7
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '571'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
-# Comparación de código heredado: 1.x a 2.x {#code-comparison-x-to-x}
+# Comparación de código heredado — 1.x a 2.x {#code-comparison-x-to-x}
 
 Todos los parámetros de configuración y las API de seguimiento se consolidan ahora en las clases `MediaHeartbeats` y `MediaHeartbeatConfig`.
 
