@@ -1,23 +1,23 @@
 ---
 title: Administración de interrupciones de la aplicación durante la reproducción
-description: Obtenga información sobre cómo controlar las interrupciones al seguimiento durante la reproducción del contenido.
+description: Aprenda a gestionar las interrupciones del seguimiento durante la reproducción de medios.
 uuid: 1ccb4507-bda6-462d-bf67-e22978a4db3d
 exl-id: a84af6ad-dd4f-4f0d-93dd-66f2f84ddc0e
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '364'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
 # Administración de interrupciones de la aplicación durante la reproducción{#handling-application-interrupts-during-playback}
 
-La reproducción en una aplicación de medios se puede interrumpir de varias formas. Por ejemplo, un usuario puede presionar explícitamente la pausa o puede poner la aplicación en segundo plano. Con independencia de la causa de la interrupción de la reproducción de contenido, las instrucciones de seguimiento son las mismas.
+La reproducción en una aplicación multimedia puede interrumpirse de varias formas. Por ejemplo, un usuario puede pulsar explícitamente la pausa, o puede poner la aplicación en segundo plano. Con independencia de la causa de la interrupción de la reproducción de medios, las instrucciones de seguimiento son las mismas.
 
 1. Invoque **`trackPause`** cuando la aplicación se interrumpa (se pone en segundo plano, se pausa el contenido, etc.).
-1. Invoque **`trackPlay`** cuando la aplicación vuelva a estar en primer plano o cuando la reproducción de contenido se reanude.
+1. Invoque **`trackPlay`** cuando la aplicación vuelva a estar en primer plano o cuando la reproducción de medios se reanude.
 
 >[!NOTE]
 >
@@ -35,4 +35,4 @@ La reproducción en una aplicación de medios se puede interrumpir de varias for
 
 * _¿Cómo funciona el reinicio de la misma sesión?_
 
-   Para obtener información sobre cómo reanudar una sesión de seguimiento, consulte [Reanudar sesiones inactivas](resuming-inactive.md).El SDK envía un ping de reanudación para notificar al back-end que el usuario está reanudando la sesión manualmente.
+   Para obtener información sobre cómo reanudar una sesión de seguimiento, consulte [Reanudación de sesiones inactivas](resuming-inactive.md). El SDK envía un ping de reanudación para notificar al back-end que el usuario está reanudando manualmente la sesión.
