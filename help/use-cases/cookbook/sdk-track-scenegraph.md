@@ -6,17 +6,17 @@ exl-id: e428d3cd-dbc7-48bb-82ff-61b6b892884c
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1169'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
-# Roku — Seguimiento en SceneGraph {#tracking-in-scenegraph-roku}
+# Seguimiento de Roku en SceneGraph {#tracking-in-scenegraph-roku}
 
 ## Primeros pasos {#introduction}
 
-Puede utilizar el marco de programación XML de Roku SceneGraph para desarrollar aplicaciones. Este marco incluye dos conceptos clave:
+Puede utilizar el marco de programación XML de Roku SceneGraph para desarrollar aplicaciones. Este nuevo marco de trabajo incluye dos nuevos conceptos clave:
 
 * Representación SceneGraph en las pantallas de la aplicación
 * Configuración de XML en las pantallas de SceneGraph
@@ -205,11 +205,11 @@ Las API de `MediaHeartbeat` de utilidades definidas globalmente en el archivo Ad
 
 | Método | Descripción |
 | --- | --- |
-| `adb_media_init_mediainfo` | Este método devuelve un objeto de información multimedia inicializado.  `Function adb_media_init_mediainfo(name As String, id As String, length As Double, streamType As String) As Object` |
-| `adb_media_init_adinfo` | Este método devuelve el objeto de información de publicidad inicializado.  `Function adb_media_init_adinfo(name As String, id As String, position As Double, length As Double) As Object` |
-| `adb_media_init_chapterinfo` | Este método devuelve el objeto de información del capítulo inicializado.  `Function adb_media_init_adbreakinfo(name As String, startTime as Double, position as Double) As Object` |
-| `adb_media_init_adbreakinfo` | Este método devuelve el objeto de información de AdBreak inicializado.  `Function adb_media_init_chapterinfo(name As String, position As Double, length As Double, startTime As Double) As Object` |
-| `adb_media_init_qosinfo` | Este método devuelve un objeto de información de QoS inicializado.  `Function adb_media_init_qosinfo(bitrate As Double, startupTime as Double, fps as Double, droppedFrames as Double) As Object` |
+| `adb_media_init_mediainfo` | Este método devuelve un objeto de información multimedia inicializado. `Function adb_media_init_mediainfo(name As String, id As String, length As Double, streamType As String) As Object` |
+| `adb_media_init_adinfo` | Este método devuelve el objeto de información de publicidad inicializado. `Function adb_media_init_adinfo(name As String, id As String, position As Double, length As Double) As Object` |
+| `adb_media_init_chapterinfo` | Este método devuelve el objeto de información del capítulo inicializado. `Function adb_media_init_adbreakinfo(name As String, startTime as Double, position as Double) As Object` |
+| `adb_media_init_adbreakinfo` | Este método devuelve el objeto de información de AdBreak inicializado. `Function adb_media_init_chapterinfo(name As String, position As Double, length As Double, startTime As Double) As Object` |
+| `adb_media_init_qosinfo` | Este método devuelve un objeto de información de QoS inicializado. `Function adb_media_init_qosinfo(bitrate As Double, startupTime as Double, fps as Double, droppedFrames as Double) As Object` |
 
 ## Implementación {#implementation}
 
