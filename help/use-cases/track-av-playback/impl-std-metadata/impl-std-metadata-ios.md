@@ -1,14 +1,14 @@
 ---
 title: Obtenga información sobre cómo implementar metadatos estándar en iOS
-description: Obtenga información sobre cómo configurar metadatos de anuncios y vídeos estándar para que se envíen con llamadas de seguimiento en iOS.
+description: Aprenda a configurar los metadatos de anuncios y vídeos estándar para enviarlos con llamadas de seguimiento en iOS.
 uuid: 75a80f08-4a95-49d4-a27a-8ce531d64d31
 exl-id: e0981346-3d3c-4a0c-82a4-19942634fd03
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '100'
-ht-degree: 75%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 75%
 1. Cree un diccionario de pares de clave-valor para los metadatos estándar usando `ADBStandardMetadataKeys`.
    [Claves de metadatos de IOS](/help/use-cases/track-av-playback/impl-std-metadata/ios-metadata-keys.md)
 
-1. Establezca el diccionario de metadatos estándar en la instancia `MediaInfo``ADBMediaObject` mediante el uso de la constante de metadatos estándar para los metadatos.
+1. Establezca el diccionario de metadatos estándar en la instancia `MediaInfo` `ADBMediaObject` mediante el uso de la constante de metadatos estándar para los metadatos.
 
 1. Proporcione este objeto de `MediaInfo` e invoque la API `trackSessionStart`.
 
