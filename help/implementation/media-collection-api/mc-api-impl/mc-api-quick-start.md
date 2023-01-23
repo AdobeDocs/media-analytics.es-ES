@@ -1,14 +1,14 @@
 ---
-title: "API de recopilación de medios de transmisión: inicio rápido"
-description: Introducción a la API de medios de transmisión. Obtenga información sobre cómo verificar rápidamente los datos de solicitud.
+title: "Streaming Media Collection API - Inicio rápido"
+description: Introducción a la API de medios de streaming. Aprenda a verificar rápidamente los datos de su solicitud.
 uuid: ca20bad4-2c8f-406b-833e-b4883a9aa534
 exl-id: 08bb5873-f69a-4fdd-8f27-69649b4acb17
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '293'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
