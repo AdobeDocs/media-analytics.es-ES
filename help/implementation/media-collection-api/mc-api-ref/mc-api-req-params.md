@@ -1,14 +1,14 @@
 ---
-title: Parámetros de solicitud � API de recopilación de medios de transmisión
-description: "¿Cuáles son los parámetros de solicitud de la API de Media Collection, las claves de solicitud y las descripciones?"
+title: Streaming Media Collection API ‐ Parámetros de solicitud
+description: '"Cuáles son los parámetros de solicitud, las claves de solicitud y las descripciones de la Media Collection API".'
 uuid: f83e9ef1-803d-4152-a6c7-acaa325036b9
 exl-id: a70025ec-1418-46f1-b41f-433d09f024e1
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1329'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 93%
 | --- | :---: | :---: | :---: | --- |
 | `analytics.trackingServer` | Y | string | `sessionStart` | La URL del servidor de Adobe Analytics |
 | `analytics.reportSuite` | Y | string | `sessionStart` | El ID que identifica los datos de los informes de Analytics |
-| `analytics.enableSSL` | N | Booleano | `sessionStart` | Verdadero o falso para activar SSL |
+| `analytics.enableSSL` | N | booleano | `sessionStart` | True o false para activar SSL |
 | `analytics.visitorId` | N | string | `sessionStart` | El ID de visitante de Adobe es un ID personalizado que se puede utilizar en varias aplicaciones de Adobe. Heartbeat `visitorId` es igual a Analytics `VID.` |
 
 ## Datos del visitante
@@ -29,7 +29,7 @@ ht-degree: 93%
 | --- | :---: | :---: | :---: | --- |
 | `visitor.marketingCloudOrgId` | Y | string | `sessionStart` | El ID de organización de Experience Cloud indentifica su organización en el sistema de Adobe Experience Cloud |
 | `visitor.marketingCloudUserId` | N | string | `sessionStart` | Este es el ID de usuario de Experience Cloud (ECID). En la mayoría de los casos, este es el ID que debe utilizar para identificar a un usuario. Heartbeat `marketingCloudUserId` es igual a `MID` en Adobe Analytics. Aunque técnicamente no es obligatorio, este parámetro es necesario para acceder a la familia de aplicaciones de Experience Cloud. |
-| `visitor.aamLocationHint` | N | integer | `sessionStart` | Proporciona datos de Adobe Audience Manager Edge: si no se introduce un valor, el valor es nulo. |
+| `visitor.aamLocationHint` | N | entero | `sessionStart` | Proporciona datos de Adobe Audience Manager Edge - Si no se introduce un valor, el valor es nulo. |
 | `appInstallationId` | N | string | `sessionStart` | La clase appInstallationId identifica exclusivamente la aplicación y el dispositivo |
 
 ## Datos de contenido
@@ -38,18 +38,18 @@ ht-degree: 93%
 | --- | :---: | :---: | :---: | --- |
 | `media.id` | Y | string | `sessionStart` | Identificador único para el contenido |
 | `media.name` | N | string | `sessionStart` | Nombre reconocible para el contenido |
-| `media.length` | Y | entero | `sessionStart` | Longitud del contenido (segundos) |
+| `media.length` | Y | number | `sessionStart` | Longitud del contenido (segundos) |
 | `media.contentType` | Y | string | `sessionStart` | Formato de la emisión (puede ser cualquier cadena, algunos valores recomendados son &quot;en directo&quot;, &quot;VOD&quot; o &quot;Lineal&quot;) |
 | `media.playerName` | Y | string | `sessionStart` | Nombre del reproductor responsable de la renderización del contenido |
 | `media.channel` | Y | string | `sessionStart` | Canal de distribución del contenido. Podría ser un nombre de aplicación móvil o un nombre de sitio Web, un nombre de propiedad |
-| `media.resume` | N | Booleano | `sessionStart` | Indica si un usuario está reanudando o no una sesión anterior (en lugar de iniciar una nueva) |
+| `media.resume` | N | booleano | `sessionStart` | Indica si un usuario está reanudando o no una sesión anterior (en lugar de iniciar una nueva) |
 | `media.sdkVersion` | N | string | `sessionStart` | La versión de SDK utilizada por el reproductor |
 
 ## Metadatos de contenido estándar
 
 | Clave de solicitud  | Requerido | Clave de tipo de solicitud | Establecer en... |  Descripción  |
 | --- | :---: | :---: | :---: | --- |
-| `media.streamFormat` | N | string | `sessionStart` | Formato de la emisión, por ejemplo &quot;HD&quot; |
+| `media.streamFormat` | N | string | `sessionStart` | Formato del flujo, por ejemplo &quot;HD&quot;. |
 | `media.show` | N | string | `sessionStart` | El nombre del programa o serie |
 | `media.season` | N | string | `sessionStart` | La temporada a la que pertenece el programa o la serie |
 | `media.episode` | N | string | `sessionStart` | El número del episodio |
@@ -63,7 +63,7 @@ ht-degree: 93%
 | `media.showType` | N | string | `sessionStart` | El tipo de contenido, expresado con un número entero entre 0 y 3: <ul> <li>0 - Episodio completo </li> <li>1 - Vista previa </li> <li>2 - Clip </li> <li>3 - Otros </li> </ul> |
 | `media.adLoad` | N | string | `sessionStart` | El tipo de publicidad cargada |
 | `media.pass.mvpd` | N | string | `sessionStart` | La MVPD proporcionada por la autentificación de Adobe |
-| `media.pass.auth` | N | string | `sessionStart` | Indica que Adobe ha autorizado el usuario (solo puede ser verdadero si está configurado) |
+| `media.pass.auth` | N | string | `sessionStart` | Indica que Adobe ha autorizado el usuario (solo puede ser true si está configurado) |
 | `media.dayPart` | N | string | `sessionStart` | Hora del día en que se emite el contenido |
 | `media.feed` | N | string | `sessionStart` | El tipo de fuente, por ejemplo, &quot;West-HD&quot; |
 
@@ -72,12 +72,12 @@ ht-degree: 93%
 | Clave de solicitud  | Requerido | Clave de tipo de solicitud | Establecer en... |  Descripción  |
 | --- | :---: | :---: | :---: | --- |
 | `media.ad.podFriendlyName` | N | string | `adBreakStart` | Nombre reconocible de la pausa publicitaria |
-| `media.ad.podIndex` | Y | integer | `adBreakStart` | Índice de pod de anuncios en el vídeo |
-| `media.ad.podSecond` | Y | entero | `adBreakStart` | El segundo en el que comenzó el pod |
-| `media.ad.podPosition` | Y | integer | `adStart` | Índice de la publicidad dentro de la pausa publicitaria comenzando en 1 |
+| `media.ad.podIndex` | Y | entero | `adBreakStart` | Índice de pod de anuncios en el vídeo |
+| `media.ad.podSecond` | Y | number | `adBreakStart` | El segundo en el que comenzó el pod |
+| `media.ad.podPosition` | Y | entero | `adStart` | Índice de la publicidad dentro de la pausa publicitaria comenzando en 1 |
 | `media.ad.name` | N | string | `adStart` | Nombre descriptivo del anuncio |
 | `media.ad.id` | Y | string | `adStart` | Nombre de la publicidad |
-| `media.ad.length` | Y | entero | `adStart` | Longitud del vídeo publicitario, en segundos |
+| `media.ad.length` | Y | number | `adStart` | Longitud del vídeo publicitario, en segundos |
 | `media.ad.playerName` | Y | string | `adStart` | Nombre del reproductor responsable de procesar el anuncio |
 
 ## Metadatos estándar de publicidad
@@ -95,26 +95,26 @@ ht-degree: 93%
 
 | Clave de solicitud  | Requerido | Clave de tipo de solicitud | Establecer en... |  Descripción  |
 | --- | :---: | :---: | :---: | --- |
-| `media.chapter.index` | Y | integer | `chapterStart` | Identifica la posición del capítulo en el contenido |
-| `media.chapter.offset` | Y | entero | `chapterStart` | El segundo de la reproducción en el que comienza el capítulo |
-| `media.chapter.length` | Y | entero | `chapterStart` | Duración del capítulo en segundos |
+| `media.chapter.index` | Y | entero | `chapterStart` | Identifica la posición del capítulo en el contenido |
+| `media.chapter.offset` | Y | number | `chapterStart` | El segundo de la reproducción en el que comienza el capítulo |
+| `media.chapter.length` | Y | number | `chapterStart` | Duración del capítulo en segundos |
 | `media.chapter.friendlyName` | N | string | `chapterStart` | Nombre reconocible del capítulo |
 
 ## Datos de calidad
 
 | Clave de solicitud  | Requerido | Clave de tipo de solicitud | Establecer en... |  Descripción  |
 | --- | :---: | :---: | :---: | --- |
-| `media.qoe.bitrate` | N | integer | Cualquiera | Velocidad de bits media (en bps). La velocidad media se calcula como un promedio ponderado de todos los valores de velocidad de bits según la duración de reproducción durante una sesión determinada. |
-| `media.qoe.droppedFrames` | N | integer | Cualquiera | Número de fotogramas perdidos en la emisión |
-| `media.qoe.framesPerSecond` | N | integer | Cualquiera | Número de fotogramas por segundo |
-| `media.qoe.timeToStart` | N | integer | Cualquiera | Cantidad de tiempo (en milisegundos) transcurrido entre el momento en que el usuario pulsa el botón Reproducir y el momento en que se carga el contenido y se reproduce |
+| `media.qoe.bitrate` | N | entero | Cualquiera | La tasa de bits media (en bps). La velocidad media se calcula como un promedio ponderado de todos los valores de velocidad de bits según la duración de reproducción durante una sesión determinada. |
+| `media.qoe.droppedFrames` | N | entero | Cualquiera | Número de fotogramas perdidos en la emisión |
+| `media.qoe.framesPerSecond` | N | entero | Cualquiera | Número de fotogramas por segundo |
+| `media.qoe.timeToStart` | N | entero | Cualquiera | Cantidad de tiempo (en milisegundos) transcurrido entre el momento en que el usuario pulsa el botón Reproducir y el momento en que se carga el contenido y se reproduce |
 
 ## Parámetros de la Ley de privacidad del consumidor de California (CCPA)  {#ccpa-params}
 
 | Clave de solicitud  | Requerido | Clave de tipo de solicitud | Establecer en... |  Descripción  |
 | --- | :---: | :---: | :---: | --- |
-| `analytics.optOutServerSideForwarding` | N | Booleano | `sessionStart` | Se establece en true cuando el usuario final ha optado por no compartir sus datos entre Adobe Analytics y otras soluciones de Experience Cloud (por ejemplo, Audience Manager) |
-| `analytics.optOutShare` | N | Booleano | `sessionStart` | Se establece en true cuando el usuario final ha optado por no publicar sus datos (por ejemplo, para otros clientes de Adobe Analytics). |
+| `analytics.optOutServerSideForwarding` | N | booleano | `sessionStart` | Se establece en true cuando el usuario final ha optado por no compartir sus datos entre Adobe Analytics y otras soluciones de Experience Cloud (por ejemplo, Audience Manager) |
+| `analytics.optOutShare` | N | booleano | `sessionStart` | Se establece en true cuando el usuario final ha optado por no publicar sus datos (por ejemplo, para otros clientes de Adobe Analytics). |
 
 ## Detalles adicionales {#additional-details}
 
