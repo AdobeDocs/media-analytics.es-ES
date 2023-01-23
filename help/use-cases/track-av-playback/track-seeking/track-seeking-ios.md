@@ -1,14 +1,14 @@
 ---
-title: Obtenga información sobre cómo rastrear la llamada a otro punto del contenido en iOS
-description: Obtenga información sobre cómo rastrear eventos de inicio y finalización de llamada a otro punto del contenido mediante Media SDK en iOS.
+title: Aprenda a rastrear la búsqueda en iOS
+description: Obtenga información sobre cómo rastrear eventos de inicio y finalización de llamada mediante Media SDK en iOS.
 uuid: 1d31ae99-384f-4b4d-b557-4018db177349
 exl-id: e8cb4962-2a14-4bfe-9a25-2405e503ba0b
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '130'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
