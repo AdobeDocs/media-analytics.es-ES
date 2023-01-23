@@ -1,18 +1,18 @@
 ---
-title: ¿Qué es la cronología de inicio y finalización del capítulo de transmisión por secuencias?
-description: Obtenga información sobre la cronología del cabezal de reproducción y cuándo comienza y finaliza un capítulo.
+title: ¿Cuál es la cronología de inicio y fin del capítulo de streaming multimedia?
+description: Obtenga información sobre la cronología del cabezal de reproducción y cuándo empieza y termina un capítulo.
 uuid: 41b52072-e1cd-4dda-9253-31f3408924f6
 exl-id: e3f5bbdb-7007-435b-920c-566d163e57ad
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1106'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
-# Línea de tiempo: Capítulos {#timeline-3-chapters}
+# Cronología: Capítulos {#timeline-3-chapters}
 
 ## VOD, anuncios pre-roll, pausar, almacenar en búfer, ver contenido hasta el final
 
@@ -56,7 +56,7 @@ Esta llamada indica _la intención del usuario de reproducir_ un vídeo. Devuelv
 }
 ```
 
-### Acción 2: Se inicia el temporizador de ping {#Action-2}
+### Acción 2: se inicia el temporizador de ping {#Action-2}
 
 | Acción | Cronología de acción (segundos) | Posición del cabezal de reproducción (segundos) | Solicitud de cliente |
 | --- | :---: | :---: | --- |
@@ -146,7 +146,7 @@ Mandar un ping al servidor cada segundo. (Los pings de anuncios posteriores no s
 | --- | :---: | :---: | --- |
 | Rastrear finalización del anuncio previo a la emisión n.º 1 | 15 | 0 | `/api/v1/sessions/{sid}/events` |
 
-Rastrear el final del primer anuncio pre-roll.
+Rastrear el final del primer anuncio previo a la emisión.
 
 ```json
 {
@@ -164,7 +164,7 @@ Rastrear el final del primer anuncio pre-roll.
 | --- | :---: | :---: | --- |
 | Rastrear inicio del anuncio previo a la emisión n.º 2 | 15 | 0 | `/api/v1/sessions/{sid}/events` |
 
-Realice un seguimiento del inicio del segundo anuncio pre-roll, que dura 7 segundos.
+Realice un seguimiento del inicio del segundo anuncio previo a la emisión, que dura 7 segundos.
 
 ```json
 {
@@ -214,7 +214,7 @@ Mandar un ping al servidor cada segundo. (Los pings de anuncios posteriores no s
 | --- | :---: | :---: | --- |
 | Rastrear finalización del anuncio previo a la emisión n.º 2 | 22 | 0 | `/api/v1/sessions/{sid}/events` |
 
-Rastrear el final del segundo anuncio pre-roll.
+Rastrear el final del segundo anuncio previo a la emisión.
 
 ```json
 {
@@ -262,7 +262,7 @@ Tras el evento `adBreakComplete`, ponga el reproductor en el estado “reproduci
 }
 ```
 
-### Acción 12 - Inicio del capítulo {#Action-12}
+### Acción 12: inicio del capítulo {#Action-12}
 
 | Acción | Cronología de acción (segundos) | Posición del cabezal de reproducción (segundos) | Solicitud de cliente |
 | --- | :---: | :---: | --- |
@@ -320,7 +320,7 @@ Rastree el movimiento al estado “almacenamiento en búfer”.
 }
 ```
 
-### Acción 15 - Fin del búfer (reproducción) {#Action-15}
+### Acción 15: fin del búfer (reproducción) {#Action-15}
 
 | Acción | Cronología de acción (segundos) | Posición del cabezal de reproducción (segundos) | Solicitud de cliente |
 | --- | :---: | :---: | --- |
@@ -356,7 +356,7 @@ Mandar un ping al servidor cada 10 segundos.
 }
 ```
 
-### Acción 17 - Fin del capítulo {#Action-17}
+### Acción 17: fin del capítulo {#Action-17}
 
 | Acción | Cronología de acción (segundos) | Posición del cabezal de reproducción (segundos) | Solicitud de cliente |
 | --- | :---: | :---: | --- |
@@ -380,7 +380,7 @@ El primer capítulo termina justo antes de la segunda pausa publicitaria.
 | --- | :---: | :---: | --- |
 | Rastrear inicio de pausa del anuncio durante la emisión | 46 | 21 | `/api/v1/sessions/{sid}/events` |
 
-Anuncio mid-roll de 8 segundos: enviar `adBreakStart` .
+Anuncio durante la emisión de 8 segundos: enviar `adBreakStart`.
 
 ```json
 {
@@ -402,7 +402,7 @@ Anuncio mid-roll de 8 segundos: enviar `adBreakStart` .
 | --- | :---: | :---: | --- |
 | Rastrear inicio del anuncio durante la emisión n.º 3 | 46 | 21 | `/api/v1/sessions/{sid}/events` |
 
-Seguimiento del anuncio mid-roll.
+Seguimiento del anuncio durante la emisión.
 
 ```json
 {
@@ -428,7 +428,7 @@ Seguimiento del anuncio mid-roll.
 }
 ```
 
-### Acción 20 - Anuncios {#Action-20}
+### Acción 20: pings de anuncios {#Action-20}
 
 | Acción | Cronología de acción (segundos) | Posición del cabezal de reproducción (segundos) | Solicitud de cliente |
 | --- | :---: | :---: | --- |
@@ -452,7 +452,7 @@ Mandar un ping al servidor cada segundo. (Los pings de anuncios posteriores no s
 | --- | :---: | :---: | --- |
 | Rastrear finalización del anuncio durante la emisión n.º 1 | 54 | 21 | `/api/v1/sessions/{sid}/events` |
 
-El anuncio mid-roll ha finalizado.
+El anuncio durante la emisión ha finalizado.
 
 ```json
 {
@@ -482,7 +482,7 @@ Se ha completado la pausa publicitaria.
 }
 ```
 
-### Acción 23 - Inicio del capítulo {#Action-23}
+### Acción 23: inicio del capítulo {#Action-23}
 
 | Acción | Cronología de acción (segundos) | Posición del cabezal de reproducción (segundos) | Solicitud de cliente |
 | --- | :---: | :---: | --- |
@@ -594,7 +594,7 @@ Mandar un ping al servidor cada 10 segundos.
 }
 ```
 
-### Acción 29 - Fin del capítulo {#Action-29}
+### Acción 29: fin del capítulo {#Action-29}
 
 | Acción | Cronología de acción (segundos) | Posición del cabezal de reproducción (segundos) | Solicitud de cliente |
 | --- | :---: | :---: | --- |
