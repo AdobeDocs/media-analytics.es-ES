@@ -6,9 +6,9 @@ exl-id: 85ab1dbd-f4a7-4f11-afc9-8d5000e2de70
 feature: "Media Analytics, System Requirements"
 role: User, Admin, Data Engineer
 source-git-commit: b022bed6b7be0cc97caaaf6b7bbc42474a57b400
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '486'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -27,10 +27,10 @@ Solicite a su representante de Adobe Analytics la URL del servidor de seguimient
 `collection-api-server` URL para el SDK de Mobile, el SDK de JavaScript y el servidor de seguimiento de la API de no recopilación para Roku. Los nombres de dominio para la implementación de API son: `[your_namespace].hb-api.omtrdc.net`.
 
 1. **Descargar Media SDK actual o implementar las extensiones necesarias**<br>
-Según la ruta de implementación, [descargue el SDK actual](download-sdks.md) para plataformas web, móviles o de servicios OTT. Las extensiones requeridas deben implementarse para habilitar las rutas de extensiones de Adobe Analytics para medios de streaming.
+Según la ruta de implementación, [descargue el SDK actual](download-sdks.md) para plataformas web, móviles o de servicios OTT. Las extensiones necesarias deben implementarse para habilitar Adobe Analytics para medios de transmisión.
 
 1. **Habilitar los informes de Adobe Analytics**<br>
-Para habilitar los informes en Analytics y ver los datos de contenido y publicidad que está recopilando, debe habilitar los informes en Analytics. Consulte [Habilitación de informes de contenidos](/help/reporting/media-reports-enable.md).
+Para habilitar los informes en Analytics y ver los datos de contenido y publicidad que está recopilando, debe habilitar los informes en Analytics. Véase [Habilitación de informes multimedia](/help/reporting/media-reports-enable.md).
 
 1. **Habilitar Experience Cloud**<br>
 
