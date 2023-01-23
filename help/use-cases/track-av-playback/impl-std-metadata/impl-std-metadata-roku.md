@@ -1,14 +1,14 @@
 ---
 title: Obtenga información sobre cómo implementar metadatos estándar en Roku
-description: Obtenga información sobre cómo configurar metadatos de anuncios y vídeos estándar para que se envíen con llamadas de seguimiento en Roku.
+description: Aprenda a configurar los metadatos estándar de vídeo y anuncios que se envían con las llamadas de seguimiento en Roku.
 uuid: ae14d809-343f-452c-832a-f94bd3d83a90
 exl-id: 1552b16a-3c2d-4caa-b571-e6628f0b6866
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '63'
-ht-degree: 60%
+ht-degree: 100%
 
 ---
 
