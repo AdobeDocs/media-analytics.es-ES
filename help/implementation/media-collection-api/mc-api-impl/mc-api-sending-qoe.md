@@ -1,14 +1,14 @@
 ---
-title: Envío de datos de la nube
-description: Obtenga información sobre el envío de eventos con una clave qoeData JSON.
+title: Envío de datos de QoE
+description: Más información sobre el envío de eventos con una clave qoeData JSON.
 uuid: 52a02d92-195d-4ce8-8ce3-585ed68969f9
 exl-id: 41a20410-78e6-481d-bd5c-0febadb290d8
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '55'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
