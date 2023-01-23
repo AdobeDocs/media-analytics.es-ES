@@ -1,14 +1,14 @@
 ---
-title: Obtenga información sobre cómo rastrear la reproducción principal en iOS
-description: Obtenga información sobre cómo implementar el seguimiento principal mediante Media SDK en iOS.
+title: Aprenda a seguir la reproducción de Core en iOS
+description: Aprenda a implementar el seguimiento del núcleo mediante el SDK multimedia en iOS.
 uuid: bdc0e05c-4fe5-430e-aee2-f331bc59ac6b
 exl-id: 5c6b36b3-a421-45a4-a65e-4eb57513ca4a
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '711'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -33,7 +33,7 @@ Esta documentación abarca el seguimiento en la versión 2.x del SDK.
    | `streamType` | Tipo de flujo (consulte _Constantes de StreamType_ a continuación) | Sí |
    | `mediaType` | Tipo de contenido (consulte _Constantes de MediaType_ a continuación) | Sí |
 
-   Constantes de **`StreamType`:**
+   **`StreamType`Constantes:**
 
    | Nombre de la constante | Descripción |
    |---|---|
@@ -44,7 +44,7 @@ Esta documentación abarca el seguimiento en la versión 2.x del SDK.
    | `ADBMediaHeartbeatStreamTypeAUDIOBOOK` | Tipo de emisión de audiolibro. |
    | `ADBMediaHeartbeatStreamTypePODCAST` | Tipo de emisión de podcast. |
 
-   Constantes de **`MediaType`:**
+   **`MediaType`Constantes:**
 
    | Nombre de la constante | Descripción |
    |---|---|
