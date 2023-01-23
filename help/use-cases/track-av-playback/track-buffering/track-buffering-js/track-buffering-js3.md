@@ -1,13 +1,13 @@
 ---
-title: Obtenga Información Sobre Cómo Rastrear El Almacenamiento En Búfer Con JavaScript 3.x
-description: Obtenga información sobre cómo rastrear eventos de almacenamiento en búfer en aplicaciones de navegador (JS).
+title: Aprenda a controlar el almacenamiento en búfer con JavaScript 3.x
+description: Aprenda a rastrear eventos de almacenamiento en búfer en aplicaciones de explorador (JS).
 exl-id: c6941942-02f9-4f9c-99ad-0c52ed2f793b
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '120'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ En las siguientes instrucciones se indican los pasos para la implementación en 
 
 >[!IMPORTANT]
 >
->Si va implementar cualquier versión anterior del SDK, puede descargar las guías del desarrollador aquí: [Descargar SDK.](/help/getting-started/download-sdks.md)
+>Si va a implementar cualquier versión anterior del SDK, puede descargar las guías del desarrollador aquí: [Descargar SDK.](/help/getting-started/download-sdks.md)
 
 ## Constantes de seguimiento de búfer
 
