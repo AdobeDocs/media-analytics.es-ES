@@ -1,20 +1,20 @@
 ---
-title: Configuración de Media SDK en Android
-description: Siga estos pasos para configurar la aplicación de Media SDK en Android.
+title: Configuración de Media SDK para Android
+description: Siga estos pasos para configurar la aplicación Media SDK en Android.
 uuid: 3ffe3276-a104-4182-9220-038729e9f3d5
 exl-id: 261445bf-3c8b-4658-891d-9a878e0b26ea
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '445'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
 # Configuración de Android{#set-up-android}
 
-Obtenga información sobre cómo configurar Streaming Media Analytics para dispositivos Android.
+Aprenda a configurar Streaming Media Analytics para dispositivos Android.
 
 >[!IMPORTANT]
 >
@@ -141,4 +141,4 @@ Para agregar estos permisos, agregue las siguientes líneas al archivo `AndroidM
 
 En las versiones 2.x, todos los métodos públicos se incluyen en la clase `com.adobe.primetime.va.simple.MediaHeartbeat` para facilitar el trabajo de los desarrolladores. Asimismo, todas las configuraciones están consolidadas en la clase `com.adobe.primetime.va.simple.MediaHeartbeatConfig`.
 
-Para obtener información sobre la migración de 1.x a 2.x, consulte la documentación de Implementación heredada .
+Para obtener información sobre la migración de 1.x a 2.x, consulte la documentación de Implementación heredada.
