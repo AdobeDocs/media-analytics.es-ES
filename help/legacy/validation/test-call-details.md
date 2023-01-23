@@ -1,20 +1,20 @@
 ---
 title: Detalles de la llamada de prueba
-description: Explore las llamadas que debe realizar para validar la implementación.
+description: Explore las llamadas que debe realizar para validar su implementación.
 uuid: d3a0e62f-2fc3-413d-ac56-adbbc9b3e983
 exl-id: 5e167714-3f0c-4afa-b171-7d51cff6522e
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '614'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
 # Detalles de la llamada de prueba{#test-call-details}
 
-## Iniciar el reproductor de contenidos {#start-the-media-player}
+## Iniciar el reproductor de medios {#start-the-media-player}
 
 ### Llamada de inicio de Adobe Analytics (AppMeasurement)  {#aa-start-call}
 
@@ -41,13 +41,13 @@ ht-degree: 98%
 |---|---|
 | `a.media.show` | Show Title |
 | `a.media.season` | 6 |
-| `a.media.episode` | Título episodio |
+| `a.media.episode` | Episode Title |
 | `a.media.asset_id` | 123456 |
 | `a.media.genre` | comedy |
 | `a.media.first_air_date` | 2016-07-04 |
 | `a.media.rating` | TV-14 |
 | `a.media.originator` | production house |
-| `a.media.network` | network |
+| `a.media.network` | Red |
 | `a.media.ad_load` | 1 |
 | `a.media.mvpd` | mvpd |
 | `a.media.authorized` | unlocked |
@@ -68,7 +68,7 @@ ht-degree: 98%
 | `s:event:type` | start |
 | _**`l:event:playhead`**_ | _**0**_ |
 | `l:event:duration` | 4 |
-| `s:asset:name` | Título episodio |
+| `s:asset:name` | Episode Title |
 | `s:asset:video_id` | 123456 |
 | `l:asset:length` | 120 |
 | `s:stream:type` | vod |
@@ -87,16 +87,16 @@ ht-degree: 98%
 |---|---|
 | `s:meta:a.media.show` | Show |
 | `s:meta:a.media.season` | 6 |
-| `s:meta:a.media.episode` | Título episodio |
+| `s:meta:a.media.episode` | Episode Title |
 | `s:meta:a.media.asset_id` | 123456 |
 | `s:meta:a.media.genre` | comedy |
 | `s:meta:a.media.first_air_date` | 2018-07-04 |
 | `s:meta:a.media.rating` | TV-14 |
 | `s:meta:a.media.originator` | production house |
-| `s:meta:a.media.network` | network |
+| `s:meta:a.media.network` | Red |
 | `s:meta:a.media.ad_load` | 1 |
 | `s:meta:a.media.mvpd` | mvpd |
-| `s:meta:a.media.authorized` | desbloqueado |
+| `s:meta:a.media.authorized` | unlocked |
 | `s:meta:a.media.feed` | no feed |
 | `s:meta:a.media.stream_format` | 0 |
 
@@ -114,7 +114,7 @@ ht-degree: 98%
 | _**`s:event:type`**_ | _**aa_start**_ |
 | `l:event:playhead` | 0 |
 | `l:event:duration` | 4 |
-| `s:asset:name` | Título episodio |
+| `s:asset:name` | Episode Title |
 | `s:asset:video_id` | 123456 |
 | `l:asset:length` | 120 |
 | `s:stream:type` | vod |
@@ -127,7 +127,7 @@ ht-degree: 98%
 
 ## Visualización de la reproducción de anuncio {#view-ad-playback}
 
-### Llamada de inicio de anucio de Adobe Analytics (AppMeasurement)  {#aa-ad-start-call}
+### Llamada de inicio de anuncio de Adobe Analytics (AppMeasurement)  {#aa-ad-start-call}
 
 | Parámetro |  Valor (ejemplo)  |
 |---|---|
@@ -154,18 +154,18 @@ ht-degree: 98%
 
 | Parámetro |  Valor (ejemplo)  |
 |---|---|
-| `a.media.show` | Mostrar título |
+| `a.media.show` | Show Title |
 | `a.media.season` | 6 |
-| `a.media.episode` | Título episodio |
+| `a.media.episode` | Episode Title |
 | `a.media.asset_id` | 123456 |
 | `a.media.genre` | comedy |
-| `a.media.first_air_date` | 07-2016-04 |
+| `a.media.first_air_date` | 2016-07-04 |
 | `a.media.rating` | TV-14 |
 | `a.media.originator` | production house |
-| `a.media.network` | network |
+| `a.media.network` | Red |
 | `a.media.ad_load` | 1 |
 | `a.media.mvpd` | mvpd |
-| `a.media.authorized` | desbloqueado |
+| `a.media.authorized` | unlocked |
 | `a.media.feed` | no feed |
 | `a.media.stream_format` | 0 |
 
@@ -186,7 +186,7 @@ ht-degree: 98%
 | `s:asset:ad_id` | 9378 |
 | _**`l:asset:length`**_ | _**120**_ |
 | `s:stream:type` | vod |
-| _**`s:asset:type`**_ | _**ad**_ |
+| _**`s:asset:type`**_ | _**Publicidad**_ |
 | _**`s:meta:custom.[value]`**_ | _**Campos de metadatos personalizados**_ |
 | _**`s:meta:a.media.[value]`**_ | _**Campos de metadatos estándar**_ |
 
@@ -201,16 +201,16 @@ ht-degree: 98%
 |---|---|
 | `s:meta:a.media.show` | Show |
 | `s:meta:a.media.season` | 6 |
-| `s:meta:a.media.episode` | Título episodio |
+| `s:meta:a.media.episode` | Episode Title |
 | `s:meta:a.media.asset_id` | 123456 |
 | `s:meta:a.media.genre` | comedy |
-| `s:meta:a.media.first_air_date` | 07-2018 |
+| `s:meta:a.media.first_air_date` | 2018-07-04 |
 | `s:meta:a.media.rating` | TV-14 |
 | `s:meta:a.media.originator` | production house |
-| `s:meta:a.media.network` | network |
+| `s:meta:a.media.network` | Red |
 | `s:meta:a.media.ad_load` | 1 |
 | `s:meta:a.media.mvpd` | mvpd |
-| `s:meta:a.media.authorized` | desbloqueado |
+| `s:meta:a.media.authorized` | unlocked |
 | `s:meta:a.media.feed` | no feed |
 | `s:meta:a.media.stream_format` | 0 |
 
@@ -231,7 +231,7 @@ ht-degree: 98%
 | `s:asset:ad_id` | 9378 |
 | `l:asset:ad_length` | 15 |
 | `s:stream:type` | vod |
-| `s:asset:type` | ad |
+| `s:asset:type` | Publicidad |
 
 ### Llamada de reproducción de anuncio de Media Analytics (latidos)  {#ma-ad-play-call}
 
@@ -243,7 +243,7 @@ ht-degree: 98%
 | `s:asset:ad_id` | 9378 |
 | `l:asset:ad_length` | 15 |
 | `s:stream:type` | vod |
-| _**`s:asset:type`**_ | _**ad**_ |
+| _**`s:asset:type`**_ | _**Publicidad**_ |
 
 ### Llamada de pausa de anuncio de Media Analytics (latidos)  {#ma-ad-pause-call}
 
@@ -255,7 +255,7 @@ ht-degree: 98%
 | `s:asset:ad_id` | 9378 |
 | `l:asset:ad_length` | 15 |
 | `s:stream:type` | vod |
-| _**`s:asset:type`**_ | _**ad**_ |
+| _**`s:asset:type`**_ | _**Publicidad**_ |
 
 ### Llamada de finalización de anuncio de Adobe Analytics (latidos) de Media Analytics {#ma-aa-ad-complete-call}
 
@@ -267,7 +267,7 @@ ht-degree: 98%
 | `s:asset:ad_id` | 9378 |
 | `l:asset:ad_length` | 15 |
 | `s:stream:type` | vod |
-| _**`s:asset:type`**_ | _**ad**_ |
+| _**`s:asset:type`**_ | _**Publicidad**_ |
 
 ## Reproducción del contenido principal {#play-main-content}
 
@@ -278,7 +278,7 @@ ht-degree: 98%
 | `s:event:type` | play |
 | _**`l:event:playhead`**_ | _**29**_ |
 | _**`l:event:duration`**_ | _**10189**_ |
-| `s:asset:name` | Título episodio |
+| `s:asset:name` | Episode Title |
 | `s:asset:video_id` | 123456 |
 | `l:asset:length` | 120 |
 | `s:stream:type` | vod |
@@ -298,7 +298,7 @@ ht-degree: 98%
 | _**`s:event:type`**_ | _**pause**_ |
 | _**`l:event:playhead`**_ | _**29**_ |
 | `l:event:duration` | 10189 |
-| `s:asset:name` | Título episodio |
+| `s:asset:name` | Episode Title |
 | `s:asset:video_id` | 123456 |
 | `l:asset:length` | 120 |
 | `s:stream:type` | vod |
