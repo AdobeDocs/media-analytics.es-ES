@@ -1,14 +1,14 @@
 ---
 title: Configuración de Media SDK en iOS
-description: Siga estos pasos para configurar la aplicación de Media SDK en iOS.
+description: Siga estos pasos para configurar la aplicación Media SDK en iOS.
 uuid: a1c6be79-a6dc-47b6-93b3-ac7b42f1f3eb
 exl-id: fe7662b5-1700-4bd6-b542-66aa8493459d
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '763'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -27,7 +27,7 @@ Aprenda a configurar Streaming Media Analytics para dispositivos iOS.
 
    >[!IMPORTANT]
    >
-   >A partir de iOS 9, Apple introdujo una función denominada App Transport Security (ATS). Esta función tiene como objetivo mejorar la seguridad de la red asegurándose de que las aplicaciones utilicen únicamente los protocolos y los cifrados estándar del sector. Esta función está habilitada de forma predeterminada, pero tiene opciones de configuración que le permiten trabajar con ATS. Para obtener más información sobre ATS, consulte [Seguridad del transporte de aplicaciones.](https://experienceleague.adobe.com/docs/mobile-services/ios/config-ios/app-transport-security.html)
+   >A partir de iOS 9, Apple introdujo una función denominada App Transport Security (ATS). Esta función tiene como objetivo mejorar la seguridad de la red asegurándose de que las aplicaciones utilicen únicamente los protocolos y los cifrados estándar del sector. Esta función está habilitada de forma predeterminada, pero tiene opciones de configuración que le permiten trabajar con ATS. Para obtener más información sobre ATS, consulte [Seguridad del transporte de aplicaciones.](https://experienceleague.adobe.com/docs/mobile-services/ios/config-ios/app-transport-security.html?lang=es)
 
 * **Proporcione las siguientes capacidades en su reproductor de contenidos**:
 
@@ -159,7 +159,7 @@ Aprenda a configurar Streaming Media Analytics para dispositivos iOS.
 
 En la versión 2.x, todos los métodos públicos se incluyen en la clase `ADBMediaHeartbeat` para facilitar el trabajo de los desarrolladores. Todas las configuraciones se incluyen en la clase `ADBMediaHeartbeatConfig`.
 
-Para obtener información sobre la migración de 1.x a 2.x, consulte la documentación de Implementación heredada ).
+Para obtener información sobre la migración de 1.x a 2.x, consulte la documentación de Implementación heredada).
 
 ## Configurar una aplicación nativa para tvOS
 
