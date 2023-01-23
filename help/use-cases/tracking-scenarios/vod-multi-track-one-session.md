@@ -1,14 +1,14 @@
 ---
 title: Un rastreador de VOD para varias sesiones
-description: Vea un ejemplo de cómo utilizar un rastreador para rastrear varias sesiones mediante Media SDK.
+description: Ejemplo de cómo utilizar un rastreador para rastrear varias sesiones mediante Media SDK.
 uuid: 355c83f4-52bd-4bdd-92dc-ab506e412d0a
 exl-id: 72edb484-0d45-446e-bda3-cda9e2272e7e
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '184'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
