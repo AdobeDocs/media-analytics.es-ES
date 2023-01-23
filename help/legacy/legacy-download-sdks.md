@@ -1,34 +1,34 @@
 ---
-title: 'Vínculos de acceso a elementos heredados: Media SDK'
-description: Vínculos a descargas de SDK heredadas para plataformas disponibles, como Android, iOS, JavaScript, Chromecast y Roku.
+title: 'Vínculos de acceso al heredado: Media SDK'
+description: Vínculos a las descargas de SDK heredados para plataformas disponibles, como Android, iOS, JavaScript, Chromecast y Roku.
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+exl-id: d1066f05-f46f-46fa-897f-039657704d05
+source-git-commit: a7d897c6f6fbc6ed0d5b71f5801ab18ee21f0411
+workflow-type: ht
 source-wordcount: '331'
-ht-degree: 59%
+ht-degree: 100%
 
 ---
 
-
 # Heredado: descargar SDK{#legacy-download-sdks}
 
-La información de esta página incluye vínculos para descargar la variable **heredado**  Media SDK 2.x y Media SDK 1.x heredados.
+La información de esta página incluye enlaces para descargar los SDK multimedia **heredados** 2.x y los SDK multimedia heredados 1.x.
 
-Para obtener información sobre la descarga **current** SDK, consulte [Descargar SDK](/help/getting-started/download-sdks.md).
+Para obtener información sobre la descarga de **SDK** actuales, consulte [Descargar SDK](/help/getting-started/download-sdks.md).
 
-Para obtener información importante acerca del fin de la compatibilidad, consulte [Preguntas frecuentes sobre el fin de la asistencia](/help/additional-resources/end-of-support-faqs.md).
+Para obtener información importante acerca de la finalización de la compatibilidad, consulte [Preguntas frecuentes sobre el fin de la compatibilidad](/help/additional-resources/end-of-support-faqs.md).
 
-## Streaming Media y la extensión de Adobe Medium Analytics
+## Streaming de medios y la extensión Adobe Media Analytics
 
-La extensión de Adobe Medium Analytics agrega el SDK principal de JavaScript Media SDK (Media SDK 2.x) para audio y vídeo. Esta extensión proporciona la funcionalidad para agregar la instancia de seguimiento `MediaHeartbeat` a un sitio o proyecto de recopilación de datos.
+La extensión Adobe Media Analytics añade el SDK central de JavaScript Media (Media 2.x SDK) para audio y vídeo. Esta extensión proporciona la funcionalidad para agregar la instancia de seguimiento `MediaHeartbeat` a un sitio o proyecto de recopilación de datos.
 
-La recopilación de datos de Adobe con la extensión Media Analytics tiene los siguientes requisitos:
+Adobe Data Collection con la extensión Media Analytics tiene los siguientes requisitos:
 * Debe ser cliente de Adobe Experience Cloud.
 * Debe implementar el código incrustado de la recopilación de datos o DTM en las páginas web.
-* Debe configurar la variable [Extensión de Analytics](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html?lang=es).
-* Debe configurar la variable [Extensión de inicio de Adobe Medium Analytics for Audio and Video](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics).
-* Debe configurar la variable [Extensión de ID de Experience Cloud](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/id-service/overview.html?lang=es).
+* Debe configurar la extensión [Analytics Extension](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html?lang=es).
+* Debe configurar la extensión de lanzamiento [Adobe Media Analytics para audio y vídeo](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics).
+* Debe configurar la [Experience Cloud ID Extension](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/id-service/overview.html?lang=es).
 
 ## Descargar los Media SDK 2.x {#download-2x-sdks}
 
