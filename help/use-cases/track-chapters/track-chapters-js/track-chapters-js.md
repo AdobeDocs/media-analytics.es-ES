@@ -1,18 +1,18 @@
 ---
-title: Aprenda a rastrear capítulos y segmentos usando JavaScript 2.x
-description: Obtenga información sobre la implementación del seguimiento de capítulos y segmentos mediante Media SDK en aplicaciones de navegador (JS).
+title: Aprenda a realizar el seguimiento de capítulos y segmentos con JavaScript 2.x
+description: Obtenga información sobre la implementación del seguimiento de capítulos y segmentos mediante el uso de Media SDK en aplicaciones de explorador (JS).
 uuid: ef99edf7-7a77-46c4-8429-bc9a856b98d6
 exl-id: 9964ec0c-cce9-4ccc-bd26-a2b3fcdc3e28
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '198'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
-# Seguimiento de capítulos y segmentos con JavaScript 2.x{#track-chapters-and-segments-on-javascript}
+# Seguimiento de capítulos y segmentos mediante JavaScript 2.x{#track-chapters-and-segments-on-javascript}
 
 Las siguientes instrucciones proporcionan directrices para la implementación mediante SDK de 2.x.
 
