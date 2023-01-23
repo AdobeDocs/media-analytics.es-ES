@@ -1,14 +1,14 @@
 ---
-title: Punto final de solicitud de eventos � API de recopilación de medios de transmisión
-description: "¿Qué son los parámetros y respuestas de extremo de solicitud de eventos de API de recopilación de medios?"
+title: Streaming Media Collection API ‐ Punto final de solicitud de eventos
+description: "¿Cuáles son los parámetros y las respuestas del punto final de solicitud de eventos de la Media Collection API?"
 uuid: b237f0a0-dc29-418b-89ee-04c596a27f39
 exl-id: ee0dd8a6-1529-4258-af12-0e2f5948ec38
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '261'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -71,7 +71,7 @@ Access-Control-Expose-Headers Location
 | Código de respuesta HTTP | Descripción | Elementos de acción del cliente |
 |---|---|---|
 | **204** | **Sin contenido.** <br/><br/>La llamada de Heartbeat se ha realizado correctamente. | N/D |
-| **400** | **Solicitud incorrecta.** <br/><br/>El formato de la solicitud es incorrecto. | Compruebe los [esquemas JSON de validación](mc-api-json-validation.md) para el tipo de solicitud. |
+| **400** | **Solicitud incorrecta.**<br/><br/>El formato de la solicitud es incorrecto. | Compruebe los [esquemas JSON de validación](mc-api-json-validation.md) para el tipo de solicitud. |
 | **404** | **No encontrado.** <br/><br/>No se ha encontrado el ID de la sesión de contenido en el servicio back-end. | La aplicación del cliente debe utilizar la API de [solicitud de sesiones](mc-api-sessions-req.md) para crear otra sesión de medios y realizar el seguimiento de informes. |
 | **410** | **Se ha marchado.** <br/><br/>Se ha encontrado la sesión de contenido en el servicio back-end, pero el cliente ya no puede informar de la actividad en ella. | La aplicación del cliente debe utilizar la API de [solicitud de sesiones](mc-api-sessions-req.md) para crear otra sesión de medios y realizar el seguimiento de informes. |
 | **500** | **Error del servidor** | N/D |
