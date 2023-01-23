@@ -1,13 +1,13 @@
 ---
 title: Implementación y sistema de informes
-description: Obtenga información sobre cómo implementar la función de seguimiento de estado del reproductor, que incluye .
+description: Obtenga información sobre cómo implementar la función de seguimiento de estado del reproductor, incluyendo
 exl-id: 19a97c9b-14d1-4f11-bb0a-3a1ad6f949da
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '332'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
