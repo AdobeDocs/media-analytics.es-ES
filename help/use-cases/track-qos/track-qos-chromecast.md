@@ -1,14 +1,14 @@
 ---
 title: Descubra cómo rastrear la calidad de la experiencia en Chromecast
-description: "Obtenga información sobre la implementación del seguimiento de calidad de experiencia (QoE, QoS) mediante Media SDK en Chromecast."
+description: "Obtenga información sobre la implementación del seguimiento de la calidad de experiencia (QoE, QoS) mediante Media SDK en Chromecast."
 uuid: d0cdc8cd-4db0-45ef-9470-1cba3996305b
 exl-id: 04b9b888-2727-4aa6-a934-94a02c85a490
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '294'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
