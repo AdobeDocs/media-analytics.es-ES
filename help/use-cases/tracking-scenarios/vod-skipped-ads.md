@@ -6,9 +6,9 @@ exl-id: 034b5c1f-7dd9-431f-a51b-925e407a7b36
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '280'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -35,7 +35,7 @@ Esta situación es igual la de [Reproducción de VOD con anuncio previo a la emi
 
 ## Parámetros {#parameters}
 
-Los parámetros son idénticos a los de la situación [Reproducción de VOD con anuncios previos a la emisión](/help/use-cases/tracking-scenarios/vod-preroll-ads.md), pero no hay llamada de finalización de anuncio ni de finalización de pausa publicitaria.
+Los parámetros son idénticos a los del escenario [Reproducción de VOD con anuncios previos a la emisión](/help/use-cases/tracking-scenarios/vod-preroll-ads.md), pero no hay llamada de finalización de anuncio ni de finalización de pausa publicitaria.
 
 ## Código de muestra {#sample-code}
 
