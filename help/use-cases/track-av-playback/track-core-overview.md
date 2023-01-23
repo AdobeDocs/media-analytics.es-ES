@@ -1,14 +1,14 @@
 ---
 title: Seguimiento de la reproducción de contenido explicado
-description: "Obtenga información sobre el seguimiento de la reproducción principal, incluido el seguimiento de la carga, el inicio, la pausa y la finalización de los contenidos. "
+description: "Obtenga información sobre el seguimiento de la reproducción central, incluido el seguimiento de la carga, el inicio, la pausa y la finalización de medios. "
 uuid: 7b8e2f76-bc4e-4721-8933-3e4453b01788
 exl-id: 98ad2783-c9e3-48de-88df-8549f26114a0
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '896'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -73,7 +73,7 @@ Cancelar cambios
 
 1. **Configuración inicial del seguimiento**: identifique cuándo el usuario activa la reproducción (cuando hace clic en reproducción o reproducción automática) y cree una instancia de `MediaObject` con la información del contenido: nombre, ID y duración del contenido, así como el tipo de emisión.
 
-   **`MediaObject`Referencia de:**
+   **`MediaObject`Referencia:**
 
    | Nombre de variable | Descripción | Requerido |
    |---|---|---|
@@ -83,7 +83,7 @@ Cancelar cambios
    | `streamType` | Tipo de emisión | Sí |
    | `mediaType` | Tipo de contenido (contenido de audio o vídeo) | Sí |
 
-   Constantes de **`StreamType`:**
+   **`StreamType`Constantes:**
 
    | Nombre de la constante | Descripción |
    |---|---|
@@ -94,7 +94,7 @@ Cancelar cambios
    | `AUDIOBOOK` | Tipo de emisión de audiolibro. |
    | `PODCAST` | Tipo de emisión de podcast. |
 
-   Constantes de **`MediaType`:**
+   **`MediaType`Constantes:**
 
    | Nombre de la constante | Descripción |
    |---|---|
@@ -242,4 +242,4 @@ if (e.type == "buffered") {
 
 ## Validación {#validate}
 
-Para obtener información sobre la validación de *heredado* implementación, consulte [Validación heredada.](/help/legacy/validation/validation-overview.md)
+Para obtener información sobre la validación de su implementación de *legado*, consulte [Validación de legado.](/help/legacy/validation/validation-overview.md)
