@@ -1,14 +1,14 @@
 ---
-title: Obtenga información sobre cómo rastrear la reproducción principal en Android
-description: Obtenga información sobre cómo implementar el seguimiento principal mediante Media SDK en Android.
+title: Aprenda a rastrear la reproducción de núcleos en Android
+description: Aprenda a implementar el seguimiento del núcleo utilizando el SDK multimedia en Android.
 uuid: ab5fab95-76ed-4ae6-aedb-2e66eece7607
 exl-id: d5f5a3f0-f1e0-4d68-af7f-88a30faed0db
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '708'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -32,7 +32,7 @@ Esta documentación abarca el seguimiento en la versión 2.x del SDK.
    | `streamType` | Tipo de flujo (consulte _Constantes de StreamType_ a continuación) | Sí |
    | `mediaType` | Tipo de contenido (consulte _Constantes de MediaType_ a continuación) | Sí |
 
-   Constantes de **`StreamType`:**
+   **`StreamType`Constantes:**
 
    | Nombre de la constante | Descripción |
    |---|---|
@@ -43,7 +43,7 @@ Esta documentación abarca el seguimiento en la versión 2.x del SDK.
    | `AUDIOBOOK` | Tipo de emisión de audiolibro. |
    | `PODCAST` | Tipo de emisión de podcast. |
 
-   Constantes de **`MediaType`:**
+   **`MediaType`Constantes:**
 
    | Nombre de la constante | Descripción |
    |---|---|
