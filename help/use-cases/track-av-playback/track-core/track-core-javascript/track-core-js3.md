@@ -1,13 +1,13 @@
 ---
-title: Aprenda A Rastrear La Reproducción Principal Con JavaScript v3.x
-description: Obtenga información sobre cómo implementar el seguimiento principal mediante Media SDK en un explorador con aplicaciones JavaScript 3.x.
+title: Aprenda a realizar un seguimiento de la reproducción del núcleo mediante JavaScript v3.x
+description: Aprenda a implementar el seguimiento del núcleo mediante Media SDK en un explorador utilizando aplicaciones JavaScript 3.x.
 exl-id: f3145450-82ba-4790-91a4-9d2cc97bbaa5
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '645'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -28,18 +28,18 @@ Esta documentación abarca el seguimiento en la versión 3.x del SDK.
    | --- | --- | --- |
    | `name` | string | Cadena no vacía que indica el nombre de los medios. |
    | `id` | string | Cadena no vacía que indica un identificador de medios único. |
-   | `length` | entero | Número positivo que indica la longitud de los medios en segundos. Utilice 0 si se desconoce la longitud. |
+   | `length` | number | Número positivo que indica la longitud de los medios en segundos. Utilice 0 si se desconoce la longitud. |
    | `streamType` | string |  |
    | `mediaType` |  | Tipo de medios (audio o vídeo). |
 
-   Constantes de **`StreamType`:**
+   **`StreamType`Constantes:**
 
    | Nombre de la constante | Descripción   |
    |---|---|
    | `VOD` | Tipo de emisión de vídeo bajo demanda. |
    | `AOD` | Tipo de emisión de audio a la carta. |
 
-   Constantes de **`MediaType`:**
+   **`MediaType`Constantes:**
 
    | Nombre de la constante | Descripción |
    |---|---|
@@ -115,7 +115,7 @@ Esta documentación abarca el seguimiento en la versión 3.x del SDK.
 
    >[!NOTE]
    >
-   >Si no utiliza datos de contexto, envíe un objeto vacío para el argumento `data` en `trackSessionStart`.
+   >Si no utiliza contextData, envíe un objeto vacío para el argumento `data` en `trackSessionStart`.
 
 1. **Realizar un seguimiento del inicio real de la reproducción**
 
