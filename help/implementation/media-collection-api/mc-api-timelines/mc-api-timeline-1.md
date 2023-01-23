@@ -1,14 +1,14 @@
 ---
-title: Descubra Más Información Sobre Las Cronologías De Seguimiento De Medios
-description: Profundice en la cronología del cabezal de reproducción y las acciones correspondientes del usuario. Obtenga información acerca de los detalles de cada acción y las solicitudes que la acompañan.
+title: Descubra más información sobre las cronologías de seguimiento de medios
+description: Profundice en la cronología del cabezal de reproducción y las acciones correspondientes de los usuarios. Obtenga información acerca de los detalles de cada acción y las solicitudes que la acompañan.
 uuid: 0ff591d3-fa99-4123-9e09-c4e71ea1060b
 exl-id: 16b15e03-5581-471f-ab0c-077189dd32d6
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1064'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 98%
 
 ## VOD, anuncios pre-roll, pausar, almacenar en búfer, ver contenido hasta el final
 
-Los siguientes diagramas ilustran la línea de tiempo del cursor de reproducción y la línea de tiempo correspondiente de las acciones de un usuario. A continuación se presentan los detalles de cada acción y sus solicitudes correspondientes.
+Los siguientes diagramas ilustran la cronología del cursor de reproducción y la línea de tiempo correspondiente de las acciones de un usuario. A continuación se presentan los detalles de cada acción y sus solicitudes correspondientes.
 
 ![Contenido de la API](assets/va_api_content.png)
 
@@ -197,7 +197,7 @@ Mande un ping al servidor cada segundo mientras se encuentra dentro de un anunci
 | --- | :---: | :---: | --- |
 | Rastrear finalización del anuncio previo a la emisión n.º 1 | 15 | 0 | `/api/v1/sessions/{sid}/events` |
 
-Rastrear el final del primer anuncio pre-roll.
+Rastrear el final del primer anuncio previo a la emisión.
 
 ```json
 {
@@ -215,7 +215,7 @@ Rastrear el final del primer anuncio pre-roll.
 | --- | :---: | :---: | --- |
 | Rastrear inicio del anuncio previo a la emisión n.º 2 | 15 | 0 | `/api/v1/sessions/{sid}/events` |
 
-Realice un seguimiento del inicio del segundo anuncio pre-roll, que dura 7 segundos.
+Realice un seguimiento del inicio del segundo anuncio previo a la emisión, que dura 7 segundos.
 
 ```json
 {
@@ -265,7 +265,7 @@ Mandar un ping al servidor cada segundo.
 | --- | :---: | :---: | --- |
 | Rastrear finalización del anuncio previo a la emisión n.º 2 | 22 | 0 | `/api/v1/sessions/{sid}/events` |
 
-Rastrear el final del segundo anuncio pre-roll.
+Rastrear el final del segundo anuncio previo a la emisión.
 
 ```json
 {
@@ -389,7 +389,7 @@ Mandar un ping al servidor cada 10 segundos.
 | --- | :---: | :---: | --- |
 | Rastrear inicio de pausa del anuncio durante la emisión | 46 | 21 | `/api/v1/sessions/{sid}/events` |
 
-Anuncio mid-roll de 8 segundos: enviar `adBreakStart` .
+Anuncio durante la emisión de 8 segundos: enviar `adBreakStart`.
 
 ```json
 {
@@ -412,7 +412,7 @@ Anuncio mid-roll de 8 segundos: enviar `adBreakStart` .
 | --- | :---: | :---: | --- |
 | Rastrear inicio del anuncio durante la emisión n.º 3 | 46 | 21 | `/api/v1/sessions/{sid}/events` |
 
-Seguimiento del anuncio mid-roll.
+Seguimiento del anuncio durante la emisión.
 
 ```json
 {
@@ -461,7 +461,7 @@ Mandar un ping al servidor cada 10 segundos.
 | --- | :---: | :---: | --- |
 | Rastrear finalización del anuncio durante la emisión n.º 1 | 54 | 21 | `/api/v1/sessions/{sid}/events` |
 
-El anuncio mid-roll ha finalizado.
+El anuncio durante la emisión ha finalizado.
 
 ```json
 {
