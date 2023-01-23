@@ -1,14 +1,14 @@
 ---
 title: Reproducción de VOD con un capítulo
-description: Vea un ejemplo del seguimiento de la reproducción de VOD que contiene un capítulo.
+description: Vea un ejemplo de seguimiento de la reproducción de VOD que contiene un capítulo.
 uuid: 1566a6f5-cf22-42e7-8e1a-6976c6c4e649
 exl-id: a8394fd3-16a2-4f5d-b6e1-6e9acb4c7afd
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '431'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
