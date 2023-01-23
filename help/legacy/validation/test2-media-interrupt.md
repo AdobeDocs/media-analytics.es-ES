@@ -1,14 +1,14 @@
 ---
-title: Prueba 2 Interrupción de contenido
-description: Obtenga información sobre la prueba de interrupción de contenido que se utiliza en la validación.
+title: 'Prueba 2: Interrupción de contenido'
+description: Obtenga información sobre la prueba de interrupción de medios que se utiliza en la validación.
 uuid: eeccd534-63fd-4dd3-b096-0431bc9a11ff
 exl-id: 3f22ce2d-4385-4a3b-8d1f-52e25a9b1101
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '243'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -40,7 +40,7 @@ Debe completar y registrar estas tareas en el siguiente orden:
 
    Para ver los parámetros y metadatos de la llamada, consulte [Detalles de la llamada de prueba.](/help/legacy/validation/test-call-details.md#play-main-content)
 
-   Consulte también la [Seguimiento de anuncios](/help/use-cases/track-ads/track-ads-overview.md) instrucciones para obtener información adicional sobre estas llamadas de anuncio.
+   Consulte también las instrucciones de [Seguimiento de anuncios](/help/use-cases/track-ads/track-ads-overview.md) de su plataforma para obtener información adicional sobre estas llamadas a anuncios.
 
 1. **Mover la aplicación o el navegador al fondo**
 
