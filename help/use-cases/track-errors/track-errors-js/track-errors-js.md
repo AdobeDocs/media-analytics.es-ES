@@ -1,18 +1,18 @@
 ---
 title: Descubra cómo rastrear errores usando JavaScript 2.x
-description: Obtenga información sobre la implementación del seguimiento de errores mediante Media SDK en aplicaciones de navegador (JS).
+description: Aprenda a implementar el seguimiento de errores utilizando Media SDK en aplicaciones de explorador (JS).
 uuid: 5a4fc5df-2677-4189-92af-5cd074847b39
 exl-id: b3012bce-4b92-408e-8b7a-57ae9d52e93d
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '98'
-ht-degree: 73%
+ht-degree: 100%
 
 ---
 
-# Seguimiento de errores con JavaScript 2.x{#track-errors-on-javascript}
+# Seguimiento de errores en JavaScript 2.x{#track-errors-on-javascript}
 
 En las siguientes instrucciones se indican los pasos para la implementación en todos los kits de desarrollo de software de 2.x.
 
