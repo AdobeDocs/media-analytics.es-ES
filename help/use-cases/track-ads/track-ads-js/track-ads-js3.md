@@ -1,23 +1,23 @@
 ---
 title: Aprenda a rastrear anuncios con JavaScript 3.x
-description: Implementar el seguimiento de anuncios en aplicaciones de navegador (JS) mediante Media SDK.
+description: Implementar el seguimiento de anuncios en aplicaciones de explorador (JS) mediante Media SDK.
 exl-id: 6b34b2c0-5e50-471a-b52c-b9c760fa3169
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '362'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
-# Seguimiento de anuncios con JavaScript 3.x{#track-ads-on-javascript}
+# Seguimiento de anuncios en JavaScript 3.x{#track-ads-on-javascript}
 
 Las siguientes instrucciones proporcionan directrices para la implementación mediante SDK de 3.x.
 
 >[!IMPORTANT]
 >
->Si va implementar cualquier versión anterior del SDK, puede descargar las guías del desarrollador aquí: [Descargar SDK.](/help/getting-started/download-sdks.md)
+>Si va a implementar cualquier versión anterior del SDK, puede descargar las guías del desarrollador aquí: [Descargar SDK.](/help/getting-started/download-sdks.md)
 
 ## Constantes de seguimiento de anuncio
 
@@ -37,9 +37,9 @@ Las siguientes instrucciones proporcionan directrices para la implementación me
 
    | Nombre de variable | Tipo | Descripción |
    | --- | --- | --- |
-   | `name` | string | Cadena no vacía que indica un nombre de pausa publicitaria (anuncio previo a la emisión, anuncio intermedio y anuncio posterior). |
-   | `position` | entero | La posición numérica de la pausa publicitaria, comenzando por 1. |
-   | `startTime` | entero | Valor del cabezal de reproducción al comienzo de la pausa publicitaria. |
+   | `name` | string | Cadena no vacía que indica el nombre de la pausa (pre-roll, mid-roll y post-roll). |
+   | `position` | number | La posición numérica de la pausa publicitaria, comenzando por 1. |
+   | `startTime` | number | Valor del cabezal de reproducción al comienzo de la pausa publicitaria. |
 
    Creación de objeto de pausa publicitaria:
 
@@ -63,9 +63,9 @@ Las siguientes instrucciones proporcionan directrices para la implementación me
    | Nombre de variable | Tipo | Descripción |
    | --- | --- | --- |
    | `name` | string | Cadena no vacía que indica el nombre del anuncio. |
-   | `adId` | string | Cadena no vacía que indica el identificador de la publicidad. |
-   | `position` | entero | La posición numérica del anuncio dentro de la pausa publicitaria, comenzando por 1. |
-   | `length` | entero | Número positivo que indica la longitud del anuncio. |
+   | `adId` | string | Cadena no vacía que denota el identificador del anuncio. |
+   | `position` | number | La posición numérica del anuncio dentro del adbreak, empezando por 1. |
+   | `length` | number | Número positivo que indica la longitud del anuncio. |
 
    Creación de objeto de anuncio:
 
