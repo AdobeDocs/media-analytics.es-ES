@@ -1,18 +1,18 @@
 ---
-title: Descubra las líneas de tiempo de seguimiento de contenidos � el usuario abandona la sesión
-description: Obtenga información sobre la cronología del cabezal de reproducción y la acción � usuario correspondiente cuando se abandona una sesión de vídeo. Obtenga información sobre los detalles de cada acción y solicitud.
+title: Más información sobre las cronologías de Media Traking‐El usuario abandona la sesión
+description: Obtenga información sobre la cronología del cabezal de reproducción y la acción usuario correspondiente cuando se abandona una sesión de vídeo. Conozca los detalles de cada acción y solicitud.
 uuid: 74b89e8f-ef56-4e0c-b9a8-40739e15b4cf
 exl-id: 0c6a89f4-7949-4623-8ed9-ce1d1547bdfa
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '590'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
-# Línea de tiempo 2: El usuario abandona la sesión {#timeline--2-user-abandons-session}
+# Cronología 2: El usuario abandona la sesión {#timeline--2-user-abandons-session}
 
 ## VOD, anuncios pre-roll, anuncios mid-roll, el usuario deja el contenido antes de terminarlo
 
@@ -143,7 +143,7 @@ Mandar un ping al servidor cada segundo. (No se muestran los pings de anuncios p
 | --- | :---: | :---: | --- |
 | Rastrear finalización del anuncio previo a la emisión n.º 1 | 12 | 0 | `/api/v1/sessions/{sid}/events` |
 
-El primer anuncio pre-roll ha finalizado.
+El primer anuncio previo a la emisión ha finalizado.
 
 ```json
 {
@@ -230,7 +230,7 @@ Mandar un ping al servidor cada 10 segundos.
 }
 ```
 
-### Acción 11 - Error {#Action-11}
+### Acción 11: error {#Action-11}
 
 | Acción | Cronología de acción (segundos) | Posición del cabezal de reproducción (segundos) | Solicitud de cliente |
 | --- | :---: | :---: | --- |
@@ -289,7 +289,7 @@ Mandar un ping al servidor cada 10 segundos.
 | --- | :---: | :---: | --- |
 | Rastrear inicio de pausa del anuncio durante la emisión | 45 | 33 | `/api/v1/sessions/{sid}/events` |
 
-Anuncio mid-roll de 8 segundos: enviar `adBreakStart` .
+Anuncio durante la emisión de 8 segundos: enviar `adBreakStart`.
 
 ```json
 {
@@ -312,7 +312,7 @@ Anuncio mid-roll de 8 segundos: enviar `adBreakStart` .
 | --- | :---: | :---: | --- |
 | Rastrear inicio del anuncio durante la emisión n.º 1 | 45 | 33 | `/api/v1/sessions/{sid}/events` |
 
-Seguimiento del anuncio mid-roll.
+Seguimiento del anuncio durante la emisión.
 
 ```json
 {
@@ -336,7 +336,7 @@ Seguimiento del anuncio mid-roll.
 }
 ```
 
-### Acción 16 - Cerrar aplicación {#Action-16}
+### Acción 16: cerrar aplicación {#Action-16}
 
 | Acción | Cronología de acción (segundos) | Posición del cabezal de reproducción (segundos) | Solicitud de cliente |
 | --- | :---: | :---: | --- |
