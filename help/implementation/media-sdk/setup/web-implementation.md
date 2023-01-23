@@ -7,7 +7,7 @@ exl-id: aed561d0-defc-4be5-87d3-0f331cdfab34
 source-git-commit: d1e7a74a03c68e08987f03a295edc69989d9a4c6
 workflow-type: tm+mt
 source-wordcount: '453'
-ht-degree: 68%
+ht-degree: 90%
 
 ---
 
@@ -21,16 +21,16 @@ Como alternativa, puede utilizar la extensión de Adobe Medium Analytics para im
 
 * **Obtener parámetros de configuración válidos**
 
-   Estos parámetros se pueden obtener de un representante de Adobes una vez creada la cuenta de Analytics.
+   Estos parámetros se los puede proporcionar un representante de Adobe cuando haya configurado la cuenta de Analytics.
 
 * **Implementación `AppMeasurement` y `Experience Cloud Identity Service` para JavaScript en la aplicación multimedia**
 
-   Para obtener más información, consulte [Implementación de Analytics con JavaScript](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html?lang=es) y [Implementación del servicio de identidad de Experience Cloud](https://experienceleague.adobe.com/docs/id-service/using/implementation/setup-analytics.html).
+   Para obtener más información, consulte [Implementación de Analytics con JavaScript](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html?lang=es) y [Implementación del servicio de identidad de Experience Cloud](https://experienceleague.adobe.com/docs/id-service/using/implementation/setup-analytics.html?lang=es).
 
-* **Incluya las siguientes API en su reproductor de medios**
+* **Incluya las siguientes API en su reproductor multimedia**
 
    * *Una API para suscribirse a eventos del reproductor*: Media SDK requiere que llame a un conjunto de API simples cuando se produzcan eventos en el reproductor.
-   * *Una API que proporcione información del reproductor* : incluye información sobre medios, anuncios y capítulos que se están reproduciendo.
+   * *Una API que proporciona información sobre el reproductor*: incluye información sobre medios, anuncios y capítulos que se están reproduciendo.
 
 ## Configuración de JavaScript 3.x {#set-up-javascript}
 

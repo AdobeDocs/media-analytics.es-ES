@@ -8,12 +8,12 @@ sub-product: media analytics
 source-git-commit: 5c0195ab6945b65cd37f2e8fd9ddc8c8e91507f0
 workflow-type: tm+mt
 source-wordcount: '895'
-ht-degree: 96%
+ht-degree: 97%
 
 ---
 
 
-# Adobe Analytics para medios de streaming {#using}
+# Adobe Analytics para medios de transmisión {#using}
 
 + [Guía de medios de streaming de Analytics](media-overview.md)
 + Notas de la versión {#release-notes}
@@ -57,7 +57,7 @@ ht-degree: 96%
          + [Esquemas de validación de JSON](implementation/media-collection-api/mc-api-ref/mc-api-json-validation.md)
          + [Validación de solicitudes de eventos](implementation/media-collection-api/mc-api-impl/mc-api-validate-reqs.md)
          + [Envío de eventos ping](implementation/media-collection-api/mc-api-impl/mc-api-sed-pings.md)
-         + [Envío de datos de la nube](implementation/media-collection-api/mc-api-impl/mc-api-sending-qoe.md)
+         + [Envío de datos de QoE](implementation/media-collection-api/mc-api-impl/mc-api-sending-qoe.md)
          + [Compatibilidad con metadatos personalizados](implementation/media-collection-api/mc-api-impl/mc-api-custom-meta.md)
          + [Condiciones de tiempo de espera](implementation/media-collection-api/mc-api-impl/mc-api-timeout.md)
          + [Control del orden de los eventos](implementation/media-collection-api/mc-api-impl/mc-api-ctrl-order.md)
@@ -168,7 +168,7 @@ ht-degree: 96%
          + [Configuración de JavaScript 3.x](legacy/media-sdk/setup/setup-javascript/set-up-js-3.md)
    + [Acerca de la medición del ritmo cardíaco](legacy/heartbeat-measurement.md)
    + [Adobe Primetime y medios de streaming de Analytics](legacy/intro-to-ava/implementation-paths/primetime-path.md)
-   + [Habilitación de la gestión de público de Adobe](legacy/intro-to-ava/am-enablement.md)
+   + [Habilitación de Adobe Audience Management](legacy/intro-to-ava/am-enablement.md)
    + [Implementación de Vínculo personalizado](legacy/measurement-options/cl-in-aa/cl-impl-guide.md)
    + Seguimiento de hitos heredado {#legacy-milestone-tracking}
       + [Seguimiento de hitos heredado](legacy/measurement-options/mm-milestone-tracking/milestone-overview.md)
