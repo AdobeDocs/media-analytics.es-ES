@@ -1,14 +1,14 @@
 ---
 title: Claves de metadatos de iOS explicadas
-description: Obtenga información sobre las claves de metadatos de iOS disponibles.
+description: Más información sobre las claves de metadatos de iOS disponibles.
 uuid: 8eb90111-c9dd-4ca7-9766-91530a8ae6cf
 exl-id: a4bbbcba-9644-486a-95f4-65e5dc57623e
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '115'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
