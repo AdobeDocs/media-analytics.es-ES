@@ -1,13 +1,13 @@
 ---
 title: Acerca de los estados estándar y personalizados
-description: Obtenga información sobre la función de seguimiento del estado del reproductor, que incluye requisitos y directrices para la implementación y creación de informes de estados de reproductor estándar y personalizados.
+description: Obtenga más información sobre la función de seguimiento del estado de los jugadores, incluidos los requisitos y las directrices para implementar e informar sobre los estados de los jugadores estándar y personalizados.
 exl-id: 3c492055-d471-4147-aa78-b058d6b931f4
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '279'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
