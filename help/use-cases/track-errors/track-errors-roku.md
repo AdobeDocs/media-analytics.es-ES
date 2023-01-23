@@ -1,14 +1,14 @@
 ---
 title: Obtenga información sobre cómo rastrear errores en Roku
-description: Obtenga información sobre la implementación del seguimiento de errores mediante Media SDK en Roku.
+description: Obtenga información sobre el seguimiento de errores de implementación mediante Media SDK en Roku.
 uuid: 4e0165f9-9169-47ed-9f11-ea8a8778f663
 exl-id: 6a6aae4c-60c3-43ea-9954-0bb31f6456f8
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '94'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
