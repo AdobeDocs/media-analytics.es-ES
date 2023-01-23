@@ -1,14 +1,14 @@
 ---
-title: Obtenga información sobre cómo implementar metadatos de publicidad estándar en iOS
-description: Cómo utilizar metadatos de anuncio estándar en el seguimiento de anuncios en iOS.
+title: Aprenda a implementar metadatos publicitarios estándar en iOS
+description: Uso de metadatos de anuncio estándar en el seguimiento de anuncios en iOS.
 uuid: f15fb727-5a5b-46c5-bf12-93b376c10fd1
 exl-id: 018ae833-51d9-4ff0-80e7-3dbcaefb997c
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '65'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
