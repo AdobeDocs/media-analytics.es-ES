@@ -6,15 +6,15 @@ exl-id: d211fa2e-d5b0-4e9f-bdb7-eda838194f3d
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: 5c0195ab6945b65cd37f2e8fd9ddc8c8e91507f0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '366'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
 # Obtener SDK de medios, extensiones mediante etiquetas y SDK para OTT {#download-sdks}
 
-La información de esta página incluye vínculos para descargar los SDK de medios actuales y obtener las extensiones de medios que utilizan etiquetas.
+La información de esta página incluye vínculos para descargar los SDK de medios actuales y para obtener las extensiones de medios que utilizan etiquetas.
 
 Las etiquetas en Adobe Experience Platform son la nueva generación de capacidades de administración de etiquetas de sitios web y SDK para móviles de Adobe. Las etiquetas ofrecen una alternativa sencilla para implementar y gestionar las soluciones de análisis, marketing y publicidad necesarias para potenciar las experiencias más importantes del cliente. Para obtener información adicional sobre las etiquetas, consulte [Información general sobre etiquetas](https://experienceleague.adobe.com/docs/platform-learn/data-collection/overview.html?lang=es).
 
@@ -30,7 +30,7 @@ Las etiquetas en Adobe Experience Platform son la nueva generación de capacidad
 
 | Plataforma compatible | Versión |  API   |  Documentación  |  Muestra  |
 |:---:|---|---|---|---|
-| ![Icono de JavaScript](assets/javascript-icon.png) | Web: [Media SDK para JS v3.0.2](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/js-v3.0.2) | [Referencia de la API de JavaScript](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript_3x/index.html) | [Instalación de Analytics mediante JavaScript](/help/implementation/media-sdk/setup/web-implementation.md) | [Muestra de Media SDK para JS v3.0.2](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/sdks/js/3.x) |
+| ![Icono de JavaScript](assets/javascript-icon.png) | Web: [Media SDK para JS v3.0.2](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/js-v3.0.2) | [Referencia de la API de JavaScript](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript_3x/index.html) | [Implementación de Analytics mediante JavaScript](/help/implementation/media-sdk/setup/web-implementation.md) | [Muestra de Media SDK para JS v3.0.2](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/sdks/js/3.x) |
 | ![Icono de JavaScript](assets/javascript-icon.png) | Web: extensión de medios |  | [Extensión de Adobe Medium Analytics (3.x SDK) para audio y vídeo: uso de etiquetas (recopilación de datos)](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics-3x/overview.html?lang=es) | [Extensión de Adobe Media Analytics (3.x SDK) para audio y vídeo de muestra](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/samples/launch/js/3.x) |
 
 ### Implementación móvil {#get-mobile-extension}
