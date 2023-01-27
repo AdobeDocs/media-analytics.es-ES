@@ -6,9 +6,9 @@ breadcrumb-title: Guía de Media Analytics
 user-guide-description: Implemente Adobe Analytics para medios de transmisión. Incluye el SDK de medios y la API de recopilación de medios.
 sub-product: media analytics
 source-git-commit: 5c0195ab6945b65cd37f2e8fd9ddc8c8e91507f0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '895'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -25,8 +25,8 @@ ht-degree: 97%
    + [Documentación de medios de streaming](getting-started/implementation-documentation.md)
    + [SDK, bibliotecas y extensiones](getting-started/download-sdks.md)
    + Fin del soporte técnico {#end-of-support}
-      + [Finalización de la compatibilidad con el SDK móvil de Media Analytics](additional-resources/end-of-support-faqs.md)
-      + Heredado: SDK de medios independiente para la migración a Launch {#sdk-to-launch}
+      + [Fin de la compatibilidad del SDK móvil de Media Analytics](additional-resources/end-of-support-faqs.md)
+      + Heredado: migración de Media SDK independiente a Launch {#sdk-to-launch}
          + [Información general](legacy/sdk-to-launch/sdk-to-launch-migration.md)
          + [Android: Media SDK para Launch](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-android.md)
          + [iOS: Media SDK para Launch](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-ios.md)
@@ -38,7 +38,7 @@ ht-degree: 97%
       + Instalación y configuración {#setup}
          + Instalación de SDK web {#install-web-sdk}
             + [Instalación de Analytics mediante JavaScript](implementation/media-sdk/setup/web-implementation.md)
-            + [Instalación de Analytics con la extensión Media Analytics](implementation/media-sdk/setup/web-implementation-tags.md)
+            + [Instalación de Analytics mediante la extensión de Media Analytics](implementation/media-sdk/setup/web-implementation-tags.md)
          + [Instalación de SDK móviles](implementation/media-sdk/setup/mobile-implementation.md)
          + Instalación de SDK para OTT {#ott-setup}
             + [Instalación del SDK de Chromecast](implementation/media-sdk/setup/set-up-chromecast.md)
