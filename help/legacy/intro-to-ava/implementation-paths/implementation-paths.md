@@ -4,10 +4,10 @@ description: Obtenga información sobre las rutas de implementación de Adobe St
 exl-id: eee70e62-ba45-440a-8ce1-e151b66d2c1f
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: 9ba64b68efec5dd8b52010ac1a13afd7703448d0
-workflow-type: ht
-source-wordcount: '650'
-ht-degree: 100%
+source-git-commit: 0c1382c9c4f1488fba81575097d154301a9b8e70
+workflow-type: tm+mt
+source-wordcount: '651'
+ht-degree: 93%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 100%
 
 **ESTE CONTENIDO SE HA MOVIDO AL ARCHIVO RUTAS DE IMPLEMENTACIÓN ACTUAL**
 
-Con cada ruta de implementación, los clientes deberán ponerse en contacto con su representante de ventas/administrador de cuentas para firmar un nuevo pedido de ventas, ya que Streaming Media Analytics tiene una SKU única y cambia de un modelo de precios según las llamadas del servidor a un modelo según las transmisiones de vídeo.
+Con cada ruta de implementación, los clientes deberán ponerse en contacto con su representante de ventas/equipo de cuenta de Adobe para firmar un nuevo pedido de ventas, ya que Streaming Media Analytics tiene un SKU único y cambia de un modelo de precios basado en las llamadas del servidor a un modelo basado en las transmisiones de vídeo.
 
 ## Recopilación de datos de Adobe Experience Platform con la extensión de Adobe Media Analytics
 
