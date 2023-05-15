@@ -5,10 +5,10 @@ user-guide-title: Adobe Analytics para medios de transmisión
 breadcrumb-title: Guía de Media Analytics
 user-guide-description: Implemente Adobe Analytics para medios de transmisión. Incluye el SDK de medios y la API de recopilación de medios.
 sub-product: media analytics
-source-git-commit: 5c0195ab6945b65cd37f2e8fd9ddc8c8e91507f0
+source-git-commit: 9b448c75604abe2683ab4d522a7197dfe1af55be
 workflow-type: tm+mt
-source-wordcount: '895'
-ht-degree: 100%
+source-wordcount: '902'
+ht-degree: 99%
 
 ---
 
@@ -40,6 +40,7 @@ ht-degree: 100%
             + [Instalación de Analytics mediante JavaScript](implementation/media-sdk/setup/web-implementation.md)
             + [Instalación de Analytics mediante la extensión de Media Analytics](implementation/media-sdk/setup/web-implementation-tags.md)
          + [Instalación de SDK móviles](implementation/media-sdk/setup/mobile-implementation.md)
+         + [Instalación de Analytics con Adobe Experience Platform Edge](implementation/media-sdk/implementation-edge.md)
          + Instalación de SDK para OTT {#ott-setup}
             + [Instalación del SDK de Chromecast](implementation/media-sdk/setup/set-up-chromecast.md)
             + [Instalación del SDK de Roku](implementation/media-sdk/setup/set-up-roku.md)
@@ -193,19 +194,19 @@ ht-degree: 100%
       + [Seguimiento de reproducción principal en iOS](use-cases/track-av-playback/track-core/track-core-ios.md)
       + Seguimiento de reproducción principal en JavaScript {#track-core-javascript}
          + [Seguimiento de reproducción principal en JavaScript 2.x](use-cases/track-av-playback/track-core/track-core-javascript/track-core-js.md)
-      + [Seguimiento del almacenamiento en búfer en Android](use-cases/track-av-playback/track-buffering/track-buffering-android.md)
-      + [Seguimiento del almacenamiento en búfer en iOS](use-cases/track-av-playback/track-buffering/track-buffering-ios.md)
-      + Seguimiento del almacenamiento en búfer en JavaScript {#track-buffering-js}
-         + [Seguimiento del almacenamiento en búfer en JavaScript 2.x](use-cases/track-av-playback/track-buffering/track-buffering-js/track-buffering-js.md)
-      + [Seguimiento de llamada a otro punto del contenido en Android](use-cases/track-av-playback/track-seeking/track-seeking-android.md)
-      + [Seguimiento de llamada a otro punto del contenido en iOS](use-cases/track-av-playback/track-seeking/track-seeking-ios.md)
-      + Seguimiento de llamada a otro punto del contenido en JavaScript {#track-seeking-js}
-         + [Seguimiento de llamada a otro punto del contenido en JavaScript 2.x](use-cases/track-av-playback/track-seeking/track-seeking-js/track-seeking-js.md)
-      + [Implementación de metadatos estándar en Android](use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-android.md)
-      + [Implementación de metadatos estándar en iOS](use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-ios.md)
-      + [Claves de metadatos de iOS](use-cases/track-av-playback/impl-std-metadata/ios-metadata-keys.md)
-      + Implementación de metadatos estándar en JavaScript {#impl-std-md-js}
-         + [Implementación de metadatos estándar en JavaScript 2.x](use-cases/track-av-playback/impl-std-metadata/impl-std-md-js/impl-std-metadata-js.md)
+         + [Seguimiento del almacenamiento en búfer en Android](use-cases/track-av-playback/track-buffering/track-buffering-android.md)
+         + [Seguimiento del almacenamiento en búfer en iOS](use-cases/track-av-playback/track-buffering/track-buffering-ios.md)
+         + Seguimiento del almacenamiento en búfer en JavaScript {#track-buffering-js}
+            + [Seguimiento del almacenamiento en búfer en JavaScript 2.x](use-cases/track-av-playback/track-buffering/track-buffering-js/track-buffering-js.md)
+         + [Seguimiento de llamada a otro punto del contenido en Android](use-cases/track-av-playback/track-seeking/track-seeking-android.md)
+         + [Seguimiento de llamada a otro punto del contenido en iOS](use-cases/track-av-playback/track-seeking/track-seeking-ios.md)
+         + Seguimiento de llamada a otro punto del contenido en JavaScript {#track-seeking-js}
+            + [Seguimiento de llamada a otro punto del contenido en JavaScript 2.x](use-cases/track-av-playback/track-seeking/track-seeking-js/track-seeking-js.md)
+         + [Implementación de metadatos estándar en Android](use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-android.md)
+         + [Implementación de metadatos estándar en iOS](use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-ios.md)
+         + [Claves de metadatos de iOS](use-cases/track-av-playback/impl-std-metadata/ios-metadata-keys.md)
+         + Implementación de metadatos estándar en JavaScript {#impl-std-md-js}
+            + [Implementación de metadatos estándar en JavaScript 2.x](use-cases/track-av-playback/impl-std-metadata/impl-std-md-js/impl-std-metadata-js.md)
       + Seguimiento de anuncios {#track-ads}
          + [Seguimiento de anuncios en Android](use-cases/track-ads/track-ads-android.md)
          + [Seguimiento de anuncios en iOS](use-cases/track-ads/track-ads-ios.md)

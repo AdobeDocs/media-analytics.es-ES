@@ -5,10 +5,10 @@ uuid: a619fbb8-693e-4583-8dad-0ff875e715f8
 exl-id: d211fa2e-d5b0-4e9f-bdb7-eda838194f3d
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: 5c0195ab6945b65cd37f2e8fd9ddc8c8e91507f0
-workflow-type: ht
-source-wordcount: '366'
-ht-degree: 100%
+source-git-commit: 0c02fec77d6484774ea81e997529accddb19d175
+workflow-type: tm+mt
+source-wordcount: '405'
+ht-degree: 86%
 
 ---
 
@@ -24,7 +24,7 @@ Las etiquetas en Adobe Experience Platform son la nueva generación de capacidad
 >Para obtener información sobre la descarga de SDK heredados, consulte [Heredado: descargar SDK](/help/legacy/legacy-download-sdks.md).<br>
 >Para obtener información importante acerca de la finalización de la compatibilidad, consulte [Preguntas frecuentes sobre el fin de la compatibilidad](/help/additional-resources/end-of-support-faqs.md).
 
-## SDK de medios y bibliotecas móviles {#media-sdks-libraries}
+## Media SDK y bibliotecas móviles {#media-sdks-libraries}
 
 ### Implementación web {#download-web-sdk}
 
@@ -32,13 +32,16 @@ Las etiquetas en Adobe Experience Platform son la nueva generación de capacidad
 |:---:|---|---|---|---|
 | ![Icono de JavaScript](assets/javascript-icon.png) | Web: [Media SDK para JS v3.0.2](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/js-v3.0.2) | [Referencia de la API de JavaScript](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript_3x/index.html) | [Implementación de Analytics mediante JavaScript](/help/implementation/media-sdk/setup/web-implementation.md) | [Muestra de Media SDK para JS v3.0.2](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/sdks/js/3.x) |
 | ![Icono de JavaScript](assets/javascript-icon.png) | Web: extensión de medios |  | [Extensión de Adobe Medium Analytics (3.x SDK) para audio y vídeo: uso de etiquetas (recopilación de datos)](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics-3x/overview.html?lang=es) | [Extensión de Adobe Media Analytics (3.x SDK) para audio y vídeo de muestra](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/samples/launch/js/3.x) |
+| ![Icono de JavaScript](assets/javascript-icon.png) | Web - Experience Platform Edge (próximamente) |  | [Instalación de Analytics con Experience Platform Edge](/help/implementation/media-sdk/implementation-edge.md) |  |
 
 ### Implementación móvil {#get-mobile-extension}
 
 | Plataforma compatible | Versión |  Documentación   |  Ejemplos  |
 |:---:|---|---|---|
 | ![Icono de Android](assets/android-icon.png) | Android: extensión de medios | [Documentación de Mobile SDK](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/) | [Adobe Analytics: Media Analytics para audio y vídeo de muestra](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/samples/launch/mobile/android) |
-| ![Icono de Apple iOS ](assets/ios-icon.png)<br> agregar icono de tvOS | iOS/tvOS: extensión de medios | [Documentación de Mobile SDK](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/) | [Adobe Analytics: Media Analytics para audio y vídeo de muestra](https://github.com/adobe/aepsdk-media-ios/tree/main/TestApp) |
+| ![Icono de Apple iOS ](assets/ios-icon.png)<br>**tvOS** | iOS/tvOS: extensión de medios | [Documentación de Mobile SDK](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/) | [Adobe Analytics: Media Analytics para audio y vídeo de muestra](https://github.com/adobe/aepsdk-media-ios/tree/main/TestApp) |
+| ![Icono de Android](assets/android-icon.png) | Android: borde del Experience Platform | [Instalación de Analytics con Experience Platform Edge](/help/implementation/media-sdk/implementation-edge.md) |  |
+| ![Icono de Apple iOS ](assets/ios-icon.png)<br>**tvOS** | iOS / tvOS: Edge de Experience Platform | [Instalación de Analytics con Experience Platform Edge](/help/implementation/media-sdk/implementation-edge.md) |  |
 
 ### Implementación OTT {#download-ott-libraries}
 

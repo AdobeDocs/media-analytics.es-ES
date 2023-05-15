@@ -4,10 +4,10 @@ description: Obtenga información sobre la implementación de Adobe Analytics pa
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: dc1b9fe0-6c75-4f93-a558-a3f3186bcf22
-source-git-commit: 85e1d5223cec7168bbf592d941e6a5aece249459
-workflow-type: ht
-source-wordcount: '202'
-ht-degree: 100%
+source-git-commit: e75eb6ddbcf693cd200159392dd3026ca55fc22d
+workflow-type: tm+mt
+source-wordcount: '211'
+ht-degree: 95%
 
 ---
 
@@ -23,6 +23,7 @@ Implemente los SDK de medios de streaming en su marco de reproducción de vídeo
 |:----:|:----|
 | <img src="assets/javascript-icon.png"> | [Media SDK para JavaScript v3.x](../../getting-started/download-sdks.md#web-implementation-download-web-sdk) |
 | <img src="assets/javascript-icon.png"> | [Extensión de Adobe Media Analytics con etiquetas (recopilación de datos) para Javascript v3.x](../../getting-started/download-sdks.md#web-implementation-download-web-sdk) |
+| <img src="assets/javascript-icon.png"> | [Borde del Experience Platform](../../getting-started/download-sdks.md#web-implementation-download-web-sdk) |
 
 ### Implementación móvil
 
@@ -30,6 +31,8 @@ Implemente los SDK de medios de streaming en su marco de reproducción de vídeo
 |:----:|:----|
 | <img src="assets/android-icon.png"> | [Extensión de Adobe Experience Platform Media Analytics con etiquetas (recopilación de datos)](../../getting-started/download-sdks.md#mobile-implementation-get-mobile-extension) |
 | <img src="assets/apple-ios-icon.png"> | [Extensión de Adobe Experience Platform Media Analytics con etiquetas (recopilación de datos)](../../getting-started/download-sdks.md#mobile-implementation-get-mobile-extension) |
+| <img src="assets/android-icon.png"> | [Borde del Experience Platform](../../getting-started/download-sdks.md#mobile-implementation-get-mobile-extension) |
+| <img src="assets/apple-ios-icon.png"> | [Borde del Experience Platform](../../getting-started/download-sdks.md#mobile-implementation-get-mobile-extension) |
 
 * La extensión iOS Media Analytics para audio y vídeo es compatible con iOS, iPadOS y tvOS.
 
