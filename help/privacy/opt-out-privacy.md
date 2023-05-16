@@ -45,6 +45,7 @@ Puede controlar si se permite el seguimiento de la actividad en un dispositivo d
             ```
             ADBMobile().setPrivacyStatus(ADBMobile().PRIVACY_STATUS_OPT_OUT)
             ```
+
          >[!IMPORTANT]
          >
          >Cuando un usuario se excluye del seguimiento, todos los datos e ID del dispositivo persistente se purgarán hasta que el usuario decida volver a entrar.
@@ -62,6 +63,7 @@ Puede controlar si se permite el seguimiento de la actividad en un dispositivo d
             ```
             ADBMobile().setPrivacyStatus(ADBMobile().PRIVACY_STATUS_OPT_IN)
             ```
+
       * **Devuelve la configuración actual:**
 
          * **Chromecast:**
@@ -75,6 +77,7 @@ Puede controlar si se permite el seguimiento de la actividad en un dispositivo d
             ```
             ADBMobile().getPrivacyStatus()
             ```
+
    Después de cambiar la configuración de privacidad mediante el uso de `setPrivacyStatus`, el cambio es permanente hasta que se vuelva a modificar con este método o bien se desinstale y se vuelva a instalar la aplicación completamente.
 
 ## Recuperación de identificadores almacenados (aplicaciones OTT) {#retrieving-stored-identifiers-ott-apps}
