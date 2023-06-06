@@ -5,9 +5,9 @@ uuid: fdacfb8b-db3e-46fb-b9ad-c3a749555b2a
 exl-id: 9dc84377-6eca-482f-89e7-c4008d1c0f07
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '7029'
+source-git-commit: cdc5ea361829c749dfbb457288ac5ba51a530961
+workflow-type: tm+mt
+source-wordcount: '7027'
 ht-degree: 100%
 
 ---
@@ -130,7 +130,7 @@ public static MediaObject createMediaObject(java.lang.String name,
 
 |   Implementación   | Parámetros de red | Creación de informes |
 | --- | --- |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <ul> <li> **Clave de SDK:**<br/> `config.downloadedcontent` </li> <li> **Clave de API:**<br/> obtenida del servidor </li> <li> **Requerido:**<br/> no </li> <li> **Tipo:**<br/> booleano </li> <li> **Enviado con:**<br/> Inicio de contenidos, Cierre de contenidos </li> <li> **Mínima Versión del SDK:** <br/>Iniciar Android y la extensión iOS versión 1.1.0 </li> <li> **Valor de muestra:**<br/> true </li> <li> **Descripción:**<br/> Se establece en “true” cuando se genera la visita debido a la reproducción de una sesión multimedia de contenido descargado. No está presente cuando el contenido descargado no se reproduce.<br/><br/>[Launch](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#create-a-media-tracker-with-optional-configuration)  </li></ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.downloaded) </li> <li> **Heartbeat:**<br/> (s:meta:a.media.downloaded) </li> </ul> | <ul> <li> **Disponible:**<br/> utilizar regla de procesamiento personalizada </li> <li> **Variable reservada:**<br/> N/D </li> <li> **Nombre del informe:**<br/> Personalizado </li> <li> **Datos de contexto:**<br/> (a.media.download) </li> <li> **Fuente de datos:**<br/> N/D </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.downloaded) </li> <li> **Ruta del campo XDM:**<br/> media.mediaTimed.primaryAssetViewDetails.<br/>downloadedPlayback </li> <li> **Ruta del campo XDM de creación de informes:**<br/> mediaReporting.sessionDetails.isDownloaded </li> </ul> |
+| <ul> <li> **Clave de SDK:**<br/> `config.downloadedcontent` </li> <li> **Clave de API:**<br/> obtenida del servidor </li> <li> **Requerido:**<br/> no </li> <li> **Tipo:**<br/> booleano </li> <li> **Enviado con:**<br/> Inicio de contenidos, Cierre de contenidos </li> <li> **Mínima Versión del SDK:** <br/>Iniciar Android y la extensión iOS versión 1.1.0 </li> <li> **Valor de muestra:**<br/> true </li> <li> **Descripción:**<br/> Se establece en “true” cuando se genera la visita debido a la reproducción de una sesión multimedia de contenido descargado. No está presente cuando el contenido descargado no se reproduce.<br/><br/>[Launch](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/)  </li></ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.downloaded) </li> <li> **Heartbeat:**<br/> (s:meta:a.media.downloaded) </li> </ul> | <ul> <li> **Disponible:**<br/> utilizar regla de procesamiento personalizada </li> <li> **Variable reservada:**<br/> N/D </li> <li> **Nombre del informe:**<br/> Personalizado </li> <li> **Datos de contexto:**<br/> (a.media.download) </li> <li> **Fuente de datos:**<br/> N/D </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.downloaded) </li> <li> **Ruta del campo XDM:**<br/> media.mediaTimed.primaryAssetViewDetails.<br/>downloadedPlayback </li> <li> **Ruta del campo XDM de creación de informes:**<br/> mediaReporting.sessionDetails.isDownloaded </li> </ul> |
 
 ### Nombre del reproductor de contenido
 

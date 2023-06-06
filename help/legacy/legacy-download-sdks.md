@@ -4,10 +4,10 @@ description: Vínculos a las descargas de SDK heredados para plataformas disponi
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: d1066f05-f46f-46fa-897f-039657704d05
-source-git-commit: a7d897c6f6fbc6ed0d5b71f5801ab18ee21f0411
-workflow-type: ht
-source-wordcount: '331'
-ht-degree: 100%
+source-git-commit: cdc5ea361829c749dfbb457288ac5ba51a530961
+workflow-type: tm+mt
+source-wordcount: '334'
+ht-degree: 93%
 
 ---
 
@@ -27,7 +27,7 @@ Adobe Data Collection con la extensión Media Analytics tiene los siguientes req
 * Debe ser cliente de Adobe Experience Cloud.
 * Debe implementar el código incrustado de la recopilación de datos o DTM en las páginas web.
 * Debe configurar la extensión [Analytics Extension](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html?lang=es).
-* Debe configurar la extensión de lanzamiento [Adobe Media Analytics para audio y vídeo](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics).
+* Debe configurar la variable [Extensión de Adobe Medium Analytics para audio y vídeo](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/media-analytics/overview.html).
 * Debe configurar la [Experience Cloud ID Extension](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/id-service/overview.html?lang=es).
 
 ## Descargar los Media SDK 2.x {#download-2x-sdks}
