@@ -4,9 +4,9 @@ description: Obtenga información sobre cómo implementar medios de streaming de
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: 29d58b41-9a49-4b71-bdc5-4e2848cd3236
-source-git-commit: e3380ad898b551b6e0bbf5624d8419c5a95496f6
+source-git-commit: bcab6a94547b79a565dc2303ab640dc1b8994bd4
 workflow-type: tm+mt
-source-wordcount: '1892'
+source-wordcount: '1883'
 ht-degree: 11%
 
 ---
@@ -344,7 +344,7 @@ Para crear y configurar un esquema:
 
 ## Envío de datos a Experience Platform Edge mediante el SDK para móviles de AEP
 
-Puede utilizar el SDK móvil de Adobe Experience Platform para enviar datos móviles a Experience Platform Edge. (Como alternativa, puede utilizar una implementación personalizada de las API de Edge.<!-- I guess we don't need/want to document this? -->)
+Puede utilizar el SDK móvil de Adobe Experience Platform para enviar datos móviles a Experience Platform Edge. (Como alternativa, puede utilizar una implementación personalizada de las API de Edge.<!-- Waiting for link from John -->)
 
 Utilice los siguientes recursos de documentación para completar la implementación tanto para iOS como para Android:
 
@@ -352,5 +352,5 @@ Utilice los siguientes recursos de documentación para completar la implementaci
 
 * [Referencia de API](https://developer.adobe.com/client-sdks/documentation/media-for-edge-network/api-reference/)
 
-* [Migrar a medios de streaming de Adobe para la extensión de red perimetral](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/migration-guide/) (Para usuarios que migran de la extensión de medios a Edge)
+* [Migrar a medios de streaming de Adobe para la extensión de red perimetral](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/migration-guide/)
 
