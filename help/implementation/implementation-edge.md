@@ -4,10 +4,10 @@ description: Obtenga información sobre cómo implementar medios de streaming de
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: 29d58b41-9a49-4b71-bdc5-4e2848cd3236
-source-git-commit: bcab6a94547b79a565dc2303ab640dc1b8994bd4
+source-git-commit: 1280c0851094234b308e69ba2be3da21dfdc1302
 workflow-type: tm+mt
-source-wordcount: '1883'
-ht-degree: 11%
+source-wordcount: '1939'
+ht-degree: 10%
 
 ---
 
@@ -344,7 +344,7 @@ Para crear y configurar un esquema:
 
 ## Envío de datos a Experience Platform Edge mediante el SDK para móviles de AEP
 
-Puede utilizar el SDK móvil de Adobe Experience Platform para enviar datos móviles a Experience Platform Edge. (Como alternativa, puede utilizar una implementación personalizada de las API de Edge.<!-- Waiting for link from John -->)
+Puede utilizar el SDK móvil de Adobe Experience Platform para enviar datos móviles a Experience Platform Edge.
 
 Utilice los siguientes recursos de documentación para completar la implementación tanto para iOS como para Android:
 
@@ -354,3 +354,13 @@ Utilice los siguientes recursos de documentación para completar la implementaci
 
 * [Migrar a medios de streaming de Adobe para la extensión de red perimetral](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/migration-guide/)
 
+
+También puede utilizar una implementación personalizada de las API de Edge con los siguientes recursos:
+
+* [Información general de API de Media Edge](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/media-edge-apis/overview.html)
+
+* [Introducción a la API de Media Edge](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/media-edge-apis/getting-started.html)
+
+* [Guía de solución de problemas de API de Media Edge](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/media-edge-apis/troubleshooting.html)
+
+* [Uso del archivo de especificación de API abierta para las API de Media Edge](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/media-edge-apis/swagger.html)
