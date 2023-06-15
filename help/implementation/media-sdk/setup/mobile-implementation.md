@@ -4,10 +4,10 @@ description: Aprenda a implementar medios de transmisión de Adobe para aplicaci
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: b4944b5f-cbae-4efc-9ef7-962d3f342240
-source-git-commit: a7d897c6f6fbc6ed0d5b71f5801ab18ee21f0411
-workflow-type: ht
-source-wordcount: '187'
-ht-degree: 100%
+source-git-commit: 1e4babe0df218342fc4836155139d908ba113510
+workflow-type: tm+mt
+source-wordcount: '195'
+ht-degree: 93%
 
 ---
 
@@ -17,7 +17,9 @@ Para implementar medios de streaming para aplicaciones móviles en Android o iOS
 
 * **SDK móvil de Adobe Experience Platform**
 
-   Para recopilar datos, utilice etiquetas en Adobe Experience Platform. Las etiquetas en Adobe Experience Platform son una solución de administración de etiquetas que le permite implementar código de Analytics junto con otros requisitos de etiquetado.
+  Para recopilar datos, utilice cualquiera de las siguientes opciones:
+   * Etiquetas en Adobe Experience Platform. Las etiquetas en Adobe Experience Platform son una solución de administración de etiquetas que le permite implementar código de Analytics junto con otros requisitos de etiquetado.
+   * Adobe Experience Platform Edge
 
 * **Media SDK para Android** o **Media SDK para iOS**
 
@@ -27,7 +29,7 @@ Para descargar los SDK y para obtener recursos de documentación adicionales, co
 
 * **Obtener parámetros de configuración válidos**
 
-   Estos parámetros se los puede proporcionar un representante de Adobe cuando haya configurado la cuenta de Analytics.
+  Estos parámetros se los puede proporcionar un representante de Adobe cuando haya configurado la cuenta de Analytics.
 
 * **Incluya las siguientes API en su reproductor multimedia**
 

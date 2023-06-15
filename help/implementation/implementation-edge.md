@@ -4,10 +4,10 @@ description: Obtenga información sobre cómo implementar medios de streaming de
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: 29d58b41-9a49-4b71-bdc5-4e2848cd3236
-source-git-commit: 1280c0851094234b308e69ba2be3da21dfdc1302
+source-git-commit: 547c47b09b2cc18ee155953eaad314599fa8d749
 workflow-type: tm+mt
-source-wordcount: '1939'
-ht-degree: 10%
+source-wordcount: '1837'
+ht-degree: 11%
 
 ---
 
@@ -15,45 +15,17 @@ ht-degree: 10%
 
 Adobe Experience Platform Edge le permite enviar datos destinados a varios productos a una ubicación centralizada. Experience Edge reenvía la información adecuada a los productos deseados. Este concepto le permite consolidar los esfuerzos de implementación, especialmente abarcando varias soluciones de datos.
 
-El siguiente gráfico ilustra una implementación de Media Analytics que utiliza Experience Platform Edge:
+El siguiente gráfico ilustra cómo una implementación de Media Analytics puede utilizar Experience Platform Edge para que los datos estén disponibles en Analysis Workspace, ya sea en Adobe Analytics o en Customer Journey Analytics:
 
-![Implementación de Edge](assets/media-analytics-implementation-overview.png)
+![Flujo de trabajo de CJA](assets/cja-implementation.png)
+
+Para obtener una descripción general de todas las opciones de implementación, incluidos los métodos de implementación que no utilizan Experience Platform Edge, consulte [Implementación de medios de streaming para Adobe Analytics o Customer Journey Analytics](/help/implementation/overview.md).
 
 >[!IMPORTANT]
 >
->Actualmente, solo puede enviar datos a Experience Edge mediante el SDK para móviles de Adobe Experience Platform.
+>Streaming Media aún no está integrado con el SDK web de AEP.
 
-
-<!-- Replace the above sentence with this after it web releases: You can send data to Experience Edge using any of the following implementation methods:
-
-* Adobe Experience Platform Web SDK (Coming soon)
-* Adobe Experience Platform Mobile SDK
-* Edge Network Server API
-
-Regardless of which Experience Edge implementation method you use for configuring media tracking, you must first complete the following sections:
-
--->
-
-Complete las secciones siguientes para implementar Media Analytics con Experience Platform Edge:
-
-* [Definir un grupo de informes](#define-a-report-suite)
-* [Configuración del esquema en Adobe Experience Platform](#set-up-the-schema-in-adobe-experience-platform)
-* [Crear un conjunto de datos en Adobe Experience Platform](#create-a-dataset-in-adobe-experience-platform)
-* [Configuración de una secuencia de datos en Adobe Experience Platform](#configure-a-datastream-in-adobe-experience-platform)
-* [Crear una conexión en Customer Journey Analytics](#create-a-connection-in-customer-journey-analytics)
-* [Creación de una vista de datos en Customer Journey Analytics](#create-a-data-view-in-customer-journey-analytics)
-* [Creación y configuración de un proyecto en Customer Journey Analytics](#create-and-configure-a-project-in-customer-journey-analytics)
-* [Envío de datos a Experience Platform Edge con la extensión de Edge](#send-data-to-experience-platform-edge-with-the-edge-extension)
-
-## Definir un grupo de informes
-
->[!NOTE]
->
->Un grupo de informes solo es necesario si utiliza Adobe Analytics. No se necesita un grupo de informes si planea utilizar Customer Journey Analytics para la creación de informes.
-
-Si planea utilizar Adobe Analytics para la creación de informes, debe tener un grupo de informes que utilizar con la implementación de medios de streaming. Para obtener información sobre la definición de un grupo de informes, consulte [Administrador de grupos de informes](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/report-suites-admin.html?lang=en).
-
-Una vez definido un grupo de informes, continúe con [Configuración del esquema en Adobe Experience Platform](#set-up-the-schema-in-adobe-experience-platform).
+Independientemente de si utiliza el SDK móvil o la API para implementar Streaming Media con Experience Edge, primero debe completar las secciones siguientes:
 
 ## Configuración del esquema en Adobe Experience Platform
 
@@ -353,7 +325,6 @@ Utilice los siguientes recursos de documentación para completar la implementaci
 * [Referencia de API](https://developer.adobe.com/client-sdks/documentation/media-for-edge-network/api-reference/)
 
 * [Migrar a medios de streaming de Adobe para la extensión de red perimetral](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/migration-guide/)
-
 
 También puede utilizar una implementación personalizada de las API de Edge con los siguientes recursos:
 
