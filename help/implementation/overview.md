@@ -5,9 +5,9 @@ uuid: null
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: ed9297b1-6487-4099-bc62-0c3a40572255
-source-git-commit: ade20d7ae3cbb525b3a8390a27e1d93201d83003
+source-git-commit: 355b3b079d53ae8e83822f61fc79e60e47f6d715
 workflow-type: tm+mt
-source-wordcount: '396'
+source-wordcount: '403'
 ht-degree: 13%
 
 ---
@@ -18,9 +18,9 @@ Existen varias formas de implementar Streaming Media. Para ver una comparación 
 
 ## Métodos de implementación de Edge
 
-Para la mayoría de los casos, recomendamos utilizar Edge al implementar Media Analytics para todos los clientes nuevos de Adobe Analytics o Customer Journey Analytics (CJA).
+Para la mayoría de los casos, recomendamos utilizar Edge al implementar Media Analytics para todos los clientes nuevos de Adobe Analytics o Customer Journey Analytics.
 
-* **Medios para la extensión/SDK de la red perimetral:** Recopila datos de dispositivos iOS y Android y los envía a Edge. A continuación, los datos se pueden enviar a CJA o a Adobe Analytics.
+* **Medios para la extensión/SDK de la red perimetral:** Recopila datos de dispositivos iOS y Android y los envía a Edge. A continuación, los datos se pueden enviar al Customer Journey Analytics o a Adobe Analytics.
 
   Para obtener más información acerca de la extensión/SDK de Media for Edge Network, consulte [Instalación de Media Analytics con Experience Platform Edge](/help/implementation/implementation-edge.md).
 
@@ -28,7 +28,7 @@ Para la mayoría de los casos, recomendamos utilizar Edge al implementar Media A
   >
   >Actualmente, este método de implementación no es compatible con el SDK web o Roku. Sin embargo, ambos son compatibles al implementar con la API de Media Edge.
 
-* **API de Media Edge:** Se puede personalizar para recopilar datos de cualquier dispositivo o formato (incluidos dispositivos móviles, web y de servicios OTT) y enviar datos a Edge. A continuación, los datos se pueden enviar a CJA o a Adobe Analytics.
+* **API de Media Edge:** Se puede personalizar para recopilar datos de cualquier dispositivo o formato (incluidos dispositivos móviles, web y de servicios OTT) y enviar datos a Edge. A continuación, los datos se pueden enviar al Customer Journey Analytics o a Adobe Analytics.
 
   <!-- For more information about the Media Edge API, see (link to John's docs when they're ready) -->
 
@@ -36,9 +36,9 @@ Para la mayoría de los casos, recomendamos utilizar Edge al implementar Media A
 
 ## Otros métodos de implementación
 
-Para la mayoría de los casos, los métodos de implementación de Edge descritos anteriormente se recomiendan tanto para CJA como para Adobe Analytics, especialmente para las nuevas implementaciones.
+Para la mayoría de los casos, los métodos de implementación de Edge descritos anteriormente se recomiendan tanto para Customer Journey Analytics como para Adobe Analytics, especialmente para las nuevas implementaciones.
 
-Además de los métodos de implementación de Edge, hay otros métodos de implementación disponibles. Estos métodos de implementación se diseñaron inicialmente para su uso con Adobe Analytics. Sin embargo, los clientes con cualquiera de los siguientes métodos de implementación aún pueden hacer que los datos estén disponibles en CJA creando un [Conexión de origen de Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=es).
+Además de los métodos de implementación de Edge, hay otros métodos de implementación disponibles. Estos métodos de implementación se diseñaron inicialmente para su uso con Adobe Analytics. Sin embargo, los clientes con cualquiera de los siguientes métodos de implementación aún pueden hacer que los datos estén disponibles en Customer Journey Analytics creando un [Conexión de origen de Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=es).
 
 * **Extensión de medios con etiquetas:** La extensión de Adobe Medium Analytics para audio y vídeo proporciona la funcionalidad para agregar la instancia de Media Tracker a un sitio o proyecto con etiquetas habilitadas. Los datos se envían a Adobe Analytics.
 
