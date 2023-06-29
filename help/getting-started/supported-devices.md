@@ -4,7 +4,7 @@ description: “Obtenga información acerca de los principales dispositivos, com
 exl-id: 169ff7b9-e577-45b7-8927-74bdcccc0a77
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: deae677d9e8b4dc241765cf5d168fcd71b9c8310
+source-git-commit: a26e4e283646e5ceb352f357789748f376f5c747
 workflow-type: tm+mt
 source-wordcount: '307'
 ht-degree: 69%
@@ -25,7 +25,7 @@ En el caso de dispositivos que actualmente no son compatibles con SDK o en situa
 
 En la tabla siguiente, se detallan los dispositivos actualmente compatibles. Si un dispositivo no aparece en la lista, póngase en contacto con el servicio de atención al cliente o con el consultor de soluciones para conocer el estado de dicho dispositivo.
 
-Para obtener más información acerca de la implementación de Media on Edge, consulte [Instalación de Media Analytics con Experience Platform Edge](/help/implementation/implementation-edge.md).
+Para obtener más información acerca de la implementación de Media on Edge, consulte [Instalación de Media Analytics con Experience Platform Edge](/help/implementation/edge/implementation-edge.md).
 
 | Plataformas y dispositivos de transmisión | | Media para la extensión/SDK de la red perimetral | API de Media Edge | Extensión de medios con etiquetas o SDK móvil de AEP | Media SDK | API de Media Collection |
 |:---|:---|:---:|:---:|:---:|:---:|:---:|

@@ -5,8 +5,8 @@ uuid: 7b8e2f76-bc4e-4721-8933-3e4453b01788
 exl-id: 98ad2783-c9e3-48de-88df-8549f26114a0
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
+source-git-commit: a26e4e283646e5ceb352f357789748f376f5c747
+workflow-type: tm+mt
 source-wordcount: '896'
 ht-degree: 100%
 
@@ -66,7 +66,7 @@ Cancelar cambios
 
 >[!TIP]
 >
->La posición de cabezal de reproducción se establece como parte del código de creación y configuración. Para obtener más información sobre `getCurrentPlayheadTime`, consulte [Información general: Directrices generales de implementación.](/help/implementation/media-sdk/media-sdk-overview.md)
+>La posición de cabezal de reproducción se establece como parte del código de creación y configuración. Para obtener más información sobre `getCurrentPlayheadTime`, consulte [Información general: Directrices generales de implementación.](/help/implementation/media-sdk-overview.md)
 
 
 ## Implementación {#implement}
@@ -107,13 +107,13 @@ Cancelar cambios
 
    * **Metadatos estándar -**
 
-      >[!NOTE]
-      >
-      >No es obligatorio adjuntar el objeto de metadatos estándar al objeto de contenidos.
+     >[!NOTE]
+     >
+     >No es obligatorio adjuntar el objeto de metadatos estándar al objeto de contenidos.
 
-      Cree una instancia de un objeto de metadatos estándar, rellene las variables deseadas y establezca el objeto de metadatos en el objeto de Media Heartbeat.
+     Cree una instancia de un objeto de metadatos estándar, rellene las variables deseadas y establezca el objeto de metadatos en el objeto de Media Heartbeat.
 
-      Consulte la lista completa de metadatos aquí: [Parámetros de audio y vídeo.](../../implementation/variables/audio-video-parameters.md)
+     Consulte la lista completa de metadatos aquí: [Parámetros de audio y vídeo.](../../implementation/variables/audio-video-parameters.md)
 
    * **Metadatos personalizados**: cree un objeto de variable para las variables personalizadas y rellénelo con los datos de este contenido.
 

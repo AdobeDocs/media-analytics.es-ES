@@ -5,10 +5,10 @@ uuid: ba0496e2-585a-4176-b583-c705726fecc6
 exl-id: 6fd4e82e-b471-4ed1-864d-5dd77cc6ffe0
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b191a79e02e0f542368470830e1662a434f3ff88
+source-git-commit: a26e4e283646e5ceb352f357789748f376f5c747
 workflow-type: tm+mt
 source-wordcount: '98'
-ht-degree: 100%
+ht-degree: 90%
 
 ---
 
@@ -18,4 +18,4 @@ Media Analytics (Heartbeats) es la solución de seguimiento de medios estandariz
 
 Las integraciones de cliente se implementan únicamente con Media Analytics. Puede elegir implementar el SDK de medios o la API de recopilación de medios (o ambas). La ruta del lado del cliente se puede utilizar en cualquier reproductor, incluidos los reproductores de cliente u OVP como Brightcove, Ooyala, thePlatform, etc.
 
-Si Media Analytics es la ruta deseada, consulte [Implementación de Media SDK](/help/implementation/media-sdk/media-sdk-overview.md) y [API de recopilación de contenidos.](/help/implementation/media-collection-api/mc-api-overview.md)
+Si Media Analytics es la ruta deseada, consulte [Implementación de Media SDK](/help/implementation/media-sdk-overview.md) y [API de recopilación de contenidos.](/help/implementation/media-collection-api/mc-api-overview.md)

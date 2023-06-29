@@ -5,9 +5,9 @@ uuid: null
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: ed9297b1-6487-4099-bc62-0c3a40572255
-source-git-commit: 355b3b079d53ae8e83822f61fc79e60e47f6d715
+source-git-commit: a26e4e283646e5ceb352f357789748f376f5c747
 workflow-type: tm+mt
-source-wordcount: '403'
+source-wordcount: '398'
 ht-degree: 13%
 
 ---
@@ -18,11 +18,11 @@ Existen varias formas de implementar Streaming Media. Para ver una comparación 
 
 ## Métodos de implementación de Edge
 
-Para la mayoría de los casos, recomendamos utilizar Edge al implementar Media Analytics para todos los clientes nuevos de Adobe Analytics o Customer Journey Analytics.
+Se recomienda utilizar Edge al implementar Media Analytics para todos los clientes nuevos de Adobe Analytics o Customer Journey Analytics.
 
 * **Medios para la extensión/SDK de la red perimetral:** Recopila datos de dispositivos iOS y Android y los envía a Edge. A continuación, los datos se pueden enviar al Customer Journey Analytics o a Adobe Analytics.
 
-  Para obtener más información acerca de la extensión/SDK de Media for Edge Network, consulte [Instalación de Media Analytics con Experience Platform Edge](/help/implementation/implementation-edge.md).
+  Para obtener más información acerca de la extensión/SDK de Media for Edge Network, consulte [Instalación de Media Analytics con Experience Platform Edge](/help/implementation/edge/implementation-edge.md).
 
   >[!NOTE]
   >
@@ -34,11 +34,11 @@ Para la mayoría de los casos, recomendamos utilizar Edge al implementar Media A
 
 ![Flujo de trabajo de CJA](assets/cja-implementation.png)
 
-## Otros métodos de implementación
+## Métodos de implementación solo de Adobe Analytics
 
-Para la mayoría de los casos, los métodos de implementación de Edge descritos anteriormente se recomiendan tanto para Customer Journey Analytics como para Adobe Analytics, especialmente para las nuevas implementaciones.
+Los métodos de implementación de Edge descritos anteriormente se recomiendan tanto para Customer Journey Analytics como para Adobe Analytics, especialmente para las nuevas implementaciones.
 
-Además de los métodos de implementación de Edge, hay otros métodos de implementación disponibles. Estos métodos de implementación se diseñaron inicialmente para su uso con Adobe Analytics. Sin embargo, los clientes con cualquiera de los siguientes métodos de implementación aún pueden hacer que los datos estén disponibles en Customer Journey Analytics creando un [Conexión de origen de Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=es).
+Además de los métodos de implementación de Edge, hay otros métodos de implementación disponibles. Estos métodos de implementación se diseñaron para su uso con Adobe Analytics. Sin embargo, los clientes existentes con cualquiera de los siguientes métodos de implementación aún pueden hacer que los datos estén disponibles en Customer Journey Analytics creando un [Conexión de origen de Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=es).
 
 * **Extensión de medios con etiquetas:** La extensión de Adobe Medium Analytics para audio y vídeo proporciona la funcionalidad para agregar la instancia de Media Tracker a un sitio o proyecto con etiquetas habilitadas. Los datos se envían a Adobe Analytics.
 
