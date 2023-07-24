@@ -5,10 +5,10 @@ uuid: null
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: ed9297b1-6487-4099-bc62-0c3a40572255
-source-git-commit: a26e4e283646e5ceb352f357789748f376f5c747
+source-git-commit: 984f058fda15b1c5e960e4c8d8e2378308d2b541
 workflow-type: tm+mt
-source-wordcount: '398'
-ht-degree: 13%
+source-wordcount: '471'
+ht-degree: 11%
 
 ---
 
@@ -44,11 +44,13 @@ Además de los métodos de implementación de Edge, hay otros métodos de implem
 
   Para obtener información sobre la instalación, configuración e implementación de Media Extension con etiquetas, consulte [Extensión de Adobe Medium Analytics (SDK 3.x) para audio y vídeo](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/media-analytics-3x/overview.html).
 
-* **Media SDK:**  Los datos se envían a Adobe Analytics.
+* **Media SDK:**  Media SDK le permite medir varias plataformas de medios, incluidos sitios web, teléfonos móviles, televisores conectados, tabletas, dispositivos OTT, descodificadores y consolas de juegos. (Para obtener más información, consulte [Dispositivos y plataformas compatibles](/help/getting-started/supported-devices.md).)
+
+  Los Media SDK utilizan las API de recopilación de medios para el seguimiento. Los datos se envían a Adobe Analytics.
 
   Para obtener información sobre la descarga e instalación de Media SDK y extensiones, consulte [Obtención de Media SDK, Extensiones mediante etiquetas y SDK para OTT](/help/getting-started/download-sdks.md).
 
-* **API de Media Collection:** Rastree eventos de audio y vídeo mediante llamadas HTTP RESTful. Los datos se envían a Adobe Analytics.
+* **API de recopilación de medios:** Como las API de recopilación de medios se pueden personalizar, se pueden utilizar para aplicaciones que requieren funcionalidades de seguimiento personalizadas y para dispositivos no compatibles con los SDK de medios. Las API de recopilación de medios realizan un seguimiento de los eventos de audio y vídeo mediante llamadas HTTP de RESTful. Los datos se envían a Adobe Analytics.
 
   Para obtener información sobre el uso de las API de recopilación de medios, consulte [API de recopilación de medios](media-collection-api/mc-api-overview.md).
 
