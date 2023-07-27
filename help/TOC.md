@@ -8,7 +8,7 @@ sub-product: media analytics
 source-git-commit: b807359636e17bf36e33ca20e9dc4dee4d7f2a8f
 workflow-type: tm+mt
 source-wordcount: '896'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -34,11 +34,11 @@ ht-degree: 96%
    + [Información general sobre la implementación](implementation/overview.md)
    + Implementaciones de Edge (recomendado) {#edge-recommended}
       + SDK/extensión de Media Edge {#media-edge-sdk}
-         + [SDK de Media Edge/configuración de la extensión](/help/implementation/edge/implementation-edge.md)
+         + [Configuración de SDK/extensión de Media Edge](/help/implementation/edge/implementation-edge.md)
          + [SDK para móviles de Media Edge](/help/implementation/edge/edge-mobile-sdk.md)
       + [API de Media Edge](/help/implementation/edge/implementation-edge-api.md)
    + Implementaciones solo de Adobe Analytics {#analytics-only}
-      + SDK de medios/extensión {#media-sdk}
+      + Media SDKs/extensión {#media-sdk}
          + [SDK web de JavaScript](implementation/media-sdk/setup/web-implementation.md)
          + [Extensión de Media Analytics](implementation/media-sdk/setup/web-implementation-tags.md)
          + [SDK para móvil](implementation/media-sdk/setup/mobile-implementation.md)
