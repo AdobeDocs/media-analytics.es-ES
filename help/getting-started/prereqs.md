@@ -5,10 +5,10 @@ uuid: 4c0b37f3-8615-4cc0-b9c9-eeb029067064
 exl-id: 85ab1dbd-f4a7-4f11-afc9-8d5000e2de70
 feature: "Media Analytics, System Requirements"
 role: User, Admin, Data Engineer
-source-git-commit: 60702b2cf466df7a1b328743c5d5f4c1834d9554
+source-git-commit: b12e6547ef32bfad7e8d6787a26d6467bcfeb23c
 workflow-type: tm+mt
-source-wordcount: '433'
-ht-degree: 75%
+source-wordcount: '442'
+ht-degree: 74%
 
 ---
 
@@ -20,7 +20,7 @@ Antes de empezar a implementar Streaming Media, complete las siguientes tareas:
 Antes de empezar a implementar Streaming Media, revise las [Resumen de medios de streaming](/help/media-overview.md) para asegurarse de que Streaming Media satisfaga sus necesidades.
 
 1. **Confirmar el modelo de precios del Streaming de medios**<br>
-El modelo de precios actual se basa en las transmisiones de vídeo. Si es necesario, póngase en contacto con su representante de ventas o con el equipo de cuenta de Adobe para firmar un nuevo pedido de ventas, ya que Streaming Media Analytics se vende por separado de Adobe Analytics.
+El modelo de precios actual se basa en las transmisiones de vídeo. Si es necesario, póngase en contacto con su representante de ventas o con el equipo de cuenta de Adobe, ya que los medios de streaming se venden por separado, como complemento de Adobe Analytics.<!--update when media SKUs are added to other AEP apps -->
 
 1. **Habilitar los informes de Adobe Analytics**<br>
 Para habilitar los informes en Analytics y ver los datos de contenido y publicidad que está recopilando, debe habilitar los informes en Analytics. Véase [Habilitación de informes multimedia](/help/reporting/media-reports-enable.md).
@@ -46,3 +46,5 @@ Para habilitar los informes en Analytics y ver los datos de contenido y publicid
    * [Requisitos previos para implementaciones solo de Adobe Analytics](/help/implementation/media-sdk/setup/prerequisites-analytics.md)
 
    * [Requisitos previos para implementaciones de Edge](/help/implementation/edge/prerequisites-edge.md)
+
+   Utilice el [Resumen de implementación](/help/implementation/overview.md) para determinar qué método de implementación es el adecuado para usted.
