@@ -6,21 +6,21 @@ exl-id: 85ab1dbd-f4a7-4f11-afc9-8d5000e2de70
 feature: "Media Analytics, System Requirements"
 role: User, Admin, Data Engineer
 source-git-commit: b12e6547ef32bfad7e8d6787a26d6467bcfeb23c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '442'
-ht-degree: 74%
+ht-degree: 100%
 
 ---
 
 # Requisitos previos  {#prerequisites}
 
-Antes de empezar a implementar Streaming Media, complete las siguientes tareas:
+Antes de empezar a implementar medios de streaming, complete las siguientes tareas:
 
 1. **Revise la información general de medios de streaming**<br>
-Antes de empezar a implementar Streaming Media, revise las [Resumen de medios de streaming](/help/media-overview.md) para asegurarse de que Streaming Media satisfaga sus necesidades.
+Antes de empezar a implementar los medios de streaming, revise la [Información general sobre medios de streaming](/help/media-overview.md) para asegurarse de que esta opción satisface sus necesidades.
 
-1. **Confirmar el modelo de precios del Streaming de medios**<br>
-El modelo de precios actual se basa en las transmisiones de vídeo. Si es necesario, póngase en contacto con su representante de ventas o con el equipo de cuenta de Adobe, ya que los medios de streaming se venden por separado, como complemento de Adobe Analytics.<!--update when media SKUs are added to other AEP apps -->
+1. **Confirme el modelo de precios del Streaming de medios**<br>
+El modelo de precios actual se basa en las transmisiones de vídeo. Si es necesario, póngase en contacto con su equipo de ventas o con el equipo de cuentas de Adobe, ya que los medios de streaming se venden por separado, como complemento de Adobe Analytics.<!--update when media SKUs are added to other AEP apps -->
 
 1. **Habilitar los informes de Adobe Analytics**<br>
 Para habilitar los informes en Analytics y ver los datos de contenido y publicidad que está recopilando, debe habilitar los informes en Analytics. Véase [Habilitación de informes multimedia](/help/reporting/media-reports-enable.md).
@@ -41,10 +41,10 @@ Para habilitar los informes en Analytics y ver los datos de contenido y publicid
 
 1. **Ver requisitos previos adicionales para el método de implementación**
 
-   Según cómo planee implementar Streaming Media, consulte los requisitos previos para cualquiera de los siguientes métodos de implementación:
+   Según cómo planee implementar los medios de streaming, consulte los requisitos previos para cualquiera de los siguientes métodos de implementación:
 
    * [Requisitos previos para implementaciones solo de Adobe Analytics](/help/implementation/media-sdk/setup/prerequisites-analytics.md)
 
    * [Requisitos previos para implementaciones de Edge](/help/implementation/edge/prerequisites-edge.md)
 
-   Utilice el [Resumen de implementación](/help/implementation/overview.md) para determinar qué método de implementación es el adecuado para usted.
+   Utilice la [Información general sobre implementación](/help/implementation/overview.md) para determinar qué método de implementación es el adecuado para usted.
