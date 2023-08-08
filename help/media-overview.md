@@ -6,9 +6,9 @@ exl-id: 826530f7-2c39-41ef-b3b4-d3f44b46858f
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: b12e6547ef32bfad7e8d6787a26d6467bcfeb23c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '590'
-ht-degree: 71%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 71%
 
 Adobe Analytics para medios de streaming proporciona potentes herramientas de medición para audio, vídeo y anuncios. Las métricas de medios de streaming se pueden combinar con otras funcionalidades de Adobe Analytics, como Audience Analytics y análisis móvil o entre dispositivos.
 
-Los medios de streaming se pueden comprar como complemento de Adobe Analytics<!-- update this when SKUs are available for other AEP products -->, y las métricas de medios de streaming se integran fácilmente en los siguientes productos de Adobe Experience Platform:
+Los medios de streaming se pueden comprar como complemento de Adobe Analytics<!-- update this when SKUs are available for other AEP products --> y las métricas de medios de streaming se integran fácilmente en los siguientes productos de Adobe Experience Platform:
 
 * Adobe Analytics
 
@@ -42,11 +42,11 @@ Las ventajas de Adobe Analytics para medios de streaming incluyen monitorizació
 
 * **Mejore la participación**: involucre completamente a los usuarios mediante menos eventos de almacenamiento en búfer y mediante la comprensión de dónde y cuándo debe reproducirse la publicidad dentro del contenido para proporcionar una experiencia agradable y menos intrusiva que genere visitas más frecuentes.
 
-* **Imagen holística**: Combine varios puntos de datos de todos los distribuidores de contenido y obtenga información de toda la actividad de contenidos. Mida la participación y las visualizaciones/escuchas en todos los canales posibles.
+* **Imagen holística**: combine diversos puntos de datos de todos los distribuidores de contenido y obtenga información de toda la actividad de medios. También puede medir la participación y las visualizaciones/escuchas en todos los posibles canales.
 
-  Adobe Analytics para medios de streaming le permite hacer un seguimiento del recorrido total del cliente en su sitio y en las aplicaciones de streaming para visualizar la ruta y los intereses del cliente, así como ofrecer recomendaciones mejoradas y personalizar las experiencias del cliente.  La medición de Media le permite categorizar los datos en varias dimensiones y segmentos, capturando todos los metadatos que necesita para hacer un análisis completo y detallado. A continuación, puede analizar los datos y atribuir los criterios de éxito a los medios totalmente consumidos, el tiempo promedio empleado y los anuncios completados.
+  Adobe Analytics para medios de streaming le permite hacer un seguimiento del recorrido completo del cliente en su sitio y en las aplicaciones de streaming para visualizar la ruta y los intereses del cliente, así como ofrecer recomendaciones mejoradas y personalizar las experiencias del cliente.  La medición de Media le permite categorizar los datos en varias dimensiones y segmentos, capturando todos los metadatos que necesita para hacer un análisis completo y detallado. A continuación, puede analizar los datos y atribuir los criterios de éxito a los medios totalmente consumidos, el tiempo promedio empleado y los anuncios completados.
 
-* **Métricas vitales**: mida las métricas de entrega esenciales relacionadas con la calidad de la experiencia (QoE), como los fotogramas perdidos, el tiempo de almacenamiento en búfer y la velocidad de bits media.
+* **Métricas vitales**: mida las métricas de envío esenciales relacionadas con la calidad de la experiencia (QoE), como los fotogramas perdidos, el tiempo de almacenamiento en búfer y la velocidad de bits media.
 
 * **Mayor granularidad**: evalúe el comportamiento de visualización en el nivel más granular, incluida la hora del día de cada visitante individual, los espectadores/oyentes simultáneos por minuto y la duración promedio de consumo del contenido.
 
