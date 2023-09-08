@@ -5,25 +5,41 @@ uuid: 0024b06a-eaf5-4d2e-be45-aeda9d0554c1
 exl-id: a835f86a-a93a-4a56-91f4-14628cf48214
 feature: "Media Analytics, Workspace Basics"
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '210'
-ht-degree: 100%
+source-git-commit: 41de1573b001deb65f525af9c5c648d85cac8629
+workflow-type: tm+mt
+source-wordcount: '342'
+ht-degree: 11%
 
 ---
 
-# Plantillas de medios del espacio de trabajo {#media-workspace-templates}
+# Informes de contenidos en Analysis Workspace {#media-workspace-templates}
 
-Adobe Analytics Workspace permite configurar rápidamente paneles para analizar los datos de seguimiento. Al crear un proyecto nuevo o al entrar en el espacio de trabajo para administrar un proyecto existente, puede elegir entre plantillas estándar que abarcan situaciones generales de seguimiento, como adquisición, consumo de Streaming Media, y otras. También puede crear, modificar y guardar sus propias plantillas personalizadas.
+>[!NOTE]
+>
+>*Informes* en Workspace se conocían anteriormente como *templates*.
 
-Puede trabajar con las plantillas de la pestaña del espacio de trabajo de Adobe Analytics para crear o gestionar un proyecto. Al entrar en el espacio de trabajo por primera vez, se le presentan las opciones para crear un proyecto nuevo o para abrir uno existente:
+Analysis Workspace ofrece un conjunto de informes creados previamente que están disponibles de forma predeterminada y que pueden utilizarse para analizar datos. Para obtener más información sobre todos los informes predeterminados disponibles, consulte [Ver informes](https://experienceleague.adobe.com/docs/analytics/analyze/landing.html?lang=en#menus) in [Página de aterrizaje de Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/landing.html?lang=es).
 
-* **Crear un nuevo proyecto:** al hacer clic en el botón **[!UICONTROL Crear nuevo proyecto]** del espacio de trabajo, aparece un cuadro de diálogo en el que puede seleccionar una opción de su recopilación de plantillas (estándar o personalizadas):
+Algunos de estos informes son especialmente útiles para analizar los datos de medios de streaming, tal como se describe en las secciones siguientes.
 
-   ![](/help/reporting/assets/all-templates-audio.png)
+## Comprender los informes de medios predeterminados
 
-   Por ejemplo, si elige la plantilla **[!UICONTROL Consumo de audio]**, aparece el siguiente tablero orientado al audio:
+A continuación se muestra una lista de informes predeterminados que son útiles al analizar los datos de medios de streaming:
 
-   ![](/help/reporting/assets/aa-workspace.png)
+* [!UICONTROL **Consumo de contenido multimedia**]: Crea un informe que muestra qué contenido se consume más y resulta más atractivo para los usuarios.
 
-* **Administrar proyectos**: en un proyecto existente, puede modificar la presentación de datos y guardarlo para crear su propia recopilación de plantillas personalizadas.
+* [!UICONTROL **Consumo de medios de streaming**]: crea un informe con un panel, como se muestra en el ejemplo siguiente.
+
+* [!UICONTROL **Actualización, frecuencia y lealtad de medios**]: Crea un informe que muestra la actualización (cuántos días han pasado desde la última visita), la frecuencia (cuántas visitas por visitante) y la lealtad (con qué frecuencia regresan al sitio las cohortes de usuarios)
+
+Por ejemplo, si elige la variable  [!UICONTROL **Consumo de medios de streaming**] , se presenta un proyecto con el siguiente tablero:
+
+![](/help/reporting/assets/aa-workspace.png)
+
+## Usar informes de medios predeterminados
+
+Puede utilizar los informes de medios predeterminados de las siguientes maneras: al crear un nuevo proyecto. También puede o al modificar un proyecto existente.
+
+* **Al crear un nuevo proyecto:** Para obtener información sobre cómo crear un nuevo proyecto a partir de un informe predeterminado, consulte [Creación de un proyecto a partir de un proyecto o informe en blanco](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/create-projects.html?lang=en#create-a-project-from-a-blank-project-or-a-report) in [Creación de proyectos en Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/create-projects.html?lang=en#create-a-project-from-a-blank-project-or-a-report).
+
+* **Al crear un informe personalizado de la empresa:** Para obtener información sobre cómo crear un informe de empresa personalizado, consulte [Crear un informe personalizado de la compañía](https://experienceleague.adobe.com/docs/analytics/analyze/landing.html?lang=en#company-report) in [Página de aterrizaje de Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/landing.html?lang=es).

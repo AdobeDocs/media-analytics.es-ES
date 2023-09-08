@@ -5,10 +5,10 @@ user-guide-title: Adobe Analytics para medios de transmisión
 breadcrumb-title: Guía de Media Analytics
 user-guide-description: Implemente Adobe Analytics para medios de transmisión. Incluye el SDK de medios y la API de recopilación de medios.
 sub-product: media analytics
-source-git-commit: 8a0f2c0b367b48ee5ac94e7fc6bcd0eadafbc5d8
-workflow-type: ht
+source-git-commit: ee147c2446162257b03f2f0b972e591435d787a9
+workflow-type: tm+mt
 source-wordcount: '897'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -74,21 +74,22 @@ ht-degree: 100%
       + [Parámetros de calidad ](implementation/variables/quality-parameters.md)
       + [Métricas calculadas ](implementation/variables/calculated-metrics.md)
 + Creación de informes {#media-reports}
-   + [Habilitación de informes de medios](reporting/media-reports-enable.md)
-   + [Acerca de los segmentos](reporting/segments.md)
-   + Informes predeterminados de contenidos {#media-default-reports}
-      + [Información general de informes predeterminados](reporting/reports-and-analytics/default-reports-overview.md)
-      + [Información general de contenidos](reporting/reports-and-analytics/media-reports-overview.md)
-      + [Detalles de contenidos](reporting/reports-and-analytics/media-reports-detail.md)
-      + [Informe de Media Daypart](reporting/reports-and-analytics/media-reports-daypart.md)
-      + [Informe de visualizadores simultáneos de medios](reporting/reports-and-analytics/media-concurrent-viewers-reports.md)
-   + Paneles de medios del espacio de trabajo {#media-workspace-panels}
-      + [Panel Audiencia media por minuto de medios](reporting/workspace/average-minute-audience.md)
+   + [Habilitación de informes de contenidos ](reporting/media-reports-enable.md)
+   + Paneles de medios en Workspace {#media-workspace-panels}
+      + [Panel de audiencia media por minuto de medios](reporting/workspace/average-minute-audience.md)
       + [Panel Visualizadores simultáneos de medios](reporting/workspace/media-concurrent-viewers-overview.md)
       + [Panel Tiempo invertido en la reproducción de contenido](reporting/workspace/media-playback-time-spent.md)
-   + [Plantillas de medios del espacio de trabajo ](reporting/workspace/media-workspace-templates.md)
-   + [Obtener datos de visualizadores simultáneos mediante API](reporting/reports-and-analytics/get-concurrent-json20.md)
-   + [Obtención de datos del tiempo invertido en la reproducción de medios mediante API](reporting/reports-and-analytics/get-mediaplaybacktimespent-json20.md)
+   + [Informes de medios en Workspace](reporting/workspace/media-workspace-templates.md)
+   + [Segmentos de medios](reporting/segments.md)
+   + Informes de medios predeterminados {#media-default-reports}
+      + [Información general de informes predeterminados](reporting/reports-and-analytics/default-reports-overview.md)
+      + [Información general de medio ](reporting/reports-and-analytics/media-reports-overview.md)
+      + [Detalles multimedia ](reporting/reports-and-analytics/media-reports-detail.md)
+      + [Informe de días de medios](reporting/reports-and-analytics/media-reports-daypart.md)
+      + [Informe de espectadores simultáneos de medios](reporting/reports-and-analytics/media-concurrent-viewers-reports.md)
+   + API de medios {#media-api}
+      + [Obtener datos de espectadores simultáneos](reporting/reports-and-analytics/get-concurrent-json20.md)
+      + [Obtención de datos del tiempo invertido en la reproducción de medios](reporting/reports-and-analytics/get-mediaplaybacktimespent-json20.md)
 + Casos de uso {#media-use-cases}
    + [Casos de uso de Media SDK](use-cases/cookbook/sdk-cookbook-overview.md)
    + Seguimiento del estado de reproducción {#player-state-tracking}
