@@ -4,8 +4,8 @@ description: Aprenda a implementar el seguimiento del núcleo mediante Media SDK
 exl-id: f3145450-82ba-4790-91a4-9d2cc97bbaa5
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
+source-git-commit: 59e03f550a35edecc949f7ef5e70c1cb2a784725
+workflow-type: tm+mt
 source-wordcount: '645'
 ht-degree: 100%
 
@@ -16,7 +16,8 @@ ht-degree: 100%
 Esta documentación abarca el seguimiento en la versión 3.x del SDK.
 
 >[!IMPORTANT]
-> Si va implementar cualquier versión anterior del SDK, puede descargar las guías del desarrollador aquí: [Descargar SDK](/help/getting-started/download-sdks.md)
+>
+>Si va implementar cualquier versión anterior del SDK, puede descargar las guías del desarrollador aquí: [Descargar SDK](/help/getting-started/download-sdks.md)
 
 1. **Configuración de seguimiento inicial**
 
@@ -29,8 +30,8 @@ Esta documentación abarca el seguimiento en la versión 3.x del SDK.
    | `name` | string | Cadena no vacía que indica el nombre de los medios. |
    | `id` | string | Cadena no vacía que indica un identificador de medios único. |
    | `length` | number | Número positivo que indica la longitud de los medios en segundos. Utilice 0 si se desconoce la longitud. |
-   | `streamType` | string |  |
-   | `mediaType` |  | Tipo de medios (audio o vídeo). |
+   | `streamType` | string |   |
+   | `mediaType` | | Tipo de medios (audio o vídeo). |
 
    **`StreamType`Constantes:**
 
@@ -60,30 +61,30 @@ Esta documentación abarca el seguimiento en la versión 3.x del SDK.
 
    * **Metadatos estándar**
 
-      >[!NOTE]
-      >
-      >La adición de metadatos estándar es opcional.
+     >[!NOTE]
+     >
+     >La adición de metadatos estándar es opcional.
 
       * Referencia de API de claves de metadatos de contenidos: [Claves de metadatos estándar de JavaScript](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript)
 
-         Consulte el conjunto completo de metadatos disponibles aquí: [Parámetros de audio y vídeo](/help/implementation/variables/audio-video-parameters.md).
+        Consulte el conjunto completo de metadatos disponibles aquí: [Parámetros de audio y vídeo](/help/implementation/variables/audio-video-parameters.md).
+
    * **Metadatos personalizados**
 
-      Cree un objeto de variable para las variables personalizadas y rellénelo con los datos de estos contenidos. Por ejemplo:
+     Cree un objeto de variable para las variables personalizadas y rellénelo con los datos de estos contenidos. Por ejemplo:
 
-      ```js
-      /* Set context data */
-       var contextData = {};
-      
-       //Standard metadata
-       contextData[ADB.Media.VideoMetadataKeys] = "Sample Episode";
-       contextData[ADB.Media.VideoMetadataKeys] = "Sample Show";
-      
-       //Custom metadata
-       contextData["isUserLoggedIn"] = "false";
-       contextData["tvStation"] = "Sample TV Station";
-      ```
-
+     ```js
+     /* Set context data */
+      var contextData = {};
+     
+      //Standard metadata
+      contextData[ADB.Media.VideoMetadataKeys] = "Sample Episode";
+      contextData[ADB.Media.VideoMetadataKeys] = "Sample Show";
+     
+      //Custom metadata
+      contextData["isUserLoggedIn"] = "false";
+      contextData["tvStation"] = "Sample TV Station";
+     ```
 
 1. **Realice un seguimiento de la intención de iniciar la reproducción**
 
