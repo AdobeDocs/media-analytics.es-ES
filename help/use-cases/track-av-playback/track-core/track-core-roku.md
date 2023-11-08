@@ -5,10 +5,10 @@ uuid: a8aa7b3c-2d39-44d7-8ebc-b101d130101f
 exl-id: 5272c0ce-4e3d-48c6-bfa6-94066ccbf9ac
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '771'
-ht-degree: 100%
+source-git-commit: c308dba2d7cf07b89bf124bd6e5f972c253c9f18
+workflow-type: tm+mt
+source-wordcount: '792'
+ht-degree: 92%
 
 ---
 
@@ -17,13 +17,14 @@ ht-degree: 100%
 Esta documentación abarca el seguimiento en la versión 2.x del SDK.
 
 >[!IMPORTANT]
+>
 >Si va a implementar una versión 1.x del SDK, puede descargar las guías del desarrollador de 1.x aquí: [Descargar SDK](/help/getting-started/download-sdks.md).
 
 1. **Configuración de seguimiento inicial**
 
    Identifique el momento en que el usuario desencadena la intención de reproducir (cuando hace clic en reproducir o la reproducción automática está activada) y cree una instancia de `MediaObject`.
 
-   **`MediaObject`Referencia de:**
+   **`MediaObject`Referencia:**
 
    | Nombre de variable | Descripción | Requerido |
    | --- | --- | :---: |
@@ -33,7 +34,7 @@ Esta documentación abarca el seguimiento en la versión 2.x del SDK.
    | `streamType` | Tipo de flujo (consulte _Constantes de StreamType_ a continuación) | Sí |
    | `mediaType` | Tipo de contenido (consulte _Constantes de MediaType_ a continuación) | Sí |
 
-   Constantes de **`StreamType`:**
+   **`StreamType`Constantes:**
 
    | Nombre de la constante | Descripción   |
    |---|---|
@@ -44,7 +45,7 @@ Esta documentación abarca el seguimiento en la versión 2.x del SDK.
    | `MEDIA_STREAM_TYPE_AUDIOBOOK` | Tipo de emisión de audiolibro. |
    | `MEDIA_STREAM_TYPE_PODCAST` | Tipo de emisión de podcast. |
 
-   Constantes de **`MediaType`:**
+   **`MediaType`Constantes:**
 
    | Nombre de la constante | Descripción |
    |---|---|
@@ -105,18 +106,19 @@ Esta documentación abarca el seguimiento en la versión 2.x del SDK.
 
 [Implementación de metadatos estándar en Roku ](/help/use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
 
-      >[!NOTE]
-      >No es obligatorio adjuntar el objeto de metadatos de vídeo estándar al objeto de contenidos.
+     >[!NOTE]
+     >
+     >No es obligatorio adjuntar el objeto de metadatos de vídeo estándar al objeto de contenidos.
 
    * **Metadatos personalizados**
 
-      Cree un objeto de variable para las variables personalizadas y rellénelo con los datos de este vídeo. Por ejemplo:
+     Cree un objeto de variable para las variables personalizadas y rellénelo con los datos de este vídeo. Por ejemplo:
 
-      ```
-      mediaContextData = {}
-      mediaContextData["cmk1"] = "cmv1"
-      mediaContextData["cmk2"] = "cmv2"
-      ```
+     ```
+     mediaContextData = {}
+     mediaContextData["cmk1"] = "cmv1"
+     mediaContextData["cmk2"] = "cmv2"
+     ```
 
 1. **Realice un seguimiento de la intención de iniciar la reproducción**
 
@@ -127,12 +129,15 @@ Esta documentación abarca el seguimiento en la versión 2.x del SDK.
    ```
 
    >[!TIP]
+   >
    >El segundo valor es el nombre de objeto de metadatos de video personalizado que ha creado en el paso 2.
 
    >[!IMPORTANT]
+   >
    >`trackSessionStart` rastrea la intención de reproducción, no el comienzo de la reproducción. Esta API se utiliza para cargar los datos y los metadatos del vídeo y para calcular la métrica de QoS (tiempo entre `trackSessionStart` y `trackPlay`).
 
    >[!NOTE]
+   >
    >Si no utiliza metadatos de vídeo personalizados, envíe un objeto vacío para el argumento `data` en `trackSessionStart`, tal y como se muestra en la línea comentada del ejemplo para iOS anterior.
 
 1. **Realizar un seguimiento del inicio real de la reproducción**
@@ -145,12 +150,18 @@ Esta documentación abarca el seguimiento en la versión 2.x del SDK.
 
 1. **Actualización de valor del cabezal de reproducción**
 
-   Cuando el cabezal de reproducción de contenido cambie, notifique al SDK llamando a la API `mediaUpdatePlayhead`. <br /> Para el vídeo bajo demanda (VOD), el valor se especifica segundos después del comienzo del elemento de medios. <br /> Para el streaming en directo, si el reproductor no proporciona información acerca de la duración del contenido, el valor se puede especificar como el número de segundos desde la medianoche (UTC) de ese día. <br /> Nota: Cuando se utilizan marcadores de progreso, la duración del contenido es obligatoria y el cabezal de reproducción debe actualizarse como número de segundos desde el principio del elemento de medios, empezando por 0.
-
+   Cuando el cabezal de reproducción de contenido cambie, notifique al SDK llamando a la función `mediaUpdatePlayhead` API. <br /> Para el vídeo bajo demanda (VOD), el valor se especifica segundos después del comienzo del elemento de medios. <br /> Para el streaming en directo, si el reproductor no proporciona información acerca de la duración del contenido, el valor se puede especificar como el número de segundos desde la medianoche (UTC) de ese día.
 
    ```
    ADBMobile().mediaUpdatePlayhead(position)
    ```
+
+   >[!NOTE]
+   >
+   >Tenga en cuenta lo siguiente al llamar a `mediaUpdatePlayhead` API:
+   >* Cuando se utilizan marcadores de progreso, la duración del contenido es obligatoria y el cabezal de reproducción debe actualizarse como número de segundos desde el principio del elemento de medios, empezando por 0.
+   >* Al utilizar los SDK de medios, debe llamar a la variable `mediaUpdatePlayhead` API al menos una vez por segundo.
+
 
 1. **Realizar un seguimiento de la finalización de la reproducción**
 
