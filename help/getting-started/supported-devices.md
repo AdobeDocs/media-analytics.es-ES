@@ -3,23 +3,23 @@ title: Información acerca de dispositivos y plataformas compatibles
 description: “Obtenga información acerca de los principales dispositivos, como iOS, Android, dispositivos OTT y exploradores JavaScript que Adobe Analytics for Streaming Media admite”.
 exl-id: 169ff7b9-e577-45b7-8927-74bdcccc0a77
 feature: Media Analytics
-role: User, Admin, Data Engineer
-source-git-commit: a26e4e283646e5ceb352f357789748f376f5c747
+role: User, Admin
+source-git-commit: 7eeee7f035e5d9e7e327e60910c78bbdf02abff8
 workflow-type: tm+mt
 source-wordcount: '307'
-ht-degree: 69%
+ht-degree: 59%
 
 ---
 
 # Dispositivos y plataformas compatibles {#devices-supported}
 
-Adobe Analytics para medios de streaming es compatible con todos los dispositivos principales, incluidos:
+Adobe Analytics para mídia de streaming es compatible con todos los dispositivos principales, incluidos:
 
 * Smartphones y tabletas iOS y Android
 * Dispositivos OTT para Roku, Fire TV y Android TV
 * Exploradores JavaScript para equipos de escritorio y portátiles
 
-Los SDK se actualizan normalmente cuando salen al mercado nuevas versiones de estos dispositivos y se pueden utilizar para integrarlos con reproductores nativos de cada plataforma individual o con cualquier otro reproductor de medios disponible.
+Los SDK se actualizan normalmente cuando salen al mercado nuevas versiones de estos dispositivos, y se pueden utilizar integrándolos con reproductores nativos de cada plataforma individual o con cualquier otro reproductor de medios disponible.
 
 En el caso de dispositivos que actualmente no son compatibles con SDK o en situaciones en las que es posible que necesite personalizar la implementación, puede utilizar la API de Media Collection o la API de Media Edge. Estas API le permiten hacer llamadas a la API de RESTful directamente de un dispositivo al servidor de Media Analytics.
 
@@ -30,7 +30,7 @@ Para obtener más información acerca de la implementación de Media on Edge, co
 | Plataformas y dispositivos de transmisión | | Media para la extensión/SDK de la red perimetral | API de Media Edge | Extensión de medios con etiquetas o SDK móvil de AEP | Media SDK | API de Media Collection |
 |:---|:---|:---:|:---:|:---:|:---:|:---:|
 | Web/Web móvil | | | | | |
-| | Exploradores con JavaScript | (Próximamente) | ![Admitido](/help/assets/icon-blue-check.png) | ![Admitido](/help/assets/icon-blue-check.png) | ![Admitido](/help/assets/icon-blue-check.png) | ![Admitido](/help/assets/icon-blue-check.png) |
+| | Exploradores con JavaScript | (Muy pronto) | ![Admitido](/help/assets/icon-blue-check.png) | ![Admitido](/help/assets/icon-blue-check.png) | ![Admitido](/help/assets/icon-blue-check.png) | ![Admitido](/help/assets/icon-blue-check.png) |
 | Aplicación móvil | | | | | |
 | | Dispositivos iOS | ![Admitido](/help/assets/icon-blue-check.png) | ![Admitido](/help/assets/icon-blue-check.png) | ![Admitido](/help/assets/icon-blue-check.png) | | ![Admitido](/help/assets/icon-blue-check.png) | |
 | | Dispositivos Android | ![Admitido](/help/assets/icon-blue-check.png) | ![Admitido](/help/assets/icon-blue-check.png) | ![Admitido](/help/assets/icon-blue-check.png) | | ![Admitido](/help/assets/icon-blue-check.png) |
