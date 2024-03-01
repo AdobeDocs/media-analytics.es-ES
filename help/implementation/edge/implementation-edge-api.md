@@ -3,9 +3,10 @@ title: Instalación de Media Analytics con la API de Experience Platform Edge
 description: Recursos sobre la instalación de Media Analytics con la API de Experience Platform Edge.
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a26e4e283646e5ceb352f357789748f376f5c747
+exl-id: 762abfd4-dc84-40dc-9142-fbebbb892e15
+source-git-commit: 416db2b77201f4342af45cf141e80a0f4c120df7
 workflow-type: tm+mt
-source-wordcount: '119'
+source-wordcount: '95'
 ht-degree: 0%
 
 ---
@@ -16,10 +17,10 @@ Si no puede utilizar el [SDK de Adobe Experience Platform Mobile](/help/implemen
 
 Para obtener información sobre cómo realizar una implementación personalizada de las API de Edge, utilice los siguientes recursos:
 
-* [Información general de API de Media Edge](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/media-edge-apis/overview.html)
+* [Información general de API de Media Edge](https://developer.adobe.com/cja-apis/docs/endpoints/media-edge/)
 
-* [Introducción a la API de Media Edge](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/media-edge-apis/getting-started.html)
+* [Introducción a la API de Media Edge](https://developer.adobe.com/cja-apis/docs/endpoints/media-edge/getting-started/)
 
-* [Guía de solución de problemas de API de Media Edge](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/media-edge-apis/troubleshooting.html)
+* [Guía de solución de problemas de API de Media Edge](https://developer.adobe.com/cja-apis/docs/endpoints/media-edge/troubleshooting/)
 
-* [Uso del archivo de especificación de API abierta para las API de Media Edge](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/media-edge-apis/swagger.html)
+* [Uso del archivo de especificación de API abierta para las API de Media Edge](https://developer.adobe.com/cja-apis/docs/endpoints/media-edge/swagger/)
