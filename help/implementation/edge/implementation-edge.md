@@ -4,9 +4,9 @@ description: Obtenga información sobre cómo implementar medios de streaming de
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: dfdb1415-105e-4c41-bedc-ecb85ed1b1d9
-source-git-commit: 68710e8d68266c62ded94a14892ddc78a0807a49
+source-git-commit: 798a2b155742476f0bf648b482c75e0b03449977
 workflow-type: tm+mt
-source-wordcount: '1738'
+source-wordcount: '1807'
 ht-degree: 9%
 
 ---
@@ -184,7 +184,7 @@ Para crear y configurar un esquema:
 
 1. Asegúrese de haber creado una conexión en Customer Journey Analytics como se describe en [Crear una conexión en el Customer Journey Analytics](#create-a-connection-in-customer-journey-analytics).
 
-1. En Customer Recorrido Analytics, cree una vista de datos como se describe en [Creación o edición de una vista de datos](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=en).
+1. En Customer Recorrido Analytics, cree una vista de datos como se describe en [Creación o edición de una vista de datos](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=es).
 
    Al crear la vista de datos, se requieren las siguientes selecciones de configuración para implementar Streaming Media:
 
@@ -307,9 +307,11 @@ Para crear y configurar un esquema:
 
 1. Continuar con [Envío de datos a Experience Platform Edge](#send-data-to-experience-platform-edge).
 
-## Envío de datos a Experience Platform Edge mediante el SDK para móviles de AEP
+## Envío de datos a Experience Platform Edge
 
-Puede utilizar el SDK móvil de Adobe Experience Platform para enviar datos móviles a Experience Platform Edge.
+Según el tipo de datos que desee enviar a Experience Platform Edge, puede utilizar cualquiera de los siguientes métodos:
+
+### Móvil: usar el SDK móvil de Adobe Experience Platform
 
 Utilice los siguientes recursos de documentación para completar la implementación tanto para iOS como para Android:
 
@@ -317,9 +319,23 @@ Utilice los siguientes recursos de documentación para completar la implementaci
 
 * [Referencia de API](https://developer.adobe.com/client-sdks/documentation/media-for-edge-network/api-reference/)
 
-* [Migrar a medios de streaming de Adobe para la extensión de red perimetral](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/migration-guide/)
+* [Migrar a medios de streaming de Adobe para la extensión de Edge Network](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/migration-guide/)
 
-También puede utilizar una implementación personalizada de las API de Edge con los siguientes recursos:
+### Roku: SDK de Adobe Experience Platform Roku
+
+* [Introducción](https://developer.adobe.com/client-sdks/documentation/media-for-edge-network/)
+
+* [SDK de Adobe Experience Platform Roku](https://github.com/adobe/aepsdk-roku/tree/main)
+
+* [Migrar a medios de streaming de Adobe para la extensión de Edge Network](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/migration-guide/) <!-- is the information here also applicable for Roku? -->
+
+### API: web y otros
+
+Actualmente, la API es la única forma admitida de enviar datos web a Experience Platform Edge.
+
+La API también está disponible si desea utilizar una implementación personalizada de las API de Edge.
+
+Para obtener más información acerca de la API de Media Edge, consulte los siguientes recursos:
 
 * [Información general de API de Media Edge](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/media-edge-apis/overview.html)
 
