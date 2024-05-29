@@ -4,7 +4,7 @@ description: Ver las notas de la versión actuales de Adobe Analytics.
 feature: Release Notes
 role: User, Admin, Data Engineer
 exl-id: ef068aa6-fdf4-4a5c-b5d0-b93ad31894e8
-source-git-commit: 3c5fa1dd0cb795f0d908b7aa61d8c09f803e94f2
+source-git-commit: 9c138248ed8494aa5edb398370ac0100f8cdaa49
 workflow-type: tm+mt
 source-wordcount: '971'
 ht-degree: 83%
@@ -31,7 +31,7 @@ Para obtener información acerca de nuevas funciones, correcciones e informació
 
 | Función | Descripción | Fecha objetivo |
 | ----------- | ---------- | ------- |
-| Envío de datos web al Edge Network de Adobe Experience Platform mediante el SDK web | Ahora puede [utilice el SDK web de Adobe Experience Platform para enviar datos web de medios de streaming a Adobe Experience Platform Edge Network](/help/implementation/edge/edge-web-sdk.md), lo que le permite crear campañas más personalizadas y proporcionar contenido más personalizado, lo que da como resultado más datos de seguimiento sobre los que informar.<p>Esta mejora proporciona un método de colección unificado para implementaciones web en todas las soluciones de Platform, como Customer Journey Analytics, RT-CDP, AJO y reenvío de eventos. Anteriormente, la única manera de enviar datos web de medios de streaming a Edge Network era mediante la API de Media Edge. | 31 de mayo de 2024 |
+| Envío de datos web al Edge Network de Adobe Experience Platform mediante el SDK web | Ahora puede [utilice el SDK web de Adobe Experience Platform para enviar datos web de medios de streaming a Adobe Experience Platform Edge Network](/help/implementation/edge/edge-web-sdk.md), lo que le permite crear campañas más personalizadas y proporcionar contenido más personalizado, lo que da como resultado más datos de seguimiento sobre los que informar.<p>Esta mejora proporciona un método de colección unificado para implementaciones web en todas las soluciones de Platform, como Customer Journey Analytics, RT-CDP, AJO y reenvío de eventos. Anteriormente, la única manera de enviar datos web de medios de streaming a Edge Network era mediante la API de Media Edge. | jueves, 29 de mayo de 2024 |
 | Envío de datos de Roku a Adobe Experience Platform Edge | Ahora, al [instalar Media Analytics con Experience Platform Edge](/help/implementation/edge/implementation-edge.md), puede utilizar el SDK de Roku de Adobe Experience Platform para enviar datos de medios de streaming a Adobe Experience Platform. | 12 de abril de 2024 |
 | Recopilación de medios: integración con Experience Edge (API y SDK móvil) | Ahora puede utilizar la API de Experience Edge y el SDK móvil para implementar medios de streaming, lo que le permite crear campañas más personalizadas y proporcionar contenido más personalizado, lo que da como resultado más datos de seguimiento para informar sobre ellos.<p>Esta mejora proporciona un método de recopilación unificado en todas las soluciones de, como informes de Customer Journey Analytics, RT-CDP, AJO y reenvío de eventos.  [Más información](/help/implementation/edge/implementation-edge.md) | sábado, 12 de mayo de 2023 |
 | Panel de visualizadores simultáneos de medios | Comprenda dónde se produjo el pico de concurrencia o dónde se produjeron las disminuciones. Obtenga valiosos conocimientos de la calidad del contenido y de la participación del visualizador, y solucione problemas o planifique el volumen o la escala.  [Más información](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/media-concurrent-viewers.html?lang=es) | 9 de agosto de 2022 |
