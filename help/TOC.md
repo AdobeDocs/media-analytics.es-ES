@@ -5,10 +5,10 @@ user-guide-title: Adobe Analytics para medios de transmisión
 breadcrumb-title: Guía de Media Analytics
 user-guide-description: Implemente Adobe Analytics para medios de transmisión. Incluye el SDK de medios y la API de recopilación de medios.
 sub-product: media analytics
-source-git-commit: ee147c2446162257b03f2f0b972e591435d787a9
-workflow-type: ht
-source-wordcount: '897'
-ht-degree: 100%
+source-git-commit: 6c377d7622a65e7bd41be0a4a105a0b1c7da477c
+workflow-type: tm+mt
+source-wordcount: '900'
+ht-degree: 99%
 
 ---
 
@@ -36,6 +36,7 @@ ht-degree: 100%
       + [Requisitos previos](/help/implementation/edge/prerequisites-edge.md)
       + SDK/extensión de Media Edge {#media-edge-sdk}
          + [Configuración de SDK/extensión de Media Edge](/help/implementation/edge/implementation-edge.md)
+         + [Media Edge Web](/help/implementation/edge/edge-web-sdk.md)
          + [SDK para móviles de Media Edge](/help/implementation/edge/edge-mobile-sdk.md)
       + [API de Media Edge](/help/implementation/edge/implementation-edge-api.md)
    + Implementaciones solo de Adobe Analytics {#analytics-only}
@@ -73,7 +74,7 @@ ht-degree: 100%
       + [Parámetros de estado del reproductor ](implementation/variables/player-state-parameters.md)
       + [Parámetros de calidad ](implementation/variables/quality-parameters.md)
       + [Métricas calculadas ](implementation/variables/calculated-metrics.md)
-+ Creación de informes {#media-reports}
++ Informes {#media-reports}
    + [Habilitación de informes de medios ](reporting/media-reports-enable.md)
    + Paneles de medios en Workspace {#media-workspace-panels}
       + [Panel de audiencia media por minuto de medios](reporting/workspace/average-minute-audience.md)

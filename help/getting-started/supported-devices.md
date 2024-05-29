@@ -4,9 +4,9 @@ description: “Obtenga información acerca de los principales dispositivos, com
 exl-id: 169ff7b9-e577-45b7-8927-74bdcccc0a77
 feature: Media Analytics
 role: User, Admin
-source-git-commit: 1cc995959aa9070f895e0d03be62533bd3a0ca0d
+source-git-commit: b538b973509ee2a2c2010da300cbed1ce06ec2af
 workflow-type: tm+mt
-source-wordcount: '306'
+source-wordcount: '305'
 ht-degree: 100%
 
 ---
@@ -30,7 +30,7 @@ Para obtener más información sobre la implementación de medios en Edge, consu
 | Plataformas y dispositivos de streaming | | Medios para SDK/Extensión de Edge Network | API de Media Edge | Extensión de medios con etiquetas o SDK Mobile de AEP | Media SDK | API de Media Collection |
 |:---|:---|:---:|:---:|:---:|:---:|:---:|
 | Web/Web móvil | | | | | |
-| | Exploradores con JavaScript | (Póximamente) | ![Admitido](/help/assets/icon-blue-check.png) | ![Admitido](/help/assets/icon-blue-check.png) | ![Admitido](/help/assets/icon-blue-check.png) | ![Admitido](/help/assets/icon-blue-check.png) |
+| | Exploradores con JavaScript | ![Admitido](/help/assets/icon-blue-check.png) | ![Admitido](/help/assets/icon-blue-check.png) | ![Admitido](/help/assets/icon-blue-check.png) | ![Admitido](/help/assets/icon-blue-check.png) | ![Admitido](/help/assets/icon-blue-check.png) |
 | Aplicación móvil | | | | | |
 | | Dispositivos iOS | ![Admitido](/help/assets/icon-blue-check.png) | ![Admitido](/help/assets/icon-blue-check.png) | ![Admitido](/help/assets/icon-blue-check.png) | | ![Admitido](/help/assets/icon-blue-check.png) | |
 | | Dispositivos Android | ![Admitido](/help/assets/icon-blue-check.png) | ![Admitido](/help/assets/icon-blue-check.png) | ![Admitido](/help/assets/icon-blue-check.png) | | ![Admitido](/help/assets/icon-blue-check.png) |
