@@ -5,10 +5,10 @@ user-guide-title: Adobe Analytics para medios de transmisión
 breadcrumb-title: Guía de Media Analytics
 user-guide-description: Implemente Adobe Analytics para medios de transmisión. Incluye el SDK de medios y la API de recopilación de medios.
 sub-product: media analytics
-source-git-commit: b5a95af55d782a14fc5fd6b8d5b9f206c797212e
+source-git-commit: e23369e276d2e851be84a29fd7dde43eafbb2060
 workflow-type: tm+mt
-source-wordcount: '901'
-ht-degree: 99%
+source-wordcount: '900'
+ht-degree: 98%
 
 ---
 
@@ -99,13 +99,13 @@ ht-degree: 99%
       + [Implementación y sistema de informes](use-cases/player-state-tracking/implementation-and-reporting.md)
       + [Seguimiento de varios estados de reproductor](use-cases/player-state-tracking/multiple-player-states.md)
       + [Ejemplos de seguimiento del estado de reproducción](use-cases/player-state-tracking/player-state-examples.md)
-   + [Seguimiento del contenido descargado sin conexión](use-cases/track-downloaded-content.md)
+   + [Seguimiento del contenido descargado ](use-cases/track-downloaded-content.md)
    + [Federated Analytics ](use-cases/federated-analytics.md)
    + [Administración de interrupciones de la aplicación durante la reproducción](use-cases/cookbook/app-interrupts.md)
    + [Atribución de flujo de transmisión de medios](use-cases/media-analytics-cookbook/media-dimensions.md)
    + [Reanudación de sesiones inactivas](use-cases/cookbook/resuming-inactive.md)
    + [Seguimiento de Roku en SceneGraph](use-cases/cookbook/sdk-track-scenegraph.md)
-   + [Distribución de espacios entre anuncios](use-cases/cookbook/fix-ad-play-ad.md)
+   + [Gestión de espacios entre anuncios](use-cases/cookbook/fix-ad-play-ad.md)
    + Cronologías {#timelines}
       + [Inicio y final del capítulo](use-cases/timelines/chapter-start-end.md)
       + [Ver hasta el final del contenido](use-cases/timelines/view-to-end-of-content.md)
