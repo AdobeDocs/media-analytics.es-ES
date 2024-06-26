@@ -1,27 +1,27 @@
 ---
 product: adobe analytics
 audience: end-user
-user-guide-title: Adobe Analytics para medios de transmisión
-breadcrumb-title: Guía de Media Analytics
-user-guide-description: Implemente Adobe Analytics para medios de transmisión. Incluye el SDK de medios y la API de recopilación de medios.
+user-guide-title: Complemento de recopilación de medios de streaming
+breadcrumb-title: Guía de recopilación de medios de streaming
+user-guide-description: Implementar medios de streaming. Incluye el SDK de medios y la API de recopilación de medios.
 sub-product: media analytics
-source-git-commit: e23369e276d2e851be84a29fd7dde43eafbb2060
+source-git-commit: 240fa48bdc738425e04cd29c27625c7dd612ff18
 workflow-type: tm+mt
-source-wordcount: '900'
-ht-degree: 98%
+source-wordcount: '895'
+ht-degree: 94%
 
 ---
 
 
-# Adobe Analytics para medios de transmisión {#using}
+# Complemento de recopilación de medios de streaming {#using}
 
-+ [Guía de medios de streaming de Analytics](media-overview.md)
++ [Guía de recopilación de medios de streaming](media-overview.md)
 + Notas de la versión {#release-notes}
-   + [Notas de la versión de medios de streaming](additional-resources/release-notes.md)
+   + [Notas de la versión de Streaming Media Collection](additional-resources/release-notes.md)
 + Introducción {#getting-started}
    + [Requisitos previos ](getting-started/prereqs.md)
    + [Dispositivos compatibles](getting-started/supported-devices.md)
-   + [Documentación de medios de streaming](getting-started/implementation-documentation.md)
+   + [Documentación de implementación de recopilación de medios de streaming](getting-started/implementation-documentation.md)
    + [SDK, bibliotecas y extensiones](getting-started/download-sdks.md)
    + Fin del soporte técnico {#end-of-support}
       + [Fin de la compatibilidad del SDK móvil de Media Analytics](additional-resources/end-of-support-faqs.md)
@@ -37,7 +37,7 @@ ht-degree: 98%
       + SDK/extensión de Media Edge {#media-edge-sdk}
          + [Configuración de SDK/extensión de Media Edge](/help/implementation/edge/implementation-edge.md)
          + [SDK web de Media Edge](/help/implementation/edge/edge-web-sdk.md)
-         + [SDK móvil de Media Edge](/help/implementation/edge/edge-mobile-sdk.md)
+         + [SDK de Media Edge Mobile](/help/implementation/edge/edge-mobile-sdk.md)
       + [API de Media Edge](/help/implementation/edge/implementation-edge-api.md)
    + Implementaciones solo de Adobe Analytics {#analytics-only}
       + [Requisitos previos](/help/implementation/media-sdk/setup/prerequisites-analytics.md)
@@ -172,7 +172,7 @@ ht-degree: 98%
       + Configuración de JavaScript {#setup-javascript}
          + [Configuración de JavaScript 2.x](legacy/media-sdk/setup/setup-javascript/set-up-js-2.md)
    + [Acerca de la medición del ritmo cardíaco](legacy/heartbeat-measurement.md)
-   + [Adobe Primetime y medios de streaming de Analytics](legacy/intro-to-ava/implementation-paths/primetime-path.md)
+   + [Adobe Primetime](legacy/intro-to-ava/implementation-paths/primetime-path.md)
    + [Habilitación de Adobe Audience Management](legacy/intro-to-ava/am-enablement.md)
    + [Implementación de Vínculo personalizado](legacy/measurement-options/cl-in-aa/cl-impl-guide.md)
    + Seguimiento de hitos heredado {#legacy-milestone-tracking}

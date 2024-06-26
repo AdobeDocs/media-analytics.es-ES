@@ -1,14 +1,14 @@
 ---
-title: Seguimiento del contenido descargado sin conexión en medios de streaming de Adobe
+title: Seguimiento del contenido descargado sin conexión en el complemento de recopilación de medios de streaming
 description: Aprenda a utilizar la funcionalidad Contenido descargado para seguir el consumo de medios cuando un usuario está sin conexión.
 uuid: 0718689d-9602-4e3f-833c-8297aae1d909
 exl-id: 82d3e5d7-4f88-425c-8bdb-e9101fc1db92
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: cdc5ea361829c749dfbb457288ac5ba51a530961
+source-git-commit: 4ed604cb1969212421fecd40996d7b25af50a2b2
 workflow-type: tm+mt
-source-wordcount: '702'
-ht-degree: 100%
+source-wordcount: '697'
+ht-degree: 98%
 
 ---
 
@@ -22,11 +22,11 @@ Contrastar los dos enfoques:
 
 * En línea
 
-   Con este enfoque en tiempo real, el reproductor de contenido envía los datos de seguimiento con cada evento del reproductor, y envía pings de red cada diez segundos (cada segundo en el caso de los anuncios), uno a uno al back-end.
+  Con este enfoque en tiempo real, el reproductor de contenido envía los datos de seguimiento con cada evento del reproductor, y envía pings de red cada diez segundos (cada segundo en el caso de los anuncios), uno a uno al back-end.
 
 * Sin conexión (función Contenido descargado)
 
-   Con este método de procesamiento por lotes, es necesario que se generen los mismos eventos de sesión, pero estos se almacenan en el dispositivo hasta que se envían al back-end como una sola sesión (ver ejemplo a continuación).
+  Con este método de procesamiento por lotes, es necesario que se generen los mismos eventos de sesión, pero estos se almacenan en el dispositivo hasta que se envían al back-end como una sola sesión (ver ejemplo a continuación).
 
 Cada enfoque tiene sus ventajas y desventajas:
 * El seguimiento del escenario en línea se realiza en tiempo real; esto requiere una comprobación de conectividad antes de cada llamada de red.

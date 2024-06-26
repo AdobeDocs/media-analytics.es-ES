@@ -1,19 +1,19 @@
 ---
 title: Información acerca de dispositivos y plataformas compatibles
-description: “Obtenga información acerca de los principales dispositivos, como iOS, Android, dispositivos OTT y exploradores JavaScript que Adobe Analytics for Streaming Media admite”.
+description: '"Obtenga información acerca de los principales dispositivos, como iOS, Android, dispositivos OTT y exploradores JavaScript que admite el complemento Streaming Media Collection".'
 exl-id: 169ff7b9-e577-45b7-8927-74bdcccc0a77
 feature: Media Analytics
 role: User, Admin
-source-git-commit: b538b973509ee2a2c2010da300cbed1ce06ec2af
+source-git-commit: 4ed604cb1969212421fecd40996d7b25af50a2b2
 workflow-type: tm+mt
-source-wordcount: '305'
-ht-degree: 100%
+source-wordcount: '313'
+ht-degree: 76%
 
 ---
 
 # Dispositivos y plataformas compatibles {#devices-supported}
 
-Adobe Analytics para medios de streaming es compatible con todos los dispositivos principales, incluidos:
+El complemento de recopilación de medios de streaming de Adobe es compatible con todos los dispositivos principales, incluidos:
 
 * Smartphones y tabletas iOS y Android
 * Dispositivos OTT para Roku, Fire TV y Android TV
@@ -21,11 +21,11 @@ Adobe Analytics para medios de streaming es compatible con todos los dispositivo
 
 Los SDK se actualizan normalmente cuando salen al mercado nuevas versiones de estos dispositivos y se pueden utilizar para integrarlos con reproductores nativos de cada plataforma individual o con cualquier otro reproductor de medios disponible.
 
-En el caso de dispositivos que actualmente no son compatibles con SDK o en situaciones en las que es posible que necesite personalizar la implementación, puede utilizar la API de Media Collection o la API de Media Edge. Estas API le permiten hacer llamadas a la API de RESTful directamente de un dispositivo al servidor de Media Analytics.
+En el caso de dispositivos que actualmente no son compatibles con SDK o en situaciones en las que es posible que necesite personalizar la implementación, puede utilizar la API de Media Collection o la API de Media Edge. Estas API le permiten realizar llamadas a la API de RESTful directamente de un dispositivo al back-end del complemento de recopilación de medios de streaming.
 
 En la tabla siguiente, se detallan los dispositivos actualmente compatibles. Si un dispositivo no aparece en la lista, póngase en contacto con el servicio de atención al cliente o con el consultor de soluciones para conocer el estado de dicho dispositivo.
 
-Para obtener más información sobre la implementación de medios en Edge, consulte [Instalación de Media Analytics con Experience Platform Edge](/help/implementation/edge/implementation-edge.md).
+Para obtener más información sobre la implementación de Media en Edge, consulte [Instalación del complemento de recopilación de medios de streaming con Experience Platform Edge](/help/implementation/edge/implementation-edge.md).
 
 | Plataformas y dispositivos de streaming | | Medios para SDK/Extensión de Edge Network | API de Media Edge | Extensión de medios con etiquetas o SDK Mobile de AEP | Media SDK | API de Media Collection |
 |:---|:---|:---:|:---:|:---:|:---:|:---:|

@@ -3,9 +3,10 @@ title: Envío de datos web a Edge con el SDK web de Adobe Experience Platform
 description: Obtenga información sobre cómo enviar datos de medios de streaming de Adobe a Experience Platform Edge con el SDK web de Adobe Experience Platform.
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: ad40260d29bd5b739184cb551f084565d05e65a7
+exl-id: de40ebd9-46be-4a52-866f-7bb2589fce28
+source-git-commit: 4ed604cb1969212421fecd40996d7b25af50a2b2
 workflow-type: tm+mt
-source-wordcount: '526'
+source-wordcount: '529'
 ht-degree: 0%
 
 ---
@@ -22,14 +23,14 @@ Para los clientes que utilizan el SDK de Media JS, el SDK web proporciona una ru
 
 Para usar la variable `streamingMedia` del SDK web, debe cumplir los siguientes requisitos previos:
 
-* Para poder enviar datos de Media Analytics a Edge, primero complete los pasos en [Instalación de Media Analytics con Experience Platform Edge](/help/implementation/edge/implementation-edge.md).
+* Para poder enviar datos de medios de streaming a Edge, primero complete los pasos en [Instalación del complemento de recopilación de medios de streaming con Experience Platform Edge](/help/implementation/edge/implementation-edge.md).
 * Asegúrese de que tiene acceso a Adobe Experience Platform o Adobe Analytics.
 * Debe utilizar la versión 2.20.0 o posterior del SDK web. Consulte la [Información general sobre la instalación del SDK web](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/install/overview) para obtener información sobre cómo instalar la versión más reciente.
 * Habilite la **[[!UICONTROL Media Analytics]](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure)** para la secuencia de datos que está utilizando.
 * Asegúrese de que el esquema utilizado por el conjunto de datos incluya los campos de esquema de recopilación de contenido.
-* Configure la función Streaming Media en la configuración del SDK web, como se muestra en esta página, a través del [extensión de etiqueta](#tag-extension) o a través de [Biblioteca JavaScript](#library).
+* Configure la función Streaming Media en la configuración del SDK web, como se muestra en esta página, a través del [extensión de etiqueta](#tag-extension) o a través de [Biblioteca de JavaScript](#library).
 
-Siga los pasos descritos en esta página para migrar la implementación de Adobe Analytics para mídia de streaming de Media JS a SDK web.
+Siga los pasos descritos en esta página para migrar la implementación del complemento de recopilación de medios de streaming de Media JS al SDK web.
 
 ### Paso 1: Instalación del SDK web de Experience Platform
 

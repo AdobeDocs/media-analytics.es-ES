@@ -5,16 +5,16 @@ uuid: a1c6be79-a6dc-47b6-93b3-ac7b42f1f3eb
 exl-id: fe7662b5-1700-4bd6-b542-66aa8493459d
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '763'
-ht-degree: 100%
+source-git-commit: 4ed604cb1969212421fecd40996d7b25af50a2b2
+workflow-type: tm+mt
+source-wordcount: '756'
+ht-degree: 94%
 
 ---
 
 # Configuración de iOS{#set-up-ios}
 
-Aprenda a configurar Streaming Media Analytics para dispositivos iOS.
+Aprenda a configurar el complemento de recopilación de medios de streaming para dispositivos iOS.
 
 >[!IMPORTANT]
 >
@@ -25,9 +25,9 @@ Aprenda a configurar Streaming Media Analytics para dispositivos iOS.
 * **Obtenga parámetros de configuración válidos para Media SDK**: Estos parámetros se pueden obtener de un representante de Adobe una vez creada la cuenta de Analytics.
 * **Implemente ADBMobile para iOS en su aplicación**: Para obtener más información sobre la documentación del SDK de Adobe Mobile, consulte [SDK 4.x de iOS para las soluciones de Experience Cloud.](https://experienceleague.adobe.com/docs/mobile-services/ios/overview.html?lang=es)
 
-   >[!IMPORTANT]
-   >
-   >A partir de iOS 9, Apple introdujo una función denominada App Transport Security (ATS). Esta función tiene como objetivo mejorar la seguridad de la red asegurándose de que las aplicaciones utilicen únicamente los protocolos y los cifrados estándar del sector. Esta función está habilitada de forma predeterminada, pero tiene opciones de configuración que le permiten trabajar con ATS. Para obtener más información sobre ATS, consulte [Seguridad del transporte de aplicaciones.](https://experienceleague.adobe.com/docs/mobile-services/ios/config-ios/app-transport-security.html?lang=es)
+  >[!IMPORTANT]
+  >
+  >A partir de iOS 9, Apple introdujo una función denominada App Transport Security (ATS). Esta función tiene como objetivo mejorar la seguridad de la red asegurándose de que las aplicaciones utilicen únicamente los protocolos y los cifrados estándar del sector. Esta función está habilitada de forma predeterminada, pero tiene opciones de configuración que le permiten trabajar con ATS. Para obtener más información sobre ATS, consulte [Seguridad del transporte de aplicaciones.](https://experienceleague.adobe.com/docs/mobile-services/ios/config-ios/app-transport-security.html?lang=es)
 
 * **Proporcione las siguientes capacidades en su reproductor de contenidos**:
 
@@ -55,11 +55,12 @@ Aprenda a configurar Streaming Media Analytics para dispositivos iOS.
       * `ADBMediaHeartbeatConfig.h`: archivo del encabezado Objective-C que se utiliza para la configuración del SDK.
       * `MediaSDK.a`: binario multiarquitectura habilitado para código de bits que contiene las compilaciones de biblioteca para los simuladores (i386 y x86_64) y dispositivos iOS (armv7, armv7s, arm64).
 
-         Este binario se debe vincular cuando el destino se dirija a una aplicación iOS.
+        Este binario se debe vincular cuando el destino se dirija a una aplicación iOS.
 
       * `MediaSDK_TV.a`: binario multiarquitectura habilitado para código de bits que contiene las compilaciones de biblioteca para el simulador (x86_64) y los dispositivos Apple TV (arm64) nuevos.
 
-         Este binario se debe vincular cuando el destino se dirija a una aplicación Apple TV (tvOS).
+        Este binario se debe vincular cuando el destino se dirija a una aplicación Apple TV (tvOS).
+
    1. Añada la biblioteca al proyecto:
 
       1. Inicie el IDE de Xcode y abra la aplicación.
@@ -85,11 +86,8 @@ Aprenda a configurar Streaming Media Analytics para dispositivos iOS.
          * **MediaSDK_TV.a**
          * **libsqlite3.0.tbd**
          * **SystemConfiguration.framework**
+
       1. Confirme que la aplicación se compila sin errores.
-
-
-
-
 
 1. Importe la biblioteca.
 
@@ -167,9 +165,9 @@ Con el lanzamiento de Apple TV, ahora puede crear aplicaciones para ejecutarlas 
 
 Realice los siguientes pasos en su proyecto de Xcode. Esta guía se escribe suponiendo que el proyecto tiene un destinatario que es una aplicación de Apple TV dirigida a tvOS:
 
-1. Arrastre el archivo de biblioteca `VideoHeartbeat_TV.a` a la carpeta `lib` de su proyecto.
+1. Arrastre el `VideoHeartbeat_TV.a` en el archivo de biblioteca del proyecto `lib` carpeta.
 
-1. En la pestaña **[!UICONTROL Fases de compilación]** del destino de su aplicación de tvOS, expanda la sección **[!UICONTROL Vincular binario con bibliotecas]** y añada las bibliotecas siguientes:
+1. En el **[!UICONTROL Fases de compilación]** del destino de su aplicación de tvOS, expanda el **[!UICONTROL Vincular binario con bibliotecas]** y agregue las bibliotecas siguientes:
 
    * `MediaSDK_TV.a`
    * `AdobeMobileLibrary_TV.a`

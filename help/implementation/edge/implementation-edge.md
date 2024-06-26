@@ -1,27 +1,27 @@
 ---
-title: Instalación de Media Analytics con Experience Platform Edge
-description: Obtenga información sobre cómo implementar medios de streaming de Adobe con Experience Platform Edge.
+title: Implementar el complemento de recopilación de medios de streaming con el Edge Network
+description: Descubra cómo se puede implementar el complemento de recopilación de medios de streaming con Experience Platform Edge.
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: dfdb1415-105e-4c41-bedc-ecb85ed1b1d9
-source-git-commit: ad40260d29bd5b739184cb551f084565d05e65a7
+source-git-commit: 4ed604cb1969212421fecd40996d7b25af50a2b2
 workflow-type: tm+mt
-source-wordcount: '1862'
+source-wordcount: '1883'
 ht-degree: 9%
 
 ---
 
-# Instalación de Media Analytics con Experience Platform Edge
+# Implementar el complemento de recopilación de medios de streaming con el Edge Network
 
-Adobe Experience Platform Edge le permite enviar datos destinados a varios productos a una ubicación centralizada. Experience Edge reenvía la información adecuada a los productos deseados. Este concepto le permite consolidar los esfuerzos de implementación, especialmente abarcando varias soluciones de datos.
+La red Edge de Adobe Experience Platform le permite enviar datos destinados a varios productos a una ubicación centralizada. Experience Edge reenvía la información adecuada a los productos deseados. Este concepto le permite consolidar los esfuerzos de implementación, especialmente abarcando varias soluciones de datos.
 
-El siguiente gráfico ilustra cómo una implementación de Media Analytics puede utilizar Experience Platform Edge para que los datos estén disponibles en Analysis Workspace, ya sea en Adobe Analytics o en Customer Journey Analytics:
+El siguiente gráfico ilustra cómo se puede implementar el complemento Recopilación de medios de streaming de Adobe para utilizar Experience Platform Edge a fin de que los datos estén disponibles en Analysis Workspace, ya sea en Adobe Analytics o en Customer Journey Analytics:
 
 ![Flujo de trabajo de CJA](assets/streaming-media-edge.png)
 
-Para obtener una descripción general de todas las opciones de implementación, incluidos los métodos de implementación que no utilizan Experience Platform Edge, consulte [Implementación de medios de streaming para Adobe Analytics o Customer Journey Analytics](/help/implementation/overview.md).
+Para obtener una descripción general de todas las opciones de implementación, incluidos los métodos de implementación que no utilizan Experience Platform Edge, consulte [Implementación del complemento de recopilación de medios de streaming](/help/implementation/overview.md).
 
-Independientemente de si utiliza el SDK web de Adobe Experience Platform, el SDK móvil de Adobe Experience Platform, el SDK de Adobe Experience Platform Roku o la API para implementar Streaming Media con Experience Edge, primero debe completar las secciones siguientes:
+Independientemente de si utiliza el SDK web de Adobe Experience Platform, el SDK móvil de Adobe Experience Platform, el SDK de Adobe Experience Platform Roku o la API para implementar el complemento de recopilación de medios de streaming con Experience Edge, primero debe completar las secciones siguientes:
 
 ## Configuración del esquema en Adobe Experience Platform
 
@@ -50,7 +50,7 @@ Para crear y configurar un esquema:
 
 1. Seleccionar [!UICONTROL **Guardar**] para guardar los cambios.
 
-1. (Opcional) Puede ocultar ciertos campos que no utiliza la API de Media Edge. Al ocultar estos campos, el esquema es más fácil de leer y comprender, pero no es obligatorio. Estos campos solo hacen referencia a los del `MediaAnalytics Interaction Details` grupo de campo.
+1. (Opcional) Puede ocultar determinados campos que no utiliza la API de Media Edge. Al ocultar estos campos, el esquema es más fácil de leer y comprender, pero no es obligatorio. Estos campos solo hacen referencia a los del `MediaAnalytics Interaction Details` grupo de campo.
 
 +++ Amplíe aquí para ver las instrucciones de los campos que puede ocultar.
 
@@ -170,7 +170,7 @@ Para crear y configurar un esquema:
 
 1. En Customer Journey Analytics, cree una conexión como se describe en [Crear una conexión](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=es).
 
-   Al crear la conexión, se requieren las siguientes selecciones de configuración para implementar Streaming Media:
+   Al crear la conexión, se requieren las siguientes selecciones de configuración para implementar el complemento de recopilación de medios de streaming:
 
    1. Seleccione el conjunto de datos que creó anteriormente, tal como se describe en [Crear un conjunto de datos en Adobe Experience Platform](#create-a-dataset-in-adobe-experience-platform).
 
@@ -188,7 +188,7 @@ Para crear y configurar un esquema:
 
 1. En Customer Recorrido Analytics, cree una vista de datos como se describe en [Creación o edición de una vista de datos](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=es).
 
-   Al crear la vista de datos, se requieren las siguientes selecciones de configuración para implementar Streaming Media:
+   Al crear la vista de datos, se requieren las siguientes selecciones de configuración para implementar el complemento de recopilación de medios de streaming:
 
    1. En el [!UICONTROL **Conexión**] , seleccione la conexión que creó anteriormente, tal como se describe en [Crear una conexión en el Customer Journey Analytics](#create-a-connection-in-customer-journey-analytics).
 
@@ -307,9 +307,9 @@ Para crear y configurar un esquema:
    >
    >   Si los usuarios con los que desea compartir no están disponibles, asegúrese de que los usuarios tengan acceso de usuario y administrador a Customer Journey Analytics en Adobe Admin Console.
 
-1. Continuar con [Envío de datos a Experience Platform Edge](#send-data-to-experience-platform-edge).
+1. Continuar con [Envío de datos al Experience Platform Edge](#send-data-to-experience-platform-edge).
 
-## Envío de datos a Experience Platform Edge
+## Envío de datos al Experience Platform Edge
 
 Según el tipo de datos que desee enviar a Experience Platform Edge, puede utilizar cualquiera de los siguientes métodos:
 
@@ -341,11 +341,11 @@ Utilice los siguientes recursos de documentación para completar la implementaci
 
 ### API: web y otros
 
-Actualmente, la API es la única forma admitida de enviar datos web a Experience Platform Edge.
+Actualmente, la API es la única forma admitida de enviar datos web al Experience Platform Edge.
 
 La API también está disponible si desea utilizar una implementación personalizada de las API de Edge.
 
-Para obtener más información acerca de la API de Media Edge, consulte los siguientes recursos:
+Para obtener más información sobre la API de Media Edge, consulte los siguientes recursos:
 
 * [Información general de API de Media Edge](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/media-edge-apis/overview.html)
 

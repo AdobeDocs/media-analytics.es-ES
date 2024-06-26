@@ -6,18 +6,18 @@ uuid: c14bdbef-5846-4d31-8a14-8e9e0e9c9861
 exl-id: 58430636-7fab-433a-8ead-52ccaa45d920
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
+source-git-commit: 240fa48bdc738425e04cd29c27625c7dd612ff18
+workflow-type: tm+mt
 source-wordcount: '357'
-ht-degree: 100%
+ht-degree: 93%
 
 ---
 
-# Información general sobre la API de Media Collection{#overview}
+# Información general sobre la API de Media Collection {#overview}
 
 La API de recopilación de medios es la alternativa RESTful de Adobe al SDK de medios del lado del cliente. Con la API de recopilación de medios, el reproductor puede realizar el seguimiento de eventos de audio y vídeo mediante llamadas HTTP RESTful.
 
-La API de recopilación de medios es esencialmente un adaptador que actúa como una versión del SDK de medios en el lado del servidor. Eso significa que algunos aspectos de la documentación de Media SDK también son pertinentes para la API de recopilación de contenido. Por ejemplo, ambas soluciones utilizan los mismos [Parámetros de Streaming Media](../variables/audio-video-parameters.md), y los datos recopilados de seguimiento de medios llevan al mismo [Creación de informes y análisis.](/help/reporting/media-reports-enable.md)
+La API de recopilación de medios es esencialmente un adaptador que actúa como una versión del SDK de medios en el lado del servidor. Eso significa que algunos aspectos de la documentación de Media SDK también son pertinentes para la API de recopilación de contenido. Por ejemplo, ambas soluciones utilizan lo mismo [Parámetros de Streaming Media](../variables/audio-video-parameters.md)y los datos recopilados de seguimiento de medios de streaming llevan a lo mismo [Informes y análisis.](/help/reporting/media-reports-enable.md)
 
 ## Flujos de datos del seguimiento de contenidos {#media-tracking-data-flows}
 
@@ -37,11 +37,11 @@ Los datos de seguimiento capturados con la API de recopilación de contenido se 
 
 * **`sessions`-** Establece una sesión con el servidor y devuelve un ID de sesión utilizado en las llamadas a `events` posteriores. La aplicación invocará una vez al principio de una sesión de seguimiento.
 
-   `{uri}/api/v1/sessions`
+  `{uri}/api/v1/sessions`
 
 * **`events`-** Enviar datos de seguimiento de contenidos.
 
-   `{uri}/api/v1/sessions/{session-id}/events`
+  `{uri}/api/v1/sessions/{session-id}/events`
 
 ### Cuerpo de la solicitud {#mc-api-request-body}
 

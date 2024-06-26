@@ -4,18 +4,18 @@ description: Descubra cómo se utilizan los latidos del corazón para recopilar 
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: 180dd9b1-877a-4ec1-8e81-c293800069c0
-source-git-commit: a7d897c6f6fbc6ed0d5b71f5801ab18ee21f0411
-workflow-type: ht
-source-wordcount: '311'
-ht-degree: 100%
+source-git-commit: 4ed604cb1969212421fecd40996d7b25af50a2b2
+workflow-type: tm+mt
+source-wordcount: '315'
+ht-degree: 86%
 
 ---
 
 # Acerca de la medición del ritmo cardíaco
 
-Adobe Analytics utiliza &quot;latidos&quot; para recopilar métricas de vídeo. Durante la reproducción de vídeo, los latidos se envían al servidor de seguimiento de Heartbeat para medir el tiempo de reproducción. Las llamadas de Heartbeat se envían cada diez segundos. Los latidos generan métricas de participación en vídeo granulares e informes de visitas en el orden previsto de vídeo más precisos. Adobe Analytics para medios de transmisión mide los latidos del corazón utilizando Adobe Launch con la extensión Media Analytics, el Media SDK y la Media Collection API. Los componentes `AppMeasurement` y `VisitorID` se utilizan para recibir datos de vídeo.
+El complemento de recopilación de medios de streaming de Adobe usa &quot;latidos&quot; para recopilar métricas de vídeo. Durante la reproducción de vídeo, los latidos se envían al servidor de seguimiento de Heartbeat para medir el tiempo de reproducción. Las llamadas de Heartbeat se envían cada diez segundos. Los latidos generan métricas de participación en vídeo granulares e informes de visitas en el orden previsto de vídeo más precisos. Streaming Media mide los latidos mediante Adobe Launch con la extensión Media Analytics, Media SDK y la API de Media Collection. Los componentes `AppMeasurement` y `VisitorID` se utilizan para recibir datos de vídeo.
 
-El uso de latidos de Adobe Analytics para Streaming Media ofrece las siguientes ventajas:
+El uso de latidos en el complemento de recopilación de medios de streaming ofrece las siguientes ventajas:
 
 | Función | Descripción |
 |---|---|

@@ -4,10 +4,10 @@ description: Aprenda a utilizar el panel Audiencia media por minuto de medios pa
 feature: Media Analytics, Workspace Basics
 role: User, Admin
 exl-id: af4d430c-1349-4606-b587-da5d40e0fe4b
-source-git-commit: 7eeee7f035e5d9e7e327e60910c78bbdf02abff8
+source-git-commit: 2ce09eafeb8def909ae2a8ae7cc09a88b2f663af
 workflow-type: tm+mt
 source-wordcount: '255'
-ht-degree: 100%
+ht-degree: 92%
 
 ---
 
@@ -22,4 +22,4 @@ En Analysis Workspace, la audiencia media por minuto es el tiempo que se pasa vi
 
 El panel Audiencia media por minuto de medios proporciona análisis de audiencia de minuto promedio según el contenido específico seleccionado si la duración está disponible mediante Clasificaciones.
 
-El panel Audiencia media por minuto también proporciona análisis durante un período de tiempo dado que se puede filtrar por contenido específico, independientemente de si la duración está disponible mediante Clasificaciones. Para acceder al panel Audiencia media por minuto de medios, vaya a un grupo de informes con los componentes de Media Analytics habilitados. A continuación, haga clic en el icono del panel situado en el extremo izquierdo y arrastre el panel a su proyecto de Analysis Workspace. [Más información...](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/average-minute-audience-panel.html?lang=es)
+El panel Audiencia media por minuto también proporciona análisis durante un período de tiempo dado que se puede filtrar por contenido específico, independientemente de si la duración está disponible mediante Clasificaciones. Para acceder al panel Audiencia media por minuto de medios, vaya a un grupo de informes con los componentes de medios de streaming habilitados. A continuación, haga clic en el icono del panel situado en el extremo izquierdo y arrastre el panel a su proyecto de Analysis Workspace. [Más información...](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/average-minute-audience-panel.html?lang=es)

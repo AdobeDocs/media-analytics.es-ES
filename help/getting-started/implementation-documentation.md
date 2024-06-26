@@ -5,20 +5,20 @@ uuid: null
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: c37aeea2-7c8f-4815-ae28-634ae691e84f
-source-git-commit: ad40260d29bd5b739184cb551f084565d05e65a7
+source-git-commit: 240fa48bdc738425e04cd29c27625c7dd612ff18
 workflow-type: tm+mt
-source-wordcount: '255'
-ht-degree: 67%
+source-wordcount: '259'
+ht-degree: 45%
 
 ---
 
-# Documentación de implementación de medios de streaming {#streaming-media-documentation}
+# Documentación de implementación del complemento de recopilación de medios de streaming {#streaming-media-documentation}
 
-La documentación de Adobe Analytics para medios de transmisión se encuentra en varios sitios web de productos. Según la implementación de Streaming Media Analytics, es posible que deba hacer referencia a uno o más conjuntos de documentación.
+La documentación del complemento de recopilación de medios de streaming se encuentra en varios sitios web de productos. Según la implementación de la recopilación de medios de streaming, es posible que deba hacer referencia a uno o más conjuntos de documentación.
 
 Utilice la información de la tabla siguiente para localizar la documentación del método de implementación elegido.
 
-## Documentación de implementación de medios de streaming {#media-documentation}
+## Documentación de implementación {#media-documentation}
 
 | Implementación | Documentación |
 |:-----------------------:|----------------|
@@ -29,7 +29,7 @@ Utilice la información de la tabla siguiente para localizar la documentación d
 
 ## Documentación adicional {#additional-documentation}
 
-En la tabla siguiente se enumera la documentación de los productos de Adobe que se usan con los medios de streaming de Analytics.
+En la tabla siguiente se muestra la documentación de los productos de Adobe que se usan con el complemento de recopilación de medios de streaming.
 
 | Producto | Documentación |
 |:-----------------------:|----------------|

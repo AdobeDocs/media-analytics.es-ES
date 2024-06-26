@@ -4,28 +4,28 @@ description: Aprenda a implementar medios de transmisión de Adobe para aplicaci
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: aed561d0-defc-4be5-87d3-0f331cdfab34
-source-git-commit: 9d7886a67e426089977cbe322d310c36604646d0
+source-git-commit: 4ed604cb1969212421fecd40996d7b25af50a2b2
 workflow-type: tm+mt
-source-wordcount: '454'
-ht-degree: 98%
+source-wordcount: '442'
+ht-degree: 92%
 
 ---
 
-# Instalación de Media Analytics mediante JavaScript {#install-web-sdks}
+# Instalación de Media SDK con JavaScript {#install-web-sdks}
 
 La información de esta página describe cómo instalar el SDK web independiente y configurar JavaScript.
 
-Como alternativa, puede utilizar la extensión de Adobe Media Analytics para implementar Analytics, tal como se describe en [Implementación de Analytics mediante la extensión de Media Analytics](/help/implementation/media-sdk/setup/web-implementation-tags.md).
+También puede utilizar la extensión de Adobe Medium Analytics para implementar el complemento Recopilación de medios de streaming de Adobe como se describe en [Implementar Analytics con la extensión Media Analytics](/help/implementation/media-sdk/setup/web-implementation-tags.md).
 
 ## Requisitos previos  {#prerequesites}
 
 * **Obtener parámetros de configuración válidos**
 
-   Estos parámetros se los puede proporcionar un representante de Adobe cuando haya configurado la cuenta de Analytics.
+  Estos parámetros se los puede proporcionar un representante de Adobe cuando haya configurado la cuenta de Analytics.
 
 * **Implementación `AppMeasurement` y `Experience Cloud Identity Service` para JavaScript en la aplicación multimedia**
 
-   Para obtener más información, consulte [Implementación de Analytics con JavaScript](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html?lang=es) y [Implementación del servicio de identidad de Experience Cloud](https://experienceleague.adobe.com/docs/id-service/using/implementation/setup-analytics.html?lang=es).
+  Para obtener más información, consulte [Implementación de Analytics con JavaScript](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html?lang=es) y [Implementación del servicio de identidad de Experience Cloud](https://experienceleague.adobe.com/docs/id-service/using/implementation/setup-analytics.html?lang=es).
 
 * **Incluya las siguientes API en su reproductor multimedia**
 

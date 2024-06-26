@@ -1,23 +1,24 @@
 ---
 title: Envío de datos móviles a Edge con el SDK para móviles de Adobe Experience Platform
-description: Obtenga información sobre cómo enviar el Adobe Streaming de datos de medios al Experience Platform Edge.
+description: Aprenda a enviar datos de medios de streaming móviles a Experience Platform Edge.
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: f9dcf1662317aac12b25c99f4d16b07eb7cf124f
+exl-id: 63b62784-dce9-4f91-8c16-8e14155734d5
+source-git-commit: 4ed604cb1969212421fecd40996d7b25af50a2b2
 workflow-type: tm+mt
-source-wordcount: '118'
+source-wordcount: '111'
 ht-degree: 3%
 
 ---
 
 # Envío de datos móviles a Edge con el SDK para móviles de Adobe Experience Platform
 
-Puede utilizar el SDK móvil de Adobe Experience Platform para enviar datos móviles a Experience Platform Edge.
+Puede utilizar el SDK móvil de Adobe Experience Platform para enviar datos de medios de streaming móviles a Experience Platform Edge.
 
-Para poder enviar datos de Media Analytics a Edge, primero complete los pasos en [Instalación de Media Analytics con Experience Platform Edge](/help/implementation/edge/implementation-edge.md)A continuación, utilice los siguientes recursos de documentación para completar la implementación tanto para iOS como para Android:
+Para poder enviar datos de medios de streaming móviles a Edge, primero complete los pasos en [Instalación del complemento de recopilación de medios de streaming con Experience Platform Edge](/help/implementation/edge/implementation-edge.md)A continuación, utilice los siguientes recursos de documentación para completar la implementación tanto para iOS como para Android:
 
 * [Introducción](https://developer.adobe.com/client-sdks/documentation/media-for-edge-network/)
 
 * [Referencia de API](https://developer.adobe.com/client-sdks/documentation/media-for-edge-network/api-reference/)
 
-* [Migrar a medios de streaming de Adobe para la extensión de red perimetral](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/migration-guide/)
+* [Migrar a medios de streaming de Adobe para la extensión de Edge Network](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/migration-guide/)

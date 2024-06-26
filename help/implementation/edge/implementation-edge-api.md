@@ -1,19 +1,19 @@
 ---
-title: Instalación de Media Analytics con la API de Experience Platform Edge
+title: Implementar el complemento de recopilación de medios de streaming mediante la API de Edge Network
 description: Recursos sobre la instalación de Media Analytics con la API de Experience Platform Edge.
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: 762abfd4-dc84-40dc-9142-fbebbb892e15
-source-git-commit: 416db2b77201f4342af45cf141e80a0f4c120df7
+source-git-commit: 4ed604cb1969212421fecd40996d7b25af50a2b2
 workflow-type: tm+mt
-source-wordcount: '95'
+source-wordcount: '104'
 ht-degree: 0%
 
 ---
 
-# Instalación de Media Analytics con la API de Experience Platform Edge
+# Implementar el complemento de recopilación de medios de streaming mediante la API de Edge Network
 
-Si no puede utilizar el [SDK de Adobe Experience Platform Mobile](/help/implementation/edge/implementation-edge.md), puede enviar datos a la red perimetral directamente a través de una API.
+Si no puede utilizar el [SDK de Adobe Experience Platform Mobile](/help/implementation/edge/implementation-edge.md)Además, puede enviar datos al Edge Network de Adobe Experience Platform directamente a través de una API.
 
 Para obtener información sobre cómo realizar una implementación personalizada de las API de Edge, utilice los siguientes recursos:
 

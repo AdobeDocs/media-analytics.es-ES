@@ -5,10 +5,10 @@ uuid: 06fefedb-b0c8-4f7d-90c8-e374cdde1695
 exl-id: a175332e-0bdc-44aa-82cb-b3f879e7abfc
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
+source-git-commit: 4ed604cb1969212421fecd40996d7b25af50a2b2
+workflow-type: tm+mt
 source-wordcount: '618'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -19,7 +19,7 @@ Después de descargar el Media SDK para su aplicación de vídeo o reproductor, 
 
 ## Directrices generales de implementación {#general-implementation-guidelines}
 
-Hay tres componentes principales del SDK utilizados en el seguimiento de Adobe Streaming Media:
+Hay tres componentes principales del SDK utilizados en el seguimiento con el complemento de recopilación de medios de streaming:
 * Media Heartbeat Config-El `MediaHeartbeatConfig` contiene la configuración básica para la creación de informes.
 * Media Heartbeat Delegate-El `MediaHeartbeatDelegate` controla el tiempo de reproducción y el objeto QoS.
 * Media Heartbeat-La `MediaHeartbeat` es la biblioteca principal que contiene miembros y métodos.
@@ -119,11 +119,11 @@ Las implementaciones de seguimiento de Media Analytics generan dos tipos de llam
 
 * **Servidor de Adobe Analytics (AppMeasurement)** Para obtener más información sobre las opciones del servidor de seguimiento, consulte [Rellenar correctamente las variables trackingServer y trackingServerSecure.](https://helpx.adobe.com/es/analytics/kb/determining-data-center.html)
 
-   >[!IMPORTANT]
-   >
-   >Es necesario un servidor de seguimiento RDC o CNAME que se resuelva en un servidor RDC para el servicio ID de visitante de Experience Cloud.
+  >[!IMPORTANT]
+  >
+  >Es necesario un servidor de seguimiento RDC o CNAME que se resuelva en un servidor RDC para el servicio ID de visitante de Experience Cloud.
 
-   El servidor de seguimiento de análisis debe finalizar en “`.sc.omtrdc.net`” o ser CNAME.
+  El servidor de seguimiento de análisis debe finalizar en “`.sc.omtrdc.net`” o ser CNAME.
 
 * ** Servidor de Media Analytics (latidos)**
 Siempre tiene el formato “`[your_namespace].hb.omtrdc.net`”. El valor de “`[your_namespace]`” especifica su empresa y lo proporciona Adobe.
