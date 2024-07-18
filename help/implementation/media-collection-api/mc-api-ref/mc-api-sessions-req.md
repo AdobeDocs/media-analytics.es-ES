@@ -6,8 +6,8 @@ exl-id: f55f5838-610f-4f82-b3c5-72165ea2c86b
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '130'
+workflow-type: tm+mt
+source-wordcount: '133'
 ht-degree: 100%
 
 ---
@@ -66,7 +66,7 @@ El cuerpo de la solicitud debe ser JSON y tener la misma estructura que este cue
    * `ts` - Marca de tiempo; debe estar en milisegundos; Hora universal coordinada (UTC).
 * `eventType` (Obligatorio)
 
-   **Valor válido:** `sessionStart`
+  **Valor válido:** `sessionStart`
 * `params` (Obligatorio)
 * `customMetadata` (Opcional)
 * `qoeData` (Opcional)

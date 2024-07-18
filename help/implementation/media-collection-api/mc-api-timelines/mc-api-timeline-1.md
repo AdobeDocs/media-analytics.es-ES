@@ -6,9 +6,9 @@ exl-id: 16b15e03-5581-471f-ab0c-077189dd32d6
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '1064'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '1120'
+ht-degree: 98%
 
 ---
 
@@ -34,7 +34,7 @@ Esta llamada indica _la intención del usuario de reproducir_ un vídeo.
 
 Devuelve un ID de sesión (`{sid}`) al cliente que se utiliza para identificar todas las llamadas de seguimiento subsiguientes dentro de la sesión. El estado del reproductor no es &quot;reproduciendo&quot;, sino &quot;comenzando&quot;.
 
-[Los parámetros de sesión obligatorios](../mc-api-ref/mc-api-sessions-req.md) deben incluirse en el mapa de `params` en la solicitud.
+[Los parámetros de sesión obligatorios](../mc-api-ref/mc-api-sessions-req.md) deben incluirse en el mapa `params` del cuerpo de la solicitud.
 
 En el servidor, esta llamada genera una llamada de inicio a Adobe Analytics.
 
@@ -65,7 +65,7 @@ En el servidor, esta llamada genera una llamada de inicio a Adobe Analytics.
 
 | Acción | Cronología de acción (segundos) | Posición del cabezal de reproducción (segundos) | Solicitud de cliente |
 | --- | :---: | :---: | --- |
-| La aplicación inicia el temporizador de eventos de ping | 0 | 0 | `/api/v1/sessions/{sid}/events` |  |
+| La aplicación inicia el temporizador de eventos de ping | 0 | 0 | `/api/v1/sessions/{sid}/events` | |
 
 Inicie el temporizador de ping de su aplicación. El primer evento de ping debe activarse en el primer segundo si hay anuncios previos a la emisión y en los 10 primeros segundos en caso contrario.
 

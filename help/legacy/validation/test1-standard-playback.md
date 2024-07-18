@@ -6,8 +6,8 @@ exl-id: 3781f0f7-be75-43e5-a40b-a34956dce36e
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '838'
+workflow-type: tm+mt
+source-wordcount: '847'
 ht-degree: 100%
 
 ---
@@ -43,41 +43,40 @@ Complete y registre las siguientes acciones (en orden):
 
    * **Llamada de inicio de Adobe Analytics**
 
-      | Parámetro | Valor (ejemplo) |
-      |---|---|
-      | `pev2` | ms_s |
-      | `mid` | 30250035503789876473484580554595324209 |
+     | Parámetro | Valor (ejemplo) |
+     |---|---|
+     | `pev2` | ms_s |
+     | `mid` | 30250035503789876473484580554595324209 |
 
    * **Llamada de página de sitio web**
 
-      | Parámetro | Valor (ejemplo) |
-      |---|---|
-      | `mid` | 30250035503789876473484580554595324209 |
+     | Parámetro | Valor (ejemplo) |
+     |---|---|
+     | `mid` | 30250035503789876473484580554595324209 |
 
    * **Llamada de ciclo de vida**
 
-      | Parámetro | Valor (ejemplo) |
-      |---|---|
-      | `pev2` | ADBINTERNAL:Lifecycle |
-      | `mid` | 30250035503789876473484580554595324209 |
+     | Parámetro | Valor (ejemplo) |
+     |---|---|
+     | `pev2` | ADBINTERNAL:Lifecycle |
+     | `mid` | 30250035503789876473484580554595324209 |
 
    * **Llamada de inicio de Media Analytics**
 
-      | Parámetro | Valor (ejemplo) |
-      |---|---|
-      | `s:event:type` | start |
+     | Parámetro | Valor (ejemplo) |
+     |---|---|
+     | `s:event:type` | start |
 
-      >[!NOTE]
-      >
-      >En las llamadas de inicio de Media Analytics (`s:event:type=start`) es posible que no estén presentes los valores `mid`. Esto es correcto. Es posible que no aparezcan hasta que se realicen las llamadas de reproducción de Media Analytics (`s:event:type=play`).
+     >[!NOTE]
+     >
+     >En las llamadas de inicio de Media Analytics (`s:event:type=start`) es posible que no estén presentes los valores `mid`. Esto es correcto. Es posible que no aparezcan hasta que se realicen las llamadas de reproducción de Media Analytics (`s:event:type=play`).
 
    * **Llamada de reproducción de Media Analytics**
 
-      | Parámetro | Valor (ejemplo) |
-      |---|---|
-      | `s:event:type` | play |
-      | `s:user:mid` | 30250035503789876473484580554595324209 |
-
+     | Parámetro | Valor (ejemplo) |
+     |---|---|
+     | `s:event:type` | play |
+     | `s:user:mid` | 30250035503789876473484580554595324209 |
 
 1. **Iniciar el reproductor de contenidos**
 
@@ -107,13 +106,11 @@ Complete y registre las siguientes acciones (en orden):
 
    * **Reproducción de publicidad**
 
-      Durante la reproducción del anuncio, el SDK de Media Analytics envía eventos de reproducción de tipo “anuncio” al servidor de Media Analytics cada segundo.
+     Durante la reproducción del anuncio, el SDK de Media Analytics envía eventos de reproducción de tipo “anuncio” al servidor de Media Analytics cada segundo.
 
    * **Finalización de publicidad**
 
-      Al 100 % de la reproducción de la publicidad, se enviará una llamada de finalización de Media Analytics.
-
-
+     Al 100 % de la reproducción de la publicidad, se enviará una llamada de finalización de Media Analytics.
 
 1. **Pausar la reproducción de la publicidad durante 30 segundos, si está disponible.** **Pausa de publicidad**
 
@@ -134,7 +131,7 @@ Complete y registre las siguientes acciones (en orden):
    * La posición del cabezal de reproducción debe aumentarse en 10 unidades con cada llamada de reproducción.
    * El valor `l:event:duration` representa el número de milisegundos desde la última llamada de seguimiento y debe ser aproximadamente el mismo valor en cada llamada de 10 segundos.
 
-      Para ver los parámetros y metadatos de la llamada, consulte [Detalles de la llamada de prueba.](/help/legacy/validation/test-call-details.md#play-main-content)
+     Para ver los parámetros y metadatos de la llamada, consulte [Detalles de la llamada de prueba.](/help/legacy/validation/test-call-details.md#play-main-content)
 
 1. **Pausar la reproducción durante 30 segundos como mínimo.** Cuando el reproductor de contenidos está en pausa, el SDK enviará llamadas de evento de pausa al servidor de Media Analytics cada 10 segundos. Después de la pausa, los eventos de reproducción deben reanudarse.
 

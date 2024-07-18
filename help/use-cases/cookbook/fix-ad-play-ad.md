@@ -6,8 +6,8 @@ exl-id: f27ce2ba-7584-4601-8837-d8316c641708
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '448'
+workflow-type: tm+mt
+source-wordcount: '450'
 ht-degree: 100%
 
 ---
@@ -52,9 +52,9 @@ Administre el espacio desde dentro del reproductor invocando `trackEvent:AdCompl
 
 * **La llamada`trackEvent(MediaHeartbeat.Event.AdComplete);`**
 
-   >[!NOTE]
-   >
-   >Invoque esta llamada solo si no se ha completado el anuncio anterior. Utilice un valor booleano para mantener el estado &quot;`isinAd`&quot; para el anuncio anterior.
+  >[!NOTE]
+  >
+  >Invoque esta llamada solo si no se ha completado el anuncio anterior. Utilice un valor booleano para mantener el estado &quot;`isinAd`&quot; para el anuncio anterior.
 
 * Cree la instancia del objeto de anuncio para el recurso de publicidad: por ejemplo, `adObject`.
 * Rellenar metadatos de publicidad, `adCustomMetadata`.
@@ -65,9 +65,9 @@ Administre el espacio desde dentro del reproductor invocando `trackEvent:AdCompl
 
 * **No realice una llamada**
 
-   >[!NOTE]
-   >
-   >Si la aplicación sabe que es el último anuncio de la pausa publicitaria, invoque `trackEvent:AdComplete` aquí y omita la configuración de `trackEvent:AdComplete` en `trackEvent:AdBreakComplete`
+  >[!NOTE]
+  >
+  >Si la aplicación sabe que es el último anuncio de la pausa publicitaria, invoque `trackEvent:AdComplete` aquí y omita la configuración de `trackEvent:AdComplete` en `trackEvent:AdBreakComplete`
 
 **Al omitir un anuncio:**
 
@@ -77,8 +77,8 @@ Administre el espacio desde dentro del reproductor invocando `trackEvent:AdCompl
 
 * **La llamada`trackEvent(MediaHeartbeat.Event.AdComplete);`**
 
-   >[!NOTE]
-   >
-   >Si este paso ya se ha realizado como parte de la última llamada a `trackEvent:AdComplete`, se puede omitir.
+  >[!NOTE]
+  >
+  >Si este paso ya se ha realizado como parte de la última llamada a `trackEvent:AdComplete`, se puede omitir.
 
 * La llamada `trackEvent(MediaHeartbeat.Event.AdBreakComplete);`.

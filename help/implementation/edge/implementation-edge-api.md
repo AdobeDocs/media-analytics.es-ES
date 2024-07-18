@@ -13,11 +13,11 @@ ht-degree: 0%
 
 # Implementar el complemento de recopilación de medios de streaming mediante la API de Edge Network
 
-Si no puede utilizar el [SDK de Adobe Experience Platform Mobile](/help/implementation/edge/implementation-edge.md)Además, puede enviar datos al Edge Network de Adobe Experience Platform directamente a través de una API.
+Si no puede usar [Adobe Experience Platform Mobile SDK](/help/implementation/edge/implementation-edge.md), puede enviar datos al Edge Network de Adobe Experience Platform directamente a través de una API.
 
 Para obtener información sobre cómo realizar una implementación personalizada de las API de Edge, utilice los siguientes recursos:
 
-* [Información general de API de Media Edge](https://developer.adobe.com/cja-apis/docs/endpoints/media-edge/)
+* [Resumen de la API de Media Edge](https://developer.adobe.com/cja-apis/docs/endpoints/media-edge/)
 
 * [Introducción a la API de Media Edge](https://developer.adobe.com/cja-apis/docs/endpoints/media-edge/getting-started/)
 

@@ -6,9 +6,9 @@ exl-id: 655841ed-3a02-4e33-bbc9-46fb14302194
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: 9ba64b68efec5dd8b52010ac1a13afd7703448d0
-workflow-type: ht
-source-wordcount: '690'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '707'
+ht-degree: 96%
 
 ---
 
@@ -52,8 +52,8 @@ En las tablas siguientes se proporcionan las correspondencias entre la solución
 | Media.completeCloseOffsetThreshold | `s.Media.` <br> `  completeCloseOffsetThreshold` <br> `  = 1` | N/D | La finalización del contenido solo admite un marcador de progreso del 100%. |
 | Media.playerName | `s.Media.playerName` <br> `  = "Custom Player Name"` | Clave de SDK: playerName;<br> Clave de API: media.playerName | `MediaHeartbeatConfig.` <br> `  playerName` |
 | Media.trackSeconds | `s.Media.` <br> `  trackSeconds` <br> `  = 15` | N/D | Media Analytics tiene establecido 10 segundos para el contenido y 1 segundo para los anuncios. No hay más opciones disponibles. |
-| Media.trackMilestones | `s.Media.` <br> `  trackMilestones` <br> `  = "25,50,75";` | N/D | Media Analytics siempre realiza un seguimiento de los marcadores de progreso en el 10 %, 25 %, 50 %, 75 % y 95 %. |
-| Media.trackOffsetMilestones | `s.Media.` <br> `  trackOffsetMilestones` <br> `  = "20,40,60";` | N/D | Media Analytics siempre realiza un seguimiento de los marcadores de progreso en el 10 %, 25 %, 50 %, 75 % y 95 %. |
+| Media.trackMilestones | `s.Media.` <br> `  trackMilestones` <br> `  = "25,50,75";` | N/D | Media Analytics siempre realiza un seguimiento de los marcadores de progreso en el 10 %, 25 %, 50 %, 75 % y 95 %. |
+| Media.trackOffsetMilestones | `s.Media.` <br> `  trackOffsetMilestones` <br> `  = "20,40,60";` | N/D | Media Analytics siempre realiza un seguimiento de los marcadores de progreso en el 10 %, 25 %, 50 %, 75 % y 95 %. |
 | Media.segmentByMilestones | `s.Media.segmentByMilestones` <br> `  = true;` | N/D | El seguimiento automático ya no está disponible. |
 | Media.segmentByOffsetMilestones | `s.Media.` <br> `  segmentByOffsetMilestones` <br> `  = true;` | N/D | El seguimiento automático ya no está disponible. |
 

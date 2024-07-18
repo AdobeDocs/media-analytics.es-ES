@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Envío de datos web a Edge con el SDK web de Adobe Experience Platform
 
-A partir de la versión 2.20.0, la variable `streamingMedia` componente de Adobe Experience Platform [SDK web](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/home) permite recopilar datos relacionados con las sesiones de contenido del sitio web. Los datos recopilados pueden incluir información sobre reproducciones de contenido, pausas, finalizaciones y otros eventos relacionados.
+A partir de la versión 2.20.0, el componente `streamingMedia` del [SDK web](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/home) de Adobe Experience Platform le permite recopilar datos relacionados con las sesiones de contenido en su sitio web. Los datos recopilados pueden incluir información sobre reproducciones de contenido, pausas, finalizaciones y otros eventos relacionados.
 
 Una vez recopilados los datos, puede enviarlos a Adobe Experience Platform o Adobe Analytics para generar informes. Esta función proporciona una solución completa para realizar el seguimiento y comprender el comportamiento del consumo de medios en el sitio web.
 
@@ -21,22 +21,22 @@ Para los clientes que utilizan el SDK de Media JS, el SDK web proporciona una ru
 
 ## Requisitos previos {#prerequisites}
 
-Para usar la variable `streamingMedia` del SDK web, debe cumplir los siguientes requisitos previos:
+Para utilizar el componente `streamingMedia` del SDK web, debe cumplir los siguientes requisitos previos:
 
-* Para poder enviar datos de medios de streaming a Edge, primero complete los pasos en [Instalación del complemento de recopilación de medios de streaming con Experience Platform Edge](/help/implementation/edge/implementation-edge.md).
+* Para poder enviar datos de medios de transmisión a Edge, primero complete los pasos de [Instalar el complemento Recopilación de medios de transmisión con Experience Platform Edge](/help/implementation/edge/implementation-edge.md).
 * Asegúrese de que tiene acceso a Adobe Experience Platform o Adobe Analytics.
-* Debe utilizar la versión 2.20.0 o posterior del SDK web. Consulte la [Información general sobre la instalación del SDK web](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/install/overview) para obtener información sobre cómo instalar la versión más reciente.
-* Habilite la **[[!UICONTROL Media Analytics]](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure)** para la secuencia de datos que está utilizando.
+* Debe utilizar la versión 2.20.0 o posterior del SDK web. Consulte la [descripción general de la instalación del SDK web](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/install/overview) para obtener información sobre cómo instalar la versión más reciente.
+* Habilite la opción **[[!UICONTROL Media Analytics]](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure)** para el conjunto de datos que está usando.
 * Asegúrese de que el esquema utilizado por el conjunto de datos incluya los campos de esquema de recopilación de contenido.
-* Configure la función Streaming Media en la configuración del SDK web, como se muestra en esta página, a través del [extensión de etiqueta](#tag-extension) o a través de [Biblioteca de JavaScript](#library).
+* Configure la función Streaming Media en la configuración del SDK web, como se muestra en esta página, ya sea mediante la [extensión de etiqueta](#tag-extension) o a través de la [biblioteca de JavaScript](#library).
 
 Siga los pasos descritos en esta página para migrar la implementación del complemento de recopilación de medios de streaming de Media JS al SDK web.
 
 ### Paso 1: Instalación del SDK web de Experience Platform
 
-Consulte la [documentación dedicada](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/install/overview) para obtener información sobre cómo instalar el SDK web en las propiedades web.
+Consulte la [documentación dedicada](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/install/overview) para aprender a instalar el SDK web en sus propiedades web.
 
-### Paso 2: Configuración del SDK web `streamingMedia` componente.
+### Paso 2: Configurar el componente `streamingMedia` del SDK web.
 
 **Ejemplo**
 
@@ -54,7 +54,7 @@ mediaConfig.ssl = true;
 ADB.Media.configure(mediaConfig, appMeasurement);
 ```
 
-En su lugar, debe configurar la variable `streamingMedia` en el SDK web como se muestra a continuación.
+En su lugar, debe configurar el componente `streamingMedia` en el SDK web como se muestra a continuación.
 
 ```js
 alloy("configure", {
@@ -68,15 +68,15 @@ alloy("configure", {
 });
 ```
 
-Consulte el SDK web `streamingMedia` componente [documentación](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/configure/streamingmedia) para obtener información detallada sobre cómo configurarla.
+Consulte la [documentación](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/configure/streamingmedia) del componente del SDK web `streamingMedia` para obtener información detallada sobre cómo configurarlo.
 
 ### Paso 3: Obtención de la instancia de rastreador de medios al migrar desde el SDK de Media JS
 
 Para los clientes que utilizan el SDK de Media JS, el SDK web proporciona una ruta de migración para pasar de Media JS SDK a SDK web, a la vez que incluye compatibilidad con las funcionalidades de Media JS existentes, como la administración de eventos de medios.
 
-[!DNL Web SDK] incluye un comando para recuperar un rastreador de Media Analytics. Puede utilizar este comando para crear una instancia de objeto y, a continuación, utilizando las mismas API que las proporcionadas por el [Biblioteca de Media JS](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript_3x/APIReference.html), rastree eventos de medios.
+[!DNL Web SDK] incluye un comando para recuperar un rastreador de Media Analytics. Puede utilizar este comando para crear una instancia de objeto y, a continuación, utilizar las mismas API que las proporcionadas por la [biblioteca Media JS](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript_3x/APIReference.html), realizar un seguimiento de los eventos de medios.
 
-Consulte la [`getMediaAnalyticsTracker`](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/getmediaanalyticstracker) para obtener información detallada sobre los métodos admitidos.
+Consulte la documentación de [`getMediaAnalyticsTracker`](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/getmediaanalyticstracker) para obtener información detallada sobre los métodos admitidos.
 
 El siguiente fragmento muestra cómo recuperar la instancia de seguimiento de medios en Media JS.
 
@@ -84,7 +84,7 @@ El siguiente fragmento muestra cómo recuperar la instancia de seguimiento de me
 var tracker = ADB.Media.getInstance();
 ```
 
-En su lugar, utilice el `getMediaAnalyticsTracker` en el SDK web para lograr el mismo resultado, como se muestra a continuación.
+En su lugar, utilice el comando `getMediaAnalyticsTracker` del SDK web para lograr el mismo resultado, como se muestra a continuación.
 
 ```js
 // aquire Media Analytics APIs
@@ -93,7 +93,7 @@ const Media = await window.alloy("getMediaAnalyticsTracker", {});
 const trackerInstance = Media.getInstance();
 ```
 
-Todos los métodos de ayuda estarán disponibles en la `Media` objeto. Los métodos de seguimiento están disponibles en la instancia de seguimiento, como se muestra a continuación.
+Todos los métodos de ayuda estarán disponibles en el objeto `Media`. Los métodos de seguimiento están disponibles en la instancia de seguimiento, como se muestra a continuación.
 
 ```js
 const mediaInfo = Media.createMediaObject(

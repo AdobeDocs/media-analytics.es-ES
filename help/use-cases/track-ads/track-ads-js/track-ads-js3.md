@@ -6,7 +6,7 @@ feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: c308dba2d7cf07b89bf124bd6e5f972c253c9f18
 workflow-type: tm+mt
-source-wordcount: '394'
+source-wordcount: '398'
 ht-degree: 88%
 
 ---
@@ -133,9 +133,9 @@ Consulte la situación de seguimiento [Reproducción de VOD con anuncios previos
 
 ## Seguimiento de anuncios granular
 
-El intervalo predeterminado de ping de publicidad es `10 seconds`.
+El intervalo de ping de anuncio predeterminado es `10 seconds`.
 
-Puede configurar el seguimiento granular de anuncios para habilitar `1 second` seguimiento de anuncios.
+Puede configurar el seguimiento de anuncios granular para habilitar el seguimiento de anuncios de `1 second`.
 
 >[!IMPORTANT]
 >

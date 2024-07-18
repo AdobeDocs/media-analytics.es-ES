@@ -81,7 +81,7 @@ Indica que se ha producido un error.
 
 Se utiliza para informar al backend de Media Analytics de que cierre inmediatamente la sesión cuando el usuario ha abandonado el contenido y es poco probable que vuelva.
 
-Si un `sessionEnd` no se envíe, una sesión abandonada [tiempo de espera normal](../mc-api-impl/mc-api-timeout.md) (bien después de que no se reciba ningún evento durante 10 minutos o cuando no se produzca ningún movimiento del cabezal de reproducción durante 30 minutos). Además, se perderán todas las llamadas de medios subsiguientes realizadas con ese ID de sesión.
+Si no se envía un(a) `sessionEnd`, una sesión abandonada [se agotará el tiempo de espera de forma normal](../mc-api-impl/mc-api-timeout.md) (después de que no se reciba ningún evento durante 10 minutos o cuando no se produzca ningún movimiento del cabezal de reproducción durante 30 minutos). Además, se perderán todas las llamadas de medios subsiguientes realizadas con ese ID de sesión.
 
 ## sessionComplete
 

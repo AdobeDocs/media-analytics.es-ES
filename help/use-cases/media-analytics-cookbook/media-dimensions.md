@@ -23,7 +23,7 @@ Para habilitar esta función para un informe específico, vuelva a habilitar la 
 
 >[!NOTE]
 >
->Las métricas de medios son _no_ están disponibles para su uso fuera del seguimiento de medios, ya que la mayoría de ellos los calcula el complemento de recopilación de medios de streaming en función de los eventos de latidos. Además, es importante que las métricas de medios no se vean infladas por implementaciones diferentes.
+>Las métricas de medios _no_ están disponibles para su uso fuera del seguimiento de medios porque la mayoría de ellas las calcula el complemento de recopilación de medios de streaming basado en eventos de latidos. Además, es importante que las métricas de medios no se vean infladas por implementaciones diferentes.
 
 ## Atribución de flujo de transmisión de medios
 

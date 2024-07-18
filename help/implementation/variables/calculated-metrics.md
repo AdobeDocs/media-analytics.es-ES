@@ -26,7 +26,7 @@ Para obtener información acerca de las métricas calculadas de Adobe Analytics,
 |---|---|---|
 | Promedio de anuncios por flujo de medios | Inicios de publicidad por inicios de contenido | `Ad Starts / Media Starts` |
 | Promedio de capítulos por flujo de medios | Inicios de capítulo por inicios de contenido | `Chapter Start / Media Starts` |
-| Promedio de Tiempo invertido en contenido | Tiempo total empleado por inicios de contenido (`HH:MM:SS`) | `Media Time Spent / Media Starts` |
+| Promedio de Tiempo invertido en contenido | Tiempo total empleado por inicios de medios (`HH:MM:SS`) | `Media Time Spent / Media Starts` |
 | Promedio de Tiempo invertido en contenido | Tiempo invertido en contenido por contenido iniciado (`HH:MM:SS`) | `Content Time Spent / Content Start` |
 | Promedio de Tiempo invertido en publicidad | Tiempo invertido en publicidad por anuncios iniciados (`HH:MM:SS`) | `Ad Time Spent / Ad Start` |
 | Promedio de Tiempo invertido en el capítulo | Tiempo invertido en el capítulo por inicios de capítulo (`HH:MM:SS`) | `Chapter Time Spent / Chapter Start` |

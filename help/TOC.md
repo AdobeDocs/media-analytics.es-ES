@@ -7,8 +7,8 @@ user-guide-description: Implementar medios de streaming. Incluye el SDK de medio
 sub-product: media analytics
 source-git-commit: 240fa48bdc738425e04cd29c27625c7dd612ff18
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '895'
+ht-degree: 97%
 
 ---
 

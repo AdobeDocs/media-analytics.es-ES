@@ -7,8 +7,8 @@ feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: c308dba2d7cf07b89bf124bd6e5f972c253c9f18
 workflow-type: tm+mt
-source-wordcount: '770'
-ht-degree: 93%
+source-wordcount: '719'
+ht-degree: 88%
 
 ---
 
@@ -91,7 +91,7 @@ Esta documentación abarca el seguimiento en la versión 2.x del SDK.
 
 1. **Actualización del valor del cabezal de reproducción**
 
-   Actualice la posición de `mediaUpdatePlayhead` varias veces cuando cambia el cabezal de reproducción. <br /> Para el vídeo bajo demanda (VOD), el valor se especifica segundos después del comienzo del elemento de medios. <br /> Para el streaming en directo, si el reproductor no proporciona información acerca de la duración del contenido, el valor se puede especificar como el número de segundos desde la medianoche (UTC) de ese día.
+   Actualice la posición de `mediaUpdatePlayhead` varias veces cuando cambia el cabezal de reproducción. <br /> Para el vídeo bajo demanda (VOD), el valor se especifica segundos después del comienzo del elemento de medios. <br /> Para el streaming en vivo, si el reproductor no proporciona información acerca de la duración del contenido, el valor se puede especificar como el número de segundos desde la medianoche (UTC) de ese día.
 
    ```
    ADBMobile().media.updatePlayhead(position)
@@ -99,9 +99,9 @@ Esta documentación abarca el seguimiento en la versión 2.x del SDK.
 
    >[!NOTE]
    >
-   >Tenga en cuenta lo siguiente al llamar a `media.updatePlayhead` API:
+   >Tenga en cuenta lo siguiente al llamar a la API `media.updatePlayhead`:
    >* Cuando se utilizan marcadores de progreso, la duración del contenido es obligatoria y el cabezal de reproducción debe actualizarse como número de segundos desde el principio del elemento de medios, empezando por 0.
-   >* Al utilizar los SDK de medios, debe llamar a la variable `media.updatePlayhead` API al menos una vez por segundo.
+   >* Al utilizar los SDK de medios, debe llamar a la API `media.updatePlayhead` al menos una vez por segundo.
 
 1. **Realizar un seguimiento de la finalización de la reproducción**
 

@@ -1,18 +1,18 @@
 ---
-title: Explicación de la configuración de privacidad y exclusión
+title: Explicación de privacidad y exclusión
 description: Cómo gestionar la inclusión, la exclusión y la privacidad.
 uuid: 7e60c7bd-8dba-4c7a-9c3c-0c634b815397
 exl-id: 64f5ef2b-7850-43d8-8f32-3d008ea4f156
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '385'
+workflow-type: tm+mt
+source-wordcount: '374'
 ht-degree: 100%
 
 ---
 
-# Configuración de privacidad y exclusión {#opt-out-and-privacy}
+# Privacidad y exclusión {#opt-out-and-privacy}
 
 ## Inclusión/Exclusión {#opt-out-opt-in}
 
@@ -22,11 +22,11 @@ Puede controlar si se permite el seguimiento de la actividad en un dispositivo d
 * **Aplicaciones JavaScript/de explorador**: la biblioteca de VA respeta la configuración de privacidad y exclusión de `VisitorAPI`. Para desactivar el seguimiento, debe desactivar el servicio API del visitante. Para obtener más información sobre la exclusión y privacidad, consulte [Servicio de identidad de Adobe Experience Platform.](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=es)
 * **Aplicaciones OTT (Chromecast, Roku):** Los SDK de OTT proporcionan API preparadas para el Reglamento general de protección de datos (RGPD) que le permiten establecer indicadores de estado `opt` para la recopilación y la transmisión de datos y sacar identidades almacenadas localmente.
 
-   >[!NOTE]
-   >
-   >Las llamadas de seguimiento de Heartbeat de contenido también se desactivan si se establece la exclusión como estado de privacidad.
+  >[!NOTE]
+  >
+  >Las llamadas de seguimiento de Heartbeat de contenido también se desactivan si se establece la exclusión como estado de privacidad.
 
-   Puede controlar si los datos de Analytics se envían en un dispositivo específico mediante la configuración siguiente:
+  Puede controlar si los datos de Analytics se envían en un dispositivo específico mediante la configuración siguiente:
 
    * La configuración `privacyDefault` del archivo de configuración `ADBMobile.json` Este ajuste controla la configuración inicial que persiste hasta que se cambia en el código.
 
@@ -36,46 +36,49 @@ Puede controlar si se permite el seguimiento de la actividad en un dispositivo d
 
          * **Chromecast:**
 
-                ```
-                ADBMobile.config.setPrivacyStatus(ADBMobile.config.PRIVACY_STATUS_OPT_OUT)
-                ```
-            
+               ```
+               ADBMobile.config.setPrivacyStatus(ADBMobile.config.PRIVACY_STATUS_OPT_OUT)
+               ```
+           
          * **Roku:**
 
-                ```
-                ADBMobile().setPrivacyStatus(ADBMobile().PRIVACY_STATUS_OPT_OUT)
-                ```
-            
-            >[!IMPORTANT]
-            >
-            >Cuando un usuario se excluye del seguimiento, todos los datos e ID del dispositivo persistente se purgarán hasta que el usuario decida volver a entrar.
+               ```
+               ADBMobile().setPrivacyStatus(ADBMobile().PRIVACY_STATUS_OPT_OUT)
+               ```
+           
+           >[!IMPORTANT]
+           >
+           >Cuando un usuario se excluye del seguimiento, todos los datos e ID del dispositivo persistente se purgarán hasta que el usuario decida volver a entrar.
+
       * **Volver a activar:**
 
          * **Chromecast:**
 
-                ```
-                ADBMobile.config.setPrivacyStatus(ADBMobile.config.PRIVACY_STATUS_OPT_IN)
-                ```
-            
+               ```
+               ADBMobile.config.setPrivacyStatus(ADBMobile.config.PRIVACY_STATUS_OPT_IN)
+               ```
+           
          * **Roku:**
 
-                ```
-                ADBMobile().setPrivacyStatus(ADBMobile().PRIVACY_STATUS_OPT_IN)
-                ```
-            * **Devuelve la configuración actual:**
+               ```
+               ADBMobile().setPrivacyStatus(ADBMobile().PRIVACY_STATUS_OPT_IN)
+               ```
+           
+      * **Devuelve la configuración actual:**
 
          * **Chromecast:**
 
-                ```
-                ADBMobile.config.getPrivacyStatus()
-                ```
-            
+               ```
+               ADBMobile.config.getPrivacyStatus()
+               ```
+           
          * **Roku:**
 
-                ```
-                ADBMobile().getPrivacyStatus()
-                ```
-            Después de cambiar la configuración de privacidad mediante el uso de `setPrivacyStatus`, el cambio es permanente hasta que se vuelva a modificar con este método o bien se desinstale y se vuelva a instalar la aplicación completamente.
+               ```
+               ADBMobile().getPrivacyStatus()
+               ```
+           
+  Después de cambiar la configuración de privacidad mediante el uso de `setPrivacyStatus`, el cambio es permanente hasta que se vuelva a modificar con este método o bien se desinstale y se vuelva a instalar la aplicación completamente.
 
 ## Recuperación de identificadores almacenados (aplicaciones OTT) {#retrieving-stored-identifiers-ott-apps}
 
@@ -98,12 +101,12 @@ Por ejemplo:
 
 * **Chromecast:**
 
-   ```
-   ADBMobile.config.getAllIdentifiersAsync(callback)
-   ```
+  ```
+  ADBMobile.config.getAllIdentifiersAsync(callback)
+  ```
 
 * **Roku:**
 
-   ```
-   vids = ADBMobile().getAllIdentifiers()
-   ```
+  ```
+  vids = ADBMobile().getAllIdentifiers()
+  ```

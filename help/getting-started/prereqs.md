@@ -16,8 +16,8 @@ ht-degree: 62%
 
 Antes de empezar a implementar el complemento Recopilación de medios de streaming de Adobe, complete las siguientes tareas:
 
-1. **Revise la información general del complemento de recopilación de medios de streaming**<br>
-Antes de empezar a implementar el complemento de recopilación de medios de streaming, revise las [Información general del complemento de recopilación de medios de streaming](/help/media-overview.md) para asegurarse de que satisfaga sus necesidades.
+1. **Revisar la información general del complemento de recopilación de medios de streaming**<br>
+Antes de comenzar a implementar el complemento de recopilación de medios de streaming, revise la [descripción general del complemento de recopilación de medios de streaming](/help/media-overview.md) para asegurarse de que cumpla con sus necesidades.
 
 1. **Confirmar el modelo de precios**<br>
 El modelo de precios actual para el complemento de recopilación de medios de streaming de Adobe se basa en las transmisiones de vídeo. Si es necesario, póngase en contacto con su representante de ventas o con el equipo de cuenta de Adobe, ya que el complemento se vende por separado para Adobe Analytics y Adobe Experience Platform.

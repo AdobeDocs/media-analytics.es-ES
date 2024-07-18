@@ -19,7 +19,7 @@ El siguiente gráfico ilustra cómo se puede implementar el complemento Recopila
 
 ![Flujo de trabajo de CJA](assets/streaming-media-edge.png)
 
-Para obtener una descripción general de todas las opciones de implementación, incluidos los métodos de implementación que no utilizan Experience Platform Edge, consulte [Implementación del complemento de recopilación de medios de streaming](/help/implementation/overview.md).
+Para obtener una descripción general de todas las opciones de implementación, incluidos los métodos de implementación que no utilizan Experience Platform Edge, consulte [Implementar el complemento de recopilación de medios de streaming](/help/implementation/overview.md).
 
 Independientemente de si utiliza el SDK web de Adobe Experience Platform, el SDK móvil de Adobe Experience Platform, el SDK de Adobe Experience Platform Roku o la API para implementar el complemento de recopilación de medios de streaming con Experience Edge, primero debe completar las secciones siguientes:
 
@@ -33,131 +33,131 @@ Para crear y configurar un esquema:
 
 1. En la página Detalles del esquema al crear el esquema, elija [!UICONTROL **Evento de experiencia**] al elegir la clase base para el esquema.
 
-   ![Grupos de campos añadidos](assets/schema-experience-event.png)
+   ![Se agregaron grupos de campos](assets/schema-experience-event.png)
 
 1. Seleccione [!UICONTROL **Siguiente**].
 
-1. Especifique un nombre para mostrar y una descripción del esquema y, a continuación, seleccione [!UICONTROL **Finalizar**].
+1. Especifique un nombre para mostrar y una descripción de esquema y, a continuación, seleccione [!UICONTROL **Finalizar**].
 
-1. En el [!UICONTROL **Composición**] , en el [!UICONTROL **Grupos de campos**] , seleccione [!UICONTROL **Añadir**], luego busque y agregue los siguientes grupos de campos nuevos al esquema:
+1. En el área [!UICONTROL **Composición**], en la sección [!UICONTROL **Grupos de campos**], seleccione [!UICONTROL **Agregar**] y, a continuación, busque y agregue los siguientes grupos de campos nuevos al esquema:
    * `Adobe Analytics ExperienceEvent Template`
    * `Implementation Details`
    * `MediaAnalytics Interaction Details`
 
-   Después de agregar los grupos de campos, deben mostrarse en la variable [!UICONTROL **Grupos de campos**] , como se indica a continuación:
+   Después de agregar los grupos de campos, deben mostrarse en la sección [!UICONTROL **Grupos de campos**] de la siguiente manera:
 
-   ![Grupos de campos añadidos](assets/schema-field-groups-added.png)
+   ![Se agregaron grupos de campos](assets/schema-field-groups-added.png)
 
-1. Seleccionar [!UICONTROL **Guardar**] para guardar los cambios.
+1. Seleccione [!UICONTROL **Guardar**] para guardar los cambios.
 
-1. (Opcional) Puede ocultar determinados campos que no utiliza la API de Media Edge. Al ocultar estos campos, el esquema es más fácil de leer y comprender, pero no es obligatorio. Estos campos solo hacen referencia a los del `MediaAnalytics Interaction Details` grupo de campo.
+1. (Opcional) Puede ocultar determinados campos que no utiliza la API de Media Edge. Al ocultar estos campos, el esquema es más fácil de leer y comprender, pero no es obligatorio. Estos campos solo hacen referencia a los del grupo de campos `MediaAnalytics Interaction Details`.
 
 +++ Amplíe aquí para ver las instrucciones de los campos que puede ocultar.
 
-   1. En el [!UICONTROL **Estructura**] , seleccione la `Media Collection Details` , luego seleccione [!UICONTROL **Administrar campos relacionados**].
+   1. En el área [!UICONTROL **Estructura**], seleccione el campo `Media Collection Details` y luego seleccione [!UICONTROL **Administrar campos relacionados**].
 
-      ![manage-related-fields](assets/manage-related-fields.png)
+      ![administrar campos relacionados](assets/manage-related-fields.png)
 
-   1. Active la opción para lo siguiente [!UICONTROL **Mostrar nombres para mostrar para campos**], luego actualice el esquema como se indica a continuación:
+   1. Habilite la opción para [!UICONTROL **Mostrar nombres para mostrar en los campos**] y, a continuación, actualice el esquema de la siguiente manera:
 
-      * En el `Media Collection Details` > `Advertising Details` , oculte los siguientes campos de informe: `Ad Completed`, `Ad Started`, y `Ad Time Played`.
+      * En el campo `Media Collection Details` > `Advertising Details`, oculte los siguientes campos de informe: `Ad Completed`, `Ad Started` y `Ad Time Played`.
 
-      * En el `Media Collection Details` > `Advertising Pod Details` , oculte el siguiente campo de informe: `Ad Break ID`
+      * En el campo `Media Collection Details` > `Advertising Pod Details`, oculte el siguiente campo de informe: `Ad Break ID`
 
-      * En el `Media Collection Details` > `Chapter Details` , oculte los siguientes campos de informe: `Chapter Completed`, `Chapter ID`, `Chapter Started`, y `Chapter Time Played`.
+      * En el campo `Media Collection Details` > `Chapter Details`, oculte los siguientes campos de informe: `Chapter Completed`, `Chapter ID`, `Chapter Started` y `Chapter Time Played`.
 
-      * En el `Media Collection Details` , oculte el campo `List Of States` field.
+      * En el campo `Media Collection Details`, oculte el campo `List Of States`.
 
-        ![ocultar estados de recopilación de medios](assets/schema-hide-media-collection-states.png)
+        ![ocultar estados de colección de medios](assets/schema-hide-media-collection-states.png)
 
-      * En el `Media Collection Details` > `List Of States End` y `Media Collection Details` > `List Of States Start` , oculte los siguientes campos de informe: `Player State Count`, `Player State Set`, y `Player State Time`.
+      * En el campo `Media Collection Details` > `List Of States End` y `Media Collection Details` > `List Of States Start`, oculte los siguientes campos de informe: `Player State Count`, `Player State Set` y `Player State Time`.
 
         ![campos para ocultar](assets/schema-hide-listofstates.png)
 
-      * En el `Media Collection Details` > `Qoe Data Details` , oculte los siguientes campos de informe: `Average Bitrate`, `Average Bitrate Bucket`, `Bitrate Change Impacted Streams`, `Bitrate Changes`, `Buffer Impacted Streams`, `Buffer Events`, `Dropped Frame Impacted Streams`, `Drops Before Starts`, `Errors`, `External Error IDs`, `Error Impacted Streams`, `Media SDK Error IDs`, `Player SDK Error IDs`, `Stalling Impacted Streams`, `Stalling Events`, `Total Buffer Duration`, y `Total Stalling Duration`.
+      * En el campo `Media Collection Details` > `Qoe Data Details`, oculte los siguientes campos de informe: `Average Bitrate`, `Average Bitrate Bucket`, `Bitrate Change Impacted Streams`, `Bitrate Changes`, `Buffer Impacted Streams`, `Buffer Events`, `Dropped Frame Impacted Streams`, `Drops Before Starts`, `Errors`, `External Error IDs`, `Error Impacted Streams`, `Media SDK Error IDs`, `Player SDK Error IDs`, `Stalling Impacted Streams`, `Stalling Events`, `Total Buffer Duration` y `Total Stalling Duration`.
 
-      * En el `Media Collection Details` > `Session Details` , oculte los siguientes campos de informe: `10% Progress Marker`, `25% Progress Marker`, `50% Progress Marker`, `75% Progress Marker`, `95% Progress Marker`, `Ad Count`, `Average Minute Audience`, `Content Completes`, `Chapter Count`, `Content Starts`, `Content Time Spent`, `Estimated Streams`, `Federated Data`, `Media Segment Views`, `Media Downloaded Flag`, `Media Starts`, `Media Session ID`, `Media Session Server Timeout`, `Media Time Spent`, `Pause Events`, `Pause Impacted Streams`, `Pev3`, `Pccr`, `Total Pause Duration`, `Unique Time Played`, y `Video Segment`.
+      * En el campo `Media Collection Details` > `Session Details`, oculte los siguientes campos de informe: `10% Progress Marker`, `25% Progress Marker`, `50% Progress Marker`, `75% Progress Marker`, `95% Progress Marker`, `Ad Count`, `Average Minute Audience`, `Content Completes`, `Chapter Count`, `Content Starts`, `Content Time Spent`, `Estimated Streams`, `Federated Data`, `Media Segment Views`, `Media Downloaded Flag`, `Media Starts`, `Media Session ID`, `Media Session Server Timeout`, `Media Time Spent`, `Pause Events`, `Pause Impacted Streams`, `Pev3`, `Pccr`, 25}, `Unique Time Played` y `Video Segment`.`Total Pause Duration`
 
-   1. Seleccionar [!UICONTROL **Confirmar**] para guardar los cambios.
+   1. Seleccione [!UICONTROL **Confirmar**] para guardar los cambios.
 
-   1. En el [!UICONTROL **Estructura**] , active la opción para [!UICONTROL **Mostrar nombres para mostrar para campos**], luego seleccione la `List Of Media Collection Downloaded Content Events` field.
+   1. En el área [!UICONTROL **Estructura**], habilite la opción para [!UICONTROL **Mostrar nombres para mostrar para los campos**] y, a continuación, seleccione el campo `List Of Media Collection Downloaded Content Events`.
 
-   1. Seleccionar [!UICONTROL **Administrar campos relacionados**], luego actualice el esquema como se indica a continuación:
+   1. Seleccione [!UICONTROL **Administrar campos relacionados**] y, a continuación, actualice el esquema de la siguiente manera:
 
 
-      * En el `List Of Media Collection Downloaded Content Events` > `Media Details` > `Advertising Details` , oculte los siguientes campos de informe: `Ad Completed`, `Ad Started`, y `Ad Time Played`.
+      * En el campo `List Of Media Collection Downloaded Content Events` > `Media Details` > `Advertising Details`, oculte los siguientes campos de informe: `Ad Completed`, `Ad Started` y `Ad Time Played`.
 
-      * En el `List Of Media Collection Downloaded Content Events` > `Media Details` > `Advertising Pod Details` , oculte el siguiente campo de informe: `Ad Break ID`
+      * En el campo `List Of Media Collection Downloaded Content Events` > `Media Details` > `Advertising Pod Details`, oculte el siguiente campo de informe: `Ad Break ID`
 
-      * En el `List Of Media Collection Downloaded Content Events` > `Media Details` > `Chapter Details` , oculte los siguientes campos de informe: `Chapter Completed`, `Chapter ID`, `Chapter Started`, y `Chapter Time Played`.
+      * En el campo `List Of Media Collection Downloaded Content Events` > `Media Details` > `Chapter Details`, oculte los siguientes campos de informe: `Chapter Completed`, `Chapter ID`, `Chapter Started` y `Chapter Time Played`.
 
-      * En el `List Of Media Collection Downloaded Content Events` > `Media Details` , oculte el campo `List Of States` field.
+      * En el campo `List Of Media Collection Downloaded Content Events` > `Media Details`, oculte el campo `List Of States`.
 
-      * En el `List Of Media Collection Downloaded Content Events` > `Media Details` > `List Of States End` y `Media Collection Details` > `List Of States Start` , oculte los siguientes campos de informe: `Player State Count`, `Player State Set`, y `Player State Time`.
+      * En el campo `List Of Media Collection Downloaded Content Events` > `Media Details` > `List Of States End` y `Media Collection Details` > `List Of States Start`, oculte los siguientes campos de informe: `Player State Count`, `Player State Set` y `Player State Time`.
 
-      * En el `List Of Media Collection Downloaded Content Events` > `Media Details` > `Qoe Data Details` , oculte los siguientes campos de informe: `Average Bitrate`, `Average Bitrate Bucket`, `Bitrate Change Impacted Streams`, `Bitrate Changes`, `Buffer Events`, `Buffer Impacted Streams`, `Drops Before Starts`, `Dropped Frame Impacted Streams`, `Error Impacted Streams`, `Errors`, `External Error IDs`, `Media SDK Error IDs`, `Player SDK Error IDs`, `Stalling Events`, `Stalling Impacted Streams`, `Total Buffer Duration`, y `Total Stalling Duration`.
+      * En el campo `List Of Media Collection Downloaded Content Events` > `Media Details` > `Qoe Data Details`, oculte los siguientes campos de informe: `Average Bitrate`, `Average Bitrate Bucket`, `Bitrate Change Impacted Streams`, `Bitrate Changes`, `Buffer Events`, `Buffer Impacted Streams`, `Drops Before Starts`, `Dropped Frame Impacted Streams`, `Error Impacted Streams`, `Errors`, `External Error IDs`, `Media SDK Error IDs`, `Player SDK Error IDs`, `Stalling Events`, `Stalling Impacted Streams`, `Total Buffer Duration` y `Total Stalling Duration`.
 
-      * En el `List Of Media Collection Downloaded Content Events` > `Media Details` > `Session Details` , oculte los siguientes campos de informe: `10% Progress Marker`, `25% Progress Marker`, `50% Progress Marker`, `75% Progress Marker`, `95% Progress Marker`, `Ad Count`, `Average Minute Audience`, `Chapter Count`, `Content Completes`, `Content Starts`, `Content Time Spent`, `Estimated Streams`, `Federated Data`, `Media Downloaded Flag`, `Media Segment Views`, `Media Session ID`, `Media Session Server Timeout`, `Media Starts`, `Media Time Spent`, `Pause Events`, `Pause Impacted Streams`, `Pccr`, `Pev3`, `Total Pause Duration`, `Unique Time Played`, y `Video Segment`.
+      * En el campo `List Of Media Collection Downloaded Content Events` > `Media Details` > `Session Details`, oculte los siguientes campos de informe: `10% Progress Marker`, `25% Progress Marker`, `50% Progress Marker`, `75% Progress Marker`, `95% Progress Marker`, `Ad Count`, `Average Minute Audience`, `Chapter Count`, `Content Completes`, `Content Starts`, `Content Time Spent`, `Estimated Streams`, `Federated Data`, `Media Downloaded Flag`, `Media Segment Views`, `Media Session ID`, `Media Session Server Timeout`, `Media Starts`, `Media Time Spent`, `Pause Events`, `Pause Impacted Streams`, `Pccr`, 25}, `Total Pause Duration`, `Unique Time Played` y `Video Segment`.`Pev3`
 
-      * En el `List Of Media Collection Downloaded Content Events` > `Media Details`  , oculte el campo `Media Session ID` field.
+      * En el campo `List Of Media Collection Downloaded Content Events` > `Media Details`, oculte el campo `Media Session ID`.
 
-   1. Seleccionar [!UICONTROL **Confirmar**] para guardar los cambios.
+   1. Seleccione [!UICONTROL **Confirmar**] para guardar los cambios.
 
-   1. En el [!UICONTROL **Estructura**] , seleccione la `Media Reporting Details` , seleccione [!UICONTROL **Administrar campos relacionados**].
+   1. En el área [!UICONTROL **Estructura**], seleccione el campo `Media Reporting Details` y seleccione [!UICONTROL **Administrar campos relacionados**].
 
-   1. Active la opción para lo siguiente [!UICONTROL **Mostrar nombres para mostrar para campos**], luego actualice el esquema como se indica a continuación:
+   1. Habilite la opción para [!UICONTROL **Mostrar nombres para mostrar en los campos**] y, a continuación, actualice el esquema de la siguiente manera:
 
-      * En el `Media Reporting Details` , oculte los campos siguientes: `Error Details`, `List Of States End`, `List of States Start`, y `Media Session ID`.
+      * En el campo `Media Reporting Details`, oculte los campos siguientes: `Error Details`, `List Of States End`, `List of States Start` y `Media Session ID`.
 
-   1. Seleccionar [!UICONTROL **Confirmar**] > [!UICONTROL **Guardar**]  para guardar los cambios.
+   1. Seleccione [!UICONTROL **Confirmar**] > [!UICONTROL **Guardar**] para guardar los cambios.
 
-1. Continuar con [Crear un conjunto de datos en Adobe Experience Platform](#create-a-dataset-in-adobe-experience-platform).
+1. Continúe con [Crear un conjunto de datos en Adobe Experience Platform](#create-a-dataset-in-adobe-experience-platform).
 
 ## Crear un conjunto de datos en Adobe Experience Platform
 
-1. Asegúrese de configurar un esquema como se describe en [Configuración del esquema en Adobe Experience Platform](#set-up-the-schema-in-adobe-experience-platform).
+1. Asegúrese de configurar un esquema como se describe en [Configurar el esquema en Adobe Experience Platform](#set-up-the-schema-in-adobe-experience-platform).
 
-1. En Adobe Experience Platform, empiece a crear el conjunto de datos como se describe en [Guía de IU de conjuntos de datos](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html?lang=es#create).
+1. En Adobe Experience Platform, empiece a crear el conjunto de datos como se describe en [Guía de la interfaz de usuario de conjuntos de datos](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html?lang=es#create).
 
-   Al seleccionar un esquema para el conjunto de datos, elija el esquema que creó anteriormente, tal como se describe en [Configuración del esquema en Adobe Experience Platform](#set-up-the-schema-in-adobe-experience-platform).
+   Al seleccionar un esquema para su conjunto de datos, elija el esquema que creó anteriormente, tal como se describe en [Configurar el esquema en Adobe Experience Platform](#set-up-the-schema-in-adobe-experience-platform).
 
-1. Continuar con [Configuración de una secuencia de datos en Customer Journey Analytics](#configure-a-datastream-in-adobe-experience-platform).
+1. Continúe con [Configuración de una secuencia de datos en el Customer Journey Analytics](#configure-a-datastream-in-adobe-experience-platform).
 
 ## Configuración de una secuencia de datos en Adobe Experience Platform
 
-1. Asegúrese de haber creado un conjunto de datos como se describe en [Crear un conjunto de datos en Adobe Experience Platform](#create-a-dataset-in-adobe-experience-platform).
+1. Asegúrese de crear un conjunto de datos como se describe en [Crear un conjunto de datos en Adobe Experience Platform](#create-a-dataset-in-adobe-experience-platform).
 
-1. Cree una nueva secuencia de datos como se describe en [Configuración de una secuencia de datos](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html?lang=es).
+1. Cree una nueva secuencia de datos como se describe en [Configurar una secuencia de datos](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html?lang=es).
 
    Al crear la secuencia de datos, asegúrese de realizar las siguientes selecciones de configuración:
 
-   * En el [!UICONTROL **Esquema de evento**] al crear la secuencia de datos, asegúrese de seleccionar el esquema que creó en [Configuración del esquema en Adobe Experience Platform](#set-up-the-schema-in-adobe-experience-platform). Seleccione [!UICONTROL **Guardar**].
+   * En el campo [!UICONTROL **Esquema de evento**] al crear la secuencia de datos, asegúrese de seleccionar el esquema que creó en [Configurar el esquema en Adobe Experience Platform](#set-up-the-schema-in-adobe-experience-platform). Seleccione [!UICONTROL **Guardar**].
 
      >[!IMPORTANT]
      >
-         > No seleccionar [!UICONTROL **Guardar y agregar asignación**] porque, de hacerlo, se producirán errores de asignación para el campo Marca de tiempo.
+         >     No seleccione [!UICONTROL **Guardar y agregar asignación**] porque si lo hace se producirán errores de asignación para el campo Marca de tiempo.
      
-     ![Cree una secuencia de datos y seleccione un esquema](assets/datastream-create-schema.png)
+     ![Crear secuencia de datos y seleccionar esquema](assets/datastream-create-schema.png)
 
    * Agregue cualquiera de los siguientes servicios al conjunto de datos, en función de si utiliza Adobe Analytics o Customer Journey Analytics:
 
-      * [!UICONTROL **Adobe Analytics**] (si utiliza Adobe Analytics)
+      * [!UICONTROL **Adobe Analytics**] (si usa Adobe Analytics)
 
-        Si utiliza Adobe Analytics, asegúrese de definir un grupo de informes como se describe en [Crear un grupo de informes](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite).
+        Si usa Adobe Analytics, asegúrese de definir un grupo de informes, tal como se describe en [Crear un grupo de informes](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite).
 
-      * [!UICONTROL **Adobe Experience Platform**] (si se usa el Customer Journey Analytics)
+      * [!UICONTROL **Adobe Experience Platform**] (si usa el Customer Journey Analytics)
 
-     Para obtener información sobre cómo añadir un servicio a un conjunto de datos, consulte la sección Añadir servicios a un conjunto de datos en [Configuración de una secuencia de datos](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=en#view-details).
+     Para obtener información acerca de cómo agregar un servicio a un conjunto de datos, vea la sección &quot;Agregar servicios a un conjunto de datos&quot; en [Configurar un conjunto de datos](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=en#view-details).
 
-     ![Añadir el servicio de Adobe Analytics](assets/datastream-add-service.png)
+     ![Agregar el servicio Adobe Analytics](assets/datastream-add-service.png)
 
-   * Expandir [!UICONTROL **Opciones avanzadas**] y, a continuación, habilite la [!UICONTROL **Media Analytics**] opción.
+   * Expanda [!UICONTROL **Opciones avanzadas**] y, a continuación, habilite la opción [!UICONTROL **Media Analytics**].
 
-     ![Opción Media Analytics](assets/datastream-media-check.png)
+     ![Opción de Media Analytics](assets/datastream-media-check.png)
 
-1. Ya está listo para implementar el [API de Media Edge](/help/implementation/edge/implementation-edge-api.md) o [SDK de Media Edge](/help/implementation/edge/edge-mobile-sdk.md) para empezar a recopilar datos de media analytics.
+1. Ya está listo para implementar la [API de Media Edge](/help/implementation/edge/implementation-edge-api.md) o el [SDK de Media Edge](/help/implementation/edge/edge-mobile-sdk.md) para empezar a recopilar datos de análisis de medios.
 
-   Después de recopilar algunos datos, puede hacer lo siguiente [Crear una conexión en el Customer Journey Analytics](#create-a-connection-in-customer-journey-analytics).
+   Después de recopilar algunos datos, puede [Crear una conexión en el Customer Journey Analytics](#create-a-connection-in-customer-journey-analytics).
 
 ## Crear una conexión en Customer Journey Analytics
 
@@ -166,7 +166,7 @@ Para crear y configurar un esquema:
 >El siguiente procedimiento solo es necesario si utiliza Customer Journey Analytics.
 
 
-1. Asegúrese de haber creado un conjunto de datos como se describe en [Configuración de una secuencia de datos en Customer Journey Analytics](#configure-a-datastream-in-adobe-experience-platform).
+1. Asegúrese de crear una secuencia de datos como se describe en [Configuración de una secuencia de datos en el Customer Journey Analytics](#configure-a-datastream-in-adobe-experience-platform).
 
 1. En Customer Journey Analytics, cree una conexión como se describe en [Crear una conexión](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=es).
 
@@ -174,9 +174,9 @@ Para crear y configurar un esquema:
 
    1. Seleccione el conjunto de datos que creó anteriormente, tal como se describe en [Crear un conjunto de datos en Adobe Experience Platform](#create-a-dataset-in-adobe-experience-platform).
 
-   1. Asegúrese de que la variable [!UICONTROL **Importar todos los datos nuevos**] La configuración está habilitada.
+   1. Asegúrese de que la opción [!UICONTROL **Importar todos los datos nuevos**] esté habilitada.
 
-1. Continuar con [Creación de una vista de datos en Customer Journey Analytics](#create-a-new-data-view-in-customer-journey-analytics).
+1. Continúe con [Crear una vista de datos en el Customer Journey Analytics](#create-a-new-data-view-in-customer-journey-analytics).
 
 ## Creación de una vista de datos en Customer Journey Analytics
 
@@ -184,19 +184,19 @@ Para crear y configurar un esquema:
 >
 >El siguiente procedimiento solo es necesario si utiliza Customer Journey Analytics.
 
-1. Asegúrese de haber creado una conexión en Customer Journey Analytics como se describe en [Crear una conexión en el Customer Journey Analytics](#create-a-connection-in-customer-journey-analytics).
+1. Asegúrese de crear una conexión en el Customer Journey Analytics como se describe en [Crear una conexión en el Customer Journey Analytics](#create-a-connection-in-customer-journey-analytics).
 
-1. En Customer Recorrido Analytics, cree una vista de datos como se describe en [Creación o edición de una vista de datos](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=es).
+1. En Customer Recorrido Analytics, cree una vista de datos como se describe en [Crear o editar una vista de datos](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=es).
 
    Al crear la vista de datos, se requieren las siguientes selecciones de configuración para implementar el complemento de recopilación de medios de streaming:
 
-   1. En el [!UICONTROL **Conexión**] , seleccione la conexión que creó anteriormente, tal como se describe en [Crear una conexión en el Customer Journey Analytics](#create-a-connection-in-customer-journey-analytics).
+   1. En el campo [!UICONTROL **Conexión**], seleccione la conexión que creó anteriormente, tal como se describe en [Crear una conexión en el Customer Journey Analytics](#create-a-connection-in-customer-journey-analytics).
 
       La conexión que ha creado puede tardar hasta 15 minutos en estar disponible para su selección.
 
-   1. En el [!UICONTROL **Componentes**] , en la pestaña [!UICONTROL **Campos de esquema**] , busque cada componente enumerado en las tablas siguientes y arrástrelo al [!UICONTROL **Métricas**] panel. Si existen varios campos con el mismo nombre, utilice la ruta XDM para asegurarse de que sea el campo correcto.
+   1. En la ficha [!UICONTROL **Componentes**], en la sección [!UICONTROL **Campos de esquema**], busque cada componente enumerado en las tablas siguientes y arrástrelo al panel [!UICONTROL **Métricas**]. Si existen varios campos con el mismo nombre, utilice la ruta XDM para asegurarse de que sea el campo correcto.
 
-      **Contenido principal: métricas de contenido**
+      **Contenido principal - Métricas de contenido**
 
       | Nombre del componente | Ruta de XDM |
       |----------|---------|
@@ -211,7 +211,7 @@ Para crear y configurar un esquema:
       | Promedio de audiencia por minuto | mediaReporting.sessionDetails.averageMinuteAudience |
 
 
-      **Capítulo y anuncios: métricas de capítulo y anuncios**
+      **Capítulo y anuncios - Métricas de capítulo y anuncios**
 
       | Nombre del componente | Ruta de XDM |
       |----------|---------|
@@ -223,7 +223,7 @@ Para crear y configurar un esquema:
       | Tiempo de reproducción del anuncio | mediaReporting.advertisingDetails.timePlayed |
 
 
-      **Métricas de QoE - QoE**
+      **QoE - métricas de QoE**
 
       | Nombre del componente | Ruta de XDM |
       |----------|---------|
@@ -239,7 +239,7 @@ Para crear y configurar un esquema:
       | Flujos afectados por la pérdida de cuadros | mediaReporting.qoeDataDetails.hasDroppedFrameImpactedStreams |
 
 
-      **Estado del reproductor: métricas de estado del reproductor**
+      **Estado del reproductor - Métricas de estado del reproductor**
 
       | Nombre del componente | Ruta de XDM |
       |----------|---------|
@@ -248,7 +248,7 @@ Para crear y configurar un esquema:
       | Hora de estado del reproductor | mediaReporting.states.time |
 
 
-   1. Actualice las etiquetas (en el [!UICONTROL **Etiquetas de contexto**] menú desplegable) para los componentes de la siguiente tabla. Busque y arrastre cualquier componente que no esté ya en el panel de métricas al panel.
+   1. Actualice las etiquetas (en el menú desplegable [!UICONTROL **Context labels**]) de los componentes de la siguiente tabla. Busque y arrastre cualquier componente que no esté ya en el panel de métricas al panel.
 
       | Nombre del componente | Etiqueta de contexto |
       |---------|----------|
@@ -258,7 +258,7 @@ Para crear y configurar un esquema:
       | Tiempo para el inicio | Medios: tiempo para el inicio |
       | Duración de la pausa | Medios: Duración total de la pausa |
 
-   1. Para agregar desgloses al proyecto de Customer Journey Analytics, agregue las siguientes dimensiones al [!UICONTROL **Dimension**] panel:
+   1. Para agregar desgloses al proyecto de Customer Journey Analytics, agregue las siguientes dimensiones al panel [!UICONTROL **Dimension**]:
 
       | Ruta de XDM | Nombre del componente |
       |---------|----------|
@@ -267,47 +267,47 @@ Para crear y configurar un esquema:
 
       Además de las dimensiones de esta tabla, puede agregar cualquier otra dimensión que desee que esté disponible para filtrar datos en proyectos de Customer Journey Analytics.
 
-1. Seleccionar [!UICONTROL **Guardar y continuar**] > [!UICONTROL **Guardar y finalizar**] para guardar los cambios.
+1. Seleccione [!UICONTROL **Guardar y continuar**] > [!UICONTROL **Guardar y finalizar**] para guardar los cambios.
 
-1. Continuar con [Creación y configuración de un proyecto en Customer Journey Analytics](#create-and-configure-a-project-in-customer-journey-analytics).
+1. Continúe con [Crear y configurar un proyecto en Customer Journey Analytics](#create-and-configure-a-project-in-customer-journey-analytics).
 
 ## Creación y configuración de un proyecto en Customer Journey Analytics
 
-1. Asegúrese de haber creado una vista de datos en Customer Journey Analytics como se describe en [Creación de una vista de datos en Customer Journey Analytics](#create-a-new-data-view-in-customer-journey-analytics).
+1. Asegúrese de haber creado una vista de datos en el Customer Journey Analytics como se describe en [Crear una vista de datos en el Customer Journey Analytics](#create-a-new-data-view-in-customer-journey-analytics).
 
-1. En Customer Journey Analytics, en la variable [!UICONTROL **Workspace**] , en la pestaña [!UICONTROL **Proyectos**] , seleccione [!UICONTROL **Crear proyecto**].
+1. En Customer Journey Analytics, en la ficha [!UICONTROL **Workspace**], en el área de [!UICONTROL **Proyectos**], seleccione [!UICONTROL **Crear proyecto**].
 
-1. Seleccionar [!UICONTROL **Proyecto en blanco**] > [!UICONTROL **Crear**].
+1. Seleccione [!UICONTROL **Proyecto en blanco**] > [!UICONTROL **Crear**].
 
 1. En el nuevo proyecto, seleccione la vista de datos que creó anteriormente.
 
-   Al crear paneles en el proyecto, puede utilizar cualquier componente que haya agregado a la vista de datos, tal como se describe en [Creación de una vista de datos en Customer Journey Analytics](#create-a-new-data-view-in-customer-journey-analytics).
+   Al crear paneles en el proyecto, puede utilizar cualquier componente que haya agregado a la vista de datos, tal como se describe en [Crear una vista de datos en el Customer Journey Analytics](#create-a-new-data-view-in-customer-journey-analytics).
 
    Los siguientes 4 paneles son ejemplos de paneles que puede crear:
 
    ![Panel de contenido principal](assets/main-content-panel.png)
 
-   ![Panel Capítulo y anuncios](assets/chapter-and-ads-panel.png)
+   ![Capítulo y panel de anuncios](assets/chapter-and-ads-panel.png)
 
    ![Panel QoE](assets/qoe-panel.png)
 
-   ![Panel Estado de Plater](assets/player-state-panel.png)
+   ![Panel de estado de Plater](assets/player-state-panel.png)
 
-1. Seleccione el **Paneles** en el carril izquierdo y, a continuación, arrastre el [!UICONTROL **Espectadores simultáneos de medios**] y el panel [!UICONTROL **Tiempo invertido en la reproducción de contenido**] panel.
+1. Seleccione el icono **Paneles** en el carril izquierdo y, a continuación, arrastre el panel [!UICONTROL **Visualizadores simultáneos de medios**] y el panel [!UICONTROL **Tiempo invertido en la reproducción de medios**].
 
    Los dos paneles deben tener un aspecto similar al siguiente:
 
    ![Panel de visualizadores simultáneos de medios](assets/media-concurrent-viewers-panels.png)
 
-   ![Panel Tiempo invertido en la reproducción de medios](assets/media-playback-time-spent-panels.png)
+   ![Panel de tiempo invertido en la reproducción de medios](assets/media-playback-time-spent-panels.png)
 
-1. Comparta el proyecto tal como se describe en [Compartir proyectos](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/share-projects.html?lang=en).
+1. Comparta el proyecto como se describe en [Compartir proyectos](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/share-projects.html?lang=en).
 
    >[!NOTE]
    >
    >   Si los usuarios con los que desea compartir no están disponibles, asegúrese de que los usuarios tengan acceso de usuario y administrador a Customer Journey Analytics en Adobe Admin Console.
 
-1. Continuar con [Envío de datos al Experience Platform Edge](#send-data-to-experience-platform-edge).
+1. Continuar con [Enviar datos al Experience Platform Edge](#send-data-to-experience-platform-edge).
 
 ## Envío de datos al Experience Platform Edge
 
@@ -319,7 +319,7 @@ Según el tipo de datos que desee enviar a Experience Platform Edge, puede utili
 
 * [Envío de datos web a Edge con el SDK web de Adobe Experience Platform](/help/implementation/edge/edge-web-sdk.md)
 
-* [Migrar a medios de streaming de Adobe para la extensión de Edge Network](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/migration-guide/)
+* [Migrar a medios de transmisión por Adobe para la extensión de Edge Network](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/migration-guide/)
 
 ### Móvil: usar el SDK de Adobe Experience Platform Mobile
 
@@ -329,7 +329,7 @@ Utilice los siguientes recursos de documentación para completar la implementaci
 
 * [Referencia de API](https://developer.adobe.com/client-sdks/documentation/media-for-edge-network/api-reference/)
 
-* [Migrar a medios de streaming de Adobe para la extensión de Edge Network](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/migration-guide/)
+* [Migrar a medios de transmisión por Adobe para la extensión de Edge Network](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/migration-guide/)
 
 ### Roku: SDK de Adobe Experience Platform Roku
 
@@ -337,7 +337,7 @@ Utilice los siguientes recursos de documentación para completar la implementaci
 
 * [SDK de Adobe Experience Platform Roku](https://github.com/adobe/aepsdk-roku/tree/main)
 
-* [Migrar a medios de streaming de Adobe para la extensión de Edge Network](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/migration-guide/) <!-- is the information here also applicable for Roku? -->
+* [Migrar a medios de transmisión por Adobe para la extensión de Edge Network](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/migration-guide/) <!-- is the information here also applicable for Roku? -->
 
 ### API: web y otros
 
@@ -347,7 +347,7 @@ La API también está disponible si desea utilizar una implementación personali
 
 Para obtener más información sobre la API de Media Edge, consulte los siguientes recursos:
 
-* [Información general de API de Media Edge](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/media-edge-apis/overview.html)
+* [Resumen de la API de Media Edge](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/media-edge-apis/overview.html)
 
 * [Introducción a la API de Media Edge](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/media-edge-apis/getting-started.html)
 

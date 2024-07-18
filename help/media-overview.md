@@ -68,4 +68,4 @@ Una vez finalizada la sesión de reproducción, los datos de seguimiento calcula
 >Con las implementaciones de Customer Journey Analytics, los datos se pueden enviar a Customer Journey Analytics mediante Experience Edge o mediante el conector de datos de Analytics (ADC).
 
 
-Para obtener información detallada sobre los distintos métodos de implementación, consulte [Implementación del complemento de recopilación de medios de streaming para Adobe Analytics o Customer Journey Analytics](/help/implementation/overview.md).
+Para obtener información detallada sobre los distintos métodos de implementación, consulte [Implementar el complemento de recopilación de medios de streaming para Adobe Analytics o Customer Journey Analytics](/help/implementation/overview.md).

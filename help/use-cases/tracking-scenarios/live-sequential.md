@@ -6,9 +6,9 @@ exl-id: 277a72b8-453b-41e5-b640-65c43587baf8
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '520'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '526'
+ht-degree: 97%
 
 ---
 
@@ -24,11 +24,11 @@ Este es el mismo escenario que el de [reproducción de VOD sin anuncios](/help/u
 | --- | --- | --- | --- |
 | El usuario hace clic en [!UICONTROL Reproducir]. | trackSessionStart | Inicio del contenido de Analytics, inicio del contenido de Heartbeat | La biblioteca de medición no sabe que hay un anuncio previo a la emisión, por lo que las llamadas de red son idénticas a las del escenario de [Reproducción de VOD sin anuncios](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md). |
 | Se reproduce el primer fotograma de contenido. | trackPlay | Reproducción del contenido de Heartbeat | Cuando el contenido del capítulo se reproduce antes del contenido principal, Heartbeats se iniciará cuando el capítulo comience a reproducirse. |
-| Se reproduce el contenido |  | Latidos de contenido | Esta llamada de red es exactamente la misma que la del escenario de [Reproducción de VOD sin anuncios](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md). |
-| Fin de la sesión 1 (el episodio 1 ha finalizado). | trackComplete / trackSessionEnd | Finalización de contenido de Heartbeat | Completo significa que la sesión 1 del primer episodio se ha alcanzado y se ha visto hasta el final. Antes de iniciar la sesión del episodio siguiente, esta sesión debe finalizar. |
-| Episodio 2 iniciado (inicio de la sesión 2). | trackSessionStart | Inicio del contenido de Analytics Inicio del contenido de Heartbeat | Esto se debe a que el usuario vio el primer episodio y luego siguió viendo otro |
+| Se reproduce el contenido | | Latidos de contenido | Esta llamada de red es exactamente la misma que la del escenario de [Reproducción de VOD sin anuncios](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md). |
+| Fin de sesión1 (el episodio 1 finalizó) | trackComplete / trackSessionEnd | Finalización de contenido de Heartbeat | Completo significa que la sesión 1 del primer episodio se ha alcanzado y se ha visto hasta el final. Antes de iniciar la sesión del episodio siguiente, esta sesión debe finalizar. |
+| Episodio 2 iniciado (inicio de la sesión 2) | trackSessionStart | Inicio de contenido de Analytics Inicio de contenido de Heartbeat | Esto se debe a que el usuario vio el primer episodio y luego siguió viendo otro |
 | 1º fotograma de contenido | trackPlay | Reproducción del contenido de Heartbeat | Este método desencadena el temporizador y, a partir de este momento, los latidos se envían cada 10 segundos durante la reproducción. |
-| Se reproduce el contenido |  | Latidos de contenido |  |
+| Se reproduce el contenido | | Latidos de contenido | |
 | Fin de sesión (el episodio 2 finalizó) | trackComplete / trackSessionEnd | Finalización de contenido de Heartbeat | Completo significa que la sesión 2 del segundo episodio se ha alcanzado y se ha visto hasta el final. Antes de iniciar la sesión del episodio siguiente, esta sesión debe finalizar. |
 
 ## Parámetros {#parameters}

@@ -6,8 +6,8 @@ feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: c308dba2d7cf07b89bf124bd6e5f972c253c9f18
 workflow-type: tm+mt
-source-wordcount: '755'
-ht-degree: 91%
+source-wordcount: '747'
+ht-degree: 87%
 
 ---
 
@@ -128,7 +128,7 @@ Esta documentación abarca el seguimiento en la versión 3.x del SDK.
 
 1. **Actualización de valor del cabezal de reproducción**
 
-   Cuando el cabezal de reproducción de contenido cambie, notifique al SDK llamando a la función `mediaUpdatePlayhead` API. <br /> Para el vídeo bajo demanda (VOD), el valor se especifica segundos después del comienzo del elemento de medios. <br /> Para el streaming en directo, si el reproductor no proporciona información acerca de la duración del contenido, el valor se puede especificar como el número de segundos desde la medianoche (UTC) de ese día.
+   Cuando el cabezal de reproducción de contenido cambie, notifique al SDK llamando a la API `mediaUpdatePlayhead`. <br /> Para el vídeo bajo demanda (VOD), el valor se especifica segundos después del comienzo del elemento de medios. <br /> Para el streaming en vivo, si el reproductor no proporciona información acerca de la duración del contenido, el valor se puede especificar como el número de segundos desde la medianoche (UTC) de ese día.
 
    ```
    tracker.updatePlayhead(position)
@@ -136,9 +136,9 @@ Esta documentación abarca el seguimiento en la versión 3.x del SDK.
 
    >[!NOTE]
    >
-   >Tenga en cuenta lo siguiente al llamar a `tracker.updatePlayhead` API:
+   >Tenga en cuenta lo siguiente al llamar a la API `tracker.updatePlayhead`:
    >* Cuando se utilizan marcadores de progreso, la duración del contenido es obligatoria y el cabezal de reproducción debe actualizarse como número de segundos desde el principio del elemento de medios, empezando por 0.
-   >* Al utilizar los SDK de medios, debe llamar a la variable `tracker.updatePlayhead` API al menos una vez por segundo.
+   >* Al utilizar los SDK de medios, debe llamar a la API `tracker.updatePlayhead` al menos una vez por segundo.
 
 1. **Realizar un seguimiento de la finalización de la reproducción**
 

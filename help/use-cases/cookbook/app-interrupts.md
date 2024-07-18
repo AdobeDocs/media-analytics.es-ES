@@ -21,7 +21,7 @@ La reproducción en una aplicación multimedia puede interrumpirse de varias for
 
 >[!NOTE]
 >
->Llamando `trackSessionStart` cuando la aplicación vuelve del fondo, la reproducción hasta ese punto puede no contar para el tiempo total de reproducción, además de perder marcadores de progreso, segmentos, etc. anteriores. En su lugar, invoque `trackPlay` cuando la aplicación vuelva o se reanude la reproducción de contenido.
+>Llamar a `trackSessionStart` cuando la aplicación vuelve del segundo plano puede ocasionar que la reproducción hasta ese punto no se tenga en cuenta para el tiempo total de reproducción, además de la pérdida de marcadores de progreso, segmentos, etc. anteriores. En su lugar, invoque `trackPlay` cuando la aplicación vuelva o se reanude la reproducción de contenido.
 
 ## Preguntas frecuentes sobre la administración de interrupciones de aplicaciones: {#faq-about-handling-application-interrupts}
 

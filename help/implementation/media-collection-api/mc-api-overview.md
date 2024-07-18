@@ -17,7 +17,7 @@ ht-degree: 93%
 
 La API de recopilación de medios es la alternativa RESTful de Adobe al SDK de medios del lado del cliente. Con la API de recopilación de medios, el reproductor puede realizar el seguimiento de eventos de audio y vídeo mediante llamadas HTTP RESTful.
 
-La API de recopilación de medios es esencialmente un adaptador que actúa como una versión del SDK de medios en el lado del servidor. Eso significa que algunos aspectos de la documentación de Media SDK también son pertinentes para la API de recopilación de contenido. Por ejemplo, ambas soluciones utilizan lo mismo [Parámetros de Streaming Media](../variables/audio-video-parameters.md)y los datos recopilados de seguimiento de medios de streaming llevan a lo mismo [Informes y análisis.](/help/reporting/media-reports-enable.md)
+La API de recopilación de medios es esencialmente un adaptador que actúa como una versión del SDK de medios en el lado del servidor. Eso significa que algunos aspectos de la documentación de Media SDK también son pertinentes para la API de recopilación de contenido. Por ejemplo, ambas soluciones usan los mismos [Parámetros de Streaming Media](../variables/audio-video-parameters.md), y los datos recopilados de seguimiento de medios llevan a los mismos [Informes y análisis.](/help/reporting/media-reports-enable.md)
 
 ## Flujos de datos del seguimiento de contenidos {#media-tracking-data-flows}
 

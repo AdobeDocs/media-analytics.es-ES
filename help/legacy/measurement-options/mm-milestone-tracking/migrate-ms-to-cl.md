@@ -6,9 +6,9 @@ exl-id: 732079f4-3eb8-4b9a-892b-25a1c9332be4
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: 9ba64b68efec5dd8b52010ac1a13afd7703448d0
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '596'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -34,7 +34,7 @@ En las tablas siguientes se proporcionan las correspondencias entre la solución
 
 ### Variables de módulo multimedia
 
-| Milestone | Sintaxis de Milestone | Vínculo personalizado | Vínculo personalizado Sintaxis |
+| Milestone | Sintaxis de Milestone | Vínculo personalizado | Sintaxis de vínculo personalizado |
 | --- | --- | --- | --- |
 | Media.trackUsingContextData | `s.Media.trackUsingContextData` <br> `  = true;` | linkTrackVars | `s.linkTrackVars` <br> `  = 'events,` <br> `  contextData.video.name’;` <br> `  s.contextData["video.name"]` <br> `  = mediaName;` |
 | Media.contextDataMapping | `s.Media.contextDataMapping = {` <br> `  "a.media.name":"eVar2,prop2",` <br> `  "a.media.segment":"eVar3",` <br> `  "a.contentType":"eVar1",` <br> `  "a.media.timePlayed":"event3",` <br> `  "a.media.view":"event1",` <br> `  "a.media.segmentView":"event2",` <br> `  "a.media.complete":"event7",` <br> `  "a.media.milestones": {` <br> `    25:"event4",` <br> `    50:"event5",` <br> `    75:"event6"` <br> `  }` <br> `};` | N/D | Ahora, la asignación de datos de contexto a eVars, props y eventos se realiza mediante reglas de procesamiento. |
@@ -43,7 +43,7 @@ En las tablas siguientes se proporcionan las correspondencias entre la solución
 
 ### Variables opcionales
 
-| Milestone | Sintaxis de Milestone | Vínculo personalizado | Vínculo personalizado Sintaxis |
+| Milestone | Sintaxis de Milestone | Vínculo personalizado | Sintaxis de vínculo personalizado |
 | --- | --- | --- | --- |
 | Media.autoTrack | `s.Media.autoTrack` <br> `  = true;` | N/D | No disponible. |
 | Media.autoTrackNetStreams | `s.Media.` <br> `  autoTrackNetStreams` <br> `  = true` | N/D | No disponible. |
@@ -58,7 +58,7 @@ En las tablas siguientes se proporcionan las correspondencias entre la solución
 
 ### Variables de seguimiento de anuncios
 
-| Milestone | Sintaxis de Milestone | Vínculo personalizado | Vínculo personalizado Sintaxis |
+| Milestone | Sintaxis de Milestone | Vínculo personalizado | Sintaxis de vínculo personalizado |
 | --- | --- | --- | --- |
 | Media.adTrackSeconds | `s.Media.` <br> `  adTrackSeconds` <br> `  = 15` | N/D | No disponible. |
 | Media.adTrackMilestones | `s.Media.` <br> `  adTrackMilestones` <br> `  = "25,50,75";` | N/D | No disponible. |
@@ -68,7 +68,7 @@ En las tablas siguientes se proporcionan las correspondencias entre la solución
 
 ### Métodos de módulo multimedia
 
-| Milestone | Sintaxis de Milestone | Vínculo personalizado | Vínculo personalizado Sintaxis |
+| Milestone | Sintaxis de Milestone | Vínculo personalizado | Sintaxis de vínculo personalizado |
 | --- | --- | --- | --- |
 | Media.open | `s.Media.open(` <br> `  mediaName,` <br> `  mediaLength,` <br> `  mediaPlayerName)` | `s.tl()` | `s.linkTrackVars` <br> `  = 'events,` <br> `     prop10,` <br> `     eVar10,` <br> `     eVar12,` <br> `     eVar15,` <br> `     contextData.video.name,` <br> `     contextData.video.view';` <br> `s.linkTrackEvents ` <br> `  = 'event2';` <br> `s.prop10` <br> `   = mediaName;` <br> `s.eVar10` <br> `  = mediaName;` <br> `s.eVar12` <br> `  = "video";` <br> `s.eVar15` <br> `  = mediaPlayerName;` <br> `s.events` <br> `  = 'event2';` <br> `s.contextData['video.name']` <br> `  = mediaName;` <br> `s.contextData['video.view']` <br> `  = 'true';` <br> `s.tl(this,'o','Video Start');` |
 | mediaName | `mediaName`: (requerido) nombre del vídeo tal como desea que aparezca en informes de vídeo. | Defina la eVar o la variable de datos de contexto en la llamada al vínculo. | `s.prop10 = mediaName;` <br> `s.eVar10 = mediaName;` <br> `s.contextData['video.name']` <br> `  = mediaName;` |

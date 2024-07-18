@@ -6,8 +6,8 @@ exl-id: a70025ec-1418-46f1-b41f-433d09f024e1
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '1329'
+workflow-type: tm+mt
+source-wordcount: '1337'
 ht-degree: 100%
 
 ---
@@ -149,17 +149,17 @@ Además de ser necesario para generar MCID cuando no se proporciona, este parám
 
 * **analytics.aid:**
 
-   el valor de esta clave debe ser una cadena que represente el ID de usuario heredado de Analytics
+  el valor de esta clave debe ser una cadena que represente el ID de usuario heredado de Analytics
 * **visitor.customerIDs:**
 
-   el valor de esta clave debe ser un objeto con el formato siguiente:
+  el valor de esta clave debe ser un objeto con el formato siguiente:
 
-   ```js
-   "<<insert your ID name here>>": {  
-     "id": " <<insert your id here>>",  
-      "authState": <<insert one of 0, 1, 2>>
-   }
-   ```
+  ```js
+  "<<insert your ID name here>>": {  
+    "id": " <<insert your id here>>",  
+     "authState": <<insert one of 0, 1, 2>>
+  }
+  ```
 
 Tenga en cuenta que el valor de `visitor.customerIDs` puede tener cualquier número de objetos en el formato presentado.
 

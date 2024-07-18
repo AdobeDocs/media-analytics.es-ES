@@ -25,7 +25,7 @@ En el caso de dispositivos que actualmente no son compatibles con SDK o en situa
 
 En la tabla siguiente, se detallan los dispositivos actualmente compatibles. Si un dispositivo no aparece en la lista, póngase en contacto con el servicio de atención al cliente o con el consultor de soluciones para conocer el estado de dicho dispositivo.
 
-Para obtener más información sobre la implementación de Media en Edge, consulte [Instalación del complemento de recopilación de medios de streaming con Experience Platform Edge](/help/implementation/edge/implementation-edge.md).
+Para obtener más información sobre la implementación de Media en Edge, consulte [Instalar el complemento Recopilación de medios de streaming con Experience Platform Edge](/help/implementation/edge/implementation-edge.md).
 
 | Plataformas y dispositivos de streaming | | Medios para SDK/Extensión de Edge Network | API de Media Edge | Extensión de medios con etiquetas o SDK Mobile de AEP | Media SDK | API de Media Collection |
 |:---|:---|:---:|:---:|:---:|:---:|:---:|
