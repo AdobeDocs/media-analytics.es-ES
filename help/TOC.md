@@ -5,10 +5,10 @@ user-guide-title: Complemento de colección de medios de streaming
 breadcrumb-title: Guía de colección de medios de streaming
 user-guide-description: Implementar medios de streaming. Incluye el SDK de medios y la API de recopilación de medios.
 sub-product: media analytics
-source-git-commit: 240fa48bdc738425e04cd29c27625c7dd612ff18
+source-git-commit: 0079116bcf39bb6d20b4fd5f14bd3c19137c46e3
 workflow-type: tm+mt
 source-wordcount: '895'
-ht-degree: 97%
+ht-degree: 96%
 
 ---
 
@@ -100,7 +100,7 @@ ht-degree: 97%
       + [Seguimiento de varios estados de reproductor](use-cases/player-state-tracking/multiple-player-states.md)
       + [Ejemplos de seguimiento del estado de reproducción](use-cases/player-state-tracking/player-state-examples.md)
    + [Seguimiento del contenido descargado ](use-cases/track-downloaded-content.md)
-   + [Federated Analytics ](use-cases/federated-analytics.md)
+   + [Medios federados](use-cases/federated-media.md)
    + [Administración de interrupciones de la aplicación durante la reproducción](use-cases/cookbook/app-interrupts.md)
    + [Atribución de flujo de transmisión de medios](use-cases/media-analytics-cookbook/media-dimensions.md)
    + [Reanudación de sesiones inactivas](use-cases/cookbook/resuming-inactive.md)

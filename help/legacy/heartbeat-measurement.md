@@ -4,10 +4,10 @@ description: Descubra cómo se utilizan los latidos del corazón para recopilar 
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: 180dd9b1-877a-4ec1-8e81-c293800069c0
-source-git-commit: 4ed604cb1969212421fecd40996d7b25af50a2b2
+source-git-commit: 0079116bcf39bb6d20b4fd5f14bd3c19137c46e3
 workflow-type: tm+mt
 source-wordcount: '315'
-ht-degree: 86%
+ht-degree: 75%
 
 ---
 
@@ -24,5 +24,5 @@ El uso de latidos en el complemento de recopilación de medios de streaming ofre
 | Integraciones | Experience Cloud ID está vinculado a Adobe Experience Cloud para facilitar el análisis cruzado. Con la integración automática de Adobe Experience Cloud, puedes segmentar tus audiencias de medios, dirigirte a ellas y hacer recomendaciones de medios basadas en las preferencias de los usuarios. |
 | Precio | Seguimiento transparente por emisión de contenido (única) |
 | Implementación y compatibilidad | Configuración optimizada con actualizaciones y mejoras continuas. Con un proceso de implementación agilizado, puede asignar rápidamente variables a través de la API del reproductor y validar las implementaciones mediante la herramienta de depuración de Adobe para garantizar que todas las variables necesarias se controlan con precisión. |
-| Uso compartido de socios | Federated Analytics y métricas certificadas. Con los datos compartidos a través de Federated Analytics, puede aprovechar nuestras capacidades de compartición de medios, pioneras en el sector, para evaluar los datos de forma holística en todos sus socios de distribución de medios: operadores, programadores y distribuidores. |
+| Uso compartido de socios | Medios federados y métricas certificadas. Con los datos compartidos a través de Federated Media, puede sacar el máximo partido a las funciones de uso compartido de medios más novedosas y realizar una evaluación integral de los datos en todos sus socios de distribución de medios: operadores, programadores y distribuidores. |
 | Seguimiento avanzado | Seguimiento de contenidos descargados, seguimiento de recuperación de errores y espectadores simultáneos. Puede realizar un seguimiento de los contenidos multimedia en streaming que se descargan y reproducen en un dispositivo independientemente de su conectividad. |
