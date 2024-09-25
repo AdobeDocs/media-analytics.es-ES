@@ -4,7 +4,7 @@ description: Descubra cómo se puede implementar el complemento de recopilación
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: dfdb1415-105e-4c41-bedc-ecb85ed1b1d9
-source-git-commit: 3963cd62b7c190464fe5314198107f273a225503
+source-git-commit: 380d3ea192162226816d2e269e5cca20f981ac0f
 workflow-type: tm+mt
 source-wordcount: '2154'
 ht-degree: 8%
@@ -387,4 +387,4 @@ Para obtener más información sobre la API de Media Edge, consulte los siguient
 
 * [Guía de solución de problemas de API de Media Edge](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/media-edge-apis/troubleshooting.html)
 
-* [Uso del archivo de especificación de API abierta para las API de Media Edge](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/media-edge-apis/swagger.html)
+* [Uso del archivo de especificación de API abierta para las API de Media Edge](https://developer.adobe.com/data-collection-apis/docs/api/media-edge/)
