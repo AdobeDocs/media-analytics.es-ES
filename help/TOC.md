@@ -1,19 +1,19 @@
 ---
 product: adobe analytics
 audience: end-user
-user-guide-title: Complemento de colección de medios de streaming
+user-guide-title: Colección de medios de streaming
 breadcrumb-title: Guía de colección de medios de streaming
 user-guide-description: Implementar medios de streaming. Incluye el SDK de medios y la API de recopilación de medios.
 sub-product: media analytics
-source-git-commit: 0079116bcf39bb6d20b4fd5f14bd3c19137c46e3
+source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
 workflow-type: tm+mt
-source-wordcount: '895'
+source-wordcount: '893'
 ht-degree: 96%
 
 ---
 
 
-# Complemento de colección de medios de streaming {#using}
+# Colección de medios de streaming {#using}
 
 + [Guía de colección de medios de streaming](media-overview.md)
 + Notas de la versión {#release-notes}
@@ -36,8 +36,8 @@ ht-degree: 96%
       + [Requisitos previos](/help/implementation/edge/prerequisites-edge.md)
       + SDK/extensión de Media Edge {#media-edge-sdk}
          + [Configuración de SDK/extensión de Media Edge](/help/implementation/edge/implementation-edge.md)
-         + [SDK web de Media Edge](/help/implementation/edge/edge-web-sdk.md)
-         + [SDK de Media Edge Mobile](/help/implementation/edge/edge-mobile-sdk.md)
+         + [Media Edge Web SDK](/help/implementation/edge/edge-web-sdk.md)
+         + [Media Edge Mobile SDK](/help/implementation/edge/edge-mobile-sdk.md)
       + [API de Media Edge](/help/implementation/edge/implementation-edge-api.md)
    + Implementaciones solo de Adobe Analytics {#analytics-only}
       + [Requisitos previos](/help/implementation/media-sdk/setup/prerequisites-analytics.md)

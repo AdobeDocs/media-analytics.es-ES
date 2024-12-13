@@ -1,22 +1,22 @@
 ---
-title: Información general del complemento Recopilación de medios de streaming de Adobe
-description: Utilice el complemento de recopilación de medios de streaming para obtener un conocimiento exhaustivo del contenido, el audio y los anuncios.
+title: Información general de recopilación de medios de streaming de Adobe
+description: Utilice la recopilación de medios de streaming para obtener un conocimiento exhaustivo del contenido, el audio y los anuncios.
 uuid: b3cbe240-b94d-42b8-a99c-0280334aaa14
 exl-id: 826530f7-2c39-41ef-b3b4-d3f44b46858f
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: 4ed604cb1969212421fecd40996d7b25af50a2b2
+source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
 workflow-type: tm+mt
-source-wordcount: '597'
-ht-degree: 64%
+source-wordcount: '590'
+ht-degree: 65%
 
 ---
 
-# Información general del complemento Recopilación de medios de streaming de Adobe
+# Información general de recopilación de medios de streaming de Adobe
 
 ![Banner](./assets/media_analytics_banner.png)
 
-El complemento Recopilación de medios de streaming de Adobe proporciona poderosas herramientas de recopilación, medición y personalización para el contenido de medios de streaming, como audio, vídeo y anuncios para proveedores de medios de streaming. Puede combinar las métricas de medios de streaming con funcionalidades como Audience Analytics, Móvil o Análisis entre dispositivos.
+La recopilación de medios de streaming de Adobe proporciona potentes herramientas de recopilación, medición y personalización para el contenido de medios de streaming, como audio, vídeo y publicidad para proveedores de medios de streaming. Puede combinar las métricas de medios de streaming con funcionalidades como Audience Analytics, Móvil o Análisis entre dispositivos.
 
 Los datos de medios de streaming se integran fácilmente en los siguientes productos de Adobe Experience Platform:
 
@@ -34,17 +34,17 @@ Los datos de medios de streaming se integran fácilmente en los siguientes produ
 
 ## Funciones principales
 
-Las ventajas del complemento de recopilación de medios de streaming incluyen monitorización en tiempo real, análisis detallado, perspectivas procesables, oportunidades de monetización y más.
+Las ventajas de la recopilación de medios de streaming incluyen monitorización en tiempo real, análisis detallado, perspectivas procesables, oportunidades de monetización y más.
 
 * **Análisis en tiempo real**: tome decisiones procesables en tiempo real utilizando métricas de rendimiento clave como los inicios de medios en varios canales.
 
-  Con el complemento de recopilación de medios de streaming, obtiene detalles granulares y casi en tiempo real de la duración, las paradas y los inicios que le permiten evaluar y combinar métricas de vídeo y audio. Estas perspectivas le permiten comprender los hábitos de visualización y escucha de sus clientes y aumentar la participación con recomendaciones altamente personalizadas.
+  Con la recopilación de medios de streaming, obtiene detalles granulares y casi en tiempo real sobre la duración, las paradas y los inicios que le permiten evaluar y combinar métricas de vídeo y audio. Estas perspectivas le permiten comprender los hábitos de visualización y escucha de sus clientes y aumentar la participación con recomendaciones altamente personalizadas.
 
 * **Mejore la participación**: involucre completamente a los usuarios mediante menos eventos de almacenamiento en búfer y mediante la comprensión de dónde y cuándo debe reproducirse la publicidad dentro del contenido para proporcionar una experiencia agradable y menos intrusiva que genere visitas más frecuentes.
 
 * **Imagen holística**: combine diversos puntos de datos de todos los distribuidores de contenido y obtenga información de toda la actividad de medios. También puede medir la participación y las visualizaciones/escuchas en todos los posibles canales.
 
-  El complemento de recopilación de medios de streaming le permite hacer un seguimiento del recorrido total del cliente en su sitio y en las aplicaciones de streaming para visualizar la ruta y los intereses del cliente, así como ofrecer recomendaciones mejoradas y personalizar las experiencias del cliente.  La medición de Media le permite categorizar los datos en varias dimensiones y segmentos, capturando todos los metadatos que necesita para hacer un análisis completo y detallado. A continuación, puede analizar los datos y atribuir los criterios de éxito a los medios totalmente consumidos, el tiempo promedio empleado y los anuncios completados.
+  La recopilación de medios de streaming le permite hacer un seguimiento del recorrido total del cliente en su sitio y en las aplicaciones de streaming para visualizar la ruta y los intereses del cliente, así como ofrecer recomendaciones mejoradas y personalizar las experiencias del cliente.  La medición de Media le permite categorizar los datos en varias dimensiones y segmentos, capturando todos los metadatos que necesita para hacer un análisis completo y detallado. A continuación, puede analizar los datos y atribuir los criterios de éxito a los medios totalmente consumidos, el tiempo promedio empleado y los anuncios completados.
 
 * **Métricas vitales**: mida las métricas de envío esenciales relacionadas con la calidad de la experiencia (QoE), como los fotogramas perdidos, el tiempo de almacenamiento en búfer y la velocidad de bits media.
 
@@ -68,4 +68,4 @@ Una vez finalizada la sesión de reproducción, los datos de seguimiento calcula
 >Con las implementaciones de Customer Journey Analytics, los datos se pueden enviar a Customer Journey Analytics mediante Experience Edge o mediante el conector de datos de Analytics (ADC).
 
 
-Para obtener información detallada sobre los distintos métodos de implementación, consulte [Implementar el complemento de recopilación de medios de streaming para Adobe Analytics o Customer Journey Analytics](/help/implementation/overview.md).
+Para obtener información detallada sobre los distintos métodos de implementación, consulte [Implementar la recopilación de medios de streaming para Adobe Analytics o Customer Journey Analytics](/help/implementation/overview.md).

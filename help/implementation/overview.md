@@ -1,28 +1,28 @@
 ---
-title: Implementación del complemento de recopilación de medios de streaming
-description: Obtenga información acerca de las rutas de implementación del complemento de recopilación de medios de streaming.
+title: Implementación de la colección de medios de streaming
+description: Obtenga información acerca de las rutas de implementación de la recopilación de medios de streaming.
 uuid: null
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: ed9297b1-6487-4099-bc62-0c3a40572255
-source-git-commit: 4ed604cb1969212421fecd40996d7b25af50a2b2
+source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
 workflow-type: tm+mt
-source-wordcount: '459'
+source-wordcount: '453'
 ht-degree: 69%
 
 ---
 
-# Implementación del complemento de recopilación de medios de streaming
+# Implementación de la colección de medios de streaming
 
-Existen varias formas de implementar el complemento Recopilación de medios de streaming de Adobe. Para ver una comparación detallada de los dispositivos y las plataformas compatibles con los métodos de implementación descritos en esta página, consulte [Dispositivos y plataformas compatibles](/help/getting-started/supported-devices.md).
+Existen varias formas de implementar la recopilación de medios de streaming de Adobe. Para ver una comparación detallada de los dispositivos y las plataformas compatibles con los métodos de implementación descritos en esta página, consulte [Dispositivos y plataformas compatibles](/help/getting-started/supported-devices.md).
 
 ## Métodos de implementación de Edge
 
-Se recomienda utilizar Edge al implementar el complemento de recopilación de medios de streaming para todos los clientes nuevos de Adobe Analytics o de Customer Journey Analytics.
+Se recomienda utilizar Edge al implementar la recopilación de medios de streaming para todos los clientes nuevos de Adobe Analytics o de Customer Journey Analytics.
 
-* **Media for Edge Network SDK/Extension:** recopila datos de la web, los dispositivos iOS y Android o los dispositivos Roku y los envía al Edge Network. A continuación, los datos se pueden enviar a Customer Journey Analytics o a Adobe Analytics.
+* **Media for Edge Network SDK / Extension:** recopila datos de la web, dispositivos iOS y Android o dispositivos Roku y los envía al Edge Network. A continuación, los datos se pueden enviar a Customer Journey Analytics o a Adobe Analytics.
 
-  Para obtener más información acerca de la extensión/SDK de Media for Edge Network, consulte [Implementar el complemento de recopilación de medios de streaming con Edge Network](/help/implementation/edge/implementation-edge.md).
+  Para obtener más información acerca de Media for Edge Network SDK / Extension, consulte [Implementar la recopilación de medios de streaming con Edge Network](/help/implementation/edge/implementation-edge.md).
 
 * **API de Media Edge:** se puede personalizar para recopilar datos de cualquier dispositivo o formato (incluidos dispositivos móviles, web y de servicios OTT) y enviar datos al Edge Network. A continuación, los datos se pueden enviar a Customer Journey Analytics o a Adobe Analytics.
 

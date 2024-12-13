@@ -1,20 +1,20 @@
 ---
-title: Métricas calculadas
-description: Obtenga información acerca de las métricas calculadas y las fórmulas de métricas en el complemento de recopilación de medios de streaming.
+title: 'Métricas calculadas '
+description: Obtenga información acerca de las métricas calculadas y las fórmulas de métricas en la recopilación de medios de streaming.
 uuid: 9dd35155-58aa-4f05-896e-c5cbc4b13d59
 exl-id: 253f6c61-70b5-4bdf-8e79-840545aeca0e
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: 4ed604cb1969212421fecd40996d7b25af50a2b2
+source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
 workflow-type: tm+mt
-source-wordcount: '246'
-ht-degree: 71%
+source-wordcount: '244'
+ht-degree: 72%
 
 ---
 
 # Métricas calculadas {#calculated-metrics}
 
-Las métricas calculadas para el complemento de recopilación de medios de streaming de Adobe son métricas personalizadas que le permiten obtener datos de medios de streaming orientados, como el tiempo promedio invertido en la publicidad o el promedio de anuncios por flujo de medios.
+Las métricas calculadas para la recopilación de medios de streaming de Adobe son métricas personalizadas que le permiten obtener datos de medios de streaming orientados, como el tiempo promedio invertido en la publicidad o el promedio de anuncios por flujo de medios.
 
 Para obtener información acerca de las métricas calculadas de Adobe Analytics, consulte [Métricas calculadas y calculadas avanzadas (derivadas)](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/cm-overview.html?lang=es) en la Guía de componentes de Adobe Analytics.
 
