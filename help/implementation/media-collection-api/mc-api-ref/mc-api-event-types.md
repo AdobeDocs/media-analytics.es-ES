@@ -1,14 +1,14 @@
 ---
 title: Tipos y descripciones de eventos de medios de transmisión
-description: "¿Cuáles son los tipos de eventos y las descripciones de la recopilación de contenido? "
+description: '¿Cuáles son los tipos y descripciones de los eventos de recopilación de medios? '
 uuid: bc4f75a7-ea22-47eb-a50d-5f41274c6d41
 exl-id: f2919e69-8b03-45b4-b9cd-365222a061e0
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: 06f24e828fb7795d55599ea1fa7913182dd357e6
+source-git-commit: 98722998606af3761652e282c31338bb966eb654
 workflow-type: tm+mt
-source-wordcount: '364'
-ht-degree: 88%
+source-wordcount: '394'
+ht-degree: 79%
 
 ---
 
@@ -90,3 +90,15 @@ Se envía cuando se llega al final del contenido principal.
 >[!IMPORTANT]
 >
 >Debe hacer referencia a los [esquemas de validación de JSON](mc-api-json-validation.md) para cada tipo de evento y comprobar los requisitos y tipos de parámetros de eventos correctos.
+
+## stateStart
+
+Indica el inicio del seguimiento del estado del reproductor.
+
+Para obtener más información, consulte [Implementación y sistema de informes](/help/use-cases/player-state-tracking/implementation-and-reporting.md).
+
+## stateEnd
+
+Indica el final del seguimiento del estado del reproductor.
+
+Para obtener más información, consulte [Implementación y sistema de informes](/help/use-cases/player-state-tracking/implementation-and-reporting.md).

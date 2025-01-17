@@ -4,25 +4,25 @@ description: Obtenga información sobre cómo implementar la función de seguimi
 exl-id: 19a97c9b-14d1-4f11-bb0a-3a1ad6f949da
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: 15cc123fb44654083b6501042bdd9d4e07128b59
 workflow-type: tm+mt
-source-wordcount: '332'
-ht-degree: 100%
+source-wordcount: '328'
+ht-degree: 78%
 
 ---
 
 # Implementación y sistema de informes
 
-Durante una sesión de reproducción, se debe realizar un seguimiento individual de cada incidencia de estado (de principio a fin). Media SDK y la API de Media Collection proporcionan nuevos métodos de seguimiento para esta capacidad.
+Durante una sesión de reproducción, se debe realizar un seguimiento individual de cada incidencia de estado (de principio a fin). Media SDK y la API de Media Collection proporcionan métodos de seguimiento para esta capacidad.
 
-Media SDK incluye dos nuevos métodos para el seguimiento de estado personalizado:
+Media SDK incluye dos métodos para el seguimiento de estado personalizado:
 
 `trackStateStart("state_name")`
 
 `trackStateClose("state_name")`
 
 
-La API de recopilación de medios incluye dos nuevos eventos que tienen `media.stateName` como parámetro obligatorio:
+La API de Media Collection incluye dos eventos que tienen `media.stateName` como parámetro obligatorio:
 
 `stateStart` y `stateEnd`
 
@@ -91,11 +91,11 @@ Las métricas proporcionadas para cada estado individual se calculan y transfier
 
 ## Creación de informes
 
-Todas las métricas de estado del reproductor se pueden utilizar para cualquier visualización de creación de informes disponible en Analysis Workspace o en un componente (segmento, métricas calculadas) una vez que un grupo de informes esté habilitado para el seguimiento de estado del reproductor. Las nuevas métricas podrían habilitarse desde Admin Console para cada informe individual mediante la configuración de creación de informes de medios (Editar configuración > Administración de medios > Creación de informes de medios).
+Todas las métricas de estado del reproductor se pueden utilizar para cualquier visualización de creación de informes disponible en Analysis Workspace o en un componente (segmento, métricas calculadas) una vez que un grupo de informes esté habilitado para el seguimiento de estado del reproductor. Estas métricas se pueden habilitar desde el Admin Console para cada informe individual mediante la Configuración de creación de informes de medios (Editar configuración > Administración de medios > Creación de informes de medios).
 
 ![](assets/report-setup.png)
 
-En Analytics Workspace, todas las propiedades nuevas se encuentran en el panel de métricas. Por ejemplo, puede buscar por `full screen` para ver los datos de pantalla completa en el panel de métricas.
+En Analysis Workspace, todas las propiedades nuevas se encuentran en el panel de métricas. Por ejemplo, puede buscar por `full screen` para ver los datos de pantalla completa en el panel de métricas.
 
 ![](assets/full-screen-report.png)
 
