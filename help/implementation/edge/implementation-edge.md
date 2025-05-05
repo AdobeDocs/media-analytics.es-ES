@@ -29,7 +29,7 @@ Para estandarizar la recopilación de datos para su uso en todas las aplicacione
 
 Para crear y configurar un esquema:
 
-1. En Adobe Experience Platform, empiece a crear el esquema como se describe en [Crear y editar esquemas en la interfaz de usuario](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html?lang=en).
+1. En Adobe Experience Platform, empiece a crear el esquema como se describe en [Crear y editar esquemas en la interfaz de usuario](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html?lang=es).
 
 1. En la página Detalles del esquema al crear el esquema, elija [!UICONTROL **Evento de experiencia**] al elegir la clase base para el esquema.
 
@@ -129,7 +129,7 @@ Para crear y configurar un esquema:
 
       ![add-custom-metadata](assets/add-custom-fields.png)
 
-   1. [Use la ruta generada](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/fields/overview#type-specific-properties) para el campo personalizado en la carga de la solicitud.
+   1. [Use la ruta generada](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/ui/fields/overview#type-specific-properties) para el campo personalizado en la carga de la solicitud.
 
       ![add-custom-metadata](assets/custom-fields-path.png)
 
@@ -167,11 +167,11 @@ Para crear y configurar un esquema:
 
       * [!UICONTROL **Adobe Analytics**] (si usa Adobe Analytics)
 
-        Si usa Adobe Analytics, asegúrese de definir un grupo de informes, tal como se describe en [Crear un grupo de informes](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite).
+        Si usa Adobe Analytics, asegúrese de definir un grupo de informes, tal como se describe en [Crear un grupo de informes](https://experienceleague.adobe.com/es/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite).
 
       * [!UICONTROL **Adobe Experience Platform**] (si usa el Customer Journey Analytics)
 
-     Para obtener información acerca de cómo agregar un servicio a un conjunto de datos, vea la sección &quot;Agregar servicios a un conjunto de datos&quot; en [Configurar un conjunto de datos](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=en#view-details).
+     Para obtener información acerca de cómo agregar un servicio a un conjunto de datos, vea la sección &quot;Agregar servicios a un conjunto de datos&quot; en [Configurar un conjunto de datos](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=es#view-details).
 
      ![Agregar el servicio Adobe Analytics](assets/datastream-add-service.png)
 
@@ -324,7 +324,7 @@ Para crear y configurar un esquema:
 
    ![Panel de tiempo invertido en la reproducción de medios](assets/media-playback-time-spent-panels.png)
 
-1. (Condicional) Si agregó metadatos personalizados al esquema, tal como se describe en el paso 8 de [Configurar el esquema en Adobe Experience Platform](#set-up-the-schema-in-adobe-experience-platform), deberá establecer la persistencia para los campos personalizados, tal como se describe en [Configuración del componente de persistencia](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-settings/persistence) en la guía del Customer Journey Analytics.
+1. (Condicional) Si agregó metadatos personalizados al esquema, tal como se describe en el paso 8 de [Configurar el esquema en Adobe Experience Platform](#set-up-the-schema-in-adobe-experience-platform), deberá establecer la persistencia para los campos personalizados, tal como se describe en [Configuración del componente de persistencia](https://experienceleague.adobe.com/es/docs/analytics-platform/using/cja-dataviews/component-settings/persistence) en la guía del Customer Journey Analytics.
 
    Cuando los datos lleguen a Customer Journey Analytics, estará disponible la dimensión de ID de usuario personalizado.
 
@@ -332,9 +332,9 @@ Para crear y configurar un esquema:
 
    >[!NOTE]
    >
-   >Si configura Adobe Analytics como flujo ascendente para el conjunto de datos, los metadatos personalizados también están presentes en ContextData, con el nombre que establezca en el esquema (sin el prefijo de inquilino, por ejemplo myCustomField). Esto permite usar todas las características de Adobe Analytics disponibles para ContextData, como [crear una regla de procesamiento](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules).
+   >Si configura Adobe Analytics como flujo ascendente para el conjunto de datos, los metadatos personalizados también están presentes en ContextData, con el nombre que establezca en el esquema (sin el prefijo de inquilino, por ejemplo myCustomField). Esto permite usar todas las características de Adobe Analytics disponibles para ContextData, como [crear una regla de procesamiento](https://experienceleague.adobe.com/es/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules).
 
-1. Comparta el proyecto como se describe en [Compartir proyectos](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/share-projects.html?lang=en).
+1. Comparta el proyecto como se describe en [Compartir proyectos](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/share-projects.html?lang=es).
 
    >[!NOTE]
    >
@@ -381,10 +381,10 @@ La API también está disponible si desea utilizar una implementación personali
 
 Para obtener más información sobre la API de Media Edge, consulte los siguientes recursos:
 
-* [Resumen de la API de Media Edge](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/media-edge-apis/overview.html)
+* [Resumen de la API de Media Edge](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/media-edge-apis/overview.html?lang=es)
 
-* [Introducción a la API de Media Edge](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/media-edge-apis/getting-started.html)
+* [Introducción a la API de Media Edge](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/media-edge-apis/getting-started.html?lang=es)
 
-* [Guía de solución de problemas de API de Media Edge](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/media-edge-apis/troubleshooting.html)
+* [Guía de solución de problemas de API de Media Edge](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/media-edge-apis/troubleshooting.html?lang=es)
 
 * [Uso del archivo de especificación de API abierta para las API de Media Edge](https://developer.adobe.com/data-collection-apis/docs/api/media-edge/)
