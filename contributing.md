@@ -15,7 +15,7 @@ Este proyecto se adhiere al [código de conducta](https://git.corp.adobe.com/Ope
 
 ## Acuerdo de licencia de colaborador
 
-Todas las contribuciones de terceros a este proyecto deben ir acompañadas por una licencia de colaborador firmada. Esto otorga permiso a Adobe para redistribuir sus contribuciones como parte del proyecto. Firme nuestro CLA (Acuerdo de licencia de colaborador) en [SOME LINK](no disponible aún). Solo debe mandar un CLA de Adobe, así que si ya mandó uno en el pasado, con ese es suficiente.
+Todas las contribuciones de terceros a este proyecto deben ir acompañadas por una licencia de colaborador firmada. Esto otorga permiso a Adobe para redistribuir sus contribuciones como parte del proyecto. Firme nuestro CLA (Acuerdo de licencia de colaborador) en [SOME LINK] (no disponible aún). Solo debe mandar un CLA de Adobe, así que si ya mandó uno en el pasado, con ese es suficiente.
 
 ## Revisiones de código
 
