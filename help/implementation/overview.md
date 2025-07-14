@@ -2,10 +2,10 @@
 title: Implementación de la colección de medios de streaming
 description: Obtenga información acerca de las rutas de implementación de la recopilación de medios de streaming.
 uuid: null
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
 exl-id: ed9297b1-6487-4099-bc62-0c3a40572255
-source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '453'
 ht-degree: 69%
@@ -18,13 +18,13 @@ Existen varias formas de implementar la recopilación de medios de streaming de 
 
 ## Métodos de implementación de Edge
 
-Se recomienda utilizar Edge al implementar la recopilación de medios de streaming para todos los clientes nuevos de Adobe Analytics o de Customer Journey Analytics.
+Se recomienda utilizar Edge al implementar la recopilación de medios de streaming para todos los clientes nuevos de Adobe Analytics o Customer Journey Analytics.
 
-* **Media for Edge Network SDK / Extension:** recopila datos de la web, dispositivos iOS y Android o dispositivos Roku y los envía al Edge Network. A continuación, los datos se pueden enviar a Customer Journey Analytics o a Adobe Analytics.
+* **Medios para Edge Network SDK / Extensión:** Recopila datos de la web, dispositivos iOS y Android o dispositivos Roku y los envía a Edge Network. A continuación, los datos se pueden enviar a Customer Journey Analytics o a Adobe Analytics.
 
-  Para obtener más información acerca de Media for Edge Network SDK / Extension, consulte [Implementar la recopilación de medios de streaming con Edge Network](/help/implementation/edge/implementation-edge.md).
+  Para obtener más información acerca de Media para Edge Network SDK/Extension, consulte [Implementar la recopilación de medios de streaming mediante Edge Network](/help/implementation/edge/implementation-edge.md).
 
-* **API de Media Edge:** se puede personalizar para recopilar datos de cualquier dispositivo o formato (incluidos dispositivos móviles, web y de servicios OTT) y enviar datos al Edge Network. A continuación, los datos se pueden enviar a Customer Journey Analytics o a Adobe Analytics.
+* **API de Media Edge:** se puede personalizar para recopilar datos de cualquier dispositivo o formato (incluidos dispositivos móviles, web y de servicios OTT) y enviar datos a Edge Network. A continuación, los datos se pueden enviar a Customer Journey Analytics o a Adobe Analytics.
 
   Para obtener más información sobre la API de Media Edge, consulte [Información general sobre la API de Media Edge](https://developer.adobe.com/cja-apis/docs/endpoints/media-edge/).
 

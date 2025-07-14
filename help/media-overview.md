@@ -1,22 +1,22 @@
 ---
-title: Información general de recopilación de medios de streaming de Adobe
-description: Utilice la recopilación de medios de streaming para obtener un conocimiento exhaustivo del contenido, el audio y los anuncios.
+title: Información general de Adobe Streaming Media Collection
+description: Utilice la recopilación de medios de streaming para obtener una potente insight para el contenido, el audio y los anuncios.
 uuid: b3cbe240-b94d-42b8-a99c-0280334aaa14
 exl-id: 826530f7-2c39-41ef-b3b4-d3f44b46858f
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '590'
 ht-degree: 65%
 
 ---
 
-# Información general de recopilación de medios de streaming de Adobe
+# Información general de Adobe Streaming Media Collection
 
 ![Banner](./assets/media_analytics_banner.png)
 
-La recopilación de medios de streaming de Adobe proporciona potentes herramientas de recopilación, medición y personalización para el contenido de medios de streaming, como audio, vídeo y publicidad para proveedores de medios de streaming. Puede combinar las métricas de medios de streaming con funcionalidades como Audience Analytics, Móvil o Análisis entre dispositivos.
+La recopilación de medios de streaming de Adobe proporciona potentes herramientas de recopilación, medición y personalización para el contenido de medios de streaming, como audio, vídeo y publicidad para proveedores de medios de streaming. Puede combinar métricas de medios de streaming con funcionalidades como Audience Analytics, Mobile o Cross-Device Analytics.
 
 Los datos de medios de streaming se integran fácilmente en los siguientes productos de Adobe Experience Platform:
 

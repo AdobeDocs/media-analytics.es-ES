@@ -2,9 +2,9 @@
 title: Implementación y sistema de informes
 description: Obtenga información sobre cómo implementar la función de seguimiento de estado del reproductor, incluyendo
 exl-id: 19a97c9b-14d1-4f11-bb0a-3a1ad6f949da
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: 15cc123fb44654083b6501042bdd9d4e07128b59
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '328'
 ht-degree: 78%
@@ -91,7 +91,7 @@ Las métricas proporcionadas para cada estado individual se calculan y transfier
 
 ## Creación de informes
 
-Todas las métricas de estado del reproductor se pueden utilizar para cualquier visualización de creación de informes disponible en Analysis Workspace o en un componente (segmento, métricas calculadas) una vez que un grupo de informes esté habilitado para el seguimiento de estado del reproductor. Estas métricas se pueden habilitar desde el Admin Console para cada informe individual mediante la Configuración de creación de informes de medios (Editar configuración > Administración de medios > Creación de informes de medios).
+Todas las métricas de estado del reproductor se pueden utilizar para cualquier visualización de creación de informes disponible en Analysis Workspace o en un componente (segmento, métricas calculadas) una vez que un grupo de informes esté habilitado para el seguimiento de estado del reproductor. Estas métricas se pueden habilitar desde Admin Console para cada informe individual mediante la configuración de creación de informes de medios (Editar configuración > Administración de medios > Creación de informes de medios).
 
 ![](assets/report-setup.png)
 

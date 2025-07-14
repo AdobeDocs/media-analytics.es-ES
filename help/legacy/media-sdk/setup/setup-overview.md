@@ -3,9 +3,9 @@ title: Explicación de la implementación de Media SDK
 description: Obtenga información sobre cómo configurar Media SDK para el seguimiento de contenido en las aplicaciones móviles, OTT y de navegador (JS).
 uuid: 06fefedb-b0c8-4f7d-90c8-e374cdde1695
 exl-id: a175332e-0bdc-44aa-82cb-b3f879e7abfc
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '617'
 ht-degree: 94%
@@ -125,7 +125,7 @@ Las implementaciones de seguimiento de Media Analytics generan dos tipos de llam
 
   El servidor de seguimiento de análisis debe finalizar en “`.sc.omtrdc.net`” o ser CNAME.
 
-* **&#x200B; Servidor de Media Analytics (latidos)**
+* ** Servidor de Media Analytics (latidos)**
 Siempre tiene el formato “`[your_namespace].hb.omtrdc.net`”. El valor de “`[your_namespace]`” especifica su empresa y lo proporciona Adobe.
 
 El seguimiento de medios funciona del mismo modo en todas las plataformas, equipos de escritorio y dispositivos móviles. Actualmente, el seguimiento de audio funciona en plataformas móviles. En todas las llamadas de seguimiento hay algunas variables universales clave que se deben validar:

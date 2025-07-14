@@ -3,12 +3,12 @@ title: Comparación del código de la v1.x y la v2.x
 description: Conozca la diferencia entre el código de las versiones 1.x y 2.x de Media SDK.
 uuid: 9f0a1660-2100-446d-ab75-afdf966478b3
 exl-id: c2324c6a-329f-44e2-bea0-9d43ef9c6ef7
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '544'
-ht-degree: 100%
+ht-degree: 74%
 
 ---
 

@@ -3,12 +3,12 @@ title: Explicación de las claves de metadatos de Roku
 description: Obtenga información sobre las claves de metadatos Roku disponibles y vea toda la lista de constantes de metadatos estándar.
 uuid: 2ca6bb1d-c545-43d3-9c3e-63b890aa268d
 exl-id: 687dbaa5-4723-4b3f-ab1e-4d5bf447cddf
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '471'
-ht-degree: 98%
+ht-degree: 91%
 
 ---
 
@@ -76,7 +76,7 @@ Puede utilizar las siguientes constantes para hacer un seguimiento de eventos de
 | --- | --- |
 | `MEDIA_STANDARD_MEDIA_METADATA` | Constante para definir metadatos en `MediaInfo` `trackLoad` |
 | `MEDIA_STANDARD_AD_METADATA` | Constante para establecer los metadatos de la publicidad en `EventData` `trackEvent` |
-| `MEDIA_RESUMED` | Constante para enviar un latido de reanudación de vídeo. Para reanudar el seguimiento de vídeos de contenido pausado, es necesario establecer la propiedad `MEDIA_RESUMED` en el objeto `mediaInfo` cuando se invoca `mediaTrackLoad`. (`MEDIA_RESUMED` no es un evento que se pueda rastrear con la API `mediaTrackEvent`). `MEDIA_RESUMED` se debe establecer como true cuando una aplicación desee seguir controlando contenido que un usuario haya pausado pero que ahora desea reanudar la visualización. <br/><br/>Por ejemplo, supongamos que un usuario ve el 30 % del contenido y luego cierra la aplicación. Esto hará que finalice la sesión. Posteriormente, si el mismo usuario vuelve al contenido y la aplicación permite que lo reanude desde el mismo punto en el que lo dejó, la aplicación debería establecer `MEDIA_RESUMED` como “true” mientras invoca la API de `mediaTrackLoad`. El resultado es que estas dos sesiones de contenidos diferentes para el mismo contenido de vídeo se pueden vincular. A continuación se muestra el ejemplo de implementación: <br/><br/> `mediaInfo =` <br/>   `adb_media_init_mediainfo(` <br/>     `"test_media_name",` <br/>     `"test_media_id",`<br/>      `10,` <br/>     `"vod"` <br/> `)` <br/> `mediaInfo[ADBMobile().MEDIA_RESUMED] = true` <br/> `mediaContextData = {}` <br/>  `ADBMobile().mediaTrackLoad(mediaInfo, mediaContextData)` <br/><br/>Esto creará una nueva sesión para el vídeo, pero también hace que el SDK envíe una solicitud de latido con el tipo de evento “continuar”, que se puede utilizar en los informes para vincular dos sesiones de contenidos diferentes. |
+| `MEDIA_RESUMED` | Constante para enviar un latido de reanudación de vídeo. Para reanudar el seguimiento de vídeos de contenido pausado, es necesario establecer la propiedad `MEDIA_RESUMED` en el objeto `mediaInfo` cuando se invoca `mediaTrackLoad`. (`MEDIA_RESUMED` no es un evento que se pueda rastrear con la API `mediaTrackEvent`). `MEDIA_RESUMED` debe establecerse como verdadero cuando una aplicación desee seguir controlando contenido que un usuario haya dejado de ver pero que ahora desea reanudar la visualización. <br/><br/>Por ejemplo, supongamos que un usuario ve el 30 % del contenido y luego cierra la aplicación. Esto hará que finalice la sesión. Posteriormente, si el mismo usuario vuelve al contenido y la aplicación permite que lo reanude desde el mismo punto en el que lo dejó, la aplicación debería establecer `MEDIA_RESUMED` como “true” mientras invoca la API de `mediaTrackLoad`. El resultado es que estas dos sesiones de contenidos diferentes para el mismo contenido de vídeo se pueden vincular. A continuación se muestra el ejemplo de implementación: <br/><br/> `mediaInfo =` <br/>   `adb_media_init_mediainfo(` <br/>     `"test_media_name",` <br/>     `"test_media_id",`<br/>      `10,` <br/>     `"vod"` <br/> `)` <br/> `mediaInfo[ADBMobile().MEDIA_RESUMED] = true` <br/> `mediaContextData = {}` <br/>  `ADBMobile().mediaTrackLoad(mediaInfo, mediaContextData)` <br/><br/>Esto creará una nueva sesión para el vídeo, pero también hace que el SDK envíe una solicitud de latido con el tipo de evento “continuar”, que se puede utilizar en los informes para vincular dos sesiones de contenidos diferentes. |
 
 ### Constantes de tipo de contenido
 

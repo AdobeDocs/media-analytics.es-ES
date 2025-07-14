@@ -3,9 +3,9 @@ title: Seguimiento de acciones de aplicaciones
 description: Las acciones de la aplicación son los eventos que tienen lugar en su aplicación y que desea medir.
 uuid: 9cdc048a-419a-4725-bd61-6ca6d909cf10
 exl-id: 88b7d540-67b7-4ec1-8273-02e34853bf60
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '132'
 ht-degree: 100%

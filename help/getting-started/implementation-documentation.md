@@ -2,10 +2,10 @@
 title: Documentación de implementación de medios de streaming
 description: Descubra dónde encontrar información acerca de las implementaciones de medios de streaming.
 uuid: null
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
 exl-id: c37aeea2-7c8f-4815-ae28-634ae691e84f
-source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '256'
 ht-degree: 46%
@@ -22,8 +22,8 @@ Utilice la información de la tabla siguiente para localizar la documentación d
 
 | Implementación | Documentación |
 |:-----------------------:|----------------|
-| **Web** | * [Envíe datos web a Edge con la extensión Adobe Experience Platform Web SDK](/help/implementation/edge/edge-web-sdk.md) <br> * [Implementación web para medios de transmisión](/help/implementation/media-sdk/setup/web-implementation.md) <br>* [Implementación web con Adobe Medium Analytics para audio y vídeo](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics-3x/overview.html?lang=es) |
-| **Mobile** | * [Envíe datos móviles a Edge con Adobe Experience Platform Mobile SDK](/help/implementation/edge/edge-mobile-sdk.md) <br> *[Guía de Adobe Experience Platform Mobile SDK](https://developer.adobe.com/client-sdks/documentation/) <br> *[Adobes Medium de Analytics para audio y vídeo](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/)<br> *[Versiones actuales de Mobile SDK](https://developer.adobe.com/client-sdks/documentation/current-sdk-versions/) <br> *[Implementación móvil para medios de streaming](/help/implementation/media-sdk/setup/mobile-implementation.md) | |  |
+| **Web** | * [Enviar datos web a Edge con la extensión Adobe Experience Platform Web SDK](/help/implementation/edge/edge-web-sdk.md) <br> * [Implementación web para medios de transmisión](/help/implementation/media-sdk/setup/web-implementation.md) <br>* [Implementación web con la extensión Adobe Media Analytics para audio y vídeo](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics-3x/overview.html?lang=es) |
+| **Mobile** | * [Envíe datos móviles a Edge con Adobe Experience Platform Mobile SDK](/help/implementation/edge/edge-mobile-sdk.md) <br> *[Guía de Adobe Experience Platform Mobile SDK](https://developer.adobe.com/client-sdks/documentation/) <br> *[Extensión de Adobe Media Analytics para audio y vídeo](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/)<br> *[Versiones actuales de Mobile SDK](https://developer.adobe.com/client-sdks/documentation/current-sdk-versions/) <br> *[Implementación móvil para medios de streaming](/help/implementation/media-sdk/setup/mobile-implementation.md) | |  |
 | **OTT** | *[SDK para soluciones de Adobe Marketing Cloud de Chromecast 3.0](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/)<br> *[Configurar Chromecast](/help/implementation/media-sdk/setup/set-up-chromecast.md)<br> * [Adobe Experience Platform Roku SDK](/help/implementation/edge/implementation-edge.md) <br> *[Configurar Roku](/help/implementation/media-sdk/setup/set-up-roku.md) |
 | **API de Adobe Experience Platform** | *[API de recopilación de medios](/help/implementation/media-collection-api/mc-api-overview.md) |
 

@@ -2,9 +2,9 @@
 title: Descripción general de los casos de Media SDK
 description: Casos prácticos de medios de streaming
 exl-id: 68230d3f-d1fd-4be3-ba67-689965d85771
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: 0079116bcf39bb6d20b4fd5f14bd3c19137c46e3
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '78'
 ht-degree: 92%
@@ -22,7 +22,7 @@ ht-degree: 92%
 * [Atribución de flujo de transmisión de medios](/help/use-cases/media-analytics-cookbook/media-dimensions.md)
 
 * Federados
-   * [Federated Media](/help/use-cases/federated-media.md)
+   * [Medios federados](/help/use-cases/federated-media.md)
 
 * Cronologías
    * [Inicio y final del capítulo](/help/use-cases/timelines/chapter-start-end.md)

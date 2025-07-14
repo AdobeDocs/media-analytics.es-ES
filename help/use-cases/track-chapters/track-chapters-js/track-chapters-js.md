@@ -3,12 +3,12 @@ title: Aprenda a realizar el seguimiento de capítulos y segmentos con JavaScrip
 description: Obtenga información sobre la implementación del seguimiento de capítulos y segmentos mediante el uso de Media SDK en aplicaciones de explorador (JS).
 uuid: ef99edf7-7a77-46c4-8429-bc9a856b98d6
 exl-id: 9964ec0c-cce9-4ccc-bd26-a2b3fcdc3e28
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
-source-wordcount: '200'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 

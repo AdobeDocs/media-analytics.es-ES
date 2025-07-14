@@ -1,14 +1,14 @@
 ---
 title: Aprende a controlar la calidad de la experiencia en iOS
-description: '"Aprenda a implementar el seguimiento de la calidad de la experiencia (QoE, QoS) utilizando el Media SDK en iOS".'
+description: Obtenga información acerca de la implementación del seguimiento de calidad de experiencia (QoE, QoS) mediante Media SDK en iOS.
 uuid: cae2c142-ed39-4234-a711-765dcabc5415
 exl-id: 7f01e6eb-95bd-4e3d-93d0-8a2e68323313
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: 2ce09eafeb8def909ae2a8ae7cc09a88b2f663af
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '156'
-ht-degree: 98%
+ht-degree: 89%
 
 ---
 

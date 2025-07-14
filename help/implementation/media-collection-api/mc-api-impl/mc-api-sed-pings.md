@@ -3,9 +3,9 @@ title: Envío de eventos ping
 description: Los eventos ping son el latido de la recopilación de medios de streaming. Aprenda a enviar un ping temporizado para el contenido principal o el seguimiento de anuncios.
 uuid: c92c1a92-3af6-4474-9e42-ffb8f6c94b33
 exl-id: 0a645363-26d5-41e7-aa16-c775253e2b1d
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '109'
 ht-degree: 51%

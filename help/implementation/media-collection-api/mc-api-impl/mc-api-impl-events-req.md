@@ -1,14 +1,14 @@
 ---
-title: Implementación de una solicitud de eventos
+title: 'Implementación de una solicitud de eventos '
 description: Obtenga información sobre cómo utilizar el punto final de solicitud de eventos para todas las llamadas de seguimiento subsiguientes después de obtener un ID de sesión
 uuid: 3bfa313c-ff74-4e2e-bbde-6f4a6221d85b
 exl-id: af9a3470-85c7-498e-9bf4-6df3c6aafad9
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
-source-wordcount: '99'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 

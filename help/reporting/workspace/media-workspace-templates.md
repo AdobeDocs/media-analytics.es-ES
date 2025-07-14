@@ -1,11 +1,11 @@
 ---
-title: Plantillas de medios del espacio de trabajo
+title: 'Plantillas de medios del espacio de trabajo '
 description: Utilice las plantillas de espacio de trabajo de medios para analizar los datos de seguimiento. Elija plantillas estándar para medios de adquisición o de transmisión, o cree sus propias plantillas personalizadas.
 uuid: 0024b06a-eaf5-4d2e-be45-aeda9d0554c1
 exl-id: a835f86a-a93a-4a56-91f4-14628cf48214
-feature: "Media Analytics, Workspace Basics"
+feature: "Streaming Media, Workspace Basics"
 role: User, Admin
-source-git-commit: 4ed604cb1969212421fecd40996d7b25af50a2b2
+source-git-commit: 67f1fa8194fa58b2c513e3136d2bc7880f9cb06b
 workflow-type: tm+mt
 source-wordcount: '296'
 ht-degree: 9%
@@ -18,7 +18,7 @@ ht-degree: 9%
 >
 >Los *informes* de Workspace antes se conocían como *plantillas*.
 
-Analysis Workspace ofrece un conjunto de informes creados previamente que están disponibles de forma predeterminada y que pueden utilizarse para analizar datos. Para obtener más información sobre todos los informes predeterminados disponibles, consulte [Ver informes](https://experienceleague.adobe.com/docs/analytics/analyze/landing.html?lang=es#menus) en [página de aterrizaje de Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/landing.html?lang=es).
+Analysis Workspace ofrece un conjunto de informes creados previamente que están disponibles de forma predeterminada y que pueden utilizarse para analizar datos. Para obtener más información sobre todos los informes predeterminados disponibles, consulte [Ver informes](https://experienceleague.adobe.com/docs/analytics/analyze/landing.html?lang=en#menus) en [página de aterrizaje de Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/landing.html?lang=es).
 
 Algunos de estos informes son especialmente útiles para analizar los datos de medios de streaming, tal como se describe en las secciones siguientes.
 
@@ -41,6 +41,6 @@ Por ejemplo, si elige el informe [!UICONTROL **Consumo de medios de streaming**]
 Puede utilizar los informes de medios predeterminados de las siguientes maneras:
 al crear un nuevo proyecto. También puede o al modificar un proyecto existente.
 
-* **Al crear un nuevo proyecto:** Para obtener información sobre cómo crear un nuevo proyecto a partir de un informe predeterminado, consulte [Crear un proyecto a partir de un proyecto en blanco o un informe](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/create-projects.html?lang=es#create-a-project-from-a-blank-project-or-a-report) en [Crear proyectos en Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/create-projects.html?lang=es#create-a-project-from-a-blank-project-or-a-report).
+* **Al crear un nuevo proyecto:** Para obtener información sobre cómo crear un nuevo proyecto a partir de un informe predeterminado, consulte [Crear un proyecto a partir de un proyecto en blanco o un informe](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/create-projects.html?lang=en#create-a-project-from-a-blank-project-or-a-report) en [Crear proyectos en Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/create-projects.html?lang=en#create-a-project-from-a-blank-project-or-a-report).
 
-* **Al crear un informe personalizado de la empresa:** Para obtener información sobre cómo crear un informe personalizado de la empresa, consulte [Crear un informe personalizado de la empresa](https://experienceleague.adobe.com/docs/analytics/analyze/landing.html?lang=es#company-report) en [página de aterrizaje de Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/landing.html?lang=es).
+* **Al crear un informe personalizado de la empresa:** Para obtener información sobre cómo crear un informe personalizado de la empresa, consulte [Crear un informe personalizado de la empresa](https://experienceleague.adobe.com/docs/analytics/analyze/landing.html?lang=en#company-report) en [página de aterrizaje de Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/landing.html?lang=es).

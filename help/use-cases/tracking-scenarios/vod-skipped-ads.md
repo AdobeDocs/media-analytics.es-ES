@@ -3,9 +3,9 @@ title: Reproducción de VOD con anuncios omitidos
 description: Vea un ejemplo de cómo rastrear contenido de VOD en el que el usuario omitió las publicidades mediante Media SDK.
 uuid: f3ab3524-abcb-4051-b64e-a1aad6e3dd3f
 exl-id: 034b5c1f-7dd9-431f-a51b-925e407a7b36
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '280'
 ht-degree: 94%
@@ -24,7 +24,7 @@ Esta situación es igual la de [Reproducción de VOD con anuncio previo a la emi
 
 | Activador   | Método de Heartbeat  | Llamadas de red   | Notas   |
 | --- | --- | --- | --- |
-| El usuario hace clic en [!UICONTROL Reproducir]. | `trackSessionStart()` | Inicio del contenido de Analytics, inicio del contenido de Heartbeat | La biblioteca de medición no sabe que hay un anuncio pre-roll. Estas llamadas de red siguen siendo exactamente las mismas que en el escenario de [Reproducción de VOD sin anuncios](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md). |
+| El usuario hace clic en [!UICONTROL Reproducir]. | `trackSessionStart()` | Inicio del contenido de Analytics, inicio del contenido de Heartbeat | La biblioteca de medición no sabe que hay un anuncio pre-roll. Estas llamadas de red son exactamente iguales al escenario de [Reproducción de VOD sin anuncios](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md). |
 | El anuncio empieza. | <ul> <li> `trackEvent:AdBreakStart` </li> <li> `trackEvent:AdStart` </li> </ul> | Inicio del anuncio de Analytics, inicio del contenido de Heartbeat | |
 | Se reproduce el primer fotograma del anuncio. | `trackPlay()` | Reproducción de anuncio de Heartbeat | Cuando el contenido del anuncio se reproduce antes del contenido principal, los latidos se iniciarán cuando el anuncio comience a reproducirse. |
 | Se reproduce el anuncio. | | Latidos de anuncio | |

@@ -3,9 +3,9 @@ title: Descubra más información sobre las cronologías de seguimiento de medio
 description: Profundice en la cronología del cabezal de reproducción y las acciones correspondientes de los usuarios. Obtenga información acerca de los detalles de cada acción y las solicitudes que la acompañan.
 uuid: 0ff591d3-fa99-4123-9e09-c4e71ea1060b
 exl-id: 16b15e03-5581-471f-ab0c-077189dd32d6
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a1c3bdbec223ab0141d922dce07ba2128b52e794
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '1120'
 ht-degree: 99%
@@ -179,7 +179,7 @@ Mande un ping al servidor cada segundo mientras se encuentra dentro de un anunci
 >[!NOTE]
 >
 >Los anuncios posteriores de la cronología omitirán la visualización de la serie de pings de un segundo
->para que sean más breves...
+>>para que sean más breves...
 
 ```json
 {

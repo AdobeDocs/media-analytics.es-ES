@@ -3,9 +3,9 @@ title: Cómo rastrear la reproducción principal en Roku
 description: Aprenda a implementar el seguimiento principal mediante Media SDK en Roku.
 uuid: a8aa7b3c-2d39-44d7-8ebc-b101d130101f
 exl-id: 5272c0ce-4e3d-48c6-bfa6-94066ccbf9ac
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: c308dba2d7cf07b89bf124bd6e5f972c253c9f18
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '795'
 ht-degree: 88%
@@ -150,7 +150,7 @@ Esta documentación abarca el seguimiento en la versión 2.x del SDK.
 
 1. **Actualización de valor del cabezal de reproducción**
 
-   Cuando el cabezal de reproducción de contenido cambie, notifique al SDK llamando a la API `mediaUpdatePlayhead`. <br /> Para el vídeo bajo demanda (VOD), el valor se especifica segundos después del comienzo del elemento de medios. <br /> Para el streaming en vivo, si el reproductor no proporciona información acerca de la duración del contenido, el valor se puede especificar como el número de segundos desde la medianoche (UTC) de ese día.
+   Cuando el cabezal de reproducción de contenido cambie, notifique a SDK llamando a la API `mediaUpdatePlayhead`. <br /> Para el vídeo bajo demanda (VOD), el valor se especifica segundos después del comienzo del elemento de medios. <br /> Para el streaming en vivo, si el reproductor no proporciona información acerca de la duración del contenido, el valor se puede especificar como el número de segundos desde la medianoche (UTC) de ese día.
 
    ```
    ADBMobile().mediaUpdatePlayhead(position)

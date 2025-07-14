@@ -3,9 +3,9 @@ title: Medios federados
 description: El servicio Federated Media proporciona un sistema para compartir datos de medios de streaming entre dos socios.
 uuid: a82ace81-c2f6-4799-9a62-4c6a737a7dab
 exl-id: 81970370-663c-49d5-b13c-628d294be178
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '571'
 ht-degree: 61%
@@ -44,7 +44,7 @@ Federated Media hace que la medición de audio y vídeo sea más eficiente, ági
 * **Contrato de emisiones de contenidos:** el receptor y el remitente deben tener contratado Adobe Analytics para emisiones de contenidos para tener acceso a los datos de audio y vídeo en Adobe Analytics. Póngase en contacto con el equipo de su cuenta para obtener más detalles.
 * **Anexo federado:** Cada remitente y receptor debe tener un anexo firmado con Adobe antes de enviar o recibir datos. Se requiere un anexo por cliente, no uno por sociedad. Póngase en contacto con el equipo de su cuenta para obtener más detalles.
 
-* **Implementación de recopilación de medios de transmisión:** El remitente debe tener implementada la recopilación de medios de transmisión en todos los reproductores que formarán parte del conjunto de datos federado. Solo los datos de medios de streaming están disponibles para la federación. Para obtener más información, consulte [Descripción general de la colección de medios de streaming de Adobe](/help/media-overview.md).
+* **Implementación de recopilación de medios de transmisión:** El remitente debe tener implementada la recopilación de medios de transmisión en todos los reproductores que formarán parte del conjunto de datos federado. Solo los datos de medios de streaming están disponibles para la federación. Para obtener más información, consulte [Información general sobre la recopilación de medios de streaming de Adobe](/help/media-overview.md).
 
 * **Contrato de consultoría de Adobe:** para la configuración inicial de reglas federadas entre el receptor y el remitente, es importante trabajar con los servicios de consultoría para revisar los datos y crear el acuerdo de uso compartido de datos.
 

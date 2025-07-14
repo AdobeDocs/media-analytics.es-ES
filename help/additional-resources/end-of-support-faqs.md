@@ -2,9 +2,9 @@
 title: Preguntas frecuentes sobre el fin de la asistencia del SDK de Media Analytics
 description: Este tema incluye preguntas frecuentes sobre el fin de la compatibilidad con los SDK de Media Analytics.
 exl-id: 9601ec17-8421-49d0-9d81-1cfa5e8f37cf
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '600'
 ht-degree: 76%
@@ -15,7 +15,7 @@ ht-degree: 76%
 
 Con la finalización de la compatibilidad con los SDK para móviles de la versión 4 el 31 de agosto de 2021, Adobe también dejó de ofrecer compatibilidad con los SDK de Media Analytics para iOS y Android. (Esto no incluye Media Analytics SDK para plataformas web (JS) y OTT como Chromecast y Roku, que siguen siendo compatibles).
 
-Esto significa que Adobe ya no proporciona correcciones, actualizaciones relacionadas con el sistema operativo ni compatibilidad con Media Analytics Mobile SDK. Al migrar a los nuevos SDK de Experience Platform, tenga en cuenta que las [extensiones de Media Analytics](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/) deben implementarse para habilitar la recopilación de medios de streaming de Adobe.
+Esto significa que Adobe ya no proporciona correcciones, actualizaciones relacionadas con el sistema operativo ni compatibilidad con Media Analytics Mobile SDK. Al migrar a los nuevos SDK de Experience Platform, tenga en cuenta que las [extensiones de Media Analytics](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/) deben implementarse para habilitar Adobe Streaming Media Collection.
 
 
 ## Las cinco cuestiones principales que saber

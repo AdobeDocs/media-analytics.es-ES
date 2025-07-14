@@ -2,12 +2,12 @@
 title: Acerca del seguimiento del estado de reproducción
 description: Obtenga información sobre la función de seguimiento del estado de los jugadores, incluidos los requisitos y las directrices para implementar e informar sobre los estados de los jugadores.
 exl-id: c678e182-74e4-4f46-8596-7be57e645c66
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
-source-wordcount: '406'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
