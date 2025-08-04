@@ -12,7 +12,7 @@ ht-degree: 44%
 
 # Asignación de parámetros de Media Analytics para Adobe Experience Platform y Customer Journey Analytics
 
-Este documento proporciona una lista completa de todos los parámetros de Media Analytics utilizados en Adobe Experience Platform y Customer Journey Analytics. Está diseñado para admitir la integración de datos importados de Adobe Analytics a Platform mediante el [conector Source de Analytics](https://experienceleague.adobe.com/es/docs/experience-platform/sources/connectors/adobe-applications/analytics) o el [conector Source de Analytics para clasificaciones](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/classifications), y asignar cada parámetro a su ruta de campo XDM correspondiente.
+Este documento proporciona una lista completa de todos los parámetros de Media Analytics utilizados en Adobe Experience Platform y Customer Journey Analytics. Está diseñado para admitir la integración de datos importados de Adobe Analytics a Platform mediante el [conector Source de Analytics](https://experienceleague.adobe.com/es/docs/experience-platform/sources/connectors/adobe-applications/analytics) o el [conector Source de Analytics para clasificaciones](https://experienceleague.adobe.com/es/docs/experience-platform/sources/connectors/adobe-applications/classifications), y asignar cada parámetro a su ruta de campo XDM correspondiente.
 
 ## Variables reservadas de Media Analytics
 
