@@ -22,7 +22,7 @@ Las etiquetas en Adobe Experience Platform son la nueva generación de capacidad
 >[!NOTE]
 >
 >Para obtener información sobre la descarga de SDK heredados, consulte [Heredado: descargar SDK](/help/legacy/legacy-download-sdks.md).<br>
->>Para obtener información importante acerca de la finalización de la compatibilidad, consulte [Preguntas frecuentes sobre el fin de la compatibilidad](/help/additional-resources/end-of-support-faqs.md).
+>&#x200B;>Para obtener información importante acerca de la finalización de la compatibilidad, consulte [Preguntas frecuentes sobre el fin de la compatibilidad](/help/additional-resources/end-of-support-faqs.md).
 
 ## SDK de medios y bibliotecas móviles {#media-sdks-libraries}
 
