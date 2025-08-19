@@ -1,19 +1,19 @@
 ---
-title: Información acerca de dispositivos y plataformas compatibles
-description: Obtenga información acerca de los principales dispositivos, como iOS, Android, dispositivos OTT y exploradores JavaScript compatibles con la recopilación de medios de streaming.
+title: Obtenga información acerca de dispositivos y plataformas compatibles
+description: Obtenga información acerca de los principales dispositivos, como iOS, Android, dispositivos OTT y exploradores JavaScript compatibles con los servicios de medios de streaming de Adobe.
 exl-id: 169ff7b9-e577-45b7-8927-74bdcccc0a77
 feature: Streaming Media
 role: User, Admin
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
 workflow-type: tm+mt
-source-wordcount: '309'
-ht-degree: 77%
+source-wordcount: '308'
+ht-degree: 75%
 
 ---
 
 # Dispositivos y plataformas compatibles {#devices-supported}
 
-La recopilación de medios de streaming de Adobe es compatible con todos los dispositivos principales, incluidos:
+Los servicios de medios de streaming de Adobe admiten todos los dispositivos principales, incluidos:
 
 * Smartphones y tabletas iOS y Android
 * Dispositivos OTT para Roku, Fire TV y Android TV
@@ -21,7 +21,7 @@ La recopilación de medios de streaming de Adobe es compatible con todos los dis
 
 Los SDK se actualizan normalmente cuando salen al mercado nuevas versiones de estos dispositivos y se pueden utilizar para integrarlos con reproductores nativos de cada plataforma individual o con cualquier otro reproductor de medios disponible.
 
-En el caso de dispositivos que actualmente no son compatibles con SDK o en situaciones en las que es posible que necesite personalizar la implementación, puede utilizar la API de Media Collection o la API de Media Edge. Estas API le permiten realizar llamadas a la API de RESTful directamente de un dispositivo al back-end de la recopilación de medios de streaming.
+En el caso de dispositivos que actualmente no son compatibles con SDK o en situaciones en las que es posible que necesite personalizar la implementación, puede utilizar la API de Media Collection o la API de Media Edge. Estas API le permiten hacer llamadas a la API de RESTful directamente de un dispositivo al servidor de los servicios de medios de streaming de Adobe.
 
 En la tabla siguiente, se detallan los dispositivos actualmente compatibles. Si un dispositivo no aparece en la lista, póngase en contacto con el servicio de atención al cliente o con el consultor de soluciones para conocer el estado de dicho dispositivo.
 

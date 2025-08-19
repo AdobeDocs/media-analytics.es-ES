@@ -4,10 +4,10 @@ description: Vínculos a las descargas de SDK heredados para plataformas disponi
 feature: Streaming Media
 role: User, Admin, Data Engineer
 exl-id: d1066f05-f46f-46fa-897f-039657704d05
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
 workflow-type: tm+mt
 source-wordcount: '267'
-ht-degree: 73%
+ht-degree: 70%
 
 ---
 
@@ -19,7 +19,7 @@ Para obtener información sobre la descarga de **SDK** actuales, consulte [Desca
 
 Para obtener información importante acerca de la finalización de la compatibilidad, consulte [Preguntas frecuentes sobre el fin de la compatibilidad](/help/additional-resources/end-of-support-faqs.md).
 
-## Streaming de medios y la extensión Adobe Media Analytics
+## Medios de streaming y la extensión de Adobe Media Analytics
 
 La extensión Adobe Media Analytics añade el SDK central de JavaScript Media (Media 2.x SDK) para audio y vídeo. Esta extensión proporciona la funcionalidad para agregar la instancia de seguimiento `MediaHeartbeat` a un sitio o proyecto de recopilación de datos.
 
@@ -27,7 +27,7 @@ Adobe Data Collection con la extensión Media Analytics tiene los siguientes req
 * Debe ser cliente de Adobe Experience Cloud.
 * Debe implementar el código incrustado de la recopilación de datos o DTM en las páginas web.
 * Debe configurar la extensión [Analytics Extension](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html?lang=es).
-* Debe configurar la extensión de [Adobe Media Analytics para audio y vídeo](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/media-analytics/overview.html?lang=es).
+* Debe configurar la extensión de [Adobe Media Analytics para audio y vídeo](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/media-analytics/overview.html).
 * Debe configurar la [Experience Cloud ID Extension](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/id-service/overview.html?lang=es).
 
 ## Descargar los Media SDK 2.x {#download-2x-sdks}

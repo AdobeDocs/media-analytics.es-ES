@@ -1,17 +1,17 @@
 ---
-title: Implementar la recopilación de medios de streaming mediante la API de Edge Network
+title: Implementar servicios de medios de streaming de Adobe mediante la API de Edge Network
 description: Recursos sobre la instalación de Media Analytics con la API de Experience Platform Edge.
 feature: Streaming Media
 role: User, Admin, Data Engineer
 exl-id: 762abfd4-dc84-40dc-9142-fbebbb892e15
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
 workflow-type: tm+mt
 source-wordcount: '102'
 ht-degree: 0%
 
 ---
 
-# Implementar la recopilación de medios de streaming mediante la API de Edge Network
+# Implementar servicios de medios de streaming de Adobe mediante la API de Edge Network
 
 Si no puede usar [Adobe Experience Platform Mobile SDK](/help/implementation/edge/implementation-edge.md), puede enviar datos al Edge Network de Adobe Experience Platform directamente a través de una API.
 

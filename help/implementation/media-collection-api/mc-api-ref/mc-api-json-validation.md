@@ -1,11 +1,11 @@
 ---
-title: Esquemas de validación de JSON de recopilación de medios de streaming
+title: Esquemas de validación de JSON de Streaming Media Services
 description: Qué son los esquemas de validación JSON de Streaming Media y cómo se utilizan para determinar los parámetros correctos del cuerpo de la solicitud para cada tipo de evento.
 uuid: 7c9d5ce4-f5d2-4129-900e-4d02800907d1
 exl-id: 2931715d-2e7d-4c15-8569-da63b43d6006
 feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
 workflow-type: tm+mt
 source-wordcount: '83'
 ht-degree: 72%

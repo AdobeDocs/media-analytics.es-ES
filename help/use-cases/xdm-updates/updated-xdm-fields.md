@@ -1,16 +1,17 @@
 ---
-title: Migración de una implementación del conector de origen de Analytics a campos de medios de streaming XDM actualizados
+title: Actualizar una implementación de conector de origen de Analytics a nuevos campos XDM para los servicios de medios de streaming
 description: Obtenga información acerca de la migración de una implementación de conector de origen de Analytics a campos de medios de streaming XDM actualizados
 feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a0a357c3fe7e958b0b6491c84f17f26a806ea205
+exl-id: d239b203-71ce-4307-884f-9d11cc623d04
+source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
 workflow-type: tm+mt
-source-wordcount: '866'
+source-wordcount: '869'
 ht-degree: 0%
 
 ---
 
-# Actualizar una implementación de conector de origen de Analytics a nuevos campos XDM para medios de streaming
+# Actualizar una implementación de conector de origen de Analytics a nuevos campos XDM para los servicios de medios de streaming
 
 >[!NOTE]
 >
@@ -32,7 +33,7 @@ Los datos introducidos antes de esta fecha permanecerán disponibles para la cre
 
 ## Diferencias adicionales con la nueva ruta del campo XDM
 
-Con la nueva implementación del conector de origen de Adobe para medios de streaming, las llamadas de conexión persistente de Adobe Analytics ahora se incorporan a Adobe Experience Platform.
+Con la nueva implementación del conector de origen de Adobe para los medios de streaming, las llamadas de conexión persistente de Adobe Analytics ahora se incorporan en Adobe Experience Platform.
 
 Anteriormente, estas llamadas no se reflejaban en aplicaciones de Platform como Customer Journey Analytics. Como resultado, su organización podría observar las siguientes diferencias en la creación de informes:
 
@@ -58,11 +59,11 @@ Los informes de CJA se pueden migrar de dos formas:
 
   Para ver una lista de asignaciones, consulte [Asignación de parámetros de Media Analytics para Adobe Experience Platform y Customer Journey Analytics](/help/use-cases/xdm-updates/parameters-mapping.md).
 
-* **Si no se requieren datos históricos**: es suficiente usar la ruta del campo XDM de creación de informes en el momento de la creación de informes. Para obtener más información, consulte [Migrar Customer Journey Analytics para usar los nuevos campos de medios de streaming](/help/use-cases/xdm-updates/migrate-cja-setup.md).
+* **Si no se requieren datos históricos**: es suficiente usar la ruta del campo XDM de creación de informes en el momento de la creación de informes. Para obtener más información, consulte [Migrar Customer Journey Analytics para usar los nuevos campos de medios de transmisión](/help/use-cases/xdm-updates/migrate-cja-setup.md).
 
 ### Real-Time CDP
 
-Todas las audiencias y perfiles deben estar basados en `mediaReporting`. Para obtener más información, consulte [Migrar perfiles a los nuevos campos de medios de streaming](/help/use-cases/xdm-updates/migrate-profiles.md).
+Todas las audiencias y perfiles deben estar basados en `mediaReporting`. Para obtener más información, consulte [Migrar perfiles a los nuevos campos de medios de transmisión](/help/use-cases/xdm-updates/migrate-profiles.md).
 
 ### Flujo de datos y recopilación de datos
 
@@ -87,4 +88,3 @@ Tenga en cuenta que cualquier otro flujo que dependa de `media.mediaTimed` campo
 Todos los clientes que utilicen la recopilación de datos de Adobe para medios de streaming deben completar sus migraciones dentro del periodo de transición designado.
 
 Si tiene alguna pregunta o necesita asistencia, no dude en ponerse en contacto con el equipo de asistencia de Adobe.
-

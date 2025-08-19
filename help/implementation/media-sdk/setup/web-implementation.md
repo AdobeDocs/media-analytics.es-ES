@@ -4,7 +4,7 @@ description: Aprenda a implementar medios de transmisión de Adobe para aplicaci
 feature: Streaming Media
 role: User, Admin, Data Engineer
 exl-id: aed561d0-defc-4be5-87d3-0f331cdfab34
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
 workflow-type: tm+mt
 source-wordcount: '441'
 ht-degree: 92%
@@ -15,7 +15,7 @@ ht-degree: 92%
 
 La información de esta página describe cómo instalar el SDK web independiente y configurar JavaScript.
 
-También puede usar la extensión de Adobe Media Analytics para implementar Adobe Streaming Media Collection, tal como se describe en [Implementar Analytics con la extensión Media Analytics](/help/implementation/media-sdk/setup/web-implementation-tags.md).
+También puede usar la extensión de Adobe Media Analytics para implementar servicios de medios de transmisión, tal como se describe en [Instalar servicios de medios de transmisión mediante la extensión de Media Analytics](/help/implementation/media-sdk/setup/web-implementation-tags.md).
 
 ## Requisitos previos  {#prerequesites}
 

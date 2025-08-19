@@ -1,19 +1,19 @@
 ---
-title: Configuración de un SDK móvil mediante etiquetas para medios de transmisión
-description: Aprenda a implementar medios de transmisión de Adobe para aplicaciones móviles.
+title: Configuración de una SDK móvil mediante etiquetas para servicios de medios de streaming
+description: Obtenga información sobre cómo implementar los servicios de medios de streaming de Adobe para aplicaciones móviles.
 feature: Streaming Media
 role: User, Admin, Data Engineer
 exl-id: b4944b5f-cbae-4efc-9ef7-962d3f342240
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
 workflow-type: tm+mt
-source-wordcount: '197'
-ht-degree: 82%
+source-wordcount: '199'
+ht-degree: 70%
 
 ---
 
 # Instalación de SDK móviles {#install-mobile-sdks}
 
-Para implementar la recopilación de medios de streaming para aplicaciones móviles en Android o iOS, instale y configure lo siguiente:
+Para implementar los servicios de medios de streaming de Adobe para aplicaciones móviles en Android o iOS, instale y configure lo siguiente:
 
 * **SDK móvil de Adobe Experience Platform**
 

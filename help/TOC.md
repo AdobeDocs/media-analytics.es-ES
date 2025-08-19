@@ -1,27 +1,27 @@
 ---
 product: adobe analytics
 audience: end-user
-user-guide-title: Colección de medios de streaming
-breadcrumb-title: Guía de colección de medios de streaming
-user-guide-description: Implementar medios de streaming. Incluye el SDK de medios y la API de recopilación de medios.
+user-guide-title: Guía de servicios de medios de streaming
+breadcrumb-title: Guía de servicios de medios de streaming
+user-guide-description: Implemente servicios de medios de streaming. Incluye el SDK de medios y la API de recopilación de medios.
 sub-product: media analytics
-source-git-commit: a0a357c3fe7e958b0b6491c84f17f26a806ea205
+source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
 workflow-type: tm+mt
-source-wordcount: '922'
-ht-degree: 81%
+source-wordcount: '926'
+ht-degree: 79%
 
 ---
 
 
-# Colección de medios de streaming {#using}
+# Guía de servicios de medios de streaming {#using}
 
-+ [Guía de colección de medios de streaming](media-overview.md)
++ [Guía de servicios de medios de streaming de Adobe](media-overview.md)
 + Notas de la versión  {#release-notes}
-   + [Notas de la versión de Streaming Media Collection](additional-resources/release-notes.md)
+   + [Notas de la versión de medios de streaming](additional-resources/release-notes.md)
 + Introducción {#getting-started}
    + [Requisitos previos ](getting-started/prereqs.md)
    + [Dispositivos compatibles](getting-started/supported-devices.md)
-   + [Documentación de implementación de recopilación de medios de streaming](getting-started/implementation-documentation.md)
+   + [Documentación de implementación de servicios de medios de streaming](getting-started/implementation-documentation.md)
    + [SDK, bibliotecas y extensiones](getting-started/download-sdks.md)
    + Fin del soporte técnico {#end-of-support}
       + [Fin de la compatibilidad del SDK móvil de Media Analytics](additional-resources/end-of-support-faqs.md)

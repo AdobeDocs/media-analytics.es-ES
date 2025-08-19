@@ -5,9 +5,9 @@ uuid: 06fefedb-b0c8-4f7d-90c8-e374cdde1695
 exl-id: a175332e-0bdc-44aa-82cb-b3f879e7abfc
 feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
 workflow-type: tm+mt
-source-wordcount: '617'
+source-wordcount: '616'
 ht-degree: 94%
 
 ---
@@ -19,7 +19,7 @@ Después de descargar el Media SDK para su aplicación de vídeo o reproductor, 
 
 ## Directrices generales de implementación {#general-implementation-guidelines}
 
-Hay tres componentes principales de SDK utilizados en el seguimiento con la recopilación de medios de streaming:
+Hay tres componentes principales de SDK utilizados en el seguimiento con servicios de medios de streaming:
 * Media Heartbeat Config-El `MediaHeartbeatConfig` contiene la configuración básica para la creación de informes.
 * Media Heartbeat Delegate-El `MediaHeartbeatDelegate` controla el tiempo de reproducción y el objeto QoS.
 * Media Heartbeat-La `MediaHeartbeat` es la biblioteca principal que contiene miembros y métodos.
@@ -125,7 +125,7 @@ Las implementaciones de seguimiento de Media Analytics generan dos tipos de llam
 
   El servidor de seguimiento de análisis debe finalizar en “`.sc.omtrdc.net`” o ser CNAME.
 
-* **&#x200B; Servidor de Media Analytics (latidos)**
+* ** Servidor de Media Analytics (latidos)**
 Siempre tiene el formato “`[your_namespace].hb.omtrdc.net`”. El valor de “`[your_namespace]`” especifica su empresa y lo proporciona Adobe.
 
 El seguimiento de medios funciona del mismo modo en todas las plataformas, equipos de escritorio y dispositivos móviles. Actualmente, el seguimiento de audio funciona en plataformas móviles. En todas las llamadas de seguimiento hay algunas variables universales clave que se deben validar:

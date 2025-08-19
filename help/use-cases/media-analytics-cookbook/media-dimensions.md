@@ -4,7 +4,7 @@ description: Esta función le permite vincular acciones de aplicación a datos d
 exl-id: 75cc9088-776d-4b10-b358-9fff956a7eb7
 feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
 workflow-type: tm+mt
 source-wordcount: '232'
 ht-degree: 88%
@@ -23,7 +23,7 @@ Para habilitar esta función para un informe específico, vuelva a habilitar la 
 
 >[!NOTE]
 >
->Las métricas de medios _no_ están disponibles para su uso fuera del seguimiento de medios porque la mayoría de ellas las calcula la recopilación de medios de streaming en función de los eventos de latidos. Además, es importante que las métricas de medios no se vean infladas por implementaciones diferentes.
+>Las métricas de medios _no_ están disponibles para su uso fuera del seguimiento de medios porque la mayoría de ellas las calculan los servicios de medios de streaming basados en eventos de latidos. Además, es importante que las métricas de medios no se vean infladas por implementaciones diferentes.
 
 ## Atribución de flujo de transmisión de medios
 

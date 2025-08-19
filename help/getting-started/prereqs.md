@@ -1,26 +1,26 @@
 ---
-title: Conozca los requisitos previos de la recopilación de medios de streaming de Adobe
-description: Introducción a la recopilación de medios de streaming. Aprenda lo que necesita para la implementación de.
+title: Conozca los requisitos previos de los servicios de medios de streaming de Adobe
+description: Introducción a los servicios de medios de streaming. Aprenda lo que necesita para la implementación de.
 uuid: 4c0b37f3-8615-4cc0-b9c9-eeb029067064
 exl-id: 85ab1dbd-f4a7-4f11-afc9-8d5000e2de70
 feature: "Streaming Media, Workspace Basics"
 role: User, Admin, Data Engineer
-source-git-commit: 0b0b4a373b15191dcb37dc436413f68cdc70768e
+source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
 workflow-type: tm+mt
-source-wordcount: '428'
-ht-degree: 64%
+source-wordcount: '436'
+ht-degree: 62%
 
 ---
 
 # Requisitos previos {#prerequisites}
 
-Antes de empezar a implementar la recopilación de medios de streaming de Adobe, complete las siguientes tareas:
+Antes de empezar a implementar los servicios de medios de streaming de Adobe, complete las siguientes tareas:
 
-1. **Revisar la información general de la colección de medios de streaming**<br>
-Antes de comenzar a implementar Streaming Media Collection, revise la [descripción general de Streaming Media Collection](/help/media-overview.md) para asegurarse de que se ajuste a sus necesidades.
+1. **Revisar la información general de los servicios de medios de streaming de Adobe**<br>
+Antes de comenzar a implementar los servicios de medios de transmisión, revise la [descripción general de los servicios de medios de transmisión de Adobe](/help/media-overview.md) para asegurarse de que satisfacen sus necesidades.
 
 1. **Confirmar el modelo de precios**<br>
-El modelo de precios actual del complemento de recopilación de medios de streaming de Adobe se basa en las transmisiones de vídeo. Si es necesario, póngase en contacto con su representante de ventas o con el equipo de cuenta de Adobe, ya que el complemento se vende por separado para Adobe Analytics y Adobe Experience Platform.
+El modelo de precios actual para el complemento de recopilación de medios de streaming de Customer Journey Analytics y el complemento de medios de streaming de Adobe Analytics se basa en las transmisiones de vídeo. Si es necesario, póngase en contacto con su representante de ventas o con el equipo de cuenta de Adobe, ya que el complemento se vende por separado para Adobe Analytics y Adobe Experience Platform.
 
 1. **Habilitar informes de Adobe Analytics**<br>
 Para habilitar los informes en Analytics o Customer Journey Analytics y ver los datos de contenido y publicidad que está recopilando, debe habilitar los informes. Véase [Habilitación de informes multimedia](/help/reporting/media-reports-enable.md).
@@ -41,7 +41,7 @@ Para habilitar los informes en Analytics o Customer Journey Analytics y ver los 
 
 1. **Ver requisitos previos adicionales para el método de implementación**
 
-   Según cómo planee implementar la recopilación de medios de streaming, consulte los requisitos previos para cualquiera de los siguientes métodos de implementación:
+   Según cómo planee implementar los servicios de medios de streaming, consulte los requisitos previos para cualquiera de los siguientes métodos de implementación:
 
    * [Requisitos previos para implementaciones solo de Adobe Analytics](/help/implementation/media-sdk/setup/prerequisites-analytics.md)
 

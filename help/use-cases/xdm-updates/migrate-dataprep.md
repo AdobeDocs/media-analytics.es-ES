@@ -3,7 +3,8 @@ title: Migración de la preparación de datos para campos personalizados a los n
 description: Obtenga información sobre cómo migrar el tipo de datos Preparación de datos para campos personalizados a los nuevos campos de medios de streaming
 feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: 4e8bc7ba60c681510cb570c43a0f8193d4b39e11
+exl-id: 7294b147-2bef-463f-bada-cb67c16d01b0
+source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
 workflow-type: tm+mt
 source-wordcount: '647'
 ht-degree: 0%
@@ -12,11 +13,11 @@ ht-degree: 0%
 
 # Migración de la preparación de datos para campos personalizados a los nuevos campos de medios de streaming
 
-En este documento se describe el proceso de migración del servicio de preparación de datos que existe sobre los flujos de recopilación de datos de Adobe habilitados para los datos de recopilación de medios de streaming de Adobe. La migración convierte una asignación de preparación de datos del tipo de datos de recopilación de medios de streaming de Adobe llamado &quot;Medios&quot; para usar el nuevo tipo de datos correspondiente denominado &quot;[Detalles de informes de medios](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/media-reporting-details)&quot;.
+En este documento se describe el proceso de migración del servicio de preparación de datos que existe sobre los flujos de recopilación de datos de Adobe habilitados para los datos de recopilación de medios de streaming de Adobe. La migración convierte una asignación de preparación de datos del tipo de datos de recopilación de medios de streaming de Adobe llamado &quot;Medios&quot; para usar el nuevo tipo de datos correspondiente denominado &quot;[Detalles de informes de medios](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details)&quot;.
 
 ## Migración de la preparación de datos para campos personalizados
 
-Para migrar las asignaciones de preparación de datos del tipo de datos anterior denominado &quot;Medios&quot; al nuevo tipo de datos denominado &quot;[Detalles de informes de medios](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/media-reporting-details)&quot;, debe editar las asignaciones de preparación de datos:
+Para migrar las asignaciones de preparación de datos del tipo de datos anterior denominado &quot;Medios&quot; al nuevo tipo de datos denominado &quot;[Detalles de informes de medios](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details)&quot;, debe editar las asignaciones de preparación de datos:
 
 >[!IMPORTANT]
 >
@@ -24,7 +25,7 @@ Para migrar las asignaciones de preparación de datos del tipo de datos anterior
 
 1. En Adobe Experience Platform, en la sección [!UICONTROL **Sources**], vaya a la pestaña [!UICONTROL **Dataflows**].
 
-1. Busque el flujo de datos responsable de la importación de datos de medios de streaming de Adobe Analytics a Adobe Experience Platform mediante la recopilación de datos de Adobe.
+1. Busque el flujo de datos responsable de importar los datos de medios de streaming de Adobe Analytics a Adobe Experience Platform mediante la recopilación de datos de Adobe.
 
 1. Seleccione [!UICONTROL **Actualizar flujo de datos**] para modificar la configuración de la preparación de datos reemplazando cada asignación de origen personalizada que contenga un campo obsoleto con el nuevo campo correspondiente del nuevo objeto XDM.
 
@@ -34,7 +35,7 @@ Para migrar las asignaciones de preparación de datos del tipo de datos anterior
 
 1. Compruebe que las asignaciones siguen funcionando según lo esperado.
 
-Consulte el parámetro [Content ID](https://experienceleague.adobe.com/es/docs/media-analytics/using/implementation/variables/audio-video-parameters#content-id) en la página [Parámetros de audio y vídeo](https://experienceleague.adobe.com/es/docs/media-analytics/using/implementation/variables/audio-video-parameters) para asignar entre los campos antiguos y los campos nuevos. La ruta de campo antigua se encuentra en la propiedad &quot;Ruta de campo XDM&quot;, mientras que la nueva ruta de campo se encuentra en la propiedad &quot;Ruta de campo XDM de creación de informes&quot;.
+Consulte el parámetro [Content ID](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters#content-id) en la página [Parámetros de audio y vídeo](https://experienceleague.adobe.com/es/docs/media-analytics/using/implementation/variables/audio-video-parameters) para asignar entre los campos antiguos y los campos nuevos. La ruta de campo antigua se encuentra en la propiedad &quot;Ruta de campo XDM&quot;, mientras que la nueva ruta de campo se encuentra en la propiedad &quot;Ruta de campo XDM de creación de informes&quot;.
 
 ## Ejemplo
 
@@ -42,7 +43,7 @@ Para facilitar el seguimiento de las directrices de migración, tenga en cuenta 
 
 1. En Adobe Experience Platform, en la sección [!UICONTROL **Sources**], vaya a la pestaña [!UICONTROL **Dataflows**].
 
-1. Busque el flujo de datos responsable de la importación de datos de medios de streaming de Adobe Analytics a Adobe Experience Platform mediante la recopilación de datos de Adobe.
+1. Busque el flujo de datos responsable de importar los datos de medios de streaming de Adobe Analytics a Adobe Experience Platform mediante la recopilación de datos de Adobe.
 
 1. Seleccione **[!UICONTROL Actualizar flujo de datos]** para ingresar a la interfaz de usuario de edición como se muestra en la siguiente imagen.
 
@@ -76,7 +77,7 @@ Para facilitar el seguimiento de las directrices de migración, tenga en cuenta 
 
 En el ejemplo anterior, todos los tipos de datos implicados eran de tipo cadena, por lo que el reemplazo de asignación fue directo.
 
-Si el tipo de datos del campo de origen es diferente al tipo de datos del campo de destino, debe seguir las directrices de la [Guía de solución de problemas de la preparación de datos](https://experienceleague.adobe.com/es/docs/experience-platform/data-prep/troubleshooting-guide), [Gestión de formatos de datos con la preparación de datos](https://experienceleague.adobe.com/es/docs/experience-platform/data-prep/data-handling) y [Funciones de asignación de la preparación de datos](https://experienceleague.adobe.com/es/docs/experience-platform/data-prep/data-handling).
+Si el tipo de datos del campo de origen es diferente al tipo de datos del campo de destino, debe seguir las directrices de la [Guía de solución de problemas de la preparación de datos](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/troubleshooting-guide), [Gestión de formatos de datos con la preparación de datos](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/data-handling) y [Funciones de asignación de la preparación de datos](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/data-handling).
 
 Por ejemplo, si el tipo de origen es una cadena y el tipo de destino es un booleano, la preparación de datos puede analizar automáticamente el valor y convertirlo en un booleano.
 
@@ -89,5 +90,3 @@ Asignando con `media.mediaTimed` a un campo personalizado.
 Asignando `mediaReporting` al mismo campo personalizado:
 
 ![Flujo de datos de AEP continuado](assets/aep-dataflow7.jpeg)
-
-

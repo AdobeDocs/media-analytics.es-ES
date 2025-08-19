@@ -4,10 +4,10 @@ description: Este tema incluye preguntas frecuentes sobre el fin de la compatibi
 exl-id: 9601ec17-8421-49d0-9d81-1cfa5e8f37cf
 feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
 workflow-type: tm+mt
-source-wordcount: '600'
-ht-degree: 76%
+source-wordcount: '614'
+ht-degree: 69%
 
 ---
 
@@ -15,18 +15,18 @@ ht-degree: 76%
 
 Con la finalización de la compatibilidad con los SDK para móviles de la versión 4 el 31 de agosto de 2021, Adobe también dejó de ofrecer compatibilidad con los SDK de Media Analytics para iOS y Android. (Esto no incluye Media Analytics SDK para plataformas web (JS) y OTT como Chromecast y Roku, que siguen siendo compatibles).
 
-Esto significa que Adobe ya no proporciona correcciones, actualizaciones relacionadas con el sistema operativo ni compatibilidad con Media Analytics Mobile SDK. Al migrar a los nuevos SDK de Experience Platform, tenga en cuenta que las [extensiones de Media Analytics](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/) deben implementarse para habilitar Adobe Streaming Media Collection.
+Esto significa que Adobe ya no proporciona correcciones, actualizaciones relacionadas con el sistema operativo ni compatibilidad con Media Analytics Mobile SDK. Al migrar a los nuevos SDK de Experience Platform, tenga en cuenta que las [extensiones de Media Analytics](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/) deben implementarse para habilitar los servicios de medios de streaming de Adobe.
 
 
 ## Las cinco cuestiones principales que saber
 
 1. A partir del 31 de agosto de 2021, los SDK de Mobile v4 ya no serán compatibles. Debe migrar a los SDK de Adobe Experience Platform (AEP) Mobile para iOS y Android.
 
-1. La implementación de Analytics para Streaming Media requiere el SDK Mobile de AEP y el uso de las extensiones de Analytics y Media Analytics. A partir del 1 de septiembre de 2021, debe utilizar los nuevos SDK y las extensiones de AEP Mobile.  Las extensiones de Media Analytics se configuran mediante etiquetas de Adobe (recopilación de datos). Para obtener más información, consulte [Migración de Media SDK independientes a Adobe Launch](/help/legacy/sdk-to-launch/sdk-to-launch-migration.md).
+1. La implementación de los servicios de medios de streaming de Adobe requiere AEP Mobile SDK y el uso de las extensiones de Analytics y Media Analytics. A partir del 1 de septiembre de 2021, debe utilizar los nuevos SDK y las extensiones de AEP Mobile.  Las extensiones de Media Analytics se configuran mediante etiquetas de Adobe (recopilación de datos). Para obtener más información, consulte [Migración de Media SDK independientes a Adobe Launch](/help/legacy/sdk-to-launch/sdk-to-launch-migration.md).
 
 1. El desarrollo de funciones ha finalizado para los SDK de Media Analytics para iOS y Android. Las nuevas funciones que se introdujeron a partir del otoño de 2019 se habilitan mediante las extensiones de Media Analytics y la API de Media Collection.
 
-1. Los SDK de Roku y Chromecast siguen estando disponibles para los clientes de Analytics para Streaming Media. Los SDK de Roku y Chromecast seguirán mejorándose y admitiéndose como SDK independientes. Si utiliza el SDK de JS para Media Analytics, puede seguir utilizando el SDK independiente o activar la extensión de Media Analytics con la recopilación de datos de Adobe (antes conocida como Adobe Launch).
+1. Los SDK de Roku y Chromecast siguen estando disponibles para los clientes con el complemento de medios de streaming de Adobe Analytics y el complemento de recopilación de medios de streaming de Customer Journey Analytics. Los SDK de Roku y Chromecast seguirán mejorándose y admitiéndose como SDK independientes. Si utiliza el SDK de JS para Media Analytics, puede seguir utilizando el SDK independiente o activar la extensión de Media Analytics con la recopilación de datos de Adobe (antes conocida como Adobe Launch).
 
 Si tiene alguna pregunta, póngase en contacto con el equipo de su cuenta de Adobe.
 

@@ -1,13 +1,13 @@
 ---
-source-git-commit: e534d44f9d03b99153fde23b2c587f8607ceea72
+source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
 workflow-type: tm+mt
-source-wordcount: '612'
-ht-degree: 100%
+source-wordcount: '613'
+ht-degree: 98%
 
 ---
 # Nota de la versión de medios de streaming: texto de origen
 
-El siguiente contenido se ha copiado de las notas de la versión de Experience Cloud. Esto se trasladará a las nuevas notas de la versión de medios de streaming.
+El siguiente contenido se ha copiado de las notas de la versión de Experience Cloud. Esto se trasladará a las nuevas notas de la versión de los servicios de medios de streaming.
 
 
 Obtenga información sobre las últimas actualizaciones de la versión para los [productos de Adobe Experience Cloud](https://business.adobe.com/es/products/adobe-experience-cloud-products.html). Obtenga la documentación de autoayuda más reciente: tutoriales y cursos sobre Experience League.
