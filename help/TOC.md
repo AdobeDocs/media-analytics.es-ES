@@ -5,9 +5,9 @@ user-guide-title: Guía de servicios de medios de streaming
 breadcrumb-title: Guía de servicios de medios de streaming
 user-guide-description: Implementar servicios de medios de streaming. Incluye el SDK de medios y la API de recopilación de medios.
 sub-product: media analytics
-source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
+source-git-commit: efe4605d59be2629c931e3f0faca839ccb56c495
 workflow-type: tm+mt
-source-wordcount: '926'
+source-wordcount: '929'
 ht-degree: 80%
 
 ---
@@ -99,6 +99,7 @@ ht-degree: 80%
       + [Implementación y sistema de informes](use-cases/player-state-tracking/implementation-and-reporting.md)
       + [Seguimiento de varios estados de reproductor](use-cases/player-state-tracking/multiple-player-states.md)
       + [Ejemplos de seguimiento del estado de reproducción](use-cases/player-state-tracking/player-state-examples.md)
+   + [Seguimiento de datos de programación](/help/use-cases/track-schedule-data.md)
    + [Seguimiento del contenido descargado ](use-cases/track-downloaded-content.md)
    + [Medios federados](use-cases/federated-media.md)
    + [Administración de interrupciones de la aplicación durante la reproducción](use-cases/cookbook/app-interrupts.md)
