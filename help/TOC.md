@@ -3,12 +3,12 @@ product: adobe analytics
 audience: end-user
 user-guide-title: Guía de servicios de medios de streaming
 breadcrumb-title: Guía de servicios de medios de streaming
-user-guide-description: Implemente servicios de medios de streaming. Incluye el SDK de medios y la API de recopilación de medios.
+user-guide-description: Implementar servicios de medios de streaming. Incluye el SDK de medios y la API de recopilación de medios.
 sub-product: media analytics
 source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
 workflow-type: tm+mt
 source-wordcount: '926'
-ht-degree: 79%
+ht-degree: 80%
 
 ---
 
@@ -77,7 +77,7 @@ ht-degree: 79%
 + Creación de informes {#media-reports}
    + [Habilitación de informes de medios ](reporting/media-reports-enable.md)
    + Paneles de medios en Workspace {#media-workspace-panels}
-      + [Panel de audiencia media por minuto de medios](reporting/workspace/average-minute-audience.md)
+      + [Panel de público medio por minuto de medios](reporting/workspace/average-minute-audience.md)
       + [Panel Visualizadores simultáneos de medios](reporting/workspace/media-concurrent-viewers-overview.md)
       + [Panel Tiempo invertido en la reproducción de contenido](reporting/workspace/media-playback-time-spent.md)
    + [Informes de medios en Workspace](reporting/workspace/media-workspace-templates.md)
