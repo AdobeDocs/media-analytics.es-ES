@@ -68,7 +68,7 @@ alloy("configure", {
 });
 ```
 
-Consulte la `streamingMedia`documentación[ del componente ](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/configure/streamingmedia) de Web SDK para obtener información detallada sobre cómo configurarlo.
+Consulte la `streamingMedia`documentación[&#x200B; del componente &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/configure/streamingmedia) de Web SDK para obtener información detallada sobre cómo configurarlo.
 
 ### Paso 3: Obtención de la instancia de rastreador de medios al migrar desde Media JS SDK
 

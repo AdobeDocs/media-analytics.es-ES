@@ -37,13 +37,13 @@ Descripción de los datos de la tabla:
 >[!IMPORTANT]
 >
 >No cambie los nombres de clasificación de ninguna de las variables enumeradas a continuación que
->>se describan en Informes/Variables reservadas como “clasificación”.
->>Las clasificaciones de contenidos se definen cuando un grupo de informes está habilitado para los contenidos
->>seguimiento. De vez en cuando, Adobe agrega nuevas propiedades y, cuando esto sucede,
->>los clientes deben volver a habilitar sus grupos de informes para obtener acceso a las nuevas
->>propiedades de contenidos. Durante el proceso de actualización, Adobe determina si las
->>clasificaciones están habilitadas comprobando los nombres de las variables. Si alguna de ellas
->>falta, Adobe las agrega de nuevo.
+>&#x200B;>se describan en Informes/Variables reservadas como “clasificación”.
+>&#x200B;>Las clasificaciones de contenidos se definen cuando un grupo de informes está habilitado para los contenidos
+>&#x200B;>seguimiento. De vez en cuando, Adobe agrega nuevas propiedades y, cuando esto sucede,
+>&#x200B;>los clientes deben volver a habilitar sus grupos de informes para obtener acceso a las nuevas
+>&#x200B;>propiedades de contenidos. Durante el proceso de actualización, Adobe determina si las
+>&#x200B;>clasificaciones están habilitadas comprobando los nombres de las variables. Si alguna de ellas
+>&#x200B;>falta, Adobe las agrega de nuevo.
 
 ## Datos de vídeo de anuncio {#ad-video-data}
 
