@@ -26,7 +26,7 @@ Esto significa que Adobe ya no proporciona correcciones, actualizaciones relacio
 
 1. El desarrollo de funciones ha finalizado para los SDK de Media Analytics para iOS y Android. Las nuevas funciones que se introdujeron a partir del otoño de 2019 se habilitan mediante las extensiones de Media Analytics y la API de Media Collection.
 
-1. Los SDK de Roku y Chromecast siguen estando disponibles para los clientes con el complemento de medios de streaming de Adobe Analytics y el complemento de recopilación de medios de streaming de Customer Journey Analytics. Los SDK de Roku y Chromecast seguirán mejorándose y admitiéndose como SDK independientes. Si utiliza el SDK de JS para Media Analytics, puede seguir utilizando el SDK independiente o activar la extensión de Media Analytics con la recopilación de datos de Adobe (antes conocida como Adobe Launch).
+1. Los SDK de Roku y Chromecast siguen estando disponibles para los clientes con el complemento de medios de streaming de Adobe Analytics y el complemento de recopilación de medios de streaming de Customer Journey Analytics. Los SDK de Roku y Chromecast seguirán mejorándose y admitiéndose como SDK independientes. Si utiliza el SDK de JS para Media Analytics, puede seguir utilizando el SDK independiente o habilitar la extensión de Media Analytics con la recopilación de datos de Adobe (antes conocida como Adobe Launch).
 
 Si tiene alguna pregunta, póngase en contacto con el equipo de su cuenta de Adobe.
 

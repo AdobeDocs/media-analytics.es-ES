@@ -18,7 +18,7 @@ ht-degree: 9%
 >
 >Los *informes* de Workspace antes se conocían como *plantillas*.
 
-Analysis Workspace ofrece un conjunto de informes creados previamente que están disponibles de forma predeterminada y que pueden utilizarse para analizar datos. Para obtener más información sobre todos los informes predeterminados disponibles, consulte [Ver informes](https://experienceleague.adobe.com/docs/analytics/analyze/landing.html?lang=es#menus) en [página de aterrizaje de Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/landing.html?lang=es).
+Analysis Workspace ofrece un conjunto de informes creados previamente que están disponibles de forma predeterminada y que pueden utilizarse para analizar datos. Para obtener más información sobre todos los informes predeterminados disponibles, consulte [Ver informes](https://experienceleague.adobe.com/docs/analytics/analyze/landing.html?lang=en#menus) en [página de aterrizaje de Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/landing.html?lang=es).
 
 Algunos de estos informes son especialmente útiles para analizar los datos de medios de streaming, tal como se describe en las secciones siguientes.
 
@@ -41,6 +41,6 @@ Por ejemplo, si elige el informe [!UICONTROL **Consumo de medios de streaming**]
 Puede utilizar los informes de medios predeterminados de las siguientes maneras:
 al crear un nuevo proyecto. También puede o al modificar un proyecto existente.
 
-* **Al crear un nuevo proyecto:** Para obtener información sobre cómo crear un nuevo proyecto a partir de un informe predeterminado, consulte [Crear un proyecto a partir de un proyecto en blanco o un informe](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/create-projects.html?lang=es#create-a-project-from-a-blank-project-or-a-report) en [Crear proyectos en Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/create-projects.html?lang=es#create-a-project-from-a-blank-project-or-a-report).
+* **Al crear un nuevo proyecto:** Para obtener información sobre cómo crear un nuevo proyecto a partir de un informe predeterminado, consulte [Crear un proyecto a partir de un proyecto en blanco o un informe](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/create-projects.html?lang=en#create-a-project-from-a-blank-project-or-a-report) en [Crear proyectos en Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/create-projects.html?lang=en#create-a-project-from-a-blank-project-or-a-report).
 
-* **Al crear un informe personalizado de la empresa:** Para obtener información sobre cómo crear un informe personalizado de la empresa, consulte [Crear un informe personalizado de la empresa](https://experienceleague.adobe.com/docs/analytics/analyze/landing.html?lang=es#company-report) en [página de aterrizaje de Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/landing.html?lang=es).
+* **Al crear un informe personalizado de la empresa:** Para obtener información sobre cómo crear un informe personalizado de la empresa, consulte [Crear un informe personalizado de la empresa](https://experienceleague.adobe.com/docs/analytics/analyze/landing.html?lang=en#company-report) en [página de aterrizaje de Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/landing.html?lang=es).

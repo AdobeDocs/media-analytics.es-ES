@@ -20,7 +20,7 @@ ht-degree: 98%
 | --- | :---: | :---: | :---: | --- |
 | `analytics.trackingServer` | Y | string | `sessionStart` | La URL del servidor de Adobe Analytics |
 | `analytics.reportSuite` | Y | string | `sessionStart` | El ID que identifica los datos de los informes de Analytics |
-| `analytics.enableSSL` | N | booleano | `sessionStart` | True o false para activar SSL |
+| `analytics.enableSSL` | N | booleano | `sessionStart` | True o false para habilitar SSL |
 | `analytics.visitorId` | N | string | `sessionStart` | El ID de visitante de Adobe es un ID personalizado que se puede utilizar en varias aplicaciones de Adobe. Heartbeat `visitorId` es igual a Analytics `VID.` |
 
 ## Datos del visitante

@@ -55,7 +55,7 @@ Para enviar datos sobre los contenidos, es necesario configurar todos los grupos
 
    Al habilitar cada módulo, se reserva un conjunto de variables y se crea un nuevo conjunto de informes. A excepción de Calidad, no habrá datos en los informes a menos que se haya completado la implementación correspondiente. La implementación del módulo Principal también implementa el módulo Calidad si lo habilita.
 
-   Si todavía no está monitorizando anuncios, capítulos o la calidad de reproducción, puede activar opciones adicionales en cualquier momento.
+   Si todavía no está monitorizando anuncios, capítulos o la calidad de reproducción, puede habilitar opciones adicionales en cualquier momento.
 
 1. Haga clic en **[!UICONTROL Guardar].**
 

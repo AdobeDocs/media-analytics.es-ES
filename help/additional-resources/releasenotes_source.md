@@ -21,7 +21,7 @@ Nuevas funciones en Media Analytics
 
 | Función | Disponibilidad general | Descripción |
 | -------- | -------------------- | ----------- |
-| Panel Audiencia promedio por minuto de medios en el espacio de trabajo | Marzo de 2022<br> (pruebas limitadas) | El panel Audiencia promedio por minuto de medios permite a los clientes de Media Analytics comprender mejor el consumo promedio del contenido. La audiencia media por minuto permite comparar la programación de cualquier género o duración. Además, los clientes pueden comparar o anexar esta audiencia media por minuto digital a métricas de minuto promedio de televisión lineal. Este panel proporciona más flexibilidad para medir la audiencia promedio para periodos de tiempo personalizados, así como cuando la clasificación de duración se ha actualizado después del hecho. [Más información…](https://experienceleague.adobe.com/docs/media-analytics/using/media-reports/average-minute-audience.html?lang=es) |
+| Panel Público promedio por minuto de medios en el espacio de trabajo | Marzo de 2022<br> (pruebas limitadas) | El panel Público promedio por minuto de medios permite a los clientes de Media Analytics comprender mejor el consumo promedio del contenido. El público medio por minuto permite comparar la programación de cualquier género o duración. Además, los clientes pueden comparar o anexar este público medio por minuto digital a métricas promedio por minuto de televisión lineal. Este panel proporciona más flexibilidad para medir el público promedio para periodos de tiempo personalizados, así como cuando la clasificación de duración se ha actualizado después del hecho. [Más información…](https://experienceleague.adobe.com/docs/media-analytics/using/media-reports/average-minute-audience.html?lang=es) |
 
 
 

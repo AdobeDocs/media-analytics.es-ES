@@ -7,8 +7,8 @@ feature: Streaming Media
 role: User, Admin, Data Engineer
 source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
-source-wordcount: '589'
-ht-degree: 100%
+source-wordcount: '588'
+ht-degree: 98%
 
 ---
 
@@ -65,7 +65,7 @@ Para los flujos en directo, debe establecer el valor del cabezal de reproducció
 
 En el caso de los medios en directo, cuando un usuario comienza a reproducir el flujo, debe establecer `l:event:playhead` a la cantidad de segundos desde la medianoche UTC en ese día. Esto es lo contrario a VOD, donde establecería el cursor de reproducción en “0”. Nota: Cuando se utilizan marcadores de progreso, la duración del contenido es obligatoria y el cabezal de reproducción debe actualizarse como número de segundos desde el principio del elemento de medios, empezando por 0.
 
-Por ejemplo, supongamos que un evento de transmisión en vivo comienza a medianoche y se ejecuta durante 24 horas (`a.media.length=86400`; `l:asset:length=86400`). Entonces, digamos que un usuario empieza a reproducir ese flujo en vivo a las 12:00 pm. En esta situación, debe configurar `l:event:playhead` a 43 200 (12 horas desde la medianoche UTC de ese día en segundos).
+Por ejemplo, supongamos que un evento de transmisión en vivo comienza a medianoche y se ejecuta durante 24 horas (`a.media.length=86400`; `l:asset:length=86400`). Entonces, digamos que un usuario comienza a reproducir ese flujo en vivo a las 12:00pm. En esta situación, debe configurar `l:event:playhead` a 43 200 (12 horas desde la medianoche UTC de ese día en segundos).
 
 ### Al pausar
 

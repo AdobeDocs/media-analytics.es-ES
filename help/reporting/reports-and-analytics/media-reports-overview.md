@@ -1,6 +1,6 @@
 ---
 title: Información general de medio
-description: Utilice el panel Información general de medios para mostrar las mediciones agregadas. Aprenda a monitorizar rápidamente el rendimiento de los medios.
+description: Utilice el panel de control Información general de medios para mostrar las mediciones agregadas. Aprenda a monitorizar rápidamente el rendimiento de los medios.
 uuid: bdbd998f-9b5e-40c9-a8ea-12dfa5acd35c
 exl-id: 4fe91372-da41-44c5-bea9-2bba762512ef
 feature: "Streaming Media, Workspace Basics"

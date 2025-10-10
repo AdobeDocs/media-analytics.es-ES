@@ -27,7 +27,7 @@ Para habilitar los informes en Analytics o Customer Journey Analytics y ver los 
 
 1. **Implementación del servicio de identidad de Adobe Experience Platform en Experience Cloud**
 
-   El **servicio de identidad** habilita el marco de identificación común para los servicios principales de Experience Cloud, sus soluciones y los atributos de cliente y las audiencias en el servicio principal People. Funciona asignando ID únicos y persistentes a los visitantes del sitio. Cuando su organización implementa el servicio de ID, este ID le permite identificar el mismo visitante del sitio y sus datos en diferentes soluciones de Experience Cloud.
+   El **servicio de identidad** habilita el marco de identificación común para los servicios principales de Experience Cloud, sus soluciones y los atributos de cliente y los públicos en el servicio principal People. Funciona asignando ID únicos y persistentes a los visitantes del sitio. Cuando su organización implementa el servicio de ID, este ID le permite identificar el mismo visitante del sitio y sus datos en diferentes soluciones de Experience Cloud.
 
    ![Gráfico del servicio de ID](assets/mc_id_service_graphic.png)
 

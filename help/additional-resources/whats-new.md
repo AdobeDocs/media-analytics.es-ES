@@ -1,5 +1,5 @@
 ---
-title: Novedades de Media Analytics
+title: 'Novedades de Media Analytics '
 description: Novedades incluye información sobre nuevas funciones y notificaciones.
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
 workflow-type: tm+mt

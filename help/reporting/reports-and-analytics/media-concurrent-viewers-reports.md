@@ -14,7 +14,7 @@ ht-degree: 91%
 
 # Informes de espectadores simultáneos de medios {#media-concurrent-viewers}
 
-El panel Espectadores simultáneos de medios muestra los visualizadores simultáneos durante un día. Dichos datos pueden filtrarse por contenido, tipo de dispositivo o país.
+El panel de control Espectadores simultáneos de medios muestra los visualizadores simultáneos durante un día. Dichos datos pueden filtrarse por contenido, tipo de dispositivo o país.
 
 >[!TIP]
 >

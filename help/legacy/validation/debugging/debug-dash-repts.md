@@ -1,6 +1,6 @@
 ---
-title: Paneles e informes de depuración
-description: Más información sobre los paneles de depuración de Adobe.
+title: Paneles de control e informes de depuración
+description: Más información sobre los paneles de control de depuración de Adobe.
 uuid: 8e6f6245-d8bd-4329-89e1-4c5595e04ec5
 exl-id: fc5590a5-4d0e-4a2d-8f40-54c53eabc6f0
 feature: "Streaming Media, Analytics Dashboards"
@@ -12,7 +12,7 @@ ht-degree: 100%
 
 ---
 
-# Paneles e informes de depuración{#debug-dashboards-and-reports}
+# Paneles de control e informes de depuración{#debug-dashboards-and-reports}
 
 Adobe Debug proporciona informes en tiempo real, para que pueda ver las visitas y los metadatos que se envían durante la reproducción del vídeo. Cada uno de estos informes se puede guardar en Debug.
 

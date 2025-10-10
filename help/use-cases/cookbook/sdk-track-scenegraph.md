@@ -89,9 +89,9 @@ El puente conector está diseñado para funcionar de la siguiente manera:
 | **Audience Manager** | | |
 |  | `audienceSubmitSignal` | La API de SceneGraph envía una señal de gestión de público con rasgo. |
 |  | `audienceVisitorProfile` | La API de SceneGraph obtiene un perfil del visitante de Audience Manager del SDK de ADBMobile. |
-|  | `audienceDpid` | La API de SceneGraph obtiene una audiencia Dpid del SDK de ADBMobile. |
-|  | `audienceDpuuid` | La API de SceneGraph obtiene audiencias Dpuuid del SDK de ADBMobile. |
-|  | `audienceSetDpidAndDpuuid` | La API de SceneGraph define la audiencia Dpid y Dpuuid en el SDK de ADBMobile. |
+|  | `audienceDpid` | La API de SceneGraph obtiene un público Dpid del SDK de ADBMobile. |
+|  | `audienceDpuuid` | La API de SceneGraph obtiene públicos Dpuuid del SDK de ADBMobile. |
+|  | `audienceSetDpidAndDpuuid` | La API de SceneGraph define el público Dpid y Dpuuid en el SDK de ADBMobile. |
 |  | Para obtener más información, consulte la sección Audience Manager del SDK heredado. | |
 |  | | |
 | **MediaHeartbeat** | | |

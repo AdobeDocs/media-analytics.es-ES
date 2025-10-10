@@ -6,8 +6,8 @@ feature: Streaming Media
 role: User, Admin, Data Engineer
 source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '397'
+ht-degree: 100%
 
 ---
 
@@ -65,7 +65,7 @@ Puede utilizar estos métodos para enviar señales y recuperar segmentos de visi
 
 * `submitSignal() -`
 
-  Envía una señal con rasgos a la gestión de audiencias.
+  Envía una señal con rasgos a la gestión de públicos.
 
   ```js
   ADBMobile.audienceManager.submitSignal({"sampleTrait":"sampleValue"});
@@ -107,7 +107,7 @@ Puede utilizar estos métodos para enviar señales y recuperar segmentos de visi
 
 * `audienceSubmitSignal -`
 
-  Envía una señal con rasgos a la gestión de audiencias.
+  Envía una señal con rasgos a la gestión de públicos.
 
   ```js
   traitData = {}

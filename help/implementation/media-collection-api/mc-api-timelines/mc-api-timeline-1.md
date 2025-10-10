@@ -179,7 +179,7 @@ Mande un ping al servidor cada segundo mientras se encuentra dentro de un anunci
 >[!NOTE]
 >
 >Los anuncios posteriores de la cronología omitirán la visualización de la serie de pings de un segundo
->&#x200B;>para que sean más breves...
+>>para que sean más breves...
 
 ```json
 {

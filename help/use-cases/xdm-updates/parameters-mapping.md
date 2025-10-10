@@ -3,7 +3,8 @@ title: Migración de audiencias al nuevo tipo de datos de Adobe Analytics para m
 description: Obtenga información sobre cómo migrar audiencias al nuevo tipo de datos de Adobe Analytics para medios de streaming
 feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: 3056a384535b3f5f2a9bc2d950bd5ee3410ec0a5
+exl-id: 79203a2f-8158-44f2-83b2-146179be9180
+source-git-commit: 61e5279e6d53b18955424e76d05d440b83dae07e
 workflow-type: tm+mt
 source-wordcount: '1346'
 ht-degree: 44%
@@ -12,7 +13,7 @@ ht-degree: 44%
 
 # Asignación de parámetros de Media Analytics para Adobe Experience Platform y Customer Journey Analytics
 
-Este documento proporciona una lista completa de todos los parámetros de Media Analytics utilizados en Adobe Experience Platform y Customer Journey Analytics. Está diseñado para admitir la integración de datos importados de Adobe Analytics a Platform mediante el [conector Source de Analytics](https://experienceleague.adobe.com/es/docs/experience-platform/sources/connectors/adobe-applications/analytics) o el [conector Source de Analytics para clasificaciones](https://experienceleague.adobe.com/es/docs/experience-platform/sources/connectors/adobe-applications/classifications), y asignar cada parámetro a su ruta de campo XDM correspondiente.
+Este documento proporciona una lista completa de todos los parámetros de Media Analytics utilizados en Adobe Experience Platform y Customer Journey Analytics. Está diseñado para admitir la integración de datos importados de Adobe Analytics a Platform mediante el [conector Source de Analytics](https://experienceleague.adobe.com/es/docs/experience-platform/sources/connectors/adobe-applications/analytics) o el [conector Source de Analytics para clasificaciones](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/classifications), y asignar cada parámetro a su ruta de campo XDM correspondiente.
 
 ## Variables reservadas de Media Analytics
 
@@ -61,7 +62,7 @@ Como los equipos de Media Analytics y ADC están trabajando actualmente para rea
 | Marcador de progreso del 50 % | media.mediaTimed.progress50.value | mediaReporting.sessionDetails.hasProgress50 | Métrica | Marcador de progreso del 50 % |                                                                       |
 | Marcador de progreso del 75% | media.mediaTimed.progress75.value | mediaReporting.sessionDetails.hasProgress75 | Métrica | Marcador de progreso del 75% |                                                                       |
 | Marcador de progreso del 95% | media.mediaTimed.progress95.value | mediaReporting.sessionDetails.hasProgress95 | Métrica | Marcador de progreso del 95% |                                                                       |
-| Promedio de audiencia por minuto | No admitido | mediaReporting.sessionDetails.averageMinuteAudience | Métrica | Promedio de audiencia por minuto |                                                                  |
+| Promedio de público por minuto | No admitido | mediaReporting.sessionDetails.averageMinuteAudience | Métrica | Promedio de público por minuto |                                                                  |
 | Segundos desde la última llamada | media.mediaTimed.primaryAssetViewDetails.sessionTimeout | mediaReporting.sessionDetails.secondsSinceLastCall | Métrica | Segundos desde la última llamada |                                                              |
 | Flujos afectados por la pausa | No admitido | mediaReporting.sessionDetails.hasPauseImpactedStreams | Métrica | Flujos afectados por la pausa | cubrimos mediaTimed calculando este valor de otros eventos |
 | Pausar eventos | media.mediaTimed.pauses.value | mediaReporting.sessionDetails.pauseCount | Métrica | Pausar eventos |                                                                       |
@@ -237,9 +238,3 @@ En ambos casos, `<number>` corresponde al evento específico o al número de eVa
 | Duración total de demora | `_experience.analytics.event<x>to<y>.event<number>.value` | Métrica |
 
 {style="table-layout:auto"}
-
-
-
-
-
-

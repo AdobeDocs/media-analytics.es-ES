@@ -16,7 +16,7 @@ ht-degree: 97%
 
 >[!TIP]
 >
->Recopile los datos de solicitud necesarios para completar una solicitud de [sesión correcta](../mc-api-ref/mc-api-sessions-req.md) en el servidor back-end de la API de recopilación de Media Analytics (MA). Puede verificar rápidamente los datos de solicitud enviando solicitudes manualmente (con `curl` o Postman, etc.). Esto le proporcionará información inmediata sobre si tiene problemas con tipos de datos incorrectos o con información incorrecta en la solicitud. Utilice los [esquemas de validación JSON](../mc-api-ref/mc-api-json-validation.md) para comprobar que está suministrando los datos de solicitud adecuados.
+>Recopile los datos de solicitud necesarios para completar una solicitud de [sesión correcta](../mc-api-ref/mc-api-sessions-req.md) en el servidor back-end de la API de recopilación de Media Analytics (MA). Puede verificar rápidamente los datos de solicitud enviando solicitudes manualmente (con `curl` o Postman, etc.). Esto le proporcionará comentarios inmediatos sobre si tiene problemas con tipos de datos incorrectos o con información incorrecta en la solicitud. Utilice los [esquemas de validación JSON](../mc-api-ref/mc-api-json-validation.md) para comprobar que está suministrando los datos de solicitud adecuados.
 
 1. Reúna los datos estándar y requeridos de Adobe Analytics y Visitante que debe proporcionar para ejecutar cualquiera de las aplicaciones de Experience Cloud:
 
