@@ -3,17 +3,19 @@ title: Carga de datos de programación para rastrear contenido en directo
 description: Obtenga información sobre cómo cargar datos de programación para rastrear contenido en directo.
 feature: Streaming Media
 role: User, Admin, Data Engineer
-hide: true
-hidefromtoc: true
 exl-id: 875c4513-ea4e-4c5f-bfc1-34ea175007ca
-source-git-commit: b947a1d64c7fa58e784712397b0167d4186d00c3
+source-git-commit: 65cd7987acb677b4f4c863b42dc809b5a23c2ed1
 workflow-type: tm+mt
-source-wordcount: '1334'
-ht-degree: 2%
+source-wordcount: '1381'
+ht-degree: 5%
 
 ---
 
 # Carga de datos de programación para rastrear contenido en directo
+
+>[!AVAILABILITY]
+>
+>La funcionalidad descrita en este artículo se encuentra en la fase prueba limitada de la versión y es posible que no esté disponible aún en su entorno. Esta nota se eliminará cuando la funcionalidad esté disponible de forma general. Para obtener información sobre el proceso de lanzamiento, consulte [Versiones de características de Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/analytics-platform/using/releases/releases).
 
 Puede cargar datos de programación del contenido de medios de streaming en directo anterior para rastrear la audiencia de contenido en directo de forma más fácil y precisa. Puede realizar un seguimiento de la audiencia de programas individuales e incluso temas o segmentos de programas específicos.
 
@@ -141,7 +143,7 @@ Después de [crear un conjunto de datos de programación de programa](#create-a-
 
    1. Inserte el archivo .json que contiene los registros de datos de programación del programa utilizando el ID de lote.
 
-      Para insertar la información de programación, debe usar las API por lotes de AEP, tal como se describe en [Información general de la API de ingesta por lotes](https://experienceleague.adobe.com/es/docs/experience-platform/ingestion/batch/overview).
+      Para insertar la información de programación, debe usar las API por lotes de AEP, tal como se describe en [Información general de la API de ingesta por lotes](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/batch/overview).
 
       Considere el siguiente ejemplo de uso de cURL para insertar un archivo con los registros de programación:
 
@@ -301,9 +303,9 @@ El siguiente ejemplo es un archivo .json de programación con dos registros. Cad
 
    Considere los siguientes ejemplos de dimensiones que puede crear y luego informar en Customer Journey Analytics:
 
-   * **[&quot;_Nombre del episodio_&quot;](https://experienceleague.adobe.com/es/docs/media-analytics/using/implementation/variables/audio-video-parameters#episode)**: Esta dimensión podría ayudarle a saber qué episodios de una serie en particular tienen el mejor rendimiento.
+   * **[&quot;_Nombre del episodio_&quot;](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters#episode)**: Esta dimensión podría ayudarle a saber qué episodios de una serie en particular tienen el mejor rendimiento.
 
-   * **[ID de recurso](https://experienceleague.adobe.com/es/docs/media-analytics/using/implementation/variables/audio-video-parameters#asset-id)**
+   * **[ID de recurso](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters#asset-id)**
 
 1. Continuar con [Analizar datos en Customer Journey Analytics](#analyze-data-in-customer-journey-analytics).
 
