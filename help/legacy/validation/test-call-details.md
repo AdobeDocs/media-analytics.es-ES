@@ -4,11 +4,11 @@ description: Explore las llamadas que debe realizar para validar su implementaci
 uuid: d3a0e62f-2fc3-413d-ac56-adbbc9b3e983
 exl-id: 5e167714-3f0c-4afa-b171-7d51cff6522e
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '608'
-ht-degree: 100%
+ht-degree: 80%
 
 ---
 
@@ -33,7 +33,7 @@ ht-degree: 100%
 **Notas:**
 
 * Las variables de datos de contexto adicionales deben estar presentes y contener metadatos. Consulte los detalles de metadatos a continuación.
-* La duración de las emisiones lineales debe establecerse con la mejor estimación para el programa actual.
+* La longitud de los flujos lineales debe ajustarse a la mejor estimación para el programa actual.
 
 ### Metadatos estándar en la llamada de inicio de Adobe Analytics (AppMeasurement)  {#std-metadata-aa}
 
@@ -79,7 +79,7 @@ ht-degree: 100%
 **Notas:**
 
 * Las variables de datos de contexto adicionales deben estar presentes y contener metadatos. Consulte los detalles de metadatos a continuación.
-* La posición del cabezal de reproducción para las emisiones lineales al inicio del vídeo debe establecerse en los segundos transcurridos desde el inicio del programa actual, en lugar de 0.
+* La posición del cabezal de reproducción de los flujos lineales al iniciar el vídeo debe establecerse en los segundos transcurridos desde el inicio del programa actual, no en 0.
 
 ### Metadatos estándar en la llamada de inicio de Media Analytics (latidos)  {#std-metadata-ma}
 
@@ -148,7 +148,7 @@ ht-degree: 100%
 **Notas:**
 
 * Las variables de datos de contexto adicionales deben estar presentes y contener metadatos. Consulte los detalles de metadatos a continuación.
-* La duración del anuncio debe establecerse en -1 si no está disponible al inicio del anuncio.
+* La duración del anuncio puede establecerse en -1 si no está disponible al inicio del anuncio.
 
 ### Metadatos estándar en la llamada de inicio de anuncio de Adobe Analytics (AppMeasurement)  {#std-metadata-aa-ad-start}
 
@@ -193,7 +193,7 @@ ht-degree: 100%
 **Notas:**
 
 * Las variables de datos de contexto adicionales deben estar presentes y contener metadatos. Consulte los detalles de metadatos a continuación.
-* La duración del anuncio debe establecerse en -1 si no está disponible al inicio del anuncio.
+* La duración del anuncio puede establecerse en -1 si no está disponible al inicio del anuncio.
 
 ### Metadatos estándar en la llamada de inicio de anuncio de Media Analytics (latidos)  {#std-metadata-ma-ad-start}
 

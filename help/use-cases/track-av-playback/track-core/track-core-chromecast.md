@@ -4,11 +4,11 @@ description: Aprenda a implementar el seguimiento principal mediante Media SDK e
 uuid: a9fc59d8-a2f4-4889-bdec-55c42a835d06
 exl-id: 9812d06d-9efd-460c-a626-6a15f61a4c35
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '719'
-ht-degree: 88%
+ht-degree: 81%
 
 ---
 
@@ -151,4 +151,4 @@ Esta documentación abarca el seguimiento en la versión 2.x del SDK.
    >Puede ser el mismo origen de evento empleado en el paso 4. Asegúrese de que cada llamada de API a `trackPause()` esté vinculada a continuación con una llamada de API a `trackPlay()` cuando se reanude la reproducción de vídeo.
 
 * Situaciones de seguimiento: [reproducción de VOD sin anuncios](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md)
-* Reproductor de muestra incluido con el SDK para Chromecast para ver un ejemplo de seguimiento completo.
+* Reproductor de muestra incluido con Chromecast SDK para ver un ejemplo de seguimiento completo.

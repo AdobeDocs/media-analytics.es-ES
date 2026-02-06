@@ -4,11 +4,11 @@ description: Aprenda a gestionar las interrupciones del seguimiento durante la r
 uuid: 1ccb4507-bda6-462d-bf67-e22978a4db3d
 exl-id: a84af6ad-dd4f-4f0d-93dd-66f2f84ddc0e
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '355'
-ht-degree: 90%
+ht-degree: 63%
 
 ---
 
@@ -25,14 +25,14 @@ La reproducción en una aplicación multimedia puede interrumpirse de varias for
 
 ## Preguntas frecuentes sobre la administración de interrupciones de aplicaciones: {#faq-about-handling-application-interrupts}
 
-* _¿Cuánto tiempo debe estar una aplicación en segundo plano para que se cierre la sesión?_
+* _¿Cuánto tiempo debe estar en segundo plano una aplicación antes de que se cierre la sesión?_
 
-  Si la aplicación permite la reproducción en segundo plano, puede continuar el seguimiento mediante la llamada a nuestras API, y nosotros le enviaremos los pings de seguimiento habituales. No hay muchas aplicaciones de vídeo que permitan la reproducción en segundo plano excepto YouTube Red; sin embargo, todas las aplicaciones de audio lo permiten. Si la aplicación no permite la reproducción en segundo plano, se recomienda poner en pausa la reproducción durante un minuto y, a continuación, finalizar la sesión de seguimiento. La aplicación no puede continuar enviando pings de pausa, ya que, en la mayoría de los casos, no puede determinar si el usuario va a seguir viendo el contenido o cuándo lo va a cerrar. Asimismo, no es recomendable seguir enviando pings mientras se ejecuta en segundo plano.
+  Si la aplicación permite la reproducción en segundo plano, puede continuar el seguimiento llamando a nuestras API y enviaremos todos nuestros pings de seguimiento regulares. No hay muchas aplicaciones de vídeo que permitan la reproducción en segundo plano excepto YouTube Red; sin embargo, todas las aplicaciones de audio lo permiten. Si la aplicación no permite la reproducción en segundo plano, se recomienda poner en pausa la reproducción durante un minuto y, a continuación, finalizar la sesión de seguimiento. La aplicación no puede continuar enviando pings de pausa, ya que, en la mayoría de los casos, no puede determinar si el usuario va a seguir viendo el contenido o cuándo lo va a cerrar. También es una mala experiencia seguir enviando pings cuando se está en segundo plano.
 
-* _¿Cuál es la forma correcta de administrar el seguimiento de reinicio después de que la aplicación haya estado en segundo plano durante un largo periodo de tiempo?_
+* _¿Cuál es la manera correcta de controlar el seguimiento de reinicio después de que la aplicación haya estado en segundo plano durante mucho tiempo?_
 
-  La aplicación debería invocar `trackSessionEnd` para finalizar la sesión de seguimiento. A partir de la versión 2.1, el SDK envía un ping de “finalización” para notificar al back-end que la sesión de seguimiento se ha cerrado.
+  La aplicación debería invocar `trackSessionEnd` para finalizar la sesión de seguimiento. En la versión 2.1, SDK envía un ping de &quot;finalización&quot; para notificar al back-end que la sesión de seguimiento está cerrada.
 
-* _¿Cómo funciona el reinicio de la misma sesión?_
+* _¿Qué sucede si se reinicia la misma sesión?_
 
   Para obtener información sobre cómo reanudar una sesión de seguimiento, consulte [Reanudación de sesiones inactivas](resuming-inactive.md). El SDK envía un ping de reanudación para notificar al back-end que el usuario está reanudando manualmente la sesión.

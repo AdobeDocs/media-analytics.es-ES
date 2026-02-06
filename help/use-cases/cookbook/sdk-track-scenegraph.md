@@ -4,8 +4,8 @@ description: Aprenda a realizar un seguimiento del contenido multimedia con el m
 uuid: fa85e546-c79b-4df4-8c03-d6593fa296d5
 exl-id: e428d3cd-dbc7-48bb-82ff-61b6b892884c
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '1152'
 ht-degree: 100%
@@ -14,7 +14,7 @@ ht-degree: 100%
 
 # Seguimiento de Roku en SceneGraph {#tracking-in-scenegraph-roku}
 
-## Primeros pasos {#introduction}
+## Introducción {#introduction}
 
 Puede utilizar el marco de programación XML de Roku SceneGraph para desarrollar aplicaciones. Este nuevo marco de trabajo incluye dos nuevos conceptos clave:
 

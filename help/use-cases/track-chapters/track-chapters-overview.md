@@ -4,11 +4,11 @@ description: Implementar el seguimiento de capítulos y segmentos con Media SDK.
 uuid: 3fe32425-5e2a-4886-8fea-d91d15671bb0
 exl-id: d213b633-be3b-4eb8-be71-0ef55e78a570
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '327'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -54,7 +54,7 @@ El seguimiento de capítulos incluye el inicio del capítulo, su finalización y
    | --- | --- | :---: |
    | `name` | Nombre del capítulo | Sí |
    | `position` | Posición del capítulo | Sí |
-   | `length` | Duración del capítulo | Sí |
+   | `length` | Longitud del capítulo | Sí |
    | `startTime` | Hora de inicio del capítulo | Sí |
 
 1. Si incluye metadatos personalizados para el capítulo, cree las variables de datos de contexto para los metadatos.

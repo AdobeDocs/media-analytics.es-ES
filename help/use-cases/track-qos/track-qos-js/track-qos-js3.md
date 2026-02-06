@@ -3,8 +3,8 @@ title: Aprenda a controlar la calidad de la experiencia con JavaScript 3.x
 description: Obtenga información acerca de la implementación del seguimiento de calidad de experiencia (QoE, QoS) mediante Media SDK en aplicaciones de navegador con JavaScript 3x.
 exl-id: b5570e9c-8fb1-4458-bd1a-86ff6fce7813
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: bdd92c855a490cae397b633a638c51c5d001a672
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '224'
 ht-degree: 90%

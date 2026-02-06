@@ -2,12 +2,12 @@
 title: Explicación de la implementación de los SDK para medios heredados
 description: Aprenda a configurar el SDK de medios **legacy** 2.x para el seguimiento de medios en sus aplicaciones móviles, OTT y de navegador (JS).
 feature: Streaming Media
-role: User, Admin, Data Engineer
+role: User, Admin, Developer
 exl-id: d94ede3e-95f8-4591-9833-ef39aff12ba9
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '755'
-ht-degree: 99%
+ht-degree: 97%
 
 ---
 
@@ -143,7 +143,7 @@ Las implementaciones de seguimiento de Media Analytics generan dos tipos de llam
 
   El servidor de seguimiento de análisis debe finalizar en “`.sc.omtrdc.net`” o ser CNAME.
 
-* **&#x200B; Servidor de Media Analytics (latidos)**
+* ** Servidor de Media Analytics (latidos)**
 Siempre tiene el formato “`[your_namespace].hb.omtrdc.net`”. El valor de “`[your_namespace]`” especifica su empresa y lo proporciona Adobe.
 
 El seguimiento de medios funciona del mismo modo en todas las plataformas, equipos de escritorio y dispositivos móviles. Actualmente, el seguimiento de audio funciona en plataformas móviles. En todas las llamadas de seguimiento hay algunas variables universales clave que se deben validar:

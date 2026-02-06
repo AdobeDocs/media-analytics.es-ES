@@ -4,11 +4,11 @@ description: Información general sobre la implementación del seguimiento de an
 uuid: 1607798b-c6ef-4d60-8e40-e958c345b09c
 exl-id: c714d31f-3d08-4ded-a413-2762d53bec75
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '510'
-ht-degree: 100%
+ht-degree: 79%
 
 ---
 
@@ -72,8 +72,8 @@ La reproducción de publicidad incluye el seguimiento de las pausas publicitaria
 
    | Nombre de variable | Descripción | Requerido |
    | --- | --- | :---: |
-   | `name` | Nombre de la pausa publicitaria: publicidad pre-roll, mid-roll y post-roll. | Sí |
-   | `position` | La posición numérica de la pausa publicitaria del contenido, comenzando por 1. | Sí |
+   | `name` | Nombre de la pausa publicitaria, como anuncio previo a la emisión, anuncio durante la emisión y anuncio posterior a la emisión. | Sí |
+   | `position` | La posición numérica de la pausa publicitaria dentro del contenido, empezando por 1. | Sí |
    | `startTime` | Valor del cabezal de reproducción al comienzo de la pausa publicitaria. | Sí |
 
 1. Invoque `trackEvent()` con `AdBreakStart` en la instancia de `MediaHeartbeat` para iniciar el seguimiento de la pausa publicitaria.
@@ -86,13 +86,13 @@ La reproducción de publicidad incluye el seguimiento de las pausas publicitaria
    | --- | --- | :---: |
    | `name` | Nombre descriptivo del anuncio. | Sí |
    | `adId` | Identificador único del anuncio. | Sí |
-   | `position` | Posición numérica del anuncio en la pausa publicitaria, comenzando por 1. | Sí |
+   | `position` | La posición numérica del anuncio dentro de la pausa publicitaria, empezando por 1. | Sí |
    | `length` | Duración del anuncio | Sí |
 
-1. Opcionalmente, se pueden adjuntar metadatos estándar o de anuncio a la sesión de seguimiento mediante el uso de variables de datos de contexto.
+1. Opcionalmente, se pueden adjuntar metadatos estándar o de publicidad a la sesión de seguimiento mediante el uso de variables de datos de contexto.
 
-   * **Metadatos de publicidad estándar**: para los metadatos de publicidad estándar, cree un diccionario de conexiones de clave/valor de metadatos de publicidad estándar con el uso de las claves correspondientes a su plataforma.
-   * **Metadatos de anuncio personalizados**: para los metadatos personalizados, cree un objeto de variable para las variables de datos personalizadas y rellénelas con los datos del anuncio actual.
+   * **Metadatos de publicidad estándar -** Para los metadatos de publicidad estándar, cree un diccionario de pares de valor clave de metadatos de publicidad estándar usando las claves para su plataforma.
+   * **Metadatos de publicidad personalizados -** Para los metadatos personalizados, cree un objeto de variable para las variables de datos personalizados y rellénelo con los datos del anuncio actual.
 
 1. Invoque `trackEvent()` con el evento `AdStart` de la instancia de `MediaHeartbeat` para iniciar el seguimiento de la reproducción de publicidad.
 

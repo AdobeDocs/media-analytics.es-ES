@@ -4,11 +4,11 @@ description: Aprenda a gestionar llamadas main:play inesperadas entre anuncios.
 uuid: 228b4812-c23e-40c8-ae2b-e15ca69b0bc2
 exl-id: f27ce2ba-7584-4601-8837-d8316c641708
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '450'
-ht-degree: 97%
+ht-degree: 75%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 97%
 
 En algunas situaciones de seguimiento de publicidad, podría encontrar llamadas `main:play` que se producen de forma inesperada entre el final de un anuncio y el comienzo del siguiente. Si el retraso entre la llamada al anuncio completo y la siguiente llamada de inicio de anuncio es mayor que 250 milisegundos, Media SDK volverá a enviar llamadas `main:play`. Si este regreso a `main:play` se produce durante una pausa publicitaria pre-roll, la métrica de inicio del contenido puede configurarse antes.
 
-El Media SDK interpreta un espacio entre anuncios como el descrito anteriormente como contenido principal, ya que no existe ninguna superposición con contenido del anuncio. El Media SDK no tiene ningún tipo de información del anuncio, y el reproductor está en estado de reproducción. Si no hay información del anuncio y el reproductor está en estado “reproduciendo”, el Media SDK acreditará la duración del espacio con el contenido principal de forma predeterminada. No puede acreditar la duración de la reproducción de la información de publicidad nula.
+Media SDK interpreta un espacio entre anuncios como el descrito anteriormente como contenido principal, ya que no se superponen con ningún contenido publicitario. Media SDK no tiene ninguna información de publicidad configurada y el reproductor está en estado de reproducción. Si no hay información de publicidad y se está reproduciendo el estado del reproductor, Media SDK acredita la duración del espacio hacia el contenido principal de forma predeterminada. No puede acreditar la duración de la reproducción de la información de publicidad nula.
 
 ## IDENTIFICACIÓN
 
@@ -40,9 +40,9 @@ Al utilizar Adobe Debug o un analizador de paquetes de red como Charles, si ve l
 
 ***Retraso al activar la llamada de finalización del anuncio.***
 
-Administre el espacio desde dentro del reproductor invocando `trackEvent:AdComplete` tras el primer anuncio, seguida inmediatamente por `trackEvent:AdStart` para el segundo anuncio. La aplicación debe permanecer desactivada al invocar al evento `AdComplete` tras finalizar el primer anuncio. Asegúrese de invocar a `trackEvent:AdComplete` para el último anuncio de la pausa publicitaria. Si el reproductor puede identificar que el recurso de anuncio actual es el final de la pausa publicitaria, invoque el `trackEvent:AdComplete` inmediatamente. Esta resolución tendrá como resultado menos de 1 segundo de tiempo adicional de publicidad atribuido a la unidad de publicidad anterior.
+Administre el espacio desde dentro del reproductor invocando `trackEvent:AdComplete` tras el primer anuncio, seguida inmediatamente por `trackEvent:AdStart` para el segundo anuncio. La aplicación debe permanecer desactivada al invocar al evento `AdComplete` tras finalizar el primer anuncio. Asegúrese de invocar a `trackEvent:AdComplete` para el último anuncio de la pausa publicitaria. Si el reproductor puede identificar que el recurso de anuncio actual es el final de la pausa publicitaria, invoque el `trackEvent:AdComplete` inmediatamente. Esta resolución hará que se atribuya menos de 1 segundo del tiempo de publicidad adicional a la unidad de publicidad anterior.
 
-**Al comienzo de la pausa publicitaria, incluso pre-roll:**
+**Al iniciar la pausa publicitaria, incluido el anuncio previo a la emisión:**
 
 * Cree la instancia del objeto `adBreak` para la pausa publicitaria; por ejemplo, `adBreakObject`.
 

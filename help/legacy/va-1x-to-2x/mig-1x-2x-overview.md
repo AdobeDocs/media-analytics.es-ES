@@ -4,11 +4,11 @@ description: Obtenga información sobre la migración de las versiones 1.x a 2.x
 uuid: d84f55bc-fa90-45c1-b97d-cb5fe58e80c0
 exl-id: b3b8b9f8-a6e9-4ed1-85c1-80e61460e8a0
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '216'
-ht-degree: 100%
+ht-degree: 87%
 
 ---
 
@@ -18,8 +18,8 @@ La migración de VHL 1.x a VHL 2.x resulta sencilla gracias a la nueva versión 
 
 Estas son las principales diferencias entre 1.x y 2.x:
 
-* **Plugins, delegados**: ya no es necesario implementar plugins y delegados para Analytics, VideoPlayer y Heartbeat.
-* **Configuración**: ya no es necesario crear una instancia de configuración para los plugins 1.x.
+* **Complementos, delegados -** Ya no necesita implementar complementos y delegados para Analytics, VideoPlayer y Heartbeat.
+* **Configuración -** Ya no necesita crear instancias de configuraciones para los complementos 1.x.
 
 ## Ventajas de 2.x {#benefits-of-two-x}
 

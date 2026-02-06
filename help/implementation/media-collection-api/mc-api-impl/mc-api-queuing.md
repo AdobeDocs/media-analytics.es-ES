@@ -4,11 +4,11 @@ description: Aprenda qué hacer cuando el ID de sesión se devuelve después de 
 uuid: 39ea59d9-89d3-4087-a806-48a43ecf0c98
 exl-id: 2c23c378-c104-4256-b6e7-8eb6871f62da
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '205'
-ht-degree: 100%
+ht-degree: 80%
 
 ---
 
@@ -22,7 +22,7 @@ El reproductor puede desencadenar eventos _antes de recibir la respuesta de sesi
 >
 >La [solicitud de eventos](../mc-api-ref/mc-api-events-req.md) no devuelve datos al cliente aparte de un código de respuesta HTTP.
 
-Consulte el reproductor de referencia de su distribución para procesar eventos antes de recibir un ID de sesión. Por ejemplo:
+Compruebe el Reproductor de referencia de su distribución para ver una forma de procesar eventos antes de recibir un ID de sesión. Por ejemplo:
 
 ```js
 var eventData = {};            // JSON payload 
@@ -75,7 +75,7 @@ VideoPlayer.prototype.getPlayerTime = function() {
 };
 ```
 
-**Procesa cualquier evento en cola:** el reproductor de referencia procesa los eventos en cola de la siguiente manera:
+**Procesar cualquier evento en cola -** El reproductor de referencia procesa los eventos en cola de la siguiente manera:
 
 ```js
     […] 
@@ -92,4 +92,4 @@ VideoPlayer.prototype._processPendingEvents =
 }
 ```
 
-Continúe procesando los eventos de seguimiento a medida que ocurren.
+Continúe procesando el seguimiento de eventos a medida que se producen.

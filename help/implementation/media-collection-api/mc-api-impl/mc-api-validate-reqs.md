@@ -4,17 +4,17 @@ description: Aprenda a utilizar el esquema de validación JSON para validar soli
 uuid: 1fc92f21-b510-4c96-8ea2-47e819f4a96e
 exl-id: a78739da-9fc9-42e3-9181-1887fb3dd357
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '121'
-ht-degree: 100%
+ht-degree: 72%
 
 ---
 
 # Validación de solicitudes de eventos{#validating-event-requests}
 
-El cuerpo de la petición JSON para cada tipo de evento se valida en el servidor con esquemas JSON. En el cuerpo de la respuesta HTTP aparecerá un mensaje de error cuando la validación falle para una llamada de API.
+El cuerpo de la solicitud JSON para cada tipo de evento se valida en el backend con esquemas JSON. El cuerpo de la respuesta HTTP se rellena con un mensaje de error cuando falla la validación de una llamada de API.
 
 Los esquemas de validación de JSON para cada tipo de evento son accesibles aquí: `{uri}/api/v1/schemas/{eventType}` (por ejemplo, `{uri}/api/v1/schemas/sessionEnd`). Estos esquemas de validación de JSON son la autoridad absoluta para determinar los parámetros de cuerpo de solicitud correctos para cada tipo de evento.
 

@@ -4,11 +4,11 @@ description: Aprenda cómo reanudar una sesión inactiva.
 uuid: 3ff1205d-7bbe-4016-9bd7-6e34b7862c4c
 exl-id: ee4cf7f5-5788-4d35-a04d-4ed714ccd663
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '159'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -18,9 +18,9 @@ ht-degree: 100%
 
 Media SDK realiza automáticamente un seguimiento de la duración de la reproducción de los contenidos en uno de los siguientes estados inactivos:
 
-* En pausa
-* Llamada a otro punto del contenido
-* Atascado
+* Pausado
+* Buscando
+* Estancado
 * Almacenamiento en búfer
 
 Si una sesión de seguimiento de contenidos permanece en estado inactivo durante más de 30 minutos, la sesión se cerrará automáticamente. Si el usuario reanuda una sesión de seguimiento de vídeos previamente inactiva (`trackPlay`), Media Heartbeat crea automáticamente una nueva sesión de vídeo utilizando la información de vídeo y los metadatos utilizados anteriormente, y envía un evento de reanudación de latidos. Para obtener más información, consulte: [Parámetros de audio y vídeo.](/help/implementation/variables/audio-video-parameters.md)

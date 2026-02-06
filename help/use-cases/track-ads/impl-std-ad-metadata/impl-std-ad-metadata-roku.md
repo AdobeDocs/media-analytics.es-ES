@@ -4,17 +4,17 @@ description: Uso de metadatos de anuncio estándar en el seguimiento de anuncios
 uuid: 20a437d7-18b8-4099-ac81-9f3628384236
 exl-id: d2c0a1e0-8d40-4f60-a82d-5860550ac152
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '50'
+ht-degree: 92%
 
 ---
 
 # Implementación de metadatos de publicidad estándar en Roku {#implement-standard-ad-metadata-on-roku}
 
-## Implemente los metadatos de publicidad estándar
+## Implementación de metadatos de publicidad estándar
 
 Para los metadatos de publicidad estándar, cree un diccionario de conexiones de clave/valor de metadatos de publicidad estándar con el uso de las claves correspondientes a su plataforma:
 

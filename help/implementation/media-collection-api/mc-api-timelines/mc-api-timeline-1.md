@@ -4,8 +4,8 @@ description: Profundice en la cronología del cabezal de reproducción y las acc
 uuid: 0ff591d3-fa99-4123-9e09-c4e71ea1060b
 exl-id: 16b15e03-5581-471f-ab0c-077189dd32d6
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: 83c64e35a52921532697063d3fdf987e889b2854
 workflow-type: tm+mt
 source-wordcount: '1120'
 ht-degree: 98%
@@ -65,7 +65,7 @@ En el servidor, esta llamada genera una llamada de inicio a Adobe Analytics.
 
 | Acción | Cronología de acción (segundos) | Posición del cabezal de reproducción (segundos) | Solicitud de cliente |
 | --- | :---: | :---: | --- |
-| La aplicación inicia el temporizador de eventos de ping | 0 | 0 | `/api/v1/sessions/{sid}/events` | |
+| La aplicación inicia el temporizador de eventos de ping | 0 | 0 | `/api/v1/sessions/{sid}/events` |
 
 Inicie el temporizador de ping de su aplicación. El primer evento de ping debe activarse en el primer segundo si hay anuncios previos a la emisión y en los 10 primeros segundos en caso contrario.
 
@@ -179,7 +179,7 @@ Mande un ping al servidor cada segundo mientras se encuentra dentro de un anunci
 >[!NOTE]
 >
 >Los anuncios posteriores de la cronología omitirán la visualización de la serie de pings de un segundo
->&#x200B;>para que sean más breves...
+>para que sean más breves...
 
 ```json
 {

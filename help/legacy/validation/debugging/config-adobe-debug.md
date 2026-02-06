@@ -4,11 +4,11 @@ description: Obtenga información sobre cómo configurar Adobe Debug, que puede 
 uuid: e416458d-f23c-41ce-8d99-fa5076c455f0
 exl-id: 48ad3f23-f36d-44f3-b8d9-b0b3a2ee06bc
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '618'
-ht-degree: 97%
+ht-degree: 94%
 
 ---
 
@@ -79,7 +79,7 @@ Descargue e instale el certificado SSL:
       Es posible que tenga que cerrar y volver a abrir Firefox para ver el cambio.
 
    **Dispositivos iOS**
-   1. Configure su dispositivo iOS para que utilice Adobe Debug como proxy HTTP haciendo clic en **[!UICONTROL Configuración de la aplicación]** **>** **[!UICONTROL Configuración de Wi-Fi]**.
+   1. Configure su dispositivo iOS para que use Adobe Debug como proxy HTTP haciendo clic en **[!UICONTROL Configuración de la aplicación]** **>** **[!UICONTROL Configuración de Wi-Fi]**.
 
    1. En Safari, vaya a [Debug](https://proxy.debug.adobe.com/ssl).
 

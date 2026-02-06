@@ -4,11 +4,11 @@ description: Aprenda a implementar el seguimiento del núcleo utilizando el SDK 
 uuid: ab5fab95-76ed-4ae6-aedb-2e66eece7607
 exl-id: d5f5a3f0-f1e0-4d68-af7f-88a30faed0db
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '689'
-ht-degree: 100%
+ht-degree: 93%
 
 ---
 
@@ -68,8 +68,8 @@ Esta documentación abarca el seguimiento en la versión 2.x del SDK.
      >
      >No es obligatorio adjuntar el objeto de metadatos estándar al objeto de contenidos.
 
-      * Referencia de API de claves de metadatos de medios: [Claves de metadatos estándar de Android](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/com/adobe/primetime/va/simple/MediaHeartbeat.VideoMetadataKeys.html)
-      * Consulte el conjunto completo de metadatos de vídeo disponibles aquí: [Parámetros de audio y vídeo](/help/implementation/variables/audio-video-parameters.md).
+      * Referencia de API de claves de metadatos de medios: [Claves de metadatos estándar: Android](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/com/adobe/primetime/va/simple/MediaHeartbeat.VideoMetadataKeys.html)
+      * Consulte el conjunto completo de metadatos de vídeo disponibles aquí: [Parámetros de audio y vídeo](/help/implementation/variables/audio-video-parameters.md)
 
    * **Metadatos personalizados**
 
@@ -174,7 +174,7 @@ Esta documentación abarca el seguimiento en la versión 2.x del SDK.
    >
    >Puede ser el mismo origen de evento empleado en el paso 4. Asegúrese de que cada llamada de API `trackPause()` esté emparejada con una llamada posterior a la API `trackPlay()` cuando se reanude la reproducción del contenido.
 
-Consulte lo siguiente para obtener más información sobre el seguimiento de la reproducción principal:
+Consulte lo siguiente para obtener información adicional sobre el seguimiento de la reproducción principal:
 
 * Situaciones de seguimiento: [Reproducción de VOD sin anuncios](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md)
-* Reproductor de muestra incluido con el SDK para Android para ver un ejemplo de seguimiento completo.
+* Reproductor de muestra incluido con el SDK de Android para ver un ejemplo de seguimiento completo.

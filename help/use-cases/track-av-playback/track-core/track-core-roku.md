@@ -4,11 +4,11 @@ description: Aprenda a implementar el seguimiento principal mediante Media SDK e
 uuid: a8aa7b3c-2d39-44d7-8ebc-b101d130101f
 exl-id: 5272c0ce-4e3d-48c6-bfa6-94066ccbf9ac
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '795'
-ht-degree: 88%
+ht-degree: 81%
 
 ---
 
@@ -29,7 +29,7 @@ Esta documentación abarca el seguimiento en la versión 2.x del SDK.
    | Nombre de variable | Descripción | Requerido |
    | --- | --- | :---: |
    | `name` | Nombre del vídeo | Sí |
-   | `mediaid` | Identificador único de vídeo | Sí |
+   | `mediaid` | Identificador único del vídeo | Sí |
    | `length` | Duración del vídeo | Sí |
    | `streamType` | Tipo de flujo (consulte _Constantes de StreamType_ a continuación) | Sí |
    | `mediaType` | Tipo de contenido (consulte _Constantes de MediaType_ a continuación) | Sí |
@@ -104,7 +104,7 @@ Esta documentación abarca el seguimiento en la versión 2.x del SDK.
 
    * **Metadatos estándar**
 
-[Implementación de metadatos estándar en Roku &#x200B;](/help/use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
+[Implementación de metadatos estándar en Roku ](/help/use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
 
      >[!NOTE]
      >
@@ -209,4 +209,4 @@ Esta documentación abarca el seguimiento en la versión 2.x del SDK.
    >Puede ser el mismo origen de evento empleado en el paso 4. Asegúrese de que cada llamada de API a `trackPause()` esté vinculada a continuación con una llamada de API a `trackPlay()` cuando se reanude la reproducción de vídeo.
 
 * Situaciones de seguimiento: [Reproducción de VOD sin anuncios](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md)
-* Reproductor de muestra incluido con el SDK para Roku para ver un ejemplo de seguimiento completo.
+* Reproductor de muestra incluido con el Roku SDK para ver un ejemplo de seguimiento completo.

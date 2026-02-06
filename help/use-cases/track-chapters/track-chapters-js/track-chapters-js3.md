@@ -3,8 +3,8 @@ title: Aprenda a rastrear capítulos y segmentos usando JavaScript 3.x
 description: Obtenga información sobre la implementación del seguimiento de capítulos y segmentos mediante el uso de Media SDK en aplicaciones de explorador (JS).
 exl-id: 00ba11df-d226-45a2-a561-dc9f15dcf714
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '221'
 ht-degree: 100%

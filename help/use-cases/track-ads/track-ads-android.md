@@ -4,11 +4,11 @@ description: Implementar el seguimiento de anuncios en aplicaciones de Android m
 uuid: 4a4249fb-dc39-4947-a14d-a51d972f32d4
 exl-id: 1f96dde9-c924-4fce-8b14-7dec7137f265
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '364'
-ht-degree: 100%
+ht-degree: 88%
 
 ---
 
@@ -38,8 +38,8 @@ Las siguientes instrucciones proporcionan directrices para la implementación me
 
    | Nombre de variable | Descripción | Requerido |
    | --- | --- | :---: |
-   | `name` | Nombre de la pausa publicitaria: publicidad pre-roll, mid-roll y post-roll. | Sí |
-   | `position` | La posición numérica de la pausa publicitaria del contenido, comenzando por 1. | Sí |
+   | `name` | Nombre de la pausa publicitaria, como anuncio previo a la emisión, anuncio durante la emisión y anuncio posterior a la emisión. | Sí |
+   | `position` | La posición numérica de la pausa publicitaria dentro del contenido, empezando por 1. | Sí |
    | `startTime` | Valor del cabezal de reproducción al comienzo de la pausa publicitaria. | Sí |
 
    Creación de objeto de pausa publicitaria:
@@ -69,7 +69,7 @@ Las siguientes instrucciones proporcionan directrices para la implementación me
    | --- | --- | :---: |
    | `name` | Nombre descriptivo del anuncio. | Sí |
    | `adId` | Identificador único del anuncio. | Sí |
-   | `position` | Posición numérica del anuncio en la pausa publicitaria, comenzando por 1. | Sí |
+   | `position` | La posición numérica del anuncio dentro de la pausa publicitaria, empezando por 1. | Sí |
    | `length` | Duración del anuncio | Sí |
 
    Creación de objeto de anuncio:

@@ -2,12 +2,12 @@
 title: Migración de audiencias al nuevo tipo de datos de Adobe Analytics para medios de streaming
 description: Obtenga información sobre cómo migrar audiencias al nuevo tipo de datos de Adobe Analytics para medios de streaming
 feature: Streaming Media
-role: User, Admin, Data Engineer
+role: User, Admin, Developer
 exl-id: 79203a2f-8158-44f2-83b2-146179be9180
-source-git-commit: 61e5279e6d53b18955424e76d05d440b83dae07e
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '1346'
-ht-degree: 44%
+ht-degree: 43%
 
 ---
 
@@ -189,8 +189,8 @@ Cuando trabaje con los conjuntos de datos de clasificación durante la creación
 | videoad | Nombre de publicidad | `<_sandbox>.ad_name` |
 | videoad | ID del creativo | `<_sandbox>.creative_id` |
 | videoadpod | ID de clave/pod de anuncios | `<_sandbox>.key` |
-| videoadpod | Posición en la secuencia | `<_sandbox>.pod_position` |
-| videoadpod | Nombre de la secuencia | `<_sandbox>.pod_name` |
+| videoadpod | Posición del pod | `<_sandbox>.pod_position` |
+| videoadpod | Nombre de pod | `<_sandbox>.pod_name` |
 | videochapter | Clave/Capítulo | `<_sandbox>.key` |
 | videochapter | Duración del capítulo | `<_sandbox>.chapter_length` |
 | videochapter | Desplazamiento de capítulo | `<_sandbox>.chapter_offset` |

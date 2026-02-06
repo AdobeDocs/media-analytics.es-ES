@@ -4,8 +4,8 @@ description: Vea un ejemplo de cómo rastrear contenido de VOD que contiene anun
 uuid: 5d1022a8-88cb-40aa-919c-60dd592a639e
 exl-id: c77f6457-ac3b-4d7a-8eed-e7ebd357a6a5
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '531'
 ht-degree: 95%
@@ -14,7 +14,7 @@ ht-degree: 95%
 
 # Reproducción de VOD con anuncios previos a la emisión{#vod-playback-with-pre-roll-ads}
 
-En esta situación, se han insertado anuncios previos a la emisión antes del contenido principal. Si no se indica lo contrario, las llamadas de red son iguales a las llamadas que se hacen en la [Reproducción de VOD sin anuncios. &#x200B;](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md) Las llamadas de red se realizan al mismo tiempo, pero la carga útil es distinta.
+En esta situación, se han insertado anuncios previos a la emisión antes del contenido principal. Si no se indica lo contrario, las llamadas de red son iguales a las llamadas que se hacen en la [Reproducción de VOD sin anuncios. ](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md) Las llamadas de red se realizan al mismo tiempo, pero la carga útil es distinta.
 
 | Activador | Método de Heartbeat | Llamadas de red   | Notas   |
 | --- | --- | --- | --- |

@@ -4,11 +4,11 @@ description: Obtenga información acerca de la implementación del seguimiento d
 uuid: 013815d7-4d9e-48f4-a2b9-3b70cb1149d3
 exl-id: ada2e2a7-1383-471c-9ce6-c82ea93fa79d
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '200'
+ht-degree: 95%
 
 ---
 
@@ -34,7 +34,7 @@ Las siguientes instrucciones proporcionan directrices para la implementación me
    | --- | --- | :---: |
    | `name` | Nombre del capítulo | Sí |
    | `position` | Posición del capítulo | Sí |
-   | `length` | Duración del capítulo | Sí |
+   | `length` | Longitud del capítulo | Sí |
    | `startTime` | Hora de inicio del capítulo | Sí |
 
    Objeto de capítulo:

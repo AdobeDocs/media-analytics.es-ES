@@ -3,8 +3,8 @@ title: Descripción general de los casos de Media SDK
 description: Casos prácticos de medios de streaming
 exl-id: 68230d3f-d1fd-4be3-ba67-689965d85771
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '78'
 ht-degree: 92%
@@ -33,5 +33,5 @@ ht-degree: 92%
    * [Seguimiento de estados de aplicaciones](/help/use-cases/analytics-with-ott/track-app-states.md)
    * [Seguimiento de acciones de aplicaciones](/help/use-cases/analytics-with-ott/track-app-actions.md)
    * [Establecimiento de ID de usuario](/help/use-cases/analytics-with-ott/set-user-ids.md)
-   * [OTT y Audience Manager &#x200B;](/help/use-cases/analytics-with-ott/ott-am.md)
-   * [OTT y Experience Cloud &#x200B;](/help/use-cases/analytics-with-ott/ott-experience-cloud.md)
+   * [OTT y Audience Manager ](/help/use-cases/analytics-with-ott/ott-am.md)
+   * [OTT y Experience Cloud ](/help/use-cases/analytics-with-ott/ott-experience-cloud.md)

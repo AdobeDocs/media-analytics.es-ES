@@ -4,11 +4,11 @@ description: Aprenda a implementar el seguimiento del núcleo mediante el SDK mu
 uuid: bdc0e05c-4fe5-430e-aee2-f331bc59ac6b
 exl-id: 5c6b36b3-a421-45a4-a65e-4eb57513ca4a
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '704'
-ht-degree: 100%
+ht-degree: 90%
 
 ---
 
@@ -29,7 +29,7 @@ Esta documentación abarca el seguimiento en la versión 2.x del SDK.
    | Nombre de variable | Descripción | Requerido |
    |---|---|---|
    | `name` | Nombre del vídeo | Sí |
-   | `mediaid` | Identificador único de vídeo | Sí |
+   | `mediaid` | Identificador único del vídeo | Sí |
    | `length` | Duración del vídeo | Sí |
    | `streamType` | Tipo de flujo (consulte _Constantes de StreamType_ a continuación) | Sí |
    | `mediaType` | Tipo de contenido (consulte _Constantes de MediaType_ a continuación) | Sí |
@@ -177,7 +177,7 @@ Esta documentación abarca el seguimiento en la versión 2.x del SDK.
    >
    >Puede ser el mismo origen de evento empleado en el paso 4. Asegúrese de que cada llamada de API a `trackPause()` esté vinculada a continuación con una llamada de API a `trackPlay()` cuando se reanude la reproducción de vídeo.
 
-Consulte lo siguiente para obtener más información sobre el seguimiento de la reproducción principal:
+Consulte lo siguiente para obtener información adicional sobre el seguimiento de la reproducción principal:
 
 * Situaciones de seguimiento: [Reproducción de VOD sin anuncios](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md)
-* Reproductor de muestra incluido con el SDK para iOS para ver un ejemplo de seguimiento completo.
+* Reproductor de muestra incluido con el SDK de iOS para ver un ejemplo de seguimiento completo.

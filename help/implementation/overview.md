@@ -3,9 +3,9 @@ title: Implementación de servicios de medios de streaming para Adobe Analytics 
 description: Obtenga información acerca de las rutas de implementación para los servicios de medios de streaming de Adobe.
 uuid: null
 feature: Streaming Media
-role: User, Admin, Data Engineer
+role: User, Admin, Developer
 exl-id: ed9297b1-6487-4099-bc62-0c3a40572255
-source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '484'
 ht-degree: 65%

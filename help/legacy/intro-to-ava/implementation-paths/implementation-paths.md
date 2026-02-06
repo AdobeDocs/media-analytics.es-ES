@@ -3,11 +3,11 @@ title: ¿Qué rutas de implementación de medios de flujo continuo están dispon
 description: Obtenga información sobre las rutas de implementación de Adobe Streaming Media, incluida la recopilación de datos de Adobe Experience Platform.
 exl-id: eee70e62-ba45-440a-8ce1-e151b66d2c1f
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '630'
-ht-degree: 90%
+ht-degree: 88%
 
 ---
 
@@ -57,7 +57,7 @@ Primetime elimina la complejidad de alcanzar, monetizar y activar públicos glob
 * Compatibilidad para medir saltos de anuncios con (o sin) inserción de publicidad dinámica.
 * El modelo de inserción de anuncios optimizado de TVSDK permite realizar análisis que miden directamente la reproducción del anuncio, lo que aumenta la precisión.
 * Conjunto sólido de eventos y metadatos para garantizar la precisión en los problemas de interrupción de la conectividad móvil o de almacenamiento en búfer de QoS y en las interacciones del usuario final, como la búsqueda, la pausa y la puesta en segundo plano en dispositivos móviles.
-* Compatibilidad integrada de Nielsen DTVR (lineal) con metadatos ID3 y de DCR con metadatos CMS.
+* Compatibilidad integrada con DTVR de Nielsen (lineal) con metadatos ID3 y DCR con metadatos de CMS.
 
 
 TVSDK ya se ha integrado con el SDK de Media Analytics (Heartbeats), que hace que la implementación sea más fácil y rápida en todas las plataformas compatibles. Para aprovechar Primetime, siga las mismas directrices y requisitos previos que se encuentran en el [lado del cliente](/help/legacy/intro-to-ava/implementation-paths/client-side-path.md), junto con los siguientes documentos para las plataformas: [Guía del usuario de Primetime.](https://helpx.adobe.com/es/support/primetime.html)

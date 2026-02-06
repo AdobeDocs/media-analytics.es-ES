@@ -4,8 +4,8 @@ description: Siga estos pasos para configurar la aplicación Media SDK en Roku.
 uuid: 904dfda0-4782-41da-b4ab-212e81156633
 exl-id: b8de88d0-3a93-4776-b372-736bf979ee26
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '675'
 ht-degree: 92%
@@ -14,7 +14,7 @@ ht-degree: 92%
 
 # Configurar SDK móvil v2.x para Roku {#set-up-roku}
 
-## Requisitos previos  {#roku-prerequisites}
+## Requisitos previos {#roku-prerequisites}
 
 * **Obtenga parámetros de configuración válidos para los servicios de medios de streaming de Adobe**
 
@@ -172,4 +172,4 @@ Roku SDK 2.x para Experience Cloud Solutions le permite medir aplicaciones Roku 
    | `processMediaMessages` | Responsable de pasar los eventos de medios al SDK que se va a gestionar. <br/><br/>`ADBMobile().processMediaMessages()` |
 
 
-<!--    **Postbacks -** For more information about configuring postbacks, see [Configure Postbacks.](https://experienceleague.adobe.com/docs/mobile-services/using/manage-app-settings-ug/configuring-app/signals.html?lang=es) -->
+<!--    **Postbacks -** For more information about configuring postbacks, see [Configure Postbacks.](https://experienceleague.adobe.com/docs/mobile-services/using/manage-app-settings-ug/configuring-app/signals.html) -->

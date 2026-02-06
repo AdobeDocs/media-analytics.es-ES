@@ -2,9 +2,9 @@
 title: Requisitos previos para implementaciones solo de Adobe Analytics
 description: Conozca los requisitos previos para utilizar el complemento de Adobe Analytics para medios de streaming para implementaciones solo de Adobe Analytics
 feature: Streaming Media, Workspace Basics
-role: User, Admin, Data Engineer
+role: User, Admin, Developer
 exl-id: f94a5339-f777-44ec-ba79-0a1986c52225
-source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '223'
 ht-degree: 43%

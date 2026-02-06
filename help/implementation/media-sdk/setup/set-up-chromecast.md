@@ -4,8 +4,8 @@ description: Siga estos pasos para configurar la aplicación Media SDK en Chrome
 uuid: d664e394-02a2-4985-bbad-be1bcc44fb2b
 exl-id: 5dfe3407-2858-48c0-a70c-8ea87967ac47
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '570'
 ht-degree: 97%
@@ -16,7 +16,7 @@ ht-degree: 97%
 
 En esta sección se describen los requisitos previos para configurar una instalación de Chromecast para los servicios de medios de streaming de Adobe.
 
-## Requisitos previos 
+## Requisitos previos
 
 * **Obtener parámetros de configuración válidos**
 
@@ -153,4 +153,4 @@ Adobe Mobile Library para Chromecast v3.x para Experience Cloud Solutions le per
    }
    ```
 
-<!--   **Postbacks -** For more information about configuring postbacks, see [Configure Postbacks.](https://experienceleague.adobe.com/docs/mobile-services/using/manage-app-settings-ug/configuring-app/signals.html?lang=es) -->
+<!--   **Postbacks -** For more information about configuring postbacks, see [Configure Postbacks.](https://experienceleague.adobe.com/docs/mobile-services/using/manage-app-settings-ug/configuring-app/signals.html) -->

@@ -4,11 +4,11 @@ description: Implementar el seguimiento de anuncios en aplicaciones de Chromecas
 uuid: 7b1f584a-3472-416c-944c-5f5ea0ee5529
 exl-id: 57465c42-b349-439d-b8d7-083b299a8c83
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '298'
+ht-degree: 92%
 
 ---
 
@@ -48,7 +48,7 @@ Las siguientes instrucciones proporcionan directrices para la implementación me
 
 1. Identifique cuándo se inicia el recurso publicitario y cree una instancia de `AdObject` con la información de la publicidad.
 
-   Creación de objeto de Ad object:[&#x200B; createAdObject](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.createAdObject)
+   Creación de objeto de Ad object:[ createAdObject](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.createAdObject)
 
    ```
    adInfo = ADBMobile.media.createAdObject("Sample ad", "001", 1, AD_LENGTH);
@@ -56,7 +56,7 @@ Las siguientes instrucciones proporcionan directrices para la implementación me
 
 1. Opcionalmente, se pueden adjuntar metadatos estándar o de anuncio a la sesión de seguimiento de contenido mediante el uso de variables de datos de contexto.
 
-   * **Metadatos de publicidad estándar**: para los metadatos de publicidad estándar, cree un diccionario de conexiones de clave/valor de metadatos de publicidad estándar con el uso de las claves correspondientes a su plataforma:
+   * **Metadatos de publicidad estándar -** Para los metadatos de publicidad estándar, cree un diccionario de pares de valor clave de metadatos de publicidad estándar usando las claves para su plataforma:
    * **Metadatos de anuncio personalizados**: para los metadatos personalizados, cree un objeto de variable para las variables de datos personalizadas y rellénelas con los datos del recurso publicitario actual:
 
 1. Invoque `trackEvent()` con el evento `AdStart` para iniciar el seguimiento de la reproducción de publicidad.

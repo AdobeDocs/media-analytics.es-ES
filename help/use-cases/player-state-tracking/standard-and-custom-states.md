@@ -3,8 +3,8 @@ title: Acerca de los estados estándar y personalizados
 description: Obtenga más información sobre la función de seguimiento del estado de los jugadores, incluidos los requisitos y las directrices para implementar e informar sobre los estados de los jugadores estándar y personalizados.
 exl-id: 3c492055-d471-4147-aa78-b058d6b931f4
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '278'
 ht-degree: 99%

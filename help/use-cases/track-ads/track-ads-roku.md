@@ -4,11 +4,11 @@ description: Implementar el seguimiento de anuncios en aplicaciones Roku usando 
 uuid: b1567265-7043-4efa-a313-aaaa91c4bb01
 exl-id: aaed828d-1aba-486e-83e3-2ffd092305e2
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '298'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -38,7 +38,7 @@ Las siguientes instrucciones proporcionan directrices para la implementación me
 
    | Nombre de variable | Descripción | Requerido |
    | --- | --- | :---: |
-   | `name` | Nombre de la pausa publicitaria: publicidad pre-roll, mid-roll y post-roll. | Sí |
+   | `name` | Nombre de la pausa publicitaria, como anuncio previo a la emisión, anuncio durante la emisión y anuncio posterior a la emisión. | Sí |
    | `position` | La posición numérica de la pausa publicitaria, comenzando por 1. | Sí |
    | `startTime` | Valor del cabezal de reproducción al comienzo de la pausa publicitaria. | Sí |
 
