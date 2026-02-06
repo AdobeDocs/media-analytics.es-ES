@@ -13,15 +13,15 @@ ht-degree: 2%
 
 # Migración de audiencias a los nuevos campos de medios de streaming
 
-En este documento se describe cómo se debe migrar una audiencia que usa campos del tipo de datos de los servicios de medios de streaming de Adobe llamados &quot;medios&quot; para que use el nuevo tipo de datos correspondiente denominado &quot;[Detalles de informes de medios](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details)&quot;.
+En este documento se describe cómo se debe migrar una audiencia que usa campos del tipo de datos de los servicios de medios de streaming de Adobe llamados &quot;medios&quot; para que use el nuevo tipo de datos correspondiente denominado &quot;[Detalles de informes de medios](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/media-reporting-details)&quot;.
 
 ## Migración de una audiencia
 
-Para migrar una audiencia del tipo de datos anterior denominado &quot;Medios&quot; al nuevo tipo de datos denominado &quot;[Detalles de informes de medios](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details)&quot;, debe editar la audiencia y, en cada regla, reemplazar el campo anterior del tipo de datos obsoleto por el nuevo campo correspondiente del nuevo tipo de datos:
+Para migrar una audiencia del tipo de datos anterior denominado &quot;Medios&quot; al nuevo tipo de datos denominado &quot;[Detalles de informes de medios](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/media-reporting-details)&quot;, debe editar la audiencia y, en cada regla, reemplazar el campo anterior del tipo de datos obsoleto por el nuevo campo correspondiente del nuevo tipo de datos:
 
 1. Busque reglas que contengan campos del tipo de datos &quot;Medios&quot; obsoleto. Estos son todos los campos que comienzan con la ruta de acceso `media.mediaTimed`.
 
-1. Duplique esas reglas utilizando campos del nuevo tipo de datos &quot;[Detalles de informes de medios](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details)&quot;.
+1. Duplique esas reglas utilizando campos del nuevo tipo de datos &quot;[Detalles de informes de medios](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/media-reporting-details)&quot;.
 
 1. Mantenga ambas reglas en su lugar hasta que valide que las audiencias funcionan según lo esperado.
 
