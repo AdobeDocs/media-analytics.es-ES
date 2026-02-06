@@ -125,7 +125,7 @@ Las implementaciones de seguimiento de Media Analytics generan dos tipos de llam
 
   El servidor de seguimiento de análisis debe finalizar en “`.sc.omtrdc.net`” o ser CNAME.
 
-* ** Servidor de Media Analytics (latidos)**
+* **&#x200B; Servidor de Media Analytics (latidos)**
 Siempre tiene el formato “`[your_namespace].hb.omtrdc.net`”. El valor de “`[your_namespace]`” especifica su empresa y lo proporciona Adobe.
 
 El seguimiento de medios funciona del mismo modo en todas las plataformas, equipos de escritorio y dispositivos móviles. Actualmente, el seguimiento de audio funciona en plataformas móviles. En todas las llamadas de seguimiento hay algunas variables universales clave que se deben validar:

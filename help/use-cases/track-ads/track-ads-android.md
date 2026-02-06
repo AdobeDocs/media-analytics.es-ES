@@ -84,7 +84,7 @@ Las siguientes instrucciones proporcionan directrices para la implementación me
 
 1. Opcionalmente, se pueden adjuntar metadatos estándar o de anuncio a la sesión de seguimiento de contenido mediante el uso de variables de datos de contexto.
 
-   * [Implementación de metadatos de publicidad estándar en Android ](/help/use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-android.md)
+   * [Implementación de metadatos de publicidad estándar en Android &#x200B;](/help/use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-android.md)
 
    help/use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-android.md
 

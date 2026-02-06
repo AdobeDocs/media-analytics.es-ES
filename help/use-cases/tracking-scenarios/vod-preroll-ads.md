@@ -14,7 +14,7 @@ ht-degree: 95%
 
 # Reproducción de VOD con anuncios previos a la emisión{#vod-playback-with-pre-roll-ads}
 
-En esta situación, se han insertado anuncios previos a la emisión antes del contenido principal. Si no se indica lo contrario, las llamadas de red son iguales a las llamadas que se hacen en la [Reproducción de VOD sin anuncios. ](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md) Las llamadas de red se realizan al mismo tiempo, pero la carga útil es distinta.
+En esta situación, se han insertado anuncios previos a la emisión antes del contenido principal. Si no se indica lo contrario, las llamadas de red son iguales a las llamadas que se hacen en la [Reproducción de VOD sin anuncios. &#x200B;](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md) Las llamadas de red se realizan al mismo tiempo, pero la carga útil es distinta.
 
 | Activador | Método de Heartbeat | Llamadas de red   | Notas   |
 | --- | --- | --- | --- |

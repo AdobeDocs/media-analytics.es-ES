@@ -82,7 +82,7 @@ Las siguientes instrucciones proporcionan directrices para la implementación me
 
 1. Opcionalmente, se pueden adjuntar metadatos estándar o de anuncio a la sesión de seguimiento de contenido mediante el uso de variables de datos de contexto.
 
-   * [Implementación de metadatos de publicidad estándar en iOS ](/help/use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-ios.md)
+   * [Implementación de metadatos de publicidad estándar en iOS &#x200B;](/help/use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-ios.md)
    * **Metadatos de anuncio personalizados**: para los metadatos personalizados, cree un objeto de variable para las variables de datos personalizadas y rellénelas con los datos del anuncio actual:
 
      ```

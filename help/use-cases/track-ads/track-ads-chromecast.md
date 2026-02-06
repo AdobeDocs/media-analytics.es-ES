@@ -48,7 +48,7 @@ Las siguientes instrucciones proporcionan directrices para la implementación me
 
 1. Identifique cuándo se inicia el recurso publicitario y cree una instancia de `AdObject` con la información de la publicidad.
 
-   Creación de objeto de Ad object:[ createAdObject](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.createAdObject)
+   Creación de objeto de Ad object:[&#x200B; createAdObject](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.createAdObject)
 
    ```
    adInfo = ADBMobile.media.createAdObject("Sample ad", "001", 1, AD_LENGTH);

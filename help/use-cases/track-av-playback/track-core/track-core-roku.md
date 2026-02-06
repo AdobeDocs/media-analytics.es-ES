@@ -104,7 +104,7 @@ Esta documentación abarca el seguimiento en la versión 2.x del SDK.
 
    * **Metadatos estándar**
 
-[Implementación de metadatos estándar en Roku ](/help/use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
+[Implementación de metadatos estándar en Roku &#x200B;](/help/use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
 
      >[!NOTE]
      >
