@@ -5,16 +5,16 @@ uuid: c446ad41-51b8-46d6-9bc1-abfae866023f
 exl-id: ccc717ae-d846-4349-8282-5e3511ddeb9b
 feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+source-git-commit: 9b2d64e856af6a975b371d7c794197a5541997f1
 workflow-type: tm+mt
 source-wordcount: '139'
-ht-degree: 100%
+ht-degree: 55%
 
 ---
 
 # Claves de metadatos de Chromecast{#chromecast-metadata-keys}
 
-Los metadatos de publicidad y vídeo estándar se pueden establecer en objetos de información de publicidad y contenido multimedia, respectivamente. El uso de las claves constantes para los metadatos de vídeo/publicidad establece el diccionario con metadatos estándar en el objeto info antes de invocar las API de seguimiento. Consulte las siguientes tablas para ver la lista completa de constantes de metadatos estándar, con ejemplos.
+Los metadatos de publicidad y vídeo estándar se pueden establecer en objetos de información de publicidad y contenido multimedia, respectivamente. Al usar las claves de las constantes para los metadatos de vídeo/publicidad, se establece el diccionario que contiene los metadatos estándar en el objeto de información antes de llamar a las API de seguimiento. Consulte las tablas siguientes para obtener la lista completa de constantes de metadatos estándar, seguidas de ejemplos.
 
 ## Constantes de metadatos {#video-metadata-constants}
 

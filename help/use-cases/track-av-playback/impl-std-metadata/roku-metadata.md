@@ -5,16 +5,16 @@ uuid: 2ca6bb1d-c545-43d3-9c3e-63b890aa268d
 exl-id: 687dbaa5-4723-4b3f-ab1e-4d5bf447cddf
 feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+source-git-commit: 9b2d64e856af6a975b371d7c794197a5541997f1
 workflow-type: tm+mt
 source-wordcount: '471'
-ht-degree: 91%
+ht-degree: 80%
 
 ---
 
 # Claves de metadatos de Roku{#roku-metadata-keys}
 
-Los metadatos de publicidad, audio y vídeo estándar se pueden establecer en objetos de información de publicidad y contenido multimedia, respectivamente. El uso de las claves constantes para los metadatos de vídeo/publicidad establece el diccionario con metadatos estándar en el objeto info antes de invocar las API de seguimiento. Consulte las siguientes tablas para ver la lista completa de constantes de metadatos estándar, con ejemplos.
+Los metadatos de publicidad, audio y vídeo estándar se pueden establecer en objetos de información de publicidad y contenido multimedia, respectivamente. Al usar las claves de las constantes para los metadatos de vídeo/publicidad, se establece el diccionario que contiene los metadatos estándar en el objeto de información antes de llamar a las API de seguimiento. Consulte las tablas siguientes para obtener la lista completa de constantes de metadatos estándar, seguidas de ejemplos.
 
 ## Constantes de metadatos de vídeo {#video-metadata-constants}
 
