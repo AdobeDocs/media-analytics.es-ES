@@ -4,10 +4,10 @@ description: Aprenda a utilizar el panel Tiempo invertido en la reproducción de
 feature: Streaming Media, Workspace Basics
 role: User, Admin
 exl-id: 958b4968-0f52-464c-81e0-5ab9b84aaa9c
-source-git-commit: 67f1fa8194fa58b2c513e3136d2bc7880f9cb06b
+source-git-commit: 528a82a4299370c2ef5a366b1f3fab9fd21b164f
 workflow-type: tm+mt
-source-wordcount: '215'
-ht-degree: 91%
+source-wordcount: '232'
+ht-degree: 83%
 
 ---
 
@@ -22,6 +22,8 @@ En Analysis Workspace, Tiempo invertido en la reproducción de contenido es la c
 
 El tiempo invertido en la reproducción del contenido ayuda a analizar la reproducción a lo largo del tiempo, con detalles sobre los picos de concurrencia y la capacidad de realizar desgloses y comparaciones. Para acceder al panel Tiempo invertido en la reproducción de contenido, vaya a un grupo de informes con los componentes de medios de streaming habilitados. A continuación, haga clic en el icono del panel situado en el extremo izquierdo y arrastre el panel a su proyecto de Analysis Workspace. [Más información...](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/media-playback-timespent/media-playback-time-spent.html?lang=es)
 
-<!-- ## DOES THIS APPLY Get Concurrent Viewers via Analytics Reporting API
+<!--
+## DOES THIS APPLY Get Concurrent Viewers via Analytics Reporting API
 
-REVISE You can also get concurrent viewer data for up to 1-month at a time at minute-level granularity using the Analytics Reporting API 2.0.  The reporting API uses the same definition of concurrent viewers as Analysis Workspace.  For more information see [_*Get concurrent viewers JSON report data with Analytics 2.0 APIs*_](/help/reporting/reports-and-analytics/get-concurrent-json20.md). -->
+REVISE You can also get concurrent viewer data for up to 1-month at a time at minute-level granularity using the Analytics Reporting API 2.0.  The reporting API uses the same definition of concurrent viewers as Analysis Workspace.  For more information see [_*Get concurrent viewers JSON report data with Analytics 2.0 APIs*_](/help/reporting/reports-and-analytics/get-concurrent-json20.md). 
+-->

@@ -2,22 +2,22 @@
 title: ¿Qué novedades hay en los servicios de medios de streaming?
 description: Descubra las novedades de los servicios de medios de streaming.
 uuid: 1f3e48df-83b6-418c-8cf7-d79466481f79
-index: y
+index: true
 internal: n
 snippet: y
 exl-id: 881a94f4-d248-4668-a2d1-4e50d3f9135a
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+source-git-commit: 528a82a4299370c2ef5a366b1f3fab9fd21b164f
 workflow-type: tm+mt
-source-wordcount: '19'
-ht-degree: 31%
+source-wordcount: '26'
+ht-degree: 50%
 
 ---
 
-# Recursos {#resources}
+# Recursos{#resources}
 
-## Notas de la versión {#release-notes}
+## Notas de la versión{#release-notes}
 
 * [Notas de la versión](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html?lang=es)
 
