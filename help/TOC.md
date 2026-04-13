@@ -85,8 +85,8 @@ ht-degree: 79%
    + [Segmentos de medios](reporting/segments.md)
    + Informes de medios predeterminados {#media-default-reports}
       + [Información general de informes predeterminados](reporting/reports-and-analytics/default-reports-overview.md)
-      + [Información general de medios ](reporting/reports-and-analytics/media-reports-overview.md)
-      + [Detalles de medios ](reporting/reports-and-analytics/media-reports-detail.md)
+      + [Información general de medios &#x200B;](reporting/reports-and-analytics/media-reports-overview.md)
+      + [Detalles de medios &#x200B;](reporting/reports-and-analytics/media-reports-detail.md)
       + [Informe de Media Daypart](reporting/reports-and-analytics/media-reports-daypart.md)
       + [Informe de visualizadores simultáneos de medios](reporting/reports-and-analytics/media-concurrent-viewers-reports.md)
    + API de medios {#media-api}
