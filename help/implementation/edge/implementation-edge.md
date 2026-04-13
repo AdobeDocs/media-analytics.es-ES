@@ -4,10 +4,10 @@ description: Descubra cómo se pueden implementar los servicios de medios de str
 feature: Streaming Media
 role: User, Admin, Developer
 exl-id: dfdb1415-105e-4c41-bedc-ecb85ed1b1d9
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+source-git-commit: 847ea3e86c25a4aec3b12ad097d89941a5474aa3
 workflow-type: tm+mt
-source-wordcount: '2152'
-ht-degree: 8%
+source-wordcount: '2413'
+ht-degree: 10%
 
 ---
 
@@ -113,7 +113,7 @@ Para crear y configurar un esquema:
 
    +++
 
-1. (Opcional) Puede agregar metadatos personalizados al esquema. Esto le permite incluir metadatos adicionales definidos por el usuario que se pueden personalizar para necesidades o contextos específicos. Esta flexibilidad es útil en situaciones en las que los esquemas existentes no cubren los puntos de datos deseados. (También puede trabajar con metadatos personalizados con las API de Media Edge. Para obtener más información, consulte [Crear metadatos personalizados con las API de Media Edge](https://developer.adobe.com/cja-apis/docs/endpoints/media-edge/custom-metadata/).)
+1. (Opcional) Puede agregar metadatos personalizados al esquema. Esto le permite incluir metadatos adicionales definidos por el usuario que se pueden personalizar para necesidades o contextos específicos. Esta flexibilidad es útil en situaciones en las que los esquemas existentes no cubren los puntos de datos deseados. (También puede trabajar con metadatos personalizados con las API de Media Edge. Para obtener más información, consulte [Compatibilidad con metadatos personalizados: formato XDM](/help/implementation/edge/implementation-edge-custom-metadata.md).
 
    +++ Amplíe aquí para ver instrucciones sobre cómo agregar metadatos personalizados al esquema.
 
@@ -226,7 +226,7 @@ Para crear y configurar un esquema:
       | Inicios de contenidos | mediaReporting.sessionDetails.isViewed |
       | Vistas de segmentos de medios | mediaReporting.sessionDetails.hasSegmentView |
       | Inicio de contenido | mediaReporting.sessionDetails.isPlayed |
-      | El contenido finaliza | mediaReporting.sessionDetails.isCompleted |
+      | Finalización de contenido | mediaReporting.sessionDetails.isCompleted |
       | Tiempo invertido en contenido | mediaReporting.sessionDetails.timePlayed |
       | Tiempo invertido en contenido | mediaReporting.sessionDetails.totalTimePlayed |
       | Tiempo de reproducción única | mediaReporting.sessionDetails.uniqueTimePlayed |
@@ -361,7 +361,7 @@ Utilice los siguientes recursos de documentación para completar la implementaci
 
 * [Introducción](https://developer.adobe.com/client-sdks/documentation/media-for-edge-network/)
 
-* [Referencia de API](https://developer.adobe.com/client-sdks/documentation/media-for-edge-network/api-reference/)
+* [Referencia de la API](https://developer.adobe.com/client-sdks/documentation/media-for-edge-network/api-reference/)
 
 * [Migrar a Adobe Streaming Media para la extensión de Edge Network](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/migration-guide/)
 
@@ -381,7 +381,7 @@ La API también está disponible si desea utilizar una implementación personali
 
 Para obtener más información sobre la API de Media Edge, consulte los siguientes recursos:
 
-* [Resumen de la API de Media Edge](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/media-edge-apis/overview.html)
+* [Información general de API de Media Edge](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/media-edge-apis/overview.html)
 
 * [Introducción a la API de Media Edge](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/media-edge-apis/getting-started.html)
 
