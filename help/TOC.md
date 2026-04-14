@@ -5,7 +5,7 @@ user-guide-title: Guía de servicios de medios de streaming
 breadcrumb-title: Guía de servicios de medios de streaming
 user-guide-description: Implementar servicios de medios de streaming. Incluye el SDK de medios y la API de recopilación de medios.
 sub-product: media analytics
-source-git-commit: 847ea3e86c25a4aec3b12ad097d89941a5474aa3
+source-git-commit: 80caffab1630b138724b310e3bdcc58f682a2f8b
 workflow-type: tm+mt
 source-wordcount: '958'
 ht-degree: 79%
@@ -39,7 +39,7 @@ ht-degree: 79%
          + [Media Edge Web SDK](/help/implementation/edge/edge-web-sdk.md)
          + [Media Edge Mobile SDK](/help/implementation/edge/edge-mobile-sdk.md)
       + [API de Media Edge](/help/implementation/edge/implementation-edge-api.md)
-      + [Compatibilidad con metadatos personalizados](/help/implementation/edge/implementation-edge-custom-metadata.md)
+      + [Compatibilidad con metadatos personalizados](implementation/edge/implementation-edge-custom-metadata.md)
    + Implementaciones solo de Adobe Analytics {#analytics-only}
       + [Requisitos previos](/help/implementation/media-sdk/setup/prerequisites-analytics.md)
       + SDK de medios/extensión {#media-sdk}
