@@ -27,9 +27,9 @@ La clasificación de contenido la establece el reproductor al inicio de la sesi�
 
 | Sistema de informes | Fuente |
 | --- | --- |
-| Adobe Analytics (regla de procesamiento) | Cree una [regla de procesamiento](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview) que asigne `a.media.rating` a un eVar. |
+| Adobe Analytics (regla de procesamiento) | Cree una [regla de procesamiento](https://experienceleague.adobe.com/es/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview) que asigne `a.media.rating` a un eVar. |
 | Adobe Analytics (clasificación) | Clasificación de la dimensión [Contenido (ID)](content.md): Adobe crea automáticamente esta clasificación cuando **[[!UICONTROL Metadatos de vídeo]](/help/reporting/media-reports-enable.md)** está habilitado para el grupo de informes. Usted es responsable de rellenar y mantener los valores de clasificación. |
-| Customer Journey Analytics | [`mediaReporting.sessionDetails.rating`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| Customer Journey Analytics | [`mediaReporting.sessionDetails.rating`](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/session-details-reporting) |
 | Fuentes de datos (regla de procesamiento) | `evar1`-`evar250`, `post_evar1`-`post_evar250` (el eVar al que se asigna la regla de procesamiento `a.media.rating`) |
 | Fuentes de datos (clasificación) | N/D: las fuentes de datos no admiten clasificaciones. |
 
@@ -45,7 +45,7 @@ Este método garantiza una relación de 1:1 entre cada ID de contenido y su clas
 
 ## Método de regla de procesamiento
 
-Cree una [regla de procesamiento](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview) que asigne `a.media.rating` a un eVar. Este método registra la clasificación del contenido como un valor por visita sin requerir mantenimiento de clasificación.
+Cree una [regla de procesamiento](https://experienceleague.adobe.com/es/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview) que asigne `a.media.rating` a un eVar. Este método registra la clasificación del contenido como un valor por visita sin requerir mantenimiento de clasificación.
 
 La solución es que pierde la relación garantizada 1:1 entre la clasificación de contenido y la dimensión principal [Contenido (ID)](content.md). Si la implementación envía valores incoherentes para el mismo ID de contenido entre eventos, pueden aparecer varias clasificaciones bajo el mismo contenido. La actualización de un valor solo se aplica a los datos a partir de ahora.
 
