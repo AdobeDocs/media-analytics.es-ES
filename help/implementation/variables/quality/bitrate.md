@@ -24,7 +24,7 @@ La variable de velocidad de bits es la velocidad de bits de reproducción actual
 | Propiedad | Valor |
 | --- | --- |
 | **Variable de datos de contexto** | `a.media.qoe.bitrateAverageBucket` |
-| **Campo de colección XDM** | [`mediaCollection.qoeDataDetails.bitrate`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-collection) |
+| **Campo de colección XDM** | [`mediaCollection.qoeDataDetails.bitrate`](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/qoe-data-details-collection) |
 | **Requerido** | No |
 | **Enviado con** | Eventos de calidad (cambio de velocidad de bits, búfer, error), cierre de sesión |
 

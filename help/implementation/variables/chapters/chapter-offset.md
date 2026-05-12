@@ -24,7 +24,7 @@ La variable de desplazamiento del capítulo es el desplazamiento del capítulo d
 | Propiedad | Valor |
 | --- | --- |
 | **Variable de datos de contexto** | `a.media.chapter.offset` |
-| **Campo de colección XDM** | [`mediaCollection.chapterDetails.offset`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/chapter-details-collection) |
+| **Campo de colección XDM** | [`mediaCollection.chapterDetails.offset`](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/chapter-details-collection) |
 | **Requerido** | No (Mobile SDK); Sí (Edge, API de Media Collection) |
 | **Enviado con** | Inicio del capítulo, cierre del capítulo |
 

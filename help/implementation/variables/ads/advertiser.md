@@ -24,7 +24,7 @@ La variable del anunciante es la compañía o marca que aparece en el anuncio (p
 | Propiedad | Valor |
 | --- | --- |
 | **Variable de datos de contexto** | `a.media.ad.advertiser` |
-| **Campo de colección XDM** | [`mediaCollection.advertisingDetails.advertiser`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-collection) |
+| **Campo de colección XDM** | [`mediaCollection.advertisingDetails.advertiser`](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/advertising-details-collection) |
 | **Requerido** | No |
 | **Enviado con** | Inicio del anuncio y cierre del anuncio |
 

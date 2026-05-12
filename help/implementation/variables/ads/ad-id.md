@@ -24,7 +24,7 @@ La variable de ID de anuncio identifica de forma exclusiva cada anuncio. Es nece
 | Propiedad | Valor |
 | --- | --- |
 | **Variable de datos de contexto** | `a.media.ad.name` |
-| **Campo de colección XDM** | [`mediaCollection.advertisingDetails.name`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-collection) |
+| **Campo de colección XDM** | [`mediaCollection.advertisingDetails.name`](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/advertising-details-collection) |
 | **Requerido** | Sí |
 | **Enviado con** | Inicio del anuncio y cierre del anuncio |
 

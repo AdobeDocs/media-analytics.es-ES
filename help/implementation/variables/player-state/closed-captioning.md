@@ -24,7 +24,7 @@ El estado del reproductor de subtítulos opcionales se registra cuando el visor 
 | Propiedad | Valor |
 | --- | --- |
 | **Variables de datos de contexto** | `a.media.states.closedcaptioning.set`, `a.media.states.closedcaptioning.count`, `a.media.states.closedcaptioning.time` |
-| **Campo de colección XDM** | [`mediaCollection.statesStart[]`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-collection-details) y [`mediaCollection.statesEnd[]`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-collection-details) (entradas con `name: "closedCaptioning"`) |
+| **Campo de colección XDM** | [`mediaCollection.statesStart[]`](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/media-collection-details) y [`mediaCollection.statesEnd[]`](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/media-collection-details) (entradas con `name: "closedCaptioning"`) |
 | **Requerido** | No |
 | **Enviado con** | Inicio de estado, fin de estado |
 

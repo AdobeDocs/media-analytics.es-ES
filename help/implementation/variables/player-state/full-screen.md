@@ -24,7 +24,7 @@ El estado del reproductor en pantalla completa rastrea cuando el visualizador en
 | Propiedad | Valor |
 | --- | --- |
 | **Variables de datos de contexto** | `a.media.states.fullscreen.set`, `a.media.states.fullscreen.count`, `a.media.states.fullscreen.time` |
-| **Campo de colección XDM** | [`mediaCollection.statesStart[]`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-collection-details) y [`mediaCollection.statesEnd[]`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-collection-details) (entradas con `name: "fullscreen"`) |
+| **Campo de colección XDM** | [`mediaCollection.statesStart[]`](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/media-collection-details) y [`mediaCollection.statesEnd[]`](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/media-collection-details) (entradas con `name: "fullscreen"`) |
 | **Requerido** | No |
 | **Enviado con** | Inicio de estado, fin de estado |
 

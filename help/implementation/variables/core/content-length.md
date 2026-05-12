@@ -24,7 +24,7 @@ La variable de duración del contenido es la duración total del contenido en se
 | Propiedad | Valor |
 | --- | --- |
 | **Variable de datos de contexto** | `a.media.length` |
-| **Campo de colección XDM** | [`mediaCollection.sessionDetails.length`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **Campo de colección XDM** | [`mediaCollection.sessionDetails.length`](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Requerido** | Sí |
 | **Enviado con** | Inicio de sesión, cierre de sesión |
 

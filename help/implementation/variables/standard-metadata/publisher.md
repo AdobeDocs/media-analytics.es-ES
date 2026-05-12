@@ -24,7 +24,7 @@ La variable del editor es el nombre del editor del contenido de audio (por ejemp
 | Propiedad | Valor |
 | --- | --- |
 | **Variable de datos de contexto** | `a.media.publisher` |
-| **Campo de colección XDM** | [`mediaCollection.sessionDetails.publisher`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **Campo de colección XDM** | [`mediaCollection.sessionDetails.publisher`](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Requerido** | No |
 | **Enviado con** | Inicio de sesión, cierre de sesión |
 

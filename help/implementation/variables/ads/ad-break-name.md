@@ -24,7 +24,7 @@ La variable del nombre de la pausa publicitaria es el nombre descriptivo de la p
 | Propiedad | Valor |
 | --- | --- |
 | **Variable de datos de contexto** | `a.media.ad.podFriendlyName` |
-| **Campo de colección XDM** | [`mediaCollection.advertisingPodDetails.friendlyName`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-pod-details-collection) |
+| **Campo de colección XDM** | [`mediaCollection.advertisingPodDetails.friendlyName`](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/advertising-pod-details-collection) |
 | **Requerido** | Sí (Mobile SDK); No (Edge, API de recopilación de medios) |
 | **Enviado con** | Inicio del anuncio y cierre del anuncio |
 

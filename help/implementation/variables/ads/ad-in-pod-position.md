@@ -24,7 +24,7 @@ La variable de posición del anuncio en la secuencia es la posición indizada ce
 | Propiedad | Valor |
 | --- | --- |
 | **Variable de datos de contexto** | `a.media.ad.podPosition` |
-| **Campo de colección XDM** | [`mediaCollection.advertisingDetails.podPosition`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-collection) |
+| **Campo de colección XDM** | [`mediaCollection.advertisingDetails.podPosition`](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/advertising-details-collection) |
 | **Requerido** | Sí |
 | **Enviado con** | Inicio del anuncio y cierre del anuncio |
 

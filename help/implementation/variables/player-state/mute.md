@@ -24,7 +24,7 @@ El estado del reproductor en silencio rastrea cuando el visualizador silencia y 
 | Propiedad | Valor |
 | --- | --- |
 | **Variables de datos de contexto** | `a.media.states.mute.set`, `a.media.states.mute.count`, `a.media.states.mute.time` |
-| **Campo de colección XDM** | [`mediaCollection.statesStart[]`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-collection-details) y [`mediaCollection.statesEnd[]`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-collection-details) (entradas con `name: "mute"`) |
+| **Campo de colección XDM** | [`mediaCollection.statesStart[]`](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/media-collection-details) y [`mediaCollection.statesEnd[]`](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/media-collection-details) (entradas con `name: "mute"`) |
 | **Requerido** | No |
 | **Enviado con** | Inicio de estado, fin de estado |
 

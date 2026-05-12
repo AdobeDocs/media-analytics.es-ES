@@ -24,7 +24,7 @@ La variable del nombre del capítulo es el título legible en lenguaje natural d
 | Propiedad | Valor |
 | --- | --- |
 | **Variable de datos de contexto** | `a.media.chapter.friendlyName` |
-| **Campo de colección XDM** | [`mediaCollection.chapterDetails.friendlyName`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/chapter-details-collection) |
+| **Campo de colección XDM** | [`mediaCollection.chapterDetails.friendlyName`](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/chapter-details-collection) |
 | **Requerido** | No |
 | **Enviado con** | Inicio del capítulo, cierre del capítulo |
 

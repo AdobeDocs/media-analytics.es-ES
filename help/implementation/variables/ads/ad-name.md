@@ -24,7 +24,7 @@ La variable del nombre del anuncio es el título del anuncio en lenguaje natural
 | Propiedad | Valor |
 | --- | --- |
 | **Variable de datos de contexto** | `a.media.ad.friendlyName` |
-| **Campo de colección XDM** | [`mediaCollection.advertisingDetails.friendlyName`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-collection) |
+| **Campo de colección XDM** | [`mediaCollection.advertisingDetails.friendlyName`](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/advertising-details-collection) |
 | **Requerido** | No |
 | **Enviado con** | Inicio del anuncio y cierre del anuncio |
 

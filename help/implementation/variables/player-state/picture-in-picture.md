@@ -24,7 +24,7 @@ El estado del reproductor de imagen en imagen se registra cuando el usuario entr
 | Propiedad | Valor |
 | --- | --- |
 | **Variables de datos de contexto** | `a.media.states.pictureinpicture.set`, `a.media.states.pictureinpicture.count`, `a.media.states.pictureinpicture.time` |
-| **Campo de colección XDM** | [`mediaCollection.statesStart[]`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-collection-details) y [`mediaCollection.statesEnd[]`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-collection-details) (entradas con `name: "pictureInPicture"`) |
+| **Campo de colección XDM** | [`mediaCollection.statesStart[]`](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/media-collection-details) y [`mediaCollection.statesEnd[]`](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/media-collection-details) (entradas con `name: "pictureInPicture"`) |
 | **Requerido** | No |
 | **Enviado con** | Inicio de estado, fin de estado |
 

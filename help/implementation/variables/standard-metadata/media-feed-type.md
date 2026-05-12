@@ -24,7 +24,7 @@ La variable de tipo de fuente de contenidos identifica la fuente de difusión (p
 | Propiedad | Valor |
 | --- | --- |
 | **Variable de datos de contexto** | `a.media.feed` |
-| **Campo de colección XDM** | [`mediaCollection.sessionDetails.feed`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **Campo de colección XDM** | [`mediaCollection.sessionDetails.feed`](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Requerido** | No |
 | **Enviado con** | Inicio de sesión, cierre de sesión |
 

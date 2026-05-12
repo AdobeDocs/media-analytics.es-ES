@@ -24,7 +24,7 @@ La variable content name es el título del contenido legible en lenguaje natural
 | Propiedad | Valor |
 | --- | --- |
 | **Variable de datos de contexto** | `a.media.friendlyName` |
-| **Campo de colección XDM** | [`mediaCollection.sessionDetails.friendlyName`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **Campo de colección XDM** | [`mediaCollection.sessionDetails.friendlyName`](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Requerido** | No |
 | **Enviado con** | Inicio de sesión, cierre de sesión |
 

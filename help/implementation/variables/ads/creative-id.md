@@ -24,7 +24,7 @@ La variable de ID creativo identifica el creativo de publicidad específico. Cua
 | Propiedad | Valor |
 | --- | --- |
 | **Variable de datos de contexto** | `a.media.ad.creative` |
-| **Campo de colección XDM** | [`mediaCollection.advertisingDetails.creativeID`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-collection) |
+| **Campo de colección XDM** | [`mediaCollection.advertisingDetails.creativeID`](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/advertising-details-collection) |
 | **Requerido** | No |
 | **Enviado con** | Inicio del anuncio y cierre del anuncio |
 

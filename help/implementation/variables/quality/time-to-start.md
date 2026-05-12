@@ -24,7 +24,7 @@ La variable tiempo para el inicio es el tiempo, en milisegundos, transcurrido en
 | Propiedad | Valor |
 | --- | --- |
 | **Variable de datos de contexto** | `a.media.qoe.timeToStart` |
-| **Campo de colección XDM** | [`mediaCollection.qoeDataDetails.timeToStart`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-collection) |
+| **Campo de colección XDM** | [`mediaCollection.qoeDataDetails.timeToStart`](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/qoe-data-details-collection) |
 | **Requerido** | No |
 | **Enviado con** | Inicio de sesión, cierre de sesión |
 
