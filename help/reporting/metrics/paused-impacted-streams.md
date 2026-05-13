@@ -1,0 +1,26 @@
+---
+title: Flujos afectados por la pausa
+description: Cuenta las sesiones en las que el visualizador se detuvo al menos una vez.
+feature: Metrics
+role: User, Admin
+source-git-commit: 186437a8669d2375caa9056dadd367ad7135f652
+workflow-type: tm+mt
+source-wordcount: '144'
+ht-degree: 9%
+
+---
+
+
+# Flujos afectados por la pausa
+
+La métrica **Flujos afectados por la pausa** cuenta sesiones en las que el visor se detuvo al menos una vez. Es un booleano de nivel de sesión. Varias pausas dentro de la misma sesión cuentan como un flujo afectado. Utilícelo para medir el porcentaje de sesiones que experimentaron alguna pausa; para el volumen total de la pausa, use [Pausar eventos](pause-events.md).
+
+## Cálculo de esta métrica
+
+El servidor multimedia establece `mediaReporting.sessionDetails.hasPauseImpactedStreams = true` la primera vez que se recibe un evento `media.pauseStart` durante la sesión. La métrica se recoge en la llamada de cierre.
+
+| Sistema de informes | Fuente |
+| --- | --- |
+| Adobe Analytics | Se recopila automáticamente a partir de los datos de contexto `a.media.pause` cuando [[!UICONTROL Media Core]](/help/reporting/media-reports-enable.md) está habilitado. |
+| Customer Journey Analytics | [`mediaReporting.sessionDetails.hasPauseImpactedStreams`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| Fuentes de datos | `event_list`, `post_event_list` (consulte la búsqueda [`event.tsv`](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files)) |
