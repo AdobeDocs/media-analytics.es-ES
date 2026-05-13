@@ -28,7 +28,7 @@ El reproductor establece el género al inicio de la sesión.
 | Sistema de informes | Fuente |
 | --- | --- |
 | Adobe Analytics | Se recopila automáticamente a partir de los datos de contexto `a.media.genre` (almacenados como una variable de lista) cuando [[!UICONTROL Metadatos de vídeo]](/help/reporting/media-reports-enable.md) está habilitado. |
-| Customer Journey Analytics | [`mediaReporting.sessionDetails.genreList`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) o [`mediaReporting.sessionDetails.genre`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) (heredado) |
+| Customer Journey Analytics | [`mediaReporting.sessionDetails.genreList`](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/session-details-reporting) o [`mediaReporting.sessionDetails.genre`](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/session-details-reporting) (heredado) |
 | Fuentes de datos | `videogenre, post_videogenre` |
 
 ## Elementos de dimensión

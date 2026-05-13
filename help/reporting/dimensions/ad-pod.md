@@ -22,7 +22,7 @@ SDK genera automáticamente el ID del pod de anuncios cuando se activa `media.ad
 | Sistema de informes | Fuente |
 | --- | --- |
 | Adobe Analytics | Se recopila automáticamente a partir de los datos de contexto `a.media.ad.pod` cuando [[!UICONTROL Media Ads]](/help/reporting/media-reports-enable.md) está habilitado. |
-| Customer Journey Analytics | [`mediaReporting.advertisingPodDetails.ID`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-pod-details-reporting) |
+| Customer Journey Analytics | [`mediaReporting.advertisingPodDetails.ID`](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/advertising-pod-details-reporting) |
 | Fuentes de datos | `videoadpod, post_videoadpod` |
 
 ## Elementos de dimensión
