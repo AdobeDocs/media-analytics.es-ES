@@ -5,10 +5,16 @@ uuid: 0269d8ad-0af8-4bf1-9d15-e06c2952a005
 exl-id: 33976096-8b86-4353-906b-e25bf4693471
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/mYfKt95xUE59MuMFOzGro6fPsJsdy4wcy2F2J--JaW8
+product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2: id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7aid: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+subfeature_v2: id: bcc784b7-4ade-4c84-96fa-2f7631b1e5fd
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '395'
-ht-degree: 100%
+source-wordcount: 408
+ht-degree: 89%
 
 ---
 
@@ -16,8 +22,10 @@ ht-degree: 100%
 
 ## Requisitos previos
 
-* **Obtenga parámetros de configuración válidos**: Estos parámetros se pueden obtener de un representante de Adobe una vez creada la cuenta de Analytics.
-* **Implemente `AppMeasurement` para JavaScript en la aplicación de contenido**: Para obtener más información sobre la documentación del SDK de Adobe Mobile, consulte [Implementación de Analytics utilizando JavaScript.](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html?lang=es)
+* **Obtener parámetros de configuración válidos**
+Estos parámetros se pueden obtener de un representante de Adobe una vez creada la cuenta de Analytics.
+* **Implementar `AppMeasurement` para JavaScript en su aplicación multimedia**
+Para obtener más información acerca de la documentación de Adobe Mobile SDK, consulte [Implementación de Analytics con JavaScript.](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html?lang=es)
 
 * **Proporcione las siguientes capacidades en su reproductor de contenidos**:
 

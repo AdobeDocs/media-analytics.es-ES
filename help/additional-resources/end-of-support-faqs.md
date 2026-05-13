@@ -4,10 +4,16 @@ description: Este tema incluye preguntas frecuentes sobre el fin de la compatibi
 exl-id: 9601ec17-8421-49d0-9d81-1cfa5e8f37cf
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/qfM2-x6s-SPf4gw2FpLlg7mPI-h-xZ3Y1TeeVALn3fQ
+product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2: id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7aid: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+subfeature_v2: id: bcc784b7-4ade-4c84-96fa-2f7631b1e5fdid: c77ba355-6681-41fe-b719-563d3f507fdbid: df312454-73c4-43f6-a90e-18f5043f074c
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '614'
-ht-degree: 69%
+source-wordcount: 639
+ht-degree: 62%
 
 ---
 
@@ -34,19 +40,19 @@ Si tiene alguna pregunta, póngase en contacto con el equipo de su cuenta de Ado
 
 1. **¿Se verá afectada la compatibilidad con los SDK de Roku y Chromecast?**
 
-   No.  Los SDK de Roku y Chromecast seguirán siendo compatibles como SDK independientes por el momento.
-
+   No.  Los SDK de Roku y Chromecast seguirán siendo compatibles como SDK independientes por el momento&#x200B;
+&#x200B;
 1. **¿Se verán afectadas las implementaciones del SDK de JS de Media Analytics por este cambio?&#x200B;**
 
-   No.  Los clientes que utilicen el SDK de JS para Media Analytics pueden seguir utilizando el SDK o habilitarlo mediante Adobe Launch.
+   No.  Los clientes que utilicen JS SDK para Media Analytics pueden seguir utilizando SDK o habilitarlo mediante Adobe Launch.
 &#x200B;
 1. **¿Cuál es el nivel de esfuerzo para migrar a las extensiones de Media Analytics?**
 
    LOE depende de la implementación de cada cliente, por lo que variará.  Después de revisar la documentación de migración que se muestra a continuación, póngase en contacto con el servicio de consultoría o atención al cliente para obtener soporte adicional.
 
-[Extensiones de Media Analytics: migración a Android](/help/legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-android.md)
+   [Extensiones de Media Analytics: migración a Android](/help/legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-android.md)
 
-[Extensiones de Media Analytics: migración a iOS](/help/legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-ios.md)
+   [Extensiones de Media Analytics: migración a iOS](/help/legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-ios.md)
 
    [Extensiones de Media Analytics: nuevas implementaciones](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/)
 

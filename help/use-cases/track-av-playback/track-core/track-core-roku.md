@@ -5,10 +5,16 @@ uuid: a8aa7b3c-2d39-44d7-8ebc-b101d130101f
 exl-id: 5272c0ce-4e3d-48c6-bfa6-94066ccbf9ac
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/n-ox7dhsEPOQCJqHFm8ZLG-7puJ7kfn1ZE7GEg-KFas
+product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2: id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7aid: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+subfeature_v2: id: e7d92df1-c5ba-4e93-85df-f83171b889be
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '795'
-ht-degree: 81%
+source-wordcount: 802
+ht-degree: 79%
 
 ---
 
@@ -104,7 +110,7 @@ Esta documentación abarca el seguimiento en la versión 2.x del SDK.
 
    * **Metadatos estándar**
 
-[Implementación de metadatos estándar en Roku &#x200B;](/help/use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
+     [Implementación de metadatos estándar en Roku](/help/use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
 
      >[!NOTE]
      >
@@ -150,7 +156,7 @@ Esta documentación abarca el seguimiento en la versión 2.x del SDK.
 
 1. **Actualización de valor del cabezal de reproducción**
 
-   Cuando el cabezal de reproducción de contenido cambie, notifique a SDK llamando a la API `mediaUpdatePlayhead`. <br /> Para el vídeo bajo demanda (VOD), el valor se especifica segundos después del comienzo del elemento de medios. <br /> Para el streaming en vivo, si el reproductor no proporciona información acerca de la duración del contenido, el valor se puede especificar como el número de segundos desde la medianoche (UTC) de ese día.
+   Cuando cambie el cabezal de reproducción de contenido, notifique a SDK llamando a la API `mediaUpdatePlayhead`. <br /> Para vídeo bajo demanda (VOD), el valor se especifica segundos después del comienzo del elemento de medios. <br /> Para el streaming en directo, si el reproductor no proporciona información acerca de la duración del contenido, el valor se puede especificar como el número de segundos desde la medianoche (UTC) de ese día.
 
    ```
    ADBMobile().mediaUpdatePlayhead(position)
@@ -208,5 +214,5 @@ Esta documentación abarca el seguimiento en la versión 2.x del SDK.
    >[!TIP]
    >Puede ser el mismo origen de evento empleado en el paso 4. Asegúrese de que cada llamada de API a `trackPause()` esté vinculada a continuación con una llamada de API a `trackPlay()` cuando se reanude la reproducción de vídeo.
 
-* Situaciones de seguimiento: [Reproducción de VOD sin anuncios](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md)
+* Situaciones de seguimiento: [reproducción de VOD sin anuncios](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md)
 * Reproductor de muestra incluido con el Roku SDK para ver un ejemplo de seguimiento completo.

@@ -1,18 +1,24 @@
 ---
-title: 'Habilitación de informes de contenidos '
+title: Habilitación de informes de contenidos
 description: Obtenga información acerca del grupo de informes multimedia que recopila métricas de medios.  Siga estos pasos para configurar los informes de medios antes de enviar los datos de medios.
 uuid: d306068d-a308-4b6e-8a72-742dda0de428
 exl-id: 686d88a5-79b6-4936-ba9e-8f834ef330d1
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/2nLLlF-rFJUR3t-OMbcy5iqF42l-O7oLybXFGhdPyhU
+product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2: id: b069d60e-95f3-44d6-95a8-ddc862a4bc38id: b3f03848-ae12-48b2-8aab-cad18567eb32id: c153fd90-23e1-4614-81d3-3cc7571227f7id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+subfeature_v2: id: c9bb7ea6-c04f-4262-b69c-fbb8d91e3559id: e38cbddc-1633-4cd5-bed5-9f289f2a6029id: ef60b66e-5984-4336-ba72-6d978b1b6f87id: f1f1a2d4-0976-4881-b091-c2bb8de7ffacid: f836f655-eebe-4b76-82bc-697955ec1ce3
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '938'
-ht-degree: 98%
+source-wordcount: 945
+ht-degree: 81%
 
 ---
 
-# Habilitación de informes de contenidos {#media-reports-enablement}
+# Habilitación de informes de contenidos{#media-reports-enablement}
 
 Para enviar datos sobre los contenidos, es necesario configurar todos los grupos de informes que recopilan métricas de contenidos.
 
@@ -33,7 +39,7 @@ Los clientes avanzados solo pueden usar los paneles de medios en Analysis Worksp
 
    * **Componentes básicos de contenidos**
 
-     La medición de componentes básicos de contenidos se utiliza para el contenido multimedia. Esta usa eVars de solución (o personalizadas) para realizar un seguimiento del Contenido, el Tipo de contenido, el Nombre del reproductor de contenido y el Canal de contenido. Los eventos de solución (o personalizados) se utilizarán para contenidos iniciados, Contenido iniciado, Contenido finalizado y Tiempo invertido en contenido.
+     La medición de contenidos principales se utiliza para el contenido multimedia. Se utilizarán las eVars de solución (o personalizadas) para realizar un seguimiento del contenido, el tipo de contenido, el nombre del reproductor de contenido y el canal de contenido. Los eventos de solución (o personalizados) se utilizarán para contenidos iniciados, Contenido iniciado, Contenido finalizado y Tiempo invertido en contenido.
 
    * **Anuncios multimedia**
 
@@ -53,7 +59,7 @@ Los clientes avanzados solo pueden usar los paneles de medios en Analysis Worksp
 
    * **Metadatos de anuncios de audio y audio**
 
-     Los metadatos se pueden adjuntar al audio o anuncio para describirlo o categorizarlo con más precisión. Los metadatos estandarizados de los anuncios y el audio se recopilan a través de las variables y las clasificaciones de la solución. Los valores disponibles son los siguientes: artista, álbum, discográfica, autor, editor, canal, programa, temporada, episodio, ID de activo, género, fecha de la primera emisión, fecha del primer uso digital, valoración del contenido, creador, tipo de programa, cargas del anuncio, plantilla de programación, ID de sesión de contenido, anunciante, ID de campaña e ID de creativo.
+     Se pueden adjuntar metadatos al audio o anuncio para describir y categorizar más ese audio o anuncio. Los metadatos estandarizados de audio y publicidad se recopilarán mediante variables y clasificaciones de soluciones. Los valores incluyen: artista, álbum, discográfica, autor, editor, canal, programa, temporada, episodio, ID de recurso, género, fecha de la primera publicación, fecha del primer uso digital, valoración del contenido, creador, tipo de programa, cargas del anuncio, plantilla de programación, ID de sesión de contenido, anunciante, ID de campaña e ID de Creative.
 
    Al habilitar cada módulo, se reserva un conjunto de variables y se crea un nuevo conjunto de informes. A excepción de Calidad, no habrá datos en los informes a menos que se haya completado la implementación correspondiente. La implementación del módulo Principal también implementa el módulo Calidad si lo habilita.
 
@@ -68,8 +74,8 @@ Los clientes avanzados solo pueden usar los paneles de medios en Analysis Worksp
    | Opción | Notas |
    | --- | --- |
    | Continuar usando variables personalizadas | Ventajas e inconvenientes:<ul> <li> **Profesionales:** las tendencias de contenidos siguen funcionando después de la migración. </li> <li> **Inconvenientes:** Requiere que mantenga dos eVars personalizadas y tres eventos personalizados asignados a contenidos. Recuperará el uso de una eVar personalizada y un evento personalizado. </li> </ul> Para seguir usando variables personalizadas: <ol> <li>Seleccione **[!UICONTROL Usar variables personalizadas]** y luego haga clic en **[!UICONTROL Guardar]**. </li> <li>Cuando se le solicite, asigne sus eVars y eventos personalizados actuales y luego haga clic en **[!UICONTROL Guardar:]** </li> </ol> |
-   | Migrar a variables de solución | Ventajas e inconvenientes:<ul> <li> **Ventajas:** Recuperará el uso de tres eVars personalizadas y cuatro eventos personalizados. </li> <li> **Desventajas:** pierde **todas** las tendencias y comparativas históricas para los informes de contenidos. Esto significa que no puede aplicar tendencias a las vistas de contenido ni al tiempo de contenido reproducido para ninguna fecha antes de migrar a latidos. </li> </ul> **Restricción:** no migre a las variables de solución a menos que esté seguro de que no desea conservar esta tendencia. Todos los clientes deben utilizar variables de solución y reglas de procesamiento para incluir datos de contenidos en las props y eVars existentes, solo si necesitan conservar la continuidad histórica. Para migrar a variables de solución: Seleccione **[!UICONTROL Usar variables de solución]** y haga clic en **[!UICONTROL Guardar].** <br><br> IMPORTANTE: La migración a las variables de solución hace que se pierdan **todas** las tendencias y comparativas históricas para los informes de contenidos. |
+   | Migrar a variables de solución | Ventajas e inconvenientes:<ul> <li> **Ventajas:** Recuperará el uso de tres eVars personalizadas y cuatro eventos personalizados. </li> <li> **Desventajas:** pierde **todas** las tendencias y comparativas históricas para los informes de contenidos. Esto significa que no puede aplicar tendencias a las vistas de contenido ni al tiempo de contenido reproducido para ninguna fecha antes de migrar a latidos. </li> </ul> **Restricción:** no migre a las variables de solución a menos que esté seguro de que no desea conservar esta tendencia. Todos los clientes deben utilizar variables de solución y reglas de procesamiento para incluir datos de contenidos en las props y eVars existentes, solo si necesitan conservar la continuidad histórica. Para migrar a variables de solución: Seleccione **[!UICONTROL Usar variables de solución]** y haga clic en **[!UICONTROL Guardar].** <br><br> IMPORTANTE: La migración a las variables de solución hace que se pierdan **todas** las tendencias y comparativas históricas para los informes multimedia. |
 
 >[!IMPORTANT]
 >
->No cambie los nombres de clasificación de ninguna variable enumerada en las tablas de métricas y metadatos (por ejemplo, [Parámetros de audio y vídeo](/help/implementation/variables/audio-video-parameters.md)) que se describen en Informes/Variables reservadas como “clasificación”. Las clasificaciones de contenidos se definen cuando se habilita un grupo de informes para el seguimiento de contenidos. De vez en cuando, Adobe agrega nuevas propiedades y, cuando esto sucede, los clientes deben volver a habilitar sus grupos de informes para obtener acceso a las propiedades de los nuevos contenidos. Durante el proceso de actualización, Adobe determina si las clasificaciones están habilitadas mediante la comprobación de los nombres de las variables. Si falta alguno de ellos, Adobe agrega los que faltan de nuevo.
+>No cambie los nombres de clasificación de ninguna variable enumerada en la documentación de variables de medios de streaming (enlazada desde la [descripción general de los servicios de medios de streaming](/help/media-overview.md)) que se describen en Informes/Variables reservadas como &quot;clasificación&quot;. Las clasificaciones de contenidos se definen cuando se habilita un grupo de informes para el seguimiento de contenidos. De vez en cuando, Adobe agrega nuevas propiedades y, cuando esto sucede, los clientes deben volver a habilitar sus grupos de informes para obtener acceso a las propiedades de los nuevos contenidos. Durante el proceso de actualización, Adobe determina si las clasificaciones están habilitadas mediante la comprobación de los nombres de las variables. Si falta alguno de ellos, Adobe agrega los que faltan de nuevo.
