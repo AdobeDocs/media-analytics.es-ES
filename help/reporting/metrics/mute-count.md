@@ -15,7 +15,7 @@ ht-degree: 8%
 
 >[!BEGINSHADEBOX]
 
-*Esta página cubre los **recuentos de Silenciar**de la métrica para informes. Consulte [Silenciar](/help/implementation/variables/player-state/mute.md) para saber cómo recopilar esta variable.*
+*Esta página cubre los **recuentos de Silenciar**&#x200B;de la métrica para informes. Consulte [Silenciar](/help/implementation/variables/player-state/mute.md) para saber cómo recopilar esta variable.*
 
 >[!ENDSHADEBOX]
 

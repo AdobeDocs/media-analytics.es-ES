@@ -15,7 +15,7 @@ ht-degree: 7%
 
 >[!BEGINSHADEBOX]
 
-*Esta página cubre las **reanudaciones de contenido**métricas de informes. Consulte [Reanudación de contenido](/help/implementation/variables/core/content-resumes.md) para ver cómo recopilar esta variable.*
+*Esta página cubre las **reanudaciones de contenido**&#x200B;métricas de informes. Consulte [Reanudación de contenido](/help/implementation/variables/core/content-resumes.md) para ver cómo recopilar esta variable.*
 
 >[!ENDSHADEBOX]
 
