@@ -16,7 +16,7 @@ role: User, Admin
 
 Las métricas calculadas para los servicios de medios de streaming de Adobe son métricas personalizadas creadas a partir de las métricas de medios de streaming estándar, lo que le permite derivar proporciones como el tiempo promedio invertido en la publicidad o la tasa de finalización de medios sin cambiar la implementación.
 
-Para crear estas métricas calculadas en Analysis Workspace, consulta la descripción general de las métricas calculadas correspondientes en [Adobe Analytics](https://experienceleague.adobe.com/en/docs/analytics/components/calculated-metrics/cm-overview) o [Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-components/cja-calcmetrics/calc-metr-overview).
+Para crear estas métricas calculadas en Analysis Workspace, consulta la descripción general de las métricas calculadas correspondientes en [Adobe Analytics](https://experienceleague.adobe.com/es/docs/analytics/components/calculated-metrics/cm-overview) o [Customer Journey Analytics](https://experienceleague.adobe.com/es/docs/analytics-platform/using/cja-components/cja-calcmetrics/calc-metr-overview).
 
 | Métrica calculada | Descripción | Fórmula |
 | --- | --- | --- |

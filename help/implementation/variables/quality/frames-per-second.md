@@ -18,7 +18,7 @@ La variable fotogramas por segundo es la velocidad de fotogramas actual del fluj
 | Propiedad | Valor |
 | --- | --- |
 | **Variable de datos de contexto** | Ninguno (Adobe Analytics no asigna una clave de datos de contexto reservada para la velocidad de fotogramas) |
-| **Campo de colección XDM** | [`mediaCollection.qoeDataDetails.framesPerSecond`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-collection) |
+| **Campo de colección XDM** | [`mediaCollection.qoeDataDetails.framesPerSecond`](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/qoe-data-details-collection) |
 | **Requerido** | No |
 | **Enviado con** | Eventos de calidad, cierre de sesión |
 
