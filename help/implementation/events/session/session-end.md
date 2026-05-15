@@ -3,17 +3,17 @@ title: Fin de sesión
 description: Cierre inmediatamente una sesión multimedia cuando el usuario abandone el contenido.
 feature: Streaming Media
 role: Developer
-source-git-commit: b75e50f626b85992575961ea267d0f74eda09f0a
+source-git-commit: 6534e4c76dcb4113bbbb99aed2a0e350f9256b15
 workflow-type: tm+mt
-source-wordcount: '159'
-ht-degree: 14%
+source-wordcount: '208'
+ht-degree: 11%
 
 ---
 
 
 # Fin de sesión
 
-El evento de fin de sesión cierra inmediatamente una sesión de seguimiento de contenido. Utilícelo cuando el visor abandone el contenido antes de llegar al final y no desee que se rastreen los eventos subsiguientes en la misma sesión. Si el visor termina el contenido, llama a [Sesión completa](session-complete.md) en su lugar.
+El evento de fin de sesión cierra de forma inmediata e irreversible una sesión de seguimiento de contenido. El final de la sesión es un cierre forzoso: una vez enviada, la sesión finaliza y no se pueden rastrear más eventos debajo de ella. Utilice Finalizar sesión únicamente cuando esté seguro de que no se producirán eventos adicionales, como cuando se destruya el reproductor o se descargue la página. En la mayoría de los casos, es más seguro permitir que la sesión caduque de forma natural, en lugar de arriesgarse a interrumpir eventos que podrían llegar. Si el visor termina el contenido, llama a [Sesión completa](session-complete.md) en su lugar.
 
 Sin un final de sesión explícito, una sesión se cierra automáticamente tras 10 minutos sin eventos o 30 minutos sin movimiento del cabezal de reproducción.
 

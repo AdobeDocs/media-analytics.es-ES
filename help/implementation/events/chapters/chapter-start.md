@@ -3,17 +3,17 @@ title: Inicio del capítulo
 description: Indicar el principio de un segmento de capítulo dentro del contenido.
 feature: Streaming Media
 role: Developer
-source-git-commit: b75e50f626b85992575961ea267d0f74eda09f0a
+source-git-commit: 6534e4c76dcb4113bbbb99aed2a0e350f9256b15
 workflow-type: tm+mt
-source-wordcount: '130'
-ht-degree: 17%
+source-wordcount: '149'
+ht-degree: 15%
 
 ---
 
 
 # Inicio del capítulo
 
-El evento de inicio de capítulo indica el comienzo de un capítulo dentro del contenido. El seguimiento de capítulos es opcional y no es necesario para el seguimiento de contenidos principales.
+El evento de inicio de capítulo indica el comienzo de un capítulo dentro del contenido. El seguimiento de capítulos es opcional y no es necesario para el seguimiento de contenidos principales. Los capítulos no se pueden superponer; envíe [Capítulo completado](chapter-complete.md) o [Capítulo omitido](chapter-skip.md) para cerrar el capítulo actual antes de iniciar uno nuevo.
 
 * **Requisitos previos**: [Inicio de sesión](../session/session-start.md)
 * **Métrica asociada**: [El capítulo comienza](/help/reporting/metrics/chapter-starts.md)

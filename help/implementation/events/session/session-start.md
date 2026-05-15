@@ -3,10 +3,10 @@ title: Inicio de sesión
 description: Señale el comienzo de una sesión de contenido y obtenga el ID de sesión necesario para todos los eventos posteriores.
 feature: Streaming Media
 role: Developer
-source-git-commit: b75e50f626b85992575961ea267d0f74eda09f0a
+source-git-commit: 6534e4c76dcb4113bbbb99aed2a0e350f9256b15
 workflow-type: tm+mt
-source-wordcount: '183'
-ht-degree: 12%
+source-wordcount: '221'
+ht-degree: 10%
 
 ---
 
@@ -14,6 +14,8 @@ ht-degree: 12%
 # Inicio de sesión
 
 El evento de inicio de sesión abre una sesión de seguimiento de contenido. Debe ser el primer evento enviado para cualquier reproducción. La respuesta devuelve un ID de sesión que deben incluir todos los eventos subsiguientes de la misma sesión.
+
+Las sesiones caducan automáticamente si no se reciben **eventos durante 10 minutos** o si no hay **movimiento del cabezal de reproducción durante 30 minutos**. Si caduca una sesión, debe volver a llamar al inicio de la sesión para obtener un nuevo ID de sesión.
 
 * **Requisitos previos**: Ninguno; siempre es el primer evento
 * **Métrica asociada**: [Inicios de medios](/help/reporting/metrics/media-starts.md)

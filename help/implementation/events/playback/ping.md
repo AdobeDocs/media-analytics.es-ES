@@ -3,17 +3,17 @@ title: Ping
 description: Envíe un latido para mantener la sesión de contenido activa y rastrear el progreso de reproducción a intervalos regulares.
 feature: Streaming Media
 role: Developer
-source-git-commit: b75e50f626b85992575961ea267d0f74eda09f0a
+source-git-commit: 6534e4c76dcb4113bbbb99aed2a0e350f9256b15
 workflow-type: tm+mt
-source-wordcount: '198'
-ht-degree: 6%
+source-wordcount: '218'
+ht-degree: 5%
 
 ---
 
 
 # Ping
 
-El evento de ping es un latido que mantiene la sesión activa y rastrea el progreso de reproducción. Enviarlo con un temporizador durante toda la reproducción.
+El evento de ping es un latido que mantiene la sesión activa y rastrea el progreso de reproducción. Enviarlo con un temporizador durante toda la reproducción. En los SDK móviles, los pings se envían automáticamente; en todas las demás plataformas deben enviarse manualmente en el intervalo especificado.
 
 * **Contenido principal**: primer ping 10 segundos después de iniciarse la reproducción y, a continuación, cada 10 segundos
 * **Contenido de anuncio**: cada 1 segundo durante el seguimiento de anuncios
