@@ -29,7 +29,7 @@ Valores recomendados:
 | Propiedad | Valor |
 | --- | --- |
 | **Variable de datos de contexto** | `a.contentType` |
-| **Campo de colección XDM** | [`mediaCollection.sessionDetails.contentType`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **Campo de colección XDM** | [`mediaCollection.sessionDetails.contentType`](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **rasgo de Audience Manager** | `c_contextdata.a.contentType` |
 | **Requerido** | Sí |
 | **Enviado con** | [Inicio de sesión](/help/implementation/events/session/session-start.md), cierre de sesión |

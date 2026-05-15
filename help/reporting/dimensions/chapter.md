@@ -22,7 +22,7 @@ El identificador de capítulo se genera automáticamente cuando se activa un eve
 | Sistema de informes | Fuente |
 | --- | --- |
 | Adobe Analytics | Se recopila automáticamente a partir de los datos de contexto `a.media.chapter.name` cuando [[!UICONTROL Capítulos multimedia]](/help/reporting/media-reports-enable.md) está habilitado. |
-| Customer Journey Analytics | [`mediaReporting.chapterDetails.ID`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/chapter-details-reporting) |
+| Customer Journey Analytics | [`mediaReporting.chapterDetails.ID`](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/chapter-details-reporting) |
 | Fuentes de datos | `videochapter`, `post_videochapter` |
 | Audience Manager | N/A |
 

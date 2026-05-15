@@ -24,7 +24,7 @@ La variable del ID de campaña identifica la campaña de publicidad a la que per
 | Propiedad | Valor |
 | --- | --- |
 | **Variable de datos de contexto** | `a.media.ad.campaign` |
-| **Campo de colección XDM** | [`mediaCollection.advertisingDetails.campaignID`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-collection) |
+| **Campo de colección XDM** | [`mediaCollection.advertisingDetails.campaignID`](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/advertising-details-collection) |
 | **rasgo de Audience Manager** | `c_contextdata.a.media.ad.campaign` |
 | **Requerido** | No |
 | **Enviado con** | [Inicio del anuncio](/help/implementation/events/ads/ad-start.md), cierre del anuncio |

@@ -24,7 +24,7 @@ La variable de nombre del reproductor de contenido identifica qué reproductor p
 | Propiedad | Valor |
 | --- | --- |
 | **Variable de datos de contexto** | `a.media.playerName` |
-| **Campo de colección XDM** | [`mediaCollection.sessionDetails.playerName`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **Campo de colección XDM** | [`mediaCollection.sessionDetails.playerName`](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **rasgo de Audience Manager** | `c_contextdata.a.media.playerName` |
 | **Requerido** | Sí |
 | **Enviado con** | [Inicio de sesión](/help/implementation/events/session/session-start.md), cierre de sesión |

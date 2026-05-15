@@ -24,7 +24,7 @@ La variable del nombre del reproductor del anuncio identifica qué reproductor p
 | Propiedad | Valor |
 | --- | --- |
 | **Variable de datos de contexto** | `a.media.ad.playerName` |
-| **Campo de colección XDM** | [`mediaCollection.advertisingDetails.playerName`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-collection) |
+| **Campo de colección XDM** | [`mediaCollection.advertisingDetails.playerName`](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/advertising-details-collection) |
 | **rasgo de Audience Manager** | `c_contextdata.a.media.ad.playerName` |
 | **Requerido** | Sí |
 | **Enviado con** | [Inicio del anuncio](/help/implementation/events/ads/ad-start.md), cierre del anuncio |

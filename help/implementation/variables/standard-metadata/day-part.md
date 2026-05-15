@@ -24,7 +24,7 @@ La variable de la parte del día es el período de tiempo del día en el que se 
 | Propiedad | Valor |
 | --- | --- |
 | **Variable de datos de contexto** | `a.media.dayPart` |
-| **Campo de colección XDM** | [`mediaCollection.sessionDetails.dayPart`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **Campo de colección XDM** | [`mediaCollection.sessionDetails.dayPart`](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **rasgo de Audience Manager** | `c_contextdata.a.media.dayPart` |
 | **Requerido** | No |
 | **Enviado con** | [Inicio de sesión](/help/implementation/events/session/session-start.md), cierre de sesión |

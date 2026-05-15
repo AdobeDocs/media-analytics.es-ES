@@ -28,7 +28,7 @@ El reproductor establece la duración del anuncio en cada evento de [inicio del 
 | Sistema de informes | Fuente |
 | --- | --- |
 | Adobe Analytics | Se recopila automáticamente a partir de los datos de contexto `a.media.ad.length` cuando [[!UICONTROL Media Ads]](/help/reporting/media-reports-enable.md) está habilitado. |
-| Customer Journey Analytics | [`mediaReporting.advertisingDetails.length`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-reporting) |
+| Customer Journey Analytics | [`mediaReporting.advertisingDetails.length`](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/advertising-details-reporting) |
 | Fuentes de datos | `videoadlength`, `post_videoadlength` |
 | Audience Manager | `c_contextdata.a.media.ad.length` |
 

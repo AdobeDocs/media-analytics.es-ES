@@ -28,7 +28,7 @@ El reproductor establece el contenido al inicio de la sesión como un identifica
 | Sistema de informes | Fuente |
 | --- | --- |
 | Adobe Analytics | Se recopila automáticamente a partir de los datos de contexto `a.media.name` cuando [[!UICONTROL Media Core]](/help/reporting/media-reports-enable.md) está habilitado. Persiste durante la visita. |
-| Customer Journey Analytics | [`mediaReporting.sessionDetails.name`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| Customer Journey Analytics | [`mediaReporting.sessionDetails.name`](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/session-details-reporting) |
 | Fuentes de datos | `video`, `post_video` |
 | Audience Manager | `c_contextdata.a.media.name` |
 

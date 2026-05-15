@@ -28,7 +28,7 @@ El reproductor establece `timeToStart` en el objeto QoE antes de que se active e
 | Sistema de informes | Fuente |
 | --- | --- |
 | Adobe Analytics | Se recopila automáticamente a partir de los datos de contexto `a.media.qoe.timeToStart` cuando [[!UICONTROL Calidad de los medios]](/help/reporting/media-reports-enable.md) está habilitado. |
-| Customer Journey Analytics | [`mediaReporting.qoeDataDetails.timeToStart`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
+| Customer Journey Analytics | [`mediaReporting.qoeDataDetails.timeToStart`](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
 | Fuentes de datos | `videoqoetimetostartevar`, `post_videoqoetimetostartevar` |
 | Audience Manager | `c_contextdata.a.media.qoe.timeToStart` |
 

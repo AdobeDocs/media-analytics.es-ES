@@ -24,7 +24,7 @@ La variable de autor es el autor del contenido (por ejemplo, `"Eleanor Clementin
 | Propiedad | Valor |
 | --- | --- |
 | **Variable de datos de contexto** | `a.media.author` |
-| **Campo de colección XDM** | [`mediaCollection.sessionDetails.author`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **Campo de colección XDM** | [`mediaCollection.sessionDetails.author`](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **rasgo de Audience Manager** | `c_contextdata.a.media.author` |
 | **Requerido** | No |
 | **Enviado con** | [Inicio de sesión](/help/implementation/events/session/session-start.md), cierre de sesión |
