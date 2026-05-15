@@ -3,10 +3,10 @@ title: Currículos de contenido
 description: Marque una sesión que reanude una reproducción interrumpida anteriormente para que el back-end cuente un evento de reanudación de contenido.
 feature: Streaming Media
 role: Developer
-source-git-commit: 97cae4771558fc3f4d9719074b2fcf3ba661f1cc
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '243'
-ht-degree: 10%
+source-wordcount: '248'
+ht-degree: 11%
 
 ---
 
@@ -24,9 +24,10 @@ La variable de reanudación de contenido marca una sesión que reanuda una repro
 | Propiedad | Valor |
 | --- | --- |
 | **Variable de datos de contexto** | `a.media.resume` |
-| **Campo de colección XDM** | [`mediaCollection.sessionDetails.hasResume`](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **Campo de colección XDM** | [`mediaCollection.sessionDetails.hasResume`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **rasgo de Audience Manager** | N/A |
 | **Requerido** | No |
-| **Enviado con** | Inicio de sesión |
+| **Enviado con** | [Inicio de sesión](/help/implementation/events/session/session-start.md) |
 
 ## SDK web
 

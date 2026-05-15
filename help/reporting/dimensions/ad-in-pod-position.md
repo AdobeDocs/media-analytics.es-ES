@@ -3,10 +3,10 @@ title: Posición del anuncio en la secuencia
 description: Informa de la posición indexada cero de cada anuncio dentro de su pausa para anuncios principal.
 feature: Dimensions
 role: User, Admin
-source-git-commit: 186437a8669d2375caa9056dadd367ad7135f652
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '148'
-ht-degree: 6%
+source-wordcount: '154'
+ht-degree: 7%
 
 ---
 
@@ -23,14 +23,15 @@ La dimensión **Posición del anuncio** indica la posición indizada cero de cad
 
 ## Cómo se rellena esta dimensión
 
-El reproductor establece la posición del pod en cada evento de `media.adStart`.
+El reproductor establece la posición del pod de anuncios en cada evento de [inicio del anuncio](/help/implementation/events/ads/ad-start.md).
 
 | Sistema de informes | Fuente |
 | --- | --- |
 | Adobe Analytics | Se recopila automáticamente a partir de los datos de contexto `a.media.ad.podPosition` cuando [[!UICONTROL Media Ads]](/help/reporting/media-reports-enable.md) está habilitado. |
-| Customer Journey Analytics | [`mediaReporting.advertisingDetails.podPosition`](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/advertising-details-reporting) |
-| Fuentes de datos | `videoadinpod, post_videoadinpod` |
+| Customer Journey Analytics | [`mediaReporting.advertisingDetails.podPosition`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-reporting) |
+| Fuentes de datos | `videoadinpod`, `post_videoadinpod` |
+| Audience Manager | `c_contextdata.a.media.ad.podPosition` |
 
 ## Elementos de dimensión
 
-Cada elemento es el valor de posición entero (`0`, `1`, `2`, ...) se informó sobre `media.adStart`.
+Cada elemento es el valor de posición entero (`0`, `1`, `2`, ...) se informó sobre [inicio del anuncio](/help/implementation/events/ads/ad-start.md).

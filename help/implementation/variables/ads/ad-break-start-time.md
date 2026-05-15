@@ -3,9 +3,9 @@ title: Hora de inicio de la pausa publicitaria
 description: Establezca el tiempo de inicio (desplazamiento) de la pausa publicitaria dentro del contenido, en segundos.
 feature: Streaming Media
 role: Developer
-source-git-commit: 97cae4771558fc3f4d9719074b2fcf3ba661f1cc
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '206'
+source-wordcount: '210'
 ht-degree: 12%
 
 ---
@@ -24,9 +24,10 @@ La variable de tiempo de inicio de la pausa publicitaria es el desplazamiento de
 | Propiedad | Valor |
 | --- | --- |
 | **Variable de datos de contexto** | `a.media.ad.podSecond` |
-| **Campo de colección XDM** | [`mediaCollection.advertisingPodDetails.offset`](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/advertising-pod-details-collection) |
+| **Campo de colección XDM** | [`mediaCollection.advertisingPodDetails.offset`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-pod-details-collection) |
+| **rasgo de Audience Manager** | `c_contextdata.a.media.ad.podSecond` |
 | **Requerido** | Sí |
-| **Enviado con** | Inicio del anuncio y cierre del anuncio |
+| **Enviado con** | [Inicio de la pausa publicitaria](/help/implementation/events/ads/ad-break-start.md), cierre del anuncio |
 
 ## SDK web
 

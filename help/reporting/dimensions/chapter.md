@@ -3,10 +3,10 @@ title: Capítulo
 description: Informa de cada capítulo único reproducido, escrito con un ID de capítulo generado automáticamente.
 feature: Dimensions
 role: User, Admin
-source-git-commit: 186437a8669d2375caa9056dadd367ad7135f652
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '186'
-ht-degree: 6%
+source-wordcount: '194'
+ht-degree: 8%
 
 ---
 
@@ -17,13 +17,14 @@ La dimensión **Capítulo** indica cada capítulo único reproducido, escrito co
 
 ## Cómo se rellena esta dimensión
 
-El identificador de capítulo se genera automáticamente cuando se activa `media.chapterStart`. El valor no se establece directamente; se deriva de la posición del capítulo, el desplazamiento y el ID de contenido.
+El identificador de capítulo se genera automáticamente cuando se activa un evento [chapter start](/help/implementation/events/chapters/chapter-start.md). El valor no se establece directamente; se deriva de la posición del capítulo, el desplazamiento y el ID de contenido.
 
 | Sistema de informes | Fuente |
 | --- | --- |
 | Adobe Analytics | Se recopila automáticamente a partir de los datos de contexto `a.media.chapter.name` cuando [[!UICONTROL Capítulos multimedia]](/help/reporting/media-reports-enable.md) está habilitado. |
-| Customer Journey Analytics | [`mediaReporting.chapterDetails.ID`](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/chapter-details-reporting) |
-| Fuentes de datos | `videochapter, post_videochapter` |
+| Customer Journey Analytics | [`mediaReporting.chapterDetails.ID`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/chapter-details-reporting) |
+| Fuentes de datos | `videochapter`, `post_videochapter` |
+| Audience Manager | N/A |
 
 ## Elementos de dimensión
 

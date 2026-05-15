@@ -3,9 +3,9 @@ title: Autor
 description: Configure el autor del contenido. Se utiliza principalmente para audiolibros.
 feature: Streaming Media
 role: Developer
-source-git-commit: 97cae4771558fc3f4d9719074b2fcf3ba661f1cc
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '173'
+source-wordcount: '176'
 ht-degree: 16%
 
 ---
@@ -24,9 +24,10 @@ La variable de autor es el autor del contenido (por ejemplo, `"Eleanor Clementin
 | Propiedad | Valor |
 | --- | --- |
 | **Variable de datos de contexto** | `a.media.author` |
-| **Campo de colección XDM** | [`mediaCollection.sessionDetails.author`](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **Campo de colección XDM** | [`mediaCollection.sessionDetails.author`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **rasgo de Audience Manager** | `c_contextdata.a.media.author` |
 | **Requerido** | No |
-| **Enviado con** | Inicio de sesión, cierre de sesión |
+| **Enviado con** | [Inicio de sesión](/help/implementation/events/session/session-start.md), cierre de sesión |
 
 ## SDK web
 

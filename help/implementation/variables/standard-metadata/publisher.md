@@ -3,9 +3,9 @@ title: Editor
 description: Configure el editor del contenido de audio.
 feature: Streaming Media
 role: Developer
-source-git-commit: 97cae4771558fc3f4d9719074b2fcf3ba661f1cc
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '171'
+source-wordcount: '174'
 ht-degree: 16%
 
 ---
@@ -24,9 +24,10 @@ La variable del editor es el nombre del editor del contenido de audio (por ejemp
 | Propiedad | Valor |
 | --- | --- |
 | **Variable de datos de contexto** | `a.media.publisher` |
-| **Campo de colección XDM** | [`mediaCollection.sessionDetails.publisher`](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **Campo de colección XDM** | [`mediaCollection.sessionDetails.publisher`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **rasgo de Audience Manager** | `c_contextdata.a.media.publisher` |
 | **Requerido** | No |
-| **Enviado con** | Inicio de sesión, cierre de sesión |
+| **Enviado con** | [Inicio de sesión](/help/implementation/events/session/session-start.md), cierre de sesión |
 
 ## SDK web
 

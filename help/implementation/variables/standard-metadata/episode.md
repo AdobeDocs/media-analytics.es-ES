@@ -3,10 +3,10 @@ title: Episodio
 description: Configure el número de episodio para el contenido episódico, de modo que los episodios individuales se puedan registrar por separado.
 feature: Streaming Media
 role: Developer
-source-git-commit: 97cae4771558fc3f4d9719074b2fcf3ba661f1cc
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '179'
-ht-degree: 16%
+source-wordcount: '182'
+ht-degree: 15%
 
 ---
 
@@ -24,9 +24,10 @@ La variable episode es el número de episodio dentro de la temporada (normalment
 | Propiedad | Valor |
 | --- | --- |
 | **Variable de datos de contexto** | `a.media.episode` |
-| **Campo de colección XDM** | [`mediaCollection.sessionDetails.episode`](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **Campo de colección XDM** | [`mediaCollection.sessionDetails.episode`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **rasgo de Audience Manager** | `c_contextdata.a.media.episode` |
 | **Requerido** | No |
-| **Enviado con** | Inicio de sesión, cierre de sesión |
+| **Enviado con** | [Inicio de sesión](/help/implementation/events/session/session-start.md), cierre de sesión |
 
 ## SDK web
 

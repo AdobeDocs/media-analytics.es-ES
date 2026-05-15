@@ -3,9 +3,9 @@ title: Nombre del reproductor del anuncio
 description: Defina el nombre del reproductor que procesa los anuncios. El reproductor de anuncios puede diferir del reproductor de contenido principal.
 feature: Streaming Media
 role: Developer
-source-git-commit: 97cae4771558fc3f4d9719074b2fcf3ba661f1cc
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '217'
+source-wordcount: '220'
 ht-degree: 11%
 
 ---
@@ -24,9 +24,10 @@ La variable del nombre del reproductor del anuncio identifica qué reproductor p
 | Propiedad | Valor |
 | --- | --- |
 | **Variable de datos de contexto** | `a.media.ad.playerName` |
-| **Campo de colección XDM** | [`mediaCollection.advertisingDetails.playerName`](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/advertising-details-collection) |
+| **Campo de colección XDM** | [`mediaCollection.advertisingDetails.playerName`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-collection) |
+| **rasgo de Audience Manager** | `c_contextdata.a.media.ad.playerName` |
 | **Requerido** | Sí |
-| **Enviado con** | Inicio del anuncio y cierre del anuncio |
+| **Enviado con** | [Inicio del anuncio](/help/implementation/events/ads/ad-start.md), cierre del anuncio |
 
 ## SDK web
 

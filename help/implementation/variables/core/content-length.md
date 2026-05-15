@@ -3,9 +3,9 @@ title: Longitud de contenido
 description: Establezca la duración del contenido en segundos al inicio de la sesión. Controla los marcadores de progreso y la audiencia media por minuto.
 feature: Streaming Media
 role: Developer
-source-git-commit: 97cae4771558fc3f4d9719074b2fcf3ba661f1cc
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '234'
+source-wordcount: '237'
 ht-degree: 12%
 
 ---
@@ -24,9 +24,10 @@ La variable de duración del contenido es la duración total del contenido en se
 | Propiedad | Valor |
 | --- | --- |
 | **Variable de datos de contexto** | `a.media.length` |
-| **Campo de colección XDM** | [`mediaCollection.sessionDetails.length`](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **Campo de colección XDM** | [`mediaCollection.sessionDetails.length`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **rasgo de Audience Manager** | `c_contextdata.a.media.length` |
 | **Requerido** | Sí |
-| **Enviado con** | Inicio de sesión, cierre de sesión |
+| **Enviado con** | [Inicio de sesión](/help/implementation/events/session/session-start.md), cierre de sesión |
 
 ## SDK web
 

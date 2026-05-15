@@ -3,9 +3,9 @@ title: Nombre del reproductor de contenido
 description: Configure el nombre del reproductor para identificar qué reproductor procesó el contenido.
 feature: Streaming Media
 role: Developer
-source-git-commit: 97cae4771558fc3f4d9719074b2fcf3ba661f1cc
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '220'
+source-wordcount: '223'
 ht-degree: 11%
 
 ---
@@ -24,9 +24,10 @@ La variable de nombre del reproductor de contenido identifica qué reproductor p
 | Propiedad | Valor |
 | --- | --- |
 | **Variable de datos de contexto** | `a.media.playerName` |
-| **Campo de colección XDM** | [`mediaCollection.sessionDetails.playerName`](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **Campo de colección XDM** | [`mediaCollection.sessionDetails.playerName`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **rasgo de Audience Manager** | `c_contextdata.a.media.playerName` |
 | **Requerido** | Sí |
-| **Enviado con** | Inicio de sesión, cierre de sesión |
+| **Enviado con** | [Inicio de sesión](/help/implementation/events/session/session-start.md), cierre de sesión |
 
 ## SDK web
 

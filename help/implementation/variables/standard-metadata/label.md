@@ -3,9 +3,9 @@ title: Etiqueta
 description: Establezca la discográfica que liberó el contenido de audio.
 feature: Streaming Media
 role: Developer
-source-git-commit: 97cae4771558fc3f4d9719074b2fcf3ba661f1cc
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '174'
+source-wordcount: '177'
 ht-degree: 16%
 
 ---
@@ -24,9 +24,10 @@ La variable label es el nombre de la etiqueta de registro que publicó el conten
 | Propiedad | Valor |
 | --- | --- |
 | **Variable de datos de contexto** | `a.media.label` |
-| **Campo de colección XDM** | [`mediaCollection.sessionDetails.label`](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **Campo de colección XDM** | [`mediaCollection.sessionDetails.label`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **rasgo de Audience Manager** | `c_contextdata.a.media.label` |
 | **Requerido** | No |
-| **Enviado con** | Inicio de sesión, cierre de sesión |
+| **Enviado con** | [Inicio de sesión](/help/implementation/events/session/session-start.md), cierre de sesión |
 
 ## SDK web
 

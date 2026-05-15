@@ -3,10 +3,10 @@ title: Tipo de emisión
 description: Registra si cada sesión multimedia fue contenido de audio o vídeo.
 feature: Dimensions
 role: User, Admin
-source-git-commit: 186437a8669d2375caa9056dadd367ad7135f652
+source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
 workflow-type: tm+mt
-source-wordcount: '320'
-ht-degree: 5%
+source-wordcount: '322'
+ht-degree: 6%
 
 ---
 
@@ -28,8 +28,9 @@ El reproductor establece el tipo de emisión al principio de la sesión y la tra
 | Sistema de informes | Fuente |
 | --- | --- |
 | Adobe Analytics | Se recopila automáticamente a partir de los datos de contexto `a.media.streamType` cuando [[!UICONTROL Media Core]](/help/reporting/media-reports-enable.md) está habilitado. |
-| Customer Journey Analytics | [`mediaReporting.sessionDetails.streamType`](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| Customer Journey Analytics | [`mediaReporting.sessionDetails.streamType`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
 | Fuentes de datos | `videostreamtype` |
+| Audience Manager | `c_contextdata.a.media.streamType` |
 
 >[!IMPORTANT]
 >

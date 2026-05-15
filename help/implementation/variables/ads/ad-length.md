@@ -3,10 +3,10 @@ title: Duración del anuncio
 description: Establezca la duración de cada anuncio en segundos.
 feature: Streaming Media
 role: Developer
-source-git-commit: 97cae4771558fc3f4d9719074b2fcf3ba661f1cc
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '171'
-ht-degree: 15%
+source-wordcount: '174'
+ht-degree: 14%
 
 ---
 
@@ -24,9 +24,10 @@ La variable de longitud del anuncio es la duración del anuncio en segundos. Con
 | Propiedad | Valor |
 | --- | --- |
 | **Variable de datos de contexto** | `a.media.ad.length` |
-| **Campo de colección XDM** | [`mediaCollection.advertisingDetails.length`](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/advertising-details-collection) |
+| **Campo de colección XDM** | [`mediaCollection.advertisingDetails.length`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-collection) |
+| **rasgo de Audience Manager** | `c_contextdata.a.media.ad.length` |
 | **Requerido** | Sí |
-| **Enviado con** | Inicio del anuncio y cierre del anuncio |
+| **Enviado con** | [Inicio del anuncio](/help/implementation/events/ads/ad-start.md), cierre del anuncio |
 
 ## SDK web
 

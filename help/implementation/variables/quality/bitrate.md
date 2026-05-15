@@ -3,9 +3,9 @@ title: Velocidad de bits
 description: Establezca la velocidad de bits de reproducción actual (en kbps) en el objeto QoE para que el servidor pueda calcular las métricas de velocidad de bits.
 feature: Streaming Media
 role: Developer
-source-git-commit: 97cae4771558fc3f4d9719074b2fcf3ba661f1cc
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '243'
+source-wordcount: '247'
 ht-degree: 10%
 
 ---
@@ -24,9 +24,10 @@ La variable de velocidad de bits es la velocidad de bits de reproducción actual
 | Propiedad | Valor |
 | --- | --- |
 | **Variable de datos de contexto** | `a.media.qoe.bitrateAverageBucket` |
-| **Campo de colección XDM** | [`mediaCollection.qoeDataDetails.bitrate`](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/qoe-data-details-collection) |
+| **Campo de colección XDM** | [`mediaCollection.qoeDataDetails.bitrate`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-collection) |
+| **rasgo de Audience Manager** | `c_contextdata.a.media.qoe.bitrateAverageBucket` |
 | **Requerido** | No |
-| **Enviado con** | Eventos de calidad (cambio de velocidad de bits, búfer, error), cierre de sesión |
+| **Enviado con** | Eventos de calidad ([cambio de velocidad de bits](/help/implementation/events/playback/bitrate-change.md), [inicio del búfer](/help/implementation/events/playback/buffer-start.md), [error](/help/implementation/events/error.md)), cierre de sesión |
 
 ## SDK web
 

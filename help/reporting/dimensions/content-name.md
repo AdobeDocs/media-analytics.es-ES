@@ -3,10 +3,10 @@ title: Nombre de contenido
 description: Informa del título en lenguaje natural de cada sesión multimedia.
 feature: Dimensions
 role: User, Admin
-source-git-commit: 186437a8669d2375caa9056dadd367ad7135f652
+source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
 workflow-type: tm+mt
-source-wordcount: '158'
-ht-degree: 8%
+source-wordcount: '160'
+ht-degree: 10%
 
 ---
 
@@ -28,8 +28,9 @@ El nombre descriptivo lo establece el reproductor al inicio de la sesión. El va
 | Sistema de informes | Fuente |
 | --- | --- |
 | Adobe Analytics | Se recopila automáticamente a partir de los datos de contexto `a.media.friendlyName` cuando [[!UICONTROL Media Core]](/help/reporting/media-reports-enable.md) está habilitado. |
-| Customer Journey Analytics | [`mediaReporting.sessionDetails.friendlyName`](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/session-details-reporting) |
-| Fuentes de datos | `videoname, post_videoname` |
+| Customer Journey Analytics | [`mediaReporting.sessionDetails.friendlyName`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| Fuentes de datos | `videoname`, `post_videoname` |
+| Audience Manager | `c_contextdata.a.media.friendlyName` |
 
 >[!NOTE]
 >

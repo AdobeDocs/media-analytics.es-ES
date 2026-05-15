@@ -3,9 +3,9 @@ title: Indicador de medios descargados
 description: Marque una sesión como reproducida sin conexión descargada para que se informe separadamente de las sesiones retransmitidas.
 feature: Streaming Media
 role: Developer
-source-git-commit: 97cae4771558fc3f4d9719074b2fcf3ba661f1cc
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '241'
+source-wordcount: '244'
 ht-degree: 10%
 
 ---
@@ -24,9 +24,10 @@ El indicador de medios descargados indica que una sesión es una reproducción d
 | Propiedad | Valor |
 | --- | --- |
 | **Variable de datos de contexto** | `a.media.downloaded` |
-| **Campo de colección XDM** | [`mediaCollection.sessionDetails.isDownloaded`](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **Campo de colección XDM** | [`mediaCollection.sessionDetails.isDownloaded`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **rasgo de Audience Manager** | `c_contextdata.a.media.downloaded` |
 | **Requerido** | No |
-| **Enviado con** | Inicio de sesión, cierre de sesión |
+| **Enviado con** | [Inicio de sesión](/help/implementation/events/session/session-start.md), cierre de sesión |
 
 ## SDK web
 

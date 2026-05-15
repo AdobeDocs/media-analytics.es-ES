@@ -3,10 +3,10 @@ title: ID del creativo
 description: Establezca el identificador creativo para cada anuncio.
 feature: Streaming Media
 role: Developer
-source-git-commit: 97cae4771558fc3f4d9719074b2fcf3ba661f1cc
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '172'
-ht-degree: 18%
+source-wordcount: '175'
+ht-degree: 17%
 
 ---
 
@@ -24,9 +24,10 @@ La variable de ID creativo identifica el creativo de publicidad específico. Cua
 | Propiedad | Valor |
 | --- | --- |
 | **Variable de datos de contexto** | `a.media.ad.creative` |
-| **Campo de colección XDM** | [`mediaCollection.advertisingDetails.creativeID`](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/advertising-details-collection) |
+| **Campo de colección XDM** | [`mediaCollection.advertisingDetails.creativeID`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-collection) |
+| **rasgo de Audience Manager** | `c_contextdata.a.media.ad.creative` |
 | **Requerido** | No |
-| **Enviado con** | Inicio del anuncio y cierre del anuncio |
+| **Enviado con** | [Inicio del anuncio](/help/implementation/events/ads/ad-start.md), cierre del anuncio |
 
 ## SDK web
 

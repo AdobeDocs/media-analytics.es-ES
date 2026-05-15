@@ -3,10 +3,10 @@ title: ID del sitio
 description: Informa del identificador del sitio del anuncio de cada anuncio.
 feature: Dimensions
 role: User, Admin
-source-git-commit: 186437a8669d2375caa9056dadd367ad7135f652
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '144'
-ht-degree: 9%
+source-wordcount: '150'
+ht-degree: 10%
 
 ---
 
@@ -23,14 +23,15 @@ La dimensión **ID del sitio** indica el identificador del sitio de publicidad (
 
 ## Cómo se rellena esta dimensión
 
-El reproductor establece el ID del sitio en cada evento de `media.adStart`.
+El reproductor establece el ID del sitio en cada evento [inicio del anuncio](/help/implementation/events/ads/ad-start.md).
 
 | Sistema de informes | Fuente |
 | --- | --- |
-| Adobe Analytics | Cree una [regla de procesamiento](https://experienceleague.adobe.com/es/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview) que asigne `a.media.ad.site` a un eVar. |
-| Customer Journey Analytics | [`mediaReporting.advertisingDetails.siteID`](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/advertising-details-reporting) |
+| Adobe Analytics | Cree una [regla de procesamiento](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview) que asigne `a.media.ad.site` a un eVar. |
+| Customer Journey Analytics | [`mediaReporting.advertisingDetails.siteID`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-reporting) |
 | Fuentes de datos | `evar1`-`evar250`, `post_evar1`-`post_evar250` (el eVar al que se asigna la regla de procesamiento `a.media.ad.site`) |
+| Audience Manager | `c_contextdata.a.media.ad.site` |
 
 ## Elementos de dimensión
 
-Cada elemento es el valor literal de id. de sitio registrado en `media.adStart`.
+Cada elemento es el valor literal de identificador de sitio registrado en [inicio de publicidad](/help/implementation/events/ads/ad-start.md).

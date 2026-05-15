@@ -3,9 +3,9 @@ title: Cambios de velocidad de bits (dimensión)
 description: Informa del recuento de eventos de cambio de velocidad de bits por sesión.
 feature: Dimensions
 role: User, Admin
-source-git-commit: 186437a8669d2375caa9056dadd367ad7135f652
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '199'
+source-wordcount: '203'
 ht-degree: 5%
 
 ---
@@ -23,13 +23,14 @@ La dimensión **Cambios de velocidad de bits** indica el recuento de eventos de 
 
 ## Cómo se rellena esta dimensión
 
-El servidor multimedia incrementa el recuento de cada evento de `media.bitrateChange` recibido durante la sesión. El valor se comunica en la llamada de cierre.
+El servidor multimedia incrementa el recuento en cada [cambio de velocidad de bits](/help/implementation/events/playback/bitrate-change.md) evento recibido durante la sesión. El valor se comunica en la llamada de cierre.
 
 | Sistema de informes | Fuente |
 | --- | --- |
 | Adobe Analytics | Se recopila automáticamente a partir de los datos de contexto `a.media.qoe.bitrateChangeCount` cuando [[!UICONTROL Calidad de los medios]](/help/reporting/media-reports-enable.md) está habilitado. |
-| Customer Journey Analytics | [`mediaReporting.qoeDataDetails.bitrateChangeCount`](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
-| Fuentes de datos | `videoqoebitratechangecountevar, post_videoqoebitratechangecountevar` |
+| Customer Journey Analytics | [`mediaReporting.qoeDataDetails.bitrateChangeCount`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
+| Fuentes de datos | `videoqoebitratechangecountevar`, `post_videoqoebitratechangecountevar` |
+| Audience Manager | `c_contextdata.a.media.qoe.bitrateChangeCount` |
 
 ## Elementos de dimensión
 

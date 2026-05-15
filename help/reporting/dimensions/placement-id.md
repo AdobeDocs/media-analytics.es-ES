@@ -3,10 +3,10 @@ title: ID de colocación
 description: Informa del identificador de ubicación de cada anuncio.
 feature: Dimensions
 role: User, Admin
-source-git-commit: 186437a8669d2375caa9056dadd367ad7135f652
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '145'
-ht-degree: 9%
+source-wordcount: '151'
+ht-degree: 10%
 
 ---
 
@@ -23,14 +23,15 @@ La dimensión **ID de ubicación** indica el identificador de ubicación del anu
 
 ## Cómo se rellena esta dimensión
 
-El reproductor establece el ID de ubicación en cada evento de `media.adStart`.
+El reproductor establece el ID de ubicación en cada [evento de inicio de anuncio](/help/implementation/events/ads/ad-start.md).
 
 | Sistema de informes | Fuente |
 | --- | --- |
-| Adobe Analytics | Cree una [regla de procesamiento](https://experienceleague.adobe.com/es/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview) que asigne `a.media.ad.placement` a un eVar. |
-| Customer Journey Analytics | [`mediaReporting.advertisingDetails.placementID`](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/advertising-details-reporting) |
+| Adobe Analytics | Cree una [regla de procesamiento](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview) que asigne `a.media.ad.placement` a un eVar. |
+| Customer Journey Analytics | [`mediaReporting.advertisingDetails.placementID`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-reporting) |
 | Fuentes de datos | `evar1`-`evar250`, `post_evar1`-`post_evar250` (el eVar al que se asigna la regla de procesamiento `a.media.ad.placement`) |
+| Audience Manager | `c_contextdata.a.media.ad.placement` |
 
 ## Elementos de dimensión
 
-Cada elemento es el valor de ubicación literal registrado en `media.adStart`.
+Cada elemento es el valor de ubicación literal registrado en [inicio de publicidad](/help/implementation/events/ads/ad-start.md).

@@ -3,10 +3,10 @@ title: Nombre de pausa publicitaria
 description: Establezca un nombre descriptivo para el salto de anuncio principal.
 feature: Streaming Media
 role: Developer
-source-git-commit: 97cae4771558fc3f4d9719074b2fcf3ba661f1cc
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '205'
-ht-degree: 12%
+source-wordcount: '209'
+ht-degree: 11%
 
 ---
 
@@ -24,9 +24,10 @@ La variable del nombre de la pausa publicitaria es el nombre descriptivo de la p
 | Propiedad | Valor |
 | --- | --- |
 | **Variable de datos de contexto** | `a.media.ad.podFriendlyName` |
-| **Campo de colección XDM** | [`mediaCollection.advertisingPodDetails.friendlyName`](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/advertising-pod-details-collection) |
+| **Campo de colección XDM** | [`mediaCollection.advertisingPodDetails.friendlyName`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-pod-details-collection) |
+| **rasgo de Audience Manager** | `c_contextdata.a.media.ad.podFriendlyName` |
 | **Requerido** | Sí (Mobile SDK); No (Edge, API de recopilación de medios) |
-| **Enviado con** | Inicio del anuncio y cierre del anuncio |
+| **Enviado con** | [Inicio de la pausa publicitaria](/help/implementation/events/ads/ad-break-start.md), cierre del anuncio |
 
 ## SDK web
 

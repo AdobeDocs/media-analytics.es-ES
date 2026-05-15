@@ -3,9 +3,9 @@ title: URL del anuncio
 description: Establezca la dirección URL del creador de la publicidad para cada anuncio.
 feature: Streaming Media
 role: Developer
-source-git-commit: 97cae4771558fc3f4d9719074b2fcf3ba661f1cc
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '190'
+source-wordcount: '193'
 ht-degree: 16%
 
 ---
@@ -24,9 +24,10 @@ La variable URL creativa es la dirección URL del creador de la publicidad. Util
 | Propiedad | Valor |
 | --- | --- |
 | **Variable de datos de contexto** | `a.media.ad.creativeURL` |
-| **Campo de colección XDM** | [`mediaCollection.advertisingDetails.creativeURL`](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/advertising-details-collection) |
+| **Campo de colección XDM** | [`mediaCollection.advertisingDetails.creativeURL`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-collection) |
+| **rasgo de Audience Manager** | `c_contextdata.a.media.ad.creativeURL` |
 | **Requerido** | No |
-| **Enviado con** | Inicio del anuncio y cierre del anuncio |
+| **Enviado con** | [Inicio del anuncio](/help/implementation/events/ads/ad-start.md), cierre del anuncio |
 
 ## SDK web
 

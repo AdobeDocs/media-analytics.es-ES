@@ -3,10 +3,10 @@ title: Temporada
 description: Defina el número de temporada del contenido episódico para que la participación se pueda desglosar por temporada.
 feature: Streaming Media
 role: Developer
-source-git-commit: 97cae4771558fc3f4d9719074b2fcf3ba661f1cc
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '192'
-ht-degree: 15%
+source-wordcount: '195'
+ht-degree: 14%
 
 ---
 
@@ -24,9 +24,10 @@ La variable season es el número de temporada del programa (normalmente un enter
 | Propiedad | Valor |
 | --- | --- |
 | **Variable de datos de contexto** | `a.media.season` |
-| **Campo de colección XDM** | [`mediaCollection.sessionDetails.season`](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **Campo de colección XDM** | [`mediaCollection.sessionDetails.season`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **rasgo de Audience Manager** | `c_contextdata.a.media.season` |
 | **Requerido** | No |
-| **Enviado con** | Inicio de sesión, cierre de sesión |
+| **Enviado con** | [Inicio de sesión](/help/implementation/events/session/session-start.md), cierre de sesión |
 
 ## SDK web
 

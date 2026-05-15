@@ -3,9 +3,9 @@ title: ID de contenido
 description: Identificar de forma exclusiva un fragmento de contenido multimedia.
 feature: Streaming Media
 role: Developer
-source-git-commit: 97cae4771558fc3f4d9719074b2fcf3ba661f1cc
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '194'
+source-wordcount: '197'
 ht-degree: 15%
 
 ---
@@ -24,9 +24,10 @@ La variable de ID de contenido identifica de forma exclusiva cada fragmento de c
 | Propiedad | Valor |
 | --- | --- |
 | **Variable de datos de contexto** | `a.media.name` |
-| **Campo de colección XDM** | [`mediaCollection.sessionDetails.name`](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **Campo de colección XDM** | [`mediaCollection.sessionDetails.name`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **rasgo de Audience Manager** | `c_contextdata.a.media.name` |
 | **Requerido** | Sí |
-| **Enviado con** | Inicio de sesión, cierre de sesión |
+| **Enviado con** | [Inicio de sesión](/help/implementation/events/session/session-start.md), cierre de sesión |
 
 ## SDK web
 

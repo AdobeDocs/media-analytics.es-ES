@@ -3,7 +3,7 @@ title: Cambio de velocidad de bits
 description: Active un evento de cambio de velocidad de bits cada vez que el reproductor cambie a una velocidad de bits diferente.
 feature: Streaming Media
 role: Developer
-source-git-commit: 97cae4771558fc3f4d9719074b2fcf3ba661f1cc
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
 source-wordcount: '223'
 ht-degree: 11%
@@ -25,8 +25,9 @@ El evento de cambio de velocidad de bits indica que el reproductor ha cambiado a
 | --- | --- |
 | **Variable de datos de contexto** | (ninguno — contabilizado por el backend) |
 | **Tipo de evento XDM** | `media.bitrateChange` |
+| **rasgo de Audience Manager** | `c_contextdata.a.media.qoe.bitrateChangeCount` |
 | **Requerido** | No |
-| **Enviado con** | Siempre que el reproductor cambie la velocidad de bits |
+| **Enviado con** | [Cambio de velocidad de bits](/help/implementation/events/playback/bitrate-change.md) |
 
 ## SDK web
 

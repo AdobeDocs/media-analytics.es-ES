@@ -3,10 +3,10 @@ title: ID del creativo
 description: Informa del identificador creativo de publicidad.
 feature: Dimensions
 role: User, Admin
-source-git-commit: 415d20722965d510458d3c09004b6991b05ac264
+source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
 workflow-type: tm+mt
-source-wordcount: '374'
-ht-degree: 2%
+source-wordcount: '376'
+ht-degree: 3%
 
 ---
 
@@ -25,11 +25,12 @@ La dimensión **Creative ID** informa del identificador creativo de publicidad. 
 
 | Sistema de informes | Fuente |
 | --- | --- |
-| Adobe Analytics (regla de procesamiento) | Cree una [regla de procesamiento](https://experienceleague.adobe.com/es/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview) que asigne `a.media.ad.creative` a un eVar. |
+| Adobe Analytics (regla de procesamiento) | Cree una [regla de procesamiento](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview) que asigne `a.media.ad.creative` a un eVar. |
 | Adobe Analytics (clasificación) | Clasificación de la dimensión [Ad](ad.md): Adobe crea automáticamente esta clasificación cuando **[[!UICONTROL Media Ads]](/help/reporting/media-reports-enable.md)** está habilitado para el grupo de informes. Usted es responsable de rellenar y mantener los valores de clasificación. |
-| Customer Journey Analytics | [`mediaReporting.advertisingDetails.creativeID`](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/advertising-details-reporting) |
+| Customer Journey Analytics | [`mediaReporting.advertisingDetails.creativeID`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-reporting) |
 | Fuentes de datos (regla de procesamiento) | `evar1`-`evar250`, `post_evar1`-`post_evar250` (el eVar al que se asigna la regla de procesamiento `a.media.ad.creative`) |
 | Fuentes de datos (clasificación) | N/D: las fuentes de datos no admiten clasificaciones. |
+| Audience Manager | `c_contextdata.a.media.ad.creative` |
 
 ## Enfoque de clasificación
 
@@ -43,7 +44,7 @@ Este método garantiza una relación de 1:1 entre cada ID de anuncio y su ID cre
 
 ## Método de regla de procesamiento
 
-Cree una [regla de procesamiento](https://experienceleague.adobe.com/es/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview) que asigne `a.media.ad.creative` a un eVar. Este método captura el ID creativo como un valor por visita sin que sea necesario realizar un mantenimiento de clasificación.
+Cree una [regla de procesamiento](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview) que asigne `a.media.ad.creative` a un eVar. Este método captura el ID creativo como un valor por visita sin que sea necesario realizar un mantenimiento de clasificación.
 
 El equilibrio es que pierde la relación garantizada 1:1 entre el ID creativo y la dimensión principal [Ad](ad.md). Si la implementación envía valores incoherentes para el mismo ID de anuncio a través de los eventos, pueden aparecer varios ID creativos en el mismo anuncio. La actualización de un valor solo se aplica a los datos a partir de ahora.
 

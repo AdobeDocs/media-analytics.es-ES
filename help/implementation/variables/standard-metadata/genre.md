@@ -3,10 +3,10 @@ title: Género
 description: Establezca el género de contenido como una cadena delimitada por comas. El contenido de varios géneros se divide en elementos de línea en los informes.
 feature: Streaming Media
 role: Developer
-source-git-commit: 97cae4771558fc3f4d9719074b2fcf3ba661f1cc
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '223'
-ht-degree: 13%
+source-wordcount: '226'
+ht-degree: 12%
 
 ---
 
@@ -28,9 +28,10 @@ La variable genre es el género de contenido definido por el productor (por ejem
 | Propiedad | Valor |
 | --- | --- |
 | **Variable de datos de contexto** | `a.media.genre` |
-| **Campo de colección XDM** | [`mediaCollection.sessionDetails.genre`](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **Campo de colección XDM** | [`mediaCollection.sessionDetails.genre`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **rasgo de Audience Manager** | `c_contextdata.a.media.genre` |
 | **Requerido** | No |
-| **Enviado con** | Inicio de sesión, cierre de sesión |
+| **Enviado con** | [Inicio de sesión](/help/implementation/events/session/session-start.md), cierre de sesión |
 
 ## SDK web
 
