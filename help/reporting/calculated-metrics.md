@@ -1,22 +1,21 @@
 ---
-source-git-commit: c06ecd16f417c9584fb87181074d1c2bee487e0b
+title: Métricas calculadas
+description: Métricas calculadas personalizadas para la creación de informes de medios de streaming en Adobe Analytics y Customer Journey Analytics.
+feature: Metrics
+role: User, Admin
+source-git-commit: ea740a32bbd5e640cd437cd8c5c4f48071a0d02c
 workflow-type: tm+mt
 source-wordcount: '267'
 ht-degree: 5%
 
 ---
-﻿---
-title: Métricas calculadas
-description: Métricas calculadas personalizadas para la creación de informes de medios de streaming en Adobe Analytics y Customer Journey Analytics.
-feature: Metrics
-role: User, Admin
----
+
 
 # Métricas calculadas
 
 Las métricas calculadas para los servicios de medios de streaming de Adobe son métricas personalizadas creadas a partir de las métricas de medios de streaming estándar, lo que le permite derivar proporciones como el tiempo promedio invertido en la publicidad o la tasa de finalización de medios sin cambiar la implementación.
 
-Para crear estas métricas calculadas en Analysis Workspace, consulta la descripción general de las métricas calculadas correspondientes en [Adobe Analytics](https://experienceleague.adobe.com/es/docs/analytics/components/calculated-metrics/cm-overview) o [Customer Journey Analytics](https://experienceleague.adobe.com/es/docs/analytics-platform/using/cja-components/cja-calcmetrics/calc-metr-overview).
+Para crear estas métricas calculadas en Analysis Workspace, consulta la descripción general de las métricas calculadas correspondientes en [Adobe Analytics](https://experienceleague.adobe.com/en/docs/analytics/components/calculated-metrics/cm-overview) o [Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-components/cja-calcmetrics/calc-metr-overview).
 
 | Métrica calculada | Descripción | Fórmula |
 | --- | --- | --- |
