@@ -6,24 +6,15 @@ exl-id: c714d31f-3d08-4ded-a413-2762d53bec75
 feature: Streaming Media
 role: User, Admin, Developer
 TQID: https://experienceleague.adobe.com/PguxKIzAL95WbMl5c0yJq9rYSqZgOGbbAYtxOI4eVOs
-product_v2:
-  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
-feature_v2:
-  - id: b3f03848-ae12-48b2-8aab-cad18567eb32
-  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
-subfeature_v2:
-  - id: f1f1a2d4-0976-4881-b091-c2bb8de7ffac
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2: id: b3f03848-ae12-48b2-8aab-cad18567eb32id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+subfeature_v2: id: f1f1a2d4-0976-4881-b091-c2bb8de7ffac
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: 522
-ht-degree: 77%
+source-wordcount: 641
+ht-degree: 58%
 
 ---
 
@@ -110,7 +101,7 @@ La reproducción de publicidad incluye el seguimiento de las pausas publicitaria
 
 1. Invoque `trackEvent()` con el evento `AdStart` de la instancia de `MediaHeartbeat` para iniciar el seguimiento de la reproducción de publicidad.
 
-   Incluya una referencia a la variable de metadatos personalizada (o un objeto vacío) como tercer parámetro de la llamada de evento.
+   Incluya una referencia a la variable de metadatos personalizada (o un objeto vacío) como tercer parámetro de la llamada de evento. Mientras se reproduce el anuncio, mantenga el cabezal de reproducción de contenido (`l:event:playhead`) fijo en la posición en la que comenzó la pausa publicitaria; si se avanza durante la reproducción del anuncio, se sobrevalora [Tiempo invertido en contenido](/help/reporting/metrics/content-time-spent.md).
 
 1. Cuando la reproducción del anuncio llega al final, invoque `trackEvent()` con el evento `AdComplete`.
 
@@ -120,7 +111,11 @@ La reproducción de publicidad incluye el seguimiento de las pausas publicitaria
 
 >[!IMPORTANT]
 >
->Asegúrese de NO aumentar el cabezal de reproducción (`l:event:playhead`) del reproductor de contenido durante la reproducción del anuncio (`s:asset:type=ad`). Si lo hace, las métricas de Tiempo empleado en el contenido se verán afectadas negativamente.
+>**Anuncios previos a la emisión: no llame a `trackPlay` antes de `AdBreakStart` y `AdStart`.** El primer ping de `play` en el contenido principal incrementa [El contenido comienza](/help/reporting/metrics/content-starts.md). Si se llama a `trackPlay` antes de que se desencadenen los eventos de anuncio previo a la emisión y el visor se cierra durante la publicidad, el contenido se incrementa aunque nunca se haya reproducido ningún contenido principal. En los casos de anuncio previo a la emisión, se debe retrasar `trackPlay` hasta que se hayan enviado `AdBreakStart` y `AdStart`.
+
+>[!NOTE]
+>
+>El valor del cabezal de reproducción registrado durante la reproducción del anuncio representa la posición del visor dentro del **contenido principal**, no dentro del anuncio. En el caso de un anuncio previo a la emisión que precede a un vídeo de 10 minutos, el cabezal de reproducción es `0` en todo el anuncio. Para un anuncio mid-roll que comienza en la marca de 5 minutos, el cabezal de reproducción permanece en `300` (segundos) durante la duración del anuncio.
 
 El siguiente código de ejemplo utiliza el SDK JavaScript 2.x para un reproductor de contenido HTML5.
 

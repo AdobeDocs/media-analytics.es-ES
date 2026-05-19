@@ -3,7 +3,7 @@ title: Transmisiones afectadas por pantalla completa
 description: Cuenta las sesiones en las que el usuario accedió a pantalla completa al menos una vez.
 feature: Metrics
 role: User, Admin
-source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
+source-git-commit: 4c4f1cc9e1c49044474e4ff34207796b2a814553
 workflow-type: tm+mt
 source-wordcount: '180'
 ht-degree: 8%
@@ -23,11 +23,11 @@ Las **transmisiones afectadas por la métrica de pantalla completa** cuentan ses
 
 ## Cálculo de esta métrica
 
-El servidor multimedia establece el marcador `isSet` en `mediaReporting.states[]` para la entrada `fullscreen` en `true` la primera vez que se recibe un evento `media.statesUpdate` con `fullscreen` en `statesStart`. La métrica se recoge en la llamada de cierre.
+El backend de medios establece este indicador la primera vez que se recibe un evento de inicio de estado de pantalla completa durante la sesión. La métrica se recoge en la llamada de cierre.
 
 | Sistema de informes | Fuente |
 | --- | --- |
 | Adobe Analytics | Se recopila automáticamente a partir de los datos de contexto `a.media.states.fullscreen.set` cuando el [[!UICONTROL seguimiento de estado del reproductor]](/help/reporting/media-reports-enable.md) está habilitado. |
-| Customer Journey Analytics | [`mediaReporting.states[]`](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/media-reporting-details) entrada donde `name = "fullscreen"`, campo `isSet` |
-| Fuentes de datos | `event_list`, `post_event_list` (consulte la búsqueda [`event.tsv`](https://experienceleague.adobe.com/es/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files)) |
+| Customer Journey Analytics | [`mediaReporting.states[]`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details) entrada donde `name = "fullscreen"`, campo `isSet` |
+| Fuentes de datos | `event_list`, `post_event_list` (consulte la búsqueda [`event.tsv`](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files)) |
 | Audience Manager | `c_contextdata.a.media.states.fullscreen.set` |

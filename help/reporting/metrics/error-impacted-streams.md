@@ -3,9 +3,9 @@ title: Flujos afectados por error
 description: Cuenta las sesiones en las que se produjo al menos un error.
 feature: Metrics
 role: User, Admin
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: '141'
+source-wordcount: '143'
 ht-degree: 10%
 
 ---
@@ -17,11 +17,11 @@ La métrica **Flujos afectados por el error** cuenta sesiones en las que se prod
 
 ## Cálculo de esta métrica
 
-El servidor multimedia establece `mediaReporting.qoeDataDetails.hasErrorImpactedStreams = true` la primera vez que se recibe un evento de [error](/help/implementation/events/error.md) durante la sesión. La métrica se recoge en la llamada de cierre.
+El servidor multimedia establece este indicador la primera vez que se recibe un evento de [error](/help/implementation/events/error.md) durante la sesión. La métrica se recoge en la llamada de cierre.
 
 | Sistema de informes | Fuente |
 | --- | --- |
 | Adobe Analytics | Se recopila automáticamente a partir de los datos de contexto `a.media.qoe.error` cuando [[!UICONTROL Calidad de los medios]](/help/reporting/media-reports-enable.md) está habilitado. |
-| Customer Journey Analytics | [`mediaReporting.qoeDataDetails.hasErrorImpactedStreams`](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
-| Fuentes de datos | `event_list`, `post_event_list` (consulte la búsqueda [`event.tsv`](https://experienceleague.adobe.com/es/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files)) |
+| Customer Journey Analytics | [`mediaReporting.qoeDataDetails.hasErrorImpactedStreams`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
+| Fuentes de datos | `event_list`, `post_event_list` (consulte la búsqueda [`event.tsv`](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files)) |
 | Audience Manager | `c_contextdata.a.media.qoe.error` |

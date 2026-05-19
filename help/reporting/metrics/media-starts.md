@@ -3,10 +3,10 @@ title: Inicio de medios
 description: Cuenta todas las sesiones de contenido que comenzaron, incluidas las sesiones que finalizaron en anuncios previos a la emisión o en el almacenamiento en búfer.
 feature: Metrics
 role: User, Admin
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: '184'
-ht-degree: 8%
+source-wordcount: '228'
+ht-degree: 6%
 
 ---
 
@@ -17,11 +17,11 @@ La métrica **Inicios de medios** cuenta cada sesión de medios que comenzó. Se
 
 ## Cálculo de esta métrica
 
-El servidor multimedia establece `mediaReporting.sessionDetails.isViewed = true` cuando se recibe un evento [inicio de sesión](/help/implementation/events/session/session-start.md). La métrica registrada es `1` por sesión. Los inicios de contenido se informan en la llamada de inicio, no en la llamada de cierre. Es la única métrica de fase 1 que no espera al cierre de la sesión.
+El servidor multimedia establece este indicador cuando se recibe un evento [inicio de sesión](/help/implementation/events/session/session-start.md). La métrica registrada es `1` por sesión. Los inicios de contenido se informan en la llamada de inicio, no en la llamada de cierre; es la única métrica que no espera el cierre de la sesión. Todas las demás métricas de contenidos, como [Inicios de contenido](/help/reporting/metrics/content-starts.md), [Tiempo invertido en contenido](/help/reporting/metrics/content-time-spent.md) y [Marcadores de progreso](/help/reporting/metrics/progress-markers.md), se registran en la llamada de cierre y no están disponibles en tiempo real durante la reproducción. [Inicios de publicidad](/help/reporting/metrics/ad-starts.md) es la única métrica adicional registrada en su evento desencadenante en lugar de en el cierre.
 
 | Sistema de informes | Fuente |
 | --- | --- |
 | Adobe Analytics | Se recopila automáticamente a partir de los datos de contexto `a.media.view` cuando [[!UICONTROL Media Core]](/help/reporting/media-reports-enable.md) está habilitado. |
-| Customer Journey Analytics | [`mediaReporting.sessionDetails.isViewed`](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/session-details-reporting) |
-| Fuentes de datos | `event_list`, `post_event_list` (consulte la búsqueda [`event.tsv`](https://experienceleague.adobe.com/es/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files)) |
+| Customer Journey Analytics | [`mediaReporting.sessionDetails.isViewed`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| Fuentes de datos | `event_list`, `post_event_list` (consulte la búsqueda [`event.tsv`](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files)) |
 | Audience Manager | `c_contextdata.a.media.view` |
