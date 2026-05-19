@@ -3,10 +3,10 @@ title: Recuento de capítulos
 description: Informa del número de capítulos que comenzaron durante una sesión.
 feature: Metrics
 role: User, Admin
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: '170'
-ht-degree: 10%
+source-wordcount: '172'
+ht-degree: 9%
 
 ---
 
@@ -17,7 +17,7 @@ La métrica **Recuento de capítulos** indica el número de capítulos que comen
 
 ## Cálculo de esta métrica
 
-El servidor multimedia incrementa `mediaReporting.sessionDetails.chapterCount` en cada evento de [inicio de capítulo](/help/implementation/events/chapters/chapter-start.md) recibido durante la sesión. La métrica se recoge en la llamada de cierre.
+El backend de medios incrementa este recuento en cada evento de [inicio de capítulo](/help/implementation/events/chapters/chapter-start.md) recibido durante la sesión. La métrica se recoge en la llamada de cierre.
 
 | Sistema de informes | Fuente |
 | --- | --- |

@@ -3,10 +3,10 @@ title: Recuentos de Enfocado
 description: Indica la cantidad de veces que el reproductor ganó Focus durante una sesión.
 feature: Metrics
 role: User, Admin
-source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
+source-git-commit: 4c4f1cc9e1c49044474e4ff34207796b2a814553
 workflow-type: tm+mt
-source-wordcount: '169'
-ht-degree: 8%
+source-wordcount: '165'
+ht-degree: 9%
 
 ---
 
@@ -23,7 +23,7 @@ La métrica **En el enfoque cuenta** indica la cantidad de veces que el reproduc
 
 ## Cálculo de esta métrica
 
-El servidor multimedia incrementa el campo `count` en la entrada `inFocus` de `mediaReporting.states[]` en cada evento de inicio de estado de enfoque. La métrica se recoge en la llamada de cierre.
+El backend de medios incrementa este recuento en cada evento de inicio de estado de enfoque. La métrica se recoge en la llamada de cierre.
 
 | Sistema de informes | Fuente |
 | --- | --- |

@@ -3,9 +3,9 @@ title: Flujos estimados
 description: Aproxima el número de transmisiones de audio o vídeo por sesión.
 feature: Metrics
 role: User, Admin
-source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: '187'
+source-wordcount: '190'
 ht-degree: 10%
 
 ---
@@ -17,7 +17,7 @@ La métrica **Flujos estimados** se aproxima al número de flujos de audio o ví
 
 ## Cálculo de esta métrica
 
-El servidor multimedia calcula `mediaReporting.sessionDetails.estimatedStreams = FLOOR(totalTimePlayed / 1800) + 1`, donde `totalTimePlayed` es [tiempo invertido en contenido](media-time-spent.md) en segundos. La métrica se recoge en la llamada de cierre.
+El servidor multimedia calcula esta métrica como `FLOOR(totalTimePlayed / 1800) + 1`, donde `totalTimePlayed` es [tiempo invertido en contenido](media-time-spent.md) en segundos. La métrica se recoge en la llamada de cierre.
 
 | Tiempo invertido en contenido | Flujos estimados |
 | --- | --- |

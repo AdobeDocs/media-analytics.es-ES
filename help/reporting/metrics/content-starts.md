@@ -3,9 +3,9 @@ title: El contenido comienza
 description: Cuenta las sesiones en las que comenzó a reproducirse el contenido principal.
 feature: Metrics
 role: User, Admin
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: '146'
+source-wordcount: '148'
 ht-degree: 10%
 
 ---
@@ -17,7 +17,7 @@ La métrica **Inicios de contenido** cuenta las sesiones en las que comenzó a r
 
 ## Cálculo de esta métrica
 
-El servidor multimedia establece `mediaReporting.sessionDetails.isPlayed = true` la primera vez que se recibe un evento [play](/help/implementation/events/playback/play.md) para el contenido principal. La métrica se activa en ese evento de reproducción, pero se comunica en la llamada de cierre. Para calcular la tasa de colocación previa a la emisión, use `(Media starts − Content starts) / Media starts`.
+El servidor multimedia establece este indicador la primera vez que se recibe un evento [play](/help/implementation/events/playback/play.md) para el contenido principal. La métrica se activa en ese evento de reproducción, pero se comunica en la llamada de cierre. Para calcular la tasa de colocación previa a la emisión, use `(Media starts − Content starts) / Media starts`.
 
 | Sistema de informes | Fuente |
 | --- | --- |

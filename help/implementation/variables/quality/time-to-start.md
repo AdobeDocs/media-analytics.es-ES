@@ -3,10 +3,10 @@ title: Tiempo para el inicio
 description: Establezca el tiempo de inicio del reproductor, en milisegundos, para que el backend pueda informar del tiempo hasta el primer fotograma de calidad.
 feature: Streaming Media
 role: Developer
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: '216'
-ht-degree: 12%
+source-wordcount: '265'
+ht-degree: 9%
 
 ---
 
@@ -20,6 +20,10 @@ ht-degree: 12%
 >[!ENDSHADEBOX]
 
 La variable tiempo para el inicio es el tiempo, en milisegundos, transcurrido entre el momento en que el reproductor inicia la reproducción y el primer procesamiento del fotograma. Configúrelo en el objeto QoE antes de que se active el evento de inicio de sesión. Adobe almacena e informa del valor en segundos; pasa milisegundos y Adobe se convierte en el momento de la ingesta.
+
+>[!IMPORTANT]
+>
+>Una vez que el reproductor comience a procesar fotogramas de contenido, deje de actualizar `timeToStart`. El valor puede aumentar durante la fase inicial de almacenamiento en búfer o de carga, pero debe tratarse como fijo desde el momento en que comienza la reproducción. Si continúa actualizándolo después de que el primer fotograma se procese, se producirá una métrica [Tiempo para el inicio](/help/reporting/metrics/time-to-start.md) inflada o incorrecta.
 
 | Propiedad | Valor |
 | --- | --- |

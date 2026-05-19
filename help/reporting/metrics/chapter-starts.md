@@ -3,10 +3,10 @@ title: El capítulo comienza
 description: Cuenta todos los capítulos que comenzaron a reproducirse durante una sesión.
 feature: Metrics
 role: User, Admin
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: '114'
-ht-degree: 13%
+source-wordcount: '116'
+ht-degree: 12%
 
 ---
 
@@ -17,7 +17,7 @@ La métrica **Capítulos iniciados** cuenta cada capítulo que comenzó a reprod
 
 ## Cálculo de esta métrica
 
-El servidor multimedia establece `mediaReporting.chapterDetails.isStarted = true` cuando se recibe un evento de [inicio de capítulo](/help/implementation/events/chapters/chapter-start.md). La métrica se recoge en la llamada de cierre del capítulo.
+El servidor multimedia establece este indicador cuando se recibe un evento [inicio de capítulo](/help/implementation/events/chapters/chapter-start.md). La métrica se recoge en la llamada de cierre del capítulo.
 
 | Sistema de informes | Fuente |
 | --- | --- |

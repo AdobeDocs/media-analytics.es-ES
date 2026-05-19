@@ -3,9 +3,9 @@ title: El contenido finaliza
 description: Cuenta las sesiones cuyo cabezal de reproducción llegó al final del contenido.
 feature: Metrics
 role: User, Admin
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: '140'
+source-wordcount: '142'
 ht-degree: 10%
 
 ---
@@ -17,7 +17,7 @@ La métrica **Contenido completado** cuenta sesiones cuyo cabezal de reproducci�
 
 ## Cálculo de esta métrica
 
-El servidor multimedia establece `mediaReporting.sessionDetails.isCompleted = true` cuando se recibe un evento [sesión completa](/help/implementation/events/session/session-complete.md). La métrica se recoge en la llamada de cierre. Una sesión que agota el tiempo de espera sin un `sessionComplete` explícito no se cuenta como una finalización.
+El servidor multimedia establece este indicador cuando se recibe un evento [sesión completa](/help/implementation/events/session/session-complete.md). La métrica se recoge en la llamada de cierre. Una sesión que agota el tiempo de espera sin un `sessionComplete` explícito no se cuenta como una finalización.
 
 | Sistema de informes | Fuente |
 | --- | --- |

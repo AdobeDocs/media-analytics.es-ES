@@ -3,10 +3,10 @@ title: Tiempo invertido en contenido
 description: Notifica el total de segundos de reproducción del contenido principal activo por sesión.
 feature: Metrics
 role: User, Admin
-source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: '172'
-ht-degree: 8%
+source-wordcount: '221'
+ht-degree: 6%
 
 ---
 
@@ -17,7 +17,7 @@ La métrica **Tiempo invertido en contenido** indica el número total de segundo
 
 ## Cálculo de esta métrica
 
-El servidor multimedia suma el tiempo de reloj de pared transcurrido entre los eventos mientras el reproductor se encuentra en el estado `play` en el contenido principal. Se excluye el tiempo durante los anuncios, las pausas, los eventos de búfer y los bloqueos. La métrica se recoge en la llamada de cierre. El valor se muestra como `HH:MM:SS` en Analysis Workspace y en segundos en fuentes de datos, Data Warehouse y API de informes.
+El servidor multimedia suma el tiempo de reloj de pared transcurrido entre los eventos mientras el reproductor se encuentra en el estado `play` en el contenido principal. Se excluye el tiempo durante los anuncios, las pausas, los eventos de búfer y los bloqueos. Como solo se cuenta el tiempo de reproducción activo, la métrica puede superar [Longitud del contenido](/help/reporting/dimensions/content-length.md) cuando un usuario hace una búsqueda hacia atrás y vuelve a ver un segmento. Cada paso a través de un segmento determinado acumula tiempo de reproducción adicional y puede acumularse durante el tiempo que el usuario consume y rebobina contenido en una sesión. La métrica se recoge en la llamada de cierre. El valor se muestra como `HH:MM:SS` en Analysis Workspace y en segundos en fuentes de datos, Data Warehouse y API de informes.
 
 | Sistema de informes | Fuente |
 | --- | --- |

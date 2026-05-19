@@ -22,10 +22,10 @@ topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: 590
-ht-degree: 98%
+source-wordcount: 749
+ht-degree: 77%
 
 ---
 
@@ -87,6 +87,17 @@ Por ejemplo, supongamos que un evento de transmisión en vivo comienza a mediano
 ### Al pausar
 
 La misma lógica de “cabezal de lectura en directo” aplicada al inicio de la reproducción debe aplicarse cuando un usuario pone en pausa la reproducción. Cuando el usuario vuelve a reproducir el flujo en directo, debe establecer el valor `l:event:playhead` según el nuevo número de segundos desde la medianoche (UTC), _no_ en el punto en el que el usuario detuvo el flujo en directo.
+
+## Seguimiento de cambios de programas en una emisión en directo {#live-program-changes}
+
+Cuando un flujo en directo pasa de un programa o programa a otro (un patrón común para las propiedades de difusión y cable), cada programa debe seguirse como una sesión separada. Esto le permite informar sobre la participación y el tiempo empleado por título individual en lugar de atribuir todas las visualizaciones a un único flujo continuo.
+
+**Enfoque recomendado:**
+
+1. Cuando finalice el programa actual (o cuando el reproductor indique un evento de cambio de programa), llame a `trackSessionEnd` para cerrar la sesión actual.
+2. Cuando comience el nuevo programa, llame a `trackSessionStart` con los metadatos del nuevo programa (nombre, ID, tipo de contenido, etc.).
+
+El seguimiento de cada programa como su propia sesión mantiene [Tiempo invertido en contenido](/help/reporting/metrics/content-time-spent.md), [Marcadores de progreso](/help/reporting/metrics/progress-markers.md) y las métricas de finalización enfocadas en el programa individual, y permite generar informes de audiencia precisos por título. Use `trackSessionEnd` en lugar de `trackComplete` para la transición: `trackComplete` indica que el visor ha visto intencionadamente el final de un contenido discreto, mientras que `trackSessionEnd` es correcto porque el flujo continúa con una programación diferente en lugar de finalizarse.
 
 ## Código de muestra {#sample-code}
 

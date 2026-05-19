@@ -3,9 +3,9 @@ title: Flujos afectados por cambio de velocidad
 description: Cuenta las sesiones en las que se produjo al menos un cambio en la velocidad de bits.
 feature: Metrics
 role: User, Admin
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: '143'
+source-wordcount: '145'
 ht-degree: 10%
 
 ---
@@ -17,7 +17,7 @@ El cambio de **velocidad de bits afectó a flujos** sesiones de recuento de mét
 
 ## Cálculo de esta métrica
 
-El servidor multimedia establece `mediaReporting.qoeDataDetails.hasBitrateChangeImpactedStreams = true` la primera vez que se recibe un evento de [cambio en la velocidad de bits](/help/implementation/events/playback/bitrate-change.md) durante la sesión. La métrica se recoge en la llamada de cierre.
+El servidor multimedia establece este indicador la primera vez que se recibe un evento de [cambio en la velocidad de bits](/help/implementation/events/playback/bitrate-change.md) durante la sesión. La métrica se recoge en la llamada de cierre.
 
 | Sistema de informes | Fuente |
 | --- | --- |

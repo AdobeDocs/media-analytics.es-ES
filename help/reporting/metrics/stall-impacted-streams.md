@@ -3,9 +3,9 @@ title: Flujos afectados por estancamiento
 description: Cuenta las sesiones en las que se produjo al menos una detención durante la reproducción.
 feature: Metrics
 role: User, Admin
-source-git-commit: 1278355e0bfc67c635250c426edaf865fb658c37
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: '176'
+source-wordcount: '178'
 ht-degree: 8%
 
 ---
@@ -17,7 +17,7 @@ La métrica **Stall’ afectó a los flujos** y cuenta las sesiones en las que s
 
 ## Cálculo de esta métrica
 
-El servidor multimedia establece `mediaReporting.qoeDataDetails.hasStallImpactedStreams = true` cuando no se registra ningún movimiento del cabezal de reproducción en el contenido principal durante al menos tres eventos consecutivos durante la sesión. La métrica se recoge en la llamada de cierre.
+El backend de medios establece este indicador cuando no se registra ningún movimiento del cabezal de reproducción en el contenido principal durante al menos tres eventos consecutivos durante la sesión. La métrica se recoge en la llamada de cierre.
 
 | Sistema de informes | Fuente |
 | --- | --- |

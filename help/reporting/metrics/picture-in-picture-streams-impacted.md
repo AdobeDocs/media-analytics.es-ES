@@ -3,9 +3,9 @@ title: Transmisiones afectadas por imagen en imagen
 description: Cuenta las sesiones en las que el usuario ha introducido imagen en imagen al menos una vez.
 feature: Metrics
 role: User, Admin
-source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
+source-git-commit: 4c4f1cc9e1c49044474e4ff34207796b2a814553
 workflow-type: tm+mt
-source-wordcount: '191'
+source-wordcount: '192'
 ht-degree: 7%
 
 ---
@@ -23,7 +23,7 @@ La métrica **Transmisiones afectadas por imagen en imagen** cuenta las sesiones
 
 ## Cálculo de esta métrica
 
-El servidor multimedia establece el marcador `isSet` en `mediaReporting.states[]` para la entrada `pictureInPicture` en `true` la primera vez que se recibe un evento `media.statesUpdate` con `pictureInPicture` en `statesStart`. La métrica se recoge en la llamada de cierre.
+El backend de medios establece este indicador la primera vez que se recibe un evento de inicio de estado de imagen en imagen durante la sesión. La métrica se recoge en la llamada de cierre.
 
 | Sistema de informes | Fuente |
 | --- | --- |

@@ -20,10 +20,10 @@ role_v2:
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: 522
-ht-degree: 77%
+source-wordcount: 641
+ht-degree: 58%
 
 ---
 
@@ -110,7 +110,7 @@ La reproducción de publicidad incluye el seguimiento de las pausas publicitaria
 
 1. Invoque `trackEvent()` con el evento `AdStart` de la instancia de `MediaHeartbeat` para iniciar el seguimiento de la reproducción de publicidad.
 
-   Incluya una referencia a la variable de metadatos personalizada (o un objeto vacío) como tercer parámetro de la llamada de evento.
+   Incluya una referencia a la variable de metadatos personalizada (o un objeto vacío) como tercer parámetro de la llamada de evento. Mientras se reproduce el anuncio, mantenga el cabezal de reproducción de contenido (`l:event:playhead`) fijo en la posición en la que comenzó la pausa publicitaria; si se avanza durante la reproducción del anuncio, se sobrevalora [Tiempo invertido en contenido](/help/reporting/metrics/content-time-spent.md).
 
 1. Cuando la reproducción del anuncio llega al final, invoque `trackEvent()` con el evento `AdComplete`.
 
@@ -120,7 +120,11 @@ La reproducción de publicidad incluye el seguimiento de las pausas publicitaria
 
 >[!IMPORTANT]
 >
->Asegúrese de NO aumentar el cabezal de reproducción (`l:event:playhead`) del reproductor de contenido durante la reproducción del anuncio (`s:asset:type=ad`). Si lo hace, las métricas de Tiempo empleado en el contenido se verán afectadas negativamente.
+>**Anuncios previos a la emisión: no llame a `trackPlay` antes de `AdBreakStart` y `AdStart`.** El primer ping de `play` en el contenido principal incrementa [El contenido comienza](/help/reporting/metrics/content-starts.md). Si se llama a `trackPlay` antes de que se desencadenen los eventos de anuncio previo a la emisión y el visor se cierra durante la publicidad, el contenido se incrementa aunque nunca se haya reproducido ningún contenido principal. En los casos de anuncio previo a la emisión, se debe retrasar `trackPlay` hasta que se hayan enviado `AdBreakStart` y `AdStart`.
+
+>[!NOTE]
+>
+>El valor del cabezal de reproducción registrado durante la reproducción del anuncio representa la posición del visor dentro del **contenido principal**, no dentro del anuncio. En el caso de un anuncio previo a la emisión que precede a un vídeo de 10 minutos, el cabezal de reproducción es `0` en todo el anuncio. Para un anuncio mid-roll que comienza en la marca de 5 minutos, el cabezal de reproducción permanece en `300` (segundos) durante la duración del anuncio.
 
 El siguiente código de ejemplo utiliza el SDK JavaScript 2.x para un reproductor de contenido HTML5.
 

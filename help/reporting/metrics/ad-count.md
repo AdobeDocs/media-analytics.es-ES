@@ -3,9 +3,9 @@ title: Recuento de anuncios
 description: Informa del número de anuncios que se iniciaron durante una sesión.
 feature: Metrics
 role: User, Admin
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: '174'
+source-wordcount: '176'
 ht-degree: 9%
 
 ---
@@ -17,7 +17,7 @@ La métrica **Recuento de anuncios** indica la cantidad de anuncios que se inici
 
 ## Cálculo de esta métrica
 
-El servidor multimedia incrementa `mediaReporting.sessionDetails.adCount` en cada evento [de inicio de publicidad](/help/implementation/events/ads/ad-start.md) recibido durante la sesión. La métrica se recoge en la llamada de cierre.
+El servidor multimedia incrementa este recuento en cada evento de [inicio de publicidad](/help/implementation/events/ads/ad-start.md) recibido durante la sesión. La métrica se recoge en la llamada de cierre.
 
 | Sistema de informes | Fuente |
 | --- | --- |

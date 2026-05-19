@@ -3,9 +3,9 @@ title: Flujos afectados por la pausa
 description: Cuenta las sesiones en las que el visualizador se detuvo al menos una vez.
 feature: Metrics
 role: User, Admin
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: '150'
+source-wordcount: '152'
 ht-degree: 11%
 
 ---
@@ -17,7 +17,7 @@ La métrica **Flujos afectados por la pausa** cuenta sesiones en las que el viso
 
 ## Cálculo de esta métrica
 
-El servidor multimedia establece `mediaReporting.sessionDetails.hasPauseImpactedStreams = true` la primera vez que se recibe un evento [pause start](/help/implementation/events/playback/pause-start.md) durante la sesión. La métrica se recoge en la llamada de cierre.
+El servidor multimedia establece este indicador la primera vez que se recibe un evento [pause start](/help/implementation/events/playback/pause-start.md) durante la sesión. La métrica se recoge en la llamada de cierre.
 
 | Sistema de informes | Fuente |
 | --- | --- |

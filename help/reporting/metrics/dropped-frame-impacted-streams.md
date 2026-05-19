@@ -3,9 +3,9 @@ title: Flujos afectados por fotogramas rechazados
 description: Cuenta las sesiones en las que se perdió al menos un fotograma.
 feature: Metrics
 role: User, Admin
-source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: '133'
+source-wordcount: '135'
 ht-degree: 11%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 11%
 
 ## Cálculo de esta métrica
 
-El servidor multimedia establece `mediaReporting.qoeDataDetails.hasDroppedFrameImpactedStreams = true` si el valor `droppedFrames` del objeto QoE es mayor que cero al cerrar la sesión.
+El servidor multimedia establece este indicador si el valor `droppedFrames` del objeto QoE es mayor que cero al cerrar la sesión.
 
 | Sistema de informes | Fuente |
 | --- | --- |

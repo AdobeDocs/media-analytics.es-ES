@@ -3,7 +3,7 @@ title: Transmisiones afectadas por los subtítulos
 description: Cuenta las sesiones en las que el visor habilitó subtítulos al menos una vez.
 feature: Metrics
 role: User, Admin
-source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
+source-git-commit: 4c4f1cc9e1c49044474e4ff34207796b2a814553
 workflow-type: tm+mt
 source-wordcount: '176'
 ht-degree: 8%
@@ -23,7 +23,7 @@ Las **transmisiones afectadas por los subtítulos opcionales** cuentan sesiones 
 
 ## Cálculo de esta métrica
 
-El servidor multimedia establece el marcador `isSet` en `mediaReporting.states[]` para la entrada `closedCaptioning` en `true` la primera vez que se recibe un evento `media.statesUpdate` con `closedCaptioning` en `statesStart`. La métrica se recoge en la llamada de cierre.
+El backend de medios establece este indicador la primera vez que se recibe un evento de inicio de estado para habilitar subtítulos durante la sesión. La métrica se recoge en la llamada de cierre.
 
 | Sistema de informes | Fuente |
 | --- | --- |

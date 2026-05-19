@@ -3,10 +3,10 @@ title: Currículos de contenido
 description: Cuenta las sesiones que reanudaron una reproducción interrumpida previamente.
 feature: Metrics
 role: User, Admin
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: '169'
-ht-degree: 10%
+source-wordcount: '171'
+ht-degree: 9%
 
 ---
 
@@ -23,7 +23,7 @@ La métrica **Reanudación de contenido** cuenta las sesiones que reanudaron una
 
 ## Cálculo de esta métrica
 
-El servidor multimedia establece `mediaReporting.sessionDetails.hasResume = true` cuando `mediaCollection.sessionDetails.hasResume` es `true` en el evento [inicio de sesión](/help/implementation/events/session/session-start.md). El reproductor debe marcar explícitamente la sesión como reanudación. La métrica se recoge en la llamada de cierre.
+El servidor multimedia establece este indicador cuando `mediaCollection.sessionDetails.hasResume` es `true` en el evento [inicio de sesión](/help/implementation/events/session/session-start.md). El reproductor debe marcar explícitamente la sesión como reanudación. La métrica se recoge en la llamada de cierre.
 
 | Sistema de informes | Fuente |
 | --- | --- |

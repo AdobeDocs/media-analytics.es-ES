@@ -14,10 +14,10 @@ role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: 358
-ht-degree: 55%
+source-wordcount: 473
+ht-degree: 41%
 
 ---
 
@@ -45,3 +45,11 @@ La reproducción en una aplicación multimedia puede interrumpirse de varias for
 * _¿Qué sucede si se reinicia la misma sesión?_
 
   Para obtener información acerca de cómo reanudar una sesión de seguimiento, vea [Reanudar sesiones inactivas](resuming-inactive.md).SDK envía un ping de reanudación para notificar al back-end que el usuario está reanudando la sesión manualmente.
+
+* _¿Qué sucede si se llama a `trackSessionEnd` dos veces para la misma sesión?_
+
+  Llamar a `trackSessionEnd` más de una vez para la misma sesión es seguro. El servidor cierra la sesión en el primer evento y descarta silenciosamente todos los eventos subsiguientes para ese ID de sesión, incluido un segundo `trackSessionEnd`. Esto significa que las condiciones de carrera (por ejemplo, el tiempo de espera de inactividad de 30 minutos que se activa en el mismo momento en que el visualizador cierra el reproductor) no producen datos duplicados.
+
+* _¿Qué sucede si se llama a `trackSessionStart` mientras ya hay una sesión activa?_
+
+  SDK ignora la segunda llamada a `trackSessionStart` si la sesión aún no se ha cerrado. Si necesita iniciar una nueva sesión, llame primero a `trackSessionEnd` para cerrar explícitamente la sesión actual y, a continuación, llame a `trackSessionStart` para la nueva sesión.

@@ -3,10 +3,10 @@ title: Fotogramas perdidos
 description: Defina el número de fotogramas perdidos en el objeto QoE para que el backend pueda informar de la calidad de colocación de fotogramas.
 feature: Streaming Media
 role: Developer
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: '215'
-ht-degree: 12%
+source-wordcount: '265'
+ht-degree: 9%
 
 ---
 
@@ -20,6 +20,10 @@ ht-degree: 12%
 >[!ENDSHADEBOX]
 
 La variable de fotogramas perdidos es el número de fotogramas que el reproductor ha perdido durante la sesión. Configúrelo en el objeto QoE y actualice el valor cada vez que el reproductor notifique nuevas caídas. El servidor informa del valor más reciente al cierre de la sesión.
+
+>[!NOTE]
+>
+>Pasar siempre el **total acumulado** de fotogramas perdidos para toda la sesión hasta ese momento, no un delta por intervalo. Si restablece el valor a `0` entre actualizaciones, el servidor recibe `0` como valor final e informa de cero fotogramas perdidos para la sesión, independientemente de lo que se haya perdido anteriormente.
 
 | Propiedad | Valor |
 | --- | --- |

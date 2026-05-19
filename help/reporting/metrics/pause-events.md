@@ -3,10 +3,10 @@ title: Pausar eventos
 description: Cuenta cada pausa distinta que se produjo durante una sesión.
 feature: Metrics
 role: User, Admin
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: 4c4f1cc9e1c49044474e4ff34207796b2a814553
 workflow-type: tm+mt
-source-wordcount: '135'
-ht-degree: 12%
+source-wordcount: '170'
+ht-degree: 10%
 
 ---
 
@@ -17,7 +17,7 @@ La métrica **Pause events** cuenta cada evento [pause start](/help/implementati
 
 ## Cálculo de esta métrica
 
-El servidor multimedia incrementa `mediaReporting.sessionDetails.pauseCount` en cada evento [inicio de pausa](/help/implementation/events/playback/pause-start.md). La métrica se recoge en la llamada de cierre.
+El servidor multimedia incrementa este recuento en cada evento [inicio de pausa](/help/implementation/events/playback/pause-start.md). Una sola pausa continua genera un incremento independientemente de su duración. Los [pings](/help/implementation/events/playback/ping.md) de latido enviados mientras el reproductor permanece en pausa pertenecen al mismo período de pausa y no se vuelve a incrementar el recuento. La métrica se recoge en la llamada de cierre.
 
 | Sistema de informes | Fuente |
 | --- | --- |
