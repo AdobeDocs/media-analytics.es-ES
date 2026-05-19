@@ -4,9 +4,22 @@ description: Obtenga información sobre cómo migrar audiencias al nuevo tipo de
 feature: Streaming Media
 role: User, Admin, Developer
 exl-id: 67e67a4b-bd61-4247-93b7-261bd348d29b
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/Y-Y-xWKm-zOzaQm8kMbgGx8r6BTNLl-Q5AltlF5v7aA
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2:
+  - id: b3f03848-ae12-48b2-8aab-cad18567eb32
+  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '756'
+source-wordcount: 759
 ht-degree: 1%
 
 ---
@@ -43,7 +56,7 @@ Para migrar campos derivados al nuevo tipo de datos:
 
 1. Reemplace todos los campos antiguos del campo derivado por el nuevo campo correspondiente de &quot;Detalles de creación de informes de medios&quot;.
 
-Consulte el parámetro [Content ID](https://experienceleague.adobe.com/es/docs/media-analytics/using/implementation/variables/audio-video-parameters#id-de-contenido) en la página [Parámetros de audio y vídeo](https://experienceleague.adobe.com/es/docs/media-analytics/using/implementation/variables/audio-video-parameters) para asignar entre los campos antiguos y los campos nuevos. La ruta de campo antigua se encuentra en la propiedad &quot;Ruta de campo XDM&quot;, mientras que la nueva ruta de campo se encuentra en la propiedad &quot;Ruta de campo XDM de creación de informes&quot;.
+Consulte el parámetro [Content ID](/help/reporting/dimensions/content.md) y el resto de las variables de medios de streaming documentadas en [Servicios de medios de streaming](/help/media-overview.md) para asignar entre los campos antiguos y los campos nuevos. La ruta de campo antigua se encuentra en la propiedad &quot;Ruta de campo XDM&quot;, mientras que la nueva ruta de campo se encuentra en la propiedad &quot;Ruta de campo XDM de creación de informes&quot;.
 
 ![Rutas de campo XDM antiguas y nuevas](assets/field-paths-updated.jpeg)
 
@@ -61,7 +74,7 @@ Puede utilizar cualquiera de las siguientes opciones para actualizar la vista de
 
    ![Ruta de campo antigua en la vista de datos](assets/old-field-data-view.jpeg)
 
-1. Compruebe el nuevo campo correspondiente en la sección [Desplazamiento de capítulo](https://experienceleague.adobe.com/es/docs/media-analytics/using/implementation/variables/chapter-parameters#chapter-offset) del artículo [Parámetros de capítulo](https://experienceleague.adobe.com/es/docs/media-analytics/using/implementation/variables/chapter-parameters).
+1. Compruebe el nuevo campo correspondiente en el artículo [Desplazamiento de capítulo](/help/reporting/dimensions/chapter-offset.md).
 
 1. Busque el nuevo campo correspondiente en la vista de datos.
 
@@ -81,7 +94,7 @@ Si desea crear un campo derivado para el &quot;Nombre del capítulo&quot; que ut
 
    ![Personalice el nuevo campo para crear una vista de datos](assets/create-derived-field2.jpeg)
 
-1. Rellene la cláusula [!UICONTROL **If**] con el valor de **Ruta del campo XDM de creación de informes**, como se muestra en el parámetro [Chapter name](https://experienceleague.adobe.com/es/docs/media-analytics/using/implementation/variables/chapter-parameters#chapter-name) de la página [Chapter parameters](https://experienceleague.adobe.com/es/docs/media-analytics/using/implementation/variables/chapter-parameters).
+1. Rellene la cláusula [!UICONTROL **If**] con el valor de **Ruta del campo XDM de creación de informes**, como se muestra en la página [Nombre del capítulo](/help/reporting/dimensions/chapter-name.md).
 
    ![Nombre de capítulo](assets/chapter-name.jpeg)
 
@@ -111,7 +124,7 @@ Si desea crear un campo derivado para el &quot;Nombre del capítulo&quot; que ut
 
    ![Localizar campo con tipo de datos antiguo](assets/locate-fields-with-old-datatype.jpeg)
 
-1. Compruebe el campo nuevo correspondiente en la sección [Nombre de contenido (variable)](https://experienceleague.adobe.com/es/docs/media-analytics/using/implementation/variables/audio-video-parameters#content-name-variable) del artículo [Parámetros de medios de streaming](https://experienceleague.adobe.com/es/docs/media-analytics/using/implementation/variables/audio-video-parameters#content-name-variable).
+1. Compruebe el nuevo campo correspondiente en el artículo [Nombre de contenido](/help/reporting/dimensions/content-name.md).
 
 1. Reemplace el campo antiguo por el nuevo.
 

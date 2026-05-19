@@ -4,10 +4,25 @@ description: Aprenda a implementar el seguimiento del núcleo mediante Media SDK
 exl-id: f3145450-82ba-4790-91a4-9d2cc97bbaa5
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/bIOfr94Q7wJLH9LfRg9VLIEJuS6JPvcgSWS62YCVguc
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2:
+  - id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7a
+  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+subfeature_v2:
+  - id: e7d92df1-c5ba-4e93-85df-f83171b889be
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '747'
-ht-degree: 87%
+source-wordcount: 759
+ht-degree: 85%
 
 ---
 
@@ -23,7 +38,7 @@ Esta documentación abarca el seguimiento en la versión 3.x del SDK.
 
    Identifique el momento en que el usuario desencadena la intención de reproducir (cuando hace clic en reproducir o la reproducción automática está activada) y cree una instancia de `MediaObject`.
 
-   [API de createMediaObject](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/MediaHeartbeat.html#.createMediaObject)
+   [API createMediaObject](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/MediaHeartbeat.html#.createMediaObject)
 
    | Nombre de variable | Tipo | Descripción |
    | --- | --- | --- |
@@ -66,8 +81,6 @@ Esta documentación abarca el seguimiento en la versión 3.x del SDK.
      >La adición de metadatos estándar es opcional.
 
       * Referencia de API de claves de metadatos de contenidos: [Claves de metadatos estándar de JavaScript](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript)
-
-        Consulte el conjunto completo de metadatos disponibles aquí: [Parámetros de audio y vídeo](/help/implementation/variables/audio-video-parameters.md).
 
    * **Metadatos personalizados**
 
@@ -128,7 +141,7 @@ Esta documentación abarca el seguimiento en la versión 3.x del SDK.
 
 1. **Actualización de valor del cabezal de reproducción**
 
-   Cuando el cabezal de reproducción de contenido cambie, notifique a SDK llamando a la API `mediaUpdatePlayhead`. <br /> Para el vídeo bajo demanda (VOD), el valor se especifica segundos después del comienzo del elemento de medios. <br /> Para el streaming en vivo, si el reproductor no proporciona información acerca de la duración del contenido, el valor se puede especificar como el número de segundos desde la medianoche (UTC) de ese día.
+   Cuando cambie el cabezal de reproducción de contenido, notifique a SDK llamando a la API `mediaUpdatePlayhead`. <br /> Para vídeo bajo demanda (VOD), el valor se especifica segundos después del comienzo del elemento de medios. <br /> Para el streaming en directo, si el reproductor no proporciona información acerca de la duración del contenido, el valor se puede especificar como el número de segundos desde la medianoche (UTC) de ese día.
 
    ```
    tracker.updatePlayhead(position)

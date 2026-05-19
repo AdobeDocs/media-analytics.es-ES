@@ -5,14 +5,14 @@ uuid: 7e60c7bd-8dba-4c7a-9c3c-0c634b815397
 exl-id: 64f5ef2b-7850-43d8-8f32-3d008ea4f156
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
 workflow-type: tm+mt
-source-wordcount: '347'
-ht-degree: 92%
+source-wordcount: '496'
+ht-degree: 69%
 
 ---
 
-# Privacidad y exclusión {#opt-out-and-privacy}
+# Privacidad y exclusión{#opt-out-and-privacy}
 
 ## Inclusión/Exclusión {#opt-out-opt-in}
 
@@ -110,3 +110,19 @@ Por ejemplo:
   ```
   vids = ADBMobile().getAllIdentifiers()
   ```
+
+## Parámetros de exclusión de Analytics {#analytics-opt-out}
+
+Dos parámetros reservados le permiten suprimir los datos de Media Analytics del reenvío del lado del servidor a Audience Manager y del uso compartido de datos con terceros. Se pasan junto con los parámetros de sesión en el nivel de API, no se establecen en el objeto de configuración de SDK.
+
+| Parámetro | Clave de API | Datos de contexto |
+| --- | --- | --- |
+| Excluirse del reenvío del lado del servidor | `analytics.optOutServerSideForwarding` | `cm.dmp` |
+| Exclusión del uso compartido de datos | `analytics.optOutSellToThirdParty` | `cm.sell` |
+
+* **`analytics.optOutServerSideForwarding`**: cuando `true`, suprime el reenvío de esta visita del lado del servidor a Audience Manager y otros destinos de Adobe.
+* **`analytics.optOutSellToThirdParty`**: cuando `true`, suprime el uso compartido de estos datos de visitas con socios de terceros.
+
+>[!NOTE]
+>
+>Estos parámetros están documentados en la [referencia de sesiones de la API de Media Collection](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md). Se aplican a las implementaciones de la API de Media Collection y la API de Media Edge. Los controles de exclusión de nivel de SDK descritos anteriormente se aplican a las implementaciones móviles y OTT.

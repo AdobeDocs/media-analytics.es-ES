@@ -4,10 +4,22 @@ description: Obtenga información sobre cómo migrar audiencias al nuevo tipo de
 feature: Streaming Media
 role: User, Admin, Developer
 exl-id: 79203a2f-8158-44f2-83b2-146179be9180
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/ct8mDbIpg15Jzvf1MRaG4XFtuxbq-EUKPe106zyO7zQ
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2:
+  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '1346'
-ht-degree: 43%
+source-wordcount: 1376
+ht-degree: 44%
 
 ---
 
@@ -33,10 +45,10 @@ Como los equipos de Media Analytics y ADC están trabajando actualmente para rea
 | Nombre del reproductor de contenido | media.mediaTimed.primaryAssetViewDetails.playerName | mediaReporting.sessionDetails.playerName | Dimensión | Nombre del reproductor de contenido |                                                                       |
 | Canal de contenido | media.mediaTimed.primaryAssetViewDetails.broadcastChannel | mediaReporting.sessionDetails.channel | Dimensión | Canal de contenido |                                                                       |
 | Segmento de contenido | media.mediaTimed.primaryAssetViewDetails.videoSegment | mediaReporting.sessionDetails.segment | Dimensión | Segmento de contenido |                                                                       |
-| Nombre del contenido | media.mediaTimed.primaryAssetReference._dc.title | mediaReporting.sessionDetails.friendlyName | Dimensión | Nombre del contenido |                                                                       |
+| Nombre de contenido | media.mediaTimed.primaryAssetReference._dc.title | mediaReporting.sessionDetails.friendlyName | Dimensión | Nombre de contenido |                                                                       |
 | Ruta de vídeo | *No se usa en AEP/CJA* |                                                   |           |                   | Propiedad específica de Adobe Analytics |
 | Show | media.mediaTimed.primaryAssetReference._iptc4xmpExt.Series._iptc4xmpExt.Name | mediaReporting.sessionDetails.show | Dimensión | Show |                                                                       |
-| Temporada | media.mediaTimed.primaryAssetReference._iptc4xmpExt.Season._iptc4xmpExt.Name | mediaReporting.sessionDetails.season | Dimensión | Temporada |                                                                       |
+| Temporada | media.mediaTimed.primaryAssetReference._iptc4xmpExt.Season.iptc4xmpExt.Name | mediaReporting.sessionDetails.season | Dimensión | Temporada |                                                                       |
 | Episodio | media.mediaTimed.primaryAssetReference._iptc4xmpExt.Episode._iptc4xmpExt.Name | mediaReporting.sessionDetails.episode | Dimensión | Episodio |                                                                       |
 | Género | media.mediaTimed.primaryAssetReference._iptc4xmpExt.Genre | mediaReporting.sessionDetails.genreList | Dimensión | no admitido | Usar campo de mediaReporting |
 | Red | media.mediaTimed.primaryAssetViewDetails.broadcastNetwork | mediaReporting.sessionDetails.network | Dimensión | Red |                                                                       |
@@ -83,7 +95,7 @@ Como los equipos de Media Analytics y ADC están trabajando actualmente para rea
 
 {style="table-layout:auto"}
 
-## Parámetros de capítulo 
+## Parámetros de capítulo
 
 | Nombre de campo | Ruta del campo XDM actual (obsoleto) | Ruta del campo XDM de creación de informes | Tipo de datos | Campo derivado | Notas |
 |------------------|--------------------------------------------------------------|-------------------------------------------|-----------|----------------|-----------|
@@ -94,7 +106,7 @@ Como los equipos de Media Analytics y ADC están trabajando actualmente para rea
 
 {style="table-layout:auto"}
 
-## Parámetros de anuncio 
+## Parámetros de anuncio
 
 | Nombre de campo | Ruta del campo XDM actual (obsoleto) | Ruta del campo XDM de creación de informes | Tipo de datos | Campo derivado | Notas |
 |------------------|--------------------------------------------------------------|------------------------------------------------|-----------|----------------|-----------|
@@ -112,7 +124,7 @@ Como los equipos de Media Analytics y ADC están trabajando actualmente para rea
 
 {style="table-layout:auto"}
 
-## Parámetros de calidad 
+## Parámetros de calidad
 
 | Nombre de campo | Ruta del campo XDM actual (obsoleto) | Ruta del campo XDM de creación de informes | Tipo de datos | Campos derivados | Notas |
 |------------------------|--------------------------------------------------------------|------------------------------------------------|-----------|----------------|-----------|
@@ -189,8 +201,8 @@ Cuando trabaje con los conjuntos de datos de clasificación durante la creación
 | videoad | Nombre de publicidad | `<_sandbox>.ad_name` |
 | videoad | ID del creativo | `<_sandbox>.creative_id` |
 | videoadpod | ID de clave/pod de anuncios | `<_sandbox>.key` |
-| videoadpod | Posición del pod | `<_sandbox>.pod_position` |
-| videoadpod | Nombre de pod | `<_sandbox>.pod_name` |
+| videoadpod | Posición de secuencia | `<_sandbox>.pod_position` |
+| videoadpod | Nombre de secuencia | `<_sandbox>.pod_name` |
 | videochapter | Clave/Capítulo | `<_sandbox>.key` |
 | videochapter | Duración del capítulo | `<_sandbox>.chapter_length` |
 | videochapter | Desplazamiento de capítulo | `<_sandbox>.chapter_offset` |

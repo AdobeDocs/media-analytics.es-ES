@@ -5,10 +5,26 @@ uuid: ab5fab95-76ed-4ae6-aedb-2e66eece7607
 exl-id: d5f5a3f0-f1e0-4d68-af7f-88a30faed0db
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/W-wkhWebsd4z-eOWdqeyZgxrH4ztckDVyHejylpfkHI
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2:
+  - id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7a
+  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+subfeature_v2:
+  - id: bcc784b7-4ade-4c84-96fa-2f7631b1e5fd
+  - id: e7d92df1-c5ba-4e93-85df-f83171b889be
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '689'
-ht-degree: 93%
+source-wordcount: 713
+ht-degree: 95%
 
 ---
 
@@ -23,7 +39,7 @@ Esta documentación abarca el seguimiento en la versión 2.x del SDK.
 
    Identifique el momento en que el usuario desencadena la intención de reproducir (cuando hace clic en reproducir o la reproducción automática está activada) y cree una instancia de `MediaObject`.
 
-   [API de createMediaObject](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/com/adobe/primetime/va/simple/MediaHeartbeat.html#createMediaObject-java.lang.String-java.lang.String-java.lang.Double-java.lang.String-com.adobe.primetime.va.simple.MediaHeartbeat.MediaType-)
+   [API createMediaObject](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/com/adobe/primetime/va/simple/MediaHeartbeat.html#createMediaObject-java.lang.String-java.lang.String-java.lang.Double-java.lang.String-com.adobe.primetime.va.simple.MediaHeartbeat.MediaType-)
 
    | Nombre de variable | Descripción | Requerido |
    | --- | --- | :---: |
@@ -69,7 +85,6 @@ Esta documentación abarca el seguimiento en la versión 2.x del SDK.
      >No es obligatorio adjuntar el objeto de metadatos estándar al objeto de contenidos.
 
       * Referencia de API de claves de metadatos de medios: [Claves de metadatos estándar: Android](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/com/adobe/primetime/va/simple/MediaHeartbeat.VideoMetadataKeys.html)
-      * Consulte el conjunto completo de metadatos de vídeo disponibles aquí: [Parámetros de audio y vídeo](/help/implementation/variables/audio-video-parameters.md)
 
    * **Metadatos personalizados**
 

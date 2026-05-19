@@ -4,9 +4,23 @@ description: Obtenga información sobre cómo cargar datos de programación para
 feature: Streaming Media
 role: User, Admin, Developer
 exl-id: 875c4513-ea4e-4c5f-bfc1-34ea175007ca
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/C1GFDLJp-oTQHWlFiks5oSi2Q5Ok34QxJWfiPIJ3bC4
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2:
+  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '1381'
+source-wordcount: 1425
 ht-degree: 5%
 
 ---
@@ -303,9 +317,9 @@ El siguiente ejemplo es un archivo .json de programación con dos registros. Cad
 
    Considere los siguientes ejemplos de dimensiones que puede crear y luego informar en Customer Journey Analytics:
 
-   * **[&quot;_Nombre del episodio_&quot;](https://experienceleague.adobe.com/es/docs/media-analytics/using/implementation/variables/audio-video-parameters#episodio)**: Esta dimensión podría ayudarle a saber qué episodios de una serie en particular tienen el mejor rendimiento.
+   * **[&quot;_Nombre del episodio_&quot;](/help/reporting/dimensions/episode.md)**: Esta dimensión podría ayudarle a saber qué episodios de una serie en particular tienen el mejor rendimiento.
 
-   * **[ID de recurso](https://experienceleague.adobe.com/es/docs/media-analytics/using/implementation/variables/audio-video-parameters#id-del-recurso)**
+   * **[ID de recurso](/help/reporting/dimensions/asset-id.md)**
 
 1. Continuar con [Analizar datos en Customer Journey Analytics](#analyze-data-in-customer-journey-analytics).
 

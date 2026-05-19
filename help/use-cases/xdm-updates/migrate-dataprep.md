@@ -4,9 +4,23 @@ description: Obtenga información sobre cómo migrar el tipo de datos Preparaci�
 feature: Streaming Media
 role: User, Admin, Developer
 exl-id: 7294b147-2bef-463f-bada-cb67c16d01b0
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/57wAwVCwAUlRcMAbFW-X6T6Fe7Ap6leOaQw2Vx9r3OA
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2:
+  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '647'
+source-wordcount: 700
 ht-degree: 0%
 
 ---
@@ -35,7 +49,7 @@ Para migrar las asignaciones de preparación de datos del tipo de datos anterior
 
 1. Compruebe que las asignaciones siguen funcionando según lo esperado.
 
-Consulte el parámetro [Content ID](https://experienceleague.adobe.com/es/docs/media-analytics/using/implementation/variables/audio-video-parameters#id-de-contenido) en la página [Parámetros de audio y vídeo](https://experienceleague.adobe.com/es/docs/media-analytics/using/implementation/variables/audio-video-parameters) para asignar entre los campos antiguos y los campos nuevos. La ruta de campo antigua se encuentra en la propiedad &quot;Ruta de campo XDM&quot;, mientras que la nueva ruta de campo se encuentra en la propiedad &quot;Ruta de campo XDM de creación de informes&quot;.
+Consulte el parámetro [Content ID](/help/reporting/dimensions/content.md) y el resto de las variables de medios de streaming documentadas en [Servicios de medios de streaming](/help/media-overview.md) para asignar entre los campos antiguos y los campos nuevos. La ruta de campo antigua se encuentra en la propiedad &quot;Ruta de campo XDM&quot;, mientras que la nueva ruta de campo se encuentra en la propiedad &quot;Ruta de campo XDM de creación de informes&quot;.
 
 ## Ejemplo
 

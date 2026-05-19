@@ -5,10 +5,26 @@ uuid: 7b8e2f76-bc4e-4721-8933-3e4453b01788
 exl-id: 98ad2783-c9e3-48de-88df-8549f26114a0
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/cHrkCe0mQm8GlHwLVgf4cjF0VM8B1r3CRt39I2LB6kk
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2:
+  - id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7a
+  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+subfeature_v2:
+  - id: e7d92df1-c5ba-4e93-85df-f83171b889be
+  - id: e992d880-33bc-4949-a648-aa7d410276cd
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '875'
-ht-degree: 97%
+source-wordcount: 882
+ht-degree: 96%
 
 ---
 
@@ -53,7 +69,7 @@ El seguimiento de la reproducción principal incluye el seguimiento de la carga,
 
 ### Fin de arrastre de cabezal de reproducción
 
-* Llamar a `trackEvent(SeekComplete)`
+* La llamada `trackEvent(SeekComplete)`
 Cancelar cambios
 
 ### Inicio del almacenamiento en búfer
@@ -109,8 +125,6 @@ Cancelar cambios
 
      Cree una instancia de un objeto de metadatos estándar, rellene las variables deseadas y establezca el objeto de metadatos en el objeto de Media Heartbeat.
 
-     Consulte la lista completa de metadatos aquí: [Parámetros de audio y vídeo.](../../implementation/variables/audio-video-parameters.md)
-
    * **Metadatos personalizados**: cree un objeto de variable para las variables personalizadas y rellénelo con los datos de este contenido.
 
 1. **Seguimiento de la intención de inicio de reproducción**: para comenzar el seguimiento de una sesión, invoque `trackSessionStart` en la instancia de Media Heartbeat.
@@ -150,8 +164,8 @@ Cancelar cambios
 
 1. Escuche los eventos de llamada a otro punto de la reproducción del reproductor de contenidos. En la notificación del evento de inicio de la llamada a otro punto del contenido, utilice el evento `SeekStart` para realizar el seguimiento.
 1. En la notificación de finalización de llamada a otro punto del contenido del reproductor, realice un seguimiento del final de la llamada a otro punto del contenido utilizando el evento `SeekComplete`.
-1. Escuche los eventos de almacenamiento en búfer de reproducción procedentes del reproductor de contenidos y, cuando reciba la notificación del evento Inicio de almacenamiento en búfer, rastree el almacenamiento en búfer mediante el evento `BufferStart`.
-1. En la notificación de Finalización de almacenamiento en búfer procedente del reproductor de contenidos, rastree el final del almacenamiento en búfer con el evento `BufferComplete`.
+1. Escuche los eventos de almacenamiento en búfer de reproducción procedentes del reproductor de medios y, cuando reciba la notificación del evento Inicio de almacenamiento en búfer, rastree el almacenamiento en búfer mediante el evento `BufferStart`.
+1. En la notificación de Finalización de almacenamiento en búfer procedente del reproductor de medios, rastree el final del almacenamiento en búfer con el evento `BufferComplete`.
 
 Consulte ejemplos de cada paso en los siguientes temas específicos de la plataforma y observe los reproductores de muestra incluidos en los SDK.
 
@@ -239,3 +253,12 @@ if (e.type == "buffered") {
 ## Validación {#validate}
 
 Para obtener información sobre la validación de su implementación de *legado*, consulte [Validación de legado.](/help/legacy/validation/validation-overview.md)
+
+>[!MORELIKETHIS]
+>
+>* [Inicio de sesión](/help/implementation/events/session/session-start.md)
+>* [Reproducir](/help/implementation/events/playback/play.md)
+>* [Pausar inicio](/help/implementation/events/playback/pause-start.md)
+>* [Inicio del búfer](/help/implementation/events/playback/buffer-start.md)
+>* [Sesión completa](/help/implementation/events/session/session-complete.md)
+>* [Fin de sesión](/help/implementation/events/session/session-end.md)

@@ -5,10 +5,26 @@ uuid: 3d6e0ab1-899a-43c3-b632-8276e84345ab
 exl-id: d8af37a0-9048-4e6b-8cba-809386cbed5f
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/efxauhuL5aOcMQhSuayeodzUOtgfppMgZTAiwTiHsEE
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2:
+  - id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7a
+  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+subfeature_v2:
+  - id: bcc784b7-4ade-4c84-96fa-2f7631b1e5fd
+  - id: e7d92df1-c5ba-4e93-85df-f83171b889be
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '681'
-ht-degree: 100%
+source-wordcount: 693
+ht-degree: 99%
 
 ---
 
@@ -23,7 +39,7 @@ En las siguientes instrucciones se indican los pasos para la implementación en 
 
    Identifique el momento en que el usuario desencadena la intención de reproducir (cuando hace clic en reproducir o la reproducción automática está activada) y cree una instancia de `MediaObject`.
 
-   [API de createMediaObject](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/MediaHeartbeat.html#.createMediaObject)
+   [API createMediaObject](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/MediaHeartbeat.html#.createMediaObject)
 
    | Nombre de variable | Descripción | Requerido |
    | --- | --- | :---: |
@@ -73,8 +89,6 @@ En las siguientes instrucciones se indican los pasos para la implementación en 
      >No es obligatorio adjuntar el objeto de metadatos estándar al objeto de contenidos.
 
       * Referencia de API de claves de metadatos de contenidos: [Claves de metadatos estándar de JavaScript](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript)
-
-        Consulte el conjunto completo de metadatos disponibles aquí: [Parámetros de audio y vídeo](/help/implementation/variables/audio-video-parameters.md).
 
    * **Metadatos personalizados**
 

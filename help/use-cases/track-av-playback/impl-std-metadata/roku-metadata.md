@@ -5,9 +5,22 @@ uuid: 2ca6bb1d-c545-43d3-9c3e-63b890aa268d
 exl-id: 687dbaa5-4723-4b3f-ab1e-4d5bf447cddf
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/nWQiQkx66U5JL19U4yV8o4dvm0nLivpyKq29uNlIXTc
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2:
+  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '471'
+source-wordcount: 472
 ht-degree: 80%
 
 ---
@@ -76,7 +89,7 @@ Puede utilizar las siguientes constantes para hacer un seguimiento de eventos de
 | --- | --- |
 | `MEDIA_STANDARD_MEDIA_METADATA` | Constante para definir metadatos en `MediaInfo` `trackLoad` |
 | `MEDIA_STANDARD_AD_METADATA` | Constante para establecer los metadatos de la publicidad en `EventData` `trackEvent` |
-| `MEDIA_RESUMED` | Constante para enviar un latido de reanudación de vídeo. Para reanudar el seguimiento de vídeos de contenido pausado, es necesario establecer la propiedad `MEDIA_RESUMED` en el objeto `mediaInfo` cuando se invoca `mediaTrackLoad`. (`MEDIA_RESUMED` no es un evento que se pueda rastrear con la API `mediaTrackEvent`). `MEDIA_RESUMED` debe establecerse como verdadero cuando una aplicación desee seguir controlando contenido que un usuario haya dejado de ver pero que ahora desea reanudar la visualización. <br/><br/>Por ejemplo, supongamos que un usuario ve el 30 % del contenido y luego cierra la aplicación. Esto hará que finalice la sesión. Posteriormente, si el mismo usuario vuelve al contenido y la aplicación permite que lo reanude desde el mismo punto en el que lo dejó, la aplicación debería establecer `MEDIA_RESUMED` como “true” mientras invoca la API de `mediaTrackLoad`. El resultado es que estas dos sesiones de contenidos diferentes para el mismo contenido de vídeo se pueden vincular. A continuación se muestra el ejemplo de implementación: <br/><br/> `mediaInfo =` <br/>   `adb_media_init_mediainfo(` <br/>     `"test_media_name",` <br/>     `"test_media_id",`<br/>      `10,` <br/>     `"vod"` <br/> `)` <br/> `mediaInfo[ADBMobile().MEDIA_RESUMED] = true` <br/> `mediaContextData = {}` <br/>  `ADBMobile().mediaTrackLoad(mediaInfo, mediaContextData)` <br/><br/>Esto creará una nueva sesión para el vídeo, pero también hace que el SDK envíe una solicitud de latido con el tipo de evento “continuar”, que se puede utilizar en los informes para vincular dos sesiones de contenidos diferentes. |
+| `MEDIA_RESUMED` | Constante para enviar un latido de reanudación de vídeo. Para reanudar el seguimiento de vídeos de contenido pausado, es necesario establecer la propiedad `MEDIA_RESUMED` en el objeto `mediaInfo` cuando se invoca `mediaTrackLoad`. (`MEDIA_RESUMED` no es un evento que se pueda rastrear mediante la API `mediaTrackEvent`). `MEDIA_RESUMED` se debe establecer como verdadero cuando una aplicación desee seguir controlando contenido que un usuario haya pausado pero que ahora desea reanudar la visualización. <br/><br/>Por ejemplo, supongamos que un usuario ve el 30 % del contenido y luego cierra la aplicación. Esto hará que finalice la sesión. Posteriormente, si el mismo usuario vuelve al contenido y la aplicación permite que lo reanude desde el mismo punto en el que lo dejó, la aplicación debería establecer `MEDIA_RESUMED` como “true” mientras invoca la API de `mediaTrackLoad`. El resultado es que estas dos sesiones de contenidos diferentes para el mismo contenido de vídeo se pueden vincular. A continuación se muestra el ejemplo de implementación: <br/><br/> `mediaInfo =` <br/>   `adb_media_init_mediainfo(` <br/>     `"test_media_name",` <br/>     `"test_media_id",`<br/>      `10,` <br/>     `"vod"` <br/> `)` <br/> `mediaInfo[ADBMobile().MEDIA_RESUMED] = true` <br/> `mediaContextData = {}` <br/>  `ADBMobile().mediaTrackLoad(mediaInfo, mediaContextData)` <br/><br/>Esto creará una nueva sesión para el vídeo, pero también hace que el SDK envíe una solicitud de latido con el tipo de evento “continuar”, que se puede utilizar en los informes para vincular dos sesiones de contenidos diferentes. |
 
 ### Constantes de tipo de contenido
 

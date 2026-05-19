@@ -4,10 +4,28 @@ description: Obtenga información acerca de cómo migrar del SDK de medios a Lau
 exl-id: 19b506b2-3070-4a5e-9732-a5cd0867afde
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/N4Fcbg3R9tT9cjUcaw-kcUm6h-QT8TYwatdCe1IdsaM
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2:
+  - id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7a
+  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+subfeature_v2:
+  - id: bcc784b7-4ade-4c84-96fa-2f7631b1e5fd
+  - id: c069c44e-5426-4c1a-accc-8028662f2fde
+  - id: df312454-73c4-43f6-a90e-18f5043f074c
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '415'
-ht-degree: 97%
+source-wordcount: 466
+ht-degree: 77%
 
 ---
 
@@ -25,8 +43,8 @@ ht-degree: 97%
 
 ### SDK de medios independiente
 
-En el SDK de medios independiente se establece la configuración de seguimiento en la aplicación
-y se traslada al SDK cuando se crea el rastreador.
+En Media SDK independiente se establece la configuración de seguimiento en la aplicación
+y pasarlo al SDK cuando cree el rastreador.
 
 ```javascript
 //Media Heartbeat initialization
@@ -41,16 +59,17 @@ mediaConfig.debugLogging = true;
 ```
 
 Además de la configuración de `MediaHeartbeat`, la página debe configurar y pasar
-las instancias `AppMeasurement` y `VisitorAPI` del seguimiento de medios
-para que funcionen correctamente.
+la instancia `AppMeasurement` y la instancia `VisitorAPI` para el seguimiento de medios en orden
+para funcionar correctamente.
 
 ### Extensión de Launch
 
-1. En Experience Platform Launch, haga clic en la pestaña [!UICONTROL Extensiones]
-de su propiedad web.
-1. En la pestaña [!UICONTROL Catálogo], busque la extensión Adobe Media Analytics para audio y vídeo
-y haga clic en [!UICONTROL Instalar].
-1. En la página de configuración de la extensión, configure los parámetros de seguimiento. La extensión de medios utilizará los parámetros configurados para el seguimiento.
+1. En Experience Platform Launch, haga clic en la ficha [!UICONTROL Extensiones] para su
+propiedad web.
+1. En la ficha [!UICONTROL Catálogo], busque Adobe Media Analytics para audio y vídeo
+Extensión de vídeo y haga clic en [!UICONTROL Instalar].
+1. En la página de configuración de la extensión, configure los parámetros de seguimiento.
+La extensión de medios utilizará los parámetros configurados para el seguimiento.
 
    ![](assets/launch_config_js.png)
 
@@ -119,9 +138,9 @@ Pase un objeto delegado a `get-instance` que exponga las funciones `getQoSObject
 ### Media SDK
 
 * [Configuración de JavaScript 2.x](/help/legacy/media-sdk/setup/setup-javascript/set-up-js-2.md)
-* [API de JS del SDK de medios](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/MediaHeartbeat.html)
+* [API de JS de Media SDK](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/MediaHeartbeat.html)
 
 ### Launch
 
-* [Información general sobre Launch](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=es)
+* [Información general de Launch](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=es)
 * [Extensión de Media Analytics](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics/overview.html?lang=es)

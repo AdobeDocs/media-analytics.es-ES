@@ -4,10 +4,24 @@ description: Obtenga información acerca de cómo migrar del SDK de medios a Lau
 exl-id: 26764835-4781-417b-a6c0-ea6ae78d76ae
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/HawnzTGV1nsGCibAtXkl3cAB5NjO2VfUpQODm6-w-qk
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2:
+  - id: b3f03848-ae12-48b2-8aab-cad18567eb32
+  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '382'
-ht-degree: 97%
+source-wordcount: 428
+ht-degree: 48%
 
 ---
 
@@ -21,8 +35,8 @@ ht-degree: 97%
 
 ### SDK de medios independiente
 
-En el SDK de medios independiente se establece la configuración de seguimiento en la aplicación
-y se traslada al SDK cuando se crea el rastreador.
+En Media SDK independiente se establece la configuración de seguimiento en la aplicación y se traslada a
+el SDK al crear el rastreador.
 
 ```java
 MediaHeartbeatConfig config = new MediaHeartbeatConfig();
@@ -39,12 +53,12 @@ MediaHeartbeat tracker = new MediaHeartbeat(... , config);
 
 ### Extensión de Launch
 
-1. En Experience Platform Launch, haga clic en la pestaña [!UICONTROL Extensiones]
-de su propiedad móvil.
-1. En la pestaña [!UICONTROL Catálogo], busque la extensión Adobe Media Analytics para audio
-y
-vídeo y haga clic en [!UICONTROL Instalar].
-1. En la página de configuración de la extensión, configure los parámetros de seguimiento. La extensión de medios utilizará los parámetros configurados para el seguimiento.
+1. En Experience Platform Launch, haga clic en la ficha [!UICONTROL Extensiones] para su
+propiedad móvil.
+1. En la ficha [!UICONTROL Catálogo], busque Adobe Media Analytics para audio
+y la extensión de vídeo, y haga clic en [!UICONTROL Instalar].
+1. En la página de configuración de la extensión, configure los parámetros de seguimiento.
+La extensión de medios utilizará los parámetros configurados para el seguimiento.
 
 ![](assets/launch_config_mobile.png)
 
@@ -54,9 +68,10 @@ vídeo y haga clic en [!UICONTROL Instalar].
 
 ### SDK de medios independiente
 
-En el SDK de medios independiente, cree manualmente el objeto `MediaHeartbeatConfig`
-y configure los parámetros de seguimiento. Implemente la interfaz delegada que exponga `getQoSObject()` y `getCurrentPlaybackTime()functions.`
-Cree una instancia de `MediaHeartbeat` para realizar el seguimiento.
+En Media SDK independiente, cree manualmente el objeto `MediaHeartbeatConfig`
+y configure los parámetros de seguimiento. Implementar la interfaz delegada que expone
+`getQoSObject()` y `getCurrentPlaybackTime()functions.`
+Crear una instancia de `MediaHeartbeat` para el seguimiento.
 
 ```java
 MediaHeartbeatConfig config = new MediaHeartbeatConfig();
@@ -92,8 +107,8 @@ MediaHeartbeatDelegate delegate = new MediaHeartbeatDelegate() {
 
 [Referencia de API de medios: Crear un rastreador de medios](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/api-reference/#createtracker)
 
-Antes de crear el rastreador, debe registrar la extensión multimedia
-y las extensiones dependientes con el núcleo móvil.
+Antes de crear el rastreador, debe registrar la extensión de medios y
+extensiones dependientes con el núcleo móvil.
 
 ```java
 // Register the extension once during app launch
@@ -133,25 +148,24 @@ Media.createTracker(new AdobeCallback<MediaTracker>() {
 
 ### SDK de medios independiente
 
-En el SDK de medios independiente, se pasa un objeto delegado que implementa
-la interfaz de `MediaHeartbeartDelegate` durante la creación del rastreador.  La implementación
-debe devolver el último QoE y cabezal de reproducción cada vez que el rastreador invoque
-los métodos de interfaz
-`getQoSObject()` y `getCurrentPlaybackTime()`.
+En Media SDK independiente, se pasa un objeto delegado que implementa la variable
+`MediaHeartbeartDelegate` interfaz durante la creación del rastreador.  La implementación
+debe devolver el último QoE y cabezal de reproducción cada vez que el rastreador invoque el
+Métodos de interfaz `getQoSObject()` y `getCurrentPlaybackTime()`.
 
 ### Extensión de Launch
 
-La implementación debe actualizar el cabezal de reproducción actual invocando el método
-`updateCurrentPlayhead` expuesto por el rastreador. Para realizar un seguimiento preciso,
-debe invocar este método al menos una vez por segundo.
+La implementación debe actualizar el cabezal de reproducción actual llamando a la función
+El rastreador expuso el método `updateCurrentPlayhead`. Para un seguimiento preciso
+debe llamar a este método al menos una vez por segundo.
 
 [Referencia de API de medios: Actualizar el reproductor actual](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/api-reference/#updatecurrentplayhead)
 
-La implementación debe actualizar la información de QoE invocando el método `updateQoEObject`
-expuesto por el rastreador. Esperamos que se llame a este método
-siempre que se produzca un cambio en las métricas de calidad.
+La implementación debe actualizar la información de QoE llamando a la función `updateQoEObject`
+método expuesto por el rastreador. Esperamos que se llame a este método siempre que haya
+supone un cambio en las métricas de calidad.
 
-[Referencia de la API de medios: Actualizar objeto de QoE](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/api-reference/#createqoeobject)
+[Referencia de API de medios: Actualizar objeto de QoE](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/api-reference/#createqoeobject)
 
 ## Transmisión de metadatos estándar/metadatos publicitarios
 

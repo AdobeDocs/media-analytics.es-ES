@@ -5,16 +5,38 @@ uuid: fdc96146-af63-48ce-b938-c0ca70729277
 exl-id: 655841ed-3a02-4e33-bbc9-46fb14302194
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/ARM-6kkgoa8-xsbZ-Ut-pei0-ZuTX6LgFX5FoRRV0d4
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2:
+  - id: b069d60e-95f3-44d6-95a8-ddc862a4bc38
+  - id: b3f03848-ae12-48b2-8aab-cad18567eb32
+  - id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7a
+  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+subfeature_v2:
+  - id: bcc784b7-4ade-4c84-96fa-2f7631b1e5fd
+  - id: c8add8f2-4250-4fd9-9cde-9707036c567d
+  - id: e7d92df1-c5ba-4e93-85df-f83171b889be
+  - id: f1f1a2d4-0976-4881-b091-c2bb8de7ffac
+  - id: f836f655-eebe-4b76-82bc-697955ec1ce3
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '707'
+source-wordcount: 709
 ht-degree: 96%
 
 ---
 
 # Migración de Milestone a Media Analytics {#migrating-from-milestone-to-media-analytics}
 
-## Información general   {#overview}
+## Información general {#overview}
 
 Los conceptos principales de la medición de vídeo son los mismos para Milestone y Media Analytics, que lleva eventos de reproductor de vídeo y los asigna a métodos de análisis, al tiempo que toma metadatos y valores del reproductor y los asigna a variables de análisis. La solución de Media Analytics se desarrolló a partir de Milestone, por lo que muchos de los métodos y métricas son los mismos; sin embargo, el enfoque de configuración y el código han cambiado significativamente. Debería ser posible actualizar el código de evento del reproductor para que indique los nuevos métodos de Media Analytics. Consulte [Información general de SDK](/help/legacy/setup/legacy-setup-overview.md) e [Información general del seguimiento](/help/use-cases/track-av-playback/track-core-overview.md) para obtener más información sobre la implementación de Media Analytics.
 
@@ -74,7 +96,7 @@ En las tablas siguientes se proporcionan las correspondencias entre la solución
 | Media.open | `s.Media.open(` <br> `  mediaName,` <br> `  mediaLength,` <br> `  mediaPlayerName)` | trackSessionStart | `trackSessionStart(` <br> `  mediaObject,` <br> `  contextData)` |
 | mediaName | `mediaName`: (requerido) nombre del vídeo tal como desea que aparezca en informes de vídeo. | name | `createMediaObject(` <br> `  name,` <br> `  mediaId,` <br> `  length,` <br> `  streamType)` |
 | mediaLength | `mediaLength`: (requerido) duración del vídeo en segundos. | length | `createMediaObject(` <br> `  name,` <br> `  mediaId,` <br> `  length,` <br> `  streamType)` |
-| mediaPlayerName | `mediaPlayerName`: (requerido) nombre del reproductor multimedia que se utilizó para ver el vídeo, tal como desea que aparezca en informes de vídeo. | playerName | `MediaHeartbeatConfig.` <br> `  playerName` |
+| mediaPlayerName | `mediaPlayerName`: (Obligatorio) nombre del reproductor multimedia que se utilizó para ver el vídeo, tal como desea que aparezca en informes de vídeo. | playerName | `MediaHeartbeatConfig.` <br> `  playerName` |
 | Media.openAd | `s.Media.openAd(` <br> `  name,` <br> `  length,` <br> `  playerName,` <br> `  parentName,` <br> `  parentPod,` <br> `  parentPodPosition,` <br> `  CPM)` | trackEvent | `mediaHeartbeat.trackEvent(` <br> `  MediaHeartbeat.` <br> `    Event.` <br> `    AdBreakStart, ` <br> `  adBreakObject);` <br> `...` <br> `trackEvent(` <br> `  MediaHeartbeat.` <br> `    Event.` <br> `    AdStart, ` <br> `  adObject, ` <br> `  adCustomMetadata);` |
 | name | `name`: (requerido) nombre o ID del anuncio. | name | `createAdObject(` <br> `  name, ` <br> `  adId, ` <br> `  position, ` <br> `  length)` |
 | length | `length`: (requerido) duración del anuncio. | length | `createAdObject(` <br> `  name, ` <br> `  adId, ` <br> `  position, ` <br> `  length)` |

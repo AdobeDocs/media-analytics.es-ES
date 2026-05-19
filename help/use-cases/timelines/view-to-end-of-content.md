@@ -5,10 +5,22 @@ uuid: 0ff591d3-fa99-4123-9e09-c4e71ea1060b
 exl-id: 16b15e03-5581-471f-ab0c-077189dd32d6
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: 83c64e35a52921532697063d3fdf987e889b2854
+TQID: https://experienceleague.adobe.com/3jO1VR5n4Ft6t1F2y99PlrDoGhada-gV-5mM0o3YzkY
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2:
+  - id: b069d60e-95f3-44d6-95a8-ddc862a4bc38
+  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '1120'
-ht-degree: 99%
+source-wordcount: 1142
+ht-degree: 100%
 
 ---
 
@@ -178,8 +190,7 @@ Mande un ping al servidor cada segundo mientras se encuentra dentro de un anunci
 
 >[!NOTE]
 >
->Los anuncios posteriores de la cronología omitirán la visualización de la serie de pings de un segundo
->para que sean más breves...
+>Los anuncios posteriores de la cronología omitirán la visualización de la serie de pings de un segundo>para que sean más breves...
 
 ```json
 {
@@ -283,7 +294,7 @@ Rastrear el final del segundo anuncio previo a la emisión.
 | --- | :---: | :---: | --- |
 | Rastrear finalización de pausa del anuncio previo a la emisión | 22 | 0 | `/api/v1/sessions/{sid}/events` |
 
-La pausa publicitaria ha terminado.
+Terminó la pausa publicitaria.
 
 ```json
 {
