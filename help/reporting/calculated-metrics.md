@@ -3,13 +3,12 @@ title: Métricas calculadas
 description: Métricas calculadas personalizadas para la creación de informes de medios de streaming en Adobe Analytics y Customer Journey Analytics.
 feature: Metrics
 role: User, Admin
-source-git-commit: ea740a32bbd5e640cd437cd8c5c4f48071a0d02c
+source-git-commit: 1251b66173158b8fea92516197b3b9f444bfaaf7
 workflow-type: tm+mt
 source-wordcount: '267'
 ht-degree: 5%
 
 ---
-
 
 # Métricas calculadas
 
@@ -34,3 +33,4 @@ Para crear estas métricas calculadas en Analysis Workspace, consulta la descrip
 | Velocidad de duración del búfer de contenido | Relación de la duración total del búfer frente al tiempo invertido en contenido | [`Total Buffer Duration`](/help/reporting/metrics/total-buffer-duration.md) / [`Content Time Spent`](/help/reporting/metrics/content-time-spent.md) |
 | Tasa de tiempo de inicio del contenido | Relación de tiempo para el inicio frente a tiempo invertido en contenido | [`Time to Start`](/help/reporting/metrics/time-to-start.md) / [`Content Time Spent`](/help/reporting/metrics/content-time-spent.md) |
 | Tasa de tiempo invertido en publicidad | Relación de tiempo invertido en publicidad frente a tiempo invertido en contenido | [`Ad Time Spent`](/help/reporting/metrics/ad-time-spent.md) / [`Content Time Spent`](/help/reporting/metrics/content-time-spent.md) |
+
