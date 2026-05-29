@@ -22,7 +22,7 @@ El reproductor pasa los ID de error del reproductor-SDK al rastreador en [evento
 | Sistema de informes | Fuente |
 | --- | --- |
 | Adobe Analytics | Se recopila automáticamente a partir de los datos de contexto `a.media.qoe.playerSdkErrors` cuando [[!UICONTROL Calidad de los medios]](/help/reporting/media-reports-enable.md) está habilitado. |
-| Customer Journey Analytics | [`xdm.mediaReporting.qoeDataDetails.playerSdkErrors`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
+| Customer Journey Analytics | [`xdm.mediaReporting.qoeDataDetails.playerSdkErrors`](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
 | Fuentes de datos | `videoqoeplayersdkerrors`, `post_videoqoeplayersdkerrors` |
 | Audience Manager | `c_contextdata.a.media.qoe.playerSdkErrors` |
 

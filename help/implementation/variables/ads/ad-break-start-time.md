@@ -24,7 +24,7 @@ La variable de tiempo de inicio de la pausa publicitaria es el desplazamiento de
 | Propiedad | Valor |
 | --- | --- |
 | **Variable de datos de contexto** | `a.media.ad.podSecond` |
-| **Campo de colección XDM** | [`xdm.mediaCollection.advertisingPodDetails.offset`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-pod-details-collection) |
+| **Campo de colección XDM** | [`xdm.mediaCollection.advertisingPodDetails.offset`](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/advertising-pod-details-collection) |
 | **rasgo de Audience Manager** | `c_contextdata.a.media.ad.podSecond` |
 | **Requerido** | Sí |
 | **Enviado con** | [Inicio de la pausa publicitaria](/help/implementation/events/ads/ad-break-start.md), cierre del anuncio |

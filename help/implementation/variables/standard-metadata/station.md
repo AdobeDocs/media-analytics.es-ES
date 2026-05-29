@@ -24,7 +24,7 @@ La variable de emisora es el nombre o ID de la emisora de radio que emite el con
 | Propiedad | Valor |
 | --- | --- |
 | **Variable de datos de contexto** | `a.media.station` |
-| **Campo de colección XDM** | [`xdm.mediaCollection.sessionDetails.station`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **Campo de colección XDM** | [`xdm.mediaCollection.sessionDetails.station`](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **rasgo de Audience Manager** | `c_contextdata.a.media.station` |
 | **Requerido** | No |
 | **Enviado con** | [Inicio de sesión](/help/implementation/events/session/session-start.md), cierre de sesión |

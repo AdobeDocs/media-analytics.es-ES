@@ -28,7 +28,7 @@ El reproductor establece el tipo de emisión al principio de la sesión y la tra
 | Sistema de informes | Fuente |
 | --- | --- |
 | Adobe Analytics | Se recopila automáticamente a partir de los datos de contexto `a.media.streamType` cuando [[!UICONTROL Media Core]](/help/reporting/media-reports-enable.md) está habilitado. |
-| Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.streamType`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.streamType`](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/session-details-reporting) |
 | Fuentes de datos | `videostreamtype` |
 | Audience Manager | `c_contextdata.a.media.streamType` |
 
