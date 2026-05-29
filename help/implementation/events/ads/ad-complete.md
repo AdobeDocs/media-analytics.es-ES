@@ -3,10 +3,10 @@ title: Anuncio completado
 description: Indica que se ha terminado de reproducir un anuncio individual.
 feature: Streaming Media
 role: Developer
-source-git-commit: b75e50f626b85992575961ea267d0f74eda09f0a
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: '147'
-ht-degree: 15%
+source-wordcount: '164'
+ht-degree: 9%
 
 ---
 
@@ -16,13 +16,17 @@ ht-degree: 15%
 El evento de finalización de anuncio indica que se ha terminado de reproducir un anuncio individual. Enviarlo después de que el anuncio se reproduzca hasta su finalización. Si el visor omite el anuncio, envía [Omisión de anuncio](ad-skip.md) en su lugar.
 
 * **Requisitos previos**: [Inicio de sesión](../session/session-start.md), [Inicio de pausa publicitaria](ad-break-start.md), [Inicio de publicidad](ad-start.md)
-* **Métrica asociada**: [El anuncio finaliza](/help/reporting/metrics/ad-completes.md)
+* **Métrica asociada**: [[!UICONTROL El anuncio finaliza]](/help/reporting/metrics/ad-completes.md)
 
 >[!IMPORTANT]
 >
 >Este evento debe estar comprendido entre `adBreakStart` y `adBreakComplete` bookends, incluso cuando se reproduce un solo anuncio. Sin estos bookends, los eventos de anuncio se ignoran y la duración del anuncio se cuenta como la duración del contenido principal.
 
-## SDK web
+## Tipos de implementación recomendados
+
+>[!BEGINTABS]
+
+>[!TAB SDK web ]
 
 Llamar a [`sendEvent`](https://experienceleague.adobe.com/es/docs/experience-platform/collection/js/commands/sendevent/overview) con `eventType: "media.adComplete"`:
 
@@ -38,23 +42,23 @@ alloy("sendEvent", {
 });
 ```
 
-## SDK móvil
+>[!TAB iOS]
 
 Llamar a `trackEvent` con el tipo de evento `AdComplete`.
-
-**iOS (Swift)**
 
 ```swift
 tracker.trackEvent(event: MediaEvent.AdComplete, info: nil, metadata: nil)
 ```
 
-**Android (Kotlin)**
+>[!TAB Android]
+
+Llamar a `trackEvent` con el tipo de evento `AdComplete`.
 
 ```kotlin
 tracker.trackEvent(Media.Event.AdComplete, null, null)
 ```
 
-## Roku (BrightScript)
+>[!TAB Roku]
 
 Llamar a `sendMediaEvent` con `eventType: "media.adComplete"`:
 
@@ -69,7 +73,7 @@ m.aepSdk.sendMediaEvent({
 })
 ```
 
-## API de Media Edge
+>[!TAB API de Media Edge]
 
 Llame al extremo [adComplete](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/ads/#adcomplete):
 
@@ -90,7 +94,13 @@ curl -X POST "https://edge.adobedc.net/ee/va/v1/adComplete?configId={datastreamI
 }'
 ```
 
-## Media SDK
+>[!ENDTABS]
+
+## Tipos de implementación heredados (solo Analytics)
+
+>[!BEGINTABS]
+
+>[!TAB Media SDK JS 3.x]
 
 Llamar a `trackEvent` con el tipo de evento `AdComplete`:
 
@@ -98,7 +108,15 @@ Llamar a `trackEvent` con el tipo de evento `AdComplete`:
 tracker.trackEvent(ADB.Media.Event.AdComplete, null, null);
 ```
 
-## API de Media Collection
+>[!TAB Chromecast]
+
+Llamar a `trackEvent` con el tipo de evento `AdComplete`:
+
+```javascript
+ADBMobile.media.trackEvent(ADBMobile.media.Event.AdComplete);
+```
+
+>[!TAB API de recopilación de medios]
 
 Enviar un POST de `adComplete` al [extremo de eventos](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md):
 
@@ -108,3 +126,5 @@ Enviar un POST de `adComplete` al [extremo de eventos](/help/implementation/medi
   "eventType": "adComplete"
 }
 ```
+
+>[!ENDTABS]

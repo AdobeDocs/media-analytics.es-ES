@@ -3,10 +3,10 @@ title: Nombre del anuncio
 description: Establezca un nombre descriptivo para el anuncio.
 feature: Streaming Media
 role: Developer
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: '178'
-ht-degree: 14%
+source-wordcount: '210'
+ht-degree: 8%
 
 ---
 
@@ -24,14 +24,18 @@ La variable del nombre del anuncio es el título del anuncio en lenguaje natural
 | Propiedad | Valor |
 | --- | --- |
 | **Variable de datos de contexto** | `a.media.ad.friendlyName` |
-| **Campo de colección XDM** | [`mediaCollection.advertisingDetails.friendlyName`](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/advertising-details-collection) |
+| **Campo de colección XDM** | [`xdm.mediaCollection.advertisingDetails.friendlyName`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-collection) |
 | **rasgo de Audience Manager** | `c_contextdata.a.media.ad.friendlyName` |
 | **Requerido** | No |
 | **Enviado con** | [Inicio del anuncio](/help/implementation/events/ads/ad-start.md), cierre del anuncio |
 
-## SDK web
+## Tipos de implementación recomendados
 
-Establecer `friendlyName` dentro de `mediaCollection.advertisingDetails` al llamar a [`sendEvent`](https://experienceleague.adobe.com/es/docs/experience-platform/collection/js/commands/sendevent/overview):
+>[!BEGINTABS]
+
+>[!TAB SDK web ]
+
+Establecer `friendlyName` dentro de `xdm.mediaCollection.advertisingDetails` al llamar a [`sendEvent`](https://experienceleague.adobe.com/es/docs/experience-platform/collection/js/commands/sendevent/overview):
 
 ```javascript
 alloy("sendEvent", {
@@ -49,11 +53,9 @@ alloy("sendEvent", {
 });
 ```
 
-## SDK móvil
+>[!TAB iOS]
 
 Pase el nombre del anuncio como el primer argumento (`name`) a `createAdObject`. El segundo argumento es el ID de anuncio.
-
-**iOS (Swift)**
 
 ```swift
 let adObject = Media.createAdObjectWith(name: "Ford F-150",
@@ -64,7 +66,9 @@ let adObject = Media.createAdObjectWith(name: "Ford F-150",
 tracker.trackEvent(event: MediaEvent.AdStart, info: adObject, metadata: nil)
 ```
 
-**Android (Kotlin)**
+>[!TAB Android]
+
+Pase el nombre del anuncio como el primer argumento (`name`) a `createAdObject`. El segundo argumento es el ID de anuncio.
 
 ```kotlin
 val adObject = Media.createAdObject("Ford F-150",
@@ -75,9 +79,9 @@ val adObject = Media.createAdObject("Ford F-150",
 tracker.trackEvent(Media.Event.AdStart, adObject, null)
 ```
 
-## Roku (BrightScript)
+>[!TAB Roku]
 
-Establecer `friendlyName` dentro de `mediaCollection.advertisingDetails` al llamar a `sendMediaEvent` para `media.adStart`:
+Establecer `friendlyName` dentro de `xdm.mediaCollection.advertisingDetails` al llamar a `sendMediaEvent` para `media.adStart`:
 
 ```brightscript
 m.aepSdk.sendMediaEvent({
@@ -97,9 +101,9 @@ m.aepSdk.sendMediaEvent({
 })
 ```
 
-## API de Media Edge
+>[!TAB API de Media Edge]
 
-Llame al extremo [adStart](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/ads/#adstart) con `friendlyName` dentro de `mediaCollection.advertisingDetails`:
+Llame al extremo [adStart](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/ads/#adstart) con `friendlyName` dentro de `xdm.mediaCollection.advertisingDetails`:
 
 ```json
 {
@@ -122,7 +126,13 @@ Llame al extremo [adStart](https://developer.adobe.com/data-collection-apis/docs
 }
 ```
 
-## Media SDK
+>[!ENDTABS]
+
+## Tipos de implementación heredados (solo Analytics)
+
+>[!BEGINTABS]
+
+>[!TAB Media SDK JS 3.x]
 
 Pase el nombre del anuncio como primer argumento a `ADB.Media.createAdObject`:
 
@@ -137,7 +147,21 @@ var adInfo = ADB.Media.createAdObject(
 tracker.trackEvent(ADB.Media.Event.AdStart, adInfo, contextData);
 ```
 
-## API de Media Collection
+>[!TAB Chromecast]
+
+Pase el nombre del anuncio como primer argumento a `ADBMobile.media.createAdObject`:
+
+```javascript
+var adInfo = ADBMobile.media.createAdObject(
+  "Ford F-150",
+  "ad-2125",
+  1,
+  30
+);
+ADBMobile.media.trackEvent(ADBMobile.media.Event.AdStart, adInfo, null);
+```
+
+>[!TAB API de recopilación de medios]
 
 Incluir `media.ad.name` en el objeto `params` de su solicitud POST de `adStart`:
 
@@ -152,3 +176,5 @@ Incluir `media.ad.name` en el objeto `params` de su solicitud POST de `adStart`:
 ```
 
 Consulte la [referencia de eventos de API de Media Collection](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md) para obtener la estructura de solicitudes completa.
+
+>[!ENDTABS]

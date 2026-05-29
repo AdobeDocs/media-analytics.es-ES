@@ -3,10 +3,10 @@ title: Inicio de pausa publicitaria
 description: Indicar el comienzo de una pausa publicitaria (una secuencia de uno o más anuncios).
 feature: Streaming Media
 role: Developer
-source-git-commit: b75e50f626b85992575961ea267d0f74eda09f0a
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: '172'
-ht-degree: 13%
+source-wordcount: '201'
+ht-degree: 7%
 
 ---
 
@@ -22,7 +22,11 @@ El evento de inicio de pausa publicitaria indica el comienzo de una pausa public
 >
 >Los eventos de anuncio (`adStart`, `adComplete`, `adSkip`) se omiten sin los bookends `adBreakStart` y `adBreakComplete`. Sin ellos, la duración del anuncio se atribuye a la duración del contenido principal, que afecta a los datos de informes agregados.
 
-## SDK web
+## Tipos de implementación recomendados
+
+>[!BEGINTABS]
+
+>[!TAB SDK web ]
 
 Llamar a [`sendEvent`](https://experienceleague.adobe.com/es/docs/experience-platform/collection/js/commands/sendevent/overview) con `eventType: "media.adBreakStart"` y el `advertisingPodDetails` requerido:
 
@@ -43,11 +47,9 @@ alloy("sendEvent", {
 });
 ```
 
-## SDK móvil
+>[!TAB iOS]
 
 Pase el nombre, la posición y la hora de inicio de la pausa publicitaria a `createAdBreakObject` y luego llame a `trackEvent`.
-
-**iOS (Swift)**
 
 ```swift
 let adBreakObject = Media.createAdBreakObjectWith(name: "pre-roll",
@@ -57,7 +59,9 @@ let adBreakObject = Media.createAdBreakObjectWith(name: "pre-roll",
 tracker.trackEvent(event: MediaEvent.AdBreakStart, info: adBreakObject, metadata: nil)
 ```
 
-**Android (Kotlin)**
+>[!TAB Android]
+
+Pase el nombre, la posición y la hora de inicio de la pausa publicitaria a `createAdBreakObject` y luego llame a `trackEvent`.
 
 ```kotlin
 val adBreakObject = Media.createAdBreakObject("pre-roll",
@@ -67,7 +71,7 @@ val adBreakObject = Media.createAdBreakObject("pre-roll",
 tracker.trackEvent(Media.Event.AdBreakStart, adBreakObject, null)
 ```
 
-## Roku (BrightScript)
+>[!TAB Roku]
 
 Llamar a `sendMediaEvent` con `eventType: "media.adBreakStart"` y el `advertisingPodDetails` requerido:
 
@@ -87,7 +91,7 @@ m.aepSdk.sendMediaEvent({
 })
 ```
 
-## API de Media Edge
+>[!TAB API de Media Edge]
 
 Llame al extremo [adBreakStart](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/ads/#adbreakstart) con el elemento `advertisingPodDetails` requerido:
 
@@ -112,7 +116,13 @@ curl -X POST "https://edge.adobedc.net/ee/va/v1/adBreakStart?configId={datastrea
 }'
 ```
 
-## Media SDK
+>[!ENDTABS]
+
+## Tipos de implementación heredados (solo Analytics)
+
+>[!BEGINTABS]
+
+>[!TAB Media SDK JS 3.x]
 
 Pasar el nombre, la posición y la hora de inicio de la pausa publicitaria a `ADB.Media.createAdBreakObject`:
 
@@ -126,7 +136,21 @@ var adBreakInfo = ADB.Media.createAdBreakObject(
 tracker.trackEvent(ADB.Media.Event.AdBreakStart, adBreakInfo, null);
 ```
 
-## API de Media Collection
+>[!TAB Chromecast]
+
+Pasar el nombre, la posición y la hora de inicio de la pausa publicitaria a `ADBMobile.media.createAdBreakObject`:
+
+```javascript
+var adBreakInfo = ADBMobile.media.createAdBreakObject(
+  "pre-roll",  // name
+  1,           // position
+  0            // start time (seconds)
+);
+
+ADBMobile.media.trackEvent(ADBMobile.media.Event.AdBreakStart, adBreakInfo);
+```
+
+>[!TAB API de recopilación de medios]
 
 Enviar un POST de `adBreakStart` al [extremo de eventos](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md):
 
@@ -141,3 +165,5 @@ Enviar un POST de `adBreakStart` al [extremo de eventos](/help/implementation/me
   }
 }
 ```
+
+>[!ENDTABS]

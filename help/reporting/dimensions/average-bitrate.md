@@ -3,7 +3,7 @@ title: Velocidad de bits media (dimensión)
 description: Informa de la velocidad de bits media agrupada de cada sesión en intervalos de 100 kbps.
 feature: Dimensions
 role: User, Admin
-source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
 source-wordcount: '168'
 ht-degree: 7%
@@ -26,7 +26,7 @@ La dimensión **Velocidad de bits promedio** indica la velocidad de bits de repr
 | Sistema de informes | Fuente |
 | --- | --- |
 | Adobe Analytics | Se recopila automáticamente a partir de los datos de contexto `a.media.qoe.bitrateAverageBucket` cuando [[!UICONTROL Calidad de los medios]](/help/reporting/media-reports-enable.md) está habilitado. |
-| Customer Journey Analytics | [`mediaReporting.qoeDataDetails.bitrateAverageBucket`](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
+| Customer Journey Analytics | [`xdm.mediaReporting.qoeDataDetails.bitrateAverageBucket`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
 | Fuentes de datos | `videoqoebitrateaverageevar`, `post_videoqoebitrateaverageevar` |
 | Audience Manager | `c_contextdata.a.media.qoe.bitrateAverageBucket` |
 

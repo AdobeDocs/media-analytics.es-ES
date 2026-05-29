@@ -3,10 +3,10 @@ title: Tiempo para el inicio
 description: Establezca el tiempo de inicio del reproductor, en milisegundos, para que el backend pueda informar del tiempo hasta el primer fotograma de calidad.
 feature: Streaming Media
 role: Developer
-source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: '265'
-ht-degree: 9%
+source-wordcount: '294'
+ht-degree: 6%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 9%
 
 >[!BEGINSHADEBOX]
 
-*Esta página cubre la recopilación de datos para la variable **Tiempo para el inicio**. Ver [Tiempo para el inicio](/help/reporting/dimensions/time-to-start.md) para la dimensión y métrica de informes correspondiente.*
+*Esta página cubre la recopilación de datos para la variable **Tiempo para el inicio**. Ver [[!UICONTROL Tiempo para el inicio]](/help/reporting/dimensions/time-to-start.md) para la dimensión y métrica de informes correspondiente.*
 
 >[!ENDSHADEBOX]
 
@@ -23,19 +23,23 @@ La variable tiempo para el inicio es el tiempo, en milisegundos, transcurrido en
 
 >[!IMPORTANT]
 >
->Una vez que el reproductor comience a procesar fotogramas de contenido, deje de actualizar `timeToStart`. El valor puede aumentar durante la fase inicial de almacenamiento en búfer o de carga, pero debe tratarse como fijo desde el momento en que comienza la reproducción. Si continúa actualizándolo después de que el primer fotograma se procese, se producirá una métrica [Tiempo para el inicio](/help/reporting/metrics/time-to-start.md) inflada o incorrecta.
+>Una vez que el reproductor comience a procesar fotogramas de contenido, deje de actualizar `timeToStart`. El valor puede aumentar durante la fase inicial de almacenamiento en búfer o de carga, pero debe tratarse como fijo desde el momento en que comienza la reproducción. Si continúa actualizándolo después de que el primer fotograma se procese, se producirá una métrica [[!UICONTROL Tiempo para el inicio]](/help/reporting/metrics/time-to-start.md) inflada o incorrecta.
 
 | Propiedad | Valor |
 | --- | --- |
 | **Variable de datos de contexto** | `a.media.qoe.timeToStart` |
-| **Campo de colección XDM** | [`mediaCollection.qoeDataDetails.timeToStart`](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/qoe-data-details-collection) |
+| **Campo de colección XDM** | [`xdm.mediaCollection.qoeDataDetails.timeToStart`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-collection) |
 | **rasgo de Audience Manager** | `c_contextdata.a.media.qoe.timeToStart` |
 | **Requerido** | No |
 | **Enviado con** | [Inicio de sesión](/help/implementation/events/session/session-start.md), cierre de sesión |
 
-## SDK web
+## Tipos de implementación recomendados
 
-Establecer `timeToStart` dentro de `mediaCollection.qoeDataDetails` en `media.sessionStart` al llamar a [`sendEvent`](https://experienceleague.adobe.com/es/docs/experience-platform/collection/js/commands/sendevent/overview):
+>[!BEGINTABS]
+
+>[!TAB SDK web ]
+
+Establecer `timeToStart` dentro de `xdm.mediaCollection.qoeDataDetails` en `media.sessionStart` al llamar a [`sendEvent`](https://experienceleague.adobe.com/es/docs/experience-platform/collection/js/commands/sendevent/overview):
 
 ```javascript
 alloy("sendEvent", {
@@ -59,11 +63,9 @@ alloy("sendEvent", {
 });
 ```
 
-## SDK móvil
+>[!TAB iOS]
 
 Pasar el tiempo de inicio como segundo argumento (`startupTime`) a `createQoEObject`.
-
-**iOS (Swift)**
 
 ```swift
 let qoeObject = Media.createQoEObjectWith(bitrate: 3200,
@@ -74,7 +76,9 @@ let qoeObject = Media.createQoEObjectWith(bitrate: 3200,
 tracker.updateQoEObject(qoe: qoeObject)
 ```
 
-**Android (Kotlin)**
+>[!TAB Android]
+
+Pasar el tiempo de inicio como segundo argumento (`startupTime`) a `createQoEObject`.
 
 ```kotlin
 val qoeObject = Media.createQoEObject(3200L,
@@ -85,9 +89,9 @@ val qoeObject = Media.createQoEObject(3200L,
 tracker.updateQoEObject(qoeObject)
 ```
 
-## Roku (BrightScript)
+>[!TAB Roku]
 
-Establecer `timeToStart` dentro de `mediaCollection.qoeDataDetails` en `media.sessionStart` al llamar a `createMediaSession`:
+Establecer `timeToStart` dentro de `xdm.mediaCollection.qoeDataDetails` en `media.sessionStart` al llamar a `createMediaSession`:
 
 ```brightscript
 m.aepSdk.createMediaSession({
@@ -111,9 +115,9 @@ m.aepSdk.createMediaSession({
 })
 ```
 
-## API de Media Edge
+>[!TAB API de Media Edge]
 
-Llame al extremo [sessionStart](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/sessions/#sessionstart) con `timeToStart` dentro de `mediaCollection.qoeDataDetails`:
+Llame al extremo [sessionStart](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/sessions/#sessionstart) con `timeToStart` dentro de `xdm.mediaCollection.qoeDataDetails`:
 
 ```json
 {
@@ -138,7 +142,13 @@ Llame al extremo [sessionStart](https://developer.adobe.com/data-collection-apis
 }
 ```
 
-## Media SDK
+>[!ENDTABS]
+
+## Tipos de implementación heredados (solo Analytics)
+
+>[!BEGINTABS]
+
+>[!TAB Media SDK JS 3.x]
 
 Pase el tiempo para comenzar como el segundo argumento a `ADB.Media.createQoEObject`:
 
@@ -147,7 +157,21 @@ var qoeObject = ADB.Media.createQoEObject(3200, 30000, 24, 0);
 tracker.updateQoEObject(qoeObject);
 ```
 
-## API de Media Collection
+>[!TAB Chromecast]
+
+Pase el tiempo de inicio en milisegundos como segundo argumento (`startupTime`) a `ADBMobile.media.createQoSObject` y actualice el rastreador:
+
+```javascript
+var qosInfo = ADBMobile.media.createQoSObject(
+  3200,   // bitrate
+  0,      // startupTime (ms)
+  24,     // fps
+  0       // droppedFrames
+);
+ADBMobile.media.updateQoSObject(qosInfo);
+```
+
+>[!TAB API de recopilación de medios]
 
 Incluir `media.qoe.timeToStart` en el objeto `params` en `sessionStart`:
 
@@ -162,3 +186,5 @@ Incluir `media.qoe.timeToStart` en el objeto `params` en `sessionStart`:
 ```
 
 Consulte la [referencia de sesiones de la API de Media Collection](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md) para obtener la estructura de solicitudes completa.
+
+>[!ENDTABS]

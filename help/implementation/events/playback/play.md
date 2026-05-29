@@ -3,10 +3,10 @@ title: Play
 description: Indica que el reproductor multimedia ha entrado en el estado de reproducción.
 feature: Streaming Media
 role: Developer
-source-git-commit: b75e50f626b85992575961ea267d0f74eda09f0a
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: '140'
-ht-degree: 17%
+source-wordcount: '165'
+ht-degree: 10%
 
 ---
 
@@ -16,9 +16,13 @@ ht-degree: 17%
 El evento de reproducción indica que el reproductor de contenido ha cambiado de estado a reproducción. Enviarlo al inicio del contenido, en la reproducción automática y siempre que el reproductor se reanude tras una pausa o almacenamiento en búfer. No hay un evento de reanudación independiente; un evento de reproducción después de [Pausar inicio](pause-start.md) o [Inicio del búfer](buffer-start.md) sirve como reanudación.
 
 * **Requisitos previos**: [Inicio de sesión](../session/session-start.md)
-* **Métrica asociada**: [El contenido comienza](/help/reporting/metrics/content-starts.md)
+* **Métrica asociada**: [[!UICONTROL El contenido comienza]](/help/reporting/metrics/content-starts.md)
 
-## SDK web
+## Tipos de implementación recomendados
+
+>[!BEGINTABS]
+
+>[!TAB SDK web ]
 
 Llamar a [`sendEvent`](https://experienceleague.adobe.com/es/docs/experience-platform/collection/js/commands/sendevent/overview) con `eventType: "media.play"`:
 
@@ -34,23 +38,23 @@ alloy("sendEvent", {
 });
 ```
 
-## SDK móvil
+>[!TAB iOS]
 
 Invoque `trackPlay` cuando el reproductor de contenido comience o reanude la reproducción.
-
-**iOS (Swift)**
 
 ```swift
 tracker.trackPlay()
 ```
 
-**Android (Kotlin)**
+>[!TAB Android]
+
+Invoque `trackPlay` cuando el reproductor de contenido comience o reanude la reproducción.
 
 ```kotlin
 tracker.trackPlay()
 ```
 
-## Roku (BrightScript)
+>[!TAB Roku]
 
 Llamar a `sendMediaEvent` con `eventType: "media.play"`:
 
@@ -65,7 +69,7 @@ m.aepSdk.sendMediaEvent({
 })
 ```
 
-## API de Media Edge
+>[!TAB API de Media Edge]
 
 Llamar al extremo [play](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/play/):
 
@@ -86,7 +90,13 @@ curl -X POST "https://edge.adobedc.net/ee/va/v1/play?configId={datastreamID}" \
 }'
 ```
 
-## Media SDK
+>[!ENDTABS]
+
+## Tipos de implementación heredados (solo Analytics)
+
+>[!BEGINTABS]
+
+>[!TAB Media SDK JS 3.x]
 
 Invoque `trackPlay` cuando el reproductor de contenido comience o reanude la reproducción:
 
@@ -94,7 +104,15 @@ Invoque `trackPlay` cuando el reproductor de contenido comience o reanude la rep
 tracker.trackPlay();
 ```
 
-## API de Media Collection
+>[!TAB Chromecast]
+
+Invoque `trackPlay` cuando el reproductor de contenido comience o reanude la reproducción:
+
+```javascript
+ADBMobile.media.trackPlay();
+```
+
+>[!TAB API de recopilación de medios]
 
 Enviar un POST de `play` al [extremo de eventos](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md):
 
@@ -104,3 +122,5 @@ Enviar un POST de `play` al [extremo de eventos](/help/implementation/media-coll
   "eventType": "play"
 }
 ```
+
+>[!ENDTABS]

@@ -3,7 +3,7 @@ title: Errores
 description: Informa del recuento de eventos de error por sesión.
 feature: Dimensions
 role: User, Admin
-source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
 source-wordcount: '233'
 ht-degree: 6%
@@ -15,7 +15,7 @@ ht-degree: 6%
 
 >[!BEGINSHADEBOX]
 
-*Esta página cubre la dimensión **Errores**. Adobe Analytics rellena automáticamente una métrica emparejada de [eventos de error](/help/reporting/metrics/error-events.md) desde la misma variable de datos de contexto `a.media.qoe.errorCount`. Customer Journey Analytics expone un único campo `mediaReporting.qoeDataDetails.errorCount` que puede usar como dimensión o como métrica.*
+*Esta página cubre la dimensión **Errores**. Adobe Analytics rellena automáticamente una métrica emparejada de [eventos de error](/help/reporting/metrics/error-events.md) desde la misma variable de datos de contexto `a.media.qoe.errorCount`. Customer Journey Analytics expone un único campo `xdm.mediaReporting.qoeDataDetails.errorCount` que puede usar como dimensión o como métrica.*
 
 >[!ENDSHADEBOX]
 
@@ -28,7 +28,7 @@ El backend de medios aumenta el recuento de cada error notificado por el reprodu
 | Sistema de informes | Fuente |
 | --- | --- |
 | Adobe Analytics | Se recopila automáticamente a partir de los datos de contexto `a.media.qoe.errorCount` cuando [[!UICONTROL Calidad de los medios]](/help/reporting/media-reports-enable.md) está habilitado. |
-| Customer Journey Analytics | [`mediaReporting.qoeDataDetails.errorCount`](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
+| Customer Journey Analytics | [`xdm.mediaReporting.qoeDataDetails.errorCount`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
 | Fuentes de datos | `videoqoeerrorcountevar`, `post_videoqoeerrorcountevar` |
 | Audience Manager | `c_contextdata.a.media.qoe.errorCount` |
 

@@ -3,7 +3,7 @@ title: MVPD
 description: Informa del proveedor de cable, satélite o virtual a través del cual se autenticó el usuario.
 feature: Dimensions
 role: User, Admin
-source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
 source-wordcount: '148'
 ht-degree: 9%
@@ -28,7 +28,7 @@ El reproductor establece MVPD al principio de la sesión cuando el contenido se 
 | Sistema de informes | Fuente |
 | --- | --- |
 | Adobe Analytics | Se recopila automáticamente a partir de los datos de contexto `a.media.pass.mvpd` cuando [[!UICONTROL Metadatos de vídeo]](/help/reporting/media-reports-enable.md) está habilitado. |
-| Customer Journey Analytics | [`mediaReporting.sessionDetails.mvpd`](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.mvpd`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
 | Fuentes de datos | `videomvpd`, `post_videomvpd` |
 | Audience Manager | `c_contextdata.a.media.pass.mvpd` |
 

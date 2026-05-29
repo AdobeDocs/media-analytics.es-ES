@@ -3,7 +3,7 @@ title: Anunciante
 description: Informa de la empresa o marca que aparece en cada anuncio.
 feature: Dimensions
 role: User, Admin
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
 source-wordcount: '115'
 ht-degree: 12%
@@ -28,7 +28,7 @@ El reproductor establece el anunciante en cada [evento de inicio de publicidad](
 | Sistema de informes | Fuente |
 | --- | --- |
 | Adobe Analytics | Se recopila automáticamente a partir de los datos de contexto `a.media.ad.advertiser` cuando [[!UICONTROL Media Ads]](/help/reporting/media-reports-enable.md) está habilitado. |
-| Customer Journey Analytics | [`mediaReporting.advertisingDetails.advertiser`](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/advertising-details-reporting) |
+| Customer Journey Analytics | [`xdm.mediaReporting.advertisingDetails.advertiser`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-reporting) |
 | Fuentes de datos | `videoadvertiser`, `post_videoadvertiser` |
 | Audience Manager | `c_contextdata.a.media.ad.advertiser` |
 

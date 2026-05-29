@@ -3,10 +3,10 @@ title: Nombre del reproductor de contenido
 description: Configure el nombre del reproductor para identificar qué reproductor procesó el contenido.
 feature: Streaming Media
 role: Developer
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: '223'
-ht-degree: 11%
+source-wordcount: '264'
+ht-degree: 6%
 
 ---
 
@@ -24,14 +24,18 @@ La variable de nombre del reproductor de contenido identifica qué reproductor p
 | Propiedad | Valor |
 | --- | --- |
 | **Variable de datos de contexto** | `a.media.playerName` |
-| **Campo de colección XDM** | [`mediaCollection.sessionDetails.playerName`](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **Campo de colección XDM** | [`xdm.mediaCollection.sessionDetails.playerName`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **rasgo de Audience Manager** | `c_contextdata.a.media.playerName` |
 | **Requerido** | Sí |
 | **Enviado con** | [Inicio de sesión](/help/implementation/events/session/session-start.md), cierre de sesión |
 
-## SDK web
+## Tipos de implementación recomendados
 
-Establecer `playerName` dentro de `mediaCollection.sessionDetails` al llamar a [`sendEvent`](https://experienceleague.adobe.com/es/docs/experience-platform/collection/js/commands/sendevent/overview):
+>[!BEGINTABS]
+
+>[!TAB SDK web ]
+
+Establecer `playerName` dentro de `xdm.mediaCollection.sessionDetails` al llamar a [`sendEvent`](https://experienceleague.adobe.com/es/docs/experience-platform/collection/js/commands/sendevent/overview):
 
 ```javascript
 alloy("sendEvent", {
@@ -52,11 +56,9 @@ alloy("sendEvent", {
 });
 ```
 
-## SDK móvil
+>[!TAB iOS]
 
 Defina el nombre del reproductor mediante la configuración del rastreador al crear el rastreador con `MediaConstants.TrackerConfig.PLAYER_NAME`. El nombre del reproductor no forma parte del objeto multimedia.
-
-**iOS (Swift)**
 
 ```swift
 var config: [String: Any] = [:]
@@ -68,7 +70,9 @@ Media.createTrackerWith(config: config) { tracker in
 }
 ```
 
-**Android (Kotlin)**
+>[!TAB Android]
+
+Defina el nombre del reproductor mediante la configuración del rastreador al crear el rastreador con `MediaConstants.TrackerConfig.PLAYER_NAME`. El nombre del reproductor no forma parte del objeto multimedia.
 
 ```kotlin
 val config = HashMap<String, Any>()
@@ -78,9 +82,9 @@ config[MediaConstants.TrackerConfig.CHANNEL] = "Sports"
 val tracker = Media.createTracker(config)
 ```
 
-## Roku (BrightScript)
+>[!TAB Roku]
 
-Establecer `playerName` dentro de `mediaCollection.sessionDetails` al llamar a `createMediaSession`:
+Establecer `playerName` dentro de `xdm.mediaCollection.sessionDetails` al llamar a `createMediaSession`:
 
 ```brightscript
 m.aepSdk.createMediaSession({
@@ -101,9 +105,9 @@ m.aepSdk.createMediaSession({
 })
 ```
 
-## API de Media Edge
+>[!TAB API de Media Edge]
 
-Llame al extremo [sessionStart](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/sessions/#sessionstart) con `playerName` dentro de `mediaCollection.sessionDetails`:
+Llame al extremo [sessionStart](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/sessions/#sessionstart) con `playerName` dentro de `xdm.mediaCollection.sessionDetails`:
 
 ```json
 {
@@ -125,7 +129,13 @@ Llame al extremo [sessionStart](https://developer.adobe.com/data-collection-apis
 }
 ```
 
-## Media SDK
+>[!ENDTABS]
+
+## Tipos de implementación heredados (solo Analytics)
+
+>[!BEGINTABS]
+
+>[!TAB Media SDK JS 3.x]
 
 Establezca el nombre del reproductor en `ADB.MediaConfig` antes de crear el rastreador:
 
@@ -138,7 +148,18 @@ mediaConfig.channel = "Sports";
 var tracker = ADB.Media.getInstance(mediaConfig);
 ```
 
-## API de Media Collection
+>[!TAB Chromecast]
+
+Pase el nombre del reproductor como clave de metadatos estándar al llamar a `trackSessionStart`:
+
+```javascript
+var mediaInfo = ADBMobile.media.createMediaObject("My Video", "video-123", 128,
+  ADBMobile.media.StreamType.VOD, ADBMobile.media.MediaType.Video);
+var metadata = { "a.media.playerName": "Chromecast Player" };
+ADBMobile.media.trackSessionStart(mediaInfo, metadata);
+```
+
+>[!TAB API de recopilación de medios]
 
 Incluir `media.playerName` en el objeto `params` de su solicitud POST de `sessionStart`:
 
@@ -153,3 +174,5 @@ Incluir `media.playerName` en el objeto `params` de su solicitud POST de `sessio
 ```
 
 Consulte la [referencia de sesiones de la API de Media Collection](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md) para obtener la estructura de solicitudes completa.
+
+>[!ENDTABS]

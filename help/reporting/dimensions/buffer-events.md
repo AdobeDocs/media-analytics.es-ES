@@ -3,7 +3,7 @@ title: Eventos de búfer (dimensión)
 description: Notifica el recuento de eventos de almacenamiento en búfer por sesión.
 feature: Dimensions
 role: User, Admin
-source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
 source-wordcount: '173'
 ht-degree: 6%
@@ -15,7 +15,7 @@ ht-degree: 6%
 
 >[!BEGINSHADEBOX]
 
-*Esta página cubre la dimensión **Eventos de búfer**. Adobe Analytics rellena automáticamente [eventos de búfer (métrica)](/help/reporting/metrics/buffer-events.md) emparejados desde la misma variable de datos de contexto `a.media.qoe.bufferCount`. Customer Journey Analytics expone un único campo `mediaReporting.qoeDataDetails.bufferCount` que puede usar como dimensión o como métrica.*
+*Esta página cubre la dimensión **Eventos de búfer**. Adobe Analytics rellena automáticamente [eventos de búfer (métrica)](/help/reporting/metrics/buffer-events.md) emparejados desde la misma variable de datos de contexto `a.media.qoe.bufferCount`. Customer Journey Analytics expone un único campo `xdm.mediaReporting.qoeDataDetails.bufferCount` que puede usar como dimensión o como métrica.*
 
 >[!ENDSHADEBOX]
 
@@ -28,7 +28,7 @@ El servidor multimedia incrementa el recuento cada vez que el reproductor entra 
 | Sistema de informes | Fuente |
 | --- | --- |
 | Adobe Analytics | Se recopila automáticamente a partir de los datos de contexto `a.media.qoe.bufferCount` cuando [[!UICONTROL Calidad de los medios]](/help/reporting/media-reports-enable.md) está habilitado. |
-| Customer Journey Analytics | [`mediaReporting.qoeDataDetails.bufferCount`](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
+| Customer Journey Analytics | [`xdm.mediaReporting.qoeDataDetails.bufferCount`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
 | Fuentes de datos | `videoqoebuffercountevar`, `post_videoqoebuffercountevar` |
 | Audience Manager | `c_contextdata.a.media.qoe.bufferCount` |
 

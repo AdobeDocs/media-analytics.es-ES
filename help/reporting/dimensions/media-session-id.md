@@ -3,7 +3,7 @@ title: ID de sesión de medios
 description: Identifica exclusivamente cada sesión de reproducción.
 feature: Dimensions
 role: User, Admin
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
 source-wordcount: '203'
 ht-degree: 5%
@@ -21,8 +21,8 @@ El ID de sesión se genera automáticamente cuando el backend recibe un evento [
 
 | Sistema de informes | Fuente |
 | --- | --- |
-| Adobe Analytics | Cree una [regla de procesamiento](https://experienceleague.adobe.com/es/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview) que asigne `a.media.vsid` a un eVar. |
-| Customer Journey Analytics | [`mediaReporting.sessionDetails.ID`](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| Adobe Analytics | Cree una [regla de procesamiento](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview) que asigne `a.media.vsid` a un eVar. |
+| Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.ID`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
 | Fuentes de datos | `videosessionid`, `post_videosessionid` |
 | Audience Manager | `c_contextdata.a.media.vsid` |
 

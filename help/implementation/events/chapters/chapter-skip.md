@@ -3,10 +3,10 @@ title: Omisión de capítulo
 description: Señal de que el visualizador ha omitido un capítulo.
 feature: Streaming Media
 role: Developer
-source-git-commit: b75e50f626b85992575961ea267d0f74eda09f0a
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: '122'
-ht-degree: 18%
+source-wordcount: '139'
+ht-degree: 10%
 
 ---
 
@@ -18,7 +18,11 @@ El evento de omisión de capítulo indica que el visor omitió un capítulo ante
 * **Requisitos previos**: [Inicio de sesión](../session/session-start.md), [Inicio de capítulo](chapter-start.md)
 * **Métrica asociada**: ninguna
 
-## SDK web
+## Tipos de implementación recomendados
+
+>[!BEGINTABS]
+
+>[!TAB SDK web ]
 
 Llamar a [`sendEvent`](https://experienceleague.adobe.com/es/docs/experience-platform/collection/js/commands/sendevent/overview) con `eventType: "media.chapterSkip"`:
 
@@ -34,23 +38,23 @@ alloy("sendEvent", {
 });
 ```
 
-## SDK móvil
+>[!TAB iOS]
 
 Llamar a `trackEvent` con el tipo de evento `ChapterSkip`.
-
-**iOS (Swift)**
 
 ```swift
 tracker.trackEvent(event: MediaEvent.ChapterSkip, info: nil, metadata: nil)
 ```
 
-**Android (Kotlin)**
+>[!TAB Android]
+
+Llamar a `trackEvent` con el tipo de evento `ChapterSkip`.
 
 ```kotlin
 tracker.trackEvent(Media.Event.ChapterSkip, null, null)
 ```
 
-## Roku (BrightScript)
+>[!TAB Roku]
 
 Llamar a `sendMediaEvent` con `eventType: "media.chapterSkip"`:
 
@@ -65,7 +69,7 @@ m.aepSdk.sendMediaEvent({
 })
 ```
 
-## API de Media Edge
+>[!TAB API de Media Edge]
 
 Llame al extremo [chapterSkip](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/chapters/#chapterskip):
 
@@ -86,7 +90,13 @@ curl -X POST "https://edge.adobedc.net/ee/va/v1/chapterSkip?configId={datastream
 }'
 ```
 
-## Media SDK
+>[!ENDTABS]
+
+## Tipos de implementación heredados (solo Analytics)
+
+>[!BEGINTABS]
+
+>[!TAB Media SDK JS 3.x]
 
 Llamar a `trackEvent` con el tipo de evento `ChapterSkip`:
 
@@ -94,7 +104,15 @@ Llamar a `trackEvent` con el tipo de evento `ChapterSkip`:
 tracker.trackEvent(ADB.Media.Event.ChapterSkip, null, null);
 ```
 
-## API de Media Collection
+>[!TAB Chromecast]
+
+Llamar a `trackEvent` con el tipo de evento `ChapterSkip`:
+
+```javascript
+ADBMobile.media.trackEvent(ADBMobile.media.Event.ChapterSkip);
+```
+
+>[!TAB API de recopilación de medios]
 
 Enviar un POST de `chapterSkip` al [extremo de eventos](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md):
 
@@ -104,3 +122,5 @@ Enviar un POST de `chapterSkip` al [extremo de eventos](/help/implementation/med
   "eventType": "chapterSkip"
 }
 ```
+
+>[!ENDTABS]

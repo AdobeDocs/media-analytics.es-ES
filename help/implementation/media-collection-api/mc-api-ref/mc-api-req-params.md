@@ -6,24 +6,14 @@ exl-id: a70025ec-1418-46f1-b41f-433d09f024e1
 feature: Streaming Media
 role: User, Admin, Developer
 TQID: https://experienceleague.adobe.com/6SPeRxCbhd8xZE-u0PlNpqXpZ9JWAS5hi41f7mjTBe0
-product_v2:
-  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
-feature_v2:
-  - id: b069d60e-95f3-44d6-95a8-ddc862a4bc38
-  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
+product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2: id: b069d60e-95f3-44d6-95a8-ddc862a4bc38id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: 1344
-ht-degree: 98%
+source-wordcount: 1337
+ht-degree: 86%
 
 ---
 
@@ -31,7 +21,7 @@ ht-degree: 98%
 
 ## Datos de análisis
 
-| Clave de solicitud  | Requerido | Clave de tipo de solicitud | Establecer en... |  Descripción  |
+| Clave de solicitud | Requerido | Clave de tipo de solicitud | Establecer en... | Descripción |
 | --- | :---: | :---: | :---: | --- |
 | `analytics.trackingServer` | Y | string | `sessionStart` | La URL del servidor de Adobe Analytics |
 | `analytics.reportSuite` | Y | string | `sessionStart` | El ID que identifica los datos de los informes de Analytics |
@@ -40,16 +30,16 @@ ht-degree: 98%
 
 ## Datos del visitante
 
-| Clave de solicitud  | Requerido | Clave de tipo de solicitud | Establecer en... |  Descripción  |
+| Clave de solicitud | Requerido | Clave de tipo de solicitud | Establecer en... | Descripción |
 | --- | :---: | :---: | :---: | --- |
-| `visitor.marketingCloudOrgId` | Y | string | `sessionStart` | El ID de organización de Experience Cloud indentifica su organización en el sistema de Adobe Experience Cloud |
-| `visitor.marketingCloudUserId` | N | string | `sessionStart` | Este es el ID de usuario de Experience Cloud (ECID). En la mayoría de los casos, este es el ID que debe utilizar para identificar a un usuario. Heartbeat `marketingCloudUserId` es igual a `MID` en Adobe Analytics. Aunque técnicamente no es obligatorio, este parámetro es necesario para acceder a la familia de aplicaciones de Experience Cloud. |
+| `visitor.marketingCloudOrgId` | Y | string | `sessionStart` | El ID de la organización IMS identifica su organización en Adobe CX Enterprise |
+| `visitor.marketingCloudUserId` | N | string | `sessionStart` | El ID de usuario de Experience Cloud (ECID). En la mayoría de los casos, este es el ID que debe utilizar para identificar a un usuario. Heartbeat `marketingCloudUserId` es igual a `MID` en Adobe Analytics. Aunque técnicamente no es obligatorio, este parámetro es necesario para acceder a las aplicaciones y servicios de CX Enterprise. |
 | `visitor.aamLocationHint` | N | entero | `sessionStart` | Proporciona datos de Adobe Audience Manager Edge - Si no se introduce un valor, el valor es nulo. |
 | `appInstallationId` | N | string | `sessionStart` | La clase appInstallationId identifica exclusivamente la aplicación y el dispositivo |
 
 ## Datos de contenido
 
-| Clave de solicitud  | Requerido | Clave de tipo de solicitud | Establecer en... |  Descripción  |
+| Clave de solicitud | Requerido | Clave de tipo de solicitud | Establecer en... | Descripción |
 | --- | :---: | :---: | :---: | --- |
 | `media.id` | Y | string | `sessionStart` | Identificador único para el contenido |
 | `media.name` | N | string | `sessionStart` | Nombre reconocible para el contenido |
@@ -62,7 +52,7 @@ ht-degree: 98%
 
 ## Metadatos de contenido estándar
 
-| Clave de solicitud  | Requerido | Clave de tipo de solicitud | Establecer en... |  Descripción  |
+| Clave de solicitud | Requerido | Clave de tipo de solicitud | Establecer en... | Descripción |
 | --- | :---: | :---: | :---: | --- |
 | `media.streamFormat` | N | string | `sessionStart` | Formato del flujo, por ejemplo &quot;HD&quot;. |
 | `media.show` | N | string | `sessionStart` | El nombre del programa o serie |
@@ -84,7 +74,7 @@ ht-degree: 98%
 
 ## Datos de publicidad
 
-| Clave de solicitud  | Requerido | Clave de tipo de solicitud | Establecer en... |  Descripción  |
+| Clave de solicitud | Requerido | Clave de tipo de solicitud | Establecer en... | Descripción |
 | --- | :---: | :---: | :---: | --- |
 | `media.ad.podFriendlyName` | N | string | `adBreakStart` | Nombre reconocible de la pausa publicitaria |
 | `media.ad.podIndex` | Y | entero | `adBreakStart` | Índice de pod de anuncios en el vídeo |
@@ -97,7 +87,7 @@ ht-degree: 98%
 
 ## Metadatos estándar de publicidad
 
-| Clave de solicitud  | Requerido | Clave de tipo de solicitud | Establecer en... |  Descripción  |
+| Clave de solicitud | Requerido | Clave de tipo de solicitud | Establecer en... | Descripción |
 | --- | :---: | :---: | :---: | --- |
 | `media.ad.advertiser` | N | string | `adStart` | Empresa o marca cuyo producto aparece en el anuncio |
 | `media.ad.campaignId` | N | string | `adStart` | ID de la campaña de publicidad |
@@ -108,7 +98,7 @@ ht-degree: 98%
 
 ## Datos de capítulo
 
-| Clave de solicitud  | Requerido | Clave de tipo de solicitud | Establecer en... |  Descripción  |
+| Clave de solicitud | Requerido | Clave de tipo de solicitud | Establecer en... | Descripción |
 | --- | :---: | :---: | :---: | --- |
 | `media.chapter.index` | Y | entero | `chapterStart` | Identifica la posición del capítulo en el contenido |
 | `media.chapter.offset` | Y | number | `chapterStart` | El segundo de la reproducción en el que comienza el capítulo |
@@ -117,7 +107,7 @@ ht-degree: 98%
 
 ## Datos de calidad
 
-| Clave de solicitud  | Requerido | Clave de tipo de solicitud | Establecer en... |  Descripción  |
+| Clave de solicitud | Requerido | Clave de tipo de solicitud | Establecer en... | Descripción |
 | --- | :---: | :---: | :---: | --- |
 | `media.qoe.bitrate` | N | entero | Cualquiera | La tasa de bits media (en bps). La velocidad media se calcula como un promedio ponderado de todos los valores de velocidad de bits según la duración de reproducción durante una sesión determinada. |
 | `media.qoe.droppedFrames` | N | entero | Cualquiera | Número de fotogramas perdidos en la emisión |
@@ -126,20 +116,20 @@ ht-degree: 98%
 
 ## Parámetros de la Ley de privacidad del consumidor de California (CCPA) {#ccpa-params}
 
-| Clave de solicitud  | Requerido | Clave de tipo de solicitud | Establecer en... |  Descripción  |
+| Clave de solicitud | Requerido | Clave de tipo de solicitud | Establecer en... | Descripción |
 | --- | :---: | :---: | :---: | --- |
-| `analytics.optOutServerSideForwarding` | N | booleano | `sessionStart` | Se establece en true cuando el usuario final ha optado por no compartir sus datos entre Adobe Analytics y otras soluciones de Experience Cloud (por ejemplo, Audience Manager) |
+| `analytics.optOutServerSideForwarding` | N | booleano | `sessionStart` | Se establece en true cuando el usuario final ha optado por no compartir sus datos entre Adobe Analytics y otras soluciones empresariales de CX (por ejemplo, Audience Manager) |
 | `analytics.optOutShare` | N | booleano | `sessionStart` | Se establece en true cuando el usuario final ha optado por no publicar sus datos (por ejemplo, para otros clientes de Adobe Analytics). |
 
 ## Detalles adicionales {#additional-details}
 
 ### visitor.marketingCloudUserId
 
-Pase el ID de usuario de Experience Cloud (también conocido como `MID` o `MCID`) en la llamada a `sessionStart`, incluyéndolo en el mapa de `params` mediante la siguiente clave: **visitor.marketingCloudUserId**. Esta función es útil si ya se integra con otros productos de Experience Cloud y ya se ha obtenido el MCID.
+Pase el ID de usuario de Experience Cloud (también conocido como `MID` o `MCID`) en la llamada a `sessionStart`, incluyéndolo en el mapa de `params` mediante la siguiente clave: **visitor.marketingCloudUserId**. Esta función es útil si ya se integra con otros productos de CX Enterprise y ya ha obtenido el MCID.
 
 >[!NOTE]
 >
->Media Analytics (MA) está integrado con la gama de aplicaciones de Experience Cloud (Adobe Analytics, Audience Manager, Target, etc.). Necesita un Experience Cloud ID para acceder a estas aplicaciones. _El ECID es lo que debe utilizarse para identificar a los usuarios en la mayoría de los casos._
+>Media Analytics (MA) está integrado con la gama de aplicaciones de CX Enterprise (Adobe Analytics, Audience Manager, Target, etc.). Necesita un Experience Cloud ID para acceder a estas aplicaciones. _El ECID es lo que debe utilizarse para identificar a los usuarios en la mayoría de los casos._
 
 ### appInstallationId
 

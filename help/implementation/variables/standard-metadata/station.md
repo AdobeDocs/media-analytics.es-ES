@@ -3,10 +3,10 @@ title: Emisora
 description: Configure el nombre o ID de la emisora de radio para el contenido de difusión de audio.
 feature: Streaming Media
 role: Developer
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: '179'
-ht-degree: 16%
+source-wordcount: '214'
+ht-degree: 10%
 
 ---
 
@@ -24,14 +24,18 @@ La variable de emisora es el nombre o ID de la emisora de radio que emite el con
 | Propiedad | Valor |
 | --- | --- |
 | **Variable de datos de contexto** | `a.media.station` |
-| **Campo de colección XDM** | [`mediaCollection.sessionDetails.station`](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **Campo de colección XDM** | [`xdm.mediaCollection.sessionDetails.station`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **rasgo de Audience Manager** | `c_contextdata.a.media.station` |
 | **Requerido** | No |
 | **Enviado con** | [Inicio de sesión](/help/implementation/events/session/session-start.md), cierre de sesión |
 
-## SDK web
+## Tipos de implementación recomendados
 
-Establecer `station` dentro de `mediaCollection.sessionDetails` al llamar a [`sendEvent`](https://experienceleague.adobe.com/es/docs/experience-platform/collection/js/commands/sendevent/overview):
+>[!BEGINTABS]
+
+>[!TAB SDK web ]
+
+Establecer `station` dentro de `xdm.mediaCollection.sessionDetails` al llamar a [`sendEvent`](https://experienceleague.adobe.com/es/docs/experience-platform/collection/js/commands/sendevent/overview):
 
 ```javascript
 alloy("sendEvent", {
@@ -47,11 +51,9 @@ alloy("sendEvent", {
 });
 ```
 
-## SDK móvil
+>[!TAB iOS]
 
 Pase la estación como clave de metadatos en el argumento HashMap a `trackSessionStart`. Utilice `MediaConstants.AudioMetadataKeys.STATION`.
-
-**iOS (Swift)**
 
 ```swift
 var metadata: [String: String] = [:]
@@ -60,7 +62,9 @@ metadata[MediaConstants.AudioMetadataKeys.STATION] = "NPR"
 tracker.trackSessionStart(info: mediaObject, metadata: metadata)
 ```
 
-**Android (Kotlin)**
+>[!TAB Android]
+
+Pase la estación como clave de metadatos en el argumento HashMap a `trackSessionStart`. Utilice `MediaConstants.AudioMetadataKeys.STATION`.
 
 ```kotlin
 val metadata = HashMap<String, String>()
@@ -69,7 +73,7 @@ metadata[MediaConstants.AudioMetadataKeys.STATION] = "NPR"
 tracker.trackSessionStart(mediaInfo, metadata)
 ```
 
-## Roku (BrightScript)
+>[!TAB Roku]
 
 Use `createMediaSession` para establecer `station` dentro de `sessionDetails`:
 
@@ -87,9 +91,9 @@ m.aepSdk.createMediaSession({
 })
 ```
 
-## API de Media Edge
+>[!TAB API de Media Edge]
 
-Llame al extremo [sessionStart](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/sessions/#sessionstart) con `station` dentro de `mediaCollection.sessionDetails`:
+Llame al extremo [sessionStart](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/sessions/#sessionstart) con `station` dentro de `xdm.mediaCollection.sessionDetails`:
 
 ```json
 {
@@ -112,7 +116,13 @@ Llame al extremo [sessionStart](https://developer.adobe.com/data-collection-apis
 }
 ```
 
-## Media SDK
+>[!ENDTABS]
+
+## Tipos de implementación heredados (solo Analytics)
+
+>[!BEGINTABS]
+
+>[!TAB Media SDK JS 3.x]
 
 Pase la emisora en el objeto `contextData` mediante `ADB.Media.AudioMetadataKeys.Station`:
 
@@ -123,7 +133,20 @@ contextData[ADB.Media.AudioMetadataKeys.Station] = "NPR";
 tracker.trackSessionStart(mediaInfo, contextData);
 ```
 
-## API de Media Collection
+>[!TAB Chromecast]
+
+Use `ADBMobile.media.AudioMetadataKeys.STATION` para establecer el nombre de la emisora en la propiedad `StandardMediaMetadata` del objeto multimedia antes de llamar a `trackSessionStart`:
+
+```javascript
+var mediaInfo = ADBMobile.media.createMediaObject("My Track", "audio-123", 240,
+  ADBMobile.media.StreamType.AOD, ADBMobile.media.MediaType.Audio);
+var standardMetadata = {};
+standardMetadata[ADBMobile.media.AudioMetadataKeys.STATION] = "NPR";
+mediaInfo[ADBMobile.media.MediaObjectKey.StandardMediaMetadata] = standardMetadata;
+ADBMobile.media.trackSessionStart(mediaInfo, null);
+```
+
+>[!TAB API de recopilación de medios]
 
 Incluir `media.station` en el objeto `params`:
 
@@ -138,3 +161,5 @@ Incluir `media.station` en el objeto `params`:
 ```
 
 Consulte la [referencia de sesiones de la API de Media Collection](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md) para obtener la estructura de solicitudes completa.
+
+>[!ENDTABS]
