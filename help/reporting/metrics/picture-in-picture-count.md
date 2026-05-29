@@ -15,7 +15,7 @@ ht-degree: 8%
 
 >[!BEGINSHADEBOX]
 
-*Esta página cubre los recuentos de **Imagen en imagen**de la métrica para informes. Consulte [Imagen en imagen](/help/implementation/variables/player-state/picture-in-picture.md) para ver cómo recopilar esta variable.*
+*Esta página cubre los recuentos de **Imagen en imagen**&#x200B;de la métrica para informes. Consulte [Imagen en imagen](/help/implementation/variables/player-state/picture-in-picture.md) para ver cómo recopilar esta variable.*
 
 >[!ENDSHADEBOX]
 
