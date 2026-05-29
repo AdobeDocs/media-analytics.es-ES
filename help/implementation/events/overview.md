@@ -3,9 +3,9 @@ title: Resumen de eventos de medios de streaming
 description: Obtenga información acerca de los tipos de eventos de medios y el orden en que deben enviarse.
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: 3dbbd5228fcd91cf78c0597dea656c06f367dd40
 workflow-type: tm+mt
-source-wordcount: '1040'
+source-wordcount: '1065'
 ht-degree: 0%
 
 ---
@@ -69,3 +69,9 @@ Los cinco estados a los que se puede realizar el seguimiento son: `fullscreen`, 
 ## Eventos de error
 
 El evento [Error](error.md) registra un error de reproducción durante una sesión: una solicitud de flujo fallida, un error de códec o un error de envío externo. Enviarlo siempre que se produzca un error significativo. Un evento de error no cierra la sesión; la reproducción puede continuar y los eventos posteriores se rastrean en la misma sesión. Si el error no se puede recuperar, sígalo con Fin de sesión para cerrar explícitamente la sesión.
+
+>[!MORELIKETHIS]
+>
+>* [Resumen de variables](/help/implementation/variables/overview.md): Los datos que los eventos llevan a Adobe
+>* [Resumen de dimensiones](/help/reporting/dimensions/overview.md): Las dimensiones de informes que rellenan los eventos
+>* [Resumen de métricas](/help/reporting/metrics/overview.md): Las métricas de informes que rellenan los eventos

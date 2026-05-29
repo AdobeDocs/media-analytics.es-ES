@@ -5,9 +5,9 @@ user-guide-title: Guía de servicios de medios de streaming
 breadcrumb-title: Guía de servicios de medios de streaming
 user-guide-description: Implementar servicios de medios de streaming. Incluye el SDK de medios y la API de recopilación de medios.
 sub-product: media analytics
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: 3dbbd5228fcd91cf78c0597dea656c06f367dd40
 workflow-type: tm+mt
-source-wordcount: '754'
+source-wordcount: '755'
 ht-degree: 35%
 
 ---
@@ -57,6 +57,7 @@ ht-degree: 35%
          + [Fin de estado](implementation/events/player-state/state-end.md)
       + [Error](implementation/events/error.md)
    + Variables {#variables}
+      + [Información general](implementation/variables/overview.md)
       + Core {#core}
          + [Canal de contenido](implementation/variables/core/content-channel.md)
          + [ID de contenido](implementation/variables/core/content-id.md)
@@ -291,8 +292,8 @@ ht-degree: 35%
    + [Segmentos de medios](reporting/segments.md)
    + Informes de medios predeterminados {#media-default-reports}
       + [Información general de informes predeterminados](reporting/reports-and-analytics/default-reports-overview.md)
-      + [Información general de medios &#x200B;](reporting/reports-and-analytics/media-reports-overview.md)
-      + [Detalles de medios &#x200B;](reporting/reports-and-analytics/media-reports-detail.md)
+      + [Información general de medios ](reporting/reports-and-analytics/media-reports-overview.md)
+      + [Detalles de medios ](reporting/reports-and-analytics/media-reports-detail.md)
       + [Informe de Media Daypart](reporting/reports-and-analytics/media-reports-daypart.md)
       + [Informe de visualizadores simultáneos de medios](reporting/reports-and-analytics/media-concurrent-viewers-reports.md)
    + API de medios {#media-api}

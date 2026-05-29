@@ -3,9 +3,9 @@ title: Resumen de métricas de medios de streaming
 description: Descubra cómo se calculan y organizan las métricas de medios de streaming en Adobe Analytics y Customer Journey Analytics.
 feature: Metrics
 role: User, Admin
-source-git-commit: da289f8d425fcbaece42519a9ea7d061f80e4591
+source-git-commit: 3dbbd5228fcd91cf78c0597dea656c06f367dd40
 workflow-type: tm+mt
-source-wordcount: '469'
+source-wordcount: '458'
 ht-degree: 3%
 
 ---
@@ -31,13 +31,12 @@ Las métricas de medios de streaming siguen cuatro patrones de cálculo principa
 
 | Sistema de informes | Cómo llegan las métricas |
 | --- | --- |
-| Adobe Analytics | Rellenado con [variables de datos de contexto](https://experienceleague.adobe.com/es/docs/analytics/implementation/vars/page-vars/contextdata). Algunas métricas rellenan automáticamente eventos de solución usando estas variables de datos de contexto, mientras que otras deben asignarse a un evento personalizado usando [Reglas de procesamiento](https://experienceleague.adobe.com/es/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview). Las métricas que rellenan automáticamente los valores deben tener habilitada primero su respectiva configuración del grupo de informes [medios de streaming](../../implementation/media-sdk/setup/media-reports-enable.md). |
-| Customer Journey Analytics | Campos XDM en `xdm.mediaReporting.sessionDetails` y nodos relacionados, procedentes de cualquier conjunto de datos que incluya datos de medios de streaming. Debe crear cada métrica con la configuración deseada dentro de [Configuración del componente de vista de datos](https://experienceleague.adobe.com/es/docs/analytics-platform/using/cja-dataviews/component-settings/overview). |
+| Adobe Analytics | Rellenado con [variables de datos de contexto](https://experienceleague.adobe.com/es/docs/analytics/implementation/vars/page-vars/contextdata). Algunas métricas rellenan automáticamente eventos de solución usando estas variables de datos de contexto, mientras que otras deben asignarse a un evento personalizado usando [Reglas de procesamiento](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview). Las métricas que rellenan automáticamente los valores deben tener habilitada primero su respectiva configuración del grupo de informes [medios de streaming](../../implementation/media-sdk/setup/media-reports-enable.md). |
+| Customer Journey Analytics | Campos XDM en `xdm.mediaReporting.sessionDetails` y nodos relacionados, procedentes de cualquier conjunto de datos que incluya datos de medios de streaming. Debe crear cada métrica con la configuración deseada dentro de [Configuración del componente de vista de datos](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-settings/overview). |
 | Fuentes de datos | Las métricas aparecen en las columnas `event_list` y `post_event_list` como ID de evento. Cada archivo de fuente contiene un archivo de `events.csv` que contiene la búsqueda de todas las métricas, incluidas las métricas de medios de transmisión. |
 
 >[!MORELIKETHIS]
 >
->* [Resumen de dimensiones](../dimensions/overview.md): referencia de dimensiones de medios de streaming
->* [Métricas calculadas](/help/reporting/calculated-metrics.md): proporciones y métricas derivadas creadas a partir de las métricas base anteriores
->* [Asignación de parámetros](/help/implementation/parameters-mapping.md): referencia completa de evento a columna a XDM
->* [Información general sobre eventos](/help/implementation/events/overview.md): Los eventos del reproductor que controlan el cálculo de métricas
+>* [Información general sobre eventos](/help/implementation/events/overview.md): Los eventos del reproductor que rellenan las métricas
+>* [Resumen de variables](/help/implementation/variables/overview.md): Los datos que los eventos llevan a Adobe
+>* [Resumen de dimensiones](/help/reporting/dimensions/overview.md): Las dimensiones de informes que rellenan las variables
