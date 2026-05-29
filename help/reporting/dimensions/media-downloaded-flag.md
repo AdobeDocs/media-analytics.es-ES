@@ -3,7 +3,7 @@ title: Medios descargados
 description: Indica las sesiones que reprodujeron contenido sin conexión descargado.
 feature: Dimensions
 role: User, Admin
-source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
 source-wordcount: '195'
 ht-degree: 7%
@@ -28,7 +28,7 @@ El reproductor establece el indicador descargado de una de las tres maneras sigu
 | Sistema de informes | Fuente |
 | --- | --- |
 | Adobe Analytics | Cree una [regla de procesamiento](https://experienceleague.adobe.com/es/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview) que asigne `a.media.downloaded` a un eVar. |
-| Customer Journey Analytics | [`mediaReporting.sessionDetails.isDownloaded`](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.isDownloaded`](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/session-details-reporting) |
 | Fuentes de datos | `evar1`-`evar250`, `post_evar1`-`post_evar250` (el eVar al que se asigna la regla de procesamiento `a.media.downloaded`) |
 | Audience Manager | `c_contextdata.a.media.downloaded` |
 

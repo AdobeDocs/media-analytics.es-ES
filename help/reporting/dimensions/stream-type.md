@@ -3,7 +3,7 @@ title: Tipo de emisión
 description: Registra si cada sesión multimedia fue contenido de audio o vídeo.
 feature: Dimensions
 role: User, Admin
-source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
+source-git-commit: da289f8d425fcbaece42519a9ea7d061f80e4591
 workflow-type: tm+mt
 source-wordcount: '322'
 ht-degree: 6%
@@ -19,7 +19,7 @@ ht-degree: 6%
 
 >[!ENDSHADEBOX]
 
-La dimensión **Tipo de emisión** registra si cada sesión multimedia era contenido de audio o vídeo. Está disponible en Adobe Analytics una vez que [Media Core está habilitado](/help/reporting/media-reports-enable.md) para el grupo de informes y en Customer Journey Analytics para cualquier conjunto de datos que incluya datos de medios de streaming.
+La dimensión **Tipo de emisión** registra si cada sesión multimedia era contenido de audio o vídeo. Está disponible en Adobe Analytics una vez que [Media Core está habilitado](/help/implementation/media-sdk/setup/media-reports-enable.md) para el grupo de informes y en Customer Journey Analytics para cualquier conjunto de datos que incluya datos de medios de streaming.
 
 ## Cómo se rellena esta dimensión
 
@@ -28,7 +28,7 @@ El reproductor establece el tipo de emisión al principio de la sesión y la tra
 | Sistema de informes | Fuente |
 | --- | --- |
 | Adobe Analytics | Se recopila automáticamente a partir de los datos de contexto `a.media.streamType` cuando [[!UICONTROL Media Core]](/help/reporting/media-reports-enable.md) está habilitado. |
-| Customer Journey Analytics | [`mediaReporting.sessionDetails.streamType`](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.streamType`](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/session-details-reporting) |
 | Fuentes de datos | `videostreamtype` |
 | Audience Manager | `c_contextdata.a.media.streamType` |
 

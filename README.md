@@ -1,8 +1,8 @@
 ---
-source-git-commit: 0d5edcae0a80357247ada7f61daece9840d5c4b5
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: '438'
-ht-degree: 62%
+source-wordcount: '437'
+ht-degree: 89%
 
 ---
 # Artículo sobre colaboración
@@ -21,13 +21,13 @@ La manera en que contribuye depende de quién es usted y del tipo de cambios con
 
 ### Cambios menores
 
-Si está aportando actualizaciones menores porque quiere hacerlo, visite el artículo y haga clic en el vínculo **Editar** del artículo que va al origen de GitHub correspondiente. A continuación, utilice la interfaz de usuario de GitHub para realizar las actualizaciones. Para obtener más información, consulte la [Guía para colaboradores de Adobe Docs](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=es).
+Si está realizando actualizaciones menores de buena fe, visite el artículo y haga clic en el vínculo **Editar** del artículo que le dirigirá al origen de GitHub correspondiente. A continuación, utilice la interfaz de usuario de GitHub para realizar las actualizaciones. Para obtener más información, consulte la [Guía para colaboradores de Adobe Docs](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=es).
 
 Las correcciones o aclaraciones menores que envía para la documentación y los ejemplos de código de este repositorio están incluidos en las condiciones de uso de Adobe.
 
 ### Cambios importantes o nuevos artículos de miembros de la comunidad
 
-Si forma parte de la comunidad de Adobe y desea crear un artículo nuevo o enviar cambios importantes, utilice la pestaña Problemas del repositorio Git para enviar un problema e iniciar una conversación con el equipo de documentación. Una vez que haya aceptado un plan, deberá trabajar con un empleado para ayudar a incorporar ese nuevo contenido a través de una combinación de trabajo en los repositorios públicos y privados.
+Si forma parte de la comunidad de Adobe y desea crear un artículo nuevo o enviar cambios importantes, utilice la pestaña Problemas del repositorio Git para enviar un problema e iniciar una conversación con el equipo de documentación. Una vez que haya aceptado un plan, deberá trabajar con un empleado para que le ayude a incorporar ese nuevo contenido gracias a una combinación de trabajo en los repositorios públicos y privados.
 
 <!--
 If you submit a pull request with significant changes to documentation and code examples, you'll see a message in the pull request asking you to submit an online contribution license agreement (CLA). We need you to complete the online form before we can review your pull request.
@@ -35,7 +35,7 @@ If you submit a pull request with significant changes to documentation and code 
 
 ### Cambios importantes de los empleados de Adobe
 
-Si es redactor técnico, administrador de programa o desarrollador del equipo de producto para una solución de Adobe Experience Cloud y debe contribuir o crear artículos técnicos, debe utilizar el repositorio privado [git.corp.adobe.com/AdobeDocs](https://git.corp.adobe.com/AdobeDocs). <!--Employees from other parts of the Adobe world should use the public repo for minor updates.-->
+Si es redactor técnico, administrador de programa o desarrollador del equipo de producto para una solución de CX Enterprise y debe contribuir o crear artículos técnicos, debe utilizar el repositorio privado [git.corp.adobe.com/AdobeDocs](https://git.corp.adobe.com/AdobeDocs). <!--Employees from other parts of the Adobe world should use the public repo for minor updates.-->
 
 ## Herramientas y configuración
 
@@ -48,7 +48,7 @@ Consulte la [Guía del colaborador de Adobe Docs](https://experienceleague.adobe
 Todos los artículos de este repositorio utilizan GitHub Flavored Markdown. Si no está familiarizado con Markdown, consulte:
 
 * [Conceptos básicos de Markdown](https://docs.github.com/es/github/writing-on-github/getting-started-with-writing-and-formatting-on-github)
-* [Hoja de trucos de markdown imprimible](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
+* [Hoja de referencia imprimible de Markdown](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
 
 ## Etiquetas
 

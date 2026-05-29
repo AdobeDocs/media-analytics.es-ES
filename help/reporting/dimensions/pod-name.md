@@ -3,7 +3,7 @@ title: Nombre de pod
 description: Informa del nombre descriptivo de cada pausa publicitaria. Recopile datos en Adobe Analytics mediante una clasificación o una regla de procesamiento personalizada.
 feature: Dimensions
 role: User, Admin
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
 source-wordcount: '431'
 ht-degree: 1%
@@ -29,7 +29,7 @@ El nombre de la secuencia proviene del valor [Nombre de la pausa publicitaria](/
 | --- | --- |
 | Adobe Analytics (regla de procesamiento) | Cree una [regla de procesamiento](https://experienceleague.adobe.com/es/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview) que asigne `a.media.ad.podFriendlyName` a un eVar. |
 | Adobe Analytics (clasificación) | Clasificación de la dimensión de pod de anuncios: Adobe crea automáticamente esta clasificación cuando **[[!UICONTROL Media Ads]](/help/reporting/media-reports-enable.md)** está habilitado para el grupo de informes. Usted es responsable de rellenar y mantener los valores de clasificación. |
-| Customer Journey Analytics | [`mediaReporting.advertisingPodDetails.friendlyName`](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/advertising-pod-details-reporting) |
+| Customer Journey Analytics | [`xdm.mediaReporting.advertisingPodDetails.friendlyName`](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/advertising-pod-details-reporting) |
 | Fuentes de datos (regla de procesamiento) | `evar1`-`evar250`, `post_evar1`-`post_evar250` (el eVar al que se asigna la regla de procesamiento `a.media.ad.podFriendlyName`) |
 | Fuentes de datos (clasificación) | N/D: las fuentes de datos no admiten clasificaciones. |
 | Audience Manager | `c_contextdata.a.media.ad.podFriendlyName` |

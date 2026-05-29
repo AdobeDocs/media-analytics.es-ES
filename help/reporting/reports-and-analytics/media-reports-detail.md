@@ -17,15 +17,15 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
 source-wordcount: 50
-ht-degree: 56%
+ht-degree: 8%
 
 ---
 
 # Detalles multimedia{#media-detail}
 
-En el tablero Detalles multimedia se muestran las métricas detalladas de todo el contenido, incluidos los espectadores u oyentes simultáneos, los inicios de contenido, la tasa de finalización, el tiempo invertido y los inicios de publicidad.
+En el tablero Detalles multimedia se muestran las métricas detalladas de todo el contenido, incluidos los espectadores u oyentes simultáneos, [[!UICONTROL inicios de contenido]](/help/reporting/metrics/content-starts.md), la tasa de finalización, el tiempo invertido y [[!UICONTROL inicios de publicidad]](/help/reporting/metrics/ad-starts.md).
 
 ![](assets/media_detail.png)

@@ -3,10 +3,10 @@ title: Nombre de contenido
 description: Establezca un nombre descriptivo para el contenido (el título legible en lenguaje natural que se muestra en los informes).
 feature: Streaming Media
 role: Developer
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: '199'
-ht-degree: 15%
+source-wordcount: '233'
+ht-degree: 9%
 
 ---
 
@@ -24,14 +24,18 @@ La variable content name es el título del contenido legible en lenguaje natural
 | Propiedad | Valor |
 | --- | --- |
 | **Variable de datos de contexto** | `a.media.friendlyName` |
-| **Campo de colección XDM** | [`mediaCollection.sessionDetails.friendlyName`](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **Campo de colección XDM** | [`xdm.mediaCollection.sessionDetails.friendlyName`](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **rasgo de Audience Manager** | `c_contextdata.a.media.friendlyName` |
 | **Requerido** | No |
 | **Enviado con** | [Inicio de sesión](/help/implementation/events/session/session-start.md), cierre de sesión |
 
-## SDK web
+## Tipos de implementación recomendados
 
-Establecer `friendlyName` dentro de `mediaCollection.sessionDetails` al llamar a [`sendEvent`](https://experienceleague.adobe.com/es/docs/experience-platform/collection/js/commands/sendevent/overview):
+>[!BEGINTABS]
+
+>[!TAB SDK web ]
+
+Establecer `friendlyName` dentro de `xdm.mediaCollection.sessionDetails` al llamar a [`sendEvent`](https://experienceleague.adobe.com/es/docs/experience-platform/collection/js/commands/sendevent/overview):
 
 ```javascript
 alloy("sendEvent", {
@@ -53,11 +57,9 @@ alloy("sendEvent", {
 });
 ```
 
-## SDK móvil
+>[!TAB iOS]
 
 Pase el nombre legible en lenguaje natural como el primer argumento (`name`) a `createMediaObject`. El segundo argumento es el ID de contenido.
-
-**iOS (Swift)**
 
 ```swift
 let mediaObject = Media.createMediaObjectWith(name: "Blinding Light",
@@ -69,7 +71,9 @@ let mediaObject = Media.createMediaObjectWith(name: "Blinding Light",
 tracker.trackSessionStart(info: mediaObject, metadata: nil)
 ```
 
-**Android (Kotlin)**
+>[!TAB Android]
+
+Pase el nombre legible en lenguaje natural como el primer argumento (`name`) a `createMediaObject`. El segundo argumento es el ID de contenido.
 
 ```kotlin
 var mediaInfo = Media.createMediaObject("Blinding Light",
@@ -81,9 +85,9 @@ var mediaInfo = Media.createMediaObject("Blinding Light",
 tracker.trackSessionStart(mediaInfo, null)
 ```
 
-## Roku (BrightScript)
+>[!TAB Roku]
 
-Establecer `friendlyName` dentro de `mediaCollection.sessionDetails` al llamar a `createMediaSession`:
+Establecer `friendlyName` dentro de `xdm.mediaCollection.sessionDetails` al llamar a `createMediaSession`:
 
 ```brightscript
 m.aepSdk.createMediaSession({
@@ -105,9 +109,9 @@ m.aepSdk.createMediaSession({
 })
 ```
 
-## API de Media Edge
+>[!TAB API de Media Edge]
 
-Llame al extremo [sessionStart](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/sessions/#sessionstart) con `friendlyName` dentro de `mediaCollection.sessionDetails`:
+Llame al extremo [sessionStart](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/sessions/#sessionstart) con `friendlyName` dentro de `xdm.mediaCollection.sessionDetails`:
 
 ```json
 {
@@ -130,7 +134,13 @@ Llame al extremo [sessionStart](https://developer.adobe.com/data-collection-apis
 }
 ```
 
-## Media SDK
+>[!ENDTABS]
+
+## Tipos de implementación heredados (solo Analytics)
+
+>[!BEGINTABS]
+
+>[!TAB Media SDK JS 3.x]
 
 Pase el nombre legible en lenguaje natural como primer argumento a `ADB.Media.createMediaObject`:
 
@@ -146,7 +156,22 @@ var mediaInfo = ADB.Media.createMediaObject(
 tracker.trackSessionStart(mediaInfo, contextData);
 ```
 
-## API de Media Collection
+>[!TAB Chromecast]
+
+Pase el nombre legible en lenguaje natural como primer argumento a `ADBMobile.media.createMediaObject`:
+
+```javascript
+var mediaInfo = ADBMobile.media.createMediaObject(
+  "Blinding Light",
+  "video-123",
+  128,
+  ADBMobile.media.StreamType.VOD,
+  ADBMobile.media.MediaType.Video
+);
+ADBMobile.media.trackSessionStart(mediaInfo, null);
+```
+
+>[!TAB API de recopilación de medios]
 
 Incluir `media.name` en el objeto `params` de su solicitud POST de `sessionStart`:
 
@@ -161,3 +186,5 @@ Incluir `media.name` en el objeto `params` de su solicitud POST de `sessionStart
 ```
 
 Consulte la [referencia de sesiones de la API de Media Collection](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md) para obtener la estructura de solicitudes completa.
+
+>[!ENDTABS]

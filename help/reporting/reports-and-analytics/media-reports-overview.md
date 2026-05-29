@@ -18,7 +18,7 @@ role_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
-source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
 source-wordcount: 109
 ht-degree: 51%
@@ -27,7 +27,7 @@ ht-degree: 51%
 
 # Información general de medio{#media-overview}
 
-El tablero Información general de medios está diseñado para permitirle monitorizar los medios en todo el sitio. La pantalla Información general de medios muestra varias medidas acumuladas para que pueda monitorizar rápidamente que los medios están funcionando según lo esperado. Un gráfico muestra los inicios de contenido junto a los inicios de publicidad para permitirle ver rápidamente estas métricas para cada elemento de medios.
+El tablero Información general de medios está diseñado para permitirle monitorizar los medios en todo el sitio. La pantalla Información general de medios muestra varias medidas acumuladas para que pueda monitorizar rápidamente que los medios están funcionando según lo esperado. Un gráfico muestra [[!UICONTROL inicios de contenido]](/help/reporting/metrics/content-starts.md) junto a [[!UICONTROL inicios de publicidad]](/help/reporting/metrics/ad-starts.md) para que puedas ver rápidamente estas métricas para cada elemento de medios.
 
 ![](assets/media_overview.png)
 

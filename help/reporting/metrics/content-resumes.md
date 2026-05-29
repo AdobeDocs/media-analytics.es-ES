@@ -3,7 +3,7 @@ title: Currículos de contenido
 description: Cuenta las sesiones que reanudaron una reproducción interrumpida previamente.
 feature: Metrics
 role: User, Admin
-source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
 source-wordcount: '171'
 ht-degree: 9%
@@ -23,11 +23,11 @@ La métrica **Reanudación de contenido** cuenta las sesiones que reanudaron una
 
 ## Cálculo de esta métrica
 
-El servidor multimedia establece este indicador cuando `mediaCollection.sessionDetails.hasResume` es `true` en el evento [inicio de sesión](/help/implementation/events/session/session-start.md). El reproductor debe marcar explícitamente la sesión como reanudación. La métrica se recoge en la llamada de cierre.
+El servidor multimedia establece este indicador cuando `xdm.mediaCollection.sessionDetails.hasResume` es `true` en el evento [inicio de sesión](/help/implementation/events/session/session-start.md). El reproductor debe marcar explícitamente la sesión como reanudación. La métrica se recoge en la llamada de cierre.
 
 | Sistema de informes | Fuente |
 | --- | --- |
 | Adobe Analytics | Se recopila automáticamente a partir de los datos de contexto `a.media.resume` cuando [[!UICONTROL Media Core]](/help/reporting/media-reports-enable.md) está habilitado. |
-| Customer Journey Analytics | [`mediaReporting.sessionDetails.hasResume`](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.hasResume`](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/session-details-reporting) |
 | Fuentes de datos | `event_list`, `post_event_list` (consulte la búsqueda [`event.tsv`](https://experienceleague.adobe.com/es/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files)) |
 | Audience Manager | N/A |

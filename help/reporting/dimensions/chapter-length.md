@@ -3,7 +3,7 @@ title: Longitud del capítulo
 description: Informa de la duración de cada capítulo.
 feature: Dimensions
 role: User, Admin
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
 source-wordcount: '364'
 ht-degree: 2%
@@ -29,7 +29,7 @@ El reproductor establece la longitud del capítulo en cada evento de [inicio del
 | --- | --- |
 | Adobe Analytics (regla de procesamiento) | Cree una [regla de procesamiento](https://experienceleague.adobe.com/es/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview) que asigne `a.media.chapter.length` a un eVar. |
 | Adobe Analytics (clasificación) | Clasificación de la dimensión [Chapter](chapter.md): Adobe crea automáticamente esta clasificación cuando **[[!UICONTROL Media Chapters]](/help/reporting/media-reports-enable.md)** está habilitado para el grupo de informes. Usted es responsable de rellenar y mantener los valores de clasificación. |
-| Customer Journey Analytics | [`mediaReporting.chapterDetails.length`](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/chapter-details-reporting) |
+| Customer Journey Analytics | [`xdm.mediaReporting.chapterDetails.length`](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/chapter-details-reporting) |
 | Fuentes de datos (regla de procesamiento) | `evar1`-`evar250`, `post_evar1`-`post_evar250` (el eVar al que se asigna la regla de procesamiento `a.media.chapter.length`) |
 | Fuentes de datos (clasificación) | N/D: las fuentes de datos no admiten clasificaciones. |
 | Audience Manager | `c_contextdata.a.media.chapter.length` |

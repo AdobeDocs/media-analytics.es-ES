@@ -3,10 +3,10 @@ title: Fotogramas perdidos
 description: Defina el número de fotogramas perdidos en el objeto QoE para que el backend pueda informar de la calidad de colocación de fotogramas.
 feature: Streaming Media
 role: Developer
-source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: '265'
-ht-degree: 9%
+source-wordcount: '303'
+ht-degree: 5%
 
 ---
 
@@ -28,14 +28,18 @@ La variable de fotogramas perdidos es el número de fotogramas que el reproducto
 | Propiedad | Valor |
 | --- | --- |
 | **Variable de datos de contexto** | `a.media.qoe.droppedFrameCount` |
-| **Campo de colección XDM** | [`mediaCollection.qoeDataDetails.droppedFrames`](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/qoe-data-details-collection) |
+| **Campo de colección XDM** | [`xdm.mediaCollection.qoeDataDetails.droppedFrames`](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/qoe-data-details-collection) |
 | **rasgo de Audience Manager** | `c_contextdata.a.media.qoe.droppedFrameCount` |
 | **Requerido** | No |
 | **Enviado con** | Eventos de calidad ([cambio de velocidad de bits](/help/implementation/events/playback/bitrate-change.md), [inicio del búfer](/help/implementation/events/playback/buffer-start.md), [error](/help/implementation/events/error.md)), cierre de sesión |
 
-## SDK web
+## Tipos de implementación recomendados
 
-Establecer `droppedFrames` dentro de `mediaCollection.qoeDataDetails` al llamar a [`sendEvent`](https://experienceleague.adobe.com/es/docs/experience-platform/collection/js/commands/sendevent/overview):
+>[!BEGINTABS]
+
+>[!TAB SDK web ]
+
+Establecer `droppedFrames` dentro de `xdm.mediaCollection.qoeDataDetails` al llamar a [`sendEvent`](https://experienceleague.adobe.com/es/docs/experience-platform/collection/js/commands/sendevent/overview):
 
 ```javascript
 alloy("sendEvent", {
@@ -53,11 +57,9 @@ alloy("sendEvent", {
 });
 ```
 
-## SDK móvil
+>[!TAB iOS]
 
 Pase los fotogramas perdidos como el cuarto argumento a `createQoEObject`. Actualice el rastreador antes de que se active cualquier evento de calidad.
-
-**iOS (Swift)**
 
 ```swift
 let qoeObject = Media.createQoEObjectWith(bitrate: 3200,
@@ -68,7 +70,9 @@ let qoeObject = Media.createQoEObjectWith(bitrate: 3200,
 tracker.updateQoEObject(qoe: qoeObject)
 ```
 
-**Android (Kotlin)**
+>[!TAB Android]
+
+Pase los fotogramas perdidos como el cuarto argumento a `createQoEObject`. Actualice el rastreador antes de que se active cualquier evento de calidad.
 
 ```kotlin
 val qoeObject = Media.createQoEObject(3200L,
@@ -79,9 +83,9 @@ val qoeObject = Media.createQoEObject(3200L,
 tracker.updateQoEObject(qoeObject)
 ```
 
-## Roku (BrightScript)
+>[!TAB Roku]
 
-Establecer `droppedFrames` dentro de `mediaCollection.qoeDataDetails` al llamar a `sendMediaEvent`:
+Establecer `droppedFrames` dentro de `xdm.mediaCollection.qoeDataDetails` al llamar a `sendMediaEvent`:
 
 ```brightscript
 m.aepSdk.sendMediaEvent({
@@ -98,9 +102,9 @@ m.aepSdk.sendMediaEvent({
 })
 ```
 
-## API de Media Edge
+>[!TAB API de Media Edge]
 
-Llame al extremo [bitrateChange](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/bitratechange/#bitratechange) con `droppedFrames` dentro de `mediaCollection.qoeDataDetails`:
+Llame al extremo [bitrateChange](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/bitratechange/#bitratechange) con `droppedFrames` dentro de `xdm.mediaCollection.qoeDataDetails`:
 
 ```json
 {
@@ -119,7 +123,13 @@ Llame al extremo [bitrateChange](https://developer.adobe.com/data-collection-api
 }
 ```
 
-## Media SDK
+>[!ENDTABS]
+
+## Tipos de implementación heredados (solo Analytics)
+
+>[!BEGINTABS]
+
+>[!TAB Media SDK JS 3.x]
 
 Pasar fotogramas perdidos como el cuarto argumento a `ADB.Media.createQoEObject`:
 
@@ -128,7 +138,21 @@ var qoeObject = ADB.Media.createQoEObject(3200, 0, 24, 3);
 tracker.updateQoEObject(qoeObject);
 ```
 
-## API de Media Collection
+>[!TAB Chromecast]
+
+Pase el recuento acumulado de fotogramas perdidos como el cuarto argumento a `ADBMobile.media.createQoSObject` y actualice el rastreador:
+
+```javascript
+var qosInfo = ADBMobile.media.createQoSObject(
+  3200,  // bitrate
+  0,     // startupTime
+  24,    // fps
+  0      // droppedFrames (cumulative total)
+);
+ADBMobile.media.updateQoSObject(qosInfo);
+```
+
+>[!TAB API de recopilación de medios]
 
 Incluir `media.qoe.droppedFrames` en el objeto `params`:
 
@@ -143,3 +167,5 @@ Incluir `media.qoe.droppedFrames` en el objeto `params`:
 ```
 
 Consulte la [referencia de eventos de API de Media Collection](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md) para obtener la estructura de solicitudes completa.
+
+>[!ENDTABS]

@@ -3,22 +3,26 @@ title: Cambio de velocidad de bits
 description: Indica que la velocidad de bits de reproducción ha cambiado.
 feature: Streaming Media
 role: Developer
-source-git-commit: b75e50f626b85992575961ea267d0f74eda09f0a
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: '163'
-ht-degree: 14%
+source-wordcount: '200'
+ht-degree: 7%
 
 ---
 
 
 # Cambio de velocidad de bits
 
-El evento de cambio de velocidad de bits indica que el reproductor ha negociado una nueva velocidad de bits de reproducción. Enviarlo siempre que la velocidad de bits cambie durante la reproducción. Incluya el nuevo valor de velocidad de bits en los datos de QoE para que el back-end pueda calcular [Velocidad de bits media](/help/reporting/metrics/average-bitrate.md) y la dimensión del bloque por velocidad de bits.
+El evento de cambio de velocidad de bits indica que el reproductor ha negociado una nueva velocidad de bits de reproducción. Enviarlo siempre que la velocidad de bits cambie durante la reproducción. Incluya el nuevo valor de velocidad de bits en los datos de QoE para que el back-end pueda calcular [[!UICONTROL Velocidad de bits media]](/help/reporting/metrics/average-bitrate.md) y la dimensión del bloque por velocidad de bits.
 
 * **Requisitos previos**: [Inicio de sesión](../session/session-start.md)
-* **Métrica asociada**: [Cambios de velocidad de bits](/help/reporting/metrics/bitrate-changes.md)
+* **Métrica asociada**: [[!UICONTROL Cambios de velocidad de bits]](/help/reporting/metrics/bitrate-changes.md)
 
-## SDK web
+## Tipos de implementación recomendados
+
+>[!BEGINTABS]
+
+>[!TAB SDK web ]
 
 Llamar a [`sendEvent`](https://experienceleague.adobe.com/es/docs/experience-platform/collection/js/commands/sendevent/overview) con `eventType: "media.bitrateChange"` y la nueva velocidad de bits en `qoeDataDetails`:
 
@@ -40,11 +44,9 @@ alloy("sendEvent", {
 });
 ```
 
-## SDK móvil
+>[!TAB iOS]
 
 Cree un objeto QoE con la nueva velocidad de bits y actualice el rastreador antes de que se active el evento de cambio de velocidad de bits.
-
-**iOS (Swift)**
 
 ```swift
 let qoeObject = Media.createQoEObjectWith(bitrate: 3200,
@@ -56,7 +58,9 @@ tracker.updateQoEObject(qoe: qoeObject)
 tracker.trackEvent(event: MediaEvent.BitrateChange, info: nil, metadata: nil)
 ```
 
-**Android (Kotlin)**
+>[!TAB Android]
+
+Cree un objeto QoE con la nueva velocidad de bits y actualice el rastreador antes de que se active el evento de cambio de velocidad de bits.
 
 ```kotlin
 val qoeObject = Media.createQoEObject(3200, 0, 24, 0)
@@ -65,7 +69,7 @@ tracker.updateQoEObject(qoeObject)
 tracker.trackEvent(Media.Event.BitrateChange, null, null)
 ```
 
-## Roku (BrightScript)
+>[!TAB Roku]
 
 Llamar a `sendMediaEvent` con `eventType: "media.bitrateChange"` y la nueva velocidad de bits en `qoeDataDetails`:
 
@@ -86,7 +90,7 @@ m.aepSdk.sendMediaEvent({
 })
 ```
 
-## API de Media Edge
+>[!TAB API de Media Edge]
 
 Llame al extremo [bitrateChange](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/bitratechange/) con la nueva velocidad de bits en `qoeDataDetails`:
 
@@ -110,7 +114,13 @@ curl -X POST "https://edge.adobedc.net/ee/va/v1/bitrateChange?configId={datastre
 }'
 ```
 
-## Media SDK
+>[!ENDTABS]
+
+## Tipos de implementación heredados (solo Analytics)
+
+>[!BEGINTABS]
+
+>[!TAB Media SDK JS 3.x]
 
 Cree un objeto QoE con la nueva velocidad de bits y actualice el rastreador:
 
@@ -126,7 +136,23 @@ tracker.updateQoEObject(qoeObject);
 tracker.trackEvent(ADB.Media.Event.BitrateChange);
 ```
 
-## API de Media Collection
+>[!TAB Chromecast]
+
+Actualice el objeto QoS devuelto por el delegado `getQoSObject` y, a continuación, realice un seguimiento del evento:
+
+```javascript
+// Update QoS data via the delegate
+this._qosInfo = ADBMobile.media.createQoSObject(
+  3200,  // bitrate (kbps)
+  0,     // dropped frames
+  24,    // fps
+  0      // startup time
+);
+
+ADBMobile.media.trackEvent(ADBMobile.media.Event.BitrateChange);
+```
+
+>[!TAB API de recopilación de medios]
 
 Envíe una publicación de `bitrateChange` al [extremo de eventos](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md) con la nueva velocidad de bits en `qoeData`:
 
@@ -139,3 +165,5 @@ Envíe una publicación de `bitrateChange` al [extremo de eventos](/help/impleme
   }
 }
 ```
+
+>[!ENDTABS]

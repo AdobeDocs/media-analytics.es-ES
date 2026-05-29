@@ -3,7 +3,7 @@ title: 'Compatibilidad con metadatos personalizados: formato XDM'
 description: Obtenga información sobre cómo enviar metadatos personalizados con eventos de seguimiento de medios mediante el formato XDM de Experience Edge.
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: 80caffab1630b138724b310e3bdcc58f682a2f8b
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
 source-wordcount: '766'
 ht-degree: 2%
@@ -310,7 +310,7 @@ En este ejemplo:
 
 &lt;InlineAlert variant="info" slots="text" />
 
-`xdm.mediaCollection.customMetadata` es la **ruta de API de entrada** que se usa para enviar metadatos personalizados con eventos. Después del procesamiento, los datos se reenvían a Adobe Analytics como variables de datos de contexto y se almacenan en Adobe Experience Platform en `mediaReporting.customMetadata` y como campos aplanados de nivel superior.
+`xdm.mediaCollection.customMetadata` es la **ruta de API de entrada** que se usa para enviar metadatos personalizados con eventos. Después del procesamiento, los datos se reenvían a Adobe Analytics como variables de datos de contexto y se almacenan en Adobe Experience Platform en `xdm.mediaReporting.customMetadata` y como campos aplanados de nivel superior.
 
 **Adobe Analytics:**
 
@@ -323,7 +323,7 @@ En este ejemplo:
 - Los campos de metadatos personalizados deben definirse como campos personalizados en el esquema XDM (por ejemplo, `_mycompany`) y pueden almacenarse y consultarse en AEP como campos aplanados
 
   ![Definición de campo personalizado en el esquema XDM](assets/custom_metadata.png)
-- Para informes y consultas, los metadatos personalizados están disponibles en `mediaReporting.customMetadata` y también como campos aplanados de nivel superior. Utilice el que sea más adecuado para su caso de uso.
+- Para informes y consultas, los metadatos personalizados están disponibles en `xdm.mediaReporting.customMetadata` y también como campos aplanados de nivel superior. Utilice el que sea más adecuado para su caso de uso.
 - Accesible para la segmentación, Journey Orchestration y activación de Real-Time CDP
 
 ## Comportamiento

@@ -3,10 +3,10 @@ title: Anunciante
 description: Establece la compañía o marca que aparece en cada anuncio.
 feature: Streaming Media
 role: Developer
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: '174'
-ht-degree: 16%
+source-wordcount: '204'
+ht-degree: 10%
 
 ---
 
@@ -24,14 +24,18 @@ La variable del anunciante es la compañía o marca que aparece en el anuncio (p
 | Propiedad | Valor |
 | --- | --- |
 | **Variable de datos de contexto** | `a.media.ad.advertiser` |
-| **Campo de colección XDM** | [`mediaCollection.advertisingDetails.advertiser`](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/advertising-details-collection) |
+| **Campo de colección XDM** | [`xdm.mediaCollection.advertisingDetails.advertiser`](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/advertising-details-collection) |
 | **rasgo de Audience Manager** | `c_contextdata.a.media.ad.advertiser` |
 | **Requerido** | No |
 | **Enviado con** | [Inicio del anuncio](/help/implementation/events/ads/ad-start.md), cierre del anuncio |
 
-## SDK web
+## Tipos de implementación recomendados
 
-Establecer `advertiser` dentro de `mediaCollection.advertisingDetails` al llamar a [`sendEvent`](https://experienceleague.adobe.com/es/docs/experience-platform/collection/js/commands/sendevent/overview):
+>[!BEGINTABS]
+
+>[!TAB SDK web ]
+
+Establecer `advertiser` dentro de `xdm.mediaCollection.advertisingDetails` al llamar a [`sendEvent`](https://experienceleague.adobe.com/es/docs/experience-platform/collection/js/commands/sendevent/overview):
 
 ```javascript
 alloy("sendEvent", {
@@ -49,11 +53,9 @@ alloy("sendEvent", {
 });
 ```
 
-## SDK móvil
+>[!TAB iOS]
 
 Pase el anunciante como clave de metadatos en el argumento HashMap a `trackEvent(AdStart)`. Utilice `MediaConstants.AdMetadataKeys.ADVERTISER`.
-
-**iOS (Swift)**
 
 ```swift
 var metadata: [String: String] = [:]
@@ -62,7 +64,9 @@ metadata[MediaConstants.AdMetadataKeys.ADVERTISER] = "Ford"
 tracker.trackEvent(event: MediaEvent.AdStart, info: adObject, metadata: metadata)
 ```
 
-**Android (Kotlin)**
+>[!TAB Android]
+
+Pase el anunciante como clave de metadatos en el argumento HashMap a `trackEvent(AdStart)`. Utilice `MediaConstants.AdMetadataKeys.ADVERTISER`.
 
 ```kotlin
 val metadata = HashMap<String, String>()
@@ -71,9 +75,9 @@ metadata[MediaConstants.AdMetadataKeys.ADVERTISER] = "Ford"
 tracker.trackEvent(Media.Event.AdStart, adObject, metadata)
 ```
 
-## Roku (BrightScript)
+>[!TAB Roku]
 
-Establecer `advertiser` dentro de `mediaCollection.advertisingDetails` al llamar a `sendMediaEvent` para `media.adStart`:
+Establecer `advertiser` dentro de `xdm.mediaCollection.advertisingDetails` al llamar a `sendMediaEvent` para `media.adStart`:
 
 ```brightscript
 m.aepSdk.sendMediaEvent({
@@ -90,9 +94,9 @@ m.aepSdk.sendMediaEvent({
 })
 ```
 
-## API de Media Edge
+>[!TAB API de Media Edge]
 
-Llame al extremo [adStart](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/ads/#adstart) con `advertiser` dentro de `mediaCollection.advertisingDetails`:
+Llame al extremo [adStart](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/ads/#adstart) con `advertiser` dentro de `xdm.mediaCollection.advertisingDetails`:
 
 ```json
 {
@@ -115,7 +119,13 @@ Llame al extremo [adStart](https://developer.adobe.com/data-collection-apis/docs
 }
 ```
 
-## Media SDK
+>[!ENDTABS]
+
+## Tipos de implementación heredados (solo Analytics)
+
+>[!BEGINTABS]
+
+>[!TAB Media SDK JS 3.x]
 
 Pase el anunciante en el objeto `contextData` mediante `ADB.Media.AdMetadataKeys.Advertiser`:
 
@@ -126,7 +136,19 @@ contextData[ADB.Media.AdMetadataKeys.Advertiser] = "Ford";
 tracker.trackEvent(ADB.Media.Event.AdStart, adInfo, contextData);
 ```
 
-## API de Media Collection
+>[!TAB Chromecast]
+
+Establezca el anunciante con `ADBMobile.media.AdMetadataKeys.ADVERTISER` en el objeto de metadatos de anuncio estándar:
+
+```javascript
+var adInfo = ADBMobile.media.createAdObject("Ford F-150", "ad-2125", 1, 30);
+var standardAdMetadata = {};
+standardAdMetadata[ADBMobile.media.AdMetadataKeys.ADVERTISER] = "Sample advertiser";
+adInfo[ADBMobile.media.MediaObjectKey.StandardAdMetadata] = standardAdMetadata;
+ADBMobile.media.trackEvent(ADBMobile.media.Event.AdStart, adInfo, null);
+```
+
+>[!TAB API de recopilación de medios]
 
 Incluir `media.ad.advertiser` en el objeto `params`:
 
@@ -141,3 +163,5 @@ Incluir `media.ad.advertiser` en el objeto `params`:
 ```
 
 Consulte la [referencia de eventos de API de Media Collection](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md) para obtener la estructura de solicitudes completa.
+
+>[!ENDTABS]

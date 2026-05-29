@@ -18,9 +18,9 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: 1425
+source-wordcount: 1424
 ht-degree: 5%
 
 ---
@@ -81,7 +81,7 @@ La funcionalidad de programación de datos para medios de streaming funciona de 
 
 Para cargar datos de programación de contenido en directo anterior, el entorno de medios de streaming debe cumplir los siguientes requisitos previos:
 
-* La recopilación de medios de streaming debe estar habilitada para realizar el seguimiento del contenido cuyos datos de programación desea cargar, tal como se describe en [Resumen del seguimiento](/help/use-cases/track-av-playback/track-core-overview.md). <!--specifics??? -->
+* La recopilación de medios de streaming debe estar habilitada para realizar el seguimiento del contenido cuyos datos de programación desea cargar, tal como se describe en [Resumen del seguimiento](/help/implementation/events/session/overview.md). <!--specifics??? -->
 
 * Utilice la recopilación de medios de streaming con Customer Journey Analytics. La capacidad de cargar datos de programación no está disponible con Adobe Analytics.
 
@@ -317,9 +317,9 @@ El siguiente ejemplo es un archivo .json de programación con dos registros. Cad
 
    Considere los siguientes ejemplos de dimensiones que puede crear y luego informar en Customer Journey Analytics:
 
-   * **[&quot;_Nombre del episodio_&quot;](/help/reporting/dimensions/episode.md)**: Esta dimensión podría ayudarle a saber qué episodios de una serie en particular tienen el mejor rendimiento.
+   * **[[!UICONTROL Episodio]](/help/reporting/dimensions/episode.md)**: Esta dimensión podría ayudarle a saber qué episodios de una serie en particular tienen el mejor rendimiento.
 
-   * **[ID de recurso](/help/reporting/dimensions/asset-id.md)**
+   * **[[!UICONTROL ID de recurso]](/help/reporting/dimensions/asset-id.md)**
 
 1. Continuar con [Analizar datos en Customer Journey Analytics](#analyze-data-in-customer-journey-analytics).
 

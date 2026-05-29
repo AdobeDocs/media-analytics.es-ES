@@ -2,10 +2,10 @@
 title: Obtención de datos del informe JSON de espectadores simultáneos
 description: Obtención de datos del informe JSON de espectadores simultáneos
 uuid: 9168f114-2459-4951-a06c-57b735d09dc0
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: '156'
-ht-degree: 100%
+source-wordcount: '150'
+ht-degree: 84%
 
 ---
 
@@ -13,14 +13,14 @@ ht-degree: 100%
 # Obtención de datos del informe JSON de espectadores simultáneos{#get-concurrent-viewers-json-report-data}
 
 Puede obtener datos de informes de visores simultáneos mediante la _*versión 1.4*_ de las API de Analytics:
-* [API de Analytics ](https://github.com/AdobeDocs/analytics-1.4-apis)
+* [API de Analytics](https://github.com/AdobeDocs/analytics-1.4-apis)
 * [Swagger](https://adobedocs.github.io/analytics-1.4-apis/swagger-docs.html#/Report/Report.Get)
 
 1. Filtre los datos con cualquier segmento creado en la interfaz de usuario. Para filtrar por un ID de contenido específico, cree un nuevo segmento.
 1. Establezca el `elements` -> `id` en el cuerpo de la solicitud en `videoconcurrentviewers`.
 1. Solicite una cantidad suficiente de datos. Adobe recomienda 3200 puntos de datos para garantizar que no haya espacios en los datos.
 
-   * El intervalo de datos que especifique en el informe recopila todos los datos del visor simultáneo _al finalizar la sesión de vídeo._
+   * El rango de datos que especifique en el informe recopila todos los datos del visor simultáneo _en el momento en que finalizó la sesión de vídeo._
 Por lo tanto, debe tener en cuenta las sesiones que comienzan un día y finalizan después de la medianoche (es decir, al día siguiente).
 
    * Solicite más de un día de datos, pero en el análisis _*utilice solo el primer día de los datos.*_
@@ -56,7 +56,7 @@ Una carga útil de solicitud de muestra para este escenario tendría este aspect
 ```
 
 <!--
-You can extract the concurrent viewers report data using the Experience Cloud API Explorer as follows. 
+You can extract the concurrent viewers report data using the API Explorer as follows. 
 
 1. Navigate to: [https://www.adobe.io.](https://www.adobe.io)
 1. Select and enter the following information in the API Explorer form:

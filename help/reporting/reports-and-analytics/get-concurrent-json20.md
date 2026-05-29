@@ -18,10 +18,10 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: 190
-ht-degree: 90%
+source-wordcount: 171
+ht-degree: 88%
 
 ---
 
@@ -33,7 +33,7 @@ Puede obtener datos de informes de visualizadores simultáneos mediante las [_*A
 1. Establezca el `elements` -> `id` en el cuerpo de la solicitud en `metrics/concurrent_viewers_visitors`.
 1. Solicite una cantidad suficiente de datos.
 
-   * El intervalo de datos que especifique en el informe recopila todos los datos del visor simultáneo _al finalizar la sesión de vídeo._
+   * El rango de datos que especifique en el informe recopila todos los datos del visor simultáneo _en el momento en que finalizó la sesión de vídeo._
 Debe tener en cuenta las sesiones que comienzan un día y finalizan después de la medianoche (es decir, al día siguiente).
 
    * Solicite un día más de datos para el período previsto en la solicitud, pero en el análisis, _*use solo los datos necesarios.*_
@@ -133,7 +133,7 @@ Una carga de solicitud de ejemplo para un día de datos sería como el siguiente
 
 
 <!--
-You can extract the concurrent viewers report data using the Experience Cloud API Explorer as follows.
+You can extract the concurrent viewers report data using the API Explorer as follows.
 
 1. Navigate to: [https://www.adobe.io.](https://www.adobe.io)
 1. Select and enter the following information in the API Explorer form:

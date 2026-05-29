@@ -3,7 +3,7 @@ title: Duración total del búfer (dimensión)
 description: Informa de los segundos acumulados empleados en el almacenamiento en búfer por sesión.
 feature: Dimensions
 role: User, Admin
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
 source-wordcount: '192'
 ht-degree: 6%
@@ -15,7 +15,7 @@ ht-degree: 6%
 
 >[!BEGINSHADEBOX]
 
-*Esta página cubre la dimensión **Duración total del búfer**. Adobe Analytics rellena automáticamente un [Duración total del búfer (métrica)](/help/reporting/metrics/total-buffer-duration.md) emparejado desde la misma variable de datos de contexto `a.media.qoe.bufferTime`. Customer Journey Analytics expone un único campo `mediaReporting.qoeDataDetails.bufferTime` que puede usar como dimensión o como métrica.*
+*Esta página cubre la dimensión **Duración total del búfer**. Adobe Analytics rellena automáticamente un [Duración total del búfer (métrica)](/help/reporting/metrics/total-buffer-duration.md) emparejado desde la misma variable de datos de contexto `a.media.qoe.bufferTime`. Customer Journey Analytics expone un único campo `xdm.mediaReporting.qoeDataDetails.bufferTime` que puede usar como dimensión o como métrica.*
 
 >[!ENDSHADEBOX]
 
@@ -28,7 +28,7 @@ El servidor multimedia suma la duración de cada intervalo de búfer (desde [ini
 | Sistema de informes | Fuente |
 | --- | --- |
 | Adobe Analytics | Se recopila automáticamente a partir de los datos de contexto `a.media.qoe.bufferTime` cuando [[!UICONTROL Calidad de los medios]](/help/reporting/media-reports-enable.md) está habilitado. |
-| Customer Journey Analytics | [`mediaReporting.qoeDataDetails.bufferTime`](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
+| Customer Journey Analytics | [`xdm.mediaReporting.qoeDataDetails.bufferTime`](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
 | Fuentes de datos | `videoqoebuffertimeevar`, `post_videoqoebuffertimeevar` |
 | Audience Manager | `c_contextdata.a.media.qoe.bufferTime` |
 
