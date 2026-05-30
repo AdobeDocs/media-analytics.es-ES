@@ -3,9 +3,9 @@ title: Resumen de métricas de medios de streaming
 description: Descubra cómo se calculan y organizan las métricas de medios de streaming en Adobe Analytics y Customer Journey Analytics.
 feature: Metrics
 role: User, Admin
-source-git-commit: da289f8d425fcbaece42519a9ea7d061f80e4591
+source-git-commit: 3dbbd5228fcd91cf78c0597dea656c06f367dd40
 workflow-type: tm+mt
-source-wordcount: '469'
+source-wordcount: '458'
 ht-degree: 3%
 
 ---
@@ -37,7 +37,6 @@ Las métricas de medios de streaming siguen cuatro patrones de cálculo principa
 
 >[!MORELIKETHIS]
 >
->* [Resumen de dimensiones](../dimensions/overview.md): referencia de dimensiones de medios de streaming
->* [Métricas calculadas](/help/reporting/calculated-metrics.md): proporciones y métricas derivadas creadas a partir de las métricas base anteriores
->* [Asignación de parámetros](/help/implementation/parameters-mapping.md): referencia completa de evento a columna a XDM
->* [Información general sobre eventos](/help/implementation/events/overview.md): Los eventos del reproductor que controlan el cálculo de métricas
+>* [Información general sobre eventos](/help/implementation/events/overview.md): Los eventos del reproductor que rellenan las métricas
+>* [Resumen de variables](/help/implementation/variables/overview.md): Los datos que los eventos llevan a Adobe
+>* [Resumen de dimensiones](/help/reporting/dimensions/overview.md): Las dimensiones de informes que rellenan las variables

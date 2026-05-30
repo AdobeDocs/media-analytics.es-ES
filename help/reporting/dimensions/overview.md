@@ -3,7 +3,7 @@ title: Resumen de dimensiones de medios de streaming
 description: Descubra cómo se rellenan y organizan las dimensiones de medios de streaming en Adobe Analytics y Customer Journey Analytics.
 feature: Dimensions
 role: User, Admin
-source-git-commit: da289f8d425fcbaece42519a9ea7d061f80e4591
+source-git-commit: 3dbbd5228fcd91cf78c0597dea656c06f367dd40
 workflow-type: tm+mt
 source-wordcount: '423'
 ht-degree: 6%
@@ -36,6 +36,6 @@ Las dimensiones de medios de streaming siguen tres patrones de población princi
 
 >[!MORELIKETHIS]
 >
->* [Resumen de métricas](../metrics/overview.md): referencia de métricas de medios de streaming
->* [Asignación de parámetros](/help/implementation/parameters-mapping.md): referencia completa de variable a columna a XDM
->* [Segmentos de medios](/help/reporting/segments.md): Segmentos integrados que utilizan dimensiones de medios de transmisión
+>* [Información general de eventos](/help/implementation/events/overview.md): Los eventos del reproductor que rellenan las dimensiones
+>* [Resumen de variables](/help/implementation/variables/overview.md): Los datos que los eventos llevan a Adobe
+>* [Resumen de métricas](/help/reporting/metrics/overview.md): Las métricas de informes que rellenan las variables
