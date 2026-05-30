@@ -1,40 +1,33 @@
 ---
-title: Asignación de datos de la API de Media Edge y validación de Platform
+title: Esquema de informes de XDM
 description: Descubra qué eventos de API de Media Edge generan eventos de experiencia en Adobe Experience Platform y cómo validar la implementación mediante el esquema XDM de creación de informes de medios.
 feature: Streaming Media
 role: User, Admin, Developer
 exl-id: c3a4d31b-8f9e-4d7a-9b2e-1a5f0e8c7d39
-product_v2:
-  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
-feature_v2:
-  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
-  - id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7a
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2: id: fd307ce7-56f5-4ee3-af68-a7833ff6e85eid: e9dbdbc5-3e52-40f0-a7bc-e18542967b7a
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 267532dfbe6dc3f7bcff0991536ae3baf6eff053
 workflow-type: tm+mt
-source-wordcount: 764
+source-wordcount: 763
 ht-degree: 4%
 
 ---
 
 
-# Asignación de datos de la API de Media Edge y validación de Platform
+# Esquema de informes de XDM
 
-Cuando envía eventos de seguimiento de contenido mediante la API de Media Edge o una SDK de Media Edge, el backend de Media Analytics procesa esos eventos y escribe eventos de experiencia calculados en conjuntos de datos de Adobe Experience Platform. Comprender qué eventos llegan a Platform y qué calcula el back-end por usted ayuda a validar la implementación y crear informes precisos en Customer Journey Analytics o Adobe Analytics.
+Cuando envía eventos de seguimiento de contenido mediante Adobe Experience Platform Edge Network, el backend de Media Analytics procesa esos eventos y escribe eventos de experiencia calculados en conjuntos de datos de Platform. Comprender qué eventos llegan a Platform y qué calcula el back-end por usted ayuda a validar la implementación y crear informes precisos en Customer Journey Analytics o Adobe Analytics.
 
-Media Edge utiliza dos esquemas XDM distintos:
+Se utilizan dos esquemas XDM distintos en diferentes partes de la recopilación y la canalización de informes:
 
 | Esquema | Área de nombres | Dirección | Finalidad |
 |---|---|---|---|
-| Colección de medios | `xdm.mediaCollection` | Cliente → Adobe | Lo que envía el reproductor para cada evento de seguimiento |
-| Informes de medios | `xdm.mediaReporting` | Adobe → Platform | Lo que el servidor escribe en los conjuntos de datos después del procesamiento |
+| Colección de medios | `xdm.mediaCollection` | Cliente → Adobe | Lo que el reproductor envía por cada evento de seguimiento. Utilizado por [variables](/help/implementation/variables/). |
+| Informes de medios | `xdm.mediaReporting` | Adobe → Platform | Lo que el servidor escribe en los conjuntos de datos después del procesamiento. Utilizado por [dimensiones](/help/reporting/dimensions/overview.md) y [métricas](/help/reporting/metrics/overview.md). |
 
-Los campos presentes en `mediaReporting` pero ausentes de la carga útil de `mediaCollection` son **calculados en el servidor**, derivados de la secuencia completa de eventos de una sesión. Estos campos nunca se envían; Adobe los genera.
+Los campos presentes en `mediaReporting` pero ausentes de la carga útil `mediaCollection` se derivan de la secuencia completa de eventos de una sesión. Estos campos nunca se envían; Adobe los genera.
 
 ## Eventos que escriben en conjuntos de datos de Platform
 

@@ -5,9 +5,9 @@ user-guide-title: Guía de servicios de medios de streaming
 breadcrumb-title: Guía de servicios de medios de streaming
 user-guide-description: Implementar servicios de medios de streaming. Incluye el SDK de medios y la API de recopilación de medios.
 sub-product: media analytics
-source-git-commit: 3dbbd5228fcd91cf78c0597dea656c06f367dd40
+source-git-commit: 267532dfbe6dc3f7bcff0991536ae3baf6eff053
 workflow-type: tm+mt
-source-wordcount: '755'
+source-wordcount: '753'
 ht-degree: 35%
 
 ---
@@ -130,7 +130,7 @@ ht-degree: 35%
          + [Media Edge Mobile SDK](/help/implementation/edge/edge-mobile-sdk.md)
       + [API de Media Edge](/help/implementation/edge/implementation-edge-api.md)
       + [Compatibilidad con metadatos personalizados](implementation/edge/implementation-edge-custom-metadata.md)
-      + [Validación y asignación de datos de AEP](/help/implementation/edge/platform-data.md)
+      + [Esquema de informes de XDM](/help/implementation/edge/platform-data.md)
    + Implementaciones solo de Adobe Analytics {#analytics-only}
       + [Requisitos previos](/help/implementation/media-sdk/setup/prerequisites-analytics.md)
       + [Habilitación de informes de medios](implementation/media-sdk/setup/media-reports-enable.md)
@@ -292,8 +292,8 @@ ht-degree: 35%
    + [Segmentos de medios](reporting/segments.md)
    + Informes de medios predeterminados {#media-default-reports}
       + [Información general de informes predeterminados](reporting/reports-and-analytics/default-reports-overview.md)
-      + [Información general de medios &#x200B;](reporting/reports-and-analytics/media-reports-overview.md)
-      + [Detalles de medios &#x200B;](reporting/reports-and-analytics/media-reports-detail.md)
+      + [Información general de medios ](reporting/reports-and-analytics/media-reports-overview.md)
+      + [Detalles de medios ](reporting/reports-and-analytics/media-reports-detail.md)
       + [Informe de Media Daypart](reporting/reports-and-analytics/media-reports-daypart.md)
       + [Informe de visualizadores simultáneos de medios](reporting/reports-and-analytics/media-concurrent-viewers-reports.md)
    + API de medios {#media-api}
