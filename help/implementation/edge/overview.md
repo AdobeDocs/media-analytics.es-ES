@@ -117,7 +117,7 @@ Para estandarizar la recopilación de datos en todas las aplicaciones que utiliz
 
    +++ Amplíe para ver instrucciones sobre cómo agregar metadatos personalizados al esquema.
 
-   1. Busque el nombre de inquilino de la organización seleccionando **[!UICONTROL Información de cuenta]** > **[!UICONTROL Organizaciones asignadas]** > [!UICONTROL _**Nombre de organización**_] > **[!UICONTROL inquilino]**.
+   1. Busque el nombre de inquilino de la organización seleccionando **[!UICONTROL Información de cuenta]** > **[!UICONTROL Organizaciones asignadas]** > [!UICONTROL _&#x200B;**Nombre de organización**&#x200B;_] > **[!UICONTROL inquilino]**.
 
       Los campos personalizados se reciben a través de esta ruta. (Por ejemplo, nombre de inquilino: _dcbl → ruta myCustomField: _dcbl.myCustomField).
 
@@ -185,7 +185,7 @@ Con el esquema, el conjunto de datos y el conjunto de datos en su lugar, impleme
 
 | Código base | En código | Mediante etiquetas |
 |---|---|---|
-| Web | [SDK web ](web-sdk.md) | [Extensión de etiqueta Web SDK](web-sdk-tags.md) |
+| Web | [SDK web &#x200B;](web-sdk.md) | [Extensión de etiqueta Web SDK](web-sdk-tags.md) |
 | iOS | [iOS](ios.md) | [iOS (etiquetas)](ios-tags.md) |
 | Android | [Android](android.md) | [Android (etiquetas)](android-tags.md) |
 | Roku | [Roku](roku.md) | — |

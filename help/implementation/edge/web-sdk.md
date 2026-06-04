@@ -35,7 +35,7 @@ alloy("configure", {
 });
 ```
 
-Para obtener información detallada sobre la configuración, consulte el comando [`streamingMedia` ](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/commands/configure/streamingmedia).
+Para obtener información detallada sobre la configuración, consulte el comando [`streamingMedia` &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/commands/configure/streamingmedia).
 
 ### Migración desde Media JS SDK
 

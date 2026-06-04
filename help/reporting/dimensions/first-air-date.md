@@ -15,7 +15,7 @@ ht-degree: 1%
 
 >[!BEGINSHADEBOX]
 
-*Esta página cubre la **Primera fecha de emisión**dimensión del informe. Consulte [Primera fecha de emisión](/help/implementation/variables/standard-metadata/first-air-date.md) para ver cómo recopilar esta variable.*
+*Esta página cubre la **Primera fecha de emisión**&#x200B;dimensión del informe. Consulte [Primera fecha de emisión](/help/implementation/variables/standard-metadata/first-air-date.md) para ver cómo recopilar esta variable.*
 
 >[!ENDSHADEBOX]
 
