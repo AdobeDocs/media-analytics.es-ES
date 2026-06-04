@@ -3,7 +3,7 @@ title: Mostrar tipo
 description: Identifique el formato de contenido (episodio completo, vista previa, clip u otro) con un código entero de cadena.
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
 workflow-type: tm+mt
 source-wordcount: '233'
 ht-degree: 8%
@@ -21,10 +21,10 @@ ht-degree: 8%
 
 La variable show type identifica el formato de contenido mediante un código entero de cadena:
 
-- `"0"`: episodio completo
-- `"1"`: vista previa o tráiler
-- `"2"`: clip
-- `"3"`: otro
+* `"0"`: episodio completo
+* `"1"`: vista previa o tráiler
+* `"2"`: clip
+* `"3"`: otro
 
 Utilícelo para separar la visualización de programa completo del contenido corto, como remolques y clips, al medir la participación.
 

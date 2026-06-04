@@ -3,7 +3,7 @@ title: Tiempo de reproducción única
 description: Notifica los segundos de contenido distinto vistos durante una sesión, lo que anula la duplicación de las reproducciones seek-back.
 feature: Metrics
 role: User, Admin
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
 workflow-type: tm+mt
 source-wordcount: '180'
 ht-degree: 8%
@@ -21,7 +21,7 @@ El back-end de medios rastrea qué intervalos de cabezal de reproducción se han
 
 | Sistema de informes | Fuente |
 | --- | --- |
-| Adobe Analytics | Se recopila automáticamente a partir de los datos de contexto `a.media.uniqueTimePlayed` cuando [[!UICONTROL Media Core]](/help/reporting/media-reports-enable.md) está habilitado. |
+| Adobe Analytics | Se recopila automáticamente a partir de los datos de contexto `a.media.uniqueTimePlayed` cuando [[!UICONTROL Media Core]](/help/reporting/setup/analytics-reporting.md) está habilitado. |
 | Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.uniqueTimePlayed`](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/session-details-reporting) |
 | Fuentes de datos | `event_list`, `post_event_list` (consulte la búsqueda [`event.tsv`](https://experienceleague.adobe.com/es/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files)) |
 | Audience Manager | `c_contextdata.a.media.uniqueTimePlayed` |

@@ -3,7 +3,7 @@ title: Segmento de contenido
 description: Informa del rango del cabezal de reproducción visto durante una sesión, en minutos.
 feature: Dimensions
 role: User, Admin
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
 workflow-type: tm+mt
 source-wordcount: '200'
 ht-degree: 6%
@@ -21,7 +21,7 @@ El back-end de medios calcula el segmento de contenido a partir de los valores d
 
 | Sistema de informes | Fuente |
 | --- | --- |
-| Adobe Analytics | Se recopila automáticamente a partir de los datos de contexto `a.media.segment` cuando [[!UICONTROL Media Core]](/help/reporting/media-reports-enable.md) está habilitado. |
+| Adobe Analytics | Se recopila automáticamente a partir de los datos de contexto `a.media.segment` cuando [[!UICONTROL Media Core]](/help/reporting/setup/analytics-reporting.md) está habilitado. |
 | Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.segment`](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/session-details-reporting) |
 | Fuentes de datos | `videosegment`, `post_videosegment` |
 | Audience Manager | `c_contextdata.a.media.segment` |

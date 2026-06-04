@@ -3,7 +3,7 @@ title: Pod de anuncios
 description: Informa de cada pausa publicitaria única, introducida por un ID de pod generado automáticamente.
 feature: Dimensions
 role: User, Admin
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
 workflow-type: tm+mt
 source-wordcount: '195'
 ht-degree: 7%
@@ -21,7 +21,7 @@ SDK genera automáticamente el ID del pod de anuncios cuando se activa un evento
 
 | Sistema de informes | Fuente |
 | --- | --- |
-| Adobe Analytics | Se recopila automáticamente a partir de los datos de contexto `a.media.ad.pod` cuando [[!UICONTROL Media Ads]](/help/reporting/media-reports-enable.md) está habilitado. |
+| Adobe Analytics | Se recopila automáticamente a partir de los datos de contexto `a.media.ad.pod` cuando [[!UICONTROL Media Ads]](/help/reporting/setup/analytics-reporting.md) está habilitado. |
 | Customer Journey Analytics | [`xdm.mediaReporting.advertisingPodDetails.ID`](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/advertising-pod-details-reporting) |
 | Fuentes de datos | `videoadpod`, `post_videoadpod` |
 | Audience Manager | N/A |

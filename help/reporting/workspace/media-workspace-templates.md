@@ -19,7 +19,7 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
+source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
 workflow-type: tm+mt
 source-wordcount: 369
 ht-degree: 10%
@@ -40,13 +40,13 @@ Algunos de estos informes son especialmente útiles para analizar los datos de m
 
 A continuación se muestra una lista de informes predeterminados que son útiles al analizar los datos de medios de streaming:
 
-* [!UICONTROL **Consumo de contenido multimedia**]: crea un informe que muestra el contenido que se consume más y resulta más atractivo para los usuarios.
+* **[!UICONTROL Consumo de contenido multimedia]**: crea un informe que muestra el contenido que se consume más y resulta más atractivo para los usuarios.
 
-* [!UICONTROL **Consumo de medios de transmisión**]: crea un informe con un tablero, como se muestra en el ejemplo siguiente.
+* **[!UICONTROL Consumo de medios de transmisión]**: crea un informe con un tablero, como se muestra en el ejemplo siguiente.
 
-* [!UICONTROL **Actualización, frecuencia y lealtad de los medios**]: crea un informe que muestra la actualización (cuántos días han transcurrido desde la última visita), la frecuencia (cuántas visitas por visitante) y la lealtad (con qué frecuencia regresan al sitio cohortes de usuarios)
+* **[!UICONTROL Actualización, frecuencia y lealtad de los medios]**: crea un informe que muestra la actualización (cuántos días han transcurrido desde la última visita), la frecuencia (cuántas visitas por visitante) y la lealtad (con qué frecuencia regresan al sitio cohortes de usuarios)
 
-Por ejemplo, si elige el informe [!UICONTROL **Consumo de medios de streaming**], se presenta un proyecto con el siguiente tablero:
+Por ejemplo, si elige el informe **[!UICONTROL Consumo de medios de streaming]**, se presenta un proyecto con el siguiente tablero:
 
 ![](/help/reporting/assets/aa-workspace.png)
 

@@ -16,10 +16,10 @@ role_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
 workflow-type: tm+mt
-source-wordcount: 1325
-ht-degree: 20%
+source-wordcount: 1331
+ht-degree: 19%
 
 ---
 
@@ -33,7 +33,7 @@ Este documento proporciona una lista completa de todos los parámetros de Media 
 
 ## Variables reservadas de Media Analytics
 
-A partir de octubre de 2025, la ruta de campo XDM `media.mediaTimed` está totalmente obsoleta y se ha reemplazado por `mediaReporting`. Los datos introducidos después de octubre de 2025 solo incluyen `mediaReporting` campos. Los datos anteriores permanecen disponibles en la ruta de campo heredada, tal y como se refleja en las tablas siguientes en **Campo XDM heredado**.
+A partir de octubre de 2025, la ruta de campo XDM `media.mediaTimed` utilizada por el conector de origen de Analytics está totalmente obsoleta y se ha reemplazado por `mediaReporting`. Los datos introducidos después de octubre de 2025 solo incluyen `mediaReporting` campos. Los datos anteriores permanecen disponibles en la ruta de campo heredada, tal y como se refleja en las tablas siguientes en **Campo XDM heredado**.
 
 ### Comportamiento de llamada de mantenimiento de conexión
 

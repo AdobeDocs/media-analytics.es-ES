@@ -18,7 +18,7 @@ topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: 92e1a77339d29b0ef7ec8adc76817b2ac61ee900
 workflow-type: tm+mt
 source-wordcount: 700
 ht-degree: 0%
@@ -37,11 +37,11 @@ Para migrar las asignaciones de preparación de datos del tipo de datos anterior
 >
 >Para evitar la pérdida de datos, asegúrese de que el conector de origen de Analytics se haya implementado utilizando los nuevos campos `mediaReporting` antes de completar los pasos de esta sección.
 
-1. En Adobe Experience Platform, en la sección [!UICONTROL **Sources**], vaya a la pestaña [!UICONTROL **Dataflows**].
+1. En Adobe Experience Platform, en la sección **[!UICONTROL Sources]**, vaya a la pestaña **[!UICONTROL Dataflows]**.
 
 1. Busque el flujo de datos responsable de importar los datos de medios de streaming de Adobe Analytics a Adobe Experience Platform mediante la recopilación de datos de Adobe.
 
-1. Seleccione [!UICONTROL **Actualizar flujo de datos**] para modificar la configuración de la preparación de datos reemplazando cada asignación de origen personalizada que contenga un campo obsoleto con el nuevo campo correspondiente del nuevo objeto XDM.
+1. Seleccione **[!UICONTROL Actualizar flujo de datos]** para modificar la configuración de la preparación de datos reemplazando cada asignación de origen personalizada que contenga un campo obsoleto con el nuevo campo correspondiente del nuevo objeto XDM.
 
 1. Busque las asignaciones que contienen campos de origen del objeto &quot;Media&quot; obsoleto.
 
@@ -55,19 +55,19 @@ Consulte el parámetro [Content ID](/help/reporting/dimensions/content.md) y el 
 
 Para facilitar el seguimiento de las directrices de migración, tenga en cuenta el siguiente ejemplo de flujo de datos que contiene una sola asignación. En este caso, debe aplicar las directrices de migración solo una vez.
 
-1. En Adobe Experience Platform, en la sección [!UICONTROL **Sources**], vaya a la pestaña [!UICONTROL **Dataflows**].
+1. En Adobe Experience Platform, en la sección **[!UICONTROL Sources]**, vaya a la pestaña **[!UICONTROL Dataflows]**.
 
 1. Busque el flujo de datos responsable de importar los datos de medios de streaming de Adobe Analytics a Adobe Experience Platform mediante la recopilación de datos de Adobe.
 
 1. Seleccione **[!UICONTROL Actualizar flujo de datos]** para ingresar a la interfaz de usuario de edición como se muestra en la siguiente imagen.
 
-   ![Flujo de datos de AEP](assets/aep-dataflow.jpeg)
+   ![Flujo de datos de AEP](../../assets/aep-dataflow.jpeg)
 
 1. En la ficha **[!UICONTROL Asignación]**, seleccione **[!UICONTROL Personalizada]**.
 
 1. Identifique las asignaciones personalizadas que dependen de `media.mediaTimed` campos como orígenes.
 
-   ![Flujo de datos de AEP continuado](assets/aep-dataflow2.jpeg)
+   ![Flujo de datos de AEP continuado](../../assets/aep-dataflow2.jpeg)
 
    En este ejemplo, dado que creó un grupo de campos personalizados en el esquema de su organización de desarrollo, el campo de destino se encuentra en `_dcbl`. La ruta del grupo de campos personalizados difiere según el nombre de la organización.
 
@@ -75,17 +75,17 @@ Para facilitar el seguimiento de las directrices de migración, tenga en cuenta 
 
    Por ejemplo, para Network, el corresponsal de `media.mediaTimed.primaryAssetViewDetails`.broadcastNetwork es `xdm.mediaReporting.sessionDetails.network`.
 
-   ![Ruta de campo XDM actualizada](assets/xdm-field-path-old-and-new.jpeg)
+   ![Ruta de campo XDM actualizada](../../assets/xdm-field-path-old-and-new.jpeg)
 
 1. En el campo **[!UICONTROL Source field]**, reemplace la ruta de acceso `media.mediaTimed` por la ruta de acceso `mediaReporting`. El campo de destino permanece sin cambios.
 
-   ![Flujo de datos de AEP continuado](assets/aep-dataflow3.jpeg)
+   ![Flujo de datos de AEP continuado](../../assets/aep-dataflow3.jpeg)
 
 1. Seleccione **[!UICONTROL Siguiente]** para guardar los cambios.
 
    El estado se muestra como **[!UICONTROL Procesando]**. Una vez aplicados los cambios, el estado se muestra como **[!UICONTROL Habilitado]**.
 
-   ![Flujo de datos de AEP continuado](assets/aep-dataflow5.jpeg)
+   ![Flujo de datos de AEP continuado](../../assets/aep-dataflow5.jpeg)
 
 ## Ejemplo con diferentes tipos de datos
 
@@ -99,8 +99,8 @@ Si el tipo de origen es un número y el tipo de destino es un booleano, debe uti
 
 Asignando con `media.mediaTimed` a un campo personalizado.
 
-![Flujo de datos de AEP continuado](assets/aep-dataflow6.jpeg)
+![Flujo de datos de AEP continuado](../../assets/aep-dataflow6.jpeg)
 
 Asignando `mediaReporting` al mismo campo personalizado:
 
-![Flujo de datos de AEP continuado](assets/aep-dataflow7.jpeg)
+![Flujo de datos de AEP continuado](../../assets/aep-dataflow7.jpeg)

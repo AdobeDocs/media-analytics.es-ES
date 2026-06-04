@@ -3,7 +3,7 @@ title: Ruta de medios
 description: Registra el ID de contenido como una variable de tráfico para el análisis de rutas.
 feature: Dimensions
 role: User, Admin
-source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
+source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
 workflow-type: tm+mt
 source-wordcount: '229'
 ht-degree: 5%
@@ -21,7 +21,7 @@ La ruta de medios se deriva automáticamente del ID de contenido establecido al 
 
 | Sistema de informes | Fuente |
 | --- | --- |
-| Adobe Analytics | Se recopila automáticamente a partir de los datos de contexto `a.media.name` como una variable de tráfico (prop) cuando [[!UICONTROL Media Core]](/help/reporting/media-reports-enable.md) está habilitado. |
+| Adobe Analytics | Se recopila automáticamente a partir de los datos de contexto `a.media.name` como una variable de tráfico (prop) cuando [[!UICONTROL Media Core]](/help/reporting/setup/analytics-reporting.md) está habilitado. |
 | Customer Journey Analytics | N/D — usar [Contenido](content.md) para el análisis de rutas |
 | Fuentes de datos | `videopath`, `post_videopath` |
 | Audience Manager | `c_contextdata.a.media.name` |

@@ -3,7 +3,7 @@ title: Resumen de dimensiones de medios de streaming
 description: Descubra cómo se rellenan y organizan las dimensiones de medios de streaming en Adobe Analytics y Customer Journey Analytics.
 feature: Dimensions
 role: User, Admin
-source-git-commit: 3dbbd5228fcd91cf78c0597dea656c06f367dd40
+source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
 workflow-type: tm+mt
 source-wordcount: '423'
 ht-degree: 6%
@@ -29,7 +29,7 @@ Las dimensiones de medios de streaming siguen tres patrones de población princi
 
 | Sistema de informes | Cómo llegan las dimensiones |
 | --- | --- |
-| Adobe Analytics | Rellenado con [variables de datos de contexto](https://experienceleague.adobe.com/es/docs/analytics/implementation/vars/page-vars/contextdata). Algunas dimensiones rellenan automáticamente dimensiones usando estas variables de datos de contexto, mientras que otras deben rellenarse usando [Reglas de procesamiento](https://experienceleague.adobe.com/es/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview). Las dimensiones que rellenan automáticamente los valores deben tener habilitada primero su respectiva configuración del grupo de informes [medios de streaming](../../implementation/media-sdk/setup/media-reports-enable.md). |
+| Adobe Analytics | Rellenado con [variables de datos de contexto](https://experienceleague.adobe.com/es/docs/analytics/implementation/vars/page-vars/contextdata). Algunas dimensiones rellenan automáticamente dimensiones usando estas variables de datos de contexto, mientras que otras deben rellenarse usando [Reglas de procesamiento](https://experienceleague.adobe.com/es/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview). Las dimensiones que rellenan automáticamente los valores deben tener habilitada primero su respectiva configuración del grupo de informes [medios de streaming](../setup/analytics-reporting.md). |
 | Customer Journey Analytics | Los campos XDM normalmente en `xdm.mediaReporting.sessionDetails`, se originan a partir de cualquier conjunto de datos que incluya datos de medios de streaming. Debe crear cada dimensión con la configuración deseada dentro de [Configuración del componente de vista de datos](https://experienceleague.adobe.com/es/docs/analytics-platform/using/cja-dataviews/component-settings/overview). |
 | Fuentes de datos | Las dimensiones que se rellenan automáticamente tienen sus propios nombres de columnas de fuentes de datos (como `videostreamtype`, `videoname` o `videolength`). Las dimensiones que requieren reglas de procesamiento utilizan `evar` nombres de columna. |
 | Audience Manager | Datos de contexto reenviados desde Adobe Analytics. Solo está disponible cuando el reenvío del lado del servidor de Analytics a Audience Manager está configurado. |

@@ -3,7 +3,7 @@ title: Publicidad
 description: Informa de cada anuncio único reproducido, marcado por el ID de anuncio.
 feature: Dimensions
 role: User, Admin
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
 workflow-type: tm+mt
 source-wordcount: '186'
 ht-degree: 7%
@@ -27,7 +27,7 @@ El reproductor establece el anuncio en cada evento de [inicio del anuncio](/help
 
 | Sistema de informes | Fuente |
 | --- | --- |
-| Adobe Analytics | Se recopila automáticamente a partir de los datos de contexto `a.media.ad.name` cuando [[!UICONTROL Media Ads]](/help/reporting/media-reports-enable.md) está habilitado. Persiste durante la visita. |
+| Adobe Analytics | Se recopila automáticamente a partir de los datos de contexto `a.media.ad.name` cuando [[!UICONTROL Media Ads]](/help/reporting/setup/analytics-reporting.md) está habilitado. Persiste durante la visita. |
 | Customer Journey Analytics | [`xdm.mediaReporting.advertisingDetails.name`](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/advertising-details-reporting) |
 | Fuentes de datos | `videoad`, `post_videoad` |
 | Audience Manager | `c_contextdata.a.media.ad.name` |

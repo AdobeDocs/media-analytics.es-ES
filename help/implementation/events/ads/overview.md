@@ -20,7 +20,7 @@ role_v2:
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
 workflow-type: tm+mt
 source-wordcount: 513
 ht-degree: 3%
@@ -72,8 +72,8 @@ Si ve llamadas de `main:play` que se producen entre anuncios consecutivos, exist
 
 **Resolución:** Retrasa la llamada de AdComplete para cada anuncio (excepto el último) en lugar de llamarlo inmediatamente cuando finalice el anuncio. Realice las llamadas por lotes de la siguiente manera:
 
-- En cada **inicio del anuncio**: Si existe un anuncio anterior y aún no se ha marcado como completado, llame a AdComplete *antes* de llamar a AdStart para el anuncio nuevo.
-- En cada **fin del recurso publicitario**: no llame a AdComplete inmediatamente, aplace el proceso.
-- Al **finalizar la pausa publicitaria**: Invoque AdComplete para el último anuncio (si aún no se ha llamado) y después Invoque AdBreakComplete.
+* En cada **inicio del anuncio**: Si existe un anuncio anterior y aún no se ha marcado como completado, llame a AdComplete *antes* de llamar a AdStart para el anuncio nuevo.
+* En cada **fin del recurso publicitario**: no llame a AdComplete inmediatamente, aplace el proceso.
+* Al **finalizar la pausa publicitaria**: Invoque AdComplete para el último anuncio (si aún no se ha llamado) y después Invoque AdBreakComplete.
 
 Este patrón garantiza que AdComplete y el siguiente AdStart se activen de forma consecutiva, lo que elimina cualquier brecha.

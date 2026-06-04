@@ -18,7 +18,7 @@ topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: da289f8d425fcbaece42519a9ea7d061f80e4591
+source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
 workflow-type: tm+mt
 source-wordcount: 750
 ht-degree: 4%
@@ -41,7 +41,7 @@ Los controles de exclusión funcionan por dispositivo o explorador. El respeto d
 
 Web SDK respeta las preferencias de consentimiento establecidas mediante el comando `setConsent`. Cuando el consentimiento se establece en `"out"`, Web SDK deja de reenviar todos los eventos, incluidas las llamadas de seguimiento de medios de streaming, a Edge Network. El estado de consentimiento persiste en el almacenamiento del explorador entre sesiones.
 
-Antes de implementar la exclusión, asegúrese de que Web SDK esté configurado con el componente de medios de streaming. Para obtener más información, consulte [Configurar Web SDK](../implementation/edge/edge-web-sdk.md).
+Antes de implementar la exclusión, asegúrese de que Web SDK esté configurado con el componente de medios de streaming. Para obtener más información, consulte [Configurar Web SDK](../implementation/edge/web-sdk.md).
 
 Establezca el consentimiento en Opted out con el estándar de consentimiento de Adobe 2.0:
 
@@ -217,7 +217,7 @@ Para las exclusiones parciales según CCPA, incluya indicadores de exclusión en
 }
 ```
 
-* `analytics.optOutServerSideForwarding`: se establece en `true` para impedir que los datos se compartan entre Adobe Analytics y otras soluciones de Experience Cloud (como Audience Manager).
+* `analytics.optOutServerSideForwarding`: establezca este valor en `true` para impedir que los datos se compartan entre Adobe Analytics y otras soluciones de Experience Cloud (como Audience Manager).
 * `analytics.optOutShare`: se establece en `true` para evitar que se compartan datos federados con otros clientes de Adobe Analytics.
 
 Para obtener una lista completa de los parámetros disponibles, consulte la [referencia de parámetros de solicitud de API de Media Collection](../implementation/media-collection-api/mc-api-ref/mc-api-req-params.md).

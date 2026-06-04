@@ -1,41 +1,22 @@
 ---
-title: Habilitación de informes de contenidos
-description: Obtenga información acerca del grupo de informes multimedia que recopila métricas de medios.  Siga estos pasos para configurar los informes de medios antes de enviar los datos de medios.
-uuid: d306068d-a308-4b6e-8a72-742dda0de428
-exl-id: 686d88a5-79b6-4936-ba9e-8f834ef330d1
+title: Configuración de informes para implementaciones solo de Analytics
+description: Habilite los módulos de grupos de informes de contenidos en Adobe Analytics para que se puedan recopilar y notificar los datos de contenidos de streaming.
 feature: Streaming Media
-role: User, Admin, Developer
-TQID: https://experienceleague.adobe.com/2nLLlF-rFJUR3t-OMbcy5iqF42l-O7oLybXFGhdPyhU
-product_v2:
-  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
-feature_v2:
-  - id: b069d60e-95f3-44d6-95a8-ddc862a4bc38
-  - id: b3f03848-ae12-48b2-8aab-cad18567eb32
-  - id: c153fd90-23e1-4614-81d3-3cc7571227f7
-  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
-subfeature_v2:
-  - id: c9bb7ea6-c04f-4262-b69c-fbb8d91e3559
-  - id: e38cbddc-1633-4cd5-bed5-9f289f2a6029
-  - id: ef60b66e-5984-4336-ba72-6d978b1b6f87
-  - id: f1f1a2d4-0976-4881-b091-c2bb8de7ffac
-  - id: f836f655-eebe-4b76-82bc-697955ec1ce3
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+role: User, Admin
+source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
 workflow-type: tm+mt
-source-wordcount: 503
-ht-degree: 20%
+source-wordcount: '580'
+ht-degree: 8%
 
 ---
 
-# Habilitación de informes de contenidos
+# Configuración de informes para implementaciones solo de Analytics
+
+Antes de que una implementación exclusiva de Analytics pueda recopilar datos de medios de streaming, cada grupo de informes que reciba esos datos debe configurarse para habilitar los módulos de medios adecuados. En esta página se describe cómo habilitar esos módulos y dónde encontrar los informes resultantes.
+
+* **Requisitos previos**: Una implementación de Adobe Analytics. Consulte la [descripción general de la implementación solo de Analytics](/help/implementation/analytics-only/overview.md) y el método de implementación elegido.
+
+## Habilitar la creación de informes de contenidos en un grupo de informes
 
 Para enviar datos sobre los contenidos, es necesario configurar todos los grupos de informes que recopilan métricas de contenidos.
 
@@ -44,11 +25,11 @@ Para enviar datos sobre los contenidos, es necesario configurar todos los grupos
 
    ![Captura de pantalla del menú del administrador de grupos de informes](assets/media-reporting.png)
 
-1. En la página **[!UICONTROL Informes de medios]**, habilite los componentes de medios de transmisión deseados (ver a continuación).
+1. En la página **[!UICONTROL Informes de medios]**, habilite los módulos de medios de transmisión que desee (ver a continuación).
 
 1. Seleccionar **[!UICONTROL Guardar].**
 
-   Si este grupo de informes ya está configurado para recopilar datos de contenidos, después de hacer clic en **[!UICONTROL Guardar]**, aparecerá una página de configuración adicional. Si ve la página **[!UICONTROL Medición de Componentes básicos de contenidos]**, continúe con el siguiente paso.
+   Si este grupo de informes ya está configurado para recopilar datos de medios, después de seleccionar **[!UICONTROL Guardar]**, se mostrará una página de configuración adicional. Si ve la página **[!UICONTROL Medición de Componentes básicos de contenidos]**, continúe con el siguiente paso.
 
 ## Módulos de medios de streaming disponibles
 
@@ -141,7 +122,7 @@ La medición de contenidos incluye los siguientes módulos:
       * [[!UICONTROL Duración total del búfer]](/help/reporting/metrics/total-buffer-duration.md)
 * **[!UICONTROL Metadatos de vídeo]**: Habilita el seguimiento de atributos de contenido de vídeo estándar, como programa, temporada y género.
    * **Dimensiones:**
-      * [!UICONTROL Cargas de publicidad]
+      * [[!UICONTROL Cargas de publicidad]](/help/reporting/dimensions/ad-load-type.md)
       * [[!UICONTROL Parte del día]](/help/reporting/dimensions/day-part.md)
       * [[!UICONTROL Episodio]](/help/reporting/dimensions/episode.md)
       * [[!UICONTROL Género]](/help/reporting/dimensions/genre.md)
@@ -178,3 +159,9 @@ La medición de contenidos incluye los siguientes módulos:
       * [[!UICONTROL Transmisiones afectadas por el enfoque]](/help/reporting/metrics/in-focus-streams-impacted.md)
       * [[!UICONTROL Transmisiones afectadas por silenciar]](/help/reporting/metrics/mute-streams-impacted.md)
       * [[!UICONTROL Transmisiones afectadas por imagen en imagen]](/help/reporting/metrics/picture-in-picture-streams-impacted.md)
+
+>[!MORELIKETHIS]
+>
+>* [Informes de contenidos en Workspace](/help/reporting/workspace/media-workspace-templates.md)
+>* [Resumen de dimensiones](/help/reporting/dimensions/overview.md)
+>* [Resumen de métricas](/help/reporting/metrics/overview.md)

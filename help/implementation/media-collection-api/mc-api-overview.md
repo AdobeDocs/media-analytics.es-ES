@@ -20,7 +20,7 @@ topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: da289f8d425fcbaece42519a9ea7d061f80e4591
+source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
 workflow-type: tm+mt
 source-wordcount: 347
 ht-degree: 91%
@@ -31,7 +31,7 @@ ht-degree: 91%
 
 La API de recopilación de medios es la alternativa RESTful de Adobe al SDK de medios del lado del cliente. Con la API de recopilación de medios, el reproductor puede realizar el seguimiento de eventos de audio y vídeo mediante llamadas HTTP RESTful.
 
-La API de recopilación de medios es esencialmente un adaptador que actúa como una versión del SDK de medios en el lado del servidor. Los datos recopilados del seguimiento de medios de streaming llevan a los mismos [Informes y análisis](/help/implementation/media-sdk/setup/media-reports-enable.md).
+La API de recopilación de medios es esencialmente un adaptador que actúa como una versión del SDK de medios en el lado del servidor. Los datos recopilados del seguimiento de medios de streaming llevan a los mismos [Informes y análisis](/help/reporting/setup/analytics-reporting.md).
 
 ## Flujos de datos del seguimiento de contenidos {#media-tracking-data-flows}
 
