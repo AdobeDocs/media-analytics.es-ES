@@ -26,11 +26,11 @@ ht-degree: 1%
 
 # Migrar Customer Journey Analytics para utilizar los nuevos campos de medios de streaming
 
-En este documento se describe cómo se debe actualizar una configuración de Customer Journey Analytics que usa el tipo de datos de servicios de medios de streaming de Adobe denominado &quot;Medios&quot; para usar el nuevo tipo de datos correspondiente denominado &quot;[Detalles de informes de medios](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details)&quot;.
+En este documento se describe cómo se debe actualizar una configuración de Customer Journey Analytics que usa el tipo de datos de servicios de medios de streaming de Adobe denominado &quot;Medios&quot; para usar el nuevo tipo de datos correspondiente denominado &quot;[Detalles de informes de medios](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/media-reporting-details)&quot;.
 
 ## Migrar Customer Journey Analytics
 
-Para migrar una configuración de Customer Journey Analytics del tipo de datos anterior denominado &quot;Medios&quot; al nuevo tipo de datos denominado &quot;[Detalles de informes de medios](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details)&quot;, debe actualizar las configuraciones siguientes que usan el tipo de datos anterior:
+Para migrar una configuración de Customer Journey Analytics del tipo de datos anterior denominado &quot;Medios&quot; al nuevo tipo de datos denominado &quot;[Detalles de informes de medios](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/media-reporting-details)&quot;, debe actualizar las configuraciones siguientes que usan el tipo de datos anterior:
 
 * Vistas de datos
 

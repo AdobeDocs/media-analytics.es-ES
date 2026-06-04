@@ -16,7 +16,7 @@ Media SDK para JavaScript (3.x) envía datos de medios de streaming directamente
 
 * **Requisitos previos**:
    * Complete la [descripción general de la implementación solo de Analytics](overview.md).
-   * Implemente [AppMeasurement](https://experienceleague.adobe.com/en/docs/analytics/implementation/js/overview?lang=es) y el [servicio de ID de visitante](https://experienceleague.adobe.com/en/docs/analytics/implementation/id/appmeasurement).
+   * Implemente [AppMeasurement](https://experienceleague.adobe.com/es/docs/analytics/implementation/js/overview?lang=es) y el [servicio de ID de visitante](https://experienceleague.adobe.com/es/docs/analytics/implementation/id/appmeasurement).
    * [Descargar Media SDK para JavaScript](/help/getting-started/download-sdks.md).
 
 ## Instalación y configuración de SDK

@@ -24,13 +24,13 @@ Independientemente del código base que utilice (Web SDK, Mobile SDK (iOS o Andr
    * [Guía de Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-landing.html?lang=es)
    * [Implementación de Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/home.html?lang=es)
    * [Documentación de Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer.html?lang=es)
-   * [Documentación de Real-Time Customer Data Platform](https://experienceleague.adobe.com/docs/real-time-customer-data-platform.html)
+   * [Documentación de Real-Time Customer Data Platform](https://experienceleague.adobe.com/docs/real-time-customer-data-platform.html?lang=es)
 
 ## Configuración del esquema en Adobe Experience Platform
 
 Para estandarizar la recopilación de datos en todas las aplicaciones que utilizan Adobe Experience Platform, Adobe ha creado el estándar abierto y documentado públicamente Experience Data Model (XDM).
 
-1. En Adobe Experience Platform, empiece a crear el esquema como se describe en [Crear y editar esquemas en la interfaz de usuario](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html?lang=en).
+1. En Adobe Experience Platform, empiece a crear el esquema como se describe en [Crear y editar esquemas en la interfaz de usuario](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html?lang=es).
 
 1. En la página Detalles del esquema, elija **[!UICONTROL Evento de experiencia]** como clase base para el esquema.
 
@@ -129,7 +129,7 @@ Para estandarizar la recopilación de datos en todas las aplicaciones que utiliz
 
       ![add-custom-metadata](assets/add-custom-fields.png)
 
-   1. [Use la ruta generada](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/fields/overview#type-specific-properties) para el campo personalizado en la carga de la solicitud.
+   1. [Use la ruta generada](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/ui/fields/overview#type-specific-properties) para el campo personalizado en la carga de la solicitud.
 
       ![add-custom-metadata](assets/custom-fields-path.png)
 
@@ -167,11 +167,11 @@ Para estandarizar la recopilación de datos en todas las aplicaciones que utiliz
 
       * **[!UICONTROL Adobe Analytics]** (si usa Adobe Analytics)
 
-        Si usa Adobe Analytics, defina un grupo de informes como se describe en [Crear un grupo de informes](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite).
+        Si usa Adobe Analytics, defina un grupo de informes como se describe en [Crear un grupo de informes](https://experienceleague.adobe.com/es/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite).
 
       * **[!UICONTROL Adobe Experience Platform]** (si usa Customer Journey Analytics)
 
-     Para obtener información sobre cómo agregar un servicio a un conjunto de datos, vea &quot;Agregar servicios a un conjunto de datos&quot; en [Configurar un conjunto de datos](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=en#view-details).
+     Para obtener información sobre cómo agregar un servicio a un conjunto de datos, vea &quot;Agregar servicios a un conjunto de datos&quot; en [Configurar un conjunto de datos](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=es#view-details).
 
      ![Agregar el servicio Adobe Analytics](assets/datastream-add-service.png)
 

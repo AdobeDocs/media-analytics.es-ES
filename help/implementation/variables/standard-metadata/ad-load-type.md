@@ -24,7 +24,7 @@ La variable de tipo de carga de anuncio identifica el tipo de anuncio cargado al
 | Propiedad | Valor |
 | --- | --- |
 | **Variable de datos de contexto** | `a.media.adLoad` |
-| **Campo de colección XDM** | [`xdm.mediaCollection.sessionDetails.adLoad`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **Campo de colección XDM** | [`xdm.mediaCollection.sessionDetails.adLoad`](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **rasgo de Audience Manager** | `c_contextdata.a.media.adLoad` |
 | **Requerido** | No |
 | **Enviado con** | [Inicio de sesión](/help/implementation/events/session/session-start.md), cierre de sesión |
@@ -35,7 +35,7 @@ La variable de tipo de carga de anuncio identifica el tipo de anuncio cargado al
 
 >[!TAB SDK web ]
 
-Establecer `adLoad` dentro de `xdm.mediaCollection.sessionDetails` al llamar a [`createMediaSession`](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/commands/createmediasession):
+Establecer `adLoad` dentro de `xdm.mediaCollection.sessionDetails` al llamar a [`createMediaSession`](https://experienceleague.adobe.com/es/docs/experience-platform/collection/js/commands/createmediasession):
 
 ```javascript
 alloy("createMediaSession", {

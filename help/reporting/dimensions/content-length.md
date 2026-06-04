@@ -28,13 +28,13 @@ El reproductor establece la longitud del contenido al inicio de la sesión. El v
 | Sistema de informes | Fuente |
 | --- | --- |
 | Adobe Analytics | Se recopila automáticamente a partir de los datos de contexto `a.media.length` cuando [[!UICONTROL Media Core]](/help/reporting/setup/analytics-reporting.md) está habilitado. |
-| Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.length`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.length`](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/session-details-reporting) |
 | Fuentes de datos | `videolength`, `post_videolength` |
 | Audience Manager | `c_contextdata.a.media.length` |
 
 >[!NOTE]
 >
->En Adobe Analytics, este valor también corresponde a una clasificación **Video length** en la dimensión [Contenido](content.md). Usted es responsable de rellenar y mantener esa clasificación por separado. Customer Journey Analytics utiliza esta dimensión directamente. Si lo desea, puede utilizar [Clasificación de valores](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-settings/value-bucketing).
+>En Adobe Analytics, este valor también corresponde a una clasificación **Video length** en la dimensión [Contenido](content.md). Usted es responsable de rellenar y mantener esa clasificación por separado. Customer Journey Analytics utiliza esta dimensión directamente. Si lo desea, puede utilizar [Clasificación de valores](https://experienceleague.adobe.com/es/docs/analytics-platform/using/cja-dataviews/component-settings/value-bucketing).
 
 >[!IMPORTANT]
 >
