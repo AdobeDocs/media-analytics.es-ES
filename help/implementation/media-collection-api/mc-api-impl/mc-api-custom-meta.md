@@ -6,19 +6,11 @@ exl-id: 672fa804-4a4f-4f06-b29b-b0aad27ca2f3
 feature: Streaming Media
 role: User, Admin, Developer
 TQID: https://experienceleague.adobe.com/sEVJa-FPqZiSc4Hdr7lQfNbECS2lxckBmqAYhGHmx2w
-product_v2:
-  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
-feature_v2:
-  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
+product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2: id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
 workflow-type: tm+mt
 source-wordcount: 449
 ht-degree: 7%
@@ -31,7 +23,7 @@ La API de recopilación de medios le permite enviar pares de clave-valor persona
 
 Para que estos datos estén disponibles en Analysis Workspace, los clientes deben definir eVars personalizadas y configurar reglas de procesamiento para rellenarlas según su caso de uso. Una vez asignados a eVars o props, los datos también están disponibles en Adobe Experience Platform a través de las rutas de eVar correspondientes, siempre y cuando se haya configurado el [conector de origen de Analytics](https://experienceleague.adobe.com/es/docs/experience-platform/sources/connectors/adobe-applications/analytics).
 
-Para implementaciones basadas en XDM que utilizan Experience Edge, consulte [Compatibilidad con metadatos personalizados: formato XDM](/help/implementation/edge/implementation-edge-custom-metadata.md).
+Para implementaciones basadas en XDM que utilizan Experience Edge, consulte [Compatibilidad con metadatos personalizados: formato XDM](/help/implementation/edge/custom-metadata.md).
 
 ## Información general
 
@@ -80,8 +72,8 @@ Los metadatos personalizados son un **objeto** plano (pares clave-valor) en el n
 
 ### Requisitos de nomenclatura clave
 
-- Evite utilizar el prefijo `media.` en las claves de metadatos personalizadas: se asigna a campos de medios estándar y puede sobrescribirlos en los informes de Analytics
-- El prefijo `a.` está reservado para los metadatos estándar de Adobe y no debe usarse
+* Evite utilizar el prefijo `media.` en las claves de metadatos personalizadas: se asigna a campos de medios estándar y puede sobrescribirlos en los informes de Analytics
+* El prefijo `a.` está reservado para los metadatos estándar de Adobe y no debe usarse
 
 ## Metadatos personalizados de contenido principal
 
@@ -173,19 +165,19 @@ curl -X POST "https://{uri}/api/v1/sessions/{sid}/events" \
 
 ## Comportamiento
 
-- Todos los valores de metadatos personalizados deben ser **strings**. Convierta números y valores booleanos antes de enviar.
-- Los metadatos personalizados aparecen en Analytics con un prefijo `c.` (por ejemplo, `contentCategory` → `c.contentCategory`)
-- Asignar metadatos personalizados a eVars, props o variables de datos de contexto mediante reglas de procesamiento de Analytics
-- `sessionStart` metadatos persisten durante toda la sesión; las actualizaciones requieren una nueva sesión
-- Cada evento `adStart` y `chapterStart` puede llevar metadatos personalizados diferentes
+* Todos los valores de metadatos personalizados deben ser **strings**. Convierta números y valores booleanos antes de enviar.
+* Los metadatos personalizados aparecen en Analytics con un prefijo `c.` (por ejemplo, `contentCategory` → `c.contentCategory`)
+* Asignar metadatos personalizados a eVars, props o variables de datos de contexto mediante reglas de procesamiento de Analytics
+* `sessionStart` metadatos persisten durante toda la sesión; las actualizaciones requieren una nueva sesión
+* Cada evento `adStart` y `chapterStart` puede llevar metadatos personalizados diferentes
 
 ## Documentación relacionada
 
-- [Compatibilidad con metadatos personalizados - Formato XDM](/help/implementation/edge/implementation-edge-custom-metadata.md) — Envíe metadatos personalizados mediante Experience Edge a Analytics y a AEP
-- [Conector de origen de Adobe Analytics para los datos del grupo de informes](https://experienceleague.adobe.com/es/docs/experience-platform/sources/connectors/adobe-applications/analytics): introducir datos de Analytics en Adobe Experience Platform
+* [Compatibilidad con metadatos personalizados - Formato XDM](/help/implementation/edge/custom-metadata.md) — Envíe metadatos personalizados mediante Experience Edge a Analytics y a AEP
+* [Conector de origen de Adobe Analytics para los datos del grupo de informes](https://experienceleague.adobe.com/es/docs/experience-platform/sources/connectors/adobe-applications/analytics): introducir datos de Analytics en Adobe Experience Platform
 
 <!--
-- [Session endpoints](sessions.md) — Session lifecycle management
-- [Ad endpoints](ads.md) — Track advertising impressions
-- [Chapter endpoints](chapters.md) — Segment content into chapters
+* [Session endpoints](sessions.md) — Session lifecycle management
+* [Ad endpoints](ads.md) — Track advertising impressions
+* [Chapter endpoints](chapters.md) — Segment content into chapters
 -->

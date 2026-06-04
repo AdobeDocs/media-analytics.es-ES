@@ -3,7 +3,7 @@ title: ID de error del reproductor SDK
 description: Informa de identificadores de error únicos generados por el SDK del reproductor de contenido.
 feature: Dimensions
 role: User, Admin
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
 workflow-type: tm+mt
 source-wordcount: '157'
 ht-degree: 7%
@@ -21,8 +21,8 @@ El reproductor pasa los ID de error del reproductor-SDK al rastreador en [evento
 
 | Sistema de informes | Fuente |
 | --- | --- |
-| Adobe Analytics | Se recopila automáticamente a partir de los datos de contexto `a.media.qoe.playerSdkErrors` cuando [[!UICONTROL Calidad de los medios]](/help/reporting/media-reports-enable.md) está habilitado. |
-| Customer Journey Analytics | [`xdm.mediaReporting.qoeDataDetails.playerSdkErrors`](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
+| Adobe Analytics | Se recopila automáticamente a partir de los datos de contexto `a.media.qoe.playerSdkErrors` cuando [[!UICONTROL Calidad de los medios]](/help/reporting/setup/analytics-reporting.md) está habilitado. |
+| Customer Journey Analytics | [`xdm.mediaReporting.qoeDataDetails.playerSdkErrors`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
 | Fuentes de datos | `videoqoeplayersdkerrors`, `post_videoqoeplayersdkerrors` |
 | Audience Manager | `c_contextdata.a.media.qoe.playerSdkErrors` |
 

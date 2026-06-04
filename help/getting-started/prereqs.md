@@ -6,24 +6,15 @@ exl-id: 85ab1dbd-f4a7-4f11-afc9-8d5000e2de70
 feature: Streaming Media, Workspace Basics
 role: User, Admin, Developer
 TQID: https://experienceleague.adobe.com/e9iYwDwT-zSSZ3hV20U1w7p-MtKaK4Q8-vGMCrnenpc
-product_v2:
-  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
-feature_v2:
-  - id: b069d60e-95f3-44d6-95a8-ddc862a4bc38
-  - id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7a
-  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
-subfeature_v2:
-  - id: c8add8f2-4250-4fd9-9cde-9707036c567d
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: da289f8d425fcbaece42519a9ea7d061f80e4591
+product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2: id: b069d60e-95f3-44d6-95a8-ddc862a4bc38id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7aid: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+subfeature_v2: id: c8add8f2-4250-4fd9-9cde-9707036c567d
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
 workflow-type: tm+mt
-source-wordcount: 489
-ht-degree: 46%
+source-wordcount: 490
+ht-degree: 43%
 
 ---
 
@@ -38,7 +29,7 @@ Antes de comenzar a implementar los servicios de medios de transmisión, revise 
 El modelo de precios actual para el complemento de recopilación de medios de streaming de Customer Journey Analytics y el complemento de medios de streaming de Adobe Analytics se basa en las transmisiones de vídeo. Si es necesario, póngase en contacto con su representante de ventas o con el equipo de cuenta de Adobe, ya que el complemento se vende por separado para Adobe Analytics y Adobe Experience Platform.
 
 1. **Habilitar informes de Adobe Analytics**<br>
-Para habilitar los informes en Analytics o Customer Journey Analytics y ver los datos de contenido y publicidad que está recopilando, debe habilitar los informes. Véase [Habilitación de informes multimedia](/help/implementation/media-sdk/setup/media-reports-enable.md).
+Para habilitar los informes en Analytics o Customer Journey Analytics y ver los datos de contenido y publicidad que está recopilando, debe habilitar los informes. Consulte [Configurar informes para implementaciones solo de Analytics](/help/reporting/setup/analytics-reporting.md).
 
 1. **Implementar el servicio de identidad de Adobe Experience Platform en CX Enterprise**
 
@@ -58,8 +49,8 @@ Para habilitar los informes en Analytics o Customer Journey Analytics y ver los 
 
    Según cómo planee implementar los servicios de medios de streaming, consulte los requisitos previos para cualquiera de los siguientes métodos de implementación:
 
-   * [Requisitos previos para implementaciones solo de Adobe Analytics](/help/implementation/media-sdk/setup/prerequisites-analytics.md)
+   * [Resumen de implementación solo de Analytics](/help/implementation/analytics-only/overview.md)
 
-   * [Requisitos previos para implementaciones de Edge](/help/implementation/edge/prerequisites-edge.md)
+   * [Información general sobre la implementación Edge](/help/implementation/edge/overview.md)
 
    Utilice la [Información general sobre implementación](/help/implementation/overview.md) para determinar qué método de implementación es el adecuado para usted.

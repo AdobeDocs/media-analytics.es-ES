@@ -3,7 +3,7 @@ title: Show
 description: Informa del nombre del programa o la serie del contenido de vídeo que forma parte de una serie.
 feature: Dimensions
 role: User, Admin
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
 workflow-type: tm+mt
 source-wordcount: '156'
 ht-degree: 8%
@@ -27,8 +27,8 @@ El reproductor establece el programa al principio de la sesión cuando el conten
 
 | Sistema de informes | Fuente |
 | --- | --- |
-| Adobe Analytics | Se recopila automáticamente a partir de los datos de contexto `a.media.show` cuando [[!UICONTROL Metadatos de vídeo]](/help/reporting/media-reports-enable.md) está habilitado. |
-| Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.show`](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| Adobe Analytics | Se recopila automáticamente a partir de los datos de contexto `a.media.show` cuando [[!UICONTROL Metadatos de vídeo]](/help/reporting/setup/analytics-reporting.md) está habilitado. |
+| Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.show`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
 | Fuentes de datos | `videoshow`, `post_videoshow` |
 | Audience Manager | `c_contextdata.a.media.show` |
 
