@@ -5,19 +5,14 @@ exl-id: 169ff7b9-e577-45b7-8927-74bdcccc0a77
 feature: Streaming Media
 role: User, Admin
 TQID: https://experienceleague.adobe.com/O3mOUZAV8D1yI3kylOt86o4vgE9mtj6-4wPcYVHqCz8
-product_v2:
-  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
-feature_v2:
-  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2: id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: b18eab3deb3d15a08adf2f7ecf61d73235bbc6e5
 workflow-type: tm+mt
-source-wordcount: 308
-ht-degree: 75%
+source-wordcount: 268
+ht-degree: 55%
 
 ---
 
@@ -31,30 +26,24 @@ Los servicios de medios de streaming de Adobe admiten todos los dispositivos pri
 
 Los SDK se actualizan normalmente cuando salen al mercado nuevas versiones de estos dispositivos y se pueden utilizar para integrarlos con reproductores nativos de cada plataforma individual o con cualquier otro reproductor de medios disponible.
 
-En el caso de dispositivos que actualmente no son compatibles con SDK o en situaciones en las que es posible que necesite personalizar la implementación, puede utilizar la API de Media Collection o la API de Media Edge. Estas API le permiten hacer llamadas a la API de RESTful directamente de un dispositivo al servidor de los servicios de medios de streaming de Adobe.
+En el caso de dispositivos que actualmente no son compatibles con SDK o en situaciones en las que necesita personalizar la implementación, puede utilizar la API de Media Collection o la API de Media Edge. Estas API le permiten hacer llamadas a la API de RESTful directamente de un dispositivo al servidor de los servicios de medios de streaming de Adobe.
 
 En la tabla siguiente, se detallan los dispositivos actualmente compatibles. Si un dispositivo no aparece en la lista, póngase en contacto con el servicio de atención al cliente o con el consultor de soluciones para conocer el estado de dicho dispositivo.
 
-Para obtener más información sobre la implementación de Media en Edge, consulte [Instalar la recopilación de Streaming Media con Experience Platform Edge](/help/implementation/edge/overview.md).
-
-| Plataformas y dispositivos de streaming |  | Medios para SDK/Extensión de Edge Network | API de Media Edge | Extensión de medios con etiquetas o SDK Mobile de AEP | Media SDK | API de Media Collection |
-|:---|:---|:---:|:---:|:---:|:---:|:---:|
-| Web/Web móvil | | | | | | |
-| | Exploradores con JavaScript | ![Admitido](/help/assets/icon-blue-check.png) | ![Admitido](/help/assets/icon-blue-check.png) | ![Admitido](/help/assets/icon-blue-check.png) | ![Admitido](/help/assets/icon-blue-check.png) | ![Admitido](/help/assets/icon-blue-check.png) |
-| Aplicación móvil | | | | | | |
-| | Dispositivos iOS | ![Admitido](/help/assets/icon-blue-check.png) | ![Admitido](/help/assets/icon-blue-check.png) | ![Admitido](/help/assets/icon-blue-check.png) | | ![Admitido](/help/assets/icon-blue-check.png) |
-| | Dispositivos Android | ![Admitido](/help/assets/icon-blue-check.png) | ![Admitido](/help/assets/icon-blue-check.png) | ![Admitido](/help/assets/icon-blue-check.png) | | ![Admitido](/help/assets/icon-blue-check.png) |
-| | Dispositivos con Windows | | ![Admitido](/help/assets/icon-blue-check.png) | | | ![Admitido](/help/assets/icon-blue-check.png) |
-| OTT | | | | | | |
-| | Apple TV (tvOS) | ![Admitido](/help/assets/icon-blue-check.png) | ![Admitido](/help/assets/icon-blue-check.png) | ![Admitido](/help/assets/icon-blue-check.png) | | ![Admitido](/help/assets/icon-blue-check.png) |
-| | Roku | ![Admitido](/help/assets/icon-blue-check.png) | ![Admitido](/help/assets/icon-blue-check.png) | | ![Admitido](/help/assets/icon-blue-check.png)<br>(BrightScript) | ![Admitido](/help/assets/icon-blue-check.png)<br>(nativo) |
-| | Fire TV (sistema operativo Fire) | ![Admitido](/help/assets/icon-blue-check.png) | ![Admitido](/help/assets/icon-blue-check.png) | ![Admitido](/help/assets/icon-blue-check.png) | | ![Admitido](/help/assets/icon-blue-check.png) |
-| | Android TV | ![Admitido](/help/assets/icon-blue-check.png) | ![Admitido](/help/assets/icon-blue-check.png) | ![Admitido](/help/assets/icon-blue-check.png) | | ![Admitido](/help/assets/icon-blue-check.png) |
-| | Chromecast | | ![Admitido](/help/assets/icon-blue-check.png) | | ![Admitido](/help/assets/icon-blue-check.png) | ![Admitido](/help/assets/icon-blue-check.png) |
-| | Consolas de juegos (por ejemplo, Xbox ONE, Sony PS3/PS4) | | ![Admitido](/help/assets/icon-blue-check.png) | | | ![Admitido](/help/assets/icon-blue-check.png) |
-| | Definir los cuadros superiores (por ejemplo, xfinity X1) | | ![Admitido](/help/assets/icon-blue-check.png) | | | ![Admitido](/help/assets/icon-blue-check.png) |
-| | Televisores inteligentes (por ejemplo, Samsung, LG, Sony, Vizio) | | ![Admitido](/help/assets/icon-blue-check.png) | | | ![Admitido](/help/assets/icon-blue-check.png) |
-| Otro | | | | | | |
-| | Nuevos dispositivos conectados | | ![Admitido](/help/assets/icon-blue-check.png) | | | ![Admitido](/help/assets/icon-blue-check.png) |
-
-{style="table-layout:auto"}
+| Plataformas y dispositivos de streaming |  | Bibliotecas de colección de Edge Network | API de Media Edge | Bibliotecas de colección solo de Analytics | API de recopilación de medios<br> (solo Analytics) |
+|:---|:---|:---:|:---:|:---:|:---:|
+| Web/Web móvil | | | | | |
+| | Navegadores JavaScript | ![Admitido](/help/assets/icon-blue-check.png) | ![Admitido](/help/assets/icon-blue-check.png) | ![Admitido](/help/assets/icon-blue-check.png) | ![Admitido](/help/assets/icon-blue-check.png) |
+| Aplicación móvil | | | | | |
+| | dispositivos iOS | ![Admitido](/help/assets/icon-blue-check.png) | ![Admitido](/help/assets/icon-blue-check.png) | | ![Admitido](/help/assets/icon-blue-check.png) |
+| | dispositivos Android | ![Admitido](/help/assets/icon-blue-check.png) | ![Admitido](/help/assets/icon-blue-check.png) | | ![Admitido](/help/assets/icon-blue-check.png) |
+| | Dispositivos Windows | | ![Admitido](/help/assets/icon-blue-check.png) | | ![Admitido](/help/assets/icon-blue-check.png) |
+| OTT | | | | | |
+| | Apple TV (tvOS) | ![Admitido](/help/assets/icon-blue-check.png) | ![Admitido](/help/assets/icon-blue-check.png) | | ![Admitido](/help/assets/icon-blue-check.png) |
+| | Roku | ![Admitido](/help/assets/icon-blue-check.png) | ![Admitido](/help/assets/icon-blue-check.png) | | ![Admitido](/help/assets/icon-blue-check.png) |
+| | Fire TV (sistema operativo Fire) | ![Admitido](/help/assets/icon-blue-check.png) | ![Admitido](/help/assets/icon-blue-check.png) | | ![Admitido](/help/assets/icon-blue-check.png) |
+| | Android TV | ![Admitido](/help/assets/icon-blue-check.png) | ![Admitido](/help/assets/icon-blue-check.png) | | ![Admitido](/help/assets/icon-blue-check.png) |
+| | Chromecast | | ![Admitido](/help/assets/icon-blue-check.png) | ![Admitido](/help/assets/icon-blue-check.png) | ![Admitido](/help/assets/icon-blue-check.png) |
+| | Consolas de juegos (por ejemplo, Xbox ONE, Sony PS3/PS4) | | ![Admitido](/help/assets/icon-blue-check.png) | | ![Admitido](/help/assets/icon-blue-check.png) |
+| | Definir los cuadros superiores (por ejemplo, xfinity X1) | | ![Admitido](/help/assets/icon-blue-check.png) | | ![Admitido](/help/assets/icon-blue-check.png) |
+| | Televisores inteligentes (por ejemplo, Samsung, LG, Sony, Vizio) | | ![Admitido](/help/assets/icon-blue-check.png) | | ![Admitido](/help/assets/icon-blue-check.png) |
