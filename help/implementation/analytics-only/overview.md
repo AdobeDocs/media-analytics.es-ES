@@ -3,7 +3,7 @@ title: Resumen de implementación solo de Analytics
 description: Requisitos previos y métodos de implementación del complemento de Adobe Analytics para medios de streaming, utilizado en implementaciones solo de Analytics.
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+source-git-commit: 7b5232f25f3aa26e8566783557163f316af3fe57
 workflow-type: tm+mt
 source-wordcount: '230'
 ht-degree: 5%
@@ -28,7 +28,7 @@ Las implementaciones solo de Analytics utilizan el complemento Adobe Analytics p
 
 Cada página cubre la configuración específica de los medios de streaming. El código por evento y por variable se encuentra en [Events](/help/implementation/events/overview.md) y [Variables](/help/implementation/variables/overview.md).
 
-| Código base | En código | Mediante etiquetas |
+| Código base | En código | Uso de etiquetas |
 |---|---|---|
 | Web (JavaScript) | [JavaScript](javascript.md) | [Extensión de etiqueta de Media Analytics](javascript-tags.md) |
 | Chromecast | [Chromecast](chromecast.md) | — |
