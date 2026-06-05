@@ -3,9 +3,9 @@ title: Ruta de medios
 description: Registra el ID de contenido como una variable de tráfico para el análisis de rutas.
 feature: Dimensions
 role: User, Admin
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+source-git-commit: 7b5232f25f3aa26e8566783557163f316af3fe57
 workflow-type: tm+mt
-source-wordcount: '229'
+source-wordcount: '217'
 ht-degree: 5%
 
 ---
@@ -22,7 +22,7 @@ La ruta de medios se deriva automáticamente del ID de contenido establecido al 
 | Sistema de informes | Fuente |
 | --- | --- |
 | Adobe Analytics | Se recopila automáticamente a partir de los datos de contexto `a.media.name` como una variable de tráfico (prop) cuando [[!UICONTROL Media Core]](/help/reporting/setup/analytics-reporting.md) está habilitado. |
-| Customer Journey Analytics | N/D — usar [Contenido](content.md) para el análisis de rutas |
+| Customer Journey Analytics | N/D — usar [Contenido](content.md) para el análisis de rutas. |
 | Fuentes de datos | `videopath`, `post_videopath` |
 | Audience Manager | `c_contextdata.a.media.name` |
 
@@ -36,4 +36,4 @@ La ruta de medios se deriva automáticamente del ID de contenido establecido al 
 
 ## Elementos de dimensión
 
-Cada elemento es un ID de contenido registrado durante una visita. Utilice los informes Flujo de página siguiente y Flujo de página anterior en Contenido > Ruta de medios en Adobe Analytics para ver las rutas de navegación de contenido a contenido.
+Cada elemento es un ID de contenido registrado durante una visita. Puede utilizar los paneles Flujo para ver las rutas de navegación entre el contenido y el contenido.
