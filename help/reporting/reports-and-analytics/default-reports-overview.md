@@ -22,7 +22,7 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: b18eab3deb3d15a08adf2f7ecf61d73235bbc6e5
 workflow-type: tm+mt
 source-wordcount: 358
 ht-degree: 50%
@@ -37,7 +37,7 @@ Además de las métricas y dimensiones disponibles al habilitar cada uno de los 
 
 Los informes de medios se muestran en la pestaña **[!UICONTROL Informes]**. Vaya a > **[!UICONTROL Medios]** > **[!UICONTROL Interacción con contenidos]** y seleccione una de las siguientes opciones:
 
-| Informe de contenido | Descripción     | Información comercial común       |
+| Informe de contenido | Descripción | Información comercial común |
 | --- | --- | --- |
 | [Información general de medio &#x200B;](media-reports-overview.md) | Muestra varias medidas acumuladas para monitorizar rápidamente que el medio está funcionando según lo esperado. Un gráfico muestra [[!UICONTROL inicios de contenido]](/help/reporting/metrics/media-starts.md) junto a impresiones de anuncios para que puedas ver y comparar rápidamente estas métricas. | <ul> <li>Totales de las métricas principales, entre ellas [[!UICONTROL inicios de contenido]](/help/reporting/metrics/content-starts.md), tasa de finalización, tiempo promedio en el flujo y elementos de medios promedio por visita.  </li> <li>[[!UICONTROL Inicios de contenido]](/help/reporting/metrics/content-starts.md) y [[!UICONTROL inicios de publicidad]](/help/reporting/metrics/ad-starts.md) en total para medios filtrados por tipo de dispositivo o país.  </li> </ul> |
 | [Detalles multimedia &#x200B;](media-reports-detail.md) | Muestra métricas detalladas para todos los elementos de medios, incluidos inicios, espectadores simultáneos, tasa de finalización, porcentaje de reproducción e impresiones de publicidad. | <ul> <li>Cantidades totales para las principales métricas, como [[!UICONTROL inicios de contenido]](/help/reporting/metrics/media-starts.md), [[!UICONTROL inicios de contenido]](/help/reporting/metrics/content-starts.md) y [[!UICONTROL inicios de publicidad]](/help/reporting/metrics/ad-starts.md), y contenido promedio por visita.  </li> <li>[[!UICONTROL Inicios de contenido]](/help/reporting/metrics/content-starts.md) y [[!UICONTROL inicios de publicidad]](/help/reporting/metrics/ad-starts.md) en total para medios filtrados por tipo de dispositivo o país.  </li> </ul> |

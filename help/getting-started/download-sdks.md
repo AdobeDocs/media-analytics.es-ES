@@ -1,5 +1,5 @@
 ---
-title: Vínculos de acceso para descargar los SDK de Media Analytics
+title: Obtención de SDK, extensiones y API de medios
 description: Vínculos a las descargas de SDK para plataformas disponibles, como Android, iOS, JavaScript, Chromecast y Roku.
 uuid: a619fbb8-693e-4583-8dad-0ff875e715f8
 exl-id: d211fa2e-d5b0-4e9f-bdb7-eda838194f3d
@@ -23,41 +23,37 @@ topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+source-git-commit: b18eab3deb3d15a08adf2f7ecf61d73235bbc6e5
 workflow-type: tm+mt
-source-wordcount: 524
-ht-degree: 81%
+source-wordcount: 575
+ht-degree: 32%
 
 ---
 
-# Obtener SDK de medios, extensiones mediante etiquetas y SDK para OTT {#download-sdks}
+# Obtención de SDK, extensiones y API de medios
 
-La información de esta página incluye vínculos para descargar los SDK de medios actuales y para obtener las extensiones de medios que utilizan etiquetas.
+## Implementaciones de Edge (recomendado) {#edge-sdks}
 
-Las etiquetas en Adobe Experience Platform son la nueva generación de capacidades de administración de etiquetas de sitios web y SDK para móviles de Adobe. Las etiquetas ofrecen una alternativa sencilla para implementar y gestionar las soluciones de análisis, marketing y publicidad necesarias para potenciar las experiencias más importantes del cliente. Para obtener información adicional sobre las etiquetas, consulte [Información general sobre etiquetas](https://experienceleague.adobe.com/docs/platform-learn/data-collection/overview.html?lang=es).
+Las implementaciones de Edge recopilan datos una vez y los entregan a través de Adobe Experience Platform Edge Network a varios destinos: Adobe Analytics, Customer Journey Analytics, Adobe Journey Optimizer y Real-Time CDP. Para plataformas sin un SDK nativo (como Smart TV, consolas de juegos y decodificadores), utilice la API de Media Edge.
 
-## SDK de medios y bibliotecas móviles {#media-sdks-libraries}
+| | Documentación | Muestra |
+|:---:|---|---|
+| [![Icono de JavaScript](assets/javascript-icon.png)](https://experienceleague.adobe.com/es/docs/experience-platform/web-sdk/install/overview)<br>[Web SDK](https://experienceleague.adobe.com/es/docs/experience-platform/web-sdk/install/overview) | [Configurar Web SDK para los medios de transmisión](/help/implementation/edge/web-sdk.md) | [Muestra](https://github.com/adobe/alloy-samples/blob/main/media-collection/STANDALONE.md) |
+| [![Icono de extensión](assets/plug.svg)](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/web-sdk/overview.html?lang=es)<br>[Extensión de etiqueta Web SDK](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/web-sdk/overview.html?lang=es) | [Configurar la extensión de etiquetas Web SDK para los medios de transmisión](/help/implementation/edge/web-sdk-tags.md) | [Muestra](https://github.com/adobe/alloy-samples/blob/main/media-collection/TAGS_IMPL.md) |
+| [![Icono de Android](assets/android.png)](https://github.com/adobe/aepsdk-media-android)<br>[Android SDK](https://github.com/adobe/aepsdk-media-android) | [Configurar Android para los medios de transmisión](/help/implementation/edge/android.md) | [Muestra](https://github.com/adobe/aepsdk-media-android/tree/main/code/testapp) |
+| [![Icono de Apple iOS](assets/apple.png)](https://github.com/adobe/aepsdk-media-ios)<br>[iOS / tvOS SDK](https://github.com/adobe/aepsdk-media-ios) | [Configurar iOS para los medios de transmisión](/help/implementation/edge/ios.md) | [Muestra](https://github.com/adobe/aepsdk-media-ios/tree/main/TestApp) |
+| [![Icono de extensión](assets/plug.svg)](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/)<br>[Extensión de etiqueta Android](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/) | [Configurar la extensión de etiquetas de Android para los medios de transmisión](/help/implementation/edge/android-tags.md) | |
+| [![Icono de extensión](assets/plug.svg)](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/)<br>[Extensión de etiqueta iOS / tvOS](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/) | [Configurar la extensión de etiquetas de iOS para los medios de transmisión](/help/implementation/edge/ios-tags.md) | |
+| [![Icono de Roku](assets/roku-icon.png)](https://github.com/adobe/aepsdk-roku)<br>[SDK de Roku](https://github.com/adobe/aepsdk-roku) | [Configurar Roku para los medios de transmisión](/help/implementation/edge/roku.md) | [Muestra](https://github.com/adobe/aepsdk-roku/tree/main/sample/simple-videoplayer-channel) |
+| [![Icono de API](assets/api.png)](https://developer.adobe.com/data-collection-apis/docs/api/media-edge)<br>[API de Media Edge](https://developer.adobe.com/data-collection-apis/docs/api/media-edge) | [Configurar la API de Media Edge](/help/implementation/edge/media-edge-api.md) | [Muestra](https://developer.adobe.com/data-collection-apis/docs/getting-started/media-edge-examples) |
 
-### Implementación web {#download-web-sdk}
+## Implementaciones solo de Analytics {#analytics-only-sdks}
 
-| Plataforma compatible | Soluciones compatibles | Método de implementación | Versión |  API   |  Documentación  |  Muestra  |
-|:---:|---|---|---|---| ---| ---|
-| ![Icono de JavaScript &#x200B;](assets/javascript-icon.png)</br>**API de JavaScript** | Adobe Analytics | Solo de Analytics | Web: [Media SDK para JS v3.0.2](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/js-v3.0.2) | [Referencia de la API de JavaScript](https://github.com/Adobe-Marketing-Cloud/media-sdks/blob/master/sdks/js/3.x/docs/APIReference.md) | [Configurar JavaScript para los medios de transmisión](/help/implementation/analytics-only/javascript.md) | [Muestra de Media SDK para JS v3.0.2](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/sdks/js/3.x) |
-| ![Icono de JavaScript &#x200B;](assets/javascript-icon.png)</br>**API de JavaScript** | Adobe Analytics | Solo de Analytics | Web: extensión de medios |  | [Extensión de Adobe Medium Analytics (3.x SDK) para audio y vídeo: uso de etiquetas (recopilación de datos)](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics-3x/overview.html?lang=es) | [Extensión de Adobe Media Analytics (3.x SDK) para audio y vídeo de muestra](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/samples/launch/js/3.x) |
-| </br>**Web** | Adobe Analytics<p>Customer Journey Analytics</p><p>Adobe Journey Optimizer</p><p>Real-Time CDP</p> | Edge | Web: Experience Platform Edge |  | [Descripción general de la implementación de Edge](/help/implementation/edge/overview.md) <p>y</p><p>[Configurar Web SDK para los medios de transmisión](/help/implementation/edge/web-sdk.md)</p> | |
+Estos SDK y extensiones envían datos directamente a Adobe Analytics. Para nuevas implementaciones, utilice las implementaciones de Edge anteriores. Para llevar los datos existentes de Analytics a Customer Journey Analytics u otras aplicaciones de Experience Platform, usa el [conector de origen de Analytics](https://experienceleague.adobe.com/es/docs/experience-platform/sources/connectors/adobe-applications/analytics).
 
-### Implementación móvil {#get-mobile-extension}
-
-| Plataforma compatible | Soluciones compatibles | Método de implementación | Versión |  Documentación   |  Ejemplos  |
-|:---:|---|---|---|---|---|
-| ![Icono de Android &#x200B;](assets/android-icon.png)</br>**Android** | Adobe Analytics | Solo de Analytics | Android: extensión de medios | [Documentación de Mobile SDK](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/) | [Adobe Analytics: Media Analytics para audio y vídeo de muestra](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/samples/launch/mobile/android) |
-| ![Icono de Apple iOS &#x200B;](assets/ios-icon.png)<br>**tvOS** | Adobe Analytics | Solo de Analytics | iOS/tvOS: extensión de medios | [Documentación de Mobile SDK](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/) | [Adobe Analytics: Media Analytics para audio y vídeo de muestra](https://github.com/adobe/aepsdk-media-ios/tree/main/TestApp) |
-| ![Icono de Android &#x200B;](assets/android-icon.png)</br>**Android** | <p>Adobe Analytics</p><p>Customer Journey Analytics</p><p>Adobe Journey Optimizer</p><p>Real-Time CDP</p> | Edge | Android: Experience Platform Edge | [Configurar Android para los medios de transmisión](/help/implementation/edge/android.md) | |
-| ![Icono de Apple iOS &#x200B;](assets/ios-icon.png)<br>**tvOS** | <p>Adobe Analytics</p><p>Customer Journey Analytics</p><p>Adobe Journey Optimizer</p><p>Real-Time CDP</p> | Edge | iOS/tvOS: Experience Platform Edge | [Configurar iOS para los medios de transmisión](/help/implementation/edge/ios.md) |  |
-
-### Implementación OTT {#download-ott-libraries}
-
-| Plataforma compatible | Soluciones compatibles | Método de implementación | Versión |  API   |  Documentación  |
-|:---:|---|---|---|---|---|
-| ![Icono de Chromecast &#x200B;](assets/chromecast-icon.png)</br>**Chromecast** | Adobe Analytics | Solo de Analytics | [SDK para Chromecast v3.0.3](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/chromecast-v3.0.3) | [Referencia de la API de Chromecast](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/) | [Configurar Chromecast SDK](https://github.com/Adobe-Marketing-Cloud/media-sdks/blob/master/docs/2.x/chromecast-setup.md) |
-| ![Icono de Roku &#x200B;](assets/roku-icon.png)</br>**Roku** | <p>Adobe Analytics</p><p>Customer Journey Analytics</p><p>Adobe Journey Optimizer</p><p>Real-Time CDP</p> | Edge | [Adobe Experience Platform Roku SDK](https://github.com/adobe/aepsdk-roku/tree/main) |  | [Configurar Roku para los medios de transmisión](/help/implementation/edge/roku.md) |
+| | Documentación | Muestra |
+|:---:|---|---|
+| [![Icono de JavaScript](assets/javascript-icon.png)](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/js-v3.0.2)<br>[Media SDK 3.x](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/js-v3.0.2) | [Configurar JavaScript para los medios de transmisión](/help/implementation/analytics-only/javascript.md) | [Muestra](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/sdks/js/3.x) |
+| [![Icono de extensión](assets/plug.svg)](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics-3x/overview.html?lang=es)<br>[Extensión de medios](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics-3x/overview.html?lang=es) | [Configurar JavaScript mediante etiquetas para los medios de transmisión](/help/implementation/analytics-only/javascript-tags.md) | [Muestra](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/samples/launch/js/3.x) |
+| [![Icono de Chromecast](assets/chromecast-icon.png)](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/chromecast-v3.0.3)<br>[Chromecast SDK 3.x](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/chromecast-v3.0.3) | [Configurar Chromecast para los medios de transmisión](/help/implementation/analytics-only/chromecast.md) | [Muestra](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/sdks/chromecast/samples/BasicPlayerSample) |
+| [![Icono de API](assets/api.png)](/help/implementation/media-collection-api/mc-api-overview.md)<br>[API de recopilación de medios](/help/implementation/media-collection-api/mc-api-overview.md) | [Configurar la API de Media Collection](/help/implementation/analytics-only/media-collection-api.md) | |

@@ -5,10 +5,10 @@ user-guide-title: Guía de servicios de medios de streaming
 breadcrumb-title: Guía de servicios de medios de streaming
 user-guide-description: Implementar servicios de medios de streaming. Incluye el SDK de medios y la API de recopilación de medios.
 sub-product: media analytics
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+source-git-commit: b18eab3deb3d15a08adf2f7ecf61d73235bbc6e5
 workflow-type: tm+mt
-source-wordcount: '754'
-ht-degree: 35%
+source-wordcount: '749'
+ht-degree: 34%
 
 ---
 
@@ -16,13 +16,11 @@ ht-degree: 35%
 # Guía de servicios de medios de streaming {#using}
 
 + [Guía de servicios de medios de streaming de Adobe](media-overview.md)
-+ Notas de la versión {#release-notes}
-   + [Notas de la versión de medios de streaming](additional-resources/release-notes.md)
++ [Notas de la versión de medios de streaming](release-notes.md)
 + Introducción {#getting-started}
    + [Requisitos previos](getting-started/prereqs.md)
    + [Dispositivos compatibles](getting-started/supported-devices.md)
-   + [Documentación de implementación de servicios de medios de streaming](getting-started/implementation-documentation.md)
-   + [SDK, bibliotecas y extensiones](getting-started/download-sdks.md)
+   + [Obtención de SDK, extensiones y API de medios](getting-started/download-sdks.md)
 + Implementación {#implementation}
    + [Información general sobre la implementación](implementation/overview.md)
    + Eventos {#events}
