@@ -17,14 +17,14 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-source-git-commit: 7b5232f25f3aa26e8566783557163f316af3fe57
+source-git-commit: cb3770abd06eb8debe4ff92641835f04f62471f7
 workflow-type: tm+mt
-source-wordcount: 188
-ht-degree: 76%
+source-wordcount: 189
+ht-degree: 75%
 
 ---
 
-# Segmentos de medios{#segments}
+# Segmentos de medios de streaming
 
 Los segmentos le permiten identificar subconjuntos de visitantes basándose en sus características o en las interacciones con el sitio web. Los segmentos de medios de streaming le permiten identificar el tipo de flujo del visitante, como emisiones de audio, en directo o pódcast. Para obtener información sobre los segmentos de Adobe Analytics, consulte [Acerca de los segmentos](https://experienceleague.adobe.com/es/docs/analytics/components/segmentation/seg-overview) en la Guía de componentes de Adobe Analytics.
 
