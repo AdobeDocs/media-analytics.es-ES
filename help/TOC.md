@@ -5,10 +5,10 @@ user-guide-title: Guía de servicios de medios de streaming
 breadcrumb-title: Guía de servicios de medios de streaming
 user-guide-description: Implementar servicios de medios de streaming. Incluye el SDK de medios y la API de recopilación de medios.
 sub-product: media analytics
-source-git-commit: 7b5232f25f3aa26e8566783557163f316af3fe57
+source-git-commit: c25d3cd6248f547e5a32a080eb89c5ad8f58c474
 workflow-type: tm+mt
-source-wordcount: '698'
-ht-degree: 32%
+source-wordcount: '694'
+ht-degree: 31%
 
 ---
 
@@ -164,6 +164,7 @@ ht-degree: 32%
             + [Condiciones de tiempo de espera](implementation/media-collection-api/mc-api-impl/mc-api-timeout.md)
             + [Control del orden de los eventos](implementation/media-collection-api/mc-api-impl/mc-api-ctrl-order.md)
             + [Poner eventos en cola cuando la respuesta de las sesiones es lenta](implementation/media-collection-api/mc-api-impl/mc-api-queuing.md)
+   + [Configuración de privacidad y exclusión](implementation/opt-out-privacy.md)
 + Creación de informes {#reporting}
    + Configuración de informes {#reporting-setup}
       + [Implementaciones de Edge](reporting/setup/edge-reporting.md)
@@ -298,6 +299,3 @@ ht-degree: 32%
       + [Cronología: Capítulos](use-cases/scenarios/chapter-start-end.md)
       + [Cronología: Ver hasta el final](use-cases/scenarios/view-to-end-of-content.md)
       + [Cronología: el usuario abandona la sesión](use-cases/scenarios/user-abandons-session.md)
-+ Privacidad y seguridad {#streaming-media-privacy}
-   + [Configuración de privacidad y exclusión](privacy/opt-out-privacy.md)
-   + [Seguridad](privacy/security.md)
