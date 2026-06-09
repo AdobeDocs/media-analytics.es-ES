@@ -3,10 +3,10 @@ title: Primera fecha digital
 description: Establezca la fecha en la que el contenido se emitió por primera vez en una plataforma digital. Adobe recomienda el formato AAAA-MM-DD.
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '244'
-ht-degree: 8%
+source-wordcount: '265'
+ht-degree: 7%
 
 ---
 
@@ -24,7 +24,7 @@ La primera variable de fecha digital es la fecha en la que el contenido se emiti
 | Propiedad | Valor |
 | --- | --- |
 | **Variable de datos de contexto** | `a.media.digitalDate` |
-| **Campo de colección XDM** | [`xdm.mediaCollection.sessionDetails.firstDigitalDate`](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **Campo de colección XDM** | [`xdm.mediaCollection.sessionDetails.firstDigitalDate`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **rasgo de Audience Manager** | `c_contextdata.a.media.digitalDate` |
 | **Requerido** | No |
 | **Enviado con** | [Inicio de sesión](/help/implementation/events/session/session-start.md), cierre de sesión |
@@ -73,7 +73,7 @@ metadata[MediaConstants.VideoMetadataKeys.FIRST_DIGITAL_DATE] = "2016-01-25"
 tracker.trackSessionStart(mediaInfo, metadata)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 Use `createMediaSession` para establecer `firstDigitalDate` dentro de `sessionDetails`:
 
@@ -144,6 +144,21 @@ var standardMetadata = {};
 standardMetadata[ADBMobile.media.VideoMetadataKeys.FIRST_DIGITAL_DATE] = "2016-01-25";
 mediaInfo[ADBMobile.media.MediaObjectKey.StandardMediaMetadata] = standardMetadata;
 ADBMobile.media.trackSessionStart(mediaInfo, null);
+```
+
+>[!TAB Roku 2.x]
+
+Use `MEDIA_VideoMetadataKeyFIRST_DIGITAL_DATE` para establecer la primera fecha digital en los metadatos estándar del objeto de medios antes de llamar a `mediaTrackSessionStart`:
+
+```brightscript
+adb = ADBMobile()
+mediaInfo = adb_media_init_mediainfo("My Video", "video-123", 128.0, adb.MEDIA_STREAM_TYPE_VOD, adb.MEDIA_TYPE_VIDEO)
+
+standardMetadata = {}
+standardMetadata[adb.MEDIA_VideoMetadataKeyFIRST_DIGITAL_DATE] = "2016-01-25"
+mediaInfo[adb.MEDIA_STANDARD_MEDIA_METADATA] = standardMetadata
+
+adb.mediaTrackSessionStart(mediaInfo, invalid)
 ```
 
 >[!TAB API de recopilación de medios]

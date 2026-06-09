@@ -3,10 +3,10 @@ title: Tiempo para el inicio
 description: Establezca el tiempo de inicio del reproductor, en milisegundos, para que el backend pueda informar del tiempo hasta el primer fotograma de calidad.
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '294'
-ht-degree: 6%
+source-wordcount: '312'
+ht-degree: 5%
 
 ---
 
@@ -28,7 +28,7 @@ La variable tiempo para el inicio es el tiempo, en milisegundos, transcurrido en
 | Propiedad | Valor |
 | --- | --- |
 | **Variable de datos de contexto** | `a.media.qoe.timeToStart` |
-| **Campo de colección XDM** | [`xdm.mediaCollection.qoeDataDetails.timeToStart`](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/qoe-data-details-collection) |
+| **Campo de colección XDM** | [`xdm.mediaCollection.qoeDataDetails.timeToStart`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-collection) |
 | **rasgo de Audience Manager** | `c_contextdata.a.media.qoe.timeToStart` |
 | **Requerido** | No |
 | **Enviado con** | [Inicio de sesión](/help/implementation/events/session/session-start.md), cierre de sesión |
@@ -89,7 +89,7 @@ val qoeObject = Media.createQoEObject(3200L,
 tracker.updateQoEObject(qoeObject)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 Establecer `timeToStart` dentro de `xdm.mediaCollection.qoeDataDetails` en `media.sessionStart` al llamar a `createMediaSession`:
 
@@ -169,6 +169,17 @@ var qosInfo = ADBMobile.media.createQoSObject(
   0       // droppedFrames
 );
 ADBMobile.media.updateQoSObject(qosInfo);
+```
+
+>[!TAB Roku 2.x]
+
+Pase el tiempo de inicio como segundo argumento (`startupTime`) a `adb_media_init_qosinfo` y actualice el rastreador con `mediaUpdateQoS`:
+
+```brightscript
+adb = ADBMobile()
+qosInfo = adb_media_init_qosinfo(3200.0, 0.0, 24.0, 0.0)  ' bitrate, startupTime, fps, droppedFrames
+
+adb.mediaUpdateQoS(qosInfo)
 ```
 
 >[!TAB API de recopilación de medios]

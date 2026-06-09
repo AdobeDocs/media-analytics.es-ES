@@ -3,10 +3,10 @@ title: Currículos de contenido
 description: Marque una sesión que reanude una reproducción interrumpida anteriormente para que el back-end cuente un evento de reanudación de contenido.
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '280'
-ht-degree: 7%
+source-wordcount: '293'
+ht-degree: 6%
 
 ---
 
@@ -24,7 +24,7 @@ La variable de reanudación de contenido marca una sesión que reanuda una repro
 | Propiedad | Valor |
 | --- | --- |
 | **Variable de datos de contexto** | `a.media.resume` |
-| **Campo de colección XDM** | [`xdm.mediaCollection.sessionDetails.hasResume`](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **Campo de colección XDM** | [`xdm.mediaCollection.sessionDetails.hasResume`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **rasgo de Audience Manager** | N/A |
 | **Requerido** | No |
 | **Enviado con** | [Inicio de sesión](/help/implementation/events/session/session-start.md) |
@@ -87,7 +87,7 @@ mediaInfo[MediaConstants.MediaObjectKey.RESUMED] = true
 tracker.trackSessionStart(mediaInfo, null)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 Establecer `hasResume` en `true` dentro de `xdm.mediaCollection.sessionDetails` al llamar a `createMediaSession` para la sesión reanudada:
 
@@ -168,6 +168,18 @@ var mediaInfo = ADBMobile.media.createMediaObject("My Video", "video-123", 128,
   ADBMobile.media.StreamType.VOD, ADBMobile.media.MediaType.Video);
 mediaInfo[ADBMobile.media.MediaObjectKey.MediaResumed] = true;
 ADBMobile.media.trackSessionStart(mediaInfo, null);
+```
+
+>[!TAB Roku 2.x]
+
+Establezca la clave `resumed` en el objeto de medios antes de llamar a `mediaTrackSessionStart`:
+
+```brightscript
+adb = ADBMobile()
+mediaInfo = adb_media_init_mediainfo("My Video", "video-123", 128.0, adb.MEDIA_STREAM_TYPE_VOD, adb.MEDIA_TYPE_VIDEO)
+mediaInfo.resumed = true
+
+adb.mediaTrackSessionStart(mediaInfo, invalid)
 ```
 
 >[!TAB API de recopilación de medios]

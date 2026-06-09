@@ -3,10 +3,10 @@ title: Indicador de medios descargados
 description: Marque una sesión como reproducida sin conexión descargada para que se informe separadamente de las sesiones retransmitidas.
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '273'
-ht-degree: 6%
+source-wordcount: '304'
+ht-degree: 5%
 
 ---
 
@@ -24,7 +24,7 @@ El indicador de medios descargados indica que una sesión es una reproducción d
 | Propiedad | Valor |
 | --- | --- |
 | **Variable de datos de contexto** | `a.media.downloaded` |
-| **Campo de colección XDM** | [`xdm.mediaCollection.sessionDetails.isDownloaded`](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **Campo de colección XDM** | [`xdm.mediaCollection.sessionDetails.isDownloaded`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **rasgo de Audience Manager** | `c_contextdata.a.media.downloaded` |
 | **Requerido** | No |
 | **Enviado con** | [Inicio de sesión](/help/implementation/events/session/session-start.md), cierre de sesión |
@@ -85,7 +85,7 @@ config[MediaConstants.TrackerConfig.DOWNLOADED_CONTENT] = true
 val tracker = Media.createTracker(config)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 Establecer `isDownloaded` en `true` dentro de `xdm.mediaCollection.sessionDetails` al llamar a `createMediaSession`:
 
@@ -176,6 +176,10 @@ var mediaInfo = ADBMobile.media.createMediaObject("My Video", "video-123", 128,
 mediaInfo[ADBMobile.media.MediaObjectKey.MediaDownloaded] = true;
 ADBMobile.media.trackSessionStart(mediaInfo, null);
 ```
+
+>[!TAB Roku 2.x]
+
+El seguimiento de contenido descargado no está disponible en SDK Roku 2.x. Para informar sobre la reproducción de contenido descargado, usa [Roku Edge SDK](/help/implementation/edge/roku.md) o [la API de recopilación de contenido](/help/implementation/analytics-only/media-collection-api.md).
 
 >[!TAB API de recopilación de medios]
 

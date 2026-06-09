@@ -3,7 +3,7 @@ title: Resumen de eventos de medios de streaming
 description: Obtenga información acerca de los tipos de eventos de medios y el orden en que deben enviarse.
 feature: Streaming Media
 role: Developer
-source-git-commit: 3dbbd5228fcd91cf78c0597dea656c06f367dd40
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
 source-wordcount: '1065'
 ht-degree: 0%
@@ -21,9 +21,9 @@ Los eventos se agrupan en seis categorías (sesión, reproducción, anuncios, ca
 
 Los eventos de sesión se aplican a cualquier tipo de seguimiento de medios, incluidos vídeo bajo demanda, emisiones en directo, podcasts y audiolibros. Definen los límites de la propia sesión de seguimiento. El evento de sesión más importante es [Inicio de sesión](session/session-start.md), ya que casi todos los demás tipos de evento dependen del ID de sesión que genere. Mándelo como el primer evento cuando un usuario inicia una sesión, como cuando pulsa reproducir o cuando el reproductor comienza la reproducción automática.
 
-Una vez que se abra una sesión, use [Sesión completada](session/session-complete.md) o [Fin de sesión](session/session-end.md) para indicar cómo terminó la experiencia de visualización. Enviar sesión completa cuando el espectador llega al final natural del contenido: el vídeo termina, el episodio del podcast termina o el capítulo final de un audiolibro finaliza. La sesión completa no cierra la sesión; permanece abierta hasta que caduca de forma natural, por lo que los eventos finales, como un ping final, se seguirán capturando.
+Una vez que se abra una sesión, use [Sesión completada](session/session-complete.md) o [Fin de sesión](session/session-end.md) para indicar cómo terminó la experiencia de visualización. Enviar sesión completa cuando el espectador llega al final natural del contenido (el vídeo termina, el episodio del podcast termina o el capítulo final de un audiolibro finaliza). La sesión completa no cierra la sesión; permanece abierta hasta que caduca de forma natural, por lo que los eventos finales, como un ping final, se seguirán capturando.
 
-Si el visor se va antes de llegar al final, envíe [Fin de sesión](session/session-end.md) para cerrar la sesión inmediatamente. Envíe únicamente la Sesión final cuando no se produzcan eventos adicionales, por ejemplo, cuando se destruya el reproductor o se descargue la página. El final de la sesión es un cierre grave: una vez enviada, la sesión finaliza y no se pueden rastrear más eventos debajo de ella. En la mayoría de los casos, es más seguro permitir que la sesión caduque de forma natural. Algunos ejemplos son que el visor se detiene indefinidamente, la aplicación se pone en segundo plano o el contenido no se carga.
+Si el visor se va antes de llegar al final, envíe [Fin de sesión](session/session-end.md) para cerrar la sesión inmediatamente. Envíe únicamente el final de la sesión cuando no se produzcan eventos adicionales (por ejemplo, cuando se destruya el reproductor o se descargue la página). El final de la sesión es un cierre grave: una vez enviada, la sesión finaliza y no se pueden rastrear más eventos debajo de ella. En la mayoría de los casos, es más seguro permitir que la sesión caduque de forma natural. Algunos ejemplos son que el visor se detiene indefinidamente, la aplicación se pone en segundo plano o el contenido no se carga.
 
 Las sesiones caducan automáticamente si no se reciben eventos durante 10 minutos o si no se detecta ningún movimiento del cabezal de reproducción durante 30 minutos. Si se cumple cualquiera de las condiciones y el visor vuelve al contenido, debe volver a llamar a Inicio de sesión para abrir una nueva sesión antes de enviar más eventos.
 
@@ -31,7 +31,7 @@ Las sesiones caducan automáticamente si no se reciben eventos durante 10 minuto
 
 Los eventos de reproducción rastrean las transiciones de estado en el reproductor de contenidos a lo largo de una sesión. Constituyen el núcleo del flujo de eventos y se aplican a cualquier tipo de contenido.
 
-El evento de reproducción principal es [Play](playback/play.md). Después de invocar a Inicio de sesión, Reproducir indica que el contenido ha comenzado a reproducirse, ya sea el inicio inicial, un déclencheur de reproducción automática o cualquier retorno al estado de reproducción. [Pausar inicio](playback/pause-start.md) indica que el usuario ha pausado la reproducción. No hay ningún evento de reanudación dedicado; cuando el visor se reanude, envíe Reproducir de nuevo. Reproducir funciona de la misma manera después de una detención del almacenamiento en búfer: envíe [Inicio del almacenamiento en búfer](playback/buffer-start.md) cuando el reproductor se detenga a la espera de datos y, a continuación, siga con Reproducir cuando se resuelva el almacenamiento en búfer.
+El evento de reproducción principal es [Play](playback/play.md). Después de invocar a Inicio de sesión, Reproducir indica que el contenido ha comenzado a reproducirse, ya sea el inicio inicial, un déclencheur de reproducción automática o cualquier retorno al estado de reproducción. [Pausar inicio](playback/pause-start.md) indica que el usuario ha pausado la reproducción. No hay ningún evento de reanudación dedicado; cuando el visor se reanude, envíe Reproducir de nuevo. Reproducir funciona de la misma manera después de una detención del almacenamiento en búfer; enviar [Inicio del almacenamiento en búfer](playback/buffer-start.md) cuando el reproductor se detenga a la espera de datos y, a continuación, seguir con Reproducir cuando se resuelva el almacenamiento en búfer.
 
 Envíe [Ping](playback/ping.md) cada 10 segundos durante la reproducción del contenido principal y cada 1 segundo durante la reproducción del anuncio. Ping mantiene viva la sesión y registra el movimiento del cabezal de reproducción. En los SDK móviles, los pings se envían automáticamente; en todas las demás plataformas deben enviarse manualmente.
 

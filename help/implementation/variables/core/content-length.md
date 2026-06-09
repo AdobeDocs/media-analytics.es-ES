@@ -3,10 +3,10 @@ title: Longitud de contenido
 description: Establezca la duración del contenido en segundos al inicio de la sesión. Controla los marcadores de progreso y la audiencia media por minuto.
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '265'
-ht-degree: 8%
+source-wordcount: '280'
+ht-degree: 7%
 
 ---
 
@@ -24,7 +24,7 @@ La variable de duración del contenido es la duración total del contenido en se
 | Propiedad | Valor |
 | --- | --- |
 | **Variable de datos de contexto** | `a.media.length` |
-| **Campo de colección XDM** | [`xdm.mediaCollection.sessionDetails.length`](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **Campo de colección XDM** | [`xdm.mediaCollection.sessionDetails.length`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **rasgo de Audience Manager** | `c_contextdata.a.media.length` |
 | **Requerido** | Sí |
 | **Enviado con** | [Inicio de sesión](/help/implementation/events/session/session-start.md), cierre de sesión |
@@ -84,7 +84,7 @@ var mediaInfo = Media.createMediaObject("My Video",
 tracker.trackSessionStart(mediaInfo, null)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 Establecer `length` dentro de `xdm.mediaCollection.sessionDetails` al llamar a `createMediaSession`:
 
@@ -167,6 +167,17 @@ var mediaInfo = ADBMobile.media.createMediaObject(
   ADBMobile.media.MediaType.Video
 );
 ADBMobile.media.trackSessionStart(mediaInfo, null);
+```
+
+>[!TAB Roku 2.x]
+
+Pase la duración del contenido en segundos como tercer argumento a `adb_media_init_mediainfo`:
+
+```brightscript
+adb = ADBMobile()
+mediaInfo = adb_media_init_mediainfo("My Video", "video-123", 128.0, adb.MEDIA_STREAM_TYPE_VOD, adb.MEDIA_TYPE_VIDEO)
+
+adb.mediaTrackSessionStart(mediaInfo, invalid)
 ```
 
 >[!TAB API de recopilación de medios]

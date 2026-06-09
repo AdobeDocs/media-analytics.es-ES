@@ -3,9 +3,9 @@ title: Nombre del anuncio
 description: Establezca un nombre descriptivo para el anuncio.
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '210'
+source-wordcount: '223'
 ht-degree: 8%
 
 ---
@@ -24,7 +24,7 @@ La variable del nombre del anuncio es el título del anuncio en lenguaje natural
 | Propiedad | Valor |
 | --- | --- |
 | **Variable de datos de contexto** | `a.media.ad.friendlyName` |
-| **Campo de colección XDM** | [`xdm.mediaCollection.advertisingDetails.friendlyName`](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/advertising-details-collection) |
+| **Campo de colección XDM** | [`xdm.mediaCollection.advertisingDetails.friendlyName`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-collection) |
 | **rasgo de Audience Manager** | `c_contextdata.a.media.ad.friendlyName` |
 | **Requerido** | No |
 | **Enviado con** | [Inicio del anuncio](/help/implementation/events/ads/ad-start.md), cierre del anuncio |
@@ -79,7 +79,7 @@ val adObject = Media.createAdObject("Ford F-150",
 tracker.trackEvent(Media.Event.AdStart, adObject, null)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 Establecer `friendlyName` dentro de `xdm.mediaCollection.advertisingDetails` al llamar a `sendMediaEvent` para `media.adStart`:
 
@@ -159,6 +159,17 @@ var adInfo = ADBMobile.media.createAdObject(
   30
 );
 ADBMobile.media.trackEvent(ADBMobile.media.Event.AdStart, adInfo, null);
+```
+
+>[!TAB Roku 2.x]
+
+Pase el nombre del anuncio como primer argumento a `adb_media_init_adinfo`:
+
+```brightscript
+adb = ADBMobile()
+adInfo = adb_media_init_adinfo("Ford F-150", "ad-2125", 1, 30.0)  ' name, id, position, length
+
+adb.mediaTrackEvent(adb.MEDIA_AD_START, adInfo)
 ```
 
 >[!TAB API de recopilación de medios]

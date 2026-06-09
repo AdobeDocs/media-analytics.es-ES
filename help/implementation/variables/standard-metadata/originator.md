@@ -3,10 +3,10 @@ title: Creador
 description: Configure el creador o el estudio de producción del contenido.
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '207'
-ht-degree: 10%
+source-wordcount: '226'
+ht-degree: 9%
 
 ---
 
@@ -24,7 +24,7 @@ La variable de origen es el creador o estudio de producción del contenido (por 
 | Propiedad | Valor |
 | --- | --- |
 | **Variable de datos de contexto** | `a.media.originator` |
-| **Campo de colección XDM** | [`xdm.mediaCollection.sessionDetails.originator`](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **Campo de colección XDM** | [`xdm.mediaCollection.sessionDetails.originator`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **rasgo de Audience Manager** | `c_contextdata.a.media.originator` |
 | **Requerido** | No |
 | **Enviado con** | [Inicio de sesión](/help/implementation/events/session/session-start.md), cierre de sesión |
@@ -73,7 +73,7 @@ metadata[MediaConstants.VideoMetadataKeys.ORIGINATOR] = "Warner Brothers"
 tracker.trackSessionStart(mediaInfo, metadata)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 Use `createMediaSession` para establecer `originator` dentro de `sessionDetails`:
 
@@ -144,6 +144,21 @@ var standardMetadata = {};
 standardMetadata[ADBMobile.media.VideoMetadataKeys.ORIGINATOR] = "Warner Brothers";
 mediaInfo[ADBMobile.media.MediaObjectKey.StandardMediaMetadata] = standardMetadata;
 ADBMobile.media.trackSessionStart(mediaInfo, null);
+```
+
+>[!TAB Roku 2.x]
+
+Use `MEDIA_VideoMetadataKeyORIGINATOR` para establecer el originador en los metadatos estándar del objeto de medios antes de llamar a `mediaTrackSessionStart`:
+
+```brightscript
+adb = ADBMobile()
+mediaInfo = adb_media_init_mediainfo("My Video", "video-123", 128.0, adb.MEDIA_STREAM_TYPE_VOD, adb.MEDIA_TYPE_VIDEO)
+
+standardMetadata = {}
+standardMetadata[adb.MEDIA_VideoMetadataKeyORIGINATOR] = "Warner Brothers"
+mediaInfo[adb.MEDIA_STANDARD_MEDIA_METADATA] = standardMetadata
+
+adb.mediaTrackSessionStart(mediaInfo, invalid)
 ```
 
 >[!TAB API de recopilación de medios]

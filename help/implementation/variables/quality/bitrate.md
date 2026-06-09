@@ -3,10 +3,10 @@ title: Velocidad de bits
 description: Establezca la velocidad de bits de reproducción actual (en kbps) en el objeto QoE para que el servidor pueda calcular las métricas de velocidad de bits.
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '288'
-ht-degree: 6%
+source-wordcount: '307'
+ht-degree: 5%
 
 ---
 
@@ -24,7 +24,7 @@ La variable de velocidad de bits es la velocidad de bits de reproducción actual
 | Propiedad | Valor |
 | --- | --- |
 | **Variable de datos de contexto** | `a.media.qoe.bitrateAverageBucket` |
-| **Campo de colección XDM** | [`xdm.mediaCollection.qoeDataDetails.bitrate`](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/qoe-data-details-collection) |
+| **Campo de colección XDM** | [`xdm.mediaCollection.qoeDataDetails.bitrate`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-collection) |
 | **rasgo de Audience Manager** | `c_contextdata.a.media.qoe.bitrateAverageBucket` |
 | **Requerido** | No |
 | **Enviado con** | Eventos de calidad ([cambio de velocidad de bits](/help/implementation/events/playback/bitrate-change.md), [inicio del búfer](/help/implementation/events/playback/buffer-start.md), [error](/help/implementation/events/error.md)), cierre de sesión |
@@ -81,7 +81,7 @@ val qoeObject = Media.createQoEObject(3200L,
 tracker.updateQoEObject(qoeObject)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 Establecer `bitrate` dentro de `xdm.mediaCollection.qoeDataDetails` al llamar a `sendMediaEvent` para eventos de calidad como `media.bitrateChange`:
 
@@ -156,6 +156,17 @@ var qosInfo = ADBMobile.media.createQoSObject(
   0      // droppedFrames
 );
 ADBMobile.media.updateQoSObject(qosInfo);
+```
+
+>[!TAB Roku 2.x]
+
+Pase la velocidad de bits en kbps como primer argumento a `adb_media_init_qosinfo` y actualice el rastreador con `mediaUpdateQoS`:
+
+```brightscript
+adb = ADBMobile()
+qosInfo = adb_media_init_qosinfo(3200.0, 0.0, 24.0, 0.0)  ' bitrate, startupTime, fps, droppedFrames
+
+adb.mediaUpdateQoS(qosInfo)
 ```
 
 >[!TAB API de recopilación de medios]

@@ -3,9 +3,9 @@ title: Tipo de carga de anuncio
 description: Defina el tipo de carga de publicidad para la sesión de flujo continuo.
 feature: Streaming Media
 role: Developer
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '248'
+source-wordcount: '269'
 ht-degree: 3%
 
 ---
@@ -24,7 +24,7 @@ La variable de tipo de carga de anuncio identifica el tipo de anuncio cargado al
 | Propiedad | Valor |
 | --- | --- |
 | **Variable de datos de contexto** | `a.media.adLoad` |
-| **Campo de colección XDM** | [`xdm.mediaCollection.sessionDetails.adLoad`](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **Campo de colección XDM** | [`xdm.mediaCollection.sessionDetails.adLoad`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **rasgo de Audience Manager** | `c_contextdata.a.media.adLoad` |
 | **Requerido** | No |
 | **Enviado con** | [Inicio de sesión](/help/implementation/events/session/session-start.md), cierre de sesión |
@@ -35,7 +35,7 @@ La variable de tipo de carga de anuncio identifica el tipo de anuncio cargado al
 
 >[!TAB SDK web ]
 
-Establecer `adLoad` dentro de `xdm.mediaCollection.sessionDetails` al llamar a [`createMediaSession`](https://experienceleague.adobe.com/es/docs/experience-platform/collection/js/commands/createmediasession):
+Establecer `adLoad` dentro de `xdm.mediaCollection.sessionDetails` al llamar a [`createMediaSession`](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/commands/createmediasession):
 
 ```javascript
 alloy("createMediaSession", {
@@ -79,7 +79,7 @@ videoMetadata[MediaConstants.VideoMetadataKeys.AD_LOAD] = "linear"
 tracker.trackSessionStart(mediaInfo, videoMetadata)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 Use `createMediaSession` para establecer `adLoad` dentro de `sessionDetails`:
 
@@ -150,6 +150,21 @@ var standardMetadata = {};
 standardMetadata[ADBMobile.media.VideoMetadataKeys.AD_LOAD] = "linear";
 mediaInfo[ADBMobile.media.MediaObjectKey.StandardMediaMetadata] = standardMetadata;
 ADBMobile.media.trackSessionStart(mediaInfo, null);
+```
+
+>[!TAB Roku 2.x]
+
+Use `MEDIA_VideoMetadataKeyAD_LOAD` para establecer el tipo de carga de anuncio en los metadatos estándar del objeto de medios antes de llamar a `mediaTrackSessionStart`:
+
+```brightscript
+adb = ADBMobile()
+mediaInfo = adb_media_init_mediainfo("My Video", "video-123", 128.0, adb.MEDIA_STREAM_TYPE_VOD, adb.MEDIA_TYPE_VIDEO)
+
+standardMetadata = {}
+standardMetadata[adb.MEDIA_VideoMetadataKeyAD_LOAD] = "linear"
+mediaInfo[adb.MEDIA_STANDARD_MEDIA_METADATA] = standardMetadata
+
+adb.mediaTrackSessionStart(mediaInfo, invalid)
 ```
 
 >[!TAB API de recopilación de medios]

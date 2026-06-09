@@ -3,9 +3,9 @@ title: Omisión de publicidad
 description: Señal de que el visualizador ha omitido un anuncio.
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '167'
+source-wordcount: '176'
 ht-degree: 8%
 
 ---
@@ -58,7 +58,7 @@ Llamar a `trackEvent` con el tipo de evento `AdSkip`.
 tracker.trackEvent(Media.Event.AdSkip, null, null)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 Llamar a `sendMediaEvent` con `eventType: "media.adSkip"`:
 
@@ -114,6 +114,15 @@ Llamar a `trackEvent` con el tipo de evento `AdSkip`:
 
 ```javascript
 ADBMobile.media.trackEvent(ADBMobile.media.Event.AdSkip);
+```
+
+>[!TAB Roku 2.x]
+
+Llamar a `mediaTrackEvent` con el tipo de evento `MEDIA_AD_SKIP`:
+
+```brightscript
+adb = ADBMobile()
+adb.mediaTrackEvent(adb.MEDIA_AD_SKIP)
 ```
 
 >[!TAB API de recopilación de medios]

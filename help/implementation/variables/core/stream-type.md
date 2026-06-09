@@ -3,10 +3,10 @@ title: Tipo de emisión
 description: Establezca el tipo de flujo para identificar si un flujo de medios es contenido de audio o vídeo.
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '312'
-ht-degree: 7%
+source-wordcount: '323'
+ht-degree: 6%
 
 ---
 
@@ -26,7 +26,7 @@ Configurar el tipo de flujo correctamente es fundamental para la creación de in
 | Propiedad | Valor |
 | --- | --- |
 | **Variable de datos de contexto** | `a.media.streamType` |
-| **Campo de colección XDM** | [`xdm.mediaCollection.sessionDetails.streamType`](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **Campo de colección XDM** | [`xdm.mediaCollection.sessionDetails.streamType`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **rasgo de Audience Manager** | `c_contextdata.a.media.streamType` |
 | **Requerido** | Sí |
 | **Enviado con** | [Inicio de sesión](/help/implementation/events/session/session-start.md), cierre de sesión |
@@ -87,7 +87,7 @@ var mediaInfo = Media.createMediaObject("video-123",
 tracker.trackSessionStart(mediaInfo, null)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 Establecer `streamType` dentro de `xdm.mediaCollection.sessionDetails` al llamar a `createMediaSession`:
 
@@ -171,6 +171,17 @@ var mediaInfo = ADBMobile.media.createMediaObject(
   ADBMobile.media.MediaType.Video
 );
 ADBMobile.media.trackSessionStart(mediaInfo, null);
+```
+
+>[!TAB Roku 2.x]
+
+Pase `MEDIA_TYPE_VIDEO` o `MEDIA_TYPE_AUDIO` como el quinto argumento (`mediaType`) a `adb_media_init_mediainfo`:
+
+```brightscript
+adb = ADBMobile()
+mediaInfo = adb_media_init_mediainfo("My Video", "video-123", 128.0, adb.MEDIA_STREAM_TYPE_VOD, adb.MEDIA_TYPE_VIDEO)
+
+adb.mediaTrackSessionStart(mediaInfo, invalid)
 ```
 
 >[!TAB API de recopilación de medios]

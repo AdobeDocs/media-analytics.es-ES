@@ -3,9 +3,9 @@ title: Ping
 description: Envíe un latido para mantener la sesión de contenido activa y rastrear el progreso de reproducción a intervalos regulares.
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '253'
+source-wordcount: '283'
 ht-degree: 1%
 
 ---
@@ -51,7 +51,7 @@ Mobile SDK envía eventos de ping automáticamente. No se requiere una llamada e
 
 Mobile SDK envía eventos de ping automáticamente. No se requiere una llamada explícita.
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 Programar una llamada recurrente de `sendMediaEvent` con `eventType: "media.ping"`. Actualizar `playhead` a la posición de reproducción actual en cada llamada:
 
@@ -100,6 +100,14 @@ Media SDK envía eventos de ping automáticamente. No se requiere una llamada ex
 >[!TAB Chromecast]
 
 Chromecast SDK envía eventos de ping automáticamente. No se requiere una llamada explícita.
+
+>[!TAB Roku 2.x]
+
+Media SDK envía eventos ping automáticamente siempre y cuando se realice una llamada a `processMediaMessages` en el bucle de eventos. Actualice el cabezal de reproducción para que cada ping informe de la posición actual:
+
+```brightscript
+ADBMobile().mediaUpdatePlayhead(10)
+```
 
 >[!TAB API de recopilación de medios]
 

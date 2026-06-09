@@ -3,10 +3,10 @@ title: Mostrar tipo
 description: Identifique el formato de contenido (episodio completo, vista previa, clip u otro) con un código entero de cadena.
 feature: Streaming Media
 role: Developer
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '233'
-ht-degree: 8%
+source-wordcount: '253'
+ht-degree: 7%
 
 ---
 
@@ -31,7 +31,7 @@ Utilícelo para separar la visualización de programa completo del contenido cor
 | Propiedad | Valor |
 | --- | --- |
 | **Variable de datos de contexto** | `a.media.type` |
-| **Campo de colección XDM** | [`xdm.mediaCollection.sessionDetails.showType`](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **Campo de colección XDM** | [`xdm.mediaCollection.sessionDetails.showType`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **rasgo de Audience Manager** | `c_contextdata.a.media.type` |
 | **Requerido** | No |
 | **Enviado con** | [Inicio de sesión](/help/implementation/events/session/session-start.md), cierre de sesión |
@@ -80,7 +80,7 @@ metadata[MediaConstants.VideoMetadataKeys.SHOW_TYPE] = "0"
 tracker.trackSessionStart(mediaInfo, metadata)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 Use `createMediaSession` para establecer `showType` dentro de `sessionDetails`:
 
@@ -151,6 +151,21 @@ var standardMetadata = {};
 standardMetadata[ADBMobile.media.VideoMetadataKeys.SHOW_TYPE] = "0";
 mediaInfo[ADBMobile.media.MediaObjectKey.StandardMediaMetadata] = standardMetadata;
 ADBMobile.media.trackSessionStart(mediaInfo, null);
+```
+
+>[!TAB Roku 2.x]
+
+Use `MEDIA_VideoMetadataKeySHOW_TYPE` para establecer el tipo de programa en los metadatos estándar del objeto de medios antes de llamar a `mediaTrackSessionStart`:
+
+```brightscript
+adb = ADBMobile()
+mediaInfo = adb_media_init_mediainfo("My Video", "video-123", 128.0, adb.MEDIA_STREAM_TYPE_VOD, adb.MEDIA_TYPE_VIDEO)
+
+standardMetadata = {}
+standardMetadata[adb.MEDIA_VideoMetadataKeySHOW_TYPE] = "0"
+mediaInfo[adb.MEDIA_STANDARD_MEDIA_METADATA] = standardMetadata
+
+adb.mediaTrackSessionStart(mediaInfo, invalid)
 ```
 
 >[!TAB API de recopilación de medios]

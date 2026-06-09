@@ -3,7 +3,7 @@ title: Configuración de iOS para medios de streaming con etiquetas
 description: Configure la recopilación de medios de streaming para iOS con la extensión de etiquetas Adobe Streaming Media for Edge Network.
 feature: Streaming Media
 role: Developer
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
 source-wordcount: '269'
 ht-degree: 0%

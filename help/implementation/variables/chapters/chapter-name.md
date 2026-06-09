@@ -3,9 +3,9 @@ title: Nombre del capítulo
 description: Establezca un nombre descriptivo para cada capítulo, de modo que los informes de nivel de capítulo puedan desglosarse por título de capítulo.
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '212'
+source-wordcount: '225'
 ht-degree: 8%
 
 ---
@@ -24,7 +24,7 @@ La variable del nombre del capítulo es el título legible en lenguaje natural d
 | Propiedad | Valor |
 | --- | --- |
 | **Variable de datos de contexto** | `a.media.chapter.friendlyName` |
-| **Campo de colección XDM** | [`xdm.mediaCollection.chapterDetails.friendlyName`](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/chapter-details-collection) |
+| **Campo de colección XDM** | [`xdm.mediaCollection.chapterDetails.friendlyName`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/chapter-details-collection) |
 | **rasgo de Audience Manager** | `c_contextdata.a.media.chapter.friendlyName` |
 | **Requerido** | No |
 | **Enviado con** | [Inicio del capítulo](/help/implementation/events/chapters/chapter-start.md), cierre del capítulo |
@@ -81,7 +81,7 @@ val chapterObject = Media.createChapterObject("Pilot Episode - Opening",
 tracker.trackEvent(Media.Event.ChapterStart, chapterObject, null)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 Establecer `friendlyName` dentro de `xdm.mediaCollection.chapterDetails` al llamar a `sendMediaEvent` para `media.chapterStart`:
 
@@ -159,6 +159,17 @@ var chapterInfo = ADBMobile.media.createChapterObject(
   0                           // startTime
 );
 ADBMobile.media.trackEvent(ADBMobile.media.Event.ChapterStart, chapterInfo, null);
+```
+
+>[!TAB Roku 2.x]
+
+Pase el nombre del capítulo como primer argumento (`name`) a `adb_media_init_chapterinfo`:
+
+```brightscript
+adb = ADBMobile()
+chapterInfo = adb_media_init_chapterinfo("Pilot Episode - Opening", 1, 240.0, 0.0)  ' name, position, length, startTime
+
+adb.mediaTrackEvent(adb.MEDIA_CHAPTER_START, chapterInfo)
 ```
 
 >[!TAB API de recopilación de medios]

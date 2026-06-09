@@ -3,9 +3,9 @@ title: Fotogramas perdidos
 description: Defina el número de fotogramas perdidos en el objeto QoE para que el backend pueda informar de la calidad de colocación de fotogramas.
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '303'
+source-wordcount: '323'
 ht-degree: 5%
 
 ---
@@ -28,7 +28,7 @@ La variable de fotogramas perdidos es el número de fotogramas que el reproducto
 | Propiedad | Valor |
 | --- | --- |
 | **Variable de datos de contexto** | `a.media.qoe.droppedFrameCount` |
-| **Campo de colección XDM** | [`xdm.mediaCollection.qoeDataDetails.droppedFrames`](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/qoe-data-details-collection) |
+| **Campo de colección XDM** | [`xdm.mediaCollection.qoeDataDetails.droppedFrames`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-collection) |
 | **rasgo de Audience Manager** | `c_contextdata.a.media.qoe.droppedFrameCount` |
 | **Requerido** | No |
 | **Enviado con** | Eventos de calidad ([cambio de velocidad de bits](/help/implementation/events/playback/bitrate-change.md), [inicio del búfer](/help/implementation/events/playback/buffer-start.md), [error](/help/implementation/events/error.md)), cierre de sesión |
@@ -83,7 +83,7 @@ val qoeObject = Media.createQoEObject(3200L,
 tracker.updateQoEObject(qoeObject)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 Establecer `droppedFrames` dentro de `xdm.mediaCollection.qoeDataDetails` al llamar a `sendMediaEvent`:
 
@@ -150,6 +150,17 @@ var qosInfo = ADBMobile.media.createQoSObject(
   0      // droppedFrames (cumulative total)
 );
 ADBMobile.media.updateQoSObject(qosInfo);
+```
+
+>[!TAB Roku 2.x]
+
+Pase el recuento acumulado de fotogramas perdidos como el cuarto argumento (`droppedFrames`) a `adb_media_init_qosinfo` y actualice el rastreador con `mediaUpdateQoS`:
+
+```brightscript
+adb = ADBMobile()
+qosInfo = adb_media_init_qosinfo(3200.0, 0.0, 24.0, 0.0)  ' bitrate, startupTime, fps, droppedFrames
+
+adb.mediaUpdateQoS(qosInfo)
 ```
 
 >[!TAB API de recopilación de medios]

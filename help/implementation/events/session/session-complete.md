@@ -3,10 +3,10 @@ title: Sesión completa
 description: Indica que el visualizador ha llegado al final del contenido principal.
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '165'
-ht-degree: 9%
+source-wordcount: '179'
+ht-degree: 8%
 
 ---
 
@@ -54,7 +54,7 @@ Invoque `trackComplete` cuando el reproductor multimedia llegue al final del con
 tracker.trackComplete()
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 Llamar a `sendMediaEvent` con `eventType: "media.sessionComplete"`:
 
@@ -110,6 +110,14 @@ Invoque `trackComplete` cuando el reproductor multimedia llegue al final del con
 
 ```javascript
 ADBMobile.media.trackComplete();
+```
+
+>[!TAB Roku 2.x]
+
+Invoque `mediaTrackComplete` cuando el reproductor multimedia llegue al final del contenido:
+
+```brightscript
+ADBMobile().mediaTrackComplete()
 ```
 
 >[!TAB API de recopilación de medios]
