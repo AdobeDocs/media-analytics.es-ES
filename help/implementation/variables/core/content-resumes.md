@@ -24,7 +24,7 @@ La variable de reanudación de contenido marca una sesión que reanuda una repro
 | Propiedad | Valor |
 | --- | --- |
 | **Variable de datos de contexto** | `a.media.resume` |
-| **Campo de colección XDM** | [`xdm.mediaCollection.sessionDetails.hasResume`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **Campo de colección XDM** | [`xdm.mediaCollection.sessionDetails.hasResume`](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **rasgo de Audience Manager** | N/A |
 | **Requerido** | No |
 | **Enviado con** | [Inicio de sesión](/help/implementation/events/session/session-start.md) |

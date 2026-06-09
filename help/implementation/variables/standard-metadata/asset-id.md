@@ -28,7 +28,7 @@ La variable de ID de recurso es el identificador único del recurso de medios su
 | Propiedad | Valor |
 | --- | --- |
 | **Variable de datos de contexto** | `a.media.asset` |
-| **Campo de colección XDM** | [`xdm.mediaCollection.sessionDetails.assetID`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **Campo de colección XDM** | [`xdm.mediaCollection.sessionDetails.assetID`](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **rasgo de Audience Manager** | `c_contextdata.a.media.asset` |
 | **Requerido** | No |
 | **Enviado con** | [Inicio de sesión](/help/implementation/events/session/session-start.md), cierre de sesión |

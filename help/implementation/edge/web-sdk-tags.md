@@ -16,7 +16,7 @@ La extensión de etiquetas Adobe Experience Platform Web SDK permite configurar 
 
 * **Requisitos previos**:
    * Complete la [descripción general de la implementación de Edge](overview.md) (esquema, conjunto de datos, secuencia de datos con [!UICONTROL Media Analytics] habilitado).
-   * Instale y configure la extensión de etiquetas Web SDK. Consulte la [descripción general de la extensión de etiquetas Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/web-sdk/overview).
+   * Instale y configure la extensión de etiquetas Web SDK. Consulte la [descripción general de la extensión de etiquetas Web SDK](https://experienceleague.adobe.com/es/docs/experience-platform/tags/extensions/client/web-sdk/overview).
 
 ## Configuración de medios de streaming en la extensión
 
@@ -39,6 +39,6 @@ Una vez completada la implementación, puede [configurar informes para implement
 
 >[!MORELIKETHIS]
 >
->* [Información general sobre la extensión de etiquetas Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/web-sdk/overview)
+>* [Información general sobre la extensión de etiquetas Web SDK](https://experienceleague.adobe.com/es/docs/experience-platform/tags/extensions/client/web-sdk/overview)
 >* [Configurar Web SDK para medios de transmisión (en código)](web-sdk.md)
 >* [Resumen de eventos](/help/implementation/events/overview.md)
