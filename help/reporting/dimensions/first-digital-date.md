@@ -15,7 +15,7 @@ ht-degree: 1%
 
 >[!BEGINSHADEBOX]
 
-*Esta página cubre la **Primera fecha digital**dimensión de informe. Consulte [Primera fecha digital](/help/implementation/variables/standard-metadata/first-digital-date.md) para obtener información sobre cómo recopilar esta variable.*
+*Esta página cubre la **Primera fecha digital**&#x200B;dimensión de informe. Consulte [Primera fecha digital](/help/implementation/variables/standard-metadata/first-digital-date.md) para obtener información sobre cómo recopilar esta variable.*
 
 >[!ENDSHADEBOX]
 
