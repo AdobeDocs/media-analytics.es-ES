@@ -3,9 +3,9 @@ title: Versión de aplicación
 description: Configure la cadena de versión de la aplicación de reproducción de contenido.
 feature: Streaming Media
 role: Developer
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '264'
+source-wordcount: '288'
 ht-degree: 2%
 
 ---
@@ -77,7 +77,7 @@ val config: Map<String, Any> = mapOf(
 MobileCore.updateConfiguration(config)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 Establezca la versión de la aplicación en la configuración de SDK mediante `ADB_CONSTANTS.CONFIGURATION.MEDIA_APP_VERSION`:
 
@@ -149,6 +149,16 @@ var ADBMobileConfig = {
     "sdkVersion": "2.1.0"
   }
 };
+```
+
+>[!TAB Roku 2.x]
+
+Establezca `sdkVersion` en la sección `mediaHeartbeat` de `ADBMobileConfig.json`. Este campo captura la versión de la aplicación de reproducción, no la versión de la biblioteca SDK Roku 2.x:
+
+```json
+"mediaHeartbeat": {
+  "sdkVersion": "2.1.0"
+}
 ```
 
 >[!TAB API de recopilación de medios]

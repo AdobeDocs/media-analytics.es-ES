@@ -3,9 +3,9 @@ title: Seguimiento de estados del reproductor
 description: Obtenga información acerca de los eventos de estado del reproductor y cómo rastrear los estados de pantalla completa, silencio, subtítulos opcionales, imagen en imagen y enfoque.
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '631'
+source-wordcount: '656'
 ht-degree: 12%
 
 ---
@@ -149,7 +149,7 @@ tracker.trackEvent(Media.Event.StateStart, fullscreenState, null)
 tracker.trackEvent(Media.Event.StateEnd, fullscreenState, null)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 ```brightscript
 ' t0 — start mute and picture-in-picture together
@@ -290,6 +290,10 @@ ADBMobile.media.trackEvent(ADBMobile.media.Event.StateStart, fullscreenState, nu
 // t2 — end full screen
 ADBMobile.media.trackEvent(ADBMobile.media.Event.StateEnd, fullscreenState, null);
 ```
+
+>[!TAB Roku 2.x]
+
+El seguimiento del estado del reproductor no está disponible en SDK Roku 2.x. Para rastrear estados de reproductor, usa [Roku Edge SDK](/help/implementation/edge/roku.md).
 
 >[!TAB API de recopilación de medios]
 

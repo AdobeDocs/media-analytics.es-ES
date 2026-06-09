@@ -3,7 +3,7 @@ title: Transmisiones afectadas por pantalla completa
 description: Cuenta las sesiones en las que el usuario accedió a pantalla completa al menos una vez.
 feature: Metrics
 role: User, Admin
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
 source-wordcount: '180'
 ht-degree: 8%
@@ -19,7 +19,7 @@ ht-degree: 8%
 
 >[!ENDSHADEBOX]
 
-Las **transmisiones afectadas por la métrica de pantalla completa** cuentan sesiones en las que el visor entró a pantalla completa al menos una vez. La métrica es un booleano de nivel de sesión: varias entradas de pantalla completa dentro de la misma sesión cuentan como un flujo afectado. Para el volumen total de entradas a pantalla completa, usa [Recuentos de pantalla completa](full-screen-count.md).
+Las **transmisiones afectadas por la métrica de pantalla completa** cuentan sesiones en las que el visor entró a pantalla completa al menos una vez. La métrica es un booleano de nivel de sesión; varias entradas de pantalla completa dentro de la misma sesión cuentan como un flujo afectado. Para el volumen total de entradas a pantalla completa, usa [Recuentos de pantalla completa](full-screen-count.md).
 
 ## Cálculo de esta métrica
 

@@ -3,7 +3,7 @@ title: Flujos afectados por error
 description: Cuenta las sesiones en las que se produjo al menos un error.
 feature: Metrics
 role: User, Admin
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
 source-wordcount: '143'
 ht-degree: 10%
@@ -13,7 +13,7 @@ ht-degree: 10%
 
 # Flujos afectados por error
 
-La métrica **Flujos afectados por el error** cuenta sesiones en las que se produjo al menos un error (`trackError` se llamó o se activó un evento [error](/help/implementation/events/error.md)). La métrica es un booleano de nivel de sesión: varios errores dentro de la misma sesión cuentan como un flujo afectado. Para el volumen total de errores, use [Errores](/help/reporting/dimensions/errors.md).
+La métrica **Flujos afectados por el error** cuenta sesiones en las que se produjo al menos un error (`trackError` se llamó o se activó un evento [error](/help/implementation/events/error.md)). La métrica es un booleano de nivel de sesión; varios errores dentro de la misma sesión cuentan como un flujo afectado. Para el volumen total de errores, use [Errores](/help/reporting/dimensions/errors.md).
 
 ## Cálculo de esta métrica
 

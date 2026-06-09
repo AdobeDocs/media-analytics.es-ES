@@ -3,7 +3,7 @@ title: Transmisiones afectadas por los subtítulos
 description: Cuenta las sesiones en las que el visor habilitó subtítulos al menos una vez.
 feature: Metrics
 role: User, Admin
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
 source-wordcount: '176'
 ht-degree: 8%
@@ -19,7 +19,7 @@ ht-degree: 8%
 
 >[!ENDSHADEBOX]
 
-Las **transmisiones afectadas por los subtítulos opcionales** cuentan sesiones en las que el visor habilitó subtítulos al menos una vez. La métrica es un booleano de nivel de sesión: varios subtítulos se alternan dentro del mismo recuento de sesiones como un flujo afectado. Para el volumen total de subtítulos habilitados, use [Recuentos de subtítulos](closed-captioning-count.md).
+Las **transmisiones afectadas por los subtítulos opcionales** cuentan sesiones en las que el visor habilitó subtítulos al menos una vez. La métrica es un booleano de nivel de sesión; varios subtítulos se alternan dentro del mismo recuento de sesiones como un flujo afectado. Para el volumen total de subtítulos habilitados, use [Recuentos de subtítulos](closed-captioning-count.md).
 
 ## Cálculo de esta métrica
 

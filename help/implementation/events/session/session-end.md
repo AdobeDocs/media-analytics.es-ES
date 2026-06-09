@@ -3,17 +3,17 @@ title: Fin de sesión
 description: Cierre inmediatamente una sesión multimedia cuando el usuario abandone el contenido.
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '300'
-ht-degree: 5%
+source-wordcount: '314'
+ht-degree: 4%
 
 ---
 
 
 # Fin de sesión
 
-El evento de fin de sesión cierra de forma inmediata e irreversible una sesión de seguimiento de contenido. El final de la sesión es un cierre forzoso: una vez enviada, la sesión finaliza y no se pueden rastrear más eventos debajo de ella. Utilice Finalizar sesión únicamente cuando esté seguro de que no se producirán eventos adicionales, como cuando se destruya el reproductor o se descargue la página. En la mayoría de los casos, es más seguro permitir que la sesión caduque de forma natural, en lugar de arriesgarse a interrumpir eventos que podrían llegar. Si el visor termina el contenido, llama a [Sesión completa](session-complete.md) en su lugar.
+El evento de fin de sesión cierra de forma inmediata e irreversible una sesión de seguimiento de contenido. El final de la sesión es un cierre estricto; una vez enviada, la sesión finaliza y no se pueden rastrear más eventos debajo de ella. Utilice Finalizar sesión únicamente cuando esté seguro de que no se producirán eventos adicionales, como cuando se destruya el reproductor o se descargue la página. En la mayoría de los casos, es más seguro permitir que la sesión caduque de forma natural, en lugar de arriesgarse a interrumpir eventos que podrían llegar. Si el visor termina el contenido, llama a [Sesión completa](session-complete.md) en su lugar.
 
 Sin un final de sesión explícito, una sesión se cierra automáticamente tras 10 minutos sin eventos o 30 minutos sin movimiento del cabezal de reproducción.
 
@@ -60,7 +60,7 @@ Invoque `trackSessionEnd` cuando el visor cierre el reproductor o salga del mism
 tracker.trackSessionEnd()
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 Llamar a `sendMediaEvent` con `eventType: "media.sessionEnd"`:
 
@@ -116,6 +116,14 @@ Invoque `trackSessionEnd` cuando el visor cierre el reproductor o salga:
 
 ```javascript
 ADBMobile.media.trackSessionEnd();
+```
+
+>[!TAB Roku 2.x]
+
+Invoque `mediaTrackSessionEnd` cuando el visor cierre el reproductor o salga:
+
+```brightscript
+ADBMobile().mediaTrackSessionEnd()
 ```
 
 >[!TAB API de recopilación de medios]

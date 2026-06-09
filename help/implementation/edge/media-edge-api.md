@@ -3,16 +3,16 @@ title: Configuración de la API de Media Edge para los medios de streaming
 description: Envíe datos de medios de streaming directamente a Edge Network mediante la API de Media Edge.
 feature: Streaming Media
 role: Developer
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '210'
+source-wordcount: '211'
 ht-degree: 0%
 
 ---
 
 # Configuración de la API de Media Edge para los medios de streaming
 
-Si no puede utilizar Web SDK, Mobile SDK o Roku SDK (por ejemplo, en un tiempo de ejecución personalizado o no admitido), puede enviar datos de medios de streaming directamente a Edge Network con la API de Media Edge. La API de utiliza llamadas HTTP RESTful y es totalmente personalizable.
+Si no puede utilizar Web SDK, Mobile SDK o Roku Edge SDK (por ejemplo, en un tiempo de ejecución personalizado o no admitido), puede enviar datos de medios de streaming directamente a Edge Network con la API de Media Edge. La API de utiliza llamadas HTTP RESTful y es totalmente personalizable.
 
 * **Requisitos previos**: complete la [descripción general de la implementación de Edge](overview.md) (esquema, conjunto de datos, secuencia de datos con [!UICONTROL Media Analytics] habilitado).
 

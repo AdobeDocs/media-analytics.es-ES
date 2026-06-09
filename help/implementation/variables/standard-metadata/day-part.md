@@ -3,10 +3,10 @@ title: Parte del día
 description: Establezca el período de hora del día (mañana, tarde, horario de máxima audiencia, noche tardía) cuando se emite o reproduce el contenido.
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '236'
-ht-degree: 8%
+source-wordcount: '256'
+ht-degree: 7%
 
 ---
 
@@ -73,7 +73,7 @@ metadata[MediaConstants.VideoMetadataKeys.DAY_PART] = "Primetime"
 tracker.trackSessionStart(mediaInfo, metadata)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 Use `createMediaSession` para establecer `dayPart` dentro de `sessionDetails`:
 
@@ -144,6 +144,21 @@ var standardMetadata = {};
 standardMetadata[ADBMobile.media.VideoMetadataKeys.DAY_PART] = "Primetime";
 mediaInfo[ADBMobile.media.MediaObjectKey.StandardMediaMetadata] = standardMetadata;
 ADBMobile.media.trackSessionStart(mediaInfo, null);
+```
+
+>[!TAB Roku 2.x]
+
+Use `MEDIA_VideoMetadataKeyDAY_PART` para establecer la parte del día en los metadatos estándar del objeto de medios antes de llamar a `mediaTrackSessionStart`:
+
+```brightscript
+adb = ADBMobile()
+mediaInfo = adb_media_init_mediainfo("My Video", "video-123", 128.0, adb.MEDIA_STREAM_TYPE_VOD, adb.MEDIA_TYPE_VIDEO)
+
+standardMetadata = {}
+standardMetadata[adb.MEDIA_VideoMetadataKeyDAY_PART] = "Primetime"
+mediaInfo[adb.MEDIA_STANDARD_MEDIA_METADATA] = standardMetadata
+
+adb.mediaTrackSessionStart(mediaInfo, invalid)
 ```
 
 >[!TAB API de recopilación de medios]

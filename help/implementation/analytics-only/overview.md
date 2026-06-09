@@ -3,9 +3,9 @@ title: Resumen de implementación solo de Analytics
 description: Requisitos previos y métodos de implementación del complemento de Adobe Analytics para medios de streaming, utilizado en implementaciones solo de Analytics.
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: 7b5232f25f3aa26e8566783557163f316af3fe57
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '230'
+source-wordcount: '234'
 ht-degree: 5%
 
 ---
@@ -32,6 +32,7 @@ Cada página cubre la configuración específica de los medios de streaming. El 
 |---|---|---|
 | Web (JavaScript) | [JavaScript](javascript.md) | [Extensión de etiqueta de Media Analytics](javascript-tags.md) |
 | Chromecast | [Chromecast](chromecast.md) | — |
+| Roku | [Roku 2.x](roku-2x.md) | — |
 | API | [API de recopilación de medios](media-collection-api.md) | — |
 
 ## Siguiente paso

@@ -3,7 +3,7 @@ title: Configurar la extensión de etiquetas de Web SDK para los medios de strea
 description: Configure la recopilación de medios de streaming en la extensión de etiquetas Adobe Experience Platform Web SDK.
 feature: Streaming Media
 role: Developer
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
 source-wordcount: '286'
 ht-degree: 0%
@@ -23,10 +23,10 @@ La extensión de etiquetas Adobe Experience Platform Web SDK permite configurar 
 1. En la IU de recopilación de datos, abra su propiedad web y seleccione **[!UICONTROL Extensiones]**.
 1. En la extensión **Adobe Experience Platform Web SDK** instalada, seleccione **[!UICONTROL Configurar]**.
 1. Expanda la sección **[!UICONTROL Medios de transmisión]** y establezca lo siguiente:
-   * **[!UICONTROL Canal]**: el nombre del canal indicado en cada sesión.
-   * **[!UICONTROL Nombre del reproductor]**: el nombre del reproductor multimedia en uso.
-   * **[!UICONTROL Versión de la aplicación]**: la versión de la aplicación de reproducción.
-   * **[!UICONTROL Intervalo de ping principal]** e **[!UICONTROL intervalo de ping de anuncio]**: la cadencia de ping (en segundos) para el contenido principal y los anuncios.
+   * **[!UICONTROL Canal]**: El nombre del canal indicado en cada sesión.
+   * **[!UICONTROL Nombre del reproductor]**: El nombre del reproductor multimedia en uso.
+   * **[!UICONTROL Versión de la aplicación]**: La versión de la aplicación de reproducción.
+   * **[!UICONTROL Intervalo de ping principal]** e **[!UICONTROL intervalo de ping de anuncio]**: La cadencia de ping (en segundos) para el contenido principal y los anuncios.
 1. Guarde la configuración de la extensión y publique los cambios.
 
 ## Seguimiento de eventos de medios

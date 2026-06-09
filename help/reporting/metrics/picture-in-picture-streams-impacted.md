@@ -3,7 +3,7 @@ title: Transmisiones afectadas por imagen en imagen
 description: Cuenta las sesiones en las que el usuario ha introducido imagen en imagen al menos una vez.
 feature: Metrics
 role: User, Admin
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
 source-wordcount: '192'
 ht-degree: 7%
@@ -19,7 +19,7 @@ ht-degree: 7%
 
 >[!ENDSHADEBOX]
 
-La métrica **Transmisiones afectadas por imagen en imagen** cuenta las sesiones en las que el visor entró en la reproducción de imagen en imagen al menos una vez. La métrica es un booleano de nivel de sesión: varias entradas de imagen en imagen dentro de la misma sesión cuentan como un flujo afectado. Para el volumen total de la entrada imagen en imagen, use [Recuentos de imagen en imagen](picture-in-picture-count.md).
+La métrica **Transmisiones afectadas por imagen en imagen** cuenta las sesiones en las que el visor entró en la reproducción de imagen en imagen al menos una vez. La métrica es un booleano de nivel de sesión; varias entradas de imagen en imagen dentro de la misma sesión cuentan como un flujo afectado. Para el volumen total de la entrada imagen en imagen, use [Recuentos de imagen en imagen](picture-in-picture-count.md).
 
 ## Cálculo de esta métrica
 

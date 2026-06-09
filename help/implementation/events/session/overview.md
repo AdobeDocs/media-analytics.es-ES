@@ -21,10 +21,10 @@ role_v2:
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: 803
-ht-degree: 2%
+source-wordcount: 807
+ht-degree: 3%
 
 ---
 
@@ -51,7 +51,7 @@ El seguimiento de reproducción principal abarca la carga de medios, el inicio, 
 ## Pasos de implementación
 
 1. **Identificar cuándo el usuario déclencheur la reproducción** (el usuario hace clic en reproducir o la reproducción automática se activa). Cree un objeto de medios con nombre de contenido, ID, longitud, tipo de flujo y tipo de medios. Consulte [Nombre de contenido](/help/implementation/variables/core/content-name.md), [ID de contenido](/help/implementation/variables/core/content-id.md), [Longitud del contenido](/help/implementation/variables/core/content-length.md), [Tipo de emisión](/help/implementation/variables/core/stream-type.md) y [Tipo de contenido](/help/implementation/variables/core/content-type.md) para ver las definiciones de los campos.
-1. **Opcionalmente, se pueden adjuntar metadatos** — metadatos estándar (programa, temporada, episodio, etc.) y variables de datos de contexto personalizadas. Consulte [Programa](/help/implementation/variables/standard-metadata/show.md), [Temporada](/help/implementation/variables/standard-metadata/season.md), [Episodio](/help/implementation/variables/standard-metadata/episode.md), [Género](/help/implementation/variables/standard-metadata/genre.md) y [Red](/help/implementation/variables/standard-metadata/network.md) para ver las referencias de claves de metadatos estándar.
+1. **Opcionalmente, se pueden adjuntar metadatos**: metadatos estándar (programa, temporada, episodio, etc.) y variables de datos de contexto personalizadas. Consulte [Programa](/help/implementation/variables/standard-metadata/show.md), [Temporada](/help/implementation/variables/standard-metadata/season.md), [Episodio](/help/implementation/variables/standard-metadata/episode.md), [Género](/help/implementation/variables/standard-metadata/genre.md) y [Red](/help/implementation/variables/standard-metadata/network.md) para ver las referencias de claves de metadatos estándar.
 1. **Llame a [Inicio de sesión](/help/implementation/events/session/session-start.md)** para iniciar el seguimiento de la sesión. Esto carga los datos y los metadatos e inicia la medición de QoS (tiempo de inicio). SessionStart hace un seguimiento de *Intent* para reproducir, no el primer fotograma.
 1. **Llamar a [Reproducir](/help/implementation/events/playback/play.md)** cuando el primer fotograma de contenido aparece en pantalla.
 1. **Invocar a [Pausar inicio](/help/implementation/events/playback/pause-start.md)** cuando el reproductor se detenga. Vuelva a llamar a Reproducir cuando se reanude la reproducción. No hay ningún evento de reanudación independiente.
@@ -64,7 +64,7 @@ El seguimiento de reproducción principal abarca la carga de medios, el inicio, 
 
 ## Reproducción principal
 
-Los siguientes ejemplos muestran un flujo de sesión completo, desde el inicio de la sesión hasta la finalización del contenido y el final de la sesión.
+Los siguientes ejemplos muestran un flujo de sesión completo desde el inicio hasta la finalización del contenido y el final de la sesión.
 
 Para obtener detalles de implementación por plataforma, consulte [Inicio de sesión](/help/implementation/events/session/session-start.md), [Reproducir](/help/implementation/events/playback/play.md), [Pausar inicio](/help/implementation/events/playback/pause-start.md), [Sesión completa](/help/implementation/events/session/session-complete.md) y [Fin de sesión](/help/implementation/events/session/session-end.md).
 
@@ -82,7 +82,7 @@ Para obtener detalles de implementación, vea [Pausar inicio](/help/implementati
 
 ## Gestión de interrupciones de aplicaciones
 
-La reproducción en una aplicación multimedia se puede interrumpir de varias formas: el usuario hace una pausa, la aplicación se pone en segundo plano y se produce una llamada telefónica. Independientemente de la causa, las instrucciones de seguimiento son las mismas:
+La reproducción en una aplicación multimedia puede interrumpirse de varias formas. Algunos ejemplos son: cuando el usuario pulsa Pausa, la aplicación se pone en segundo plano o se recibe una llamada telefónica. Independientemente de la causa, las instrucciones de seguimiento son las mismas:
 
 1. Invoque **PauseStart** cuando la aplicación se interrumpa (se pone en segundo plano, se pausa el contenido, etc.).
 1. Invoque **Play** cuando la aplicación vuelva a estar en primer plano o cuando se reanude la reproducción de contenido.

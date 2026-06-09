@@ -3,9 +3,9 @@ title: Subtítulos opcionales
 description: Realice un seguimiento cuando el visor active o desactive los subtítulos para que el backend pueda informar sobre la participación en los subtítulos.
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '302'
+source-wordcount: '327'
 ht-degree: 5%
 
 ---
@@ -87,7 +87,7 @@ tracker.trackPlayerStateStart(stateObject)
 tracker.trackPlayerStateEnd(stateObject)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 Use `sendMediaEvent` para enviar un evento `media.statesUpdate` con el estado agregado a `statesStart`:
 
@@ -163,6 +163,10 @@ ADBMobile.media.trackEvent(ADBMobile.media.Event.StateStart, stateObject);
 // When the viewer disables captions:
 ADBMobile.media.trackEvent(ADBMobile.media.Event.StateEnd, stateObject);
 ```
+
+>[!TAB Roku 2.x]
+
+El seguimiento del estado del reproductor no está disponible en SDK Roku 2.x. Para rastrear estados de reproductor, usa [Roku Edge SDK](/help/implementation/edge/roku.md).
 
 >[!TAB API de recopilación de medios]
 

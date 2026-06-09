@@ -3,7 +3,7 @@ title: Posición del pod
 description: Informa del desplazamiento de cada desglose de anuncios dentro del contenido.
 feature: Dimensions
 role: User, Admin
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
 source-wordcount: '401'
 ht-degree: 1%
@@ -28,7 +28,7 @@ La posición de la secuencia se establece a partir del valor de [hora de inicio 
 | Sistema de informes | Fuente |
 | --- | --- |
 | Adobe Analytics (regla de procesamiento) | Cree una [regla de procesamiento](https://experienceleague.adobe.com/es/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview) que asigne `a.media.ad.podSecond` a un eVar. |
-| Adobe Analytics (clasificación) | Clasificación de la dimensión [Ad pod](ad-pod.md): Adobe crea automáticamente esta clasificación cuando **[[!UICONTROL Media Ads]](/help/reporting/setup/analytics-reporting.md)** está habilitado para el grupo de informes. Usted es responsable de rellenar y mantener los valores de clasificación. |
+| Adobe Analytics (clasificación) | Clasificación de la dimensión [Ad pod](ad-pod.md). Adobe crea automáticamente esta clasificación cuando **[[!UICONTROL Media Ads]](/help/reporting/setup/analytics-reporting.md)** está habilitado para el grupo de informes. Usted es responsable de rellenar y mantener los valores de clasificación. |
 | Customer Journey Analytics | [`xdm.mediaReporting.advertisingPodDetails.offset`](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/advertising-pod-details-reporting) |
 | Fuentes de datos (regla de procesamiento) | `evar1`-`evar250`, `post_evar1`-`post_evar250` (el eVar al que se asigna la regla de procesamiento `a.media.ad.podSecond`) |
 | Fuentes de datos (clasificación) | N/D: las fuentes de datos no admiten clasificaciones. |

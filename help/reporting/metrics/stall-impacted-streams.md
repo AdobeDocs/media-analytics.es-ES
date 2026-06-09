@@ -3,7 +3,7 @@ title: Flujos afectados por estancamiento
 description: Cuenta las sesiones en las que se produjo al menos una detención durante la reproducción.
 feature: Metrics
 role: User, Admin
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
 source-wordcount: '178'
 ht-degree: 8%
@@ -13,7 +13,7 @@ ht-degree: 8%
 
 # Flujos afectados por estancamiento
 
-La métrica **Stall’ afectó a los flujos** y cuenta las sesiones en las que se produjo al menos una detención durante la reproducción. La métrica es un booleano de nivel de sesión: varias interrupciones dentro del mismo recuento de sesiones como un flujo afectado. Para el volumen de detención total, use [Eventos de detención](stall-events.md).
+La métrica **Stall’ afectó a los flujos** y cuenta las sesiones en las que se produjo al menos una detención durante la reproducción. La métrica es un booleano de nivel de sesión; varias interrupciones dentro de la misma sesión cuentan como un flujo afectado. Para el volumen de detención total, use [Eventos de detención](stall-events.md).
 
 ## Cálculo de esta métrica
 

@@ -3,10 +3,10 @@ title: Hora de inicio de la pausa publicitaria
 description: Establezca el tiempo de inicio (desplazamiento) de la pausa publicitaria dentro del contenido, en segundos.
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '239'
-ht-degree: 7%
+source-wordcount: '259'
+ht-degree: 6%
 
 ---
 
@@ -78,7 +78,7 @@ val adBreakObject = Media.createAdBreakObject("mid-roll-1",
 tracker.trackEvent(Media.Event.AdBreakStart, adBreakObject, null)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 Establecer `offset` dentro de `xdm.mediaCollection.advertisingPodDetails` al llamar a `sendMediaEvent` para `media.adBreakStart`:
 
@@ -151,6 +151,17 @@ var adBreakInfo = ADBMobile.media.createAdBreakObject(
   90
 );
 ADBMobile.media.trackEvent(ADBMobile.media.Event.AdBreakStart, adBreakInfo);
+```
+
+>[!TAB Roku 2.x]
+
+Pase el tiempo de inicio en segundos como segundo argumento a `adb_media_init_adbreakinfo`. Observe el orden del parámetro Roku: `name, startTime, position`.
+
+```brightscript
+adb = ADBMobile()
+adBreakInfo = adb_media_init_adbreakinfo("mid-roll-1", 90.0, 2)  ' name, startTime, position
+
+adb.mediaTrackEvent(adb.MEDIA_AD_BREAK_START, adBreakInfo)
 ```
 
 >[!TAB API de recopilación de medios]

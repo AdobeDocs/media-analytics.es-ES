@@ -3,10 +3,10 @@ title: Fin de estado
 description: Indica que el reproductor de contenido ha salido del estado de reproductor rastreado.
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '195'
-ht-degree: 7%
+source-wordcount: '220'
+ht-degree: 6%
 
 ---
 
@@ -77,7 +77,7 @@ val stateObject = Media.createStateObject(MediaConstants.PlayerState.FULLSCREEN)
 tracker.trackEvent(Media.Event.StateEnd, stateObject, null)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 Llamar a `sendMediaEvent` con `eventType: "media.statesUpdate"` y el nombre de estado en `statesEnd`:
 
@@ -140,6 +140,10 @@ var stateObject = ADBMobile.media.createStateObject(ADBMobile.media.PlayerState.
 
 ADBMobile.media.trackEvent(ADBMobile.media.Event.StateEnd, stateObject);
 ```
+
+>[!TAB Roku 2.x]
+
+El seguimiento del estado del reproductor no está disponible en SDK Roku 2.x. Para rastrear estados de reproductor, usa [Roku Edge SDK](/help/implementation/edge/roku.md).
 
 >[!TAB API de recopilación de medios]
 

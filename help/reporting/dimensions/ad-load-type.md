@@ -3,7 +3,7 @@ title: Cargas publicitarias
 description: Informa del tipo de carga de publicidad utilizada para cada sesión de medios de streaming.
 feature: Dimensions
 role: User, Admin
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
 source-wordcount: '159'
 ht-degree: 7%
@@ -34,4 +34,4 @@ El reproductor establece el tipo de carga de anuncio al inicio de la sesión.
 
 ## Elementos de dimensión
 
-Cada elemento es el valor literal y la cadena de tipo de carga establecida al inicio de la sesión. Los valores no están restringidos a una enumeración estándar: defina una taxonomía que sea coherente en todas las implementaciones de modo que los valores se acumulen de forma predecible en los informes.
+Cada elemento es el valor literal y la cadena de tipo de carga establecida al inicio de la sesión. Los valores no están restringidos a una enumeración estándar. Defina una taxonomía coherente en todas las implementaciones para que los valores se acumulen de forma predecible en los informes.

@@ -21,9 +21,9 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: 230
+source-wordcount: 231
 ht-degree: 2%
 
 ---
@@ -50,4 +50,4 @@ Los eventos de reproducción rastrean las transiciones de estado en el reproduct
 1. **Invocar a [Pausar inicio](pause-start.md)** cuando el usuario pausa la reproducción. Enviar Reproducir cuando se reanude la reproducción.
 1. **Invocar a [Inicio del búfer](buffer-start.md)** cuando el reproductor se detenga a la espera de datos. En las API basadas en XDM, el final del búfer se infiere al enviar el siguiente evento de reproducción. En Mobile SDK, llame también a `BufferComplete` explícitamente cuando se resuelva el almacenamiento en búfer.
 1. **Llamar a [ping](ping.md)** cada 10 segundos durante la reproducción del contenido principal y cada 1 segundo durante la reproducción del anuncio. Ping mantiene viva la sesión y registra el movimiento del cabezal de reproducción. Los SDK móviles envían pings automáticamente; el resto de plataformas deben enviarlos manualmente.
-1. **Invocar a [cambio de velocidad de bits](bitrate-change.md)** cada vez que el reproductor negocie una nueva velocidad de bits. Incluya los datos de QoE actuales (velocidad de bits, fotogramas por segundo, fotogramas perdidos) para que el servidor pueda calcular [Velocidad de bits media](/help/reporting/metrics/average-bitrate.md) y las métricas de calidad relacionadas.
+1. **Invocar a [cambio de velocidad de bits](bitrate-change.md)** cada vez que el reproductor negocie una nueva velocidad de bits. Incluya los datos actuales de QoE (velocidad de bits, fotogramas por segundo, fotogramas perdidos) para que el backend pueda calcular [Velocidad de bits media](/help/reporting/metrics/average-bitrate.md) y las métricas de calidad relacionadas.

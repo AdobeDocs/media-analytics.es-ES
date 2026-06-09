@@ -3,7 +3,7 @@ title: Transmisiones afectadas por el enfoque
 description: Cuenta las sesiones en las que el reproductor estaba enfocado al menos una vez.
 feature: Metrics
 role: User, Admin
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
 source-wordcount: '177'
 ht-degree: 8%
@@ -19,7 +19,7 @@ ht-degree: 8%
 
 >[!ENDSHADEBOX]
 
-Las **transmisiones afectadas por la métrica en el enfoque** cuentan sesiones en las que el reproductor estaba enfocado al menos una vez. La métrica es un booleano de nivel de sesión: varios eventos de enfoque dentro de la misma sesión cuentan como un flujo afectado. Para el volumen total del evento de enfoque, use [Recuentos de enfoque](in-focus-count.md).
+Las **transmisiones afectadas por la métrica en el enfoque** cuentan sesiones en las que el reproductor estaba enfocado al menos una vez. La métrica es un booleano de nivel de sesión; varios eventos de enfoque dentro de la misma sesión cuentan como un flujo afectado. Para el volumen total del evento de enfoque, use [Recuentos de enfoque](in-focus-count.md).
 
 ## Cálculo de esta métrica
 

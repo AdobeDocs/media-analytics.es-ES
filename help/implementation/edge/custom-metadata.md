@@ -3,9 +3,9 @@ title: 'Compatibilidad con metadatos personalizados: formato XDM'
 description: Obtenga información sobre cómo enviar metadatos personalizados con eventos de seguimiento de medios mediante el formato XDM de Experience Edge.
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '764'
+source-wordcount: '754'
 ht-degree: 2%
 
 ---
@@ -113,7 +113,7 @@ A diferencia de `xdm.mediaCollection.customMetadata`, que usa una matriz **de ob
 ### Convenciones de nomenclatura
 
 * **Formato XDM:** prefijo con espacio de nombres de inquilino que usa un guion bajo. También puede crear estructuras en el grupo de campos personalizados de inquilino como `_<tenant>.<struct_name>.<field_name>`.
-* **`_data`formato:** campos se colocan bajo `_data.__adobe.analytics.contextData` — no se requiere prefijo de guion bajo en el nombre del campo (por ejemplo, `debugFlag`)
+* **`_data`formato:** campos se colocan en `_data.__adobe.analytics.contextData`. No se requiere prefijo de guion bajo en el nombre de campo (por ejemplo, `debugFlag`).
 
 ## Metadatos personalizados de contenido principal
 
@@ -250,7 +250,7 @@ curl -X POST "https://edge.adobedc.net/ee/va/v1/chapterStart?configId={datastrea
 
 ## Uso del objeto `_data` (metadatos solo de Analytics)
 
-Utilice el objeto `_data` cuando necesite metadatos en Adobe Analytics que **no** deban almacenarse en conjuntos de datos de AEP; por ejemplo, indicadores temporales, variables de depuración o sugerencias de procesamiento específicas de Analytics.
+Utilice el objeto `_data` cuando necesite metadatos en Adobe Analytics que **no** deban almacenarse en el conjunto de datos de AEP. Algunos ejemplos son indicadores temporales, variables de depuración o sugerencias de procesamiento específicas de Analytics.
 
 &lt;InlineAlert variant="warning" slots="text" />
 
@@ -335,12 +335,6 @@ En este ejemplo:
 
 >[!MORELIKETHIS]
 >
->* [Compatibilidad con metadatos personalizados](/help/implementation/media-collection-api/mc-api-impl/mc-api-custom-meta.md). — MC API (formato JSON)
->* [Tipo de datos de detalles de recopilación de medios](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/media-collection-details) — Referencia de esquema XDM
->* [Asignación de variables de datos para Adobe Experience Platform Edge Network](https://experienceleague.adobe.com/es/docs/analytics/implementation/aep-edge/data-var-mapping): asignación de datos de contexto de Analytics para campos XDM
-
-<!--
-* [Session endpoints](sessions.md) — Session lifecycle management
-* [Ad endpoints](ads.md) — Track advertising impressions
-* [Chapter endpoints](chapters.md) — Segment content into chapters
--->
+>* [Compatibilidad con metadatos personalizados de API de recopilación de medios](/help/implementation/media-collection-api/mc-api-impl/mc-api-custom-meta.md)
+>* [Tipo de datos de detalles de recopilación de medios](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/media-collection-details)
+>* [Asignación de variables de datos para Adobe Experience Platform Edge Network](https://experienceleague.adobe.com/es/docs/analytics/implementation/aep-edge/data-var-mapping)

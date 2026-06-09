@@ -14,9 +14,9 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: b18eab3deb3d15a08adf2f7ecf61d73235bbc6e5
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: 268
+source-wordcount: 269
 ht-degree: 55%
 
 ---
@@ -45,7 +45,7 @@ En la tabla siguiente, se detallan los dispositivos actualmente compatibles. Si 
 | | Dispositivos Windows | | ![Admitido](/help/assets/icon-blue-check.png) | | ![Admitido](/help/assets/icon-blue-check.png) |
 | OTT | | | | | |
 | | Apple TV (tvOS) | ![Admitido](/help/assets/icon-blue-check.png) | ![Admitido](/help/assets/icon-blue-check.png) | | ![Admitido](/help/assets/icon-blue-check.png) |
-| | Roku | ![Admitido](/help/assets/icon-blue-check.png) | ![Admitido](/help/assets/icon-blue-check.png) | | ![Admitido](/help/assets/icon-blue-check.png) |
+| | Roku | ![Admitido](/help/assets/icon-blue-check.png) | ![Admitido](/help/assets/icon-blue-check.png) | ![Admitido](/help/assets/icon-blue-check.png) | ![Admitido](/help/assets/icon-blue-check.png) |
 | | Fire TV (sistema operativo Fire) | ![Admitido](/help/assets/icon-blue-check.png) | ![Admitido](/help/assets/icon-blue-check.png) | | ![Admitido](/help/assets/icon-blue-check.png) |
 | | Android TV | ![Admitido](/help/assets/icon-blue-check.png) | ![Admitido](/help/assets/icon-blue-check.png) | | ![Admitido](/help/assets/icon-blue-check.png) |
 | | Chromecast | | ![Admitido](/help/assets/icon-blue-check.png) | ![Admitido](/help/assets/icon-blue-check.png) | ![Admitido](/help/assets/icon-blue-check.png) |

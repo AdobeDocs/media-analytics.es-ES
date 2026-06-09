@@ -20,7 +20,7 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
 source-wordcount: 1337
 ht-degree: 86%
@@ -43,8 +43,8 @@ ht-degree: 86%
 | Clave de solicitud | Requerido | Clave de tipo de solicitud | Establecer en... | Descripción |
 | --- | :---: | :---: | :---: | --- |
 | `visitor.marketingCloudOrgId` | Y | string | `sessionStart` | El ID de la organización IMS identifica su organización en Adobe CX Enterprise |
-| `visitor.marketingCloudUserId` | N | string | `sessionStart` | El ID de usuario de Experience Cloud (ECID). En la mayoría de los casos, este es el ID que debe utilizar para identificar a un usuario. Heartbeat `marketingCloudUserId` es igual a `MID` en Adobe Analytics. Aunque técnicamente no es obligatorio, este parámetro es necesario para acceder a las aplicaciones y servicios de CX Enterprise. |
-| `visitor.aamLocationHint` | N | entero | `sessionStart` | Proporciona datos de Adobe Audience Manager Edge - Si no se introduce un valor, el valor es nulo. |
+| `visitor.marketingCloudUserId` | N | string | `sessionStart` | El Experience Cloud User ID (ECID). En la mayoría de los casos, este es el ID que debe utilizar para identificar a un usuario. Heartbeat `marketingCloudUserId` es igual a `MID` en Adobe Analytics. Aunque técnicamente no es obligatorio, este parámetro es necesario para acceder a las aplicaciones y servicios de CX Enterprise. |
+| `visitor.aamLocationHint` | N | entero | `sessionStart` | Proporciona datos de Adobe Audience Manager Edge. Si no se introduce ningún valor, el valor es nulo. |
 | `appInstallationId` | N | string | `sessionStart` | La clase appInstallationId identifica exclusivamente la aplicación y el dispositivo |
 
 ## Datos de contenido

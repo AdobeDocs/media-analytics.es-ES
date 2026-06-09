@@ -3,7 +3,7 @@ title: Flujos afectados por cambio de velocidad
 description: Cuenta las sesiones en las que se produjo al menos un cambio en la velocidad de bits.
 feature: Metrics
 role: User, Admin
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
 source-wordcount: '145'
 ht-degree: 10%
@@ -13,7 +13,7 @@ ht-degree: 10%
 
 # Flujos afectados por cambio de velocidad
 
-El cambio de **velocidad de bits afectó a flujos** sesiones de recuento de métricas en las que se produjo al menos un cambio de velocidad de bits. La métrica es un booleano de nivel de sesión: varios cambios de velocidad de bits dentro del mismo recuento de sesiones como un flujo afectado. Para el volumen total de cambio de velocidad de bits, use [Cambios de velocidad de bits](/help/reporting/dimensions/bitrate-changes.md).
+El cambio de **velocidad de bits afectó a flujos** sesiones de recuento de métricas en las que se produjo al menos un cambio de velocidad de bits. La métrica es un booleano de nivel de sesión; varios cambios de velocidad de bits dentro de la misma sesión cuentan como un flujo afectado. Para el volumen total de cambio de velocidad de bits, use [Cambios de velocidad de bits](/help/reporting/dimensions/bitrate-changes.md).
 
 ## Cálculo de esta métrica
 

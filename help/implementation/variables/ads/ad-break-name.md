@@ -3,9 +3,9 @@ title: Nombre de pausa publicitaria
 description: Establezca un nombre descriptivo para el salto de anuncio principal.
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '248'
+source-wordcount: '267'
 ht-degree: 6%
 
 ---
@@ -78,7 +78,7 @@ val adBreakObject = Media.createAdBreakObject("pre-roll",
 tracker.trackEvent(Media.Event.AdBreakStart, adBreakObject, null)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 Establecer `friendlyName` dentro de `xdm.mediaCollection.advertisingPodDetails` al llamar a `sendMediaEvent` para `media.adBreakStart`:
 
@@ -152,6 +152,17 @@ var adBreakInfo = ADBMobile.media.createAdBreakObject(
   0
 );
 ADBMobile.media.trackEvent(ADBMobile.media.Event.AdBreakStart, adBreakInfo);
+```
+
+>[!TAB Roku 2.x]
+
+Pase el nombre de la pausa publicitaria como primer argumento a `adb_media_init_adbreakinfo`. Observe el orden del parámetro Roku: `name, startTime, position`.
+
+```brightscript
+adb = ADBMobile()
+adBreakInfo = adb_media_init_adbreakinfo("pre-roll", 0.0, 1)  ' name, startTime, position
+
+adb.mediaTrackEvent(adb.MEDIA_AD_BREAK_START, adBreakInfo)
 ```
 
 >[!TAB API de recopilación de medios]

@@ -3,7 +3,7 @@ title: Flujos afectados por fotogramas rechazados
 description: Cuenta las sesiones en las que se perdió al menos un fotograma.
 feature: Metrics
 role: User, Admin
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
 source-wordcount: '135'
 ht-degree: 11%
@@ -13,7 +13,7 @@ ht-degree: 11%
 
 # Flujos afectados por fotogramas rechazados
 
-**El fotograma descartado afectó a las transmisiones** sesiones de recuento de métricas en las que se descartó al menos un fotograma. La métrica es un booleano de nivel de sesión: varias caídas dentro del mismo recuento de sesiones como un flujo afectado. Para el volumen de colocación total, use [fotogramas descartados](dropped-frames.md).
+**El fotograma descartado afectó a las transmisiones** sesiones de recuento de métricas en las que se descartó al menos un fotograma. La métrica es un booleano de nivel de sesión; varias caídas dentro de la misma sesión cuentan como un flujo afectado. Para el volumen de colocación total, use [fotogramas descartados](dropped-frames.md).
 
 ## Cálculo de esta métrica
 
