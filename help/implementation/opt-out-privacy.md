@@ -18,7 +18,7 @@ topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 8b9e7582923a61bd2a43049a02ce36727a677e17
+source-git-commit: 3fd9ffcb997e1570abb983107e69d183b1c8b311
 workflow-type: tm+mt
 source-wordcount: 798
 ht-degree: 3%
@@ -247,3 +247,4 @@ Para las exclusiones parciales según CCPA, incluya indicadores de exclusión en
 Para obtener una lista completa de los parámetros disponibles, consulte la [referencia de parámetros de solicitud de API de Media Collection](../implementation/media-collection-api/mc-api-ref/mc-api-req-params.md).
 
 >[!ENDTABS]
+

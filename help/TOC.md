@@ -5,10 +5,10 @@ user-guide-title: Guía de servicios de medios de streaming
 breadcrumb-title: Guía de servicios de medios de streaming
 user-guide-description: Implementar servicios de medios de streaming. Incluye el SDK de medios y la API de recopilación de medios.
 sub-product: media analytics
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: caf61bd76e2911ae5be31c4b1d8265b1df002acf
 workflow-type: tm+mt
-source-wordcount: '697'
-ht-degree: 31%
+source-wordcount: '692'
+ht-degree: 32%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 31%
 # Guía de servicios de medios de streaming {#using}
 
 + [Guía de servicios de medios de streaming de Adobe](media-overview.md)
-+ [Notas de la versión de medios de streaming](release-notes.md)
++ [Notas de la versión de los servicios de medios de streaming](release-notes.md)
 + Introducción {#getting-started}
    + [Requisitos previos](getting-started/prereqs.md)
    + [Dispositivos compatibles](getting-started/supported-devices.md)
@@ -165,7 +165,6 @@ ht-degree: 31%
             + [Condiciones de tiempo de espera](implementation/media-collection-api/mc-api-impl/mc-api-timeout.md)
             + [Control del orden de los eventos](implementation/media-collection-api/mc-api-impl/mc-api-ctrl-order.md)
             + [Poner eventos en cola cuando la respuesta de las sesiones es lenta](implementation/media-collection-api/mc-api-impl/mc-api-queuing.md)
-   + [Configuración de privacidad y exclusión](implementation/opt-out-privacy.md)
 + Creación de informes {#reporting}
    + Configuración de informes {#reporting-setup}
       + [Implementaciones de Edge](reporting/setup/edge-reporting.md)
@@ -300,3 +299,8 @@ ht-degree: 31%
       + [Cronología: Capítulos](use-cases/scenarios/chapter-start-end.md)
       + [Cronología: Ver hasta el final](use-cases/scenarios/view-to-end-of-content.md)
       + [Cronología: el usuario abandona la sesión](use-cases/scenarios/user-abandons-session.md)
+
+<!--
+Removed from before the Reporting section:
+  + [Opt-out and privacy settings](implementation/opt-out-privacy.md)
+-->
