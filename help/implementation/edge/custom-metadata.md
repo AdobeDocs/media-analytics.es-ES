@@ -3,19 +3,17 @@ title: 'Compatibilidad con metadatos personalizados: formato XDM'
 description: Obtenga información sobre cómo enviar metadatos personalizados con eventos de seguimiento de medios mediante el formato XDM de Experience Edge.
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '754'
+source-wordcount: '774'
 ht-degree: 2%
-
 ---
-
 
 # Compatibilidad con metadatos personalizados: formato XDM
 
 La API de Experience Edge le permite enviar metadatos personalizados de medios junto con campos XDM estándar en eventos de API `sessionStart`, `adStart` y `chapterStart`. Los metadatos personalizados de medios enviados mediante el formato XDM se pueden reenviar tanto a **Adobe Analytics** como a **Adobe Experience Platform**.
 
-Para implementaciones de API de Media Collection, consulte [Compatibilidad con metadatos personalizados](/help/implementation/media-collection-api/mc-api-impl/mc-api-custom-meta.md).
+Para implementaciones de API de Media Collection, consulte [Compatibilidad con metadatos personalizados](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/custom-metadata).
 
 ## Información general
 
@@ -335,6 +333,6 @@ En este ejemplo:
 
 >[!MORELIKETHIS]
 >
->* [Compatibilidad con metadatos personalizados de API de recopilación de medios](/help/implementation/media-collection-api/mc-api-impl/mc-api-custom-meta.md)
+>* [Compatibilidad con metadatos personalizados de API de recopilación de medios](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/custom-metadata)
 >* [Tipo de datos de detalles de recopilación de medios](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/media-collection-details)
 >* [Asignación de variables de datos para Adobe Experience Platform Edge Network](https://experienceleague.adobe.com/es/docs/analytics/implementation/aep-edge/data-var-mapping)

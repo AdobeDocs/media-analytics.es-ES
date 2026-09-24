@@ -3,13 +3,11 @@ title: MVPD
 description: Configure el distribuidor de programación de vídeo multicanal cuando el usuario se autentique mediante Adobe Pass.
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '249'
+source-wordcount: '258'
 ht-degree: 8%
-
 ---
-
 
 # MVPD
 
@@ -175,6 +173,6 @@ Incluir `media.pass.mvpd` en el objeto `params`:
 }
 ```
 
-Consulte la [referencia de sesiones de la API de Media Collection](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md) para obtener la estructura de solicitudes completa.
+Consulte la [referencia de sesiones de la API de Media Collection](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/sessions) para obtener la estructura de solicitudes completa.
 
 >[!ENDTABS]

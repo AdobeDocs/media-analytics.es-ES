@@ -1,17 +1,15 @@
 ---
-title: Fin de sesión
+title: Final de la sesión
 description: Cierre inmediatamente una sesión multimedia cuando el usuario abandone el contenido.
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '314'
-ht-degree: 4%
-
+source-wordcount: '323'
+ht-degree: 5%
 ---
 
-
-# Fin de sesión
+# Final de la sesión
 
 El evento de fin de sesión cierra de forma inmediata e irreversible una sesión de seguimiento de contenido. El final de la sesión es un cierre estricto; una vez enviada, la sesión finaliza y no se pueden rastrear más eventos debajo de ella. Utilice Finalizar sesión únicamente cuando esté seguro de que no se producirán eventos adicionales, como cuando se destruya el reproductor o se descargue la página. En la mayoría de los casos, es más seguro permitir que la sesión caduque de forma natural, en lugar de arriesgarse a interrumpir eventos que podrían llegar. Si el visor termina el contenido, llama a [Sesión completa](session-complete.md) en su lugar.
 
@@ -128,7 +126,7 @@ ADBMobile().mediaTrackSessionEnd()
 
 >[!TAB API de recopilación de medios]
 
-Enviar un POST de `sessionEnd` al [extremo de eventos](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md):
+Enviar un POST de `sessionEnd` al [extremo de eventos](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/events):
 
 ```json
 {

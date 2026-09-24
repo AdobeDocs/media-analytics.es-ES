@@ -3,13 +3,11 @@ title: Inicio del anuncio
 description: Indicación de que ha comenzado a reproducirse un anuncio individual.
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '209'
-ht-degree: 7%
-
+source-wordcount: '218'
+ht-degree: 6%
 ---
-
 
 # Inicio del anuncio
 
@@ -173,7 +171,7 @@ adb.mediaTrackEvent(adb.MEDIA_AD_START, adInfo)
 
 >[!TAB API de recopilación de medios]
 
-Enviar un POST de `adStart` al [extremo de eventos](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md):
+Enviar un POST de `adStart` al [extremo de eventos](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/events):
 
 ```json
 {

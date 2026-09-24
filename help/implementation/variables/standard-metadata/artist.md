@@ -3,13 +3,11 @@ title: Artista
 description: Establezca el nombre del intérprete para el contenido de audio.
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '231'
+source-wordcount: '240'
 ht-degree: 9%
-
 ---
-
 
 # Artista
 
@@ -175,6 +173,6 @@ Incluir `media.artist` en el objeto `params`:
 }
 ```
 
-Consulte la [referencia de sesiones de la API de Media Collection](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md) para obtener la estructura de solicitudes completa.
+Consulte la [referencia de sesiones de la API de Media Collection](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/sessions) para obtener la estructura de solicitudes completa.
 
 >[!ENDTABS]

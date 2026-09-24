@@ -3,13 +3,11 @@ title: En el centro
 description: Rastree cuándo el reproductor está enfocado en la pantalla del visualizador para que el backend pueda informar sobre la participación en el enfoque.
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '339'
-ht-degree: 5%
-
+source-wordcount: '354'
+ht-degree: 6%
 ---
-
 
 # En el centro
 
@@ -182,6 +180,6 @@ Envíe una solicitud POST de `stateStart` cuando el reproductor recibe Focus y u
 }
 ```
 
-Consulte la [referencia de eventos de API de Media Collection](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md) para obtener la estructura de solicitudes completa.
+Consulte la [referencia de eventos de API de Media Collection](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/events) para obtener la estructura de solicitudes completa.
 
 >[!ENDTABS]

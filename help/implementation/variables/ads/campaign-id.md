@@ -3,13 +3,11 @@ title: ID de campaña
 description: Establezca el identificador de campaña de cada anuncio para que se pueda acumular la participación por campaña.
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '247'
+source-wordcount: '256'
 ht-degree: 9%
-
 ---
-
 
 # ID de campaña
 
@@ -177,6 +175,6 @@ Incluir `media.ad.campaignId` en el objeto `params`:
 }
 ```
 
-Consulte la [referencia de eventos de API de Media Collection](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md) para obtener la estructura de solicitudes completa.
+Consulte la [referencia de eventos de API de Media Collection](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/events) para obtener la estructura de solicitudes completa.
 
 >[!ENDTABS]

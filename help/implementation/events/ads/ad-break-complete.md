@@ -3,13 +3,11 @@ title: Pausa publicitaria completa
 description: Señal de que todos los anuncios de una pausa publicitaria han finalizado.
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '165'
-ht-degree: 9%
-
+source-wordcount: '174'
+ht-degree: 8%
 ---
-
 
 # Pausa publicitaria completa
 
@@ -127,7 +125,7 @@ adb.mediaTrackEvent(adb.MEDIA_AD_BREAK_COMPLETE)
 
 >[!TAB API de recopilación de medios]
 
-Enviar un POST de `adBreakComplete` al [extremo de eventos](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md):
+Enviar un POST de `adBreakComplete` al [extremo de eventos](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/events):
 
 ```json
 {

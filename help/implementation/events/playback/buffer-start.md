@@ -3,13 +3,11 @@ title: Inicio del búfer
 description: Indica que el reproductor de contenidos ha entrado en un estado de almacenamiento en búfer.
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '196'
+source-wordcount: '205'
 ht-degree: 7%
-
 ---
-
 
 # Inicio del búfer
 
@@ -146,7 +144,7 @@ adb.mediaTrackEvent(adb.MEDIA_BUFFER_COMPLETE)
 
 >[!TAB API de recopilación de medios]
 
-Enviar un POST de `bufferStart` al [extremo de eventos](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md):
+Enviar un POST de `bufferStart` al [extremo de eventos](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/events):
 
 ```json
 {

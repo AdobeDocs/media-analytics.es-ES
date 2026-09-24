@@ -3,13 +3,11 @@ title: ID del recurso
 description: Establezca el ID del recurso, un identificador estable del sector para el recurso de medios, como un ID de EIDR o un ID de TMS/Gracenote.
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '295'
-ht-degree: 8%
-
+source-wordcount: '304'
+ht-degree: 7%
 ---
-
 
 # ID del recurso
 
@@ -179,6 +177,6 @@ Incluir `media.assetId` en el objeto `params`:
 }
 ```
 
-Consulte la [referencia de sesiones de la API de Media Collection](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md) para obtener la estructura de solicitudes completa.
+Consulte la [referencia de sesiones de la API de Media Collection](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/sessions) para obtener la estructura de solicitudes completa.
 
 >[!ENDTABS]

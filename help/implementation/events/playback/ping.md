@@ -3,13 +3,11 @@ title: Ping
 description: Envíe un latido para mantener la sesión de contenido activa y rastrear el progreso de reproducción a intervalos regulares.
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '283'
+source-wordcount: '292'
 ht-degree: 1%
-
 ---
-
 
 # Ping
 
@@ -111,7 +109,7 @@ ADBMobile().mediaUpdatePlayhead(10)
 
 >[!TAB API de recopilación de medios]
 
-Envíe una publicación de `ping` al [extremo de eventos](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md) en un temporizador. No incluya un objeto `params`:
+Envíe una publicación de `ping` al [extremo de eventos](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/events) en un temporizador. No incluya un objeto `params`:
 
 ```json
 {

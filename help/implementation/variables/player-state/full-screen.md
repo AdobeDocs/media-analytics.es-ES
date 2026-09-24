@@ -3,13 +3,11 @@ title: Pantalla completa
 description: Realice un seguimiento cuando el visualizador entre y salga de la reproducción en pantalla completa para que el back-end pueda informar sobre la participación en pantalla completa.
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '333'
-ht-degree: 6%
-
+source-wordcount: '348'
+ht-degree: 8%
 ---
-
 
 # Pantalla completa
 
@@ -195,6 +193,6 @@ Envíe una solicitud POST de `stateStart` cuando el visor entre en pantalla comp
 }
 ```
 
-Consulte la [referencia de eventos de API de Media Collection](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md) para obtener la estructura de solicitudes completa.
+Consulte la [referencia de eventos de API de Media Collection](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/events) para obtener la estructura de solicitudes completa.
 
 >[!ENDTABS]

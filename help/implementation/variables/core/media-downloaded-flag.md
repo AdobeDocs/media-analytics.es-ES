@@ -3,13 +3,11 @@ title: Indicador de medios descargados
 description: Marque una sesión como reproducida sin conexión descargada para que se informe separadamente de las sesiones retransmitidas.
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '304'
+source-wordcount: '322'
 ht-degree: 5%
-
 ---
-
 
 # Indicador de medios descargados
 
@@ -179,7 +177,7 @@ ADBMobile.media.trackSessionStart(mediaInfo, null);
 
 >[!TAB Roku 2.x]
 
-El seguimiento de contenido descargado no está disponible en SDK Roku 2.x. Para informar sobre la reproducción de contenido descargado, usa [Roku Edge SDK](/help/implementation/edge/roku.md) o [la API de recopilación de contenido](/help/implementation/analytics-only/media-collection-api.md).
+El seguimiento de contenido descargado no está disponible en SDK Roku 2.x. Para informar sobre la reproducción de contenido descargado, usa [Roku Edge SDK](/help/implementation/edge/roku.md) o [la API de recopilación de contenido](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/implementation).
 
 >[!TAB API de recopilación de medios]
 
@@ -195,6 +193,6 @@ Incluir `media.downloaded` en el objeto `params` de su solicitud POST de `sessio
 }
 ```
 
-Consulte la [referencia de sesiones de la API de Media Collection](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md) para obtener la estructura de solicitudes completa.
+Consulte la [referencia de sesiones de la API de Media Collection](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/sessions) para obtener la estructura de solicitudes completa.
 
 >[!ENDTABS]

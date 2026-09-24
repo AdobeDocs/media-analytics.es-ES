@@ -3,13 +3,11 @@ title: ID del sitio
 description: Establezca el ID del sitio de publicidad para cada anuncio a fin de habilitar los desgloses por sitio de colocación de publicidad.
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '229'
+source-wordcount: '238'
 ht-degree: 10%
-
 ---
-
 
 # ID del sitio
 
@@ -177,6 +175,6 @@ Incluir `media.ad.siteId` en el objeto `params`:
 }
 ```
 
-Consulte la [referencia de eventos de API de Media Collection](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md) para obtener la estructura de solicitudes completa.
+Consulte la [referencia de eventos de API de Media Collection](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/events) para obtener la estructura de solicitudes completa.
 
 >[!ENDTABS]
