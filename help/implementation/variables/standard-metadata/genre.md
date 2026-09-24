@@ -3,13 +3,11 @@ title: Género
 description: Establezca el género de contenido como una cadena delimitada por comas. El contenido de varios géneros se divide en elementos de línea en los informes.
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '280'
+source-wordcount: '289'
 ht-degree: 7%
-
 ---
-
 
 # Género
 
@@ -28,7 +26,7 @@ La variable genre es el género de contenido definido por el productor (por ejem
 | Propiedad | Valor |
 | --- | --- |
 | **Variable de datos de contexto** | `a.media.genre` |
-| **Campo de colección XDM** | [`xdm.mediaCollection.sessionDetails.genre`](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **Campo de colección XDM** | [`xdm.mediaCollection.sessionDetails.genre`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **rasgo de Audience Manager** | `c_contextdata.a.media.genre` |
 | **Requerido** | No |
 | **Enviado con** | [Inicio de sesión](/help/implementation/events/session/session-start.md), cierre de sesión |
@@ -179,6 +177,6 @@ Incluir `media.genre` en el objeto `params`:
 }
 ```
 
-Consulte la [referencia de sesiones de la API de Media Collection](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md) para obtener la estructura de solicitudes completa.
+Consulte la [referencia de sesiones de la API de Media Collection](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/sessions) para obtener la estructura de solicitudes completa.
 
 >[!ENDTABS]

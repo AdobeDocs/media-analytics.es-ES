@@ -3,13 +3,11 @@ title: Temporada
 description: Defina el número de temporada del contenido episódico para que la participación se pueda desglosar por temporada.
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '250'
+source-wordcount: '259'
 ht-degree: 8%
-
 ---
-
 
 # Temporada
 
@@ -24,7 +22,7 @@ La variable season es el número de temporada del programa (normalmente un enter
 | Propiedad | Valor |
 | --- | --- |
 | **Variable de datos de contexto** | `a.media.season` |
-| **Campo de colección XDM** | [`xdm.mediaCollection.sessionDetails.season`](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **Campo de colección XDM** | [`xdm.mediaCollection.sessionDetails.season`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **rasgo de Audience Manager** | `c_contextdata.a.media.season` |
 | **Requerido** | No |
 | **Enviado con** | [Inicio de sesión](/help/implementation/events/session/session-start.md), cierre de sesión |
@@ -175,6 +173,6 @@ Incluir `media.season` en el objeto `params`:
 }
 ```
 
-Consulte la [referencia de sesiones de la API de Media Collection](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md) para obtener la estructura de solicitudes completa.
+Consulte la [referencia de sesiones de la API de Media Collection](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/sessions) para obtener la estructura de solicitudes completa.
 
 >[!ENDTABS]

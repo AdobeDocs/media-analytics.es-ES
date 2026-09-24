@@ -3,13 +3,11 @@ title: Inicio de pausa publicitaria
 description: Indicar el comienzo de una pausa publicitaria (una secuencia de uno o más anuncios).
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '220'
+source-wordcount: '229'
 ht-degree: 6%
-
 ---
-
 
 # Inicio de pausa publicitaria
 
@@ -163,7 +161,7 @@ adb.mediaTrackEvent(adb.MEDIA_AD_BREAK_START, adBreakInfo)
 
 >[!TAB API de recopilación de medios]
 
-Enviar un POST de `adBreakStart` al [extremo de eventos](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md):
+Enviar un POST de `adBreakStart` al [extremo de eventos](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/events):
 
 ```json
 {

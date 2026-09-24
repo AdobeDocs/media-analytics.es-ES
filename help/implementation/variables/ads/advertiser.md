@@ -3,13 +3,11 @@ title: Anunciante
 description: Establece la compañía o marca que aparece en cada anuncio.
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '218'
-ht-degree: 10%
-
+source-wordcount: '227'
+ht-degree: 9%
 ---
-
 
 # Anunciante
 
@@ -24,7 +22,7 @@ La variable del anunciante es la compañía o marca que aparece en el anuncio (p
 | Propiedad | Valor |
 | --- | --- |
 | **Variable de datos de contexto** | `a.media.ad.advertiser` |
-| **Campo de colección XDM** | [`xdm.mediaCollection.advertisingDetails.advertiser`](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/advertising-details-collection) |
+| **Campo de colección XDM** | [`xdm.mediaCollection.advertisingDetails.advertiser`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-collection) |
 | **rasgo de Audience Manager** | `c_contextdata.a.media.ad.advertiser` |
 | **Requerido** | No |
 | **Enviado con** | [Inicio del anuncio](/help/implementation/events/ads/ad-start.md), cierre del anuncio |
@@ -177,6 +175,6 @@ Incluir `media.ad.advertiser` en el objeto `params`:
 }
 ```
 
-Consulte la [referencia de eventos de API de Media Collection](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md) para obtener la estructura de solicitudes completa.
+Consulte la [referencia de eventos de API de Media Collection](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/events) para obtener la estructura de solicitudes completa.
 
 >[!ENDTABS]

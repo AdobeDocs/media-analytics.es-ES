@@ -3,13 +3,11 @@ title: Posición del anuncio en la secuencia
 description: Establece la posición del índice del anuncio dentro de su salto de anuncio principal. El primer anuncio tiene el índice 0.
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '257'
-ht-degree: 7%
-
+source-wordcount: '266'
+ht-degree: 6%
 ---
-
 
 # Posición del anuncio en la secuencia
 
@@ -24,7 +22,7 @@ La variable de posición del anuncio en la secuencia es la posición indizada ce
 | Propiedad | Valor |
 | --- | --- |
 | **Variable de datos de contexto** | `a.media.ad.podPosition` |
-| **Campo de colección XDM** | [`xdm.mediaCollection.advertisingDetails.podPosition`](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/advertising-details-collection) |
+| **Campo de colección XDM** | [`xdm.mediaCollection.advertisingDetails.podPosition`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-collection) |
 | **rasgo de Audience Manager** | `c_contextdata.a.media.ad.podPosition` |
 | **Requerido** | Sí |
 | **Enviado con** | [Inicio del anuncio](/help/implementation/events/ads/ad-start.md), cierre del anuncio |
@@ -184,6 +182,6 @@ Incluir `media.ad.podPosition` en el objeto `params`:
 }
 ```
 
-Consulte la [referencia de eventos de API de Media Collection](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md) para obtener la estructura de solicitudes completa.
+Consulte la [referencia de eventos de API de Media Collection](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/events) para obtener la estructura de solicitudes completa.
 
 >[!ENDTABS]

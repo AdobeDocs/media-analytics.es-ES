@@ -3,13 +3,11 @@ title: Nombre del reproductor de contenido
 description: Configure el nombre del reproductor para identificar qué reproductor procesó el contenido.
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '285'
+source-wordcount: '294'
 ht-degree: 6%
-
 ---
-
 
 # Nombre del reproductor de contenido
 
@@ -24,7 +22,7 @@ La variable de nombre del reproductor de contenido identifica qué reproductor p
 | Propiedad | Valor |
 | --- | --- |
 | **Variable de datos de contexto** | `a.media.playerName` |
-| **Campo de colección XDM** | [`xdm.mediaCollection.sessionDetails.playerName`](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **Campo de colección XDM** | [`xdm.mediaCollection.sessionDetails.playerName`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **rasgo de Audience Manager** | `c_contextdata.a.media.playerName` |
 | **Requerido** | Sí |
 | **Enviado con** | [Inicio de sesión](/help/implementation/events/session/session-start.md), cierre de sesión |
@@ -183,6 +181,6 @@ Incluir `media.playerName` en el objeto `params` de su solicitud POST de `sessio
 }
 ```
 
-Consulte la [referencia de sesiones de la API de Media Collection](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md) para obtener la estructura de solicitudes completa.
+Consulte la [referencia de sesiones de la API de Media Collection](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/sessions) para obtener la estructura de solicitudes completa.
 
 >[!ENDTABS]

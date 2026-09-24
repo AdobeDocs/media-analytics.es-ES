@@ -3,13 +3,11 @@ title: Fotogramas perdidos
 description: Defina el número de fotogramas perdidos en el objeto QoE para que el backend pueda informar de la calidad de colocación de fotogramas.
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '323'
+source-wordcount: '332'
 ht-degree: 5%
-
 ---
-
 
 # Fotogramas perdidos
 
@@ -28,7 +26,7 @@ La variable de fotogramas perdidos es el número de fotogramas que el reproducto
 | Propiedad | Valor |
 | --- | --- |
 | **Variable de datos de contexto** | `a.media.qoe.droppedFrameCount` |
-| **Campo de colección XDM** | [`xdm.mediaCollection.qoeDataDetails.droppedFrames`](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/qoe-data-details-collection) |
+| **Campo de colección XDM** | [`xdm.mediaCollection.qoeDataDetails.droppedFrames`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-collection) |
 | **rasgo de Audience Manager** | `c_contextdata.a.media.qoe.droppedFrameCount` |
 | **Requerido** | No |
 | **Enviado con** | Eventos de calidad ([cambio de velocidad de bits](/help/implementation/events/playback/bitrate-change.md), [inicio del búfer](/help/implementation/events/playback/buffer-start.md), [error](/help/implementation/events/error.md)), cierre de sesión |
@@ -177,6 +175,6 @@ Incluir `media.qoe.droppedFrames` en el objeto `params`:
 }
 ```
 
-Consulte la [referencia de eventos de API de Media Collection](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md) para obtener la estructura de solicitudes completa.
+Consulte la [referencia de eventos de API de Media Collection](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/events) para obtener la estructura de solicitudes completa.
 
 >[!ENDTABS]

@@ -3,13 +3,11 @@ title: Velocidad de bits
 description: Establezca la velocidad de bits de reproducción actual (en kbps) en el objeto QoE para que el servidor pueda calcular las métricas de velocidad de bits.
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '307'
+source-wordcount: '316'
 ht-degree: 5%
-
 ---
-
 
 # Velocidad de bits
 
@@ -24,7 +22,7 @@ La variable de velocidad de bits es la velocidad de bits de reproducción actual
 | Propiedad | Valor |
 | --- | --- |
 | **Variable de datos de contexto** | `a.media.qoe.bitrateAverageBucket` |
-| **Campo de colección XDM** | [`xdm.mediaCollection.qoeDataDetails.bitrate`](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/qoe-data-details-collection) |
+| **Campo de colección XDM** | [`xdm.mediaCollection.qoeDataDetails.bitrate`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-collection) |
 | **rasgo de Audience Manager** | `c_contextdata.a.media.qoe.bitrateAverageBucket` |
 | **Requerido** | No |
 | **Enviado con** | Eventos de calidad ([cambio de velocidad de bits](/help/implementation/events/playback/bitrate-change.md), [inicio del búfer](/help/implementation/events/playback/buffer-start.md), [error](/help/implementation/events/error.md)), cierre de sesión |
@@ -183,6 +181,6 @@ Incluir `media.qoe.bitrate` en el objeto `params` de su solicitud POST de `bitra
 }
 ```
 
-Consulte la [referencia de eventos de API de Media Collection](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md) para obtener la estructura de solicitudes completa.
+Consulte la [referencia de eventos de API de Media Collection](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/events) para obtener la estructura de solicitudes completa.
 
 >[!ENDTABS]

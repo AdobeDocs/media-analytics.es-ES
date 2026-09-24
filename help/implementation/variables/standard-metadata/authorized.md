@@ -3,13 +3,11 @@ title: Con autorización
 description: Marque una sesión como autenticada a través de Adobe Pass para que se cuente en el evento Autorizado.
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '247'
+source-wordcount: '256'
 ht-degree: 8%
-
 ---
-
 
 # Con autorización
 
@@ -24,7 +22,7 @@ La variable authorized marca una sesión cuyo usuario ha sido autorizado a trav�
 | Propiedad | Valor |
 | --- | --- |
 | **Variable de datos de contexto** | `a.media.pass.auth` |
-| **Campo de colección XDM** | [`xdm.mediaCollection.sessionDetails.authorized`](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **Campo de colección XDM** | [`xdm.mediaCollection.sessionDetails.authorized`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **rasgo de Audience Manager** | `c_contextdata.a.media.pass.auth` |
 | **Requerido** | No |
 | **Enviado con** | [Inicio de sesión](/help/implementation/events/session/session-start.md), cierre de sesión |
@@ -175,6 +173,6 @@ Incluir `media.pass.auth` en el objeto `params`:
 }
 ```
 
-Consulte la [referencia de sesiones de la API de Media Collection](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md) para obtener la estructura de solicitudes completa.
+Consulte la [referencia de sesiones de la API de Media Collection](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/sessions) para obtener la estructura de solicitudes completa.
 
 >[!ENDTABS]

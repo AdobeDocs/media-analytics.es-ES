@@ -3,13 +3,11 @@ title: Omisión de publicidad
 description: Señal de que el visualizador ha omitido un anuncio.
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '176'
+source-wordcount: '185'
 ht-degree: 8%
-
 ---
-
 
 # Omisión de publicidad
 
@@ -127,7 +125,7 @@ adb.mediaTrackEvent(adb.MEDIA_AD_SKIP)
 
 >[!TAB API de recopilación de medios]
 
-Enviar un POST de `adSkip` al [extremo de eventos](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md):
+Enviar un POST de `adSkip` al [extremo de eventos](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/events):
 
 ```json
 {

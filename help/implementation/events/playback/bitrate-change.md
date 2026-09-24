@@ -3,13 +3,11 @@ title: Cambio de velocidad de bits
 description: Indica que la velocidad de bits de reproducción ha cambiado.
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '226'
+source-wordcount: '235'
 ht-degree: 6%
-
 ---
-
 
 # Cambio de velocidad de bits
 
@@ -166,7 +164,7 @@ adb.mediaTrackEvent(adb.MEDIA_BITRATE_CHANGE)
 
 >[!TAB API de recopilación de medios]
 
-Envíe una publicación de `bitrateChange` al [extremo de eventos](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md) con la nueva velocidad de bits en `qoeData`:
+Envíe una publicación de `bitrateChange` al [extremo de eventos](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/events) con la nueva velocidad de bits en `qoeData`:
 
 ```json
 {

@@ -3,13 +3,11 @@ title: Fotogramas por segundo
 description: Establezca la velocidad de fotogramas actual en el objeto QoE de modo que el backend tenga contexto de velocidad de fotogramas para los informes de calidad.
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '272'
+source-wordcount: '281'
 ht-degree: 7%
-
 ---
-
 
 # Fotogramas por segundo
 
@@ -18,7 +16,7 @@ La variable fotogramas por segundo es la velocidad de fotogramas actual del fluj
 | Propiedad | Valor |
 | --- | --- |
 | **Variable de datos de contexto** | Ninguno (Adobe Analytics no asigna una clave de datos de contexto reservada para la velocidad de fotogramas) |
-| **Campo de colección XDM** | [`xdm.mediaCollection.qoeDataDetails.framesPerSecond`](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/qoe-data-details-collection) |
+| **Campo de colección XDM** | [`xdm.mediaCollection.qoeDataDetails.framesPerSecond`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-collection) |
 | **rasgo de Audience Manager** | N/A |
 | **Requerido** | No |
 | **Enviado con** | Eventos de calidad ([cambio de velocidad de bits](/help/implementation/events/playback/bitrate-change.md), [inicio del búfer](/help/implementation/events/playback/buffer-start.md), [error](/help/implementation/events/error.md)), cierre de sesión |
@@ -167,6 +165,6 @@ Incluir `media.qoe.framesPerSecond` en el objeto `params`:
 }
 ```
 
-Consulte la [referencia de eventos de API de Media Collection](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md) para obtener la estructura de solicitudes completa.
+Consulte la [referencia de eventos de API de Media Collection](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/events) para obtener la estructura de solicitudes completa.
 
 >[!ENDTABS]

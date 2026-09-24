@@ -3,13 +3,11 @@ title: Inicio del capítulo
 description: Indicar el principio de un segmento de capítulo dentro del contenido.
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '191'
+source-wordcount: '200'
 ht-degree: 7%
-
 ---
-
 
 # Inicio del capítulo
 
@@ -166,7 +164,7 @@ adb.mediaTrackEvent(adb.MEDIA_CHAPTER_START, chapterInfo)
 
 >[!TAB API de recopilación de medios]
 
-Enviar un POST de `chapterStart` al [extremo de eventos](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md):
+Enviar un POST de `chapterStart` al [extremo de eventos](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/events):
 
 ```json
 {

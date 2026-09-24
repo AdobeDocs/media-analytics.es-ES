@@ -3,13 +3,11 @@ title: Currículos de contenido
 description: Marque una sesión que reanude una reproducción interrumpida anteriormente para que el back-end cuente un evento de reanudación de contenido.
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '293'
+source-wordcount: '302'
 ht-degree: 6%
-
 ---
-
 
 # Currículos de contenido
 
@@ -24,7 +22,7 @@ La variable de reanudación de contenido marca una sesión que reanuda una repro
 | Propiedad | Valor |
 | --- | --- |
 | **Variable de datos de contexto** | `a.media.resume` |
-| **Campo de colección XDM** | [`xdm.mediaCollection.sessionDetails.hasResume`](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **Campo de colección XDM** | [`xdm.mediaCollection.sessionDetails.hasResume`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **rasgo de Audience Manager** | N/A |
 | **Requerido** | No |
 | **Enviado con** | [Inicio de sesión](/help/implementation/events/session/session-start.md) |
@@ -196,6 +194,6 @@ Incluir `media.resume` en el objeto `params` de su solicitud POST de `sessionSta
 }
 ```
 
-Consulte la [referencia de sesiones de la API de Media Collection](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md) para obtener la estructura de solicitudes completa.
+Consulte la [referencia de sesiones de la API de Media Collection](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/sessions) para obtener la estructura de solicitudes completa.
 
 >[!ENDTABS]

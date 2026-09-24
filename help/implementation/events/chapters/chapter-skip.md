@@ -3,13 +3,11 @@ title: Omisión de capítulo
 description: Señal de que el visualizador ha omitido un capítulo.
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '148'
-ht-degree: 10%
-
+source-wordcount: '157'
+ht-degree: 9%
 ---
-
 
 # Omisión de capítulo
 
@@ -123,7 +121,7 @@ adb.mediaTrackEvent(adb.MEDIA_CHAPTER_SKIP)
 
 >[!TAB API de recopilación de medios]
 
-Enviar un POST de `chapterSkip` al [extremo de eventos](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md):
+Enviar un POST de `chapterSkip` al [extremo de eventos](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/events):
 
 ```json
 {

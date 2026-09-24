@@ -3,13 +3,11 @@ title: Parte del día
 description: Establezca el período de hora del día (mañana, tarde, horario de máxima audiencia, noche tardía) cuando se emite o reproduce el contenido.
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '256'
+source-wordcount: '265'
 ht-degree: 7%
-
 ---
-
 
 # Parte del día
 
@@ -24,7 +22,7 @@ La variable de la parte del día es el período de tiempo del día en el que se 
 | Propiedad | Valor |
 | --- | --- |
 | **Variable de datos de contexto** | `a.media.dayPart` |
-| **Campo de colección XDM** | [`xdm.mediaCollection.sessionDetails.dayPart`](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **Campo de colección XDM** | [`xdm.mediaCollection.sessionDetails.dayPart`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **rasgo de Audience Manager** | `c_contextdata.a.media.dayPart` |
 | **Requerido** | No |
 | **Enviado con** | [Inicio de sesión](/help/implementation/events/session/session-start.md), cierre de sesión |
@@ -175,6 +173,6 @@ Incluir `media.dayPart` en el objeto `params`:
 }
 ```
 
-Consulte la [referencia de sesiones de la API de Media Collection](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md) para obtener la estructura de solicitudes completa.
+Consulte la [referencia de sesiones de la API de Media Collection](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/sessions) para obtener la estructura de solicitudes completa.
 
 >[!ENDTABS]

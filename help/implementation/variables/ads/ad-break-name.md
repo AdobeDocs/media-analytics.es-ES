@@ -3,13 +3,11 @@ title: Nombre de pausa publicitaria
 description: Establezca un nombre descriptivo para el salto de anuncio principal.
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '267'
+source-wordcount: '276'
 ht-degree: 6%
-
 ---
-
 
 # Nombre de pausa publicitaria
 
@@ -24,7 +22,7 @@ La variable del nombre de la pausa publicitaria es el nombre descriptivo de la p
 | Propiedad | Valor |
 | --- | --- |
 | **Variable de datos de contexto** | `a.media.ad.podFriendlyName` |
-| **Campo de colección XDM** | [`xdm.mediaCollection.advertisingPodDetails.friendlyName`](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/advertising-pod-details-collection) |
+| **Campo de colección XDM** | [`xdm.mediaCollection.advertisingPodDetails.friendlyName`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-pod-details-collection) |
 | **rasgo de Audience Manager** | `c_contextdata.a.media.ad.podFriendlyName` |
 | **Requerido** | Sí (Mobile SDK); No (Edge, API de recopilación de medios) |
 | **Enviado con** | [Inicio de la pausa publicitaria](/help/implementation/events/ads/ad-break-start.md), cierre del anuncio |
@@ -179,6 +177,6 @@ Incluir `media.ad.podFriendlyName` en el objeto `params` de su solicitud POST de
 }
 ```
 
-Consulte la [referencia de eventos de API de Media Collection](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md) para obtener la estructura de solicitudes completa.
+Consulte la [referencia de eventos de API de Media Collection](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/events) para obtener la estructura de solicitudes completa.
 
 >[!ENDTABS]

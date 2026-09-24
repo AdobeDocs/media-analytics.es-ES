@@ -8,25 +8,32 @@ role: User, Admin, Developer
 TQID: https://experienceleague.adobe.com/e9iYwDwT-zSSZ3hV20U1w7p-MtKaK4Q8-vGMCrnenpc
 product_v2:
   - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
 feature_v2:
   - id: b069d60e-95f3-44d6-95a8-ddc862a4bc38
+    internal-label: Reports
   - id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7a
+    internal-label: Implementations
   - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+    internal-label: API
 subfeature_v2:
   - id: c8add8f2-4250-4fd9-9cde-9707036c567d
+    internal-label: Methods
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: b18eab3deb3d15a08adf2f7ecf61d73235bbc6e5
+    internal-label: Implementation
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: 274
+source-wordcount: '274'
 ht-degree: 10%
-
 ---
-
 # Requisitos previos {#prerequisites}
 
 Antes de empezar a implementar los servicios de medios de streaming de Adobe, complete las siguientes tareas:
@@ -41,11 +48,11 @@ Para habilitar los informes en Analytics y ver los datos de contenido y publicid
 
    Los requisitos de configuración de identidad difieren según el método de implementación:
 
-   * **Implementaciones de Edge**: La identidad se administra mediante la configuración del área de nombres de identidad de Adobe Experience Platform. No se requiere una configuración del servicio de identidad independiente. Consulte [Descripción general de la implementación de Edge](/help/implementation/edge/overview.md) para obtener detalles.
+   * **Implementaciones de Edge**: La identidad se administra mediante la configuración del área de nombres de identidad de Adobe Experience Platform. No se requiere una configuración del Servicio de ID de visitante independiente. Consulte [Descripción general de la implementación de Edge](/help/implementation/edge/overview.md) para obtener detalles.
 
-   * **Implementaciones solo de Analytics**: El servicio de identidad de Adobe Experience Platform debe estar habilitado para identificar visitantes de manera consistente en todas las soluciones de CX Enterprise. El servicio de identidad asigna un ID único y persistente a cada visitante del sitio y permite que dicho ID se comparta en todas las soluciones de CX Enterprise a las que se suscriba.
+   * **Implementaciones solo de Analytics**: El servicio de ID de visitante de Adobe debe estar habilitado para identificar visitantes de manera consistente en todas las soluciones de CX Enterprise. El servicio de ID de visitante asigna un ID único y persistente a cada visitante del sitio y permite que ese ID se comparta en todas las soluciones de CX Enterprise a las que se suscriba.
 
-     Para obtener más información, consulte la [documentación del servicio de identidad de Adobe Experience Platform](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=es).
+     Para obtener más información, consulte la [documentación del servicio de ID de visitante de Adobe](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=es).
 
 1. **Ver requisitos previos adicionales para el método de implementación**
 

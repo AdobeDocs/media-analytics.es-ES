@@ -3,13 +3,11 @@ title: ID de contenido
 description: Identificar de forma exclusiva un fragmento de contenido multimedia.
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '234'
+source-wordcount: '243'
 ht-degree: 9%
-
 ---
-
 
 # ID de contenido
 
@@ -24,7 +22,7 @@ La variable de ID de contenido identifica de forma exclusiva cada fragmento de c
 | Propiedad | Valor |
 | --- | --- |
 | **Variable de datos de contexto** | `a.media.name` |
-| **Campo de colección XDM** | [`xdm.mediaCollection.sessionDetails.name`](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **Campo de colección XDM** | [`xdm.mediaCollection.sessionDetails.name`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **rasgo de Audience Manager** | `c_contextdata.a.media.name` |
 | **Requerido** | Sí |
 | **Enviado con** | [Inicio de sesión](/help/implementation/events/session/session-start.md), cierre de sesión |
@@ -195,6 +193,6 @@ Incluir `media.id` en el objeto `params` de su solicitud POST de `sessionStart`:
 }
 ```
 
-Consulte la [referencia de sesiones de la API de Media Collection](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md) para obtener la estructura de solicitudes completa.
+Consulte la [referencia de sesiones de la API de Media Collection](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/sessions) para obtener la estructura de solicitudes completa.
 
 >[!ENDTABS]

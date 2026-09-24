@@ -3,13 +3,11 @@ title: Fin de estado
 description: Indica que el reproductor de contenido ha salido del estado de reproductor rastreado.
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '220'
+source-wordcount: '229'
 ht-degree: 6%
-
 ---
-
 
 # Fin de estado
 
@@ -147,7 +145,7 @@ El seguimiento del estado del reproductor no está disponible en SDK Roku 2.x. P
 
 >[!TAB API de recopilación de medios]
 
-Enviar un POST de `stateEnd` al [extremo de eventos](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md):
+Enviar un POST de `stateEnd` al [extremo de eventos](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/events):
 
 ```json
 {

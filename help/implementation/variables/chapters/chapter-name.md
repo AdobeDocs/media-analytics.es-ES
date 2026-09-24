@@ -3,13 +3,11 @@ title: Nombre del capítulo
 description: Establezca un nombre descriptivo para cada capítulo, de modo que los informes de nivel de capítulo puedan desglosarse por título de capítulo.
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '225'
-ht-degree: 8%
-
+source-wordcount: '234'
+ht-degree: 7%
 ---
-
 
 # Nombre del capítulo
 
@@ -24,7 +22,7 @@ La variable del nombre del capítulo es el título legible en lenguaje natural d
 | Propiedad | Valor |
 | --- | --- |
 | **Variable de datos de contexto** | `a.media.chapter.friendlyName` |
-| **Campo de colección XDM** | [`xdm.mediaCollection.chapterDetails.friendlyName`](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/chapter-details-collection) |
+| **Campo de colección XDM** | [`xdm.mediaCollection.chapterDetails.friendlyName`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/chapter-details-collection) |
 | **rasgo de Audience Manager** | `c_contextdata.a.media.chapter.friendlyName` |
 | **Requerido** | No |
 | **Enviado con** | [Inicio del capítulo](/help/implementation/events/chapters/chapter-start.md), cierre del capítulo |
@@ -186,6 +184,6 @@ Incluir `media.chapter.friendlyName` en el objeto `params` de su solicitud POST 
 }
 ```
 
-Consulte la [referencia de eventos de API de Media Collection](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md) para obtener la estructura de solicitudes completa.
+Consulte la [referencia de eventos de API de Media Collection](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/events) para obtener la estructura de solicitudes completa.
 
 >[!ENDTABS]

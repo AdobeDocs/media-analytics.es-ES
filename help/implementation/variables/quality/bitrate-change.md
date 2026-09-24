@@ -3,13 +3,11 @@ title: Cambio de velocidad de bits
 description: Active un evento de cambio de velocidad de bits cada vez que el reproductor cambie a una velocidad de bits diferente.
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '278'
+source-wordcount: '287'
 ht-degree: 6%
-
 ---
-
 
 # Cambio de velocidad de bits
 
@@ -177,6 +175,6 @@ Enviar una solicitud POST `bitrateChange` con la nueva velocidad de bits:
 }
 ```
 
-Consulte la [referencia de eventos de API de Media Collection](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md) para obtener la estructura de solicitudes completa.
+Consulte la [referencia de eventos de API de Media Collection](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/events) para obtener la estructura de solicitudes completa.
 
 >[!ENDTABS]

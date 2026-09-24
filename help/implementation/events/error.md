@@ -3,13 +3,11 @@ title: Error
 description: Indica que el reproductor de contenidos ha encontrado un error.
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '187'
-ht-degree: 9%
-
+source-wordcount: '196'
+ht-degree: 8%
 ---
-
 
 # Error
 
@@ -137,7 +135,7 @@ adb.mediaTrackError("media-error-001", adb.ERROR_SOURCE_PLAYER)
 
 >[!TAB API de recopilación de medios]
 
-Enviar un POST de `error` al [extremo de eventos](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md):
+Enviar un POST de `error` al [extremo de eventos](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/events):
 
 ```json
 {

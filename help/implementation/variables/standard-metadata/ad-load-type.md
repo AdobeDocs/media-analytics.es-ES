@@ -3,13 +3,11 @@ title: Tipo de carga de anuncio
 description: Defina el tipo de carga de publicidad para la sesión de flujo continuo.
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '269'
+source-wordcount: '278'
 ht-degree: 3%
-
 ---
-
 
 # Tipo de carga de anuncio
 
@@ -24,7 +22,7 @@ La variable de tipo de carga de anuncio identifica el tipo de anuncio cargado al
 | Propiedad | Valor |
 | --- | --- |
 | **Variable de datos de contexto** | `a.media.adLoad` |
-| **Campo de colección XDM** | [`xdm.mediaCollection.sessionDetails.adLoad`](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **Campo de colección XDM** | [`xdm.mediaCollection.sessionDetails.adLoad`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **rasgo de Audience Manager** | `c_contextdata.a.media.adLoad` |
 | **Requerido** | No |
 | **Enviado con** | [Inicio de sesión](/help/implementation/events/session/session-start.md), cierre de sesión |
@@ -35,7 +33,7 @@ La variable de tipo de carga de anuncio identifica el tipo de anuncio cargado al
 
 >[!TAB SDK web ]
 
-Establecer `adLoad` dentro de `xdm.mediaCollection.sessionDetails` al llamar a [`createMediaSession`](https://experienceleague.adobe.com/es/docs/experience-platform/collection/js/commands/createmediasession):
+Establecer `adLoad` dentro de `xdm.mediaCollection.sessionDetails` al llamar a [`createMediaSession`](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/commands/createmediasession):
 
 ```javascript
 alloy("createMediaSession", {
@@ -181,6 +179,6 @@ Incluir `media.adLoad` en el objeto `params` de su solicitud POST de `sessionSta
 }
 ```
 
-Consulte la [referencia de sesiones de la API de Media Collection](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md) para obtener la estructura de solicitudes completa.
+Consulte la [referencia de sesiones de la API de Media Collection](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/sessions) para obtener la estructura de solicitudes completa.
 
 >[!ENDTABS]
