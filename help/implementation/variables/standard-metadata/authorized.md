@@ -22,7 +22,7 @@ La variable authorized marca una sesi처n cuyo usuario ha sido autorizado a trav�
 | Propiedad | Valor |
 | --- | --- |
 | **Variable de datos de contexto** | `a.media.pass.auth` |
-| **Campo de colecci처n XDM** | [`xdm.mediaCollection.sessionDetails.authorized`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **Campo de colecci처n XDM** | [`xdm.mediaCollection.sessionDetails.authorized`](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **rasgo de Audience Manager** | `c_contextdata.a.media.pass.auth` |
 | **Requerido** | No |
 | **Enviado con** | [Inicio de sesi처n](/help/implementation/events/session/session-start.md), cierre de sesi처n |
