@@ -4,25 +4,35 @@ description: Asignación de ruta de campo XDM para parámetros de Media Analytic
 feature: Streaming Media
 role: User, Admin, Developer
 exl-id: 79203a2f-8158-44f2-83b2-146179be9180
-TQID: https://experienceleague.adobe.com/ct8mDbIpg15Jzvf1MRaG4XFtuxbq-EUKPe106zyO7zQ
+TQID: 'https://experienceleague.adobe.com/ct8mDbIpg15Jzvf1MRaG4XFtuxbq-EUKPe106zyO7zQ'
 product_v2:
   - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
 feature_v2:
   - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+    internal-label: API
+  - id: c153fd90-23e1-4614-81d3-3cc7571227f7
+    internal-label: Analysis Workspace
+subfeature_v2:
+  - id: c9bb7ea6-c04f-4262-b69c-fbb8d91e3559
+    internal-label: Streaming Media
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+    internal-label: Implementation
+source-git-commit: beb51916dece77213e1b7346573c4377d62d2b2c
 workflow-type: tm+mt
-source-wordcount: 1331
+source-wordcount: '1331'
 ht-degree: 19%
-
 ---
-
 # Asignación de parámetros de Media Analytics para Adobe Experience Platform y Customer Journey Analytics
 
 Este documento proporciona una lista completa de todos los parámetros de Media Analytics utilizados en Adobe Experience Platform y Customer Journey Analytics. Está diseñado para admitir la integración de datos importados de Adobe Analytics a Platform mediante el [conector Source de Analytics](https://experienceleague.adobe.com/es/docs/experience-platform/sources/connectors/adobe-applications/analytics) o el [conector Source de Analytics para clasificaciones](https://experienceleague.adobe.com/es/docs/experience-platform/sources/connectors/adobe-applications/classifications), y asignar cada parámetro a su ruta de campo XDM correspondiente.
@@ -161,24 +171,24 @@ Para configurar la conexión en Customer Journey Analytics:
 Para cada conjunto de datos de búsqueda (conjunto de datos de clasificación), configure como se indica a continuación:
 
 * **conjunto de datos de vídeo**:
-   * Clave: `_sandbox.key`
-   * Clave de coincidencia: `Asset ID (media.mediaTimed.primaryAssetReference._id)`
-   * Tipo de origen de datos: `Web Data`
+  * Clave: `_sandbox.key`
+  * Clave de coincidencia: `Asset ID (media.mediaTimed.primaryAssetReference._id)`
+  * Tipo de origen de datos: `Web Data`
 
 * **conjunto de datos videoad**:
-   * Clave: `_sandbox.key`
-   * Clave de coincidencia: `Ad ID (advertising.adAssetReference._id)`
-   * Tipo de origen de datos: `Web Data`
+  * Clave: `_sandbox.key`
+  * Clave de coincidencia: `Ad ID (advertising.adAssetReference._id)`
+  * Tipo de origen de datos: `Web Data`
 
 * **conjunto de datos de videoadpod**:
-   * Clave: `_sandbox.key`
-   * Clave de coincidencia: `Ad Pod ID (advertising.adAssetViewDetails.adBreak._id)`
-   * Tipo de origen de datos: `Web Data`
+  * Clave: `_sandbox.key`
+  * Clave de coincidencia: `Ad Pod ID (advertising.adAssetViewDetails.adBreak._id)`
+  * Tipo de origen de datos: `Web Data`
 
 * **conjunto de datos de videochapter**:
-   * Clave: `_sandbox.key`
-   * Clave de coincidencia: `Chapter identity (media.mediaTimed.mediaChapter.chapterAssetReference._id)`
-   * Tipo de origen de datos: `Web Data`
+  * Clave: `_sandbox.key`
+  * Clave de coincidencia: `Chapter identity (media.mediaTimed.mediaChapter.chapterAssetReference._id)`
+  * Tipo de origen de datos: `Web Data`
 
 ### Consideraciones del informe
 

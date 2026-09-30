@@ -3,13 +3,27 @@ title: Información general sobre la implementación Edge
 description: Configure el esquema, el conjunto de datos y el conjunto de datos de Adobe Experience Platform necesarios para recopilar datos de medios de streaming a través de Edge Network.
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
+feature_v2:
+  - id: c153fd90-23e1-4614-81d3-3cc7571227f7
+    internal-label: Analysis Workspace
+subfeature_v2:
+  - id: c9bb7ea6-c04f-4262-b69c-fbb8d91e3559
+    internal-label: Streaming Media
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: beb51916dece77213e1b7346573c4377d62d2b2c
 workflow-type: tm+mt
 source-wordcount: '1282'
-ht-degree: 5%
-
+ht-degree: 6%
 ---
-
 # Información general sobre la implementación Edge
 
 Adobe Experience Platform Edge Network permite enviar datos destinados a varios productos a un único extremo, que a su vez reenvía la información adecuada a cada producto. Esta es la forma recomendada de implementar la recopilación de medios de streaming y es el único enfoque que admite Adobe Analytics y Customer Journey Analytics desde una sola implementación.
@@ -158,9 +172,9 @@ Para estandarizar la recopilación de datos en todas las aplicaciones que utiliz
 
    * Añada los servicios adecuados al conjunto de datos en función de su solución de Adobe. Para obtener información acerca de cómo agregar un servicio, vea &quot;Agregar servicios a un conjunto de datos&quot; en [Configurar un conjunto de datos](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=es#view-details).
 
-      * **[!UICONTROL Adobe Analytics]** (si usa Adobe Analytics): defina un grupo de informes como se describe en [Crear un grupo de informes](https://experienceleague.adobe.com/es/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite).
+     * **[!UICONTROL Adobe Analytics]** (si usa Adobe Analytics): defina un grupo de informes como se describe en [Crear un grupo de informes](https://experienceleague.adobe.com/es/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite).
 
-      * **[!UICONTROL Adobe Experience Platform]** (si usa Customer Journey Analytics, Adobe Journey Optimizer o Real-Time Customer Data Platform)
+     * **[!UICONTROL Adobe Experience Platform]** (si usa Customer Journey Analytics, Adobe Journey Optimizer o Real-Time Customer Data Platform)
 
      ![Agregar el servicio Adobe Analytics](assets/datastream-add-service.png)
 

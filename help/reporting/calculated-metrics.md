@@ -3,13 +3,22 @@ title: Métricas calculadas
 description: Métricas calculadas personalizadas para la creación de informes de medios de streaming en Adobe Analytics y Customer Journey Analytics.
 feature: Metrics
 role: User, Admin
-source-git-commit: cb3770abd06eb8debe4ff92641835f04f62471f7
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
+feature_v2:
+  - id: b3f03848-ae12-48b2-8aab-cad18567eb32
+    internal-label: Metrics
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: beb51916dece77213e1b7346573c4377d62d2b2c
 workflow-type: tm+mt
 source-wordcount: '269'
 ht-degree: 4%
-
 ---
-
 # Métricas calculadas de medios de streaming
 
 Las métricas calculadas para los servicios de medios de streaming de Adobe son métricas personalizadas creadas a partir de las métricas de medios de streaming estándar, lo que le permite derivar proporciones como el tiempo promedio invertido en la publicidad o la tasa de finalización de medios sin cambiar la implementación.
