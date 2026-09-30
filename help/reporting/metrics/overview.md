@@ -3,13 +3,22 @@ title: Resumen de métricas de medios de streaming
 description: Descubra cómo se calculan y organizan las métricas de medios de streaming en Adobe Analytics y Customer Journey Analytics.
 feature: Metrics
 role: User, Admin
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
+feature_v2:
+  - id: b3f03848-ae12-48b2-8aab-cad18567eb32
+    internal-label: Metrics
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: beb51916dece77213e1b7346573c4377d62d2b2c
 workflow-type: tm+mt
 source-wordcount: '458'
 ht-degree: 3%
-
 ---
-
 
 # Resumen de métricas de medios de streaming
 
@@ -31,8 +40,8 @@ Las métricas de medios de streaming siguen cuatro patrones de cálculo principa
 
 | Sistema de informes | Cómo llegan las métricas |
 | --- | --- |
-| Adobe Analytics | Rellenado con [variables de datos de contexto](https://experienceleague.adobe.com/es/docs/analytics/implementation/vars/page-vars/contextdata). Algunas métricas rellenan automáticamente eventos de solución usando estas variables de datos de contexto, mientras que otras deben asignarse a un evento personalizado usando [Reglas de procesamiento](https://experienceleague.adobe.com/es/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview). Las métricas que rellenan automáticamente los valores deben tener habilitada primero su respectiva configuración del grupo de informes [medios de streaming](../setup/analytics-reporting.md). |
-| Customer Journey Analytics | Campos XDM en `xdm.mediaReporting.sessionDetails` y nodos relacionados, procedentes de cualquier conjunto de datos que incluya datos de medios de streaming. Debe crear cada métrica con la configuración deseada dentro de [Configuración del componente de vista de datos](https://experienceleague.adobe.com/es/docs/analytics-platform/using/cja-dataviews/component-settings/overview). |
+| Adobe Analytics | Rellenado con [variables de datos de contexto](https://experienceleague.adobe.com/es/docs/analytics/implementation/vars/page-vars/contextdata). Algunas métricas rellenan automáticamente eventos de solución usando estas variables de datos de contexto, mientras que otras deben asignarse a un evento personalizado usando [Reglas de procesamiento](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview). Las métricas que rellenan automáticamente los valores deben tener habilitada primero su respectiva configuración del grupo de informes [medios de streaming](../setup/analytics-reporting.md). |
+| Customer Journey Analytics | Campos XDM en `xdm.mediaReporting.sessionDetails` y nodos relacionados, procedentes de cualquier conjunto de datos que incluya datos de medios de streaming. Debe crear cada métrica con la configuración deseada dentro de [Configuración del componente de vista de datos](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-settings/overview). |
 | Fuentes de datos | Las métricas aparecen en las columnas `event_list` y `post_event_list` como ID de evento. Cada archivo de fuente contiene un archivo de `events.csv` que contiene la búsqueda de todas las métricas, incluidas las métricas de medios de transmisión. |
 
 >[!MORELIKETHIS]

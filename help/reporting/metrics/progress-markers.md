@@ -3,13 +3,22 @@ title: Marcadores de progreso
 description: Contar sesiones cuyo cabezal de reproducción superó cada uno de los cinco umbrales fijos (10 %, 25 %, 50 %, 75 % y 95 %).
 feature: Metrics
 role: User, Admin
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
+feature_v2:
+  - id: b3f03848-ae12-48b2-8aab-cad18567eb32
+    internal-label: Metrics
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: beb51916dece77213e1b7346573c4377d62d2b2c
 workflow-type: tm+mt
 source-wordcount: '542'
 ht-degree: 9%
-
 ---
-
 
 # Marcadores de progreso
 
@@ -32,8 +41,8 @@ Se activa cuando el cabezal de reproducción alcanza por primera vez el 10 % de 
 | Sistema de informes | Fuente |
 | --- | --- |
 | Adobe Analytics | Se recopila automáticamente a partir de los datos de contexto `a.media.progress10` cuando [[!UICONTROL Media Core]](/help/reporting/setup/analytics-reporting.md) está habilitado. |
-| Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.hasProgress10`](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/session-details-reporting) |
-| Fuentes de datos | `event_list`, `post_event_list` (consulte la búsqueda [`event.tsv`](https://experienceleague.adobe.com/es/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files)) |
+| Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.hasProgress10`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| Fuentes de datos | `event_list`, `post_event_list` (consulte la búsqueda [`event.tsv`](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files)) |
 | Audience Manager | `c_contextdata.a.media.progress10` |
 
 ### Marcador de progreso del 25 % {#progress-25}
@@ -43,8 +52,8 @@ Se activa cuando el cabezal de reproducción alcanza por primera vez el 25 % de 
 | Sistema de informes | Fuente |
 | --- | --- |
 | Adobe Analytics | Se recopila automáticamente a partir de los datos de contexto `a.media.progress25` cuando [[!UICONTROL Media Core]](/help/reporting/setup/analytics-reporting.md) está habilitado. |
-| Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.hasProgress25`](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/session-details-reporting) |
-| Fuentes de datos | `event_list`, `post_event_list` (consulte la búsqueda [`event.tsv`](https://experienceleague.adobe.com/es/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files)) |
+| Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.hasProgress25`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| Fuentes de datos | `event_list`, `post_event_list` (consulte la búsqueda [`event.tsv`](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files)) |
 | Audience Manager | `c_contextdata.a.media.progress25` |
 
 ### Marcador de progreso al 50 % {#progress-50}
@@ -54,8 +63,8 @@ Se activa cuando el cabezal de reproducción alcanza por primera vez el 50 % de 
 | Sistema de informes | Fuente |
 | --- | --- |
 | Adobe Analytics | Se recopila automáticamente a partir de los datos de contexto `a.media.progress50` cuando [[!UICONTROL Media Core]](/help/reporting/setup/analytics-reporting.md) está habilitado. |
-| Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.hasProgress50`](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/session-details-reporting) |
-| Fuentes de datos | `event_list`, `post_event_list` (consulte la búsqueda [`event.tsv`](https://experienceleague.adobe.com/es/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files)) |
+| Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.hasProgress50`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| Fuentes de datos | `event_list`, `post_event_list` (consulte la búsqueda [`event.tsv`](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files)) |
 | Audience Manager | `c_contextdata.a.media.progress50` |
 
 ### Marcador de progreso al 75 % {#progress-75}
@@ -65,8 +74,8 @@ Se activa cuando el cabezal de reproducción alcanza por primera vez el 75 % de 
 | Sistema de informes | Fuente |
 | --- | --- |
 | Adobe Analytics | Se recopila automáticamente a partir de los datos de contexto `a.media.progress75` cuando [[!UICONTROL Media Core]](/help/reporting/setup/analytics-reporting.md) está habilitado. |
-| Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.hasProgress75`](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/session-details-reporting) |
-| Fuentes de datos | `event_list`, `post_event_list` (consulte la búsqueda [`event.tsv`](https://experienceleague.adobe.com/es/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files)) |
+| Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.hasProgress75`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| Fuentes de datos | `event_list`, `post_event_list` (consulte la búsqueda [`event.tsv`](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files)) |
 | Audience Manager | `c_contextdata.a.media.progress75` |
 
 ### Marcador de progreso al 95 % {#progress-95}
@@ -76,6 +85,6 @@ Se activa cuando el cabezal de reproducción alcanza por primera vez el 95 % de 
 | Sistema de informes | Fuente |
 | --- | --- |
 | Adobe Analytics | Se recopila automáticamente a partir de los datos de contexto `a.media.progress95` cuando [[!UICONTROL Media Core]](/help/reporting/setup/analytics-reporting.md) está habilitado. |
-| Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.hasProgress95`](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/session-details-reporting) |
-| Fuentes de datos | `event_list`, `post_event_list` (consulte la búsqueda [`event.tsv`](https://experienceleague.adobe.com/es/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files)) |
+| Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.hasProgress95`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| Fuentes de datos | `event_list`, `post_event_list` (consulte la búsqueda [`event.tsv`](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files)) |
 | Audience Manager | `c_contextdata.a.media.progress95` |

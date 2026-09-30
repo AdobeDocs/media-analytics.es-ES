@@ -3,7 +3,19 @@ title: Pantalla completa
 description: Realice un seguimiento cuando el visualizador entre y salga de la reproducción en pantalla completa para que el back-end pueda informar sobre la participación en pantalla completa.
 feature: Streaming Media
 role: Developer
-source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
+feature_v2:
+  - id: c153fd90-23e1-4614-81d3-3cc7571227f7
+    internal-label: Analysis Workspace
+subfeature_v2:
+  - id: c9bb7ea6-c04f-4262-b69c-fbb8d91e3559
+    internal-label: Streaming Media
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: beb51916dece77213e1b7346573c4377d62d2b2c
 workflow-type: tm+mt
 source-wordcount: '348'
 ht-degree: 8%
@@ -22,7 +34,7 @@ El estado del reproductor en pantalla completa rastrea cuando el visualizador en
 | Propiedad | Valor |
 | --- | --- |
 | **Variables de datos de contexto** | `a.media.states.fullscreen.set`, `a.media.states.fullscreen.count`, `a.media.states.fullscreen.time` |
-| **Campo de colección XDM** | [`xdm.mediaCollection.statesStart[]`](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/media-collection-details) y [`xdm.mediaCollection.statesEnd[]`](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/media-collection-details) (entradas con `name: "fullscreen"`) |
+| **Campo de colección XDM** | [`xdm.mediaCollection.statesStart[]`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-collection-details) y [`xdm.mediaCollection.statesEnd[]`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-collection-details) (entradas con `name: "fullscreen"`) |
 | **rasgos de Audience Manager** | `c_contextdata.a.media.states.fullscreen.set`, `c_contextdata.a.media.states.fullscreen.count`, `c_contextdata.a.media.states.fullscreen.time` |
 | **Requerido** | No |
 | **Enviado con** | [Inicio de estado](/help/implementation/events/player-state/state-start.md), [fin de estado](/help/implementation/events/player-state/state-end.md) |

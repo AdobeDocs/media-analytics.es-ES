@@ -3,7 +3,19 @@ title: Desplazamiento de capítulo
 description: Establezca el desplazamiento del capítulo dentro del contenido, en segundos desde el inicio.
 feature: Streaming Media
 role: Developer
-source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
+feature_v2:
+  - id: c153fd90-23e1-4614-81d3-3cc7571227f7
+    internal-label: Analysis Workspace
+subfeature_v2:
+  - id: c9bb7ea6-c04f-4262-b69c-fbb8d91e3559
+    internal-label: Streaming Media
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: beb51916dece77213e1b7346573c4377d62d2b2c
 workflow-type: tm+mt
 source-wordcount: '252'
 ht-degree: 6%
@@ -22,7 +34,7 @@ La variable de desplazamiento del capítulo es el desplazamiento del capítulo d
 | Propiedad | Valor |
 | --- | --- |
 | **Variable de datos de contexto** | `a.media.chapter.offset` |
-| **Campo de colección XDM** | [`xdm.mediaCollection.chapterDetails.offset`](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/chapter-details-collection) |
+| **Campo de colección XDM** | [`xdm.mediaCollection.chapterDetails.offset`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/chapter-details-collection) |
 | **rasgo de Audience Manager** | `c_contextdata.a.media.chapter.offset` |
 | **Requerido** | No (Mobile SDK); Sí (Edge, API de Media Collection) |
 | **Enviado con** | [Inicio del capítulo](/help/implementation/events/chapters/chapter-start.md), cierre del capítulo |

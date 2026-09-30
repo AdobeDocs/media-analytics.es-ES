@@ -3,7 +3,23 @@ title: 'Compatibilidad con metadatos personalizados: formato XDM'
 description: Obtenga información sobre cómo enviar metadatos personalizados con eventos de seguimiento de medios mediante el formato XDM de Experience Edge.
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
+feature_v2:
+  - id: c153fd90-23e1-4614-81d3-3cc7571227f7
+    internal-label: Analysis Workspace
+subfeature_v2:
+  - id: c9bb7ea6-c04f-4262-b69c-fbb8d91e3559
+    internal-label: Streaming Media
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: beb51916dece77213e1b7346573c4377d62d2b2c
 workflow-type: tm+mt
 source-wordcount: '774'
 ht-degree: 2%
@@ -314,7 +330,7 @@ En este ejemplo:
 
 * Después del procesamiento, los metadatos personalizados se reenvían a Adobe Analytics como variables de datos de contexto. El prefijo `_tenant` se elimina automáticamente, por lo que las reglas de procesamiento solo hacen referencia a la ruta de campo después de `_tenant` (por ejemplo, `_mycompany.contentCategory` se convierte en `contentCategory`)
 * Los datos enviados a través de `_data` también se reenvían a Adobe Analytics y están disponibles mediante reglas de procesamiento
-* Utilice reglas de procesamiento para asignar variables de datos de contexto a eVars, props u otras variables de Analytics. Consulte [Asignación de variables de datos para Adobe Experience Platform Edge Network](https://experienceleague.adobe.com/es/docs/analytics/implementation/aep-edge/data-var-mapping) para obtener más información.
+* Utilice reglas de procesamiento para asignar variables de datos de contexto a eVars, props u otras variables de Analytics. Consulte [Asignación de variables de datos para Adobe Experience Platform Edge Network](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/data-var-mapping) para obtener más información.
 
 **Adobe Experience Platform:**
 
@@ -334,5 +350,5 @@ En este ejemplo:
 >[!MORELIKETHIS]
 >
 >* [Compatibilidad con metadatos personalizados de API de recopilación de medios](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/custom-metadata)
->* [Tipo de datos de detalles de recopilación de medios](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/media-collection-details)
->* [Asignación de variables de datos para Adobe Experience Platform Edge Network](https://experienceleague.adobe.com/es/docs/analytics/implementation/aep-edge/data-var-mapping)
+>* [Tipo de datos de detalles de recopilación de medios](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-collection-details)
+>* [Asignación de variables de datos para Adobe Experience Platform Edge Network](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/data-var-mapping)

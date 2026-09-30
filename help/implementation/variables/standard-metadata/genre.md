@@ -3,7 +3,19 @@ title: Género
 description: Establezca el género de contenido como una cadena delimitada por comas. El contenido de varios géneros se divide en elementos de línea en los informes.
 feature: Streaming Media
 role: Developer
-source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
+feature_v2:
+  - id: c153fd90-23e1-4614-81d3-3cc7571227f7
+    internal-label: Analysis Workspace
+subfeature_v2:
+  - id: c9bb7ea6-c04f-4262-b69c-fbb8d91e3559
+    internal-label: Streaming Media
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: beb51916dece77213e1b7346573c4377d62d2b2c
 workflow-type: tm+mt
 source-wordcount: '289'
 ht-degree: 7%
@@ -26,7 +38,7 @@ La variable genre es el género de contenido definido por el productor (por ejem
 | Propiedad | Valor |
 | --- | --- |
 | **Variable de datos de contexto** | `a.media.genre` |
-| **Campo de colección XDM** | [`xdm.mediaCollection.sessionDetails.genre`](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **Campo de colección XDM** | [`xdm.mediaCollection.sessionDetails.genre`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **rasgo de Audience Manager** | `c_contextdata.a.media.genre` |
 | **Requerido** | No |
 | **Enviado con** | [Inicio de sesión](/help/implementation/events/session/session-start.md), cierre de sesión |

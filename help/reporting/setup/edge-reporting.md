@@ -3,13 +3,25 @@ title: Configuración de informes para implementaciones de Edge
 description: Configure Customer Journey Analytics para que informe sobre los datos de medios de streaming recopilados a través de Edge Network.
 feature: Streaming Media
 role: User, Admin
-source-git-commit: 7b5232f25f3aa26e8566783557163f316af3fe57
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
+feature_v2:
+  - id: c153fd90-23e1-4614-81d3-3cc7571227f7
+    internal-label: Analysis Workspace
+subfeature_v2:
+  - id: c9bb7ea6-c04f-4262-b69c-fbb8d91e3559
+    internal-label: Streaming Media
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: beb51916dece77213e1b7346573c4377d62d2b2c
 workflow-type: tm+mt
 source-wordcount: '832'
-ht-degree: 6%
-
+ht-degree: 7%
 ---
-
 # Configuración de informes para implementaciones de Edge
 
 Después de implementar la recopilación de medios de streaming a través de Edge Network, configure Customer Journey Analytics para que informe sobre los datos recopilados.
@@ -26,7 +38,7 @@ Después de implementar la recopilación de medios de streaming a través de Edg
 
 ## Creación de una vista de datos en Customer Journey Analytics
 
-1. En Customer Journey Analytics, cree una vista de datos como se describe en [Cree o edite una vista de datos](https://experienceleague.adobe.com/es/docs/analytics-platform/using/cja-dataviews/create-dataview).
+1. En Customer Journey Analytics, cree una vista de datos como se describe en [Cree o edite una vista de datos](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/create-dataview).
 
    1. En el campo **[!UICONTROL Conexión]**, seleccione la conexión que creó anteriormente. Las nuevas conexiones pueden tardar hasta 15 minutos en aparecer.
 
@@ -50,7 +62,7 @@ Después de implementar la recopilación de medios de streaming a través de Edg
 
       >[!IMPORTANT]
       >
-      >Las etiquetas de contexto de esta tabla son necesarias para que funcionen los paneles de medios de streaming. Customer Journey Analytics los usa para calcular automáticamente las métricas derivadas de **Espectadores simultáneos** y **Tiempo invertido en la reproducción** (utilizadas por los paneles [Espectadores simultáneos de medios](https://experienceleague.adobe.com/es/docs/analytics-platform/using/cja-workspace/panels/media-concurrent-viewers) y [Tiempo invertido en la reproducción de medios](https://experienceleague.adobe.com/es/docs/analytics-platform/using/cja-workspace/panels/media-playback-time-spent)), y para rellenar las opciones de informes en el panel [Audiencia media por minuto de medios](https://experienceleague.adobe.com/es/docs/analytics-platform/using/cja-workspace/panels/average-minute-audience-panel).
+      >Las etiquetas de contexto de esta tabla son necesarias para que funcionen los paneles de medios de streaming. Customer Journey Analytics los usa para calcular automáticamente las métricas derivadas de **Espectadores simultáneos** y **Tiempo invertido en la reproducción** (utilizadas por los paneles [Espectadores simultáneos de medios](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/panels/media-concurrent-viewers) y [Tiempo invertido en la reproducción de medios](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/panels/media-playback-time-spent)), y para rellenar las opciones de informes en el panel [Audiencia media por minuto de medios](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/panels/average-minute-audience-panel).
 
       En este momento, puede agregar cualquier otra [dimensión](/help/reporting/dimensions/overview.md) o [métrica](/help/reporting/metrics/overview.md) a la vista de datos. Cada página enumera la ruta XDM para ese componente.
 
@@ -70,7 +82,7 @@ Después de implementar la recopilación de medios de streaming a través de Edg
 
 1. (Condicional) Si agregó metadatos personalizados al esquema, establezca la persistencia de los campos personalizados, tal como se describe en [Configuración del componente de persistencia](https://experienceleague.adobe.com/es/docs/analytics-platform/using/cja-dataviews/component-settings/persistence) en la guía de Customer Journey Analytics.
 
-1. Comparta el proyecto como se describe en [Compartir proyectos](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/share-projects.html?lang=es).
+1. Comparta el proyecto como se describe en [Compartir proyectos](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/share-projects.html?lang=en).
 
    >[!NOTE]
    >
@@ -80,9 +92,9 @@ Después de implementar la recopilación de medios de streaming a través de Edg
 
 Analysis Workspace en Customer Journey Analytics incluye tres paneles de medios dedicados para clientes con el complemento de recopilación de medios de streaming. Estos paneles proporcionan visualizaciones creadas previamente para las necesidades más comunes de creación de informes de medios de streaming.
 
-* **[Audiencia media por minuto de medios](https://experienceleague.adobe.com/es/docs/analytics-platform/using/cja-workspace/panels/average-minute-audience-panel)**: compara el consumo promedio de contenido entre programas de cualquier género o duración. Admite modos de período de tiempo específicos (basados en la duración) y personalizados, y permite actualizar las clasificaciones de duración después del hecho.
-* **[Visores simultáneos de medios](https://experienceleague.adobe.com/es/docs/analytics-platform/using/cja-workspace/panels/media-concurrent-viewers)**: analiza los visores simultáneos a lo largo del tiempo para identificar los puntos de concurrencia máxima y los puntos de entrega. Admite la granularidad configurable y el desglose de series por segmentos, dimensiones o intervalos de fechas.
-* **[Tiempo invertido en la reproducción de contenido](https://experienceleague.adobe.com/es/docs/analytics-platform/using/cja-workspace/panels/media-playback-time-spent)**: analiza la duración de la reproducción a lo largo del tiempo con detalles sobre los períodos pico y valle. Admite granularidad y formato de salida configurables (horas o minutos).
+* **[Audiencia media por minuto de medios](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/panels/average-minute-audience-panel)**: compara el consumo promedio de contenido entre programas de cualquier género o duración. Admite modos de período de tiempo específicos (basados en la duración) y personalizados, y permite actualizar las clasificaciones de duración después del hecho.
+* **[Visores simultáneos de medios](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/panels/media-concurrent-viewers)**: analiza los visores simultáneos a lo largo del tiempo para identificar los puntos de concurrencia máxima y los puntos de entrega. Admite la granularidad configurable y el desglose de series por segmentos, dimensiones o intervalos de fechas.
+* **[Tiempo invertido en la reproducción de contenido](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/panels/media-playback-time-spent)**: analiza la duración de la reproducción a lo largo del tiempo con detalles sobre los períodos pico y valle. Admite granularidad y formato de salida configurables (horas o minutos).
 
 >[!MORELIKETHIS]
 >

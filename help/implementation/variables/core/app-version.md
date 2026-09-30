@@ -3,7 +3,19 @@ title: Versi처n de aplicaci처n
 description: Configure la cadena de versi처n de la aplicaci처n de reproducci처n de contenido.
 feature: Streaming Media
 role: Developer
-source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
+feature_v2:
+  - id: c153fd90-23e1-4614-81d3-3cc7571227f7
+    internal-label: Analysis Workspace
+subfeature_v2:
+  - id: c9bb7ea6-c04f-4262-b69c-fbb8d91e3559
+    internal-label: Streaming Media
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: beb51916dece77213e1b7346573c4377d62d2b2c
 workflow-type: tm+mt
 source-wordcount: '297'
 ht-degree: 2%
@@ -25,7 +37,7 @@ La variable de versi처n de la aplicaci처n identifica la versi처n de la aplicaci�
 
 | Propiedad | Valor |
 | --- | --- |
-| **Campo de colecci처n XDM** | [`xdm.mediaCollection.sessionDetails.appVersion`](https://experienceleague.adobe.com/es/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **Campo de colecci처n XDM** | [`xdm.mediaCollection.sessionDetails.appVersion`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Par찼metro de API de recopilaci처n de medios** | `media.sdkVersion` |
 | **Requerido** | No |
 | **Enviado con** | [Inicio de sesi처n](/help/implementation/events/session/session-start.md) |
@@ -36,7 +48,7 @@ La variable de versi처n de la aplicaci처n identifica la versi처n de la aplicaci�
 
 >[!TAB SDK web ]
 
-Establecer `appVersion` en el objeto de configuraci처n `streamingMedia` al llamar a [`configure`](https://experienceleague.adobe.com/es/docs/experience-platform/collection/js/commands/configure/streamingmedia):
+Establecer `appVersion` en el objeto de configuraci처n `streamingMedia` al llamar a [`configure`](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/commands/configure/streamingmedia):
 
 ```javascript
 alloy("configure", {
